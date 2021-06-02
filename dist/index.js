@@ -78,6 +78,7 @@ function run() {
         try {
             const source = utils.getInputAsArray('source');
             const recursive = utils.getInputAsBool('recursive');
+            const s3ACL = utils.getInputAsString('s3-acl');
             const s3Bucket = utils.getInputAsString('s3-bucket');
             const s3Prefix = utils.getInputAsString('s3-prefix');
             const s3Client = new s3.S3Client({});
@@ -96,7 +97,7 @@ function run() {
                             Bucket: s3Bucket,
                             Key: s3Key,
                             Body: fs.createReadStream(file),
-                            ACL: 'public-read',
+                            ACL: s3ACL,
                         }));
                     }
                     catch (error) {

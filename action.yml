@@ -9,6 +9,10 @@ inputs:
     description: 'Copy directories recursively'
     required: false
     default: 'true'
+  s3-acl:
+    description: 'S3 objects ACL'
+    required: false
+    default: 'private'
   s3-bucket:
     description: 'Destination S3 bucket'
     required: true

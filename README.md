@@ -12,6 +12,10 @@ Source path(s). Default `"."`.
 
 Copy directories recursively. Default `"true"`.
 
+### `s3-acl`
+
+S3 objects ACL. Default `"private"`.
+
 ### `s3-bucket`
 
 Destination S3 bucket.
