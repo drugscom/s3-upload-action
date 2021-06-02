@@ -90,7 +90,7 @@ function run() {
                         continue;
                     }
                     const s3Key = path.join(s3Prefix, path.basename(file));
-                    core.debug(`Copying "${file}" to "s3://${s3Bucket}/${s3Key}"`);
+                    core.info(`Copying "${file}" to "s3://${s3Bucket}/${s3Key}"`);
                     try {
                         yield s3Client.send(new s3.PutObjectCommand({
                             Bucket: s3Bucket,
