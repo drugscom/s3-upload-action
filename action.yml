@@ -1,0 +1,20 @@
+name: 'S3 Upload'
+description: 'Upload files to S3 bucket'
+inputs:
+  source:
+    description: 'Source path(s)'
+    required: false
+    default: '.'
+  recursive:
+    description: 'Copy directories recursively'
+    required: false
+    default: 'true'
+  s3-bucket:
+    description: 'Destination S3 bucket'
+    required: true
+  s3-prefix:
+    description: 'Destination bucket key prefix'
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
