@@ -9,6 +9,10 @@ inputs:
     description: 'Copy directories recursively'
     required: false
     default: 'true'
+  cleanup:
+    description: 'Remove all files on the destination prefix before uploading'
+    required: false
+    default: 'false'
   s3-acl:
     description: 'S3 objects ACL'
     required: false

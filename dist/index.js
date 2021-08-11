@@ -5,7 +5,7 @@
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-s3","description":"AWS SDK for JavaScript S3 Client for Node.js, Browser and React Native","version":"3.18.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test:unit":"mocha **/cjs/**/*.spec.js","test:e2e":"mocha **/cjs/**/*.ispec.js && karma start karma.conf.js","test":"yarn test:unit","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.18.0","@aws-sdk/config-resolver":"3.18.0","@aws-sdk/credential-provider-node":"3.18.0","@aws-sdk/eventstream-serde-browser":"3.18.0","@aws-sdk/eventstream-serde-config-resolver":"3.18.0","@aws-sdk/eventstream-serde-node":"3.18.0","@aws-sdk/fetch-http-handler":"3.18.0","@aws-sdk/hash-blob-browser":"3.18.0","@aws-sdk/hash-node":"3.18.0","@aws-sdk/hash-stream-node":"3.18.0","@aws-sdk/invalid-dependency":"3.18.0","@aws-sdk/md5-js":"3.18.0","@aws-sdk/middleware-apply-body-checksum":"3.18.0","@aws-sdk/middleware-bucket-endpoint":"3.18.0","@aws-sdk/middleware-content-length":"3.18.0","@aws-sdk/middleware-expect-continue":"3.18.0","@aws-sdk/middleware-host-header":"3.18.0","@aws-sdk/middleware-location-constraint":"3.18.0","@aws-sdk/middleware-logger":"3.18.0","@aws-sdk/middleware-retry":"3.18.0","@aws-sdk/middleware-sdk-s3":"3.18.0","@aws-sdk/middleware-serde":"3.18.0","@aws-sdk/middleware-signing":"3.18.0","@aws-sdk/middleware-ssec":"3.18.0","@aws-sdk/middleware-stack":"3.18.0","@aws-sdk/middleware-user-agent":"3.18.0","@aws-sdk/node-config-provider":"3.18.0","@aws-sdk/node-http-handler":"3.18.0","@aws-sdk/protocol-http":"3.18.0","@aws-sdk/smithy-client":"3.18.0","@aws-sdk/types":"3.18.0","@aws-sdk/url-parser":"3.18.0","@aws-sdk/util-base64-browser":"3.18.0","@aws-sdk/util-base64-node":"3.18.0","@aws-sdk/util-body-length-browser":"3.18.0","@aws-sdk/util-body-length-node":"3.18.0","@aws-sdk/util-user-agent-browser":"3.18.0","@aws-sdk/util-user-agent-node":"3.18.0","@aws-sdk/util-utf8-browser":"3.18.0","@aws-sdk/util-utf8-node":"3.18.0","@aws-sdk/util-waiter":"3.18.0","@aws-sdk/xml-builder":"3.18.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.18.0","@types/chai":"^4.2.11","@types/mocha":"^8.0.4","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-s3","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-s3"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-s3","description":"AWS SDK for JavaScript S3 Client for Node.js, Browser and React Native","version":"3.25.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test:unit":"mocha **/cjs/**/*.spec.js","test:e2e":"mocha **/cjs/**/*.ispec.js && karma start karma.conf.js","test":"yarn test:unit","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/client-sts":"3.25.0","@aws-sdk/config-resolver":"3.25.0","@aws-sdk/credential-provider-node":"3.25.0","@aws-sdk/eventstream-serde-browser":"3.25.0","@aws-sdk/eventstream-serde-config-resolver":"3.25.0","@aws-sdk/eventstream-serde-node":"3.25.0","@aws-sdk/fetch-http-handler":"3.25.0","@aws-sdk/hash-blob-browser":"3.25.0","@aws-sdk/hash-node":"3.25.0","@aws-sdk/hash-stream-node":"3.25.0","@aws-sdk/invalid-dependency":"3.25.0","@aws-sdk/md5-js":"3.25.0","@aws-sdk/middleware-apply-body-checksum":"3.25.0","@aws-sdk/middleware-bucket-endpoint":"3.25.0","@aws-sdk/middleware-content-length":"3.25.0","@aws-sdk/middleware-expect-continue":"3.25.0","@aws-sdk/middleware-host-header":"3.25.0","@aws-sdk/middleware-location-constraint":"3.25.0","@aws-sdk/middleware-logger":"3.25.0","@aws-sdk/middleware-retry":"3.25.0","@aws-sdk/middleware-sdk-s3":"3.25.0","@aws-sdk/middleware-serde":"3.25.0","@aws-sdk/middleware-signing":"3.25.0","@aws-sdk/middleware-ssec":"3.25.0","@aws-sdk/middleware-stack":"3.25.0","@aws-sdk/middleware-user-agent":"3.25.0","@aws-sdk/node-config-provider":"3.25.0","@aws-sdk/node-http-handler":"3.25.0","@aws-sdk/protocol-http":"3.25.0","@aws-sdk/smithy-client":"3.25.0","@aws-sdk/types":"3.25.0","@aws-sdk/url-parser":"3.25.0","@aws-sdk/util-base64-browser":"3.23.0","@aws-sdk/util-base64-node":"3.23.0","@aws-sdk/util-body-length-browser":"3.23.0","@aws-sdk/util-body-length-node":"3.23.0","@aws-sdk/util-user-agent-browser":"3.25.0","@aws-sdk/util-user-agent-node":"3.25.0","@aws-sdk/util-utf8-browser":"3.23.0","@aws-sdk/util-utf8-node":"3.23.0","@aws-sdk/util-waiter":"3.25.0","@aws-sdk/xml-builder":"3.23.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.23.0","@types/chai":"^4.2.11","@types/mocha":"^8.0.4","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist/types/*":["dist/types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-s3","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-s3"}}');
 
 /***/ }),
 
@@ -13,7 +13,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-s3","description":"AWS SDK
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.18.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.18.0","@aws-sdk/fetch-http-handler":"3.18.0","@aws-sdk/hash-node":"3.18.0","@aws-sdk/invalid-dependency":"3.18.0","@aws-sdk/middleware-content-length":"3.18.0","@aws-sdk/middleware-host-header":"3.18.0","@aws-sdk/middleware-logger":"3.18.0","@aws-sdk/middleware-retry":"3.18.0","@aws-sdk/middleware-serde":"3.18.0","@aws-sdk/middleware-stack":"3.18.0","@aws-sdk/middleware-user-agent":"3.18.0","@aws-sdk/node-config-provider":"3.18.0","@aws-sdk/node-http-handler":"3.18.0","@aws-sdk/protocol-http":"3.18.0","@aws-sdk/smithy-client":"3.18.0","@aws-sdk/types":"3.18.0","@aws-sdk/url-parser":"3.18.0","@aws-sdk/util-base64-browser":"3.18.0","@aws-sdk/util-base64-node":"3.18.0","@aws-sdk/util-body-length-browser":"3.18.0","@aws-sdk/util-body-length-node":"3.18.0","@aws-sdk/util-user-agent-browser":"3.18.0","@aws-sdk/util-user-agent-node":"3.18.0","@aws-sdk/util-utf8-browser":"3.18.0","@aws-sdk/util-utf8-node":"3.18.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.18.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.25.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.25.0","@aws-sdk/fetch-http-handler":"3.25.0","@aws-sdk/hash-node":"3.25.0","@aws-sdk/invalid-dependency":"3.25.0","@aws-sdk/middleware-content-length":"3.25.0","@aws-sdk/middleware-host-header":"3.25.0","@aws-sdk/middleware-logger":"3.25.0","@aws-sdk/middleware-retry":"3.25.0","@aws-sdk/middleware-serde":"3.25.0","@aws-sdk/middleware-stack":"3.25.0","@aws-sdk/middleware-user-agent":"3.25.0","@aws-sdk/node-config-provider":"3.25.0","@aws-sdk/node-http-handler":"3.25.0","@aws-sdk/protocol-http":"3.25.0","@aws-sdk/smithy-client":"3.25.0","@aws-sdk/types":"3.25.0","@aws-sdk/url-parser":"3.25.0","@aws-sdk/util-base64-browser":"3.23.0","@aws-sdk/util-base64-node":"3.23.0","@aws-sdk/util-body-length-browser":"3.23.0","@aws-sdk/util-body-length-node":"3.23.0","@aws-sdk/util-user-agent-browser":"3.25.0","@aws-sdk/util-user-agent-node":"3.25.0","@aws-sdk/util-utf8-browser":"3.23.0","@aws-sdk/util-utf8-node":"3.23.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.23.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist/types/*":["dist/types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
 
 /***/ }),
 
@@ -21,7 +21,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SD
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.18.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","prepublishOnly":"yarn build && downlevel-dts dist/types dist/types/ts3.4","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.18.0","@aws-sdk/credential-provider-node":"3.18.0","@aws-sdk/fetch-http-handler":"3.18.0","@aws-sdk/hash-node":"3.18.0","@aws-sdk/invalid-dependency":"3.18.0","@aws-sdk/middleware-content-length":"3.18.0","@aws-sdk/middleware-host-header":"3.18.0","@aws-sdk/middleware-logger":"3.18.0","@aws-sdk/middleware-retry":"3.18.0","@aws-sdk/middleware-sdk-sts":"3.18.0","@aws-sdk/middleware-serde":"3.18.0","@aws-sdk/middleware-signing":"3.18.0","@aws-sdk/middleware-stack":"3.18.0","@aws-sdk/middleware-user-agent":"3.18.0","@aws-sdk/node-config-provider":"3.18.0","@aws-sdk/node-http-handler":"3.18.0","@aws-sdk/protocol-http":"3.18.0","@aws-sdk/smithy-client":"3.18.0","@aws-sdk/types":"3.18.0","@aws-sdk/url-parser":"3.18.0","@aws-sdk/util-base64-browser":"3.18.0","@aws-sdk/util-base64-node":"3.18.0","@aws-sdk/util-body-length-browser":"3.18.0","@aws-sdk/util-body-length-node":"3.18.0","@aws-sdk/util-user-agent-browser":"3.18.0","@aws-sdk/util-user-agent-node":"3.18.0","@aws-sdk/util-utf8-browser":"3.18.0","@aws-sdk/util-utf8-node":"3.18.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.0.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.18.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"types/*":["types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.25.0","scripts":{"clean":"yarn remove-definitions && yarn remove-dist && yarn remove-documentation","build-documentation":"yarn remove-documentation && typedoc ./","remove-definitions":"rimraf ./types","remove-dist":"rimraf ./dist","remove-documentation":"rimraf ./docs","test":"exit 0","build:cjs":"tsc -p tsconfig.json","build:es":"tsc -p tsconfig.es.json","build":"yarn build:cjs && yarn build:es","downlevel-dts":"downlevel-dts dist/types dist/types/ts3.4"},"main":"./dist/cjs/index.js","types":"./dist/types/index.d.ts","module":"./dist/es/index.js","browser":{"./runtimeConfig":"./runtimeConfig.browser"},"react-native":{"./runtimeConfig":"./runtimeConfig.native"},"sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"^1.0.0","@aws-crypto/sha256-js":"^1.0.0","@aws-sdk/config-resolver":"3.25.0","@aws-sdk/credential-provider-node":"3.25.0","@aws-sdk/fetch-http-handler":"3.25.0","@aws-sdk/hash-node":"3.25.0","@aws-sdk/invalid-dependency":"3.25.0","@aws-sdk/middleware-content-length":"3.25.0","@aws-sdk/middleware-host-header":"3.25.0","@aws-sdk/middleware-logger":"3.25.0","@aws-sdk/middleware-retry":"3.25.0","@aws-sdk/middleware-sdk-sts":"3.25.0","@aws-sdk/middleware-serde":"3.25.0","@aws-sdk/middleware-signing":"3.25.0","@aws-sdk/middleware-stack":"3.25.0","@aws-sdk/middleware-user-agent":"3.25.0","@aws-sdk/node-config-provider":"3.25.0","@aws-sdk/node-http-handler":"3.25.0","@aws-sdk/protocol-http":"3.25.0","@aws-sdk/smithy-client":"3.25.0","@aws-sdk/types":"3.25.0","@aws-sdk/url-parser":"3.25.0","@aws-sdk/util-base64-browser":"3.23.0","@aws-sdk/util-base64-node":"3.23.0","@aws-sdk/util-body-length-browser":"3.23.0","@aws-sdk/util-body-length-node":"3.23.0","@aws-sdk/util-user-agent-browser":"3.25.0","@aws-sdk/util-user-agent-node":"3.25.0","@aws-sdk/util-utf8-browser":"3.23.0","@aws-sdk/util-utf8-node":"3.23.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.0"},"devDependencies":{"@aws-sdk/client-documentation-generator":"3.23.0","@types/node":"^12.7.5","downlevel-dts":"0.7.0","jest":"^26.1.0","rimraf":"^3.0.0","ts-jest":"^26.4.1","typedoc":"^0.19.2","typescript":"~4.3.2"},"engines":{"node":">=10.0.0"},"typesVersions":{"<4.0":{"dist/types/*":["dist/types/ts3.4/*"]}},"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
 
 /***/ }),
 
@@ -73,25 +73,54 @@ const path = __importStar(__nccwpck_require__(5622));
 const s3 = __importStar(__nccwpck_require__(9690));
 const utils = __importStar(__nccwpck_require__(2682));
 function run() {
-    var e_1, _a;
+    var e_1, _a, e_2, _b;
+    var _c;
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const source = utils.getInputAsArray('source');
-            const recursive = utils.getInputAsBool('recursive');
+            const recursive = core.getBooleanInput('recursive');
+            const cleanup = core.getBooleanInput('cleanup');
             const s3ACL = core.getInput('s3-acl');
             const s3Bucket = core.getInput('s3-bucket');
             const s3Prefix = core.getInput('s3-prefix');
             const s3Client = new s3.S3Client({});
-            const globber = yield glob.create(source.join('\n'), { implicitDescendants: recursive });
-            try {
-                for (var _b = __asyncValues(globber.globGenerator()), _c; _c = yield _b.next(), !_c.done;) {
-                    const file = _c.value;
-                    if (!utils.fileExist(file)) {
-                        core.debug(`Ignoring "${file}": not a file`);
-                        continue;
+            if (cleanup) {
+                core.debug(`Clean-up requested, will remove objects from "s3://${path.join(s3Bucket, s3Prefix)}"`);
+                const objects = [];
+                try {
+                    for (var _d = __asyncValues(s3.paginateListObjectsV2({ client: s3Client }, {
+                        Bucket: s3Bucket,
+                        Prefix: s3Prefix,
+                    })), _e; _e = yield _d.next(), !_e.done;) {
+                        const page = _e.value;
+                        for (const object of (_c = page.Contents) !== null && _c !== void 0 ? _c : []) {
+                            if (object.Key) {
+                                core.info(`Removing object "s3://${path.join(s3Bucket, object.Key)}"`);
+                                objects.push({ Key: object.Key });
+                            }
+                        }
                     }
+                }
+                catch (e_1_1) { e_1 = { error: e_1_1 }; }
+                finally {
+                    try {
+                        if (_e && !_e.done && (_a = _d.return)) yield _a.call(_d);
+                    }
+                    finally { if (e_1) throw e_1.error; }
+                }
+                if (objects.length > 0) {
+                    yield s3Client.send(new s3.DeleteObjectsCommand({
+                        Bucket: s3Bucket,
+                        Delete: { Objects: objects },
+                    }));
+                }
+            }
+            const globber = yield glob.create(source.join('\n'), { matchDirectories: false, implicitDescendants: recursive });
+            try {
+                for (var _f = __asyncValues(globber.globGenerator()), _g; _g = yield _f.next(), !_g.done;) {
+                    const file = _g.value;
                     const s3Key = path.join(s3Prefix, path.basename(file));
-                    core.info(`Copying "${file}" to "s3://${s3Bucket}/${s3Key}"`);
+                    core.info(`Copying "${file}" to "s3://${path.join(s3Bucket, s3Key)}"`);
                     try {
                         yield s3Client.send(new s3.PutObjectCommand({
                             Bucket: s3Bucket,
@@ -105,12 +134,12 @@ function run() {
                     }
                 }
             }
-            catch (e_1_1) { e_1 = { error: e_1_1 }; }
+            catch (e_2_1) { e_2 = { error: e_2_1 }; }
             finally {
                 try {
-                    if (_c && !_c.done && (_a = _b.return)) yield _a.call(_b);
+                    if (_g && !_g.done && (_b = _f.return)) yield _b.call(_f);
                 }
-                finally { if (e_1) throw e_1.error; }
+                finally { if (e_2) throw e_2.error; }
             }
         }
         catch (error) {
@@ -4621,10 +4650,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  */
 class S3Client extends smithy_client_1.Client {
     constructor(configuration) {
-        let _config_0 = {
-            ...runtimeConfig_1.ClientDefaultValues,
-            ...configuration,
-        };
+        let _config_0 = runtimeConfig_1.getRuntimeConfig(configuration);
         let _config_1 = config_resolver_1.resolveRegionConfig(_config_0);
         let _config_2 = config_resolver_1.resolveEndpointsConfig(_config_1);
         let _config_3 = middleware_retry_1.resolveRetryConfig(_config_2);
@@ -11529,6 +11555,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PutBucketAclCommand = void 0;
 const models_0_1 = __nccwpck_require__(3473);
 const Aws_restXml_1 = __nccwpck_require__(257);
+const middleware_apply_body_checksum_1 = __nccwpck_require__(3949);
 const middleware_bucket_endpoint_1 = __nccwpck_require__(9239);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
@@ -11754,6 +11781,7 @@ class PutBucketAclCommand extends smithy_client_1.Command {
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_bucket_endpoint_1.getBucketEndpointPlugin(configuration));
+        this.middlewareStack.use(middleware_apply_body_checksum_1.getApplyMd5BodyChecksumPlugin(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "S3Client";
@@ -12102,6 +12130,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PutBucketEncryptionCommand = void 0;
 const models_0_1 = __nccwpck_require__(3473);
 const Aws_restXml_1 = __nccwpck_require__(257);
+const middleware_apply_body_checksum_1 = __nccwpck_require__(3949);
 const middleware_bucket_endpoint_1 = __nccwpck_require__(9239);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
@@ -12169,6 +12198,7 @@ class PutBucketEncryptionCommand extends smithy_client_1.Command {
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_bucket_endpoint_1.getBucketEndpointPlugin(configuration));
+        this.middlewareStack.use(middleware_apply_body_checksum_1.getApplyMd5BodyChecksumPlugin(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "S3Client";
@@ -12691,6 +12721,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PutBucketLoggingCommand = void 0;
 const models_0_1 = __nccwpck_require__(3473);
 const Aws_restXml_1 = __nccwpck_require__(257);
+const middleware_apply_body_checksum_1 = __nccwpck_require__(3949);
 const middleware_bucket_endpoint_1 = __nccwpck_require__(9239);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
@@ -12805,6 +12836,7 @@ class PutBucketLoggingCommand extends smithy_client_1.Command {
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_bucket_endpoint_1.getBucketEndpointPlugin(configuration));
+        this.middlewareStack.use(middleware_apply_body_checksum_1.getApplyMd5BodyChecksumPlugin(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "S3Client";
@@ -13091,6 +13123,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PutBucketOwnershipControlsCommand = void 0;
 const models_0_1 = __nccwpck_require__(3473);
 const Aws_restXml_1 = __nccwpck_require__(257);
+const middleware_apply_body_checksum_1 = __nccwpck_require__(3949);
 const middleware_bucket_endpoint_1 = __nccwpck_require__(9239);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
@@ -13142,6 +13175,7 @@ class PutBucketOwnershipControlsCommand extends smithy_client_1.Command {
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_bucket_endpoint_1.getBucketEndpointPlugin(configuration));
+        this.middlewareStack.use(middleware_apply_body_checksum_1.getApplyMd5BodyChecksumPlugin(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "S3Client";
@@ -13416,6 +13450,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PutBucketRequestPaymentCommand = void 0;
 const models_0_1 = __nccwpck_require__(3473);
 const Aws_restXml_1 = __nccwpck_require__(257);
+const middleware_apply_body_checksum_1 = __nccwpck_require__(3949);
 const middleware_bucket_endpoint_1 = __nccwpck_require__(9239);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
@@ -13469,6 +13504,7 @@ class PutBucketRequestPaymentCommand extends smithy_client_1.Command {
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_bucket_endpoint_1.getBucketEndpointPlugin(configuration));
+        this.middlewareStack.use(middleware_apply_body_checksum_1.getApplyMd5BodyChecksumPlugin(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "S3Client";
@@ -13654,6 +13690,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PutBucketVersioningCommand = void 0;
 const models_0_1 = __nccwpck_require__(3473);
 const Aws_restXml_1 = __nccwpck_require__(257);
+const middleware_apply_body_checksum_1 = __nccwpck_require__(3949);
 const middleware_bucket_endpoint_1 = __nccwpck_require__(9239);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
@@ -13737,6 +13774,7 @@ class PutBucketVersioningCommand extends smithy_client_1.Command {
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_bucket_endpoint_1.getBucketEndpointPlugin(configuration));
+        this.middlewareStack.use(middleware_apply_body_checksum_1.getApplyMd5BodyChecksumPlugin(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "S3Client";
@@ -13772,6 +13810,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PutBucketWebsiteCommand = void 0;
 const models_0_1 = __nccwpck_require__(3473);
 const Aws_restXml_1 = __nccwpck_require__(257);
+const middleware_apply_body_checksum_1 = __nccwpck_require__(3949);
 const middleware_bucket_endpoint_1 = __nccwpck_require__(9239);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
@@ -13932,6 +13971,7 @@ class PutBucketWebsiteCommand extends smithy_client_1.Command {
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_bucket_endpoint_1.getBucketEndpointPlugin(configuration));
+        this.middlewareStack.use(middleware_apply_body_checksum_1.getApplyMd5BodyChecksumPlugin(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "S3Client";
@@ -13967,6 +14007,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PutObjectAclCommand = void 0;
 const models_0_1 = __nccwpck_require__(3473);
 const Aws_restXml_1 = __nccwpck_require__(257);
+const middleware_apply_body_checksum_1 = __nccwpck_require__(3949);
 const middleware_bucket_endpoint_1 = __nccwpck_require__(9239);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
@@ -14179,6 +14220,7 @@ class PutObjectAclCommand extends smithy_client_1.Command {
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_bucket_endpoint_1.getBucketEndpointPlugin(configuration));
+        this.middlewareStack.use(middleware_apply_body_checksum_1.getApplyMd5BodyChecksumPlugin(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "S3Client";
@@ -14369,6 +14411,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PutObjectLegalHoldCommand = void 0;
 const models_0_1 = __nccwpck_require__(3473);
 const Aws_restXml_1 = __nccwpck_require__(257);
+const middleware_apply_body_checksum_1 = __nccwpck_require__(3949);
 const middleware_bucket_endpoint_1 = __nccwpck_require__(9239);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
@@ -14407,6 +14450,7 @@ class PutObjectLegalHoldCommand extends smithy_client_1.Command {
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_bucket_endpoint_1.getBucketEndpointPlugin(configuration));
+        this.middlewareStack.use(middleware_apply_body_checksum_1.getApplyMd5BodyChecksumPlugin(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "S3Client";
@@ -14442,6 +14486,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PutObjectLockConfigurationCommand = void 0;
 const models_0_1 = __nccwpck_require__(3473);
 const Aws_restXml_1 = __nccwpck_require__(257);
+const middleware_apply_body_checksum_1 = __nccwpck_require__(3949);
 const middleware_bucket_endpoint_1 = __nccwpck_require__(9239);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
@@ -14497,6 +14542,7 @@ class PutObjectLockConfigurationCommand extends smithy_client_1.Command {
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_bucket_endpoint_1.getBucketEndpointPlugin(configuration));
+        this.middlewareStack.use(middleware_apply_body_checksum_1.getApplyMd5BodyChecksumPlugin(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "S3Client";
@@ -14532,6 +14578,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PutObjectRetentionCommand = void 0;
 const models_0_1 = __nccwpck_require__(3473);
 const Aws_restXml_1 = __nccwpck_require__(257);
+const middleware_apply_body_checksum_1 = __nccwpck_require__(3949);
 const middleware_bucket_endpoint_1 = __nccwpck_require__(9239);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
@@ -14569,6 +14616,7 @@ class PutObjectRetentionCommand extends smithy_client_1.Command {
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_bucket_endpoint_1.getBucketEndpointPlugin(configuration));
+        this.middlewareStack.use(middleware_apply_body_checksum_1.getApplyMd5BodyChecksumPlugin(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "S3Client";
@@ -14604,6 +14652,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PutObjectTaggingCommand = void 0;
 const models_0_1 = __nccwpck_require__(3473);
 const Aws_restXml_1 = __nccwpck_require__(257);
+const middleware_apply_body_checksum_1 = __nccwpck_require__(3949);
 const middleware_bucket_endpoint_1 = __nccwpck_require__(9239);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
@@ -14742,6 +14791,7 @@ class PutObjectTaggingCommand extends smithy_client_1.Command {
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_bucket_endpoint_1.getBucketEndpointPlugin(configuration));
+        this.middlewareStack.use(middleware_apply_body_checksum_1.getApplyMd5BodyChecksumPlugin(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "S3Client";
@@ -14777,6 +14827,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PutPublicAccessBlockCommand = void 0;
 const models_0_1 = __nccwpck_require__(3473);
 const Aws_restXml_1 = __nccwpck_require__(257);
+const middleware_apply_body_checksum_1 = __nccwpck_require__(3949);
 const middleware_bucket_endpoint_1 = __nccwpck_require__(9239);
 const middleware_serde_1 = __nccwpck_require__(6142);
 const smithy_client_1 = __nccwpck_require__(2223);
@@ -14856,6 +14907,7 @@ class PutPublicAccessBlockCommand extends smithy_client_1.Command {
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use(middleware_serde_1.getSerdePlugin(configuration, this.serialize, this.deserialize));
         this.middlewareStack.use(middleware_bucket_endpoint_1.getBucketEndpointPlugin(configuration));
+        this.middlewareStack.use(middleware_apply_body_checksum_1.getApplyMd5BodyChecksumPlugin(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "S3Client";
@@ -19488,13 +19540,14 @@ const xml_builder_1 = __nccwpck_require__(9366);
 const entities_1 = __nccwpck_require__(3000);
 const fast_xml_parser_1 = __nccwpck_require__(7448);
 const serializeAws_restXmlAbortMultipartUploadCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.RequestPayer) && { "x-amz-request-payer": input.RequestPayer }),
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -19523,7 +19576,6 @@ const serializeAws_restXmlAbortMultipartUploadCommand = async (input, context) =
         ...(input.UploadId !== undefined && { uploadId: input.UploadId }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -19537,6 +19589,7 @@ const serializeAws_restXmlAbortMultipartUploadCommand = async (input, context) =
 };
 exports.serializeAws_restXmlAbortMultipartUploadCommand = serializeAws_restXmlAbortMultipartUploadCommand;
 const serializeAws_restXmlCompleteMultipartUploadCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.RequestPayer) && { "x-amz-request-payer": input.RequestPayer }),
@@ -19544,7 +19597,7 @@ const serializeAws_restXmlCompleteMultipartUploadCommand = async (input, context
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -19583,7 +19636,6 @@ const serializeAws_restXmlCompleteMultipartUploadCommand = async (input, context
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -19597,6 +19649,7 @@ const serializeAws_restXmlCompleteMultipartUploadCommand = async (input, context
 };
 exports.serializeAws_restXmlCompleteMultipartUploadCommand = serializeAws_restXmlCompleteMultipartUploadCommand;
 const serializeAws_restXmlCopyObjectCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ACL) && { "x-amz-acl": input.ACL }),
         ...(isSerializableHeaderValue(input.CacheControl) && { "cache-control": input.CacheControl }),
@@ -19679,7 +19732,7 @@ const serializeAws_restXmlCopyObjectCommand = async (input, context) => {
                 [`x-amz-meta-${suffix.toLowerCase()}`]: input.Metadata[suffix],
             }), {})),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -19707,7 +19760,6 @@ const serializeAws_restXmlCopyObjectCommand = async (input, context) => {
         "x-id": "CopyObject",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -19721,6 +19773,7 @@ const serializeAws_restXmlCopyObjectCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlCopyObjectCommand = serializeAws_restXmlCopyObjectCommand;
 const serializeAws_restXmlCreateBucketCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ACL) && { "x-amz-acl": input.ACL }),
@@ -19733,7 +19786,7 @@ const serializeAws_restXmlCreateBucketCommand = async (input, context) => {
             "x-amz-bucket-object-lock-enabled": input.ObjectLockEnabledForBucket.toString(),
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -19755,7 +19808,6 @@ const serializeAws_restXmlCreateBucketCommand = async (input, context) => {
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -19768,6 +19820,7 @@ const serializeAws_restXmlCreateBucketCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlCreateBucketCommand = serializeAws_restXmlCreateBucketCommand;
 const serializeAws_restXmlCreateMultipartUploadCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ACL) && { "x-amz-acl": input.ACL }),
         ...(isSerializableHeaderValue(input.CacheControl) && { "cache-control": input.CacheControl }),
@@ -19823,7 +19876,7 @@ const serializeAws_restXmlCreateMultipartUploadCommand = async (input, context) 
                 [`x-amz-meta-${suffix.toLowerCase()}`]: input.Metadata[suffix],
             }), {})),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -19852,7 +19905,6 @@ const serializeAws_restXmlCreateMultipartUploadCommand = async (input, context) 
         "x-id": "CreateMultipartUpload",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -19866,12 +19918,13 @@ const serializeAws_restXmlCreateMultipartUploadCommand = async (input, context) 
 };
 exports.serializeAws_restXmlCreateMultipartUploadCommand = serializeAws_restXmlCreateMultipartUploadCommand;
 const serializeAws_restXmlDeleteBucketCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -19883,7 +19936,6 @@ const serializeAws_restXmlDeleteBucketCommand = async (input, context) => {
         throw new Error("No value provided for input HTTP label: Bucket.");
     }
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -19896,12 +19948,13 @@ const serializeAws_restXmlDeleteBucketCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlDeleteBucketCommand = serializeAws_restXmlDeleteBucketCommand;
 const serializeAws_restXmlDeleteBucketAnalyticsConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -19917,7 +19970,6 @@ const serializeAws_restXmlDeleteBucketAnalyticsConfigurationCommand = async (inp
         ...(input.Id !== undefined && { id: input.Id }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -19931,12 +19983,13 @@ const serializeAws_restXmlDeleteBucketAnalyticsConfigurationCommand = async (inp
 };
 exports.serializeAws_restXmlDeleteBucketAnalyticsConfigurationCommand = serializeAws_restXmlDeleteBucketAnalyticsConfigurationCommand;
 const serializeAws_restXmlDeleteBucketCorsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -19951,7 +20004,6 @@ const serializeAws_restXmlDeleteBucketCorsCommand = async (input, context) => {
         cors: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -19965,12 +20017,13 @@ const serializeAws_restXmlDeleteBucketCorsCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlDeleteBucketCorsCommand = serializeAws_restXmlDeleteBucketCorsCommand;
 const serializeAws_restXmlDeleteBucketEncryptionCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -19985,7 +20038,6 @@ const serializeAws_restXmlDeleteBucketEncryptionCommand = async (input, context)
         encryption: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -19999,8 +20051,9 @@ const serializeAws_restXmlDeleteBucketEncryptionCommand = async (input, context)
 };
 exports.serializeAws_restXmlDeleteBucketEncryptionCommand = serializeAws_restXmlDeleteBucketEncryptionCommand;
 const serializeAws_restXmlDeleteBucketIntelligentTieringConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {};
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20016,7 +20069,6 @@ const serializeAws_restXmlDeleteBucketIntelligentTieringConfigurationCommand = a
         ...(input.Id !== undefined && { id: input.Id }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20030,12 +20082,13 @@ const serializeAws_restXmlDeleteBucketIntelligentTieringConfigurationCommand = a
 };
 exports.serializeAws_restXmlDeleteBucketIntelligentTieringConfigurationCommand = serializeAws_restXmlDeleteBucketIntelligentTieringConfigurationCommand;
 const serializeAws_restXmlDeleteBucketInventoryConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20051,7 +20104,6 @@ const serializeAws_restXmlDeleteBucketInventoryConfigurationCommand = async (inp
         ...(input.Id !== undefined && { id: input.Id }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20065,12 +20117,13 @@ const serializeAws_restXmlDeleteBucketInventoryConfigurationCommand = async (inp
 };
 exports.serializeAws_restXmlDeleteBucketInventoryConfigurationCommand = serializeAws_restXmlDeleteBucketInventoryConfigurationCommand;
 const serializeAws_restXmlDeleteBucketLifecycleCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20085,7 +20138,6 @@ const serializeAws_restXmlDeleteBucketLifecycleCommand = async (input, context) 
         lifecycle: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20099,12 +20151,13 @@ const serializeAws_restXmlDeleteBucketLifecycleCommand = async (input, context) 
 };
 exports.serializeAws_restXmlDeleteBucketLifecycleCommand = serializeAws_restXmlDeleteBucketLifecycleCommand;
 const serializeAws_restXmlDeleteBucketMetricsConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20120,7 +20173,6 @@ const serializeAws_restXmlDeleteBucketMetricsConfigurationCommand = async (input
         ...(input.Id !== undefined && { id: input.Id }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20134,12 +20186,13 @@ const serializeAws_restXmlDeleteBucketMetricsConfigurationCommand = async (input
 };
 exports.serializeAws_restXmlDeleteBucketMetricsConfigurationCommand = serializeAws_restXmlDeleteBucketMetricsConfigurationCommand;
 const serializeAws_restXmlDeleteBucketOwnershipControlsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20154,7 +20207,6 @@ const serializeAws_restXmlDeleteBucketOwnershipControlsCommand = async (input, c
         ownershipControls: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20168,12 +20220,13 @@ const serializeAws_restXmlDeleteBucketOwnershipControlsCommand = async (input, c
 };
 exports.serializeAws_restXmlDeleteBucketOwnershipControlsCommand = serializeAws_restXmlDeleteBucketOwnershipControlsCommand;
 const serializeAws_restXmlDeleteBucketPolicyCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20188,7 +20241,6 @@ const serializeAws_restXmlDeleteBucketPolicyCommand = async (input, context) => 
         policy: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20202,12 +20254,13 @@ const serializeAws_restXmlDeleteBucketPolicyCommand = async (input, context) => 
 };
 exports.serializeAws_restXmlDeleteBucketPolicyCommand = serializeAws_restXmlDeleteBucketPolicyCommand;
 const serializeAws_restXmlDeleteBucketReplicationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20222,7 +20275,6 @@ const serializeAws_restXmlDeleteBucketReplicationCommand = async (input, context
         replication: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20236,12 +20288,13 @@ const serializeAws_restXmlDeleteBucketReplicationCommand = async (input, context
 };
 exports.serializeAws_restXmlDeleteBucketReplicationCommand = serializeAws_restXmlDeleteBucketReplicationCommand;
 const serializeAws_restXmlDeleteBucketTaggingCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20256,7 +20309,6 @@ const serializeAws_restXmlDeleteBucketTaggingCommand = async (input, context) =>
         tagging: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20270,12 +20322,13 @@ const serializeAws_restXmlDeleteBucketTaggingCommand = async (input, context) =>
 };
 exports.serializeAws_restXmlDeleteBucketTaggingCommand = serializeAws_restXmlDeleteBucketTaggingCommand;
 const serializeAws_restXmlDeleteBucketWebsiteCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20290,7 +20343,6 @@ const serializeAws_restXmlDeleteBucketWebsiteCommand = async (input, context) =>
         website: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20304,6 +20356,7 @@ const serializeAws_restXmlDeleteBucketWebsiteCommand = async (input, context) =>
 };
 exports.serializeAws_restXmlDeleteBucketWebsiteCommand = serializeAws_restXmlDeleteBucketWebsiteCommand;
 const serializeAws_restXmlDeleteObjectCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.MFA) && { "x-amz-mfa": input.MFA }),
         ...(isSerializableHeaderValue(input.RequestPayer) && { "x-amz-request-payer": input.RequestPayer }),
@@ -20314,7 +20367,7 @@ const serializeAws_restXmlDeleteObjectCommand = async (input, context) => {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20343,7 +20396,6 @@ const serializeAws_restXmlDeleteObjectCommand = async (input, context) => {
         ...(input.VersionId !== undefined && { versionId: input.VersionId }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20357,6 +20409,7 @@ const serializeAws_restXmlDeleteObjectCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlDeleteObjectCommand = serializeAws_restXmlDeleteObjectCommand;
 const serializeAws_restXmlDeleteObjectsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.MFA) && { "x-amz-mfa": input.MFA }),
@@ -20368,7 +20421,7 @@ const serializeAws_restXmlDeleteObjectsCommand = async (input, context) => {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20394,7 +20447,6 @@ const serializeAws_restXmlDeleteObjectsCommand = async (input, context) => {
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20408,12 +20460,13 @@ const serializeAws_restXmlDeleteObjectsCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlDeleteObjectsCommand = serializeAws_restXmlDeleteObjectsCommand;
 const serializeAws_restXmlDeleteObjectTaggingCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20442,7 +20495,6 @@ const serializeAws_restXmlDeleteObjectTaggingCommand = async (input, context) =>
         ...(input.VersionId !== undefined && { versionId: input.VersionId }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20456,12 +20508,13 @@ const serializeAws_restXmlDeleteObjectTaggingCommand = async (input, context) =>
 };
 exports.serializeAws_restXmlDeleteObjectTaggingCommand = serializeAws_restXmlDeleteObjectTaggingCommand;
 const serializeAws_restXmlDeletePublicAccessBlockCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20476,7 +20529,6 @@ const serializeAws_restXmlDeletePublicAccessBlockCommand = async (input, context
         publicAccessBlock: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20490,12 +20542,13 @@ const serializeAws_restXmlDeletePublicAccessBlockCommand = async (input, context
 };
 exports.serializeAws_restXmlDeletePublicAccessBlockCommand = serializeAws_restXmlDeletePublicAccessBlockCommand;
 const serializeAws_restXmlGetBucketAccelerateConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20510,7 +20563,6 @@ const serializeAws_restXmlGetBucketAccelerateConfigurationCommand = async (input
         accelerate: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20524,12 +20576,13 @@ const serializeAws_restXmlGetBucketAccelerateConfigurationCommand = async (input
 };
 exports.serializeAws_restXmlGetBucketAccelerateConfigurationCommand = serializeAws_restXmlGetBucketAccelerateConfigurationCommand;
 const serializeAws_restXmlGetBucketAclCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20544,7 +20597,6 @@ const serializeAws_restXmlGetBucketAclCommand = async (input, context) => {
         acl: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20558,12 +20610,13 @@ const serializeAws_restXmlGetBucketAclCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlGetBucketAclCommand = serializeAws_restXmlGetBucketAclCommand;
 const serializeAws_restXmlGetBucketAnalyticsConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20580,7 +20633,6 @@ const serializeAws_restXmlGetBucketAnalyticsConfigurationCommand = async (input,
         ...(input.Id !== undefined && { id: input.Id }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20594,12 +20646,13 @@ const serializeAws_restXmlGetBucketAnalyticsConfigurationCommand = async (input,
 };
 exports.serializeAws_restXmlGetBucketAnalyticsConfigurationCommand = serializeAws_restXmlGetBucketAnalyticsConfigurationCommand;
 const serializeAws_restXmlGetBucketCorsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20614,7 +20667,6 @@ const serializeAws_restXmlGetBucketCorsCommand = async (input, context) => {
         cors: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20628,12 +20680,13 @@ const serializeAws_restXmlGetBucketCorsCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlGetBucketCorsCommand = serializeAws_restXmlGetBucketCorsCommand;
 const serializeAws_restXmlGetBucketEncryptionCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20648,7 +20701,6 @@ const serializeAws_restXmlGetBucketEncryptionCommand = async (input, context) =>
         encryption: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20662,8 +20714,9 @@ const serializeAws_restXmlGetBucketEncryptionCommand = async (input, context) =>
 };
 exports.serializeAws_restXmlGetBucketEncryptionCommand = serializeAws_restXmlGetBucketEncryptionCommand;
 const serializeAws_restXmlGetBucketIntelligentTieringConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {};
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20680,7 +20733,6 @@ const serializeAws_restXmlGetBucketIntelligentTieringConfigurationCommand = asyn
         ...(input.Id !== undefined && { id: input.Id }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20694,12 +20746,13 @@ const serializeAws_restXmlGetBucketIntelligentTieringConfigurationCommand = asyn
 };
 exports.serializeAws_restXmlGetBucketIntelligentTieringConfigurationCommand = serializeAws_restXmlGetBucketIntelligentTieringConfigurationCommand;
 const serializeAws_restXmlGetBucketInventoryConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20716,7 +20769,6 @@ const serializeAws_restXmlGetBucketInventoryConfigurationCommand = async (input,
         ...(input.Id !== undefined && { id: input.Id }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20730,12 +20782,13 @@ const serializeAws_restXmlGetBucketInventoryConfigurationCommand = async (input,
 };
 exports.serializeAws_restXmlGetBucketInventoryConfigurationCommand = serializeAws_restXmlGetBucketInventoryConfigurationCommand;
 const serializeAws_restXmlGetBucketLifecycleConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20750,7 +20803,6 @@ const serializeAws_restXmlGetBucketLifecycleConfigurationCommand = async (input,
         lifecycle: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20764,12 +20816,13 @@ const serializeAws_restXmlGetBucketLifecycleConfigurationCommand = async (input,
 };
 exports.serializeAws_restXmlGetBucketLifecycleConfigurationCommand = serializeAws_restXmlGetBucketLifecycleConfigurationCommand;
 const serializeAws_restXmlGetBucketLocationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20784,7 +20837,6 @@ const serializeAws_restXmlGetBucketLocationCommand = async (input, context) => {
         location: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20798,12 +20850,13 @@ const serializeAws_restXmlGetBucketLocationCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlGetBucketLocationCommand = serializeAws_restXmlGetBucketLocationCommand;
 const serializeAws_restXmlGetBucketLoggingCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20818,7 +20871,6 @@ const serializeAws_restXmlGetBucketLoggingCommand = async (input, context) => {
         logging: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20832,12 +20884,13 @@ const serializeAws_restXmlGetBucketLoggingCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlGetBucketLoggingCommand = serializeAws_restXmlGetBucketLoggingCommand;
 const serializeAws_restXmlGetBucketMetricsConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20854,7 +20907,6 @@ const serializeAws_restXmlGetBucketMetricsConfigurationCommand = async (input, c
         ...(input.Id !== undefined && { id: input.Id }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20868,12 +20920,13 @@ const serializeAws_restXmlGetBucketMetricsConfigurationCommand = async (input, c
 };
 exports.serializeAws_restXmlGetBucketMetricsConfigurationCommand = serializeAws_restXmlGetBucketMetricsConfigurationCommand;
 const serializeAws_restXmlGetBucketNotificationConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20888,7 +20941,6 @@ const serializeAws_restXmlGetBucketNotificationConfigurationCommand = async (inp
         notification: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20902,12 +20954,13 @@ const serializeAws_restXmlGetBucketNotificationConfigurationCommand = async (inp
 };
 exports.serializeAws_restXmlGetBucketNotificationConfigurationCommand = serializeAws_restXmlGetBucketNotificationConfigurationCommand;
 const serializeAws_restXmlGetBucketOwnershipControlsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20922,7 +20975,6 @@ const serializeAws_restXmlGetBucketOwnershipControlsCommand = async (input, cont
         ownershipControls: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20936,12 +20988,13 @@ const serializeAws_restXmlGetBucketOwnershipControlsCommand = async (input, cont
 };
 exports.serializeAws_restXmlGetBucketOwnershipControlsCommand = serializeAws_restXmlGetBucketOwnershipControlsCommand;
 const serializeAws_restXmlGetBucketPolicyCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20956,7 +21009,6 @@ const serializeAws_restXmlGetBucketPolicyCommand = async (input, context) => {
         policy: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -20970,12 +21022,13 @@ const serializeAws_restXmlGetBucketPolicyCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlGetBucketPolicyCommand = serializeAws_restXmlGetBucketPolicyCommand;
 const serializeAws_restXmlGetBucketPolicyStatusCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -20990,7 +21043,6 @@ const serializeAws_restXmlGetBucketPolicyStatusCommand = async (input, context) 
         policyStatus: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21004,12 +21056,13 @@ const serializeAws_restXmlGetBucketPolicyStatusCommand = async (input, context) 
 };
 exports.serializeAws_restXmlGetBucketPolicyStatusCommand = serializeAws_restXmlGetBucketPolicyStatusCommand;
 const serializeAws_restXmlGetBucketReplicationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21024,7 +21077,6 @@ const serializeAws_restXmlGetBucketReplicationCommand = async (input, context) =
         replication: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21038,12 +21090,13 @@ const serializeAws_restXmlGetBucketReplicationCommand = async (input, context) =
 };
 exports.serializeAws_restXmlGetBucketReplicationCommand = serializeAws_restXmlGetBucketReplicationCommand;
 const serializeAws_restXmlGetBucketRequestPaymentCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21058,7 +21111,6 @@ const serializeAws_restXmlGetBucketRequestPaymentCommand = async (input, context
         requestPayment: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21072,12 +21124,13 @@ const serializeAws_restXmlGetBucketRequestPaymentCommand = async (input, context
 };
 exports.serializeAws_restXmlGetBucketRequestPaymentCommand = serializeAws_restXmlGetBucketRequestPaymentCommand;
 const serializeAws_restXmlGetBucketTaggingCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21092,7 +21145,6 @@ const serializeAws_restXmlGetBucketTaggingCommand = async (input, context) => {
         tagging: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21106,12 +21158,13 @@ const serializeAws_restXmlGetBucketTaggingCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlGetBucketTaggingCommand = serializeAws_restXmlGetBucketTaggingCommand;
 const serializeAws_restXmlGetBucketVersioningCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21126,7 +21179,6 @@ const serializeAws_restXmlGetBucketVersioningCommand = async (input, context) =>
         versioning: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21140,12 +21192,13 @@ const serializeAws_restXmlGetBucketVersioningCommand = async (input, context) =>
 };
 exports.serializeAws_restXmlGetBucketVersioningCommand = serializeAws_restXmlGetBucketVersioningCommand;
 const serializeAws_restXmlGetBucketWebsiteCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21160,7 +21213,6 @@ const serializeAws_restXmlGetBucketWebsiteCommand = async (input, context) => {
         website: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21174,6 +21226,7 @@ const serializeAws_restXmlGetBucketWebsiteCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlGetBucketWebsiteCommand = serializeAws_restXmlGetBucketWebsiteCommand;
 const serializeAws_restXmlGetObjectCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.IfMatch) && { "if-match": input.IfMatch }),
         ...(isSerializableHeaderValue(input.IfModifiedSince) && {
@@ -21198,7 +21251,7 @@ const serializeAws_restXmlGetObjectCommand = async (input, context) => {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21238,7 +21291,6 @@ const serializeAws_restXmlGetObjectCommand = async (input, context) => {
         ...(input.PartNumber !== undefined && { partNumber: input.PartNumber.toString() }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21252,13 +21304,14 @@ const serializeAws_restXmlGetObjectCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlGetObjectCommand = serializeAws_restXmlGetObjectCommand;
 const serializeAws_restXmlGetObjectAclCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.RequestPayer) && { "x-amz-request-payer": input.RequestPayer }),
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21287,7 +21340,6 @@ const serializeAws_restXmlGetObjectAclCommand = async (input, context) => {
         ...(input.VersionId !== undefined && { versionId: input.VersionId }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21301,13 +21353,14 @@ const serializeAws_restXmlGetObjectAclCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlGetObjectAclCommand = serializeAws_restXmlGetObjectAclCommand;
 const serializeAws_restXmlGetObjectLegalHoldCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.RequestPayer) && { "x-amz-request-payer": input.RequestPayer }),
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21336,7 +21389,6 @@ const serializeAws_restXmlGetObjectLegalHoldCommand = async (input, context) => 
         ...(input.VersionId !== undefined && { versionId: input.VersionId }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21350,12 +21402,13 @@ const serializeAws_restXmlGetObjectLegalHoldCommand = async (input, context) => 
 };
 exports.serializeAws_restXmlGetObjectLegalHoldCommand = serializeAws_restXmlGetObjectLegalHoldCommand;
 const serializeAws_restXmlGetObjectLockConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21370,7 +21423,6 @@ const serializeAws_restXmlGetObjectLockConfigurationCommand = async (input, cont
         "object-lock": "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21384,13 +21436,14 @@ const serializeAws_restXmlGetObjectLockConfigurationCommand = async (input, cont
 };
 exports.serializeAws_restXmlGetObjectLockConfigurationCommand = serializeAws_restXmlGetObjectLockConfigurationCommand;
 const serializeAws_restXmlGetObjectRetentionCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.RequestPayer) && { "x-amz-request-payer": input.RequestPayer }),
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21419,7 +21472,6 @@ const serializeAws_restXmlGetObjectRetentionCommand = async (input, context) => 
         ...(input.VersionId !== undefined && { versionId: input.VersionId }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21433,13 +21485,14 @@ const serializeAws_restXmlGetObjectRetentionCommand = async (input, context) => 
 };
 exports.serializeAws_restXmlGetObjectRetentionCommand = serializeAws_restXmlGetObjectRetentionCommand;
 const serializeAws_restXmlGetObjectTaggingCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
         ...(isSerializableHeaderValue(input.RequestPayer) && { "x-amz-request-payer": input.RequestPayer }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21468,7 +21521,6 @@ const serializeAws_restXmlGetObjectTaggingCommand = async (input, context) => {
         ...(input.VersionId !== undefined && { versionId: input.VersionId }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21482,13 +21534,14 @@ const serializeAws_restXmlGetObjectTaggingCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlGetObjectTaggingCommand = serializeAws_restXmlGetObjectTaggingCommand;
 const serializeAws_restXmlGetObjectTorrentCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.RequestPayer) && { "x-amz-request-payer": input.RequestPayer }),
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21516,7 +21569,6 @@ const serializeAws_restXmlGetObjectTorrentCommand = async (input, context) => {
         torrent: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21530,12 +21582,13 @@ const serializeAws_restXmlGetObjectTorrentCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlGetObjectTorrentCommand = serializeAws_restXmlGetObjectTorrentCommand;
 const serializeAws_restXmlGetPublicAccessBlockCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21550,7 +21603,6 @@ const serializeAws_restXmlGetPublicAccessBlockCommand = async (input, context) =
         publicAccessBlock: "",
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21564,12 +21616,13 @@ const serializeAws_restXmlGetPublicAccessBlockCommand = async (input, context) =
 };
 exports.serializeAws_restXmlGetPublicAccessBlockCommand = serializeAws_restXmlGetPublicAccessBlockCommand;
 const serializeAws_restXmlHeadBucketCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21581,7 +21634,6 @@ const serializeAws_restXmlHeadBucketCommand = async (input, context) => {
         throw new Error("No value provided for input HTTP label: Bucket.");
     }
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21594,6 +21646,7 @@ const serializeAws_restXmlHeadBucketCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlHeadBucketCommand = serializeAws_restXmlHeadBucketCommand;
 const serializeAws_restXmlHeadObjectCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.IfMatch) && { "if-match": input.IfMatch }),
         ...(isSerializableHeaderValue(input.IfModifiedSince) && {
@@ -21618,7 +21671,7 @@ const serializeAws_restXmlHeadObjectCommand = async (input, context) => {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21647,7 +21700,6 @@ const serializeAws_restXmlHeadObjectCommand = async (input, context) => {
         ...(input.PartNumber !== undefined && { partNumber: input.PartNumber.toString() }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21661,12 +21713,13 @@ const serializeAws_restXmlHeadObjectCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlHeadObjectCommand = serializeAws_restXmlHeadObjectCommand;
 const serializeAws_restXmlListBucketAnalyticsConfigurationsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21683,7 +21736,6 @@ const serializeAws_restXmlListBucketAnalyticsConfigurationsCommand = async (inpu
         ...(input.ContinuationToken !== undefined && { "continuation-token": input.ContinuationToken }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21697,8 +21749,9 @@ const serializeAws_restXmlListBucketAnalyticsConfigurationsCommand = async (inpu
 };
 exports.serializeAws_restXmlListBucketAnalyticsConfigurationsCommand = serializeAws_restXmlListBucketAnalyticsConfigurationsCommand;
 const serializeAws_restXmlListBucketIntelligentTieringConfigurationsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {};
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21715,7 +21768,6 @@ const serializeAws_restXmlListBucketIntelligentTieringConfigurationsCommand = as
         ...(input.ContinuationToken !== undefined && { "continuation-token": input.ContinuationToken }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21729,12 +21781,13 @@ const serializeAws_restXmlListBucketIntelligentTieringConfigurationsCommand = as
 };
 exports.serializeAws_restXmlListBucketIntelligentTieringConfigurationsCommand = serializeAws_restXmlListBucketIntelligentTieringConfigurationsCommand;
 const serializeAws_restXmlListBucketInventoryConfigurationsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21751,7 +21804,6 @@ const serializeAws_restXmlListBucketInventoryConfigurationsCommand = async (inpu
         ...(input.ContinuationToken !== undefined && { "continuation-token": input.ContinuationToken }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21765,12 +21817,13 @@ const serializeAws_restXmlListBucketInventoryConfigurationsCommand = async (inpu
 };
 exports.serializeAws_restXmlListBucketInventoryConfigurationsCommand = serializeAws_restXmlListBucketInventoryConfigurationsCommand;
 const serializeAws_restXmlListBucketMetricsConfigurationsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21787,7 +21840,6 @@ const serializeAws_restXmlListBucketMetricsConfigurationsCommand = async (input,
         ...(input.ContinuationToken !== undefined && { "continuation-token": input.ContinuationToken }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21801,13 +21853,13 @@ const serializeAws_restXmlListBucketMetricsConfigurationsCommand = async (input,
 };
 exports.serializeAws_restXmlListBucketMetricsConfigurationsCommand = serializeAws_restXmlListBucketMetricsConfigurationsCommand;
 const serializeAws_restXmlListBucketsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
     };
-    let resolvedPath = "/";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/";
     let body;
     body = "";
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21820,12 +21872,13 @@ const serializeAws_restXmlListBucketsCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlListBucketsCommand = serializeAws_restXmlListBucketsCommand;
 const serializeAws_restXmlListMultipartUploadsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21846,7 +21899,6 @@ const serializeAws_restXmlListMultipartUploadsCommand = async (input, context) =
         ...(input.UploadIdMarker !== undefined && { "upload-id-marker": input.UploadIdMarker }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21860,13 +21912,14 @@ const serializeAws_restXmlListMultipartUploadsCommand = async (input, context) =
 };
 exports.serializeAws_restXmlListMultipartUploadsCommand = serializeAws_restXmlListMultipartUploadsCommand;
 const serializeAws_restXmlListObjectsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.RequestPayer) && { "x-amz-request-payer": input.RequestPayer }),
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21885,7 +21938,6 @@ const serializeAws_restXmlListObjectsCommand = async (input, context) => {
         ...(input.Prefix !== undefined && { prefix: input.Prefix }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21899,13 +21951,14 @@ const serializeAws_restXmlListObjectsCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlListObjectsCommand = serializeAws_restXmlListObjectsCommand;
 const serializeAws_restXmlListObjectsV2Command = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.RequestPayer) && { "x-amz-request-payer": input.RequestPayer }),
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21927,7 +21980,6 @@ const serializeAws_restXmlListObjectsV2Command = async (input, context) => {
         ...(input.StartAfter !== undefined && { "start-after": input.StartAfter }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21941,12 +21993,13 @@ const serializeAws_restXmlListObjectsV2Command = async (input, context) => {
 };
 exports.serializeAws_restXmlListObjectsV2Command = serializeAws_restXmlListObjectsV2Command;
 const serializeAws_restXmlListObjectVersionsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -21967,7 +22020,6 @@ const serializeAws_restXmlListObjectVersionsCommand = async (input, context) => 
         ...(input.VersionIdMarker !== undefined && { "version-id-marker": input.VersionIdMarker }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -21981,13 +22033,14 @@ const serializeAws_restXmlListObjectVersionsCommand = async (input, context) => 
 };
 exports.serializeAws_restXmlListObjectVersionsCommand = serializeAws_restXmlListObjectVersionsCommand;
 const serializeAws_restXmlListPartsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.RequestPayer) && { "x-amz-request-payer": input.RequestPayer }),
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22018,7 +22071,6 @@ const serializeAws_restXmlListPartsCommand = async (input, context) => {
         ...(input.UploadId !== undefined && { uploadId: input.UploadId }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22032,13 +22084,14 @@ const serializeAws_restXmlListPartsCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlListPartsCommand = serializeAws_restXmlListPartsCommand;
 const serializeAws_restXmlPutBucketAccelerateConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22063,7 +22116,6 @@ const serializeAws_restXmlPutBucketAccelerateConfigurationCommand = async (input
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22077,6 +22129,7 @@ const serializeAws_restXmlPutBucketAccelerateConfigurationCommand = async (input
 };
 exports.serializeAws_restXmlPutBucketAccelerateConfigurationCommand = serializeAws_restXmlPutBucketAccelerateConfigurationCommand;
 const serializeAws_restXmlPutBucketAclCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ACL) && { "x-amz-acl": input.ACL }),
@@ -22090,7 +22143,7 @@ const serializeAws_restXmlPutBucketAclCommand = async (input, context) => {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22115,7 +22168,6 @@ const serializeAws_restXmlPutBucketAclCommand = async (input, context) => {
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22129,13 +22181,14 @@ const serializeAws_restXmlPutBucketAclCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlPutBucketAclCommand = serializeAws_restXmlPutBucketAclCommand;
 const serializeAws_restXmlPutBucketAnalyticsConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22161,7 +22214,6 @@ const serializeAws_restXmlPutBucketAnalyticsConfigurationCommand = async (input,
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22175,6 +22227,7 @@ const serializeAws_restXmlPutBucketAnalyticsConfigurationCommand = async (input,
 };
 exports.serializeAws_restXmlPutBucketAnalyticsConfigurationCommand = serializeAws_restXmlPutBucketAnalyticsConfigurationCommand;
 const serializeAws_restXmlPutBucketCorsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ContentMD5) && { "content-md5": input.ContentMD5 }),
@@ -22182,7 +22235,7 @@ const serializeAws_restXmlPutBucketCorsCommand = async (input, context) => {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22207,7 +22260,6 @@ const serializeAws_restXmlPutBucketCorsCommand = async (input, context) => {
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22221,6 +22273,7 @@ const serializeAws_restXmlPutBucketCorsCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlPutBucketCorsCommand = serializeAws_restXmlPutBucketCorsCommand;
 const serializeAws_restXmlPutBucketEncryptionCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ContentMD5) && { "content-md5": input.ContentMD5 }),
@@ -22228,7 +22281,7 @@ const serializeAws_restXmlPutBucketEncryptionCommand = async (input, context) =>
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22253,7 +22306,6 @@ const serializeAws_restXmlPutBucketEncryptionCommand = async (input, context) =>
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22267,10 +22319,11 @@ const serializeAws_restXmlPutBucketEncryptionCommand = async (input, context) =>
 };
 exports.serializeAws_restXmlPutBucketEncryptionCommand = serializeAws_restXmlPutBucketEncryptionCommand;
 const serializeAws_restXmlPutBucketIntelligentTieringConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22296,7 +22349,6 @@ const serializeAws_restXmlPutBucketIntelligentTieringConfigurationCommand = asyn
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22310,13 +22362,14 @@ const serializeAws_restXmlPutBucketIntelligentTieringConfigurationCommand = asyn
 };
 exports.serializeAws_restXmlPutBucketIntelligentTieringConfigurationCommand = serializeAws_restXmlPutBucketIntelligentTieringConfigurationCommand;
 const serializeAws_restXmlPutBucketInventoryConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22342,7 +22395,6 @@ const serializeAws_restXmlPutBucketInventoryConfigurationCommand = async (input,
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22356,13 +22408,14 @@ const serializeAws_restXmlPutBucketInventoryConfigurationCommand = async (input,
 };
 exports.serializeAws_restXmlPutBucketInventoryConfigurationCommand = serializeAws_restXmlPutBucketInventoryConfigurationCommand;
 const serializeAws_restXmlPutBucketLifecycleConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22387,7 +22440,6 @@ const serializeAws_restXmlPutBucketLifecycleConfigurationCommand = async (input,
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22401,6 +22453,7 @@ const serializeAws_restXmlPutBucketLifecycleConfigurationCommand = async (input,
 };
 exports.serializeAws_restXmlPutBucketLifecycleConfigurationCommand = serializeAws_restXmlPutBucketLifecycleConfigurationCommand;
 const serializeAws_restXmlPutBucketLoggingCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ContentMD5) && { "content-md5": input.ContentMD5 }),
@@ -22408,7 +22461,7 @@ const serializeAws_restXmlPutBucketLoggingCommand = async (input, context) => {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22433,7 +22486,6 @@ const serializeAws_restXmlPutBucketLoggingCommand = async (input, context) => {
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22447,13 +22499,14 @@ const serializeAws_restXmlPutBucketLoggingCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlPutBucketLoggingCommand = serializeAws_restXmlPutBucketLoggingCommand;
 const serializeAws_restXmlPutBucketMetricsConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22479,7 +22532,6 @@ const serializeAws_restXmlPutBucketMetricsConfigurationCommand = async (input, c
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22493,13 +22545,14 @@ const serializeAws_restXmlPutBucketMetricsConfigurationCommand = async (input, c
 };
 exports.serializeAws_restXmlPutBucketMetricsConfigurationCommand = serializeAws_restXmlPutBucketMetricsConfigurationCommand;
 const serializeAws_restXmlPutBucketNotificationConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ExpectedBucketOwner) && {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22524,7 +22577,6 @@ const serializeAws_restXmlPutBucketNotificationConfigurationCommand = async (inp
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22538,6 +22590,7 @@ const serializeAws_restXmlPutBucketNotificationConfigurationCommand = async (inp
 };
 exports.serializeAws_restXmlPutBucketNotificationConfigurationCommand = serializeAws_restXmlPutBucketNotificationConfigurationCommand;
 const serializeAws_restXmlPutBucketOwnershipControlsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ContentMD5) && { "content-md5": input.ContentMD5 }),
@@ -22545,7 +22598,7 @@ const serializeAws_restXmlPutBucketOwnershipControlsCommand = async (input, cont
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22570,7 +22623,6 @@ const serializeAws_restXmlPutBucketOwnershipControlsCommand = async (input, cont
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22584,6 +22636,7 @@ const serializeAws_restXmlPutBucketOwnershipControlsCommand = async (input, cont
 };
 exports.serializeAws_restXmlPutBucketOwnershipControlsCommand = serializeAws_restXmlPutBucketOwnershipControlsCommand;
 const serializeAws_restXmlPutBucketPolicyCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "text/plain",
         ...(isSerializableHeaderValue(input.ContentMD5) && { "content-md5": input.ContentMD5 }),
@@ -22594,7 +22647,7 @@ const serializeAws_restXmlPutBucketPolicyCommand = async (input, context) => {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22617,7 +22670,6 @@ const serializeAws_restXmlPutBucketPolicyCommand = async (input, context) => {
         contents = input.Policy;
         body = contents;
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22631,6 +22683,7 @@ const serializeAws_restXmlPutBucketPolicyCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlPutBucketPolicyCommand = serializeAws_restXmlPutBucketPolicyCommand;
 const serializeAws_restXmlPutBucketReplicationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ContentMD5) && { "content-md5": input.ContentMD5 }),
@@ -22639,7 +22692,7 @@ const serializeAws_restXmlPutBucketReplicationCommand = async (input, context) =
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22664,7 +22717,6 @@ const serializeAws_restXmlPutBucketReplicationCommand = async (input, context) =
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22678,6 +22730,7 @@ const serializeAws_restXmlPutBucketReplicationCommand = async (input, context) =
 };
 exports.serializeAws_restXmlPutBucketReplicationCommand = serializeAws_restXmlPutBucketReplicationCommand;
 const serializeAws_restXmlPutBucketRequestPaymentCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ContentMD5) && { "content-md5": input.ContentMD5 }),
@@ -22685,7 +22738,7 @@ const serializeAws_restXmlPutBucketRequestPaymentCommand = async (input, context
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22710,7 +22763,6 @@ const serializeAws_restXmlPutBucketRequestPaymentCommand = async (input, context
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22724,6 +22776,7 @@ const serializeAws_restXmlPutBucketRequestPaymentCommand = async (input, context
 };
 exports.serializeAws_restXmlPutBucketRequestPaymentCommand = serializeAws_restXmlPutBucketRequestPaymentCommand;
 const serializeAws_restXmlPutBucketTaggingCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ContentMD5) && { "content-md5": input.ContentMD5 }),
@@ -22731,7 +22784,7 @@ const serializeAws_restXmlPutBucketTaggingCommand = async (input, context) => {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22756,7 +22809,6 @@ const serializeAws_restXmlPutBucketTaggingCommand = async (input, context) => {
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22770,6 +22822,7 @@ const serializeAws_restXmlPutBucketTaggingCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlPutBucketTaggingCommand = serializeAws_restXmlPutBucketTaggingCommand;
 const serializeAws_restXmlPutBucketVersioningCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ContentMD5) && { "content-md5": input.ContentMD5 }),
@@ -22778,7 +22831,7 @@ const serializeAws_restXmlPutBucketVersioningCommand = async (input, context) =>
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22803,7 +22856,6 @@ const serializeAws_restXmlPutBucketVersioningCommand = async (input, context) =>
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22817,6 +22869,7 @@ const serializeAws_restXmlPutBucketVersioningCommand = async (input, context) =>
 };
 exports.serializeAws_restXmlPutBucketVersioningCommand = serializeAws_restXmlPutBucketVersioningCommand;
 const serializeAws_restXmlPutBucketWebsiteCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ContentMD5) && { "content-md5": input.ContentMD5 }),
@@ -22824,7 +22877,7 @@ const serializeAws_restXmlPutBucketWebsiteCommand = async (input, context) => {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22849,7 +22902,6 @@ const serializeAws_restXmlPutBucketWebsiteCommand = async (input, context) => {
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22863,6 +22915,7 @@ const serializeAws_restXmlPutBucketWebsiteCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlPutBucketWebsiteCommand = serializeAws_restXmlPutBucketWebsiteCommand;
 const serializeAws_restXmlPutObjectCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/octet-stream",
         ...(isSerializableHeaderValue(input.ACL) && { "x-amz-acl": input.ACL }),
@@ -22921,7 +22974,7 @@ const serializeAws_restXmlPutObjectCommand = async (input, context) => {
                 [`x-amz-meta-${suffix.toLowerCase()}`]: input.Metadata[suffix],
             }), {})),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -22957,7 +23010,6 @@ const serializeAws_restXmlPutObjectCommand = async (input, context) => {
         contents = input.Body;
         body = contents;
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -22971,6 +23023,7 @@ const serializeAws_restXmlPutObjectCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlPutObjectCommand = serializeAws_restXmlPutObjectCommand;
 const serializeAws_restXmlPutObjectAclCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ACL) && { "x-amz-acl": input.ACL }),
@@ -22985,7 +23038,7 @@ const serializeAws_restXmlPutObjectAclCommand = async (input, context) => {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -23024,7 +23077,6 @@ const serializeAws_restXmlPutObjectAclCommand = async (input, context) => {
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -23038,6 +23090,7 @@ const serializeAws_restXmlPutObjectAclCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlPutObjectAclCommand = serializeAws_restXmlPutObjectAclCommand;
 const serializeAws_restXmlPutObjectLegalHoldCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.RequestPayer) && { "x-amz-request-payer": input.RequestPayer }),
@@ -23046,7 +23099,7 @@ const serializeAws_restXmlPutObjectLegalHoldCommand = async (input, context) => 
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -23085,7 +23138,6 @@ const serializeAws_restXmlPutObjectLegalHoldCommand = async (input, context) => 
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -23099,6 +23151,7 @@ const serializeAws_restXmlPutObjectLegalHoldCommand = async (input, context) => 
 };
 exports.serializeAws_restXmlPutObjectLegalHoldCommand = serializeAws_restXmlPutObjectLegalHoldCommand;
 const serializeAws_restXmlPutObjectLockConfigurationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.RequestPayer) && { "x-amz-request-payer": input.RequestPayer }),
@@ -23108,7 +23161,7 @@ const serializeAws_restXmlPutObjectLockConfigurationCommand = async (input, cont
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -23133,7 +23186,6 @@ const serializeAws_restXmlPutObjectLockConfigurationCommand = async (input, cont
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -23147,6 +23199,7 @@ const serializeAws_restXmlPutObjectLockConfigurationCommand = async (input, cont
 };
 exports.serializeAws_restXmlPutObjectLockConfigurationCommand = serializeAws_restXmlPutObjectLockConfigurationCommand;
 const serializeAws_restXmlPutObjectRetentionCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.RequestPayer) && { "x-amz-request-payer": input.RequestPayer }),
@@ -23158,7 +23211,7 @@ const serializeAws_restXmlPutObjectRetentionCommand = async (input, context) => 
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -23197,7 +23250,6 @@ const serializeAws_restXmlPutObjectRetentionCommand = async (input, context) => 
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -23211,6 +23263,7 @@ const serializeAws_restXmlPutObjectRetentionCommand = async (input, context) => 
 };
 exports.serializeAws_restXmlPutObjectRetentionCommand = serializeAws_restXmlPutObjectRetentionCommand;
 const serializeAws_restXmlPutObjectTaggingCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ContentMD5) && { "content-md5": input.ContentMD5 }),
@@ -23219,7 +23272,7 @@ const serializeAws_restXmlPutObjectTaggingCommand = async (input, context) => {
         }),
         ...(isSerializableHeaderValue(input.RequestPayer) && { "x-amz-request-payer": input.RequestPayer }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -23258,7 +23311,6 @@ const serializeAws_restXmlPutObjectTaggingCommand = async (input, context) => {
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -23272,6 +23324,7 @@ const serializeAws_restXmlPutObjectTaggingCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlPutObjectTaggingCommand = serializeAws_restXmlPutObjectTaggingCommand;
 const serializeAws_restXmlPutPublicAccessBlockCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.ContentMD5) && { "content-md5": input.ContentMD5 }),
@@ -23279,7 +23332,7 @@ const serializeAws_restXmlPutPublicAccessBlockCommand = async (input, context) =
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -23304,7 +23357,6 @@ const serializeAws_restXmlPutPublicAccessBlockCommand = async (input, context) =
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -23318,6 +23370,7 @@ const serializeAws_restXmlPutPublicAccessBlockCommand = async (input, context) =
 };
 exports.serializeAws_restXmlPutPublicAccessBlockCommand = serializeAws_restXmlPutPublicAccessBlockCommand;
 const serializeAws_restXmlRestoreObjectCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.RequestPayer) && { "x-amz-request-payer": input.RequestPayer }),
@@ -23325,7 +23378,7 @@ const serializeAws_restXmlRestoreObjectCommand = async (input, context) => {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -23365,7 +23418,6 @@ const serializeAws_restXmlRestoreObjectCommand = async (input, context) => {
         contents.addAttribute("xmlns", "http://s3.amazonaws.com/doc/2006-03-01/");
         body += contents.toString();
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -23379,6 +23431,7 @@ const serializeAws_restXmlRestoreObjectCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlRestoreObjectCommand = serializeAws_restXmlRestoreObjectCommand;
 const serializeAws_restXmlSelectObjectContentCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/xml",
         ...(isSerializableHeaderValue(input.SSECustomerAlgorithm) && {
@@ -23394,7 +23447,7 @@ const serializeAws_restXmlSelectObjectContentCommand = async (input, context) =>
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -23454,7 +23507,6 @@ const serializeAws_restXmlSelectObjectContentCommand = async (input, context) =>
         bodyNode.addChildNode(node);
     }
     body += bodyNode.toString();
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -23468,6 +23520,7 @@ const serializeAws_restXmlSelectObjectContentCommand = async (input, context) =>
 };
 exports.serializeAws_restXmlSelectObjectContentCommand = serializeAws_restXmlSelectObjectContentCommand;
 const serializeAws_restXmlUploadPartCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/octet-stream",
         ...(isSerializableHeaderValue(input.ContentLength) && { "content-length": input.ContentLength.toString() }),
@@ -23486,7 +23539,7 @@ const serializeAws_restXmlUploadPartCommand = async (input, context) => {
             "x-amz-expected-bucket-owner": input.ExpectedBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -23524,7 +23577,6 @@ const serializeAws_restXmlUploadPartCommand = async (input, context) => {
         contents = input.Body;
         body = contents;
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -23538,6 +23590,7 @@ const serializeAws_restXmlUploadPartCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlUploadPartCommand = serializeAws_restXmlUploadPartCommand;
 const serializeAws_restXmlUploadPartCopyCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.CopySource) && { "x-amz-copy-source": input.CopySource }),
         ...(isSerializableHeaderValue(input.CopySourceIfMatch) && {
@@ -23579,7 +23632,7 @@ const serializeAws_restXmlUploadPartCopyCommand = async (input, context) => {
             "x-amz-source-expected-bucket-owner": input.ExpectedSourceBucketOwner,
         }),
     };
-    let resolvedPath = "/{Bucket}/{Key+}";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/{Bucket}/{Key+}";
     if (input.Bucket !== undefined) {
         const labelValue = input.Bucket;
         if (labelValue.length <= 0) {
@@ -23609,7 +23662,6 @@ const serializeAws_restXmlUploadPartCopyCommand = async (input, context) => {
         ...(input.UploadId !== undefined && { uploadId: input.UploadId }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -23623,6 +23675,7 @@ const serializeAws_restXmlUploadPartCopyCommand = async (input, context) => {
 };
 exports.serializeAws_restXmlUploadPartCopyCommand = serializeAws_restXmlUploadPartCopyCommand;
 const serializeAws_restXmlWriteGetObjectResponseCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         "content-type": "application/octet-stream",
         "x-amz-content-sha256": "UNSIGNED-PAYLOAD",
@@ -23706,7 +23759,7 @@ const serializeAws_restXmlWriteGetObjectResponseCommand = async (input, context)
                 [`x-amz-meta-${suffix.toLowerCase()}`]: input.Metadata[suffix],
             }), {})),
     };
-    let resolvedPath = "/WriteGetObjectResponse";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/WriteGetObjectResponse";
     const query = {
         "x-id": "WriteGetObjectResponse",
     };
@@ -23730,7 +23783,6 @@ const serializeAws_restXmlWriteGetObjectResponseCommand = async (input, context)
             throw new Error("ValidationError: prefixed hostname must be hostname compatible.");
         }
     }
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname: resolvedHostname,
@@ -23821,23 +23873,23 @@ const deserializeAws_restXmlCompleteMultipartUploadCommand = async (output, cont
         contents.SSEKMSKeyId = output.headers["x-amz-server-side-encryption-aws-kms-key-id"];
     }
     if (output.headers["x-amz-server-side-encryption-bucket-key-enabled"] !== undefined) {
-        contents.BucketKeyEnabled = output.headers["x-amz-server-side-encryption-bucket-key-enabled"] === "true";
+        contents.BucketKeyEnabled = smithy_client_1.parseBoolean(output.headers["x-amz-server-side-encryption-bucket-key-enabled"]);
     }
     if (output.headers["x-amz-request-charged"] !== undefined) {
         contents.RequestCharged = output.headers["x-amz-request-charged"];
     }
     const data = await parseBody(output.body, context);
     if (data["Bucket"] !== undefined) {
-        contents.Bucket = data["Bucket"];
+        contents.Bucket = smithy_client_1.expectString(data["Bucket"]);
     }
     if (data["ETag"] !== undefined) {
-        contents.ETag = data["ETag"];
+        contents.ETag = smithy_client_1.expectString(data["ETag"]);
     }
     if (data["Key"] !== undefined) {
-        contents.Key = data["Key"];
+        contents.Key = smithy_client_1.expectString(data["Key"]);
     }
     if (data["Location"] !== undefined) {
-        contents.Location = data["Location"];
+        contents.Location = smithy_client_1.expectString(data["Location"]);
     }
     return Promise.resolve(contents);
 };
@@ -23910,7 +23962,7 @@ const deserializeAws_restXmlCopyObjectCommand = async (output, context) => {
         contents.SSEKMSEncryptionContext = output.headers["x-amz-server-side-encryption-context"];
     }
     if (output.headers["x-amz-server-side-encryption-bucket-key-enabled"] !== undefined) {
-        contents.BucketKeyEnabled = output.headers["x-amz-server-side-encryption-bucket-key-enabled"] === "true";
+        contents.BucketKeyEnabled = smithy_client_1.parseBoolean(output.headers["x-amz-server-side-encryption-bucket-key-enabled"]);
     }
     if (output.headers["x-amz-request-charged"] !== undefined) {
         contents.RequestCharged = output.headers["x-amz-request-charged"];
@@ -24050,20 +24102,20 @@ const deserializeAws_restXmlCreateMultipartUploadCommand = async (output, contex
         contents.SSEKMSEncryptionContext = output.headers["x-amz-server-side-encryption-context"];
     }
     if (output.headers["x-amz-server-side-encryption-bucket-key-enabled"] !== undefined) {
-        contents.BucketKeyEnabled = output.headers["x-amz-server-side-encryption-bucket-key-enabled"] === "true";
+        contents.BucketKeyEnabled = smithy_client_1.parseBoolean(output.headers["x-amz-server-side-encryption-bucket-key-enabled"]);
     }
     if (output.headers["x-amz-request-charged"] !== undefined) {
         contents.RequestCharged = output.headers["x-amz-request-charged"];
     }
     const data = await parseBody(output.body, context);
     if (data["Bucket"] !== undefined) {
-        contents.Bucket = data["Bucket"];
+        contents.Bucket = smithy_client_1.expectString(data["Bucket"]);
     }
     if (data["Key"] !== undefined) {
-        contents.Key = data["Key"];
+        contents.Key = smithy_client_1.expectString(data["Key"]);
     }
     if (data["UploadId"] !== undefined) {
-        contents.UploadId = data["UploadId"];
+        contents.UploadId = smithy_client_1.expectString(data["UploadId"]);
     }
     return Promise.resolve(contents);
 };
@@ -24572,7 +24624,7 @@ const deserializeAws_restXmlDeleteObjectCommand = async (output, context) => {
         VersionId: undefined,
     };
     if (output.headers["x-amz-delete-marker"] !== undefined) {
-        contents.DeleteMarker = output.headers["x-amz-delete-marker"] === "true";
+        contents.DeleteMarker = smithy_client_1.parseBoolean(output.headers["x-amz-delete-marker"]);
     }
     if (output.headers["x-amz-version-id"] !== undefined) {
         contents.VersionId = output.headers["x-amz-version-id"];
@@ -24749,7 +24801,7 @@ const deserializeAws_restXmlGetBucketAccelerateConfigurationCommand = async (out
     };
     const data = await parseBody(output.body, context);
     if (data["Status"] !== undefined) {
-        contents.Status = data["Status"];
+        contents.Status = smithy_client_1.expectString(data["Status"]);
     }
     return Promise.resolve(contents);
 };
@@ -25074,7 +25126,7 @@ const deserializeAws_restXmlGetBucketLocationCommand = async (output, context) =
     };
     const data = await parseBody(output.body, context);
     if (data["LocationConstraint"] !== undefined) {
-        contents.LocationConstraint = data["LocationConstraint"];
+        contents.LocationConstraint = smithy_client_1.expectString(data["LocationConstraint"]);
     }
     return Promise.resolve(contents);
 };
@@ -25286,7 +25338,7 @@ const deserializeAws_restXmlGetBucketPolicyCommand = async (output, context) => 
         Policy: undefined,
     };
     const data = await collectBodyString(output.body, context);
-    contents.Policy = data;
+    contents.Policy = smithy_client_1.expectString(data);
     return Promise.resolve(contents);
 };
 exports.deserializeAws_restXmlGetBucketPolicyCommand = deserializeAws_restXmlGetBucketPolicyCommand;
@@ -25401,7 +25453,7 @@ const deserializeAws_restXmlGetBucketRequestPaymentCommand = async (output, cont
     };
     const data = await parseBody(output.body, context);
     if (data["Payer"] !== undefined) {
-        contents.Payer = data["Payer"];
+        contents.Payer = smithy_client_1.expectString(data["Payer"]);
     }
     return Promise.resolve(contents);
 };
@@ -25485,10 +25537,10 @@ const deserializeAws_restXmlGetBucketVersioningCommand = async (output, context)
     };
     const data = await parseBody(output.body, context);
     if (data["MfaDelete"] !== undefined) {
-        contents.MFADelete = data["MfaDelete"];
+        contents.MFADelete = smithy_client_1.expectString(data["MfaDelete"]);
     }
     if (data["Status"] !== undefined) {
-        contents.Status = data["Status"];
+        contents.Status = smithy_client_1.expectString(data["Status"]);
     }
     return Promise.resolve(contents);
 };
@@ -25613,7 +25665,7 @@ const deserializeAws_restXmlGetObjectCommand = async (output, context) => {
         WebsiteRedirectLocation: undefined,
     };
     if (output.headers["x-amz-delete-marker"] !== undefined) {
-        contents.DeleteMarker = output.headers["x-amz-delete-marker"] === "true";
+        contents.DeleteMarker = smithy_client_1.parseBoolean(output.headers["x-amz-delete-marker"]);
     }
     if (output.headers["accept-ranges"] !== undefined) {
         contents.AcceptRanges = output.headers["accept-ranges"];
@@ -25676,7 +25728,7 @@ const deserializeAws_restXmlGetObjectCommand = async (output, context) => {
         contents.SSEKMSKeyId = output.headers["x-amz-server-side-encryption-aws-kms-key-id"];
     }
     if (output.headers["x-amz-server-side-encryption-bucket-key-enabled"] !== undefined) {
-        contents.BucketKeyEnabled = output.headers["x-amz-server-side-encryption-bucket-key-enabled"] === "true";
+        contents.BucketKeyEnabled = smithy_client_1.parseBoolean(output.headers["x-amz-server-side-encryption-bucket-key-enabled"]);
     }
     if (output.headers["x-amz-storage-class"] !== undefined) {
         contents.StorageClass = output.headers["x-amz-storage-class"];
@@ -26138,7 +26190,7 @@ const deserializeAws_restXmlHeadObjectCommand = async (output, context) => {
         WebsiteRedirectLocation: undefined,
     };
     if (output.headers["x-amz-delete-marker"] !== undefined) {
-        contents.DeleteMarker = output.headers["x-amz-delete-marker"] === "true";
+        contents.DeleteMarker = smithy_client_1.parseBoolean(output.headers["x-amz-delete-marker"]);
     }
     if (output.headers["accept-ranges"] !== undefined) {
         contents.AcceptRanges = output.headers["accept-ranges"];
@@ -26201,7 +26253,7 @@ const deserializeAws_restXmlHeadObjectCommand = async (output, context) => {
         contents.SSEKMSKeyId = output.headers["x-amz-server-side-encryption-aws-kms-key-id"];
     }
     if (output.headers["x-amz-server-side-encryption-bucket-key-enabled"] !== undefined) {
-        contents.BucketKeyEnabled = output.headers["x-amz-server-side-encryption-bucket-key-enabled"] === "true";
+        contents.BucketKeyEnabled = smithy_client_1.parseBoolean(output.headers["x-amz-server-side-encryption-bucket-key-enabled"]);
     }
     if (output.headers["x-amz-storage-class"] !== undefined) {
         contents.StorageClass = output.headers["x-amz-storage-class"];
@@ -26288,13 +26340,13 @@ const deserializeAws_restXmlListBucketAnalyticsConfigurationsCommand = async (ou
         contents.AnalyticsConfigurationList = deserializeAws_restXmlAnalyticsConfigurationList(smithy_client_1.getArrayIfSingleItem(data["AnalyticsConfiguration"]), context);
     }
     if (data["ContinuationToken"] !== undefined) {
-        contents.ContinuationToken = data["ContinuationToken"];
+        contents.ContinuationToken = smithy_client_1.expectString(data["ContinuationToken"]);
     }
     if (data["IsTruncated"] !== undefined) {
-        contents.IsTruncated = data["IsTruncated"] == "true";
+        contents.IsTruncated = smithy_client_1.parseBoolean(data["IsTruncated"]);
     }
     if (data["NextContinuationToken"] !== undefined) {
-        contents.NextContinuationToken = data["NextContinuationToken"];
+        contents.NextContinuationToken = smithy_client_1.expectString(data["NextContinuationToken"]);
     }
     return Promise.resolve(contents);
 };
@@ -26337,7 +26389,7 @@ const deserializeAws_restXmlListBucketIntelligentTieringConfigurationsCommand = 
     };
     const data = await parseBody(output.body, context);
     if (data["ContinuationToken"] !== undefined) {
-        contents.ContinuationToken = data["ContinuationToken"];
+        contents.ContinuationToken = smithy_client_1.expectString(data["ContinuationToken"]);
     }
     if (data.IntelligentTieringConfiguration === "") {
         contents.IntelligentTieringConfigurationList = [];
@@ -26346,10 +26398,10 @@ const deserializeAws_restXmlListBucketIntelligentTieringConfigurationsCommand = 
         contents.IntelligentTieringConfigurationList = deserializeAws_restXmlIntelligentTieringConfigurationList(smithy_client_1.getArrayIfSingleItem(data["IntelligentTieringConfiguration"]), context);
     }
     if (data["IsTruncated"] !== undefined) {
-        contents.IsTruncated = data["IsTruncated"] == "true";
+        contents.IsTruncated = smithy_client_1.parseBoolean(data["IsTruncated"]);
     }
     if (data["NextContinuationToken"] !== undefined) {
-        contents.NextContinuationToken = data["NextContinuationToken"];
+        contents.NextContinuationToken = smithy_client_1.expectString(data["NextContinuationToken"]);
     }
     return Promise.resolve(contents);
 };
@@ -26392,7 +26444,7 @@ const deserializeAws_restXmlListBucketInventoryConfigurationsCommand = async (ou
     };
     const data = await parseBody(output.body, context);
     if (data["ContinuationToken"] !== undefined) {
-        contents.ContinuationToken = data["ContinuationToken"];
+        contents.ContinuationToken = smithy_client_1.expectString(data["ContinuationToken"]);
     }
     if (data.InventoryConfiguration === "") {
         contents.InventoryConfigurationList = [];
@@ -26401,10 +26453,10 @@ const deserializeAws_restXmlListBucketInventoryConfigurationsCommand = async (ou
         contents.InventoryConfigurationList = deserializeAws_restXmlInventoryConfigurationList(smithy_client_1.getArrayIfSingleItem(data["InventoryConfiguration"]), context);
     }
     if (data["IsTruncated"] !== undefined) {
-        contents.IsTruncated = data["IsTruncated"] == "true";
+        contents.IsTruncated = smithy_client_1.parseBoolean(data["IsTruncated"]);
     }
     if (data["NextContinuationToken"] !== undefined) {
-        contents.NextContinuationToken = data["NextContinuationToken"];
+        contents.NextContinuationToken = smithy_client_1.expectString(data["NextContinuationToken"]);
     }
     return Promise.resolve(contents);
 };
@@ -26447,10 +26499,10 @@ const deserializeAws_restXmlListBucketMetricsConfigurationsCommand = async (outp
     };
     const data = await parseBody(output.body, context);
     if (data["ContinuationToken"] !== undefined) {
-        contents.ContinuationToken = data["ContinuationToken"];
+        contents.ContinuationToken = smithy_client_1.expectString(data["ContinuationToken"]);
     }
     if (data["IsTruncated"] !== undefined) {
-        contents.IsTruncated = data["IsTruncated"] == "true";
+        contents.IsTruncated = smithy_client_1.parseBoolean(data["IsTruncated"]);
     }
     if (data.MetricsConfiguration === "") {
         contents.MetricsConfigurationList = [];
@@ -26459,7 +26511,7 @@ const deserializeAws_restXmlListBucketMetricsConfigurationsCommand = async (outp
         contents.MetricsConfigurationList = deserializeAws_restXmlMetricsConfigurationList(smithy_client_1.getArrayIfSingleItem(data["MetricsConfiguration"]), context);
     }
     if (data["NextContinuationToken"] !== undefined) {
-        contents.NextContinuationToken = data["NextContinuationToken"];
+        contents.NextContinuationToken = smithy_client_1.expectString(data["NextContinuationToken"]);
     }
     return Promise.resolve(contents);
 };
@@ -26557,7 +26609,7 @@ const deserializeAws_restXmlListMultipartUploadsCommand = async (output, context
     };
     const data = await parseBody(output.body, context);
     if (data["Bucket"] !== undefined) {
-        contents.Bucket = data["Bucket"];
+        contents.Bucket = smithy_client_1.expectString(data["Bucket"]);
     }
     if (data.CommonPrefixes === "") {
         contents.CommonPrefixes = [];
@@ -26566,31 +26618,31 @@ const deserializeAws_restXmlListMultipartUploadsCommand = async (output, context
         contents.CommonPrefixes = deserializeAws_restXmlCommonPrefixList(smithy_client_1.getArrayIfSingleItem(data["CommonPrefixes"]), context);
     }
     if (data["Delimiter"] !== undefined) {
-        contents.Delimiter = data["Delimiter"];
+        contents.Delimiter = smithy_client_1.expectString(data["Delimiter"]);
     }
     if (data["EncodingType"] !== undefined) {
-        contents.EncodingType = data["EncodingType"];
+        contents.EncodingType = smithy_client_1.expectString(data["EncodingType"]);
     }
     if (data["IsTruncated"] !== undefined) {
-        contents.IsTruncated = data["IsTruncated"] == "true";
+        contents.IsTruncated = smithy_client_1.parseBoolean(data["IsTruncated"]);
     }
     if (data["KeyMarker"] !== undefined) {
-        contents.KeyMarker = data["KeyMarker"];
+        contents.KeyMarker = smithy_client_1.expectString(data["KeyMarker"]);
     }
     if (data["MaxUploads"] !== undefined) {
         contents.MaxUploads = parseInt(data["MaxUploads"]);
     }
     if (data["NextKeyMarker"] !== undefined) {
-        contents.NextKeyMarker = data["NextKeyMarker"];
+        contents.NextKeyMarker = smithy_client_1.expectString(data["NextKeyMarker"]);
     }
     if (data["NextUploadIdMarker"] !== undefined) {
-        contents.NextUploadIdMarker = data["NextUploadIdMarker"];
+        contents.NextUploadIdMarker = smithy_client_1.expectString(data["NextUploadIdMarker"]);
     }
     if (data["Prefix"] !== undefined) {
-        contents.Prefix = data["Prefix"];
+        contents.Prefix = smithy_client_1.expectString(data["Prefix"]);
     }
     if (data["UploadIdMarker"] !== undefined) {
-        contents.UploadIdMarker = data["UploadIdMarker"];
+        contents.UploadIdMarker = smithy_client_1.expectString(data["UploadIdMarker"]);
     }
     if (data.Upload === "") {
         contents.Uploads = [];
@@ -26657,28 +26709,28 @@ const deserializeAws_restXmlListObjectsCommand = async (output, context) => {
         contents.Contents = deserializeAws_restXmlObjectList(smithy_client_1.getArrayIfSingleItem(data["Contents"]), context);
     }
     if (data["Delimiter"] !== undefined) {
-        contents.Delimiter = data["Delimiter"];
+        contents.Delimiter = smithy_client_1.expectString(data["Delimiter"]);
     }
     if (data["EncodingType"] !== undefined) {
-        contents.EncodingType = data["EncodingType"];
+        contents.EncodingType = smithy_client_1.expectString(data["EncodingType"]);
     }
     if (data["IsTruncated"] !== undefined) {
-        contents.IsTruncated = data["IsTruncated"] == "true";
+        contents.IsTruncated = smithy_client_1.parseBoolean(data["IsTruncated"]);
     }
     if (data["Marker"] !== undefined) {
-        contents.Marker = data["Marker"];
+        contents.Marker = smithy_client_1.expectString(data["Marker"]);
     }
     if (data["MaxKeys"] !== undefined) {
         contents.MaxKeys = parseInt(data["MaxKeys"]);
     }
     if (data["Name"] !== undefined) {
-        contents.Name = data["Name"];
+        contents.Name = smithy_client_1.expectString(data["Name"]);
     }
     if (data["NextMarker"] !== undefined) {
-        contents.NextMarker = data["NextMarker"];
+        contents.NextMarker = smithy_client_1.expectString(data["NextMarker"]);
     }
     if (data["Prefix"] !== undefined) {
-        contents.Prefix = data["Prefix"];
+        contents.Prefix = smithy_client_1.expectString(data["Prefix"]);
     }
     return Promise.resolve(contents);
 };
@@ -26749,16 +26801,16 @@ const deserializeAws_restXmlListObjectsV2Command = async (output, context) => {
         contents.Contents = deserializeAws_restXmlObjectList(smithy_client_1.getArrayIfSingleItem(data["Contents"]), context);
     }
     if (data["ContinuationToken"] !== undefined) {
-        contents.ContinuationToken = data["ContinuationToken"];
+        contents.ContinuationToken = smithy_client_1.expectString(data["ContinuationToken"]);
     }
     if (data["Delimiter"] !== undefined) {
-        contents.Delimiter = data["Delimiter"];
+        contents.Delimiter = smithy_client_1.expectString(data["Delimiter"]);
     }
     if (data["EncodingType"] !== undefined) {
-        contents.EncodingType = data["EncodingType"];
+        contents.EncodingType = smithy_client_1.expectString(data["EncodingType"]);
     }
     if (data["IsTruncated"] !== undefined) {
-        contents.IsTruncated = data["IsTruncated"] == "true";
+        contents.IsTruncated = smithy_client_1.parseBoolean(data["IsTruncated"]);
     }
     if (data["KeyCount"] !== undefined) {
         contents.KeyCount = parseInt(data["KeyCount"]);
@@ -26767,16 +26819,16 @@ const deserializeAws_restXmlListObjectsV2Command = async (output, context) => {
         contents.MaxKeys = parseInt(data["MaxKeys"]);
     }
     if (data["Name"] !== undefined) {
-        contents.Name = data["Name"];
+        contents.Name = smithy_client_1.expectString(data["Name"]);
     }
     if (data["NextContinuationToken"] !== undefined) {
-        contents.NextContinuationToken = data["NextContinuationToken"];
+        contents.NextContinuationToken = smithy_client_1.expectString(data["NextContinuationToken"]);
     }
     if (data["Prefix"] !== undefined) {
-        contents.Prefix = data["Prefix"];
+        contents.Prefix = smithy_client_1.expectString(data["Prefix"]);
     }
     if (data["StartAfter"] !== undefined) {
-        contents.StartAfter = data["StartAfter"];
+        contents.StartAfter = smithy_client_1.expectString(data["StartAfter"]);
     }
     return Promise.resolve(contents);
 };
@@ -26848,34 +26900,34 @@ const deserializeAws_restXmlListObjectVersionsCommand = async (output, context) 
         contents.DeleteMarkers = deserializeAws_restXmlDeleteMarkers(smithy_client_1.getArrayIfSingleItem(data["DeleteMarker"]), context);
     }
     if (data["Delimiter"] !== undefined) {
-        contents.Delimiter = data["Delimiter"];
+        contents.Delimiter = smithy_client_1.expectString(data["Delimiter"]);
     }
     if (data["EncodingType"] !== undefined) {
-        contents.EncodingType = data["EncodingType"];
+        contents.EncodingType = smithy_client_1.expectString(data["EncodingType"]);
     }
     if (data["IsTruncated"] !== undefined) {
-        contents.IsTruncated = data["IsTruncated"] == "true";
+        contents.IsTruncated = smithy_client_1.parseBoolean(data["IsTruncated"]);
     }
     if (data["KeyMarker"] !== undefined) {
-        contents.KeyMarker = data["KeyMarker"];
+        contents.KeyMarker = smithy_client_1.expectString(data["KeyMarker"]);
     }
     if (data["MaxKeys"] !== undefined) {
         contents.MaxKeys = parseInt(data["MaxKeys"]);
     }
     if (data["Name"] !== undefined) {
-        contents.Name = data["Name"];
+        contents.Name = smithy_client_1.expectString(data["Name"]);
     }
     if (data["NextKeyMarker"] !== undefined) {
-        contents.NextKeyMarker = data["NextKeyMarker"];
+        contents.NextKeyMarker = smithy_client_1.expectString(data["NextKeyMarker"]);
     }
     if (data["NextVersionIdMarker"] !== undefined) {
-        contents.NextVersionIdMarker = data["NextVersionIdMarker"];
+        contents.NextVersionIdMarker = smithy_client_1.expectString(data["NextVersionIdMarker"]);
     }
     if (data["Prefix"] !== undefined) {
-        contents.Prefix = data["Prefix"];
+        contents.Prefix = smithy_client_1.expectString(data["Prefix"]);
     }
     if (data["VersionIdMarker"] !== undefined) {
-        contents.VersionIdMarker = data["VersionIdMarker"];
+        contents.VersionIdMarker = smithy_client_1.expectString(data["VersionIdMarker"]);
     }
     if (data.Version === "") {
         contents.Versions = [];
@@ -26943,28 +26995,28 @@ const deserializeAws_restXmlListPartsCommand = async (output, context) => {
     }
     const data = await parseBody(output.body, context);
     if (data["Bucket"] !== undefined) {
-        contents.Bucket = data["Bucket"];
+        contents.Bucket = smithy_client_1.expectString(data["Bucket"]);
     }
     if (data["Initiator"] !== undefined) {
         contents.Initiator = deserializeAws_restXmlInitiator(data["Initiator"], context);
     }
     if (data["IsTruncated"] !== undefined) {
-        contents.IsTruncated = data["IsTruncated"] == "true";
+        contents.IsTruncated = smithy_client_1.parseBoolean(data["IsTruncated"]);
     }
     if (data["Key"] !== undefined) {
-        contents.Key = data["Key"];
+        contents.Key = smithy_client_1.expectString(data["Key"]);
     }
     if (data["MaxParts"] !== undefined) {
         contents.MaxParts = parseInt(data["MaxParts"]);
     }
     if (data["NextPartNumberMarker"] !== undefined) {
-        contents.NextPartNumberMarker = data["NextPartNumberMarker"];
+        contents.NextPartNumberMarker = smithy_client_1.expectString(data["NextPartNumberMarker"]);
     }
     if (data["Owner"] !== undefined) {
         contents.Owner = deserializeAws_restXmlOwner(data["Owner"], context);
     }
     if (data["PartNumberMarker"] !== undefined) {
-        contents.PartNumberMarker = data["PartNumberMarker"];
+        contents.PartNumberMarker = smithy_client_1.expectString(data["PartNumberMarker"]);
     }
     if (data.Part === "") {
         contents.Parts = [];
@@ -26973,10 +27025,10 @@ const deserializeAws_restXmlListPartsCommand = async (output, context) => {
         contents.Parts = deserializeAws_restXmlParts(smithy_client_1.getArrayIfSingleItem(data["Part"]), context);
     }
     if (data["StorageClass"] !== undefined) {
-        contents.StorageClass = data["StorageClass"];
+        contents.StorageClass = smithy_client_1.expectString(data["StorageClass"]);
     }
     if (data["UploadId"] !== undefined) {
-        contents.UploadId = data["UploadId"];
+        contents.UploadId = smithy_client_1.expectString(data["UploadId"]);
     }
     return Promise.resolve(contents);
 };
@@ -27696,7 +27748,7 @@ const deserializeAws_restXmlPutObjectCommand = async (output, context) => {
         contents.SSEKMSEncryptionContext = output.headers["x-amz-server-side-encryption-context"];
     }
     if (output.headers["x-amz-server-side-encryption-bucket-key-enabled"] !== undefined) {
-        contents.BucketKeyEnabled = output.headers["x-amz-server-side-encryption-bucket-key-enabled"] === "true";
+        contents.BucketKeyEnabled = smithy_client_1.parseBoolean(output.headers["x-amz-server-side-encryption-bucket-key-enabled"]);
     }
     if (output.headers["x-amz-request-charged"] !== undefined) {
         contents.RequestCharged = output.headers["x-amz-request-charged"];
@@ -28108,7 +28160,7 @@ const deserializeAws_restXmlUploadPartCommand = async (output, context) => {
         contents.SSEKMSKeyId = output.headers["x-amz-server-side-encryption-aws-kms-key-id"];
     }
     if (output.headers["x-amz-server-side-encryption-bucket-key-enabled"] !== undefined) {
-        contents.BucketKeyEnabled = output.headers["x-amz-server-side-encryption-bucket-key-enabled"] === "true";
+        contents.BucketKeyEnabled = smithy_client_1.parseBoolean(output.headers["x-amz-server-side-encryption-bucket-key-enabled"]);
     }
     if (output.headers["x-amz-request-charged"] !== undefined) {
         contents.RequestCharged = output.headers["x-amz-request-charged"];
@@ -28173,7 +28225,7 @@ const deserializeAws_restXmlUploadPartCopyCommand = async (output, context) => {
         contents.SSEKMSKeyId = output.headers["x-amz-server-side-encryption-aws-kms-key-id"];
     }
     if (output.headers["x-amz-server-side-encryption-bucket-key-enabled"] !== undefined) {
-        contents.BucketKeyEnabled = output.headers["x-amz-server-side-encryption-bucket-key-enabled"] === "true";
+        contents.BucketKeyEnabled = smithy_client_1.parseBoolean(output.headers["x-amz-server-side-encryption-bucket-key-enabled"]);
     }
     if (output.headers["x-amz-request-charged"] !== undefined) {
         contents.RequestCharged = output.headers["x-amz-request-charged"];
@@ -28323,10 +28375,10 @@ const deserializeAws_restXmlInvalidObjectStateResponse = async (parsedOutput, co
     };
     const data = parsedOutput.body;
     if (data["AccessTier"] !== undefined) {
-        contents.AccessTier = data["AccessTier"];
+        contents.AccessTier = smithy_client_1.expectString(data["AccessTier"]);
     }
     if (data["StorageClass"] !== undefined) {
-        contents.StorageClass = data["StorageClass"];
+        contents.StorageClass = smithy_client_1.expectString(data["StorageClass"]);
     }
     return contents;
 };
@@ -30374,7 +30426,7 @@ const deserializeAws_restXmlAccessControlTranslation = (output, context) => {
         Owner: undefined,
     };
     if (output["Owner"] !== undefined) {
-        contents.Owner = output["Owner"];
+        contents.Owner = smithy_client_1.expectString(output["Owner"]);
     }
     return contents;
 };
@@ -30385,7 +30437,7 @@ const deserializeAws_restXmlAllowedHeaders = (output, context) => {
         if (entry === null) {
             return null;
         }
-        return entry;
+        return smithy_client_1.expectString(entry);
     });
 };
 const deserializeAws_restXmlAllowedMethods = (output, context) => {
@@ -30395,7 +30447,7 @@ const deserializeAws_restXmlAllowedMethods = (output, context) => {
         if (entry === null) {
             return null;
         }
-        return entry;
+        return smithy_client_1.expectString(entry);
     });
 };
 const deserializeAws_restXmlAllowedOrigins = (output, context) => {
@@ -30405,7 +30457,7 @@ const deserializeAws_restXmlAllowedOrigins = (output, context) => {
         if (entry === null) {
             return null;
         }
-        return entry;
+        return smithy_client_1.expectString(entry);
     });
 };
 const deserializeAws_restXmlAnalyticsAndOperator = (output, context) => {
@@ -30414,7 +30466,7 @@ const deserializeAws_restXmlAnalyticsAndOperator = (output, context) => {
         Tags: undefined,
     };
     if (output["Prefix"] !== undefined) {
-        contents.Prefix = output["Prefix"];
+        contents.Prefix = smithy_client_1.expectString(output["Prefix"]);
     }
     if (output.Tag === "") {
         contents.Tags = [];
@@ -30431,7 +30483,7 @@ const deserializeAws_restXmlAnalyticsConfiguration = (output, context) => {
         StorageClassAnalysis: undefined,
     };
     if (output["Id"] !== undefined) {
-        contents.Id = output["Id"];
+        contents.Id = smithy_client_1.expectString(output["Id"]);
     }
     if (output["Filter"] !== undefined) {
         contents.Filter = deserializeAws_restXmlAnalyticsFilter(output["Filter"], context);
@@ -30463,7 +30515,7 @@ const deserializeAws_restXmlAnalyticsExportDestination = (output, context) => {
 const deserializeAws_restXmlAnalyticsFilter = (output, context) => {
     if (output["Prefix"] !== undefined) {
         return {
-            Prefix: output["Prefix"],
+            Prefix: smithy_client_1.expectString(output["Prefix"]),
         };
     }
     if (output["Tag"] !== undefined) {
@@ -30486,16 +30538,16 @@ const deserializeAws_restXmlAnalyticsS3BucketDestination = (output, context) => 
         Prefix: undefined,
     };
     if (output["Format"] !== undefined) {
-        contents.Format = output["Format"];
+        contents.Format = smithy_client_1.expectString(output["Format"]);
     }
     if (output["BucketAccountId"] !== undefined) {
-        contents.BucketAccountId = output["BucketAccountId"];
+        contents.BucketAccountId = smithy_client_1.expectString(output["BucketAccountId"]);
     }
     if (output["Bucket"] !== undefined) {
-        contents.Bucket = output["Bucket"];
+        contents.Bucket = smithy_client_1.expectString(output["Bucket"]);
     }
     if (output["Prefix"] !== undefined) {
-        contents.Prefix = output["Prefix"];
+        contents.Prefix = smithy_client_1.expectString(output["Prefix"]);
     }
     return contents;
 };
@@ -30505,7 +30557,7 @@ const deserializeAws_restXmlBucket = (output, context) => {
         CreationDate: undefined,
     };
     if (output["Name"] !== undefined) {
-        contents.Name = output["Name"];
+        contents.Name = smithy_client_1.expectString(output["Name"]);
     }
     if (output["CreationDate"] !== undefined) {
         contents.CreationDate = new Date(output["CreationDate"]);
@@ -30527,7 +30579,7 @@ const deserializeAws_restXmlCommonPrefix = (output, context) => {
         Prefix: undefined,
     };
     if (output["Prefix"] !== undefined) {
-        contents.Prefix = output["Prefix"];
+        contents.Prefix = smithy_client_1.expectString(output["Prefix"]);
     }
     return contents;
 };
@@ -30547,10 +30599,10 @@ const deserializeAws_restXmlCondition = (output, context) => {
         KeyPrefixEquals: undefined,
     };
     if (output["HttpErrorCodeReturnedEquals"] !== undefined) {
-        contents.HttpErrorCodeReturnedEquals = output["HttpErrorCodeReturnedEquals"];
+        contents.HttpErrorCodeReturnedEquals = smithy_client_1.expectString(output["HttpErrorCodeReturnedEquals"]);
     }
     if (output["KeyPrefixEquals"] !== undefined) {
-        contents.KeyPrefixEquals = output["KeyPrefixEquals"];
+        contents.KeyPrefixEquals = smithy_client_1.expectString(output["KeyPrefixEquals"]);
     }
     return contents;
 };
@@ -30564,7 +30616,7 @@ const deserializeAws_restXmlCopyObjectResult = (output, context) => {
         LastModified: undefined,
     };
     if (output["ETag"] !== undefined) {
-        contents.ETag = output["ETag"];
+        contents.ETag = smithy_client_1.expectString(output["ETag"]);
     }
     if (output["LastModified"] !== undefined) {
         contents.LastModified = new Date(output["LastModified"]);
@@ -30577,7 +30629,7 @@ const deserializeAws_restXmlCopyPartResult = (output, context) => {
         LastModified: undefined,
     };
     if (output["ETag"] !== undefined) {
-        contents.ETag = output["ETag"];
+        contents.ETag = smithy_client_1.expectString(output["ETag"]);
     }
     if (output["LastModified"] !== undefined) {
         contents.LastModified = new Date(output["LastModified"]);
@@ -30594,7 +30646,7 @@ const deserializeAws_restXmlCORSRule = (output, context) => {
         MaxAgeSeconds: undefined,
     };
     if (output["ID"] !== undefined) {
-        contents.ID = output["ID"];
+        contents.ID = smithy_client_1.expectString(output["ID"]);
     }
     if (output.AllowedHeader === "") {
         contents.AllowedHeaders = [];
@@ -30642,7 +30694,7 @@ const deserializeAws_restXmlDefaultRetention = (output, context) => {
         Years: undefined,
     };
     if (output["Mode"] !== undefined) {
-        contents.Mode = output["Mode"];
+        contents.Mode = smithy_client_1.expectString(output["Mode"]);
     }
     if (output["Days"] !== undefined) {
         contents.Days = parseInt(output["Days"]);
@@ -30660,16 +30712,16 @@ const deserializeAws_restXmlDeletedObject = (output, context) => {
         DeleteMarkerVersionId: undefined,
     };
     if (output["Key"] !== undefined) {
-        contents.Key = output["Key"];
+        contents.Key = smithy_client_1.expectString(output["Key"]);
     }
     if (output["VersionId"] !== undefined) {
-        contents.VersionId = output["VersionId"];
+        contents.VersionId = smithy_client_1.expectString(output["VersionId"]);
     }
     if (output["DeleteMarker"] !== undefined) {
-        contents.DeleteMarker = output["DeleteMarker"] == "true";
+        contents.DeleteMarker = smithy_client_1.parseBoolean(output["DeleteMarker"]);
     }
     if (output["DeleteMarkerVersionId"] !== undefined) {
-        contents.DeleteMarkerVersionId = output["DeleteMarkerVersionId"];
+        contents.DeleteMarkerVersionId = smithy_client_1.expectString(output["DeleteMarkerVersionId"]);
     }
     return contents;
 };
@@ -30695,13 +30747,13 @@ const deserializeAws_restXmlDeleteMarkerEntry = (output, context) => {
         contents.Owner = deserializeAws_restXmlOwner(output["Owner"], context);
     }
     if (output["Key"] !== undefined) {
-        contents.Key = output["Key"];
+        contents.Key = smithy_client_1.expectString(output["Key"]);
     }
     if (output["VersionId"] !== undefined) {
-        contents.VersionId = output["VersionId"];
+        contents.VersionId = smithy_client_1.expectString(output["VersionId"]);
     }
     if (output["IsLatest"] !== undefined) {
-        contents.IsLatest = output["IsLatest"] == "true";
+        contents.IsLatest = smithy_client_1.parseBoolean(output["IsLatest"]);
     }
     if (output["LastModified"] !== undefined) {
         contents.LastModified = new Date(output["LastModified"]);
@@ -30713,7 +30765,7 @@ const deserializeAws_restXmlDeleteMarkerReplication = (output, context) => {
         Status: undefined,
     };
     if (output["Status"] !== undefined) {
-        contents.Status = output["Status"];
+        contents.Status = smithy_client_1.expectString(output["Status"]);
     }
     return contents;
 };
@@ -30738,13 +30790,13 @@ const deserializeAws_restXmlDestination = (output, context) => {
         Metrics: undefined,
     };
     if (output["Bucket"] !== undefined) {
-        contents.Bucket = output["Bucket"];
+        contents.Bucket = smithy_client_1.expectString(output["Bucket"]);
     }
     if (output["Account"] !== undefined) {
-        contents.Account = output["Account"];
+        contents.Account = smithy_client_1.expectString(output["Account"]);
     }
     if (output["StorageClass"] !== undefined) {
-        contents.StorageClass = output["StorageClass"];
+        contents.StorageClass = smithy_client_1.expectString(output["StorageClass"]);
     }
     if (output["AccessControlTranslation"] !== undefined) {
         contents.AccessControlTranslation = deserializeAws_restXmlAccessControlTranslation(output["AccessControlTranslation"], context);
@@ -30765,7 +30817,7 @@ const deserializeAws_restXmlEncryptionConfiguration = (output, context) => {
         ReplicaKmsKeyID: undefined,
     };
     if (output["ReplicaKmsKeyID"] !== undefined) {
-        contents.ReplicaKmsKeyID = output["ReplicaKmsKeyID"];
+        contents.ReplicaKmsKeyID = smithy_client_1.expectString(output["ReplicaKmsKeyID"]);
     }
     return contents;
 };
@@ -30781,16 +30833,16 @@ const deserializeAws_restXml_Error = (output, context) => {
         Message: undefined,
     };
     if (output["Key"] !== undefined) {
-        contents.Key = output["Key"];
+        contents.Key = smithy_client_1.expectString(output["Key"]);
     }
     if (output["VersionId"] !== undefined) {
-        contents.VersionId = output["VersionId"];
+        contents.VersionId = smithy_client_1.expectString(output["VersionId"]);
     }
     if (output["Code"] !== undefined) {
-        contents.Code = output["Code"];
+        contents.Code = smithy_client_1.expectString(output["Code"]);
     }
     if (output["Message"] !== undefined) {
-        contents.Message = output["Message"];
+        contents.Message = smithy_client_1.expectString(output["Message"]);
     }
     return contents;
 };
@@ -30799,7 +30851,7 @@ const deserializeAws_restXmlErrorDocument = (output, context) => {
         Key: undefined,
     };
     if (output["Key"] !== undefined) {
-        contents.Key = output["Key"];
+        contents.Key = smithy_client_1.expectString(output["Key"]);
     }
     return contents;
 };
@@ -30820,7 +30872,7 @@ const deserializeAws_restXmlEventList = (output, context) => {
         if (entry === null) {
             return null;
         }
-        return entry;
+        return smithy_client_1.expectString(entry);
     });
 };
 const deserializeAws_restXmlExistingObjectReplication = (output, context) => {
@@ -30828,7 +30880,7 @@ const deserializeAws_restXmlExistingObjectReplication = (output, context) => {
         Status: undefined,
     };
     if (output["Status"] !== undefined) {
-        contents.Status = output["Status"];
+        contents.Status = smithy_client_1.expectString(output["Status"]);
     }
     return contents;
 };
@@ -30839,7 +30891,7 @@ const deserializeAws_restXmlExposeHeaders = (output, context) => {
         if (entry === null) {
             return null;
         }
-        return entry;
+        return smithy_client_1.expectString(entry);
     });
 };
 const deserializeAws_restXmlFilterRule = (output, context) => {
@@ -30848,10 +30900,10 @@ const deserializeAws_restXmlFilterRule = (output, context) => {
         Value: undefined,
     };
     if (output["Name"] !== undefined) {
-        contents.Name = output["Name"];
+        contents.Name = smithy_client_1.expectString(output["Name"]);
     }
     if (output["Value"] !== undefined) {
-        contents.Value = output["Value"];
+        contents.Value = smithy_client_1.expectString(output["Value"]);
     }
     return contents;
 };
@@ -30874,7 +30926,7 @@ const deserializeAws_restXmlGrant = (output, context) => {
         contents.Grantee = deserializeAws_restXmlGrantee(output["Grantee"], context);
     }
     if (output["Permission"] !== undefined) {
-        contents.Permission = output["Permission"];
+        contents.Permission = smithy_client_1.expectString(output["Permission"]);
     }
     return contents;
 };
@@ -30887,19 +30939,19 @@ const deserializeAws_restXmlGrantee = (output, context) => {
         Type: undefined,
     };
     if (output["DisplayName"] !== undefined) {
-        contents.DisplayName = output["DisplayName"];
+        contents.DisplayName = smithy_client_1.expectString(output["DisplayName"]);
     }
     if (output["EmailAddress"] !== undefined) {
-        contents.EmailAddress = output["EmailAddress"];
+        contents.EmailAddress = smithy_client_1.expectString(output["EmailAddress"]);
     }
     if (output["ID"] !== undefined) {
-        contents.ID = output["ID"];
+        contents.ID = smithy_client_1.expectString(output["ID"]);
     }
     if (output["URI"] !== undefined) {
-        contents.URI = output["URI"];
+        contents.URI = smithy_client_1.expectString(output["URI"]);
     }
     if (output["xsi:type"] !== undefined) {
-        contents.Type = output["xsi:type"];
+        contents.Type = smithy_client_1.expectString(output["xsi:type"]);
     }
     return contents;
 };
@@ -30918,7 +30970,7 @@ const deserializeAws_restXmlIndexDocument = (output, context) => {
         Suffix: undefined,
     };
     if (output["Suffix"] !== undefined) {
-        contents.Suffix = output["Suffix"];
+        contents.Suffix = smithy_client_1.expectString(output["Suffix"]);
     }
     return contents;
 };
@@ -30928,10 +30980,10 @@ const deserializeAws_restXmlInitiator = (output, context) => {
         DisplayName: undefined,
     };
     if (output["ID"] !== undefined) {
-        contents.ID = output["ID"];
+        contents.ID = smithy_client_1.expectString(output["ID"]);
     }
     if (output["DisplayName"] !== undefined) {
-        contents.DisplayName = output["DisplayName"];
+        contents.DisplayName = smithy_client_1.expectString(output["DisplayName"]);
     }
     return contents;
 };
@@ -30941,7 +30993,7 @@ const deserializeAws_restXmlIntelligentTieringAndOperator = (output, context) =>
         Tags: undefined,
     };
     if (output["Prefix"] !== undefined) {
-        contents.Prefix = output["Prefix"];
+        contents.Prefix = smithy_client_1.expectString(output["Prefix"]);
     }
     if (output.Tag === "") {
         contents.Tags = [];
@@ -30959,13 +31011,13 @@ const deserializeAws_restXmlIntelligentTieringConfiguration = (output, context) 
         Tierings: undefined,
     };
     if (output["Id"] !== undefined) {
-        contents.Id = output["Id"];
+        contents.Id = smithy_client_1.expectString(output["Id"]);
     }
     if (output["Filter"] !== undefined) {
         contents.Filter = deserializeAws_restXmlIntelligentTieringFilter(output["Filter"], context);
     }
     if (output["Status"] !== undefined) {
-        contents.Status = output["Status"];
+        contents.Status = smithy_client_1.expectString(output["Status"]);
     }
     if (output.Tiering === "") {
         contents.Tierings = [];
@@ -30992,7 +31044,7 @@ const deserializeAws_restXmlIntelligentTieringFilter = (output, context) => {
         And: undefined,
     };
     if (output["Prefix"] !== undefined) {
-        contents.Prefix = output["Prefix"];
+        contents.Prefix = smithy_client_1.expectString(output["Prefix"]);
     }
     if (output["Tag"] !== undefined) {
         contents.Tag = deserializeAws_restXmlTag(output["Tag"], context);
@@ -31016,16 +31068,16 @@ const deserializeAws_restXmlInventoryConfiguration = (output, context) => {
         contents.Destination = deserializeAws_restXmlInventoryDestination(output["Destination"], context);
     }
     if (output["IsEnabled"] !== undefined) {
-        contents.IsEnabled = output["IsEnabled"] == "true";
+        contents.IsEnabled = smithy_client_1.parseBoolean(output["IsEnabled"]);
     }
     if (output["Filter"] !== undefined) {
         contents.Filter = deserializeAws_restXmlInventoryFilter(output["Filter"], context);
     }
     if (output["Id"] !== undefined) {
-        contents.Id = output["Id"];
+        contents.Id = smithy_client_1.expectString(output["Id"]);
     }
     if (output["IncludedObjectVersions"] !== undefined) {
-        contents.IncludedObjectVersions = output["IncludedObjectVersions"];
+        contents.IncludedObjectVersions = smithy_client_1.expectString(output["IncludedObjectVersions"]);
     }
     if (output.OptionalFields === "") {
         contents.OptionalFields = [];
@@ -31075,7 +31127,7 @@ const deserializeAws_restXmlInventoryFilter = (output, context) => {
         Prefix: undefined,
     };
     if (output["Prefix"] !== undefined) {
-        contents.Prefix = output["Prefix"];
+        contents.Prefix = smithy_client_1.expectString(output["Prefix"]);
     }
     return contents;
 };
@@ -31086,7 +31138,7 @@ const deserializeAws_restXmlInventoryOptionalFields = (output, context) => {
         if (entry === null) {
             return null;
         }
-        return entry;
+        return smithy_client_1.expectString(entry);
     });
 };
 const deserializeAws_restXmlInventoryS3BucketDestination = (output, context) => {
@@ -31098,16 +31150,16 @@ const deserializeAws_restXmlInventoryS3BucketDestination = (output, context) => 
         Encryption: undefined,
     };
     if (output["AccountId"] !== undefined) {
-        contents.AccountId = output["AccountId"];
+        contents.AccountId = smithy_client_1.expectString(output["AccountId"]);
     }
     if (output["Bucket"] !== undefined) {
-        contents.Bucket = output["Bucket"];
+        contents.Bucket = smithy_client_1.expectString(output["Bucket"]);
     }
     if (output["Format"] !== undefined) {
-        contents.Format = output["Format"];
+        contents.Format = smithy_client_1.expectString(output["Format"]);
     }
     if (output["Prefix"] !== undefined) {
-        contents.Prefix = output["Prefix"];
+        contents.Prefix = smithy_client_1.expectString(output["Prefix"]);
     }
     if (output["Encryption"] !== undefined) {
         contents.Encryption = deserializeAws_restXmlInventoryEncryption(output["Encryption"], context);
@@ -31119,7 +31171,7 @@ const deserializeAws_restXmlInventorySchedule = (output, context) => {
         Frequency: undefined,
     };
     if (output["Frequency"] !== undefined) {
-        contents.Frequency = output["Frequency"];
+        contents.Frequency = smithy_client_1.expectString(output["Frequency"]);
     }
     return contents;
 };
@@ -31131,10 +31183,10 @@ const deserializeAws_restXmlLambdaFunctionConfiguration = (output, context) => {
         Filter: undefined,
     };
     if (output["Id"] !== undefined) {
-        contents.Id = output["Id"];
+        contents.Id = smithy_client_1.expectString(output["Id"]);
     }
     if (output["CloudFunction"] !== undefined) {
-        contents.LambdaFunctionArn = output["CloudFunction"];
+        contents.LambdaFunctionArn = smithy_client_1.expectString(output["CloudFunction"]);
     }
     if (output.Event === "") {
         contents.Events = [];
@@ -31170,7 +31222,7 @@ const deserializeAws_restXmlLifecycleExpiration = (output, context) => {
         contents.Days = parseInt(output["Days"]);
     }
     if (output["ExpiredObjectDeleteMarker"] !== undefined) {
-        contents.ExpiredObjectDeleteMarker = output["ExpiredObjectDeleteMarker"] == "true";
+        contents.ExpiredObjectDeleteMarker = smithy_client_1.parseBoolean(output["ExpiredObjectDeleteMarker"]);
     }
     return contents;
 };
@@ -31190,16 +31242,16 @@ const deserializeAws_restXmlLifecycleRule = (output, context) => {
         contents.Expiration = deserializeAws_restXmlLifecycleExpiration(output["Expiration"], context);
     }
     if (output["ID"] !== undefined) {
-        contents.ID = output["ID"];
+        contents.ID = smithy_client_1.expectString(output["ID"]);
     }
     if (output["Prefix"] !== undefined) {
-        contents.Prefix = output["Prefix"];
+        contents.Prefix = smithy_client_1.expectString(output["Prefix"]);
     }
     if (output["Filter"] !== undefined) {
         contents.Filter = deserializeAws_restXmlLifecycleRuleFilter(output["Filter"], context);
     }
     if (output["Status"] !== undefined) {
-        contents.Status = output["Status"];
+        contents.Status = smithy_client_1.expectString(output["Status"]);
     }
     if (output.Transition === "") {
         contents.Transitions = [];
@@ -31227,7 +31279,7 @@ const deserializeAws_restXmlLifecycleRuleAndOperator = (output, context) => {
         Tags: undefined,
     };
     if (output["Prefix"] !== undefined) {
-        contents.Prefix = output["Prefix"];
+        contents.Prefix = smithy_client_1.expectString(output["Prefix"]);
     }
     if (output.Tag === "") {
         contents.Tags = [];
@@ -31240,7 +31292,7 @@ const deserializeAws_restXmlLifecycleRuleAndOperator = (output, context) => {
 const deserializeAws_restXmlLifecycleRuleFilter = (output, context) => {
     if (output["Prefix"] !== undefined) {
         return {
-            Prefix: output["Prefix"],
+            Prefix: smithy_client_1.expectString(output["Prefix"]),
         };
     }
     if (output["Tag"] !== undefined) {
@@ -31272,7 +31324,7 @@ const deserializeAws_restXmlLoggingEnabled = (output, context) => {
         TargetPrefix: undefined,
     };
     if (output["TargetBucket"] !== undefined) {
-        contents.TargetBucket = output["TargetBucket"];
+        contents.TargetBucket = smithy_client_1.expectString(output["TargetBucket"]);
     }
     if (output.TargetGrants === "") {
         contents.TargetGrants = [];
@@ -31281,7 +31333,7 @@ const deserializeAws_restXmlLoggingEnabled = (output, context) => {
         contents.TargetGrants = deserializeAws_restXmlTargetGrants(smithy_client_1.getArrayIfSingleItem(output["TargetGrants"]["Grant"]), context);
     }
     if (output["TargetPrefix"] !== undefined) {
-        contents.TargetPrefix = output["TargetPrefix"];
+        contents.TargetPrefix = smithy_client_1.expectString(output["TargetPrefix"]);
     }
     return contents;
 };
@@ -31291,7 +31343,7 @@ const deserializeAws_restXmlMetrics = (output, context) => {
         EventThreshold: undefined,
     };
     if (output["Status"] !== undefined) {
-        contents.Status = output["Status"];
+        contents.Status = smithy_client_1.expectString(output["Status"]);
     }
     if (output["EventThreshold"] !== undefined) {
         contents.EventThreshold = deserializeAws_restXmlReplicationTimeValue(output["EventThreshold"], context);
@@ -31304,7 +31356,7 @@ const deserializeAws_restXmlMetricsAndOperator = (output, context) => {
         Tags: undefined,
     };
     if (output["Prefix"] !== undefined) {
-        contents.Prefix = output["Prefix"];
+        contents.Prefix = smithy_client_1.expectString(output["Prefix"]);
     }
     if (output.Tag === "") {
         contents.Tags = [];
@@ -31320,7 +31372,7 @@ const deserializeAws_restXmlMetricsConfiguration = (output, context) => {
         Filter: undefined,
     };
     if (output["Id"] !== undefined) {
-        contents.Id = output["Id"];
+        contents.Id = smithy_client_1.expectString(output["Id"]);
     }
     if (output["Filter"] !== undefined) {
         contents.Filter = deserializeAws_restXmlMetricsFilter(output["Filter"], context);
@@ -31340,7 +31392,7 @@ const deserializeAws_restXmlMetricsConfigurationList = (output, context) => {
 const deserializeAws_restXmlMetricsFilter = (output, context) => {
     if (output["Prefix"] !== undefined) {
         return {
-            Prefix: output["Prefix"],
+            Prefix: smithy_client_1.expectString(output["Prefix"]),
         };
     }
     if (output["Tag"] !== undefined) {
@@ -31365,16 +31417,16 @@ const deserializeAws_restXmlMultipartUpload = (output, context) => {
         Initiator: undefined,
     };
     if (output["UploadId"] !== undefined) {
-        contents.UploadId = output["UploadId"];
+        contents.UploadId = smithy_client_1.expectString(output["UploadId"]);
     }
     if (output["Key"] !== undefined) {
-        contents.Key = output["Key"];
+        contents.Key = smithy_client_1.expectString(output["Key"]);
     }
     if (output["Initiated"] !== undefined) {
         contents.Initiated = new Date(output["Initiated"]);
     }
     if (output["StorageClass"] !== undefined) {
-        contents.StorageClass = output["StorageClass"];
+        contents.StorageClass = smithy_client_1.expectString(output["StorageClass"]);
     }
     if (output["Owner"] !== undefined) {
         contents.Owner = deserializeAws_restXmlOwner(output["Owner"], context);
@@ -31412,7 +31464,7 @@ const deserializeAws_restXmlNoncurrentVersionTransition = (output, context) => {
         contents.NoncurrentDays = parseInt(output["NoncurrentDays"]);
     }
     if (output["StorageClass"] !== undefined) {
-        contents.StorageClass = output["StorageClass"];
+        contents.StorageClass = smithy_client_1.expectString(output["StorageClass"]);
     }
     return contents;
 };
@@ -31445,19 +31497,19 @@ const deserializeAws_restXml_Object = (output, context) => {
         Owner: undefined,
     };
     if (output["Key"] !== undefined) {
-        contents.Key = output["Key"];
+        contents.Key = smithy_client_1.expectString(output["Key"]);
     }
     if (output["LastModified"] !== undefined) {
         contents.LastModified = new Date(output["LastModified"]);
     }
     if (output["ETag"] !== undefined) {
-        contents.ETag = output["ETag"];
+        contents.ETag = smithy_client_1.expectString(output["ETag"]);
     }
     if (output["Size"] !== undefined) {
         contents.Size = parseInt(output["Size"]);
     }
     if (output["StorageClass"] !== undefined) {
-        contents.StorageClass = output["StorageClass"];
+        contents.StorageClass = smithy_client_1.expectString(output["StorageClass"]);
     }
     if (output["Owner"] !== undefined) {
         contents.Owner = deserializeAws_restXmlOwner(output["Owner"], context);
@@ -31480,7 +31532,7 @@ const deserializeAws_restXmlObjectLockConfiguration = (output, context) => {
         Rule: undefined,
     };
     if (output["ObjectLockEnabled"] !== undefined) {
-        contents.ObjectLockEnabled = output["ObjectLockEnabled"];
+        contents.ObjectLockEnabled = smithy_client_1.expectString(output["ObjectLockEnabled"]);
     }
     if (output["Rule"] !== undefined) {
         contents.Rule = deserializeAws_restXmlObjectLockRule(output["Rule"], context);
@@ -31492,7 +31544,7 @@ const deserializeAws_restXmlObjectLockLegalHold = (output, context) => {
         Status: undefined,
     };
     if (output["Status"] !== undefined) {
-        contents.Status = output["Status"];
+        contents.Status = smithy_client_1.expectString(output["Status"]);
     }
     return contents;
 };
@@ -31502,7 +31554,7 @@ const deserializeAws_restXmlObjectLockRetention = (output, context) => {
         RetainUntilDate: undefined,
     };
     if (output["Mode"] !== undefined) {
-        contents.Mode = output["Mode"];
+        contents.Mode = smithy_client_1.expectString(output["Mode"]);
     }
     if (output["RetainUntilDate"] !== undefined) {
         contents.RetainUntilDate = new Date(output["RetainUntilDate"]);
@@ -31530,22 +31582,22 @@ const deserializeAws_restXmlObjectVersion = (output, context) => {
         Owner: undefined,
     };
     if (output["ETag"] !== undefined) {
-        contents.ETag = output["ETag"];
+        contents.ETag = smithy_client_1.expectString(output["ETag"]);
     }
     if (output["Size"] !== undefined) {
         contents.Size = parseInt(output["Size"]);
     }
     if (output["StorageClass"] !== undefined) {
-        contents.StorageClass = output["StorageClass"];
+        contents.StorageClass = smithy_client_1.expectString(output["StorageClass"]);
     }
     if (output["Key"] !== undefined) {
-        contents.Key = output["Key"];
+        contents.Key = smithy_client_1.expectString(output["Key"]);
     }
     if (output["VersionId"] !== undefined) {
-        contents.VersionId = output["VersionId"];
+        contents.VersionId = smithy_client_1.expectString(output["VersionId"]);
     }
     if (output["IsLatest"] !== undefined) {
-        contents.IsLatest = output["IsLatest"] == "true";
+        contents.IsLatest = smithy_client_1.parseBoolean(output["IsLatest"]);
     }
     if (output["LastModified"] !== undefined) {
         contents.LastModified = new Date(output["LastModified"]);
@@ -31571,10 +31623,10 @@ const deserializeAws_restXmlOwner = (output, context) => {
         ID: undefined,
     };
     if (output["DisplayName"] !== undefined) {
-        contents.DisplayName = output["DisplayName"];
+        contents.DisplayName = smithy_client_1.expectString(output["DisplayName"]);
     }
     if (output["ID"] !== undefined) {
-        contents.ID = output["ID"];
+        contents.ID = smithy_client_1.expectString(output["ID"]);
     }
     return contents;
 };
@@ -31595,7 +31647,7 @@ const deserializeAws_restXmlOwnershipControlsRule = (output, context) => {
         ObjectOwnership: undefined,
     };
     if (output["ObjectOwnership"] !== undefined) {
-        contents.ObjectOwnership = output["ObjectOwnership"];
+        contents.ObjectOwnership = smithy_client_1.expectString(output["ObjectOwnership"]);
     }
     return contents;
 };
@@ -31623,7 +31675,7 @@ const deserializeAws_restXmlPart = (output, context) => {
         contents.LastModified = new Date(output["LastModified"]);
     }
     if (output["ETag"] !== undefined) {
-        contents.ETag = output["ETag"];
+        contents.ETag = smithy_client_1.expectString(output["ETag"]);
     }
     if (output["Size"] !== undefined) {
         contents.Size = parseInt(output["Size"]);
@@ -31645,7 +31697,7 @@ const deserializeAws_restXmlPolicyStatus = (output, context) => {
         IsPublic: undefined,
     };
     if (output["IsPublic"] !== undefined) {
-        contents.IsPublic = output["IsPublic"] == "true";
+        contents.IsPublic = smithy_client_1.parseBoolean(output["IsPublic"]);
     }
     return contents;
 };
@@ -31683,16 +31735,16 @@ const deserializeAws_restXmlPublicAccessBlockConfiguration = (output, context) =
         RestrictPublicBuckets: undefined,
     };
     if (output["BlockPublicAcls"] !== undefined) {
-        contents.BlockPublicAcls = output["BlockPublicAcls"] == "true";
+        contents.BlockPublicAcls = smithy_client_1.parseBoolean(output["BlockPublicAcls"]);
     }
     if (output["IgnorePublicAcls"] !== undefined) {
-        contents.IgnorePublicAcls = output["IgnorePublicAcls"] == "true";
+        contents.IgnorePublicAcls = smithy_client_1.parseBoolean(output["IgnorePublicAcls"]);
     }
     if (output["BlockPublicPolicy"] !== undefined) {
-        contents.BlockPublicPolicy = output["BlockPublicPolicy"] == "true";
+        contents.BlockPublicPolicy = smithy_client_1.parseBoolean(output["BlockPublicPolicy"]);
     }
     if (output["RestrictPublicBuckets"] !== undefined) {
-        contents.RestrictPublicBuckets = output["RestrictPublicBuckets"] == "true";
+        contents.RestrictPublicBuckets = smithy_client_1.parseBoolean(output["RestrictPublicBuckets"]);
     }
     return contents;
 };
@@ -31704,10 +31756,10 @@ const deserializeAws_restXmlQueueConfiguration = (output, context) => {
         Filter: undefined,
     };
     if (output["Id"] !== undefined) {
-        contents.Id = output["Id"];
+        contents.Id = smithy_client_1.expectString(output["Id"]);
     }
     if (output["Queue"] !== undefined) {
-        contents.QueueArn = output["Queue"];
+        contents.QueueArn = smithy_client_1.expectString(output["Queue"]);
     }
     if (output.Event === "") {
         contents.Events = [];
@@ -31748,19 +31800,19 @@ const deserializeAws_restXmlRedirect = (output, context) => {
         ReplaceKeyWith: undefined,
     };
     if (output["HostName"] !== undefined) {
-        contents.HostName = output["HostName"];
+        contents.HostName = smithy_client_1.expectString(output["HostName"]);
     }
     if (output["HttpRedirectCode"] !== undefined) {
-        contents.HttpRedirectCode = output["HttpRedirectCode"];
+        contents.HttpRedirectCode = smithy_client_1.expectString(output["HttpRedirectCode"]);
     }
     if (output["Protocol"] !== undefined) {
-        contents.Protocol = output["Protocol"];
+        contents.Protocol = smithy_client_1.expectString(output["Protocol"]);
     }
     if (output["ReplaceKeyPrefixWith"] !== undefined) {
-        contents.ReplaceKeyPrefixWith = output["ReplaceKeyPrefixWith"];
+        contents.ReplaceKeyPrefixWith = smithy_client_1.expectString(output["ReplaceKeyPrefixWith"]);
     }
     if (output["ReplaceKeyWith"] !== undefined) {
-        contents.ReplaceKeyWith = output["ReplaceKeyWith"];
+        contents.ReplaceKeyWith = smithy_client_1.expectString(output["ReplaceKeyWith"]);
     }
     return contents;
 };
@@ -31770,10 +31822,10 @@ const deserializeAws_restXmlRedirectAllRequestsTo = (output, context) => {
         Protocol: undefined,
     };
     if (output["HostName"] !== undefined) {
-        contents.HostName = output["HostName"];
+        contents.HostName = smithy_client_1.expectString(output["HostName"]);
     }
     if (output["Protocol"] !== undefined) {
-        contents.Protocol = output["Protocol"];
+        contents.Protocol = smithy_client_1.expectString(output["Protocol"]);
     }
     return contents;
 };
@@ -31782,7 +31834,7 @@ const deserializeAws_restXmlReplicaModifications = (output, context) => {
         Status: undefined,
     };
     if (output["Status"] !== undefined) {
-        contents.Status = output["Status"];
+        contents.Status = smithy_client_1.expectString(output["Status"]);
     }
     return contents;
 };
@@ -31792,7 +31844,7 @@ const deserializeAws_restXmlReplicationConfiguration = (output, context) => {
         Rules: undefined,
     };
     if (output["Role"] !== undefined) {
-        contents.Role = output["Role"];
+        contents.Role = smithy_client_1.expectString(output["Role"]);
     }
     if (output.Rule === "") {
         contents.Rules = [];
@@ -31815,19 +31867,19 @@ const deserializeAws_restXmlReplicationRule = (output, context) => {
         DeleteMarkerReplication: undefined,
     };
     if (output["ID"] !== undefined) {
-        contents.ID = output["ID"];
+        contents.ID = smithy_client_1.expectString(output["ID"]);
     }
     if (output["Priority"] !== undefined) {
         contents.Priority = parseInt(output["Priority"]);
     }
     if (output["Prefix"] !== undefined) {
-        contents.Prefix = output["Prefix"];
+        contents.Prefix = smithy_client_1.expectString(output["Prefix"]);
     }
     if (output["Filter"] !== undefined) {
         contents.Filter = deserializeAws_restXmlReplicationRuleFilter(output["Filter"], context);
     }
     if (output["Status"] !== undefined) {
-        contents.Status = output["Status"];
+        contents.Status = smithy_client_1.expectString(output["Status"]);
     }
     if (output["SourceSelectionCriteria"] !== undefined) {
         contents.SourceSelectionCriteria = deserializeAws_restXmlSourceSelectionCriteria(output["SourceSelectionCriteria"], context);
@@ -31849,7 +31901,7 @@ const deserializeAws_restXmlReplicationRuleAndOperator = (output, context) => {
         Tags: undefined,
     };
     if (output["Prefix"] !== undefined) {
-        contents.Prefix = output["Prefix"];
+        contents.Prefix = smithy_client_1.expectString(output["Prefix"]);
     }
     if (output.Tag === "") {
         contents.Tags = [];
@@ -31862,7 +31914,7 @@ const deserializeAws_restXmlReplicationRuleAndOperator = (output, context) => {
 const deserializeAws_restXmlReplicationRuleFilter = (output, context) => {
     if (output["Prefix"] !== undefined) {
         return {
-            Prefix: output["Prefix"],
+            Prefix: smithy_client_1.expectString(output["Prefix"]),
         };
     }
     if (output["Tag"] !== undefined) {
@@ -31893,7 +31945,7 @@ const deserializeAws_restXmlReplicationTime = (output, context) => {
         Time: undefined,
     };
     if (output["Status"] !== undefined) {
-        contents.Status = output["Status"];
+        contents.Status = smithy_client_1.expectString(output["Status"]);
     }
     if (output["Time"] !== undefined) {
         contents.Time = deserializeAws_restXmlReplicationTimeValue(output["Time"], context);
@@ -31978,10 +32030,10 @@ const deserializeAws_restXmlServerSideEncryptionByDefault = (output, context) =>
         KMSMasterKeyID: undefined,
     };
     if (output["SSEAlgorithm"] !== undefined) {
-        contents.SSEAlgorithm = output["SSEAlgorithm"];
+        contents.SSEAlgorithm = smithy_client_1.expectString(output["SSEAlgorithm"]);
     }
     if (output["KMSMasterKeyID"] !== undefined) {
-        contents.KMSMasterKeyID = output["KMSMasterKeyID"];
+        contents.KMSMasterKeyID = smithy_client_1.expectString(output["KMSMasterKeyID"]);
     }
     return contents;
 };
@@ -32006,7 +32058,7 @@ const deserializeAws_restXmlServerSideEncryptionRule = (output, context) => {
         contents.ApplyServerSideEncryptionByDefault = deserializeAws_restXmlServerSideEncryptionByDefault(output["ApplyServerSideEncryptionByDefault"], context);
     }
     if (output["BucketKeyEnabled"] !== undefined) {
-        contents.BucketKeyEnabled = output["BucketKeyEnabled"] == "true";
+        contents.BucketKeyEnabled = smithy_client_1.parseBoolean(output["BucketKeyEnabled"]);
     }
     return contents;
 };
@@ -32038,7 +32090,7 @@ const deserializeAws_restXmlSSEKMS = (output, context) => {
         KeyId: undefined,
     };
     if (output["KeyId"] !== undefined) {
-        contents.KeyId = output["KeyId"];
+        contents.KeyId = smithy_client_1.expectString(output["KeyId"]);
     }
     return contents;
 };
@@ -32047,7 +32099,7 @@ const deserializeAws_restXmlSseKmsEncryptedObjects = (output, context) => {
         Status: undefined,
     };
     if (output["Status"] !== undefined) {
-        contents.Status = output["Status"];
+        contents.Status = smithy_client_1.expectString(output["Status"]);
     }
     return contents;
 };
@@ -32096,7 +32148,7 @@ const deserializeAws_restXmlStorageClassAnalysisDataExport = (output, context) =
         Destination: undefined,
     };
     if (output["OutputSchemaVersion"] !== undefined) {
-        contents.OutputSchemaVersion = output["OutputSchemaVersion"];
+        contents.OutputSchemaVersion = smithy_client_1.expectString(output["OutputSchemaVersion"]);
     }
     if (output["Destination"] !== undefined) {
         contents.Destination = deserializeAws_restXmlAnalyticsExportDestination(output["Destination"], context);
@@ -32109,10 +32161,10 @@ const deserializeAws_restXmlTag = (output, context) => {
         Value: undefined,
     };
     if (output["Key"] !== undefined) {
-        contents.Key = output["Key"];
+        contents.Key = smithy_client_1.expectString(output["Key"]);
     }
     if (output["Value"] !== undefined) {
-        contents.Value = output["Value"];
+        contents.Value = smithy_client_1.expectString(output["Value"]);
     }
     return contents;
 };
@@ -32135,7 +32187,7 @@ const deserializeAws_restXmlTargetGrant = (output, context) => {
         contents.Grantee = deserializeAws_restXmlGrantee(output["Grantee"], context);
     }
     if (output["Permission"] !== undefined) {
-        contents.Permission = output["Permission"];
+        contents.Permission = smithy_client_1.expectString(output["Permission"]);
     }
     return contents;
 };
@@ -32158,7 +32210,7 @@ const deserializeAws_restXmlTiering = (output, context) => {
         contents.Days = parseInt(output["Days"]);
     }
     if (output["AccessTier"] !== undefined) {
-        contents.AccessTier = output["AccessTier"];
+        contents.AccessTier = smithy_client_1.expectString(output["AccessTier"]);
     }
     return contents;
 };
@@ -32180,10 +32232,10 @@ const deserializeAws_restXmlTopicConfiguration = (output, context) => {
         Filter: undefined,
     };
     if (output["Id"] !== undefined) {
-        contents.Id = output["Id"];
+        contents.Id = smithy_client_1.expectString(output["Id"]);
     }
     if (output["Topic"] !== undefined) {
-        contents.TopicArn = output["Topic"];
+        contents.TopicArn = smithy_client_1.expectString(output["Topic"]);
     }
     if (output.Event === "") {
         contents.Events = [];
@@ -32219,7 +32271,7 @@ const deserializeAws_restXmlTransition = (output, context) => {
         contents.Days = parseInt(output["Days"]);
     }
     if (output["StorageClass"] !== undefined) {
-        contents.StorageClass = output["StorageClass"];
+        contents.StorageClass = smithy_client_1.expectString(output["StorageClass"]);
     }
     return contents;
 };
@@ -32295,7 +32347,7 @@ const loadRestXmlErrorCode = (output, data) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ClientDefaultValues = void 0;
+exports.getRuntimeConfig = void 0;
 const tslib_1 = __nccwpck_require__(4351);
 const package_json_1 = tslib_1.__importDefault(__nccwpck_require__(4295));
 const client_sts_1 = __nccwpck_require__(3285);
@@ -32313,33 +32365,38 @@ const util_body_length_node_1 = __nccwpck_require__(286);
 const util_user_agent_node_1 = __nccwpck_require__(4717);
 const util_utf8_node_1 = __nccwpck_require__(5227);
 const runtimeConfig_shared_1 = __nccwpck_require__(1383);
+const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * @internal
  */
-exports.ClientDefaultValues = {
-    ...runtimeConfig_shared_1.ClientSharedValues,
-    runtime: "node",
-    base64Decoder: util_base64_node_1.fromBase64,
-    base64Encoder: util_base64_node_1.toBase64,
-    bodyLengthChecker: util_body_length_node_1.calculateBodyLength,
-    credentialDefaultProvider: client_sts_1.decorateDefaultCredentialProvider(credential_provider_node_1.defaultProvider),
-    defaultUserAgentProvider: util_user_agent_node_1.defaultUserAgent({
-        serviceId: runtimeConfig_shared_1.ClientSharedValues.serviceId,
-        clientVersion: package_json_1.default.version,
-    }),
-    eventStreamSerdeProvider: eventstream_serde_node_1.eventStreamSerdeProvider,
-    maxAttempts: node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
-    md5: hash_node_1.Hash.bind(null, "md5"),
-    region: node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
-    requestHandler: new node_http_handler_1.NodeHttpHandler(),
-    retryModeProvider: node_config_provider_1.loadConfig(middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS),
-    sha256: hash_node_1.Hash.bind(null, "sha256"),
-    streamCollector: node_http_handler_1.streamCollector,
-    streamHasher: hash_stream_node_1.fileStreamHasher,
-    useArnRegion: node_config_provider_1.loadConfig(middleware_bucket_endpoint_1.NODE_USE_ARN_REGION_CONFIG_OPTIONS),
-    utf8Decoder: util_utf8_node_1.fromUtf8,
-    utf8Encoder: util_utf8_node_1.toUtf8,
+const getRuntimeConfig = (config = {}) => {
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s;
+    smithy_client_1.emitWarningIfUnsupportedVersion(process.version);
+    const clientSharedValues = runtimeConfig_shared_1.getRuntimeConfig(config);
+    return {
+        ...clientSharedValues,
+        ...config,
+        runtime: "node",
+        base64Decoder: (_a = config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
+        base64Encoder: (_b = config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
+        bodyLengthChecker: (_c = config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
+        credentialDefaultProvider: (_d = config.credentialDefaultProvider) !== null && _d !== void 0 ? _d : client_sts_1.decorateDefaultCredentialProvider(credential_provider_node_1.defaultProvider),
+        defaultUserAgentProvider: (_e = config.defaultUserAgentProvider) !== null && _e !== void 0 ? _e : util_user_agent_node_1.defaultUserAgent({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
+        eventStreamSerdeProvider: (_f = config.eventStreamSerdeProvider) !== null && _f !== void 0 ? _f : eventstream_serde_node_1.eventStreamSerdeProvider,
+        maxAttempts: (_g = config.maxAttempts) !== null && _g !== void 0 ? _g : node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
+        md5: (_h = config.md5) !== null && _h !== void 0 ? _h : hash_node_1.Hash.bind(null, "md5"),
+        region: (_j = config.region) !== null && _j !== void 0 ? _j : node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
+        requestHandler: (_k = config.requestHandler) !== null && _k !== void 0 ? _k : new node_http_handler_1.NodeHttpHandler(),
+        retryModeProvider: (_l = config.retryModeProvider) !== null && _l !== void 0 ? _l : node_config_provider_1.loadConfig(middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS),
+        sha256: (_m = config.sha256) !== null && _m !== void 0 ? _m : hash_node_1.Hash.bind(null, "sha256"),
+        streamCollector: (_o = config.streamCollector) !== null && _o !== void 0 ? _o : node_http_handler_1.streamCollector,
+        streamHasher: (_p = config.streamHasher) !== null && _p !== void 0 ? _p : hash_stream_node_1.fileStreamHasher,
+        useArnRegion: (_q = config.useArnRegion) !== null && _q !== void 0 ? _q : node_config_provider_1.loadConfig(middleware_bucket_endpoint_1.NODE_USE_ARN_REGION_CONFIG_OPTIONS),
+        utf8Decoder: (_r = config.utf8Decoder) !== null && _r !== void 0 ? _r : util_utf8_node_1.fromUtf8,
+        utf8Encoder: (_s = config.utf8Encoder) !== null && _s !== void 0 ? _s : util_utf8_node_1.toUtf8,
+    };
 };
+exports.getRuntimeConfig = getRuntimeConfig;
 //# sourceMappingURL=runtimeConfig.js.map
 
 /***/ }),
@@ -32350,22 +32407,26 @@ exports.ClientDefaultValues = {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ClientSharedValues = void 0;
+exports.getRuntimeConfig = void 0;
 const endpoints_1 = __nccwpck_require__(133);
 const url_parser_1 = __nccwpck_require__(9427);
 /**
  * @internal
  */
-exports.ClientSharedValues = {
-    apiVersion: "2006-03-01",
-    disableHostPrefix: false,
-    logger: {},
-    regionInfoProvider: endpoints_1.defaultRegionInfoProvider,
-    serviceId: "S3",
-    signingEscapePath: false,
-    urlParser: url_parser_1.parseUrl,
-    useArnRegion: false,
+const getRuntimeConfig = (config = {}) => {
+    var _a, _b, _c, _d, _e, _f, _g;
+    return ({
+        apiVersion: "2006-03-01",
+        disableHostPrefix: (_a = config.disableHostPrefix) !== null && _a !== void 0 ? _a : false,
+        logger: (_b = config.logger) !== null && _b !== void 0 ? _b : {},
+        regionInfoProvider: (_c = config.regionInfoProvider) !== null && _c !== void 0 ? _c : endpoints_1.defaultRegionInfoProvider,
+        serviceId: (_d = config.serviceId) !== null && _d !== void 0 ? _d : "S3",
+        signingEscapePath: (_e = config.signingEscapePath) !== null && _e !== void 0 ? _e : false,
+        urlParser: (_f = config.urlParser) !== null && _f !== void 0 ? _f : url_parser_1.parseUrl,
+        useArnRegion: (_g = config.useArnRegion) !== null && _g !== void 0 ? _g : false,
+    });
 };
+exports.getRuntimeConfig = getRuntimeConfig;
 //# sourceMappingURL=runtimeConfig.shared.js.map
 
 /***/ }),
@@ -32688,10 +32749,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  */
 class SSOClient extends smithy_client_1.Client {
     constructor(configuration) {
-        let _config_0 = {
-            ...runtimeConfig_1.ClientDefaultValues,
-            ...configuration,
-        };
+        let _config_0 = runtimeConfig_1.getRuntimeConfig(configuration);
         let _config_1 = config_resolver_1.resolveRegionConfig(_config_0);
         let _config_2 = config_resolver_1.resolveEndpointsConfig(_config_1);
         let _config_3 = middleware_retry_1.resolveRetryConfig(_config_2);
@@ -33451,17 +33509,18 @@ exports.paginateListAccounts = paginateListAccounts;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.deserializeAws_restJson1LogoutCommand = exports.deserializeAws_restJson1ListAccountsCommand = exports.deserializeAws_restJson1ListAccountRolesCommand = exports.deserializeAws_restJson1GetRoleCredentialsCommand = exports.serializeAws_restJson1LogoutCommand = exports.serializeAws_restJson1ListAccountsCommand = exports.serializeAws_restJson1ListAccountRolesCommand = exports.serializeAws_restJson1GetRoleCredentialsCommand = void 0;
 const protocol_http_1 = __nccwpck_require__(7498);
+const smithy_client_1 = __nccwpck_require__(2223);
 const serializeAws_restJson1GetRoleCredentialsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.accessToken) && { "x-amz-sso_bearer_token": input.accessToken }),
     };
-    let resolvedPath = "/federation/credentials";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/federation/credentials";
     const query = {
         ...(input.roleName !== undefined && { role_name: input.roleName }),
         ...(input.accountId !== undefined && { account_id: input.accountId }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -33475,17 +33534,17 @@ const serializeAws_restJson1GetRoleCredentialsCommand = async (input, context) =
 };
 exports.serializeAws_restJson1GetRoleCredentialsCommand = serializeAws_restJson1GetRoleCredentialsCommand;
 const serializeAws_restJson1ListAccountRolesCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.accessToken) && { "x-amz-sso_bearer_token": input.accessToken }),
     };
-    let resolvedPath = "/assignment/roles";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/assignment/roles";
     const query = {
         ...(input.nextToken !== undefined && { next_token: input.nextToken }),
         ...(input.maxResults !== undefined && { max_result: input.maxResults.toString() }),
         ...(input.accountId !== undefined && { account_id: input.accountId }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -33499,16 +33558,16 @@ const serializeAws_restJson1ListAccountRolesCommand = async (input, context) => 
 };
 exports.serializeAws_restJson1ListAccountRolesCommand = serializeAws_restJson1ListAccountRolesCommand;
 const serializeAws_restJson1ListAccountsCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.accessToken) && { "x-amz-sso_bearer_token": input.accessToken }),
     };
-    let resolvedPath = "/assignment/accounts";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/assignment/accounts";
     const query = {
         ...(input.nextToken !== undefined && { next_token: input.nextToken }),
         ...(input.maxResults !== undefined && { max_result: input.maxResults.toString() }),
     };
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -33522,12 +33581,12 @@ const serializeAws_restJson1ListAccountsCommand = async (input, context) => {
 };
 exports.serializeAws_restJson1ListAccountsCommand = serializeAws_restJson1ListAccountsCommand;
 const serializeAws_restJson1LogoutCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
     const headers = {
         ...(isSerializableHeaderValue(input.accessToken) && { "x-amz-sso_bearer_token": input.accessToken }),
     };
-    let resolvedPath = "/logout";
+    let resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/logout";
     let body;
-    const { hostname, protocol = "https", port } = await context.endpoint();
     return new protocol_http_1.HttpRequest({
         protocol,
         hostname,
@@ -33622,7 +33681,7 @@ const deserializeAws_restJson1ListAccountRolesCommand = async (output, context) 
     };
     const data = await parseBody(output.body, context);
     if (data.nextToken !== undefined && data.nextToken !== null) {
-        contents.nextToken = data.nextToken;
+        contents.nextToken = smithy_client_1.expectString(data.nextToken);
     }
     if (data.roleList !== undefined && data.roleList !== null) {
         contents.roleList = deserializeAws_restJson1RoleListType(data.roleList, context);
@@ -33701,7 +33760,7 @@ const deserializeAws_restJson1ListAccountsCommand = async (output, context) => {
         contents.accountList = deserializeAws_restJson1AccountListType(data.accountList, context);
     }
     if (data.nextToken !== undefined && data.nextToken !== null) {
-        contents.nextToken = data.nextToken;
+        contents.nextToken = smithy_client_1.expectString(data.nextToken);
     }
     return Promise.resolve(contents);
 };
@@ -33832,7 +33891,7 @@ const deserializeAws_restJson1InvalidRequestExceptionResponse = async (parsedOut
     };
     const data = parsedOutput.body;
     if (data.message !== undefined && data.message !== null) {
-        contents.message = data.message;
+        contents.message = smithy_client_1.expectString(data.message);
     }
     return contents;
 };
@@ -33845,7 +33904,7 @@ const deserializeAws_restJson1ResourceNotFoundExceptionResponse = async (parsedO
     };
     const data = parsedOutput.body;
     if (data.message !== undefined && data.message !== null) {
-        contents.message = data.message;
+        contents.message = smithy_client_1.expectString(data.message);
     }
     return contents;
 };
@@ -33858,7 +33917,7 @@ const deserializeAws_restJson1TooManyRequestsExceptionResponse = async (parsedOu
     };
     const data = parsedOutput.body;
     if (data.message !== undefined && data.message !== null) {
-        contents.message = data.message;
+        contents.message = smithy_client_1.expectString(data.message);
     }
     return contents;
 };
@@ -33871,15 +33930,15 @@ const deserializeAws_restJson1UnauthorizedExceptionResponse = async (parsedOutpu
     };
     const data = parsedOutput.body;
     if (data.message !== undefined && data.message !== null) {
-        contents.message = data.message;
+        contents.message = smithy_client_1.expectString(data.message);
     }
     return contents;
 };
 const deserializeAws_restJson1AccountInfo = (output, context) => {
     return {
-        accountId: output.accountId !== undefined && output.accountId !== null ? output.accountId : undefined,
-        accountName: output.accountName !== undefined && output.accountName !== null ? output.accountName : undefined,
-        emailAddress: output.emailAddress !== undefined && output.emailAddress !== null ? output.emailAddress : undefined,
+        accountId: smithy_client_1.expectString(output.accountId),
+        accountName: smithy_client_1.expectString(output.accountName),
+        emailAddress: smithy_client_1.expectString(output.emailAddress),
     };
 };
 const deserializeAws_restJson1AccountListType = (output, context) => {
@@ -33894,16 +33953,16 @@ const deserializeAws_restJson1AccountListType = (output, context) => {
 };
 const deserializeAws_restJson1RoleCredentials = (output, context) => {
     return {
-        accessKeyId: output.accessKeyId !== undefined && output.accessKeyId !== null ? output.accessKeyId : undefined,
-        expiration: output.expiration !== undefined && output.expiration !== null ? output.expiration : undefined,
-        secretAccessKey: output.secretAccessKey !== undefined && output.secretAccessKey !== null ? output.secretAccessKey : undefined,
-        sessionToken: output.sessionToken !== undefined && output.sessionToken !== null ? output.sessionToken : undefined,
+        accessKeyId: smithy_client_1.expectString(output.accessKeyId),
+        expiration: smithy_client_1.expectNumber(output.expiration),
+        secretAccessKey: smithy_client_1.expectString(output.secretAccessKey),
+        sessionToken: smithy_client_1.expectString(output.sessionToken),
     };
 };
 const deserializeAws_restJson1RoleInfo = (output, context) => {
     return {
-        accountId: output.accountId !== undefined && output.accountId !== null ? output.accountId : undefined,
-        roleName: output.roleName !== undefined && output.roleName !== null ? output.roleName : undefined,
+        accountId: smithy_client_1.expectString(output.accountId),
+        roleName: smithy_client_1.expectString(output.roleName),
     };
 };
 const deserializeAws_restJson1RoleListType = (output, context) => {
@@ -33982,7 +34041,7 @@ const loadRestJsonErrorCode = (output, data) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ClientDefaultValues = void 0;
+exports.getRuntimeConfig = void 0;
 const tslib_1 = __nccwpck_require__(4351);
 const package_json_1 = tslib_1.__importDefault(__nccwpck_require__(8267));
 const config_resolver_1 = __nccwpck_require__(7229);
@@ -33995,28 +34054,33 @@ const util_body_length_node_1 = __nccwpck_require__(286);
 const util_user_agent_node_1 = __nccwpck_require__(4717);
 const util_utf8_node_1 = __nccwpck_require__(5227);
 const runtimeConfig_shared_1 = __nccwpck_require__(2284);
+const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * @internal
  */
-exports.ClientDefaultValues = {
-    ...runtimeConfig_shared_1.ClientSharedValues,
-    runtime: "node",
-    base64Decoder: util_base64_node_1.fromBase64,
-    base64Encoder: util_base64_node_1.toBase64,
-    bodyLengthChecker: util_body_length_node_1.calculateBodyLength,
-    defaultUserAgentProvider: util_user_agent_node_1.defaultUserAgent({
-        serviceId: runtimeConfig_shared_1.ClientSharedValues.serviceId,
-        clientVersion: package_json_1.default.version,
-    }),
-    maxAttempts: node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
-    region: node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
-    requestHandler: new node_http_handler_1.NodeHttpHandler(),
-    retryModeProvider: node_config_provider_1.loadConfig(middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS),
-    sha256: hash_node_1.Hash.bind(null, "sha256"),
-    streamCollector: node_http_handler_1.streamCollector,
-    utf8Decoder: util_utf8_node_1.fromUtf8,
-    utf8Encoder: util_utf8_node_1.toUtf8,
+const getRuntimeConfig = (config = {}) => {
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m;
+    smithy_client_1.emitWarningIfUnsupportedVersion(process.version);
+    const clientSharedValues = runtimeConfig_shared_1.getRuntimeConfig(config);
+    return {
+        ...clientSharedValues,
+        ...config,
+        runtime: "node",
+        base64Decoder: (_a = config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
+        base64Encoder: (_b = config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
+        bodyLengthChecker: (_c = config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
+        defaultUserAgentProvider: (_d = config.defaultUserAgentProvider) !== null && _d !== void 0 ? _d : util_user_agent_node_1.defaultUserAgent({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
+        maxAttempts: (_e = config.maxAttempts) !== null && _e !== void 0 ? _e : node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
+        region: (_f = config.region) !== null && _f !== void 0 ? _f : node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
+        requestHandler: (_g = config.requestHandler) !== null && _g !== void 0 ? _g : new node_http_handler_1.NodeHttpHandler(),
+        retryModeProvider: (_h = config.retryModeProvider) !== null && _h !== void 0 ? _h : node_config_provider_1.loadConfig(middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS),
+        sha256: (_j = config.sha256) !== null && _j !== void 0 ? _j : hash_node_1.Hash.bind(null, "sha256"),
+        streamCollector: (_k = config.streamCollector) !== null && _k !== void 0 ? _k : node_http_handler_1.streamCollector,
+        utf8Decoder: (_l = config.utf8Decoder) !== null && _l !== void 0 ? _l : util_utf8_node_1.fromUtf8,
+        utf8Encoder: (_m = config.utf8Encoder) !== null && _m !== void 0 ? _m : util_utf8_node_1.toUtf8,
+    };
 };
+exports.getRuntimeConfig = getRuntimeConfig;
 //# sourceMappingURL=runtimeConfig.js.map
 
 /***/ }),
@@ -34027,20 +34091,24 @@ exports.ClientDefaultValues = {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ClientSharedValues = void 0;
+exports.getRuntimeConfig = void 0;
 const endpoints_1 = __nccwpck_require__(8274);
 const url_parser_1 = __nccwpck_require__(9427);
 /**
  * @internal
  */
-exports.ClientSharedValues = {
-    apiVersion: "2019-06-10",
-    disableHostPrefix: false,
-    logger: {},
-    regionInfoProvider: endpoints_1.defaultRegionInfoProvider,
-    serviceId: "SSO",
-    urlParser: url_parser_1.parseUrl,
+const getRuntimeConfig = (config = {}) => {
+    var _a, _b, _c, _d, _e;
+    return ({
+        apiVersion: "2019-06-10",
+        disableHostPrefix: (_a = config.disableHostPrefix) !== null && _a !== void 0 ? _a : false,
+        logger: (_b = config.logger) !== null && _b !== void 0 ? _b : {},
+        regionInfoProvider: (_c = config.regionInfoProvider) !== null && _c !== void 0 ? _c : endpoints_1.defaultRegionInfoProvider,
+        serviceId: (_d = config.serviceId) !== null && _d !== void 0 ? _d : "SSO",
+        urlParser: (_e = config.urlParser) !== null && _e !== void 0 ? _e : url_parser_1.parseUrl,
+    });
 };
+exports.getRuntimeConfig = getRuntimeConfig;
 //# sourceMappingURL=runtimeConfig.shared.js.map
 
 /***/ }),
@@ -34062,9 +34130,9 @@ const GetCallerIdentityCommand_1 = __nccwpck_require__(2439);
 const GetFederationTokenCommand_1 = __nccwpck_require__(5239);
 const GetSessionTokenCommand_1 = __nccwpck_require__(6499);
 /**
- * <fullname>AWS Security Token Service</fullname>
- *          <p>AWS Security Token Service (STS) enables you to request temporary, limited-privilege
- *       credentials for AWS Identity and Access Management (IAM) users or for users that you
+ * <fullname>Security Token Service</fullname>
+ *          <p>Security Token Service (STS) enables you to request temporary, limited-privilege
+ *       credentials for Identity and Access Management (IAM) users or for users that you
  *       authenticate (federated users). This guide provides descriptions of the STS API. For
  *       more information about using this service, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html">Temporary Security Credentials</a>.</p>
  */
@@ -34204,23 +34272,20 @@ const middleware_sdk_sts_1 = __nccwpck_require__(9637);
 const middleware_user_agent_1 = __nccwpck_require__(5976);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <fullname>AWS Security Token Service</fullname>
- *          <p>AWS Security Token Service (STS) enables you to request temporary, limited-privilege
- *       credentials for AWS Identity and Access Management (IAM) users or for users that you
+ * <fullname>Security Token Service</fullname>
+ *          <p>Security Token Service (STS) enables you to request temporary, limited-privilege
+ *       credentials for Identity and Access Management (IAM) users or for users that you
  *       authenticate (federated users). This guide provides descriptions of the STS API. For
  *       more information about using this service, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html">Temporary Security Credentials</a>.</p>
  */
 class STSClient extends smithy_client_1.Client {
     constructor(configuration) {
-        let _config_0 = {
-            ...runtimeConfig_1.ClientDefaultValues,
-            ...configuration,
-        };
+        let _config_0 = runtimeConfig_1.getRuntimeConfig(configuration);
         let _config_1 = config_resolver_1.resolveRegionConfig(_config_0);
         let _config_2 = config_resolver_1.resolveEndpointsConfig(_config_1);
         let _config_3 = middleware_retry_1.resolveRetryConfig(_config_2);
         let _config_4 = middleware_host_header_1.resolveHostHeaderConfig(_config_3);
-        let _config_5 = middleware_sdk_sts_1.resolveStsAuthConfig(_config_4, STSClient);
+        let _config_5 = middleware_sdk_sts_1.resolveStsAuthConfig(_config_4, { stsClientCtor: STSClient });
         let _config_6 = middleware_user_agent_1.resolveUserAgentConfig(_config_5);
         super(_config_6);
         this.config = _config_6;
@@ -34257,21 +34322,21 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const middleware_signing_1 = __nccwpck_require__(2487);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Returns a set of temporary security credentials that you can use to access AWS
+ * <p>Returns a set of temporary security credentials that you can use to access Amazon Web Services
  *             resources that you might not normally have access to. These temporary credentials
  *             consist of an access key ID, a secret access key, and a security token. Typically, you
  *             use <code>AssumeRole</code> within your account or for cross-account access. For a
  *             comparison of <code>AssumeRole</code> with other API operations that produce temporary
  *             credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting Temporary Security
  *                 Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing
- *                 the AWS STS API operations</a> in the
+ *                 the STS API operations</a> in the
  *             <i>IAM User Guide</i>.</p>
  *          <p>
  *             <b>Permissions</b>
  *          </p>
  *          <p>The temporary security credentials created by <code>AssumeRole</code> can be used to
- *          make API calls to any AWS service with the following exception: You cannot call the
- *          AWS STS <code>GetFederationToken</code> or <code>GetSessionToken</code> API
+ *          make API calls to any Amazon Web Services service with the following exception: You cannot call the
+ *          STS <code>GetFederationToken</code> or <code>GetSessionToken</code> API
  *          operations.</p>
  *          <p>(Optional) You can pass inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policies</a> to
  *          this operation. You can pass a single JSON policy document to use as an inline session
@@ -34280,12 +34345,12 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          characters. Passing policies to this operation returns new
  *          temporary credentials. The resulting session's permissions are the intersection of the
  *          role's identity-based policy and the session policies. You can use the role's temporary
- *          credentials in subsequent AWS API calls to access resources in the account that owns
+ *          credentials in subsequent Amazon Web Services API calls to access resources in the account that owns
  *          the role. You cannot use session policies to grant more permissions than those allowed
  *          by the identity-based policy of the role that is being assumed. For more information, see
  *             <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">Session
  *             Policies</a> in the <i>IAM User Guide</i>.</p>
- *          <p>To assume a role from a different account, your AWS account must be trusted by the
+ *          <p>To assume a role from a different account, your account must be trusted by the
  *          role. The trust relationship is defined in the role's trust policy when the role is
  *          created. That trust policy states which accounts are allowed to delegate that access to
  *          users in the account. </p>
@@ -34326,7 +34391,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          </p>
  *          <p>(Optional) You can include multi-factor authentication (MFA) information when you call
  *             <code>AssumeRole</code>. This is useful for cross-account scenarios to ensure that the
- *          user that assumes the role has been authenticated with an AWS MFA device. In that
+ *          user that assumes the role has been authenticated with an Amazon Web Services MFA device. In that
  *          scenario, the trust policy of the role being assumed includes a condition that tests for
  *          MFA authentication. If the caller does not include valid MFA information, the request to
  *          assume the role is denied. The condition in a trust policy that tests for MFA
@@ -34411,14 +34476,14 @@ const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Returns a set of temporary security credentials for users who have been authenticated
  *          via a SAML authentication response. This operation provides a mechanism for tying an
- *          enterprise identity store or directory to role-based AWS access without user-specific
+ *          enterprise identity store or directory to role-based Amazon Web Services access without user-specific
  *          credentials or configuration. For a comparison of <code>AssumeRoleWithSAML</code> with the
  *          other API operations that produce temporary credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting Temporary Security
  *             Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
- *             AWS STS API operations</a> in the <i>IAM User Guide</i>.</p>
+ *             STS API operations</a> in the <i>IAM User Guide</i>.</p>
  *          <p>The temporary security credentials returned by this operation consist of an access key
  *          ID, a secret access key, and a security token. Applications can use these temporary
- *          security credentials to sign calls to AWS services.</p>
+ *          security credentials to sign calls to Amazon Web Services services.</p>
  *          <p>
  *             <b>Session Duration</b>
  *          </p>
@@ -34438,7 +34503,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             <i>IAM User Guide</i>.</p>
  *          <note>
  *            <p>
- *                <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-role-chaining">Role chaining</a> limits your AWS CLI or AWS API
+ *                <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-role-chaining">Role chaining</a> limits your CLI or Amazon Web Services API
  *                role session to a maximum of one hour. When you use the <code>AssumeRole</code> API
  *                operation to assume a role, you can specify the duration of your role session with
  *                the <code>DurationSeconds</code> parameter. You can specify a parameter value of up
@@ -34451,7 +34516,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             <b>Permissions</b>
  *          </p>
  *          <p>The temporary security credentials created by <code>AssumeRoleWithSAML</code> can be
- *          used to make API calls to any AWS service with the following exception: you cannot call
+ *          used to make API calls to any Amazon Web Services service with the following exception: you cannot call
  *          the STS <code>GetFederationToken</code> or <code>GetSessionToken</code> API
  *          operations.</p>
  *          <p>(Optional) You can pass inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policies</a> to
@@ -34461,16 +34526,16 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          characters. Passing policies to this operation returns new
  *          temporary credentials. The resulting session's permissions are the intersection of the
  *          role's identity-based policy and the session policies. You can use the role's temporary
- *          credentials in subsequent AWS API calls to access resources in the account that owns
+ *          credentials in subsequent Amazon Web Services API calls to access resources in the account that owns
  *          the role. You cannot use session policies to grant more permissions than those allowed
  *          by the identity-based policy of the role that is being assumed. For more information, see
  *             <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">Session
  *             Policies</a> in the <i>IAM User Guide</i>.</p>
- *          <p>Calling <code>AssumeRoleWithSAML</code> does not require the use of AWS security
+ *          <p>Calling <code>AssumeRoleWithSAML</code> does not require the use of Amazon Web Services security
  *          credentials. The identity of the caller is validated by using keys in the metadata document
  *          that is uploaded for the SAML provider entity for your identity provider. </p>
  *          <important>
- *             <p>Calling <code>AssumeRoleWithSAML</code> can result in an entry in your AWS CloudTrail logs.
+ *             <p>Calling <code>AssumeRoleWithSAML</code> can result in an entry in your CloudTrail logs.
  *             The entry includes the value in the <code>NameID</code> element of the SAML assertion.
  *             We recommend that you use a <code>NameIDType</code> that is not associated with any
  *             personally identifiable information (PII). For example, you could instead use the
@@ -34490,7 +34555,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             and STS Character Limits</a> in the <i>IAM User Guide</i>.</p>
  *
  *          <note>
- *             <p>An AWS conversion compresses the passed session policies and session tags into a
+ *             <p>An Amazon Web Services conversion compresses the passed session policies and session tags into a
  *             packed binary format that has a separate limit. Your request can fail for this limit
  *             even if your plaintext meets the other requirements. The <code>PackedPolicySize</code>
  *             response element indicates by percentage how close the policies and tags for your
@@ -34512,8 +34577,8 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             <b>SAML Configuration</b>
  *          </p>
  *          <p>Before your application can call <code>AssumeRoleWithSAML</code>, you must configure
- *          your SAML identity provider (IdP) to issue the claims required by AWS. Additionally, you
- *          must use AWS Identity and Access Management (IAM) to create a SAML provider entity in your AWS account that
+ *          your SAML identity provider (IdP) to issue the claims required by Amazon Web Services. Additionally, you
+ *          must use Identity and Access Management (IAM) to create a SAML provider entity in your Amazon Web Services account that
  *          represents your identity provider. You must also create an IAM role that specifies this
  *          SAML provider in its trust policy. </p>
  *          <p>For more information, see the following resources:</p>
@@ -34614,26 +34679,26 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          provider.</p>
  *          <note>
  *             <p>For mobile applications, we recommend that you use Amazon Cognito. You can use Amazon Cognito with the
- *                <a href="http://aws.amazon.com/sdkforios/">AWS SDK for iOS Developer Guide</a> and the <a href="http://aws.amazon.com/sdkforandroid/">AWS SDK for Android Developer Guide</a> to uniquely
+ *                <a href="http://aws.amazon.com/sdkforios/">Amazon Web Services SDK for iOS Developer Guide</a> and the <a href="http://aws.amazon.com/sdkforandroid/">Amazon Web Services SDK for Android Developer Guide</a> to uniquely
  *             identify a user. You can also supply the user with a consistent identity throughout the
  *             lifetime of an application.</p>
  *             <p>To learn more about Amazon Cognito, see <a href="https://docs.aws.amazon.com/mobile/sdkforandroid/developerguide/cognito-auth.html#d0e840">Amazon Cognito Overview</a> in
- *                <i>AWS SDK for Android Developer Guide</i> and <a href="https://docs.aws.amazon.com/mobile/sdkforios/developerguide/cognito-auth.html#d0e664">Amazon Cognito Overview</a> in the
- *                <i>AWS SDK for iOS Developer Guide</i>.</p>
+ *                <i>Amazon Web Services SDK for Android Developer Guide</i> and <a href="https://docs.aws.amazon.com/mobile/sdkforios/developerguide/cognito-auth.html#d0e664">Amazon Cognito Overview</a> in the
+ *                <i>Amazon Web Services SDK for iOS Developer Guide</i>.</p>
  *          </note>
- *          <p>Calling <code>AssumeRoleWithWebIdentity</code> does not require the use of AWS
+ *          <p>Calling <code>AssumeRoleWithWebIdentity</code> does not require the use of Amazon Web Services
  *          security credentials. Therefore, you can distribute an application (for example, on mobile
- *          devices) that requests temporary security credentials without including long-term AWS
+ *          devices) that requests temporary security credentials without including long-term Amazon Web Services
  *          credentials in the application. You also don't need to deploy server-based proxy services
- *          that use long-term AWS credentials. Instead, the identity of the caller is validated by
+ *          that use long-term Amazon Web Services credentials. Instead, the identity of the caller is validated by
  *          using a token from the web identity provider. For a comparison of
  *             <code>AssumeRoleWithWebIdentity</code> with the other API operations that produce
  *          temporary credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting Temporary Security
  *             Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
- *             AWS STS API operations</a> in the <i>IAM User Guide</i>.</p>
+ *             STS API operations</a> in the <i>IAM User Guide</i>.</p>
  *          <p>The temporary security credentials returned by this API consist of an access key ID, a
  *          secret access key, and a security token. Applications can use these temporary security
- *          credentials to sign calls to AWS service API operations.</p>
+ *          credentials to sign calls to Amazon Web Services service API operations.</p>
  *          <p>
  *             <b>Session Duration</b>
  *          </p>
@@ -34653,7 +34718,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             <b>Permissions</b>
  *          </p>
  *          <p>The temporary security credentials created by <code>AssumeRoleWithWebIdentity</code> can
- *          be used to make API calls to any AWS service with the following exception: you cannot
+ *          be used to make API calls to any Amazon Web Services service with the following exception: you cannot
  *          call the STS <code>GetFederationToken</code> or <code>GetSessionToken</code> API
  *          operations.</p>
  *          <p>(Optional) You can pass inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policies</a> to
@@ -34663,7 +34728,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          characters. Passing policies to this operation returns new
  *          temporary credentials. The resulting session's permissions are the intersection of the
  *          role's identity-based policy and the session policies. You can use the role's temporary
- *          credentials in subsequent AWS API calls to access resources in the account that owns
+ *          credentials in subsequent Amazon Web Services API calls to access resources in the account that owns
  *          the role. You cannot use session policies to grant more permissions than those allowed
  *          by the identity-based policy of the role that is being assumed. For more information, see
  *             <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">Session
@@ -34681,7 +34746,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             and STS Character Limits</a> in the <i>IAM User Guide</i>.</p>
  *
  *          <note>
- *             <p>An AWS conversion compresses the passed session policies and session tags into a
+ *             <p>An Amazon Web Services conversion compresses the passed session policies and session tags into a
  *             packed binary format that has a separate limit. Your request can fail for this limit
  *             even if your plaintext meets the other requirements. The <code>PackedPolicySize</code>
  *             response element indicates by percentage how close the policies and tags for your
@@ -34709,7 +34774,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          in the role's trust policy. </p>
  *          <important>
  *             <p>Calling <code>AssumeRoleWithWebIdentity</code> can result in an entry in your
- *             AWS CloudTrail logs. The entry includes the <a href="http://openid.net/specs/openid-connect-core-1_0.html#Claims">Subject</a> of
+ *             CloudTrail logs. The entry includes the <a href="http://openid.net/specs/openid-connect-core-1_0.html#Claims">Subject</a> of
  *             the provided web identity token. We recommend that you avoid using any personally
  *             identifiable information (PII) in this field. For example, you could instead use a GUID
  *             or a pairwise identifier, as <a href="http://openid.net/specs/openid-connect-core-1_0.html#SubjectIDTypes">suggested
@@ -34726,12 +34791,12 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                <p>
  *                   <a href="https://aws.amazon.com/blogs/aws/the-aws-web-identity-federation-playground/"> Web Identity Federation Playground</a>. Walk through the process of
  *                authenticating through Login with Amazon, Facebook, or Google, getting temporary
- *                security credentials, and then using those credentials to make a request to AWS.
+ *                security credentials, and then using those credentials to make a request to Amazon Web Services.
  *             </p>
  *             </li>
  *             <li>
  *                <p>
- *                   <a href="http://aws.amazon.com/sdkforios/">AWS SDK for iOS Developer Guide</a> and <a href="http://aws.amazon.com/sdkforandroid/">AWS SDK for Android Developer Guide</a>. These toolkits
+ *                   <a href="http://aws.amazon.com/sdkforios/">Amazon Web Services SDK for iOS Developer Guide</a> and <a href="http://aws.amazon.com/sdkforandroid/">Amazon Web Services SDK for Android Developer Guide</a>. These toolkits
  *                contain sample apps that show how to invoke the identity providers. The toolkits then
  *                show how to use the information from these providers to get and use temporary
  *                security credentials. </p>
@@ -34813,13 +34878,13 @@ const middleware_signing_1 = __nccwpck_require__(2487);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * <p>Decodes additional information about the authorization status of a request from an
- *          encoded message returned in response to an AWS request.</p>
+ *          encoded message returned in response to an Amazon Web Services request.</p>
  *          <p>For example, if a user is not authorized to perform an operation that he or she has
  *          requested, the request returns a <code>Client.UnauthorizedOperation</code> response (an
- *          HTTP 403 response). Some AWS operations additionally return an encoded message that can
+ *          HTTP 403 response). Some Amazon Web Services operations additionally return an encoded message that can
  *          provide details about this authorization failure. </p>
  *          <note>
- *             <p>Only certain AWS operations return an encoded authorization message. The
+ *             <p>Only certain Amazon Web Services operations return an encoded authorization message. The
  *             documentation for an individual operation indicates whether that operation returns an
  *             encoded message in addition to returning an HTTP code.</p>
  *          </note>
@@ -34923,9 +34988,9 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                 <code>wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY</code>). For more information about
  *             access keys, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html">Managing Access Keys for IAM
  *                 Users</a> in the <i>IAM User Guide</i>.</p>
- *         <p>When you pass an access key ID to this operation, it returns the ID of the AWS
+ *         <p>When you pass an access key ID to this operation, it returns the ID of the Amazon Web Services
  *             account to which the keys belong. Access key IDs beginning with <code>AKIA</code> are
- *             long-term credentials for an IAM user or the AWS account root user. Access key IDs
+ *             long-term credentials for an IAM user or the Amazon Web Services account root user. Access key IDs
  *             beginning with <code>ASIA</code> are temporary credentials that are created using STS
  *             operations. If the account in the response belongs to you, you can sign in as the root
  *             user and review your root user access keys. Then, you can pull a <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html">credentials report</a> to learn which IAM user owns the keys. To learn who
@@ -35092,7 +35157,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          server-based application. For a comparison of <code>GetFederationToken</code> with the
  *          other API operations that produce temporary credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting Temporary Security
  *             Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
- *             AWS STS API operations</a> in the <i>IAM User Guide</i>.</p>
+ *             STS API operations</a> in the <i>IAM User Guide</i>.</p>
  *          <note>
  *             <p>You can create a mobile-based or browser-based app that can authenticate users using
  *             a web identity provider like Login with Amazon, Facebook, Google, or an OpenID
@@ -35101,7 +35166,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                <i>IAM User Guide</i>.</p>
  *          </note>
  *          <p>You can also call <code>GetFederationToken</code> using the security credentials of an
- *          AWS account root user, but we do not recommend it. Instead, we recommend that you create
+ *          Amazon Web Services account root user, but we do not recommend it. Instead, we recommend that you create
  *          an IAM user for the purpose of the proxy application. Then attach a policy to the IAM
  *          user that limits federated users to only the actions and resources that they need to
  *          access. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html">IAM Best Practices</a> in the
@@ -35111,16 +35176,16 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          </p>
  *          <p>The temporary credentials are valid for the specified duration, from 900 seconds (15
  *          minutes) up to a maximum of 129,600 seconds (36 hours). The default session duration is
- *          43,200 seconds (12 hours). Temporary credentials that are obtained by using AWS account
+ *          43,200 seconds (12 hours). Temporary credentials that are obtained by using Amazon Web Services account
  *          root user credentials have a maximum duration of 3,600 seconds (1 hour).</p>
  *          <p>
  *             <b>Permissions</b>
  *          </p>
  *          <p>You can use the temporary credentials created by <code>GetFederationToken</code> in any
- *          AWS service except the following:</p>
+ *          Amazon Web Services service except the following:</p>
  *          <ul>
  *             <li>
- *                <p>You cannot call any IAM operations using the AWS CLI or the AWS API. </p>
+ *                <p>You cannot call any IAM operations using the CLI or the Amazon Web Services API. </p>
  *             </li>
  *             <li>
  *                <p>You cannot call any STS operations except <code>GetCallerIdentity</code>.</p>
@@ -35158,7 +35223,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *                     <i>IAM User Guide</i>.</p>
  *         </note>
  *         <p>You can also call <code>GetFederationToken</code> using the security credentials of an
- *             AWS account root user, but we do not recommend it. Instead, we recommend that you
+ *             Amazon Web Services account root user, but we do not recommend it. Instead, we recommend that you
  *             create an IAM user for the purpose of the proxy application. Then attach a policy to
  *             the IAM user that limits federated users to only the actions and resources that they
  *             need to access. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html">IAM Best Practices</a> in the
@@ -35168,16 +35233,16 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          </p>
  *         <p>The temporary credentials are valid for the specified duration, from 900 seconds (15
  *             minutes) up to a maximum of 129,600 seconds (36 hours). The default session duration is
- *             43,200 seconds (12 hours). Temporary credentials that are obtained by using AWS
+ *             43,200 seconds (12 hours). Temporary credentials that are obtained by using Amazon Web Services
  *             account root user credentials have a maximum duration of 3,600 seconds (1 hour).</p>
  *         <p>
  *             <b>Permissions</b>
  *         </p>
  *         <p>You can use the temporary credentials created by <code>GetFederationToken</code> in
- *             any AWS service except the following:</p>
+ *             any Amazon Web Services service except the following:</p>
  *         <ul>
  *             <li>
- *                 <p>You cannot call any IAM operations using the AWS CLI or the AWS API.
+ *                 <p>You cannot call any IAM operations using the CLI or the Amazon Web Services API.
  *                 </p>
  *             </li>
  *             <li>
@@ -35291,10 +35356,10 @@ const middleware_serde_1 = __nccwpck_require__(6142);
 const middleware_signing_1 = __nccwpck_require__(2487);
 const smithy_client_1 = __nccwpck_require__(2223);
 /**
- * <p>Returns a set of temporary credentials for an AWS account or IAM user. The
+ * <p>Returns a set of temporary credentials for an Amazon Web Services account or IAM user. The
  *          credentials consist of an access key ID, a secret access key, and a security token.
  *          Typically, you use <code>GetSessionToken</code> if you want to use MFA to protect
- *          programmatic calls to specific AWS API operations like Amazon EC2 <code>StopInstances</code>.
+ *          programmatic calls to specific Amazon Web Services API operations like Amazon EC2 <code>StopInstances</code>.
  *          MFA-enabled IAM users would need to call <code>GetSessionToken</code> and submit an MFA
  *          code that is associated with their MFA device. Using the temporary security credentials
  *          that are returned from the call, IAM users can then make programmatic calls to API
@@ -35302,12 +35367,12 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *          the API returns an access denied error. For a comparison of <code>GetSessionToken</code>
  *          with the other API operations that produce temporary credentials, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html">Requesting
  *             Temporary Security Credentials</a> and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html#stsapi_comparison">Comparing the
- *             AWS STS API operations</a> in the <i>IAM User Guide</i>.</p>
+ *             STS API operations</a> in the <i>IAM User Guide</i>.</p>
  *          <p>
  *             <b>Session Duration</b>
  *          </p>
- *          <p>The <code>GetSessionToken</code> operation must be called by using the long-term AWS
- *          security credentials of the AWS account root user or an IAM user. Credentials that are
+ *          <p>The <code>GetSessionToken</code> operation must be called by using the long-term Amazon Web Services
+ *          security credentials of the Amazon Web Services account root user or an IAM user. Credentials that are
  *          created by IAM users are valid for the duration that you specify. This duration can range
  *          from 900 seconds (15 minutes) up to a maximum of 129,600 seconds (36 hours), with a default
  *          of 43,200 seconds (12 hours). Credentials based on account credentials can range from 900
@@ -35316,7 +35381,7 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             <b>Permissions</b>
  *          </p>
  *          <p>The temporary security credentials created by <code>GetSessionToken</code> can be used
- *          to make API calls to any AWS service with the following exceptions:</p>
+ *          to make API calls to any Amazon Web Services service with the following exceptions:</p>
  *          <ul>
  *             <li>
  *                <p>You cannot call any IAM API operations unless MFA authentication information is
@@ -35328,14 +35393,14 @@ const smithy_client_1 = __nccwpck_require__(2223);
  *             </li>
  *          </ul>
  *          <note>
- *             <p>We recommend that you do not call <code>GetSessionToken</code> with AWS account
+ *             <p>We recommend that you do not call <code>GetSessionToken</code> with Amazon Web Services account
  *             root user credentials. Instead, follow our <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#create-iam-users">best practices</a> by
  *             creating one or more IAM users, giving them the necessary permissions, and using IAM
- *             users for everyday interaction with AWS. </p>
+ *             users for everyday interaction with Amazon Web Services. </p>
  *          </note>
  *          <p>The credentials that are returned by <code>GetSessionToken</code> are based on
  *          permissions associated with the user whose credentials were used to call the operation. If
- *             <code>GetSessionToken</code> is called using AWS account root user credentials, the
+ *             <code>GetSessionToken</code> is called using Amazon Web Services account root user credentials, the
  *          temporary credentials have root user permissions. Similarly, if
  *             <code>GetSessionToken</code> is called using the credentials of an IAM user, the
  *          temporary credentials have the same permissions as the IAM user. </p>
@@ -37070,10 +37135,10 @@ const deserializeAws_queryAssumedRoleUser = (output, context) => {
         Arn: undefined,
     };
     if (output["AssumedRoleId"] !== undefined) {
-        contents.AssumedRoleId = output["AssumedRoleId"];
+        contents.AssumedRoleId = smithy_client_1.expectString(output["AssumedRoleId"]);
     }
     if (output["Arn"] !== undefined) {
-        contents.Arn = output["Arn"];
+        contents.Arn = smithy_client_1.expectString(output["Arn"]);
     }
     return contents;
 };
@@ -37094,7 +37159,7 @@ const deserializeAws_queryAssumeRoleResponse = (output, context) => {
         contents.PackedPolicySize = parseInt(output["PackedPolicySize"]);
     }
     if (output["SourceIdentity"] !== undefined) {
-        contents.SourceIdentity = output["SourceIdentity"];
+        contents.SourceIdentity = smithy_client_1.expectString(output["SourceIdentity"]);
     }
     return contents;
 };
@@ -37120,22 +37185,22 @@ const deserializeAws_queryAssumeRoleWithSAMLResponse = (output, context) => {
         contents.PackedPolicySize = parseInt(output["PackedPolicySize"]);
     }
     if (output["Subject"] !== undefined) {
-        contents.Subject = output["Subject"];
+        contents.Subject = smithy_client_1.expectString(output["Subject"]);
     }
     if (output["SubjectType"] !== undefined) {
-        contents.SubjectType = output["SubjectType"];
+        contents.SubjectType = smithy_client_1.expectString(output["SubjectType"]);
     }
     if (output["Issuer"] !== undefined) {
-        contents.Issuer = output["Issuer"];
+        contents.Issuer = smithy_client_1.expectString(output["Issuer"]);
     }
     if (output["Audience"] !== undefined) {
-        contents.Audience = output["Audience"];
+        contents.Audience = smithy_client_1.expectString(output["Audience"]);
     }
     if (output["NameQualifier"] !== undefined) {
-        contents.NameQualifier = output["NameQualifier"];
+        contents.NameQualifier = smithy_client_1.expectString(output["NameQualifier"]);
     }
     if (output["SourceIdentity"] !== undefined) {
-        contents.SourceIdentity = output["SourceIdentity"];
+        contents.SourceIdentity = smithy_client_1.expectString(output["SourceIdentity"]);
     }
     return contents;
 };
@@ -37153,7 +37218,7 @@ const deserializeAws_queryAssumeRoleWithWebIdentityResponse = (output, context) 
         contents.Credentials = deserializeAws_queryCredentials(output["Credentials"], context);
     }
     if (output["SubjectFromWebIdentityToken"] !== undefined) {
-        contents.SubjectFromWebIdentityToken = output["SubjectFromWebIdentityToken"];
+        contents.SubjectFromWebIdentityToken = smithy_client_1.expectString(output["SubjectFromWebIdentityToken"]);
     }
     if (output["AssumedRoleUser"] !== undefined) {
         contents.AssumedRoleUser = deserializeAws_queryAssumedRoleUser(output["AssumedRoleUser"], context);
@@ -37162,13 +37227,13 @@ const deserializeAws_queryAssumeRoleWithWebIdentityResponse = (output, context) 
         contents.PackedPolicySize = parseInt(output["PackedPolicySize"]);
     }
     if (output["Provider"] !== undefined) {
-        contents.Provider = output["Provider"];
+        contents.Provider = smithy_client_1.expectString(output["Provider"]);
     }
     if (output["Audience"] !== undefined) {
-        contents.Audience = output["Audience"];
+        contents.Audience = smithy_client_1.expectString(output["Audience"]);
     }
     if (output["SourceIdentity"] !== undefined) {
-        contents.SourceIdentity = output["SourceIdentity"];
+        contents.SourceIdentity = smithy_client_1.expectString(output["SourceIdentity"]);
     }
     return contents;
 };
@@ -37180,13 +37245,13 @@ const deserializeAws_queryCredentials = (output, context) => {
         Expiration: undefined,
     };
     if (output["AccessKeyId"] !== undefined) {
-        contents.AccessKeyId = output["AccessKeyId"];
+        contents.AccessKeyId = smithy_client_1.expectString(output["AccessKeyId"]);
     }
     if (output["SecretAccessKey"] !== undefined) {
-        contents.SecretAccessKey = output["SecretAccessKey"];
+        contents.SecretAccessKey = smithy_client_1.expectString(output["SecretAccessKey"]);
     }
     if (output["SessionToken"] !== undefined) {
-        contents.SessionToken = output["SessionToken"];
+        contents.SessionToken = smithy_client_1.expectString(output["SessionToken"]);
     }
     if (output["Expiration"] !== undefined) {
         contents.Expiration = new Date(output["Expiration"]);
@@ -37198,7 +37263,7 @@ const deserializeAws_queryDecodeAuthorizationMessageResponse = (output, context)
         DecodedMessage: undefined,
     };
     if (output["DecodedMessage"] !== undefined) {
-        contents.DecodedMessage = output["DecodedMessage"];
+        contents.DecodedMessage = smithy_client_1.expectString(output["DecodedMessage"]);
     }
     return contents;
 };
@@ -37207,7 +37272,7 @@ const deserializeAws_queryExpiredTokenException = (output, context) => {
         message: undefined,
     };
     if (output["message"] !== undefined) {
-        contents.message = output["message"];
+        contents.message = smithy_client_1.expectString(output["message"]);
     }
     return contents;
 };
@@ -37217,10 +37282,10 @@ const deserializeAws_queryFederatedUser = (output, context) => {
         Arn: undefined,
     };
     if (output["FederatedUserId"] !== undefined) {
-        contents.FederatedUserId = output["FederatedUserId"];
+        contents.FederatedUserId = smithy_client_1.expectString(output["FederatedUserId"]);
     }
     if (output["Arn"] !== undefined) {
-        contents.Arn = output["Arn"];
+        contents.Arn = smithy_client_1.expectString(output["Arn"]);
     }
     return contents;
 };
@@ -37229,7 +37294,7 @@ const deserializeAws_queryGetAccessKeyInfoResponse = (output, context) => {
         Account: undefined,
     };
     if (output["Account"] !== undefined) {
-        contents.Account = output["Account"];
+        contents.Account = smithy_client_1.expectString(output["Account"]);
     }
     return contents;
 };
@@ -37240,13 +37305,13 @@ const deserializeAws_queryGetCallerIdentityResponse = (output, context) => {
         Arn: undefined,
     };
     if (output["UserId"] !== undefined) {
-        contents.UserId = output["UserId"];
+        contents.UserId = smithy_client_1.expectString(output["UserId"]);
     }
     if (output["Account"] !== undefined) {
-        contents.Account = output["Account"];
+        contents.Account = smithy_client_1.expectString(output["Account"]);
     }
     if (output["Arn"] !== undefined) {
-        contents.Arn = output["Arn"];
+        contents.Arn = smithy_client_1.expectString(output["Arn"]);
     }
     return contents;
 };
@@ -37281,7 +37346,7 @@ const deserializeAws_queryIDPCommunicationErrorException = (output, context) => 
         message: undefined,
     };
     if (output["message"] !== undefined) {
-        contents.message = output["message"];
+        contents.message = smithy_client_1.expectString(output["message"]);
     }
     return contents;
 };
@@ -37290,7 +37355,7 @@ const deserializeAws_queryIDPRejectedClaimException = (output, context) => {
         message: undefined,
     };
     if (output["message"] !== undefined) {
-        contents.message = output["message"];
+        contents.message = smithy_client_1.expectString(output["message"]);
     }
     return contents;
 };
@@ -37299,7 +37364,7 @@ const deserializeAws_queryInvalidAuthorizationMessageException = (output, contex
         message: undefined,
     };
     if (output["message"] !== undefined) {
-        contents.message = output["message"];
+        contents.message = smithy_client_1.expectString(output["message"]);
     }
     return contents;
 };
@@ -37308,7 +37373,7 @@ const deserializeAws_queryInvalidIdentityTokenException = (output, context) => {
         message: undefined,
     };
     if (output["message"] !== undefined) {
-        contents.message = output["message"];
+        contents.message = smithy_client_1.expectString(output["message"]);
     }
     return contents;
 };
@@ -37317,7 +37382,7 @@ const deserializeAws_queryMalformedPolicyDocumentException = (output, context) =
         message: undefined,
     };
     if (output["message"] !== undefined) {
-        contents.message = output["message"];
+        contents.message = smithy_client_1.expectString(output["message"]);
     }
     return contents;
 };
@@ -37326,7 +37391,7 @@ const deserializeAws_queryPackedPolicyTooLargeException = (output, context) => {
         message: undefined,
     };
     if (output["message"] !== undefined) {
-        contents.message = output["message"];
+        contents.message = smithy_client_1.expectString(output["message"]);
     }
     return contents;
 };
@@ -37335,7 +37400,7 @@ const deserializeAws_queryRegionDisabledException = (output, context) => {
         message: undefined,
     };
     if (output["message"] !== undefined) {
-        contents.message = output["message"];
+        contents.message = smithy_client_1.expectString(output["message"]);
     }
     return contents;
 };
@@ -37417,7 +37482,7 @@ const loadQueryErrorCode = (output, data) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ClientDefaultValues = void 0;
+exports.getRuntimeConfig = void 0;
 const tslib_1 = __nccwpck_require__(4351);
 const package_json_1 = tslib_1.__importDefault(__nccwpck_require__(1508));
 const defaultStsRoleAssumers_1 = __nccwpck_require__(2418);
@@ -37432,29 +37497,34 @@ const util_body_length_node_1 = __nccwpck_require__(286);
 const util_user_agent_node_1 = __nccwpck_require__(4717);
 const util_utf8_node_1 = __nccwpck_require__(5227);
 const runtimeConfig_shared_1 = __nccwpck_require__(8137);
+const smithy_client_1 = __nccwpck_require__(2223);
 /**
  * @internal
  */
-exports.ClientDefaultValues = {
-    ...runtimeConfig_shared_1.ClientSharedValues,
-    runtime: "node",
-    base64Decoder: util_base64_node_1.fromBase64,
-    base64Encoder: util_base64_node_1.toBase64,
-    bodyLengthChecker: util_body_length_node_1.calculateBodyLength,
-    credentialDefaultProvider: defaultStsRoleAssumers_1.decorateDefaultCredentialProvider(credential_provider_node_1.defaultProvider),
-    defaultUserAgentProvider: util_user_agent_node_1.defaultUserAgent({
-        serviceId: runtimeConfig_shared_1.ClientSharedValues.serviceId,
-        clientVersion: package_json_1.default.version,
-    }),
-    maxAttempts: node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
-    region: node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
-    requestHandler: new node_http_handler_1.NodeHttpHandler(),
-    retryModeProvider: node_config_provider_1.loadConfig(middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS),
-    sha256: hash_node_1.Hash.bind(null, "sha256"),
-    streamCollector: node_http_handler_1.streamCollector,
-    utf8Decoder: util_utf8_node_1.fromUtf8,
-    utf8Encoder: util_utf8_node_1.toUtf8,
+const getRuntimeConfig = (config = {}) => {
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o;
+    smithy_client_1.emitWarningIfUnsupportedVersion(process.version);
+    const clientSharedValues = runtimeConfig_shared_1.getRuntimeConfig(config);
+    return {
+        ...clientSharedValues,
+        ...config,
+        runtime: "node",
+        base64Decoder: (_a = config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
+        base64Encoder: (_b = config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
+        bodyLengthChecker: (_c = config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
+        credentialDefaultProvider: (_d = config.credentialDefaultProvider) !== null && _d !== void 0 ? _d : defaultStsRoleAssumers_1.decorateDefaultCredentialProvider(credential_provider_node_1.defaultProvider),
+        defaultUserAgentProvider: (_e = config.defaultUserAgentProvider) !== null && _e !== void 0 ? _e : util_user_agent_node_1.defaultUserAgent({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
+        maxAttempts: (_f = config.maxAttempts) !== null && _f !== void 0 ? _f : node_config_provider_1.loadConfig(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
+        region: (_g = config.region) !== null && _g !== void 0 ? _g : node_config_provider_1.loadConfig(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
+        requestHandler: (_h = config.requestHandler) !== null && _h !== void 0 ? _h : new node_http_handler_1.NodeHttpHandler(),
+        retryModeProvider: (_j = config.retryModeProvider) !== null && _j !== void 0 ? _j : node_config_provider_1.loadConfig(middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS),
+        sha256: (_k = config.sha256) !== null && _k !== void 0 ? _k : hash_node_1.Hash.bind(null, "sha256"),
+        streamCollector: (_l = config.streamCollector) !== null && _l !== void 0 ? _l : node_http_handler_1.streamCollector,
+        utf8Decoder: (_m = config.utf8Decoder) !== null && _m !== void 0 ? _m : util_utf8_node_1.fromUtf8,
+        utf8Encoder: (_o = config.utf8Encoder) !== null && _o !== void 0 ? _o : util_utf8_node_1.toUtf8,
+    };
 };
+exports.getRuntimeConfig = getRuntimeConfig;
 //# sourceMappingURL=runtimeConfig.js.map
 
 /***/ }),
@@ -37465,20 +37535,24 @@ exports.ClientDefaultValues = {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ClientSharedValues = void 0;
+exports.getRuntimeConfig = void 0;
 const endpoints_1 = __nccwpck_require__(2798);
 const url_parser_1 = __nccwpck_require__(9427);
 /**
  * @internal
  */
-exports.ClientSharedValues = {
-    apiVersion: "2011-06-15",
-    disableHostPrefix: false,
-    logger: {},
-    regionInfoProvider: endpoints_1.defaultRegionInfoProvider,
-    serviceId: "STS",
-    urlParser: url_parser_1.parseUrl,
+const getRuntimeConfig = (config = {}) => {
+    var _a, _b, _c, _d, _e;
+    return ({
+        apiVersion: "2011-06-15",
+        disableHostPrefix: (_a = config.disableHostPrefix) !== null && _a !== void 0 ? _a : false,
+        logger: (_b = config.logger) !== null && _b !== void 0 ? _b : {},
+        regionInfoProvider: (_c = config.regionInfoProvider) !== null && _c !== void 0 ? _c : endpoints_1.defaultRegionInfoProvider,
+        serviceId: (_d = config.serviceId) !== null && _d !== void 0 ? _d : "STS",
+        urlParser: (_e = config.urlParser) !== null && _e !== void 0 ? _e : url_parser_1.parseUrl,
+    });
 };
+exports.getRuntimeConfig = getRuntimeConfig;
 //# sourceMappingURL=runtimeConfig.shared.js.map
 
 /***/ }),
@@ -37647,11 +37721,11 @@ function fromEnv() {
                 expiration: expiry ? new Date(expiry) : undefined,
             });
         }
-        return Promise.reject(new property_provider_1.ProviderError("Unable to find environment variable credentials."));
+        return Promise.reject(new property_provider_1.CredentialsProviderError("Unable to find environment variable credentials."));
     };
 }
 exports.fromEnv = fromEnv;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsa0VBQTJEO0FBRzlDLFFBQUEsT0FBTyxHQUFHLG1CQUFtQixDQUFDO0FBQzlCLFFBQUEsVUFBVSxHQUFHLHVCQUF1QixDQUFDO0FBQ3JDLFFBQUEsV0FBVyxHQUFHLG1CQUFtQixDQUFDO0FBQ2xDLFFBQUEsY0FBYyxHQUFHLDJCQUEyQixDQUFDO0FBRTFEOzs7O0dBSUc7QUFDSCxTQUFnQixPQUFPO0lBQ3JCLE9BQU8sR0FBRyxFQUFFO1FBQ1YsTUFBTSxXQUFXLEdBQXVCLE9BQU8sQ0FBQyxHQUFHLENBQUMsZUFBTyxDQUFDLENBQUM7UUFDN0QsTUFBTSxlQUFlLEdBQXVCLE9BQU8sQ0FBQyxHQUFHLENBQUMsa0JBQVUsQ0FBQyxDQUFDO1FBQ3BFLE1BQU0sTUFBTSxHQUF1QixPQUFPLENBQUMsR0FBRyxDQUFDLHNCQUFjLENBQUMsQ0FBQztRQUMvRCxJQUFJLFdBQVcsSUFBSSxlQUFlLEVBQUU7WUFDbEMsT0FBTyxPQUFPLENBQUMsT0FBTyxDQUFDO2dCQUNyQixXQUFXO2dCQUNYLGVBQWU7Z0JBQ2YsWUFBWSxFQUFFLE9BQU8sQ0FBQyxHQUFHLENBQUMsbUJBQVcsQ0FBQztnQkFDdEMsVUFBVSxFQUFFLE1BQU0sQ0FBQyxDQUFDLENBQUMsSUFBSSxJQUFJLENBQUMsTUFBTSxDQUFDLENBQUMsQ0FBQyxDQUFDLFNBQVM7YUFDbEQsQ0FBQyxDQUFDO1NBQ0o7UUFFRCxPQUFPLE9BQU8sQ0FBQyxNQUFNLENBQUMsSUFBSSxpQ0FBYSxDQUFDLGtEQUFrRCxDQUFDLENBQUMsQ0FBQztJQUMvRixDQUFDLENBQUM7QUFDSixDQUFDO0FBaEJELDBCQWdCQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb3ZpZGVyRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvcHJvcGVydHktcHJvdmlkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgY29uc3QgRU5WX0tFWSA9IFwiQVdTX0FDQ0VTU19LRVlfSURcIjtcbmV4cG9ydCBjb25zdCBFTlZfU0VDUkVUID0gXCJBV1NfU0VDUkVUX0FDQ0VTU19LRVlcIjtcbmV4cG9ydCBjb25zdCBFTlZfU0VTU0lPTiA9IFwiQVdTX1NFU1NJT05fVE9LRU5cIjtcbmV4cG9ydCBjb25zdCBFTlZfRVhQSVJBVElPTiA9IFwiQVdTX0NSRURFTlRJQUxfRVhQSVJBVElPTlwiO1xuXG4vKipcbiAqIFNvdXJjZSBBV1MgY3JlZGVudGlhbHMgZnJvbSBrbm93biBlbnZpcm9ubWVudCB2YXJpYWJsZXMuIElmIGVpdGhlciB0aGVcbiAqIGBBV1NfQUNDRVNTX0tFWV9JRGAgb3IgYEFXU19TRUNSRVRfQUNDRVNTX0tFWWAgZW52aXJvbm1lbnQgdmFyaWFibGUgaXMgbm90XG4gKiBzZXQgaW4gdGhpcyBwcm9jZXNzLCB0aGUgcHJvdmlkZXIgd2lsbCByZXR1cm4gYSByZWplY3RlZCBwcm9taXNlLlxuICovXG5leHBvcnQgZnVuY3Rpb24gZnJvbUVudigpOiBDcmVkZW50aWFsUHJvdmlkZXIge1xuICByZXR1cm4gKCkgPT4ge1xuICAgIGNvbnN0IGFjY2Vzc0tleUlkOiBzdHJpbmcgfCB1bmRlZmluZWQgPSBwcm9jZXNzLmVudltFTlZfS0VZXTtcbiAgICBjb25zdCBzZWNyZXRBY2Nlc3NLZXk6IHN0cmluZyB8IHVuZGVmaW5lZCA9IHByb2Nlc3MuZW52W0VOVl9TRUNSRVRdO1xuICAgIGNvbnN0IGV4cGlyeTogc3RyaW5nIHwgdW5kZWZpbmVkID0gcHJvY2Vzcy5lbnZbRU5WX0VYUElSQVRJT05dO1xuICAgIGlmIChhY2Nlc3NLZXlJZCAmJiBzZWNyZXRBY2Nlc3NLZXkpIHtcbiAgICAgIHJldHVybiBQcm9taXNlLnJlc29sdmUoe1xuICAgICAgICBhY2Nlc3NLZXlJZCxcbiAgICAgICAgc2VjcmV0QWNjZXNzS2V5LFxuICAgICAgICBzZXNzaW9uVG9rZW46IHByb2Nlc3MuZW52W0VOVl9TRVNTSU9OXSxcbiAgICAgICAgZXhwaXJhdGlvbjogZXhwaXJ5ID8gbmV3IERhdGUoZXhwaXJ5KSA6IHVuZGVmaW5lZCxcbiAgICAgIH0pO1xuICAgIH1cblxuICAgIHJldHVybiBQcm9taXNlLnJlamVjdChuZXcgUHJvdmlkZXJFcnJvcihcIlVuYWJsZSB0byBmaW5kIGVudmlyb25tZW50IHZhcmlhYmxlIGNyZWRlbnRpYWxzLlwiKSk7XG4gIH07XG59XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsa0VBQXNFO0FBR3pELFFBQUEsT0FBTyxHQUFHLG1CQUFtQixDQUFDO0FBQzlCLFFBQUEsVUFBVSxHQUFHLHVCQUF1QixDQUFDO0FBQ3JDLFFBQUEsV0FBVyxHQUFHLG1CQUFtQixDQUFDO0FBQ2xDLFFBQUEsY0FBYyxHQUFHLDJCQUEyQixDQUFDO0FBRTFEOzs7O0dBSUc7QUFDSCxTQUFnQixPQUFPO0lBQ3JCLE9BQU8sR0FBRyxFQUFFO1FBQ1YsTUFBTSxXQUFXLEdBQXVCLE9BQU8sQ0FBQyxHQUFHLENBQUMsZUFBTyxDQUFDLENBQUM7UUFDN0QsTUFBTSxlQUFlLEdBQXVCLE9BQU8sQ0FBQyxHQUFHLENBQUMsa0JBQVUsQ0FBQyxDQUFDO1FBQ3BFLE1BQU0sTUFBTSxHQUF1QixPQUFPLENBQUMsR0FBRyxDQUFDLHNCQUFjLENBQUMsQ0FBQztRQUMvRCxJQUFJLFdBQVcsSUFBSSxlQUFlLEVBQUU7WUFDbEMsT0FBTyxPQUFPLENBQUMsT0FBTyxDQUFDO2dCQUNyQixXQUFXO2dCQUNYLGVBQWU7Z0JBQ2YsWUFBWSxFQUFFLE9BQU8sQ0FBQyxHQUFHLENBQUMsbUJBQVcsQ0FBQztnQkFDdEMsVUFBVSxFQUFFLE1BQU0sQ0FBQyxDQUFDLENBQUMsSUFBSSxJQUFJLENBQUMsTUFBTSxDQUFDLENBQUMsQ0FBQyxDQUFDLFNBQVM7YUFDbEQsQ0FBQyxDQUFDO1NBQ0o7UUFFRCxPQUFPLE9BQU8sQ0FBQyxNQUFNLENBQUMsSUFBSSw0Q0FBd0IsQ0FBQyxrREFBa0QsQ0FBQyxDQUFDLENBQUM7SUFDMUcsQ0FBQyxDQUFDO0FBQ0osQ0FBQztBQWhCRCwwQkFnQkMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvcHJvcGVydHktcHJvdmlkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgY29uc3QgRU5WX0tFWSA9IFwiQVdTX0FDQ0VTU19LRVlfSURcIjtcbmV4cG9ydCBjb25zdCBFTlZfU0VDUkVUID0gXCJBV1NfU0VDUkVUX0FDQ0VTU19LRVlcIjtcbmV4cG9ydCBjb25zdCBFTlZfU0VTU0lPTiA9IFwiQVdTX1NFU1NJT05fVE9LRU5cIjtcbmV4cG9ydCBjb25zdCBFTlZfRVhQSVJBVElPTiA9IFwiQVdTX0NSRURFTlRJQUxfRVhQSVJBVElPTlwiO1xuXG4vKipcbiAqIFNvdXJjZSBBV1MgY3JlZGVudGlhbHMgZnJvbSBrbm93biBlbnZpcm9ubWVudCB2YXJpYWJsZXMuIElmIGVpdGhlciB0aGVcbiAqIGBBV1NfQUNDRVNTX0tFWV9JRGAgb3IgYEFXU19TRUNSRVRfQUNDRVNTX0tFWWAgZW52aXJvbm1lbnQgdmFyaWFibGUgaXMgbm90XG4gKiBzZXQgaW4gdGhpcyBwcm9jZXNzLCB0aGUgcHJvdmlkZXIgd2lsbCByZXR1cm4gYSByZWplY3RlZCBwcm9taXNlLlxuICovXG5leHBvcnQgZnVuY3Rpb24gZnJvbUVudigpOiBDcmVkZW50aWFsUHJvdmlkZXIge1xuICByZXR1cm4gKCkgPT4ge1xuICAgIGNvbnN0IGFjY2Vzc0tleUlkOiBzdHJpbmcgfCB1bmRlZmluZWQgPSBwcm9jZXNzLmVudltFTlZfS0VZXTtcbiAgICBjb25zdCBzZWNyZXRBY2Nlc3NLZXk6IHN0cmluZyB8IHVuZGVmaW5lZCA9IHByb2Nlc3MuZW52W0VOVl9TRUNSRVRdO1xuICAgIGNvbnN0IGV4cGlyeTogc3RyaW5nIHwgdW5kZWZpbmVkID0gcHJvY2Vzcy5lbnZbRU5WX0VYUElSQVRJT05dO1xuICAgIGlmIChhY2Nlc3NLZXlJZCAmJiBzZWNyZXRBY2Nlc3NLZXkpIHtcbiAgICAgIHJldHVybiBQcm9taXNlLnJlc29sdmUoe1xuICAgICAgICBhY2Nlc3NLZXlJZCxcbiAgICAgICAgc2VjcmV0QWNjZXNzS2V5LFxuICAgICAgICBzZXNzaW9uVG9rZW46IHByb2Nlc3MuZW52W0VOVl9TRVNTSU9OXSxcbiAgICAgICAgZXhwaXJhdGlvbjogZXhwaXJ5ID8gbmV3IERhdGUoZXhwaXJ5KSA6IHVuZGVmaW5lZCxcbiAgICAgIH0pO1xuICAgIH1cblxuICAgIHJldHVybiBQcm9taXNlLnJlamVjdChuZXcgQ3JlZGVudGlhbHNQcm92aWRlckVycm9yKFwiVW5hYmxlIHRvIGZpbmQgZW52aXJvbm1lbnQgdmFyaWFibGUgY3JlZGVudGlhbHMuXCIpKTtcbiAgfTtcbn1cbiJdfQ==
 
 /***/ }),
 
@@ -37681,7 +37755,7 @@ const fromContainerMetadata = (init = {}) => {
         const requestOptions = await getCmdsUri();
         const credsResponse = JSON.parse(await requestFromEcsImds(timeout, requestOptions));
         if (!ImdsCredentials_1.isImdsCredentials(credsResponse)) {
-            throw new property_provider_1.ProviderError("Invalid response received from instance metadata service.");
+            throw new property_provider_1.CredentialsProviderError("Invalid response received from instance metadata service.");
         }
         return ImdsCredentials_1.fromImdsCredentials(credsResponse);
     }, maxRetries);
@@ -37719,21 +37793,21 @@ const getCmdsUri = async () => {
     if (process.env[exports.ENV_CMDS_FULL_URI]) {
         const parsed = url_1.parse(process.env[exports.ENV_CMDS_FULL_URI]);
         if (!parsed.hostname || !(parsed.hostname in GREENGRASS_HOSTS)) {
-            throw new property_provider_1.ProviderError(`${parsed.hostname} is not a valid container metadata service hostname`, false);
+            throw new property_provider_1.CredentialsProviderError(`${parsed.hostname} is not a valid container metadata service hostname`, false);
         }
         if (!parsed.protocol || !(parsed.protocol in GREENGRASS_PROTOCOLS)) {
-            throw new property_provider_1.ProviderError(`${parsed.protocol} is not a valid container metadata service protocol`, false);
+            throw new property_provider_1.CredentialsProviderError(`${parsed.protocol} is not a valid container metadata service protocol`, false);
         }
         return {
             ...parsed,
             port: parsed.port ? parseInt(parsed.port, 10) : undefined,
         };
     }
-    throw new property_provider_1.ProviderError("The container metadata credential provider cannot be used unless" +
+    throw new property_provider_1.CredentialsProviderError("The container metadata credential provider cannot be used unless" +
         ` the ${exports.ENV_CMDS_RELATIVE_URI} or ${exports.ENV_CMDS_FULL_URI} environment` +
         " variable is set", false);
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbUNvbnRhaW5lck1ldGFkYXRhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2Zyb21Db250YWluZXJNZXRhZGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxrRUFBMkQ7QUFHM0QsNkJBQTRCO0FBRTVCLDhEQUEyRDtBQUMzRCxzRUFBMEY7QUFDMUYsNEVBQWlHO0FBQ2pHLGtEQUErQztBQUVsQyxRQUFBLGlCQUFpQixHQUFHLG9DQUFvQyxDQUFDO0FBQ3pELFFBQUEscUJBQXFCLEdBQUcsd0NBQXdDLENBQUM7QUFDakUsUUFBQSxtQkFBbUIsR0FBRyxtQ0FBbUMsQ0FBQztBQUV2RTs7O0dBR0c7QUFDSSxNQUFNLHFCQUFxQixHQUFHLENBQUMsT0FBMkIsRUFBRSxFQUFzQixFQUFFO0lBQ3pGLE1BQU0sRUFBRSxPQUFPLEVBQUUsVUFBVSxFQUFFLEdBQUcsMkNBQXNCLENBQUMsSUFBSSxDQUFDLENBQUM7SUFDN0QsT0FBTyxHQUFHLEVBQUUsQ0FDVixhQUFLLENBQUMsS0FBSyxJQUFJLEVBQUU7UUFDZixNQUFNLGNBQWMsR0FBRyxNQUFNLFVBQVUsRUFBRSxDQUFDO1FBQzFDLE1BQU0sYUFBYSxHQUFHLElBQUksQ0FBQyxLQUFLLENBQUMsTUFBTSxrQkFBa0IsQ0FBQyxPQUFPLEVBQUUsY0FBYyxDQUFDLENBQUMsQ0FBQztRQUNwRixJQUFJLENBQUMsbUNBQWlCLENBQUMsYUFBYSxDQUFDLEVBQUU7WUFDckMsTUFBTSxJQUFJLGlDQUFhLENBQUMsMkRBQTJELENBQUMsQ0FBQztTQUN0RjtRQUNELE9BQU8scUNBQW1CLENBQUMsYUFBYSxDQUFDLENBQUM7SUFDNUMsQ0FBQyxFQUFFLFVBQVUsQ0FBQyxDQUFDO0FBQ25CLENBQUMsQ0FBQztBQVhXLFFBQUEscUJBQXFCLHlCQVdoQztBQUVGLE1BQU0sa0JBQWtCLEdBQUcsS0FBSyxFQUFFLE9BQWUsRUFBRSxPQUF1QixFQUFtQixFQUFFO0lBQzdGLElBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQywyQkFBbUIsQ0FBQyxFQUFFO1FBQ3BDLE9BQU8sQ0FBQyxPQUFPLEdBQUc7WUFDaEIsR0FBRyxPQUFPLENBQUMsT0FBTztZQUNsQixhQUFhLEVBQUUsT0FBTyxDQUFDLEdBQUcsQ0FBQywyQkFBbUIsQ0FBQztTQUNoRCxDQUFDO0tBQ0g7SUFFRCxNQUFNLE1BQU0sR0FBRyxNQUFNLHlCQUFXLENBQUM7UUFDL0IsR0FBRyxPQUFPO1FBQ1YsT0FBTztLQUNSLENBQUMsQ0FBQztJQUNILE9BQU8sTUFBTSxDQUFDLFFBQVEsRUFBRSxDQUFDO0FBQzNCLENBQUMsQ0FBQztBQUVGLE1BQU0sT0FBTyxHQUFHLGVBQWUsQ0FBQztBQUNoQyxNQUFNLGdCQUFnQixHQUFHO0lBQ3ZCLFNBQVMsRUFBRSxJQUFJO0lBQ2YsV0FBVyxFQUFFLElBQUk7Q0FDbEIsQ0FBQztBQUNGLE1BQU0sb0JBQW9CLEdBQUc7SUFDM0IsT0FBTyxFQUFFLElBQUk7SUFDYixRQUFRLEVBQUUsSUFBSTtDQUNmLENBQUM7QUFFRixNQUFNLFVBQVUsR0FBRyxLQUFLLElBQTZCLEVBQUU7SUFDckQsSUFBSSxPQUFPLENBQUMsR0FBRyxDQUFDLDZCQUFxQixDQUFDLEVBQUU7UUFDdEMsT0FBTztZQUNMLFFBQVEsRUFBRSxPQUFPO1lBQ2pCLElBQUksRUFBRSxPQUFPLENBQUMsR0FBRyxDQUFDLDZCQUFxQixDQUFDO1NBQ3pDLENBQUM7S0FDSDtJQUVELElBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyx5QkFBaUIsQ0FBQyxFQUFFO1FBQ2xDLE1BQU0sTUFBTSxHQUFHLFdBQUssQ0FBQyxPQUFPLENBQUMsR0FBRyxDQUFDLHlCQUFpQixDQUFFLENBQUMsQ0FBQztRQUN0RCxJQUFJLENBQUMsTUFBTSxDQUFDLFFBQVEsSUFBSSxDQUFDLENBQUMsTUFBTSxDQUFDLFFBQVEsSUFBSSxnQkFBZ0IsQ0FBQyxFQUFFO1lBQzlELE1BQU0sSUFBSSxpQ0FBYSxDQUFDLEdBQUcsTUFBTSxDQUFDLFFBQVEscURBQXFELEVBQUUsS0FBSyxDQUFDLENBQUM7U0FDekc7UUFFRCxJQUFJLENBQUMsTUFBTSxDQUFDLFFBQVEsSUFBSSxDQUFDLENBQUMsTUFBTSxDQUFDLFFBQVEsSUFBSSxvQkFBb0IsQ0FBQyxFQUFFO1lBQ2xFLE1BQU0sSUFBSSxpQ0FBYSxDQUFDLEdBQUcsTUFBTSxDQUFDLFFBQVEscURBQXFELEVBQUUsS0FBSyxDQUFDLENBQUM7U0FDekc7UUFFRCxPQUFPO1lBQ0wsR0FBRyxNQUFNO1lBQ1QsSUFBSSxFQUFFLE1BQU0sQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUFDLFFBQVEsQ0FBQyxNQUFNLENBQUMsSUFBSSxFQUFFLEVBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxTQUFTO1NBQzFELENBQUM7S0FDSDtJQUVELE1BQU0sSUFBSSxpQ0FBYSxDQUNyQixrRUFBa0U7UUFDaEUsUUFBUSw2QkFBcUIsT0FBTyx5QkFBaUIsY0FBYztRQUNuRSxrQkFBa0IsRUFDcEIsS0FBSyxDQUNOLENBQUM7QUFDSixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQcm92aWRlckVycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBDcmVkZW50aWFsUHJvdmlkZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IFJlcXVlc3RPcHRpb25zIH0gZnJvbSBcImh0dHBcIjtcbmltcG9ydCB7IHBhcnNlIH0gZnJvbSBcInVybFwiO1xuXG5pbXBvcnQgeyBodHRwUmVxdWVzdCB9IGZyb20gXCIuL3JlbW90ZVByb3ZpZGVyL2h0dHBSZXF1ZXN0XCI7XG5pbXBvcnQgeyBmcm9tSW1kc0NyZWRlbnRpYWxzLCBpc0ltZHNDcmVkZW50aWFscyB9IGZyb20gXCIuL3JlbW90ZVByb3ZpZGVyL0ltZHNDcmVkZW50aWFsc1wiO1xuaW1wb3J0IHsgcHJvdmlkZXJDb25maWdGcm9tSW5pdCwgUmVtb3RlUHJvdmlkZXJJbml0IH0gZnJvbSBcIi4vcmVtb3RlUHJvdmlkZXIvUmVtb3RlUHJvdmlkZXJJbml0XCI7XG5pbXBvcnQgeyByZXRyeSB9IGZyb20gXCIuL3JlbW90ZVByb3ZpZGVyL3JldHJ5XCI7XG5cbmV4cG9ydCBjb25zdCBFTlZfQ01EU19GVUxMX1VSSSA9IFwiQVdTX0NPTlRBSU5FUl9DUkVERU5USUFMU19GVUxMX1VSSVwiO1xuZXhwb3J0IGNvbnN0IEVOVl9DTURTX1JFTEFUSVZFX1VSSSA9IFwiQVdTX0NPTlRBSU5FUl9DUkVERU5USUFMU19SRUxBVElWRV9VUklcIjtcbmV4cG9ydCBjb25zdCBFTlZfQ01EU19BVVRIX1RPS0VOID0gXCJBV1NfQ09OVEFJTkVSX0FVVEhPUklaQVRJT05fVE9LRU5cIjtcblxuLyoqXG4gKiBDcmVhdGVzIGEgY3JlZGVudGlhbCBwcm92aWRlciB0aGF0IHdpbGwgc291cmNlIGNyZWRlbnRpYWxzIGZyb20gdGhlIEVDU1xuICogQ29udGFpbmVyIE1ldGFkYXRhIFNlcnZpY2VcbiAqL1xuZXhwb3J0IGNvbnN0IGZyb21Db250YWluZXJNZXRhZGF0YSA9IChpbml0OiBSZW1vdGVQcm92aWRlckluaXQgPSB7fSk6IENyZWRlbnRpYWxQcm92aWRlciA9PiB7XG4gIGNvbnN0IHsgdGltZW91dCwgbWF4UmV0cmllcyB9ID0gcHJvdmlkZXJDb25maWdGcm9tSW5pdChpbml0KTtcbiAgcmV0dXJuICgpID0+XG4gICAgcmV0cnkoYXN5bmMgKCkgPT4ge1xuICAgICAgY29uc3QgcmVxdWVzdE9wdGlvbnMgPSBhd2FpdCBnZXRDbWRzVXJpKCk7XG4gICAgICBjb25zdCBjcmVkc1Jlc3BvbnNlID0gSlNPTi5wYXJzZShhd2FpdCByZXF1ZXN0RnJvbUVjc0ltZHModGltZW91dCwgcmVxdWVzdE9wdGlvbnMpKTtcbiAgICAgIGlmICghaXNJbWRzQ3JlZGVudGlhbHMoY3JlZHNSZXNwb25zZSkpIHtcbiAgICAgICAgdGhyb3cgbmV3IFByb3ZpZGVyRXJyb3IoXCJJbnZhbGlkIHJlc3BvbnNlIHJlY2VpdmVkIGZyb20gaW5zdGFuY2UgbWV0YWRhdGEgc2VydmljZS5cIik7XG4gICAgICB9XG4gICAgICByZXR1cm4gZnJvbUltZHNDcmVkZW50aWFscyhjcmVkc1Jlc3BvbnNlKTtcbiAgICB9LCBtYXhSZXRyaWVzKTtcbn07XG5cbmNvbnN0IHJlcXVlc3RGcm9tRWNzSW1kcyA9IGFzeW5jICh0aW1lb3V0OiBudW1iZXIsIG9wdGlvbnM6IFJlcXVlc3RPcHRpb25zKTogUHJvbWlzZTxzdHJpbmc+ID0+IHtcbiAgaWYgKHByb2Nlc3MuZW52W0VOVl9DTURTX0FVVEhfVE9LRU5dKSB7XG4gICAgb3B0aW9ucy5oZWFkZXJzID0ge1xuICAgICAgLi4ub3B0aW9ucy5oZWFkZXJzLFxuICAgICAgQXV0aG9yaXphdGlvbjogcHJvY2Vzcy5lbnZbRU5WX0NNRFNfQVVUSF9UT0tFTl0sXG4gICAgfTtcbiAgfVxuXG4gIGNvbnN0IGJ1ZmZlciA9IGF3YWl0IGh0dHBSZXF1ZXN0KHtcbiAgICAuLi5vcHRpb25zLFxuICAgIHRpbWVvdXQsXG4gIH0pO1xuICByZXR1cm4gYnVmZmVyLnRvU3RyaW5nKCk7XG59O1xuXG5jb25zdCBDTURTX0lQID0gXCIxNjkuMjU0LjE3MC4yXCI7XG5jb25zdCBHUkVFTkdSQVNTX0hPU1RTID0ge1xuICBsb2NhbGhvc3Q6IHRydWUsXG4gIFwiMTI3LjAuMC4xXCI6IHRydWUsXG59O1xuY29uc3QgR1JFRU5HUkFTU19QUk9UT0NPTFMgPSB7XG4gIFwiaHR0cDpcIjogdHJ1ZSxcbiAgXCJodHRwczpcIjogdHJ1ZSxcbn07XG5cbmNvbnN0IGdldENtZHNVcmkgPSBhc3luYyAoKTogUHJvbWlzZTxSZXF1ZXN0T3B0aW9ucz4gPT4ge1xuICBpZiAocHJvY2Vzcy5lbnZbRU5WX0NNRFNfUkVMQVRJVkVfVVJJXSkge1xuICAgIHJldHVybiB7XG4gICAgICBob3N0bmFtZTogQ01EU19JUCxcbiAgICAgIHBhdGg6IHByb2Nlc3MuZW52W0VOVl9DTURTX1JFTEFUSVZFX1VSSV0sXG4gICAgfTtcbiAgfVxuXG4gIGlmIChwcm9jZXNzLmVudltFTlZfQ01EU19GVUxMX1VSSV0pIHtcbiAgICBjb25zdCBwYXJzZWQgPSBwYXJzZShwcm9jZXNzLmVudltFTlZfQ01EU19GVUxMX1VSSV0hKTtcbiAgICBpZiAoIXBhcnNlZC5ob3N0bmFtZSB8fCAhKHBhcnNlZC5ob3N0bmFtZSBpbiBHUkVFTkdSQVNTX0hPU1RTKSkge1xuICAgICAgdGhyb3cgbmV3IFByb3ZpZGVyRXJyb3IoYCR7cGFyc2VkLmhvc3RuYW1lfSBpcyBub3QgYSB2YWxpZCBjb250YWluZXIgbWV0YWRhdGEgc2VydmljZSBob3N0bmFtZWAsIGZhbHNlKTtcbiAgICB9XG5cbiAgICBpZiAoIXBhcnNlZC5wcm90b2NvbCB8fCAhKHBhcnNlZC5wcm90b2NvbCBpbiBHUkVFTkdSQVNTX1BST1RPQ09MUykpIHtcbiAgICAgIHRocm93IG5ldyBQcm92aWRlckVycm9yKGAke3BhcnNlZC5wcm90b2NvbH0gaXMgbm90IGEgdmFsaWQgY29udGFpbmVyIG1ldGFkYXRhIHNlcnZpY2UgcHJvdG9jb2xgLCBmYWxzZSk7XG4gICAgfVxuXG4gICAgcmV0dXJuIHtcbiAgICAgIC4uLnBhcnNlZCxcbiAgICAgIHBvcnQ6IHBhcnNlZC5wb3J0ID8gcGFyc2VJbnQocGFyc2VkLnBvcnQsIDEwKSA6IHVuZGVmaW5lZCxcbiAgICB9O1xuICB9XG5cbiAgdGhyb3cgbmV3IFByb3ZpZGVyRXJyb3IoXG4gICAgXCJUaGUgY29udGFpbmVyIG1ldGFkYXRhIGNyZWRlbnRpYWwgcHJvdmlkZXIgY2Fubm90IGJlIHVzZWQgdW5sZXNzXCIgK1xuICAgICAgYCB0aGUgJHtFTlZfQ01EU19SRUxBVElWRV9VUkl9IG9yICR7RU5WX0NNRFNfRlVMTF9VUkl9IGVudmlyb25tZW50YCArXG4gICAgICBcIiB2YXJpYWJsZSBpcyBzZXRcIixcbiAgICBmYWxzZVxuICApO1xufTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbUNvbnRhaW5lck1ldGFkYXRhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2Zyb21Db250YWluZXJNZXRhZGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxrRUFBc0U7QUFHdEUsNkJBQTRCO0FBRTVCLDhEQUEyRDtBQUMzRCxzRUFBMEY7QUFDMUYsNEVBQWlHO0FBQ2pHLGtEQUErQztBQUVsQyxRQUFBLGlCQUFpQixHQUFHLG9DQUFvQyxDQUFDO0FBQ3pELFFBQUEscUJBQXFCLEdBQUcsd0NBQXdDLENBQUM7QUFDakUsUUFBQSxtQkFBbUIsR0FBRyxtQ0FBbUMsQ0FBQztBQUV2RTs7O0dBR0c7QUFDSSxNQUFNLHFCQUFxQixHQUFHLENBQUMsT0FBMkIsRUFBRSxFQUFzQixFQUFFO0lBQ3pGLE1BQU0sRUFBRSxPQUFPLEVBQUUsVUFBVSxFQUFFLEdBQUcsMkNBQXNCLENBQUMsSUFBSSxDQUFDLENBQUM7SUFDN0QsT0FBTyxHQUFHLEVBQUUsQ0FDVixhQUFLLENBQUMsS0FBSyxJQUFJLEVBQUU7UUFDZixNQUFNLGNBQWMsR0FBRyxNQUFNLFVBQVUsRUFBRSxDQUFDO1FBQzFDLE1BQU0sYUFBYSxHQUFHLElBQUksQ0FBQyxLQUFLLENBQUMsTUFBTSxrQkFBa0IsQ0FBQyxPQUFPLEVBQUUsY0FBYyxDQUFDLENBQUMsQ0FBQztRQUNwRixJQUFJLENBQUMsbUNBQWlCLENBQUMsYUFBYSxDQUFDLEVBQUU7WUFDckMsTUFBTSxJQUFJLDRDQUF3QixDQUFDLDJEQUEyRCxDQUFDLENBQUM7U0FDakc7UUFDRCxPQUFPLHFDQUFtQixDQUFDLGFBQWEsQ0FBQyxDQUFDO0lBQzVDLENBQUMsRUFBRSxVQUFVLENBQUMsQ0FBQztBQUNuQixDQUFDLENBQUM7QUFYVyxRQUFBLHFCQUFxQix5QkFXaEM7QUFFRixNQUFNLGtCQUFrQixHQUFHLEtBQUssRUFBRSxPQUFlLEVBQUUsT0FBdUIsRUFBbUIsRUFBRTtJQUM3RixJQUFJLE9BQU8sQ0FBQyxHQUFHLENBQUMsMkJBQW1CLENBQUMsRUFBRTtRQUNwQyxPQUFPLENBQUMsT0FBTyxHQUFHO1lBQ2hCLEdBQUcsT0FBTyxDQUFDLE9BQU87WUFDbEIsYUFBYSxFQUFFLE9BQU8sQ0FBQyxHQUFHLENBQUMsMkJBQW1CLENBQUM7U0FDaEQsQ0FBQztLQUNIO0lBRUQsTUFBTSxNQUFNLEdBQUcsTUFBTSx5QkFBVyxDQUFDO1FBQy9CLEdBQUcsT0FBTztRQUNWLE9BQU87S0FDUixDQUFDLENBQUM7SUFDSCxPQUFPLE1BQU0sQ0FBQyxRQUFRLEVBQUUsQ0FBQztBQUMzQixDQUFDLENBQUM7QUFFRixNQUFNLE9BQU8sR0FBRyxlQUFlLENBQUM7QUFDaEMsTUFBTSxnQkFBZ0IsR0FBRztJQUN2QixTQUFTLEVBQUUsSUFBSTtJQUNmLFdBQVcsRUFBRSxJQUFJO0NBQ2xCLENBQUM7QUFDRixNQUFNLG9CQUFvQixHQUFHO0lBQzNCLE9BQU8sRUFBRSxJQUFJO0lBQ2IsUUFBUSxFQUFFLElBQUk7Q0FDZixDQUFDO0FBRUYsTUFBTSxVQUFVLEdBQUcsS0FBSyxJQUE2QixFQUFFO0lBQ3JELElBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyw2QkFBcUIsQ0FBQyxFQUFFO1FBQ3RDLE9BQU87WUFDTCxRQUFRLEVBQUUsT0FBTztZQUNqQixJQUFJLEVBQUUsT0FBTyxDQUFDLEdBQUcsQ0FBQyw2QkFBcUIsQ0FBQztTQUN6QyxDQUFDO0tBQ0g7SUFFRCxJQUFJLE9BQU8sQ0FBQyxHQUFHLENBQUMseUJBQWlCLENBQUMsRUFBRTtRQUNsQyxNQUFNLE1BQU0sR0FBRyxXQUFLLENBQUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyx5QkFBaUIsQ0FBRSxDQUFDLENBQUM7UUFDdEQsSUFBSSxDQUFDLE1BQU0sQ0FBQyxRQUFRLElBQUksQ0FBQyxDQUFDLE1BQU0sQ0FBQyxRQUFRLElBQUksZ0JBQWdCLENBQUMsRUFBRTtZQUM5RCxNQUFNLElBQUksNENBQXdCLENBQ2hDLEdBQUcsTUFBTSxDQUFDLFFBQVEscURBQXFELEVBQ3ZFLEtBQUssQ0FDTixDQUFDO1NBQ0g7UUFFRCxJQUFJLENBQUMsTUFBTSxDQUFDLFFBQVEsSUFBSSxDQUFDLENBQUMsTUFBTSxDQUFDLFFBQVEsSUFBSSxvQkFBb0IsQ0FBQyxFQUFFO1lBQ2xFLE1BQU0sSUFBSSw0Q0FBd0IsQ0FDaEMsR0FBRyxNQUFNLENBQUMsUUFBUSxxREFBcUQsRUFDdkUsS0FBSyxDQUNOLENBQUM7U0FDSDtRQUVELE9BQU87WUFDTCxHQUFHLE1BQU07WUFDVCxJQUFJLEVBQUUsTUFBTSxDQUFDLElBQUksQ0FBQyxDQUFDLENBQUMsUUFBUSxDQUFDLE1BQU0sQ0FBQyxJQUFJLEVBQUUsRUFBRSxDQUFDLENBQUMsQ0FBQyxDQUFDLFNBQVM7U0FDMUQsQ0FBQztLQUNIO0lBRUQsTUFBTSxJQUFJLDRDQUF3QixDQUNoQyxrRUFBa0U7UUFDaEUsUUFBUSw2QkFBcUIsT0FBTyx5QkFBaUIsY0FBYztRQUNuRSxrQkFBa0IsRUFDcEIsS0FBSyxDQUNOLENBQUM7QUFDSixDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvcHJvcGVydHktcHJvdmlkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuaW1wb3J0IHsgUmVxdWVzdE9wdGlvbnMgfSBmcm9tIFwiaHR0cFwiO1xuaW1wb3J0IHsgcGFyc2UgfSBmcm9tIFwidXJsXCI7XG5cbmltcG9ydCB7IGh0dHBSZXF1ZXN0IH0gZnJvbSBcIi4vcmVtb3RlUHJvdmlkZXIvaHR0cFJlcXVlc3RcIjtcbmltcG9ydCB7IGZyb21JbWRzQ3JlZGVudGlhbHMsIGlzSW1kc0NyZWRlbnRpYWxzIH0gZnJvbSBcIi4vcmVtb3RlUHJvdmlkZXIvSW1kc0NyZWRlbnRpYWxzXCI7XG5pbXBvcnQgeyBwcm92aWRlckNvbmZpZ0Zyb21Jbml0LCBSZW1vdGVQcm92aWRlckluaXQgfSBmcm9tIFwiLi9yZW1vdGVQcm92aWRlci9SZW1vdGVQcm92aWRlckluaXRcIjtcbmltcG9ydCB7IHJldHJ5IH0gZnJvbSBcIi4vcmVtb3RlUHJvdmlkZXIvcmV0cnlcIjtcblxuZXhwb3J0IGNvbnN0IEVOVl9DTURTX0ZVTExfVVJJID0gXCJBV1NfQ09OVEFJTkVSX0NSRURFTlRJQUxTX0ZVTExfVVJJXCI7XG5leHBvcnQgY29uc3QgRU5WX0NNRFNfUkVMQVRJVkVfVVJJID0gXCJBV1NfQ09OVEFJTkVSX0NSRURFTlRJQUxTX1JFTEFUSVZFX1VSSVwiO1xuZXhwb3J0IGNvbnN0IEVOVl9DTURTX0FVVEhfVE9LRU4gPSBcIkFXU19DT05UQUlORVJfQVVUSE9SSVpBVElPTl9UT0tFTlwiO1xuXG4vKipcbiAqIENyZWF0ZXMgYSBjcmVkZW50aWFsIHByb3ZpZGVyIHRoYXQgd2lsbCBzb3VyY2UgY3JlZGVudGlhbHMgZnJvbSB0aGUgRUNTXG4gKiBDb250YWluZXIgTWV0YWRhdGEgU2VydmljZVxuICovXG5leHBvcnQgY29uc3QgZnJvbUNvbnRhaW5lck1ldGFkYXRhID0gKGluaXQ6IFJlbW90ZVByb3ZpZGVySW5pdCA9IHt9KTogQ3JlZGVudGlhbFByb3ZpZGVyID0+IHtcbiAgY29uc3QgeyB0aW1lb3V0LCBtYXhSZXRyaWVzIH0gPSBwcm92aWRlckNvbmZpZ0Zyb21Jbml0KGluaXQpO1xuICByZXR1cm4gKCkgPT5cbiAgICByZXRyeShhc3luYyAoKSA9PiB7XG4gICAgICBjb25zdCByZXF1ZXN0T3B0aW9ucyA9IGF3YWl0IGdldENtZHNVcmkoKTtcbiAgICAgIGNvbnN0IGNyZWRzUmVzcG9uc2UgPSBKU09OLnBhcnNlKGF3YWl0IHJlcXVlc3RGcm9tRWNzSW1kcyh0aW1lb3V0LCByZXF1ZXN0T3B0aW9ucykpO1xuICAgICAgaWYgKCFpc0ltZHNDcmVkZW50aWFscyhjcmVkc1Jlc3BvbnNlKSkge1xuICAgICAgICB0aHJvdyBuZXcgQ3JlZGVudGlhbHNQcm92aWRlckVycm9yKFwiSW52YWxpZCByZXNwb25zZSByZWNlaXZlZCBmcm9tIGluc3RhbmNlIG1ldGFkYXRhIHNlcnZpY2UuXCIpO1xuICAgICAgfVxuICAgICAgcmV0dXJuIGZyb21JbWRzQ3JlZGVudGlhbHMoY3JlZHNSZXNwb25zZSk7XG4gICAgfSwgbWF4UmV0cmllcyk7XG59O1xuXG5jb25zdCByZXF1ZXN0RnJvbUVjc0ltZHMgPSBhc3luYyAodGltZW91dDogbnVtYmVyLCBvcHRpb25zOiBSZXF1ZXN0T3B0aW9ucyk6IFByb21pc2U8c3RyaW5nPiA9PiB7XG4gIGlmIChwcm9jZXNzLmVudltFTlZfQ01EU19BVVRIX1RPS0VOXSkge1xuICAgIG9wdGlvbnMuaGVhZGVycyA9IHtcbiAgICAgIC4uLm9wdGlvbnMuaGVhZGVycyxcbiAgICAgIEF1dGhvcml6YXRpb246IHByb2Nlc3MuZW52W0VOVl9DTURTX0FVVEhfVE9LRU5dLFxuICAgIH07XG4gIH1cblxuICBjb25zdCBidWZmZXIgPSBhd2FpdCBodHRwUmVxdWVzdCh7XG4gICAgLi4ub3B0aW9ucyxcbiAgICB0aW1lb3V0LFxuICB9KTtcbiAgcmV0dXJuIGJ1ZmZlci50b1N0cmluZygpO1xufTtcblxuY29uc3QgQ01EU19JUCA9IFwiMTY5LjI1NC4xNzAuMlwiO1xuY29uc3QgR1JFRU5HUkFTU19IT1NUUyA9IHtcbiAgbG9jYWxob3N0OiB0cnVlLFxuICBcIjEyNy4wLjAuMVwiOiB0cnVlLFxufTtcbmNvbnN0IEdSRUVOR1JBU1NfUFJPVE9DT0xTID0ge1xuICBcImh0dHA6XCI6IHRydWUsXG4gIFwiaHR0cHM6XCI6IHRydWUsXG59O1xuXG5jb25zdCBnZXRDbWRzVXJpID0gYXN5bmMgKCk6IFByb21pc2U8UmVxdWVzdE9wdGlvbnM+ID0+IHtcbiAgaWYgKHByb2Nlc3MuZW52W0VOVl9DTURTX1JFTEFUSVZFX1VSSV0pIHtcbiAgICByZXR1cm4ge1xuICAgICAgaG9zdG5hbWU6IENNRFNfSVAsXG4gICAgICBwYXRoOiBwcm9jZXNzLmVudltFTlZfQ01EU19SRUxBVElWRV9VUkldLFxuICAgIH07XG4gIH1cblxuICBpZiAocHJvY2Vzcy5lbnZbRU5WX0NNRFNfRlVMTF9VUkldKSB7XG4gICAgY29uc3QgcGFyc2VkID0gcGFyc2UocHJvY2Vzcy5lbnZbRU5WX0NNRFNfRlVMTF9VUkldISk7XG4gICAgaWYgKCFwYXJzZWQuaG9zdG5hbWUgfHwgIShwYXJzZWQuaG9zdG5hbWUgaW4gR1JFRU5HUkFTU19IT1NUUykpIHtcbiAgICAgIHRocm93IG5ldyBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3IoXG4gICAgICAgIGAke3BhcnNlZC5ob3N0bmFtZX0gaXMgbm90IGEgdmFsaWQgY29udGFpbmVyIG1ldGFkYXRhIHNlcnZpY2UgaG9zdG5hbWVgLFxuICAgICAgICBmYWxzZVxuICAgICAgKTtcbiAgICB9XG5cbiAgICBpZiAoIXBhcnNlZC5wcm90b2NvbCB8fCAhKHBhcnNlZC5wcm90b2NvbCBpbiBHUkVFTkdSQVNTX1BST1RPQ09MUykpIHtcbiAgICAgIHRocm93IG5ldyBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3IoXG4gICAgICAgIGAke3BhcnNlZC5wcm90b2NvbH0gaXMgbm90IGEgdmFsaWQgY29udGFpbmVyIG1ldGFkYXRhIHNlcnZpY2UgcHJvdG9jb2xgLFxuICAgICAgICBmYWxzZVxuICAgICAgKTtcbiAgICB9XG5cbiAgICByZXR1cm4ge1xuICAgICAgLi4ucGFyc2VkLFxuICAgICAgcG9ydDogcGFyc2VkLnBvcnQgPyBwYXJzZUludChwYXJzZWQucG9ydCwgMTApIDogdW5kZWZpbmVkLFxuICAgIH07XG4gIH1cblxuICB0aHJvdyBuZXcgQ3JlZGVudGlhbHNQcm92aWRlckVycm9yKFxuICAgIFwiVGhlIGNvbnRhaW5lciBtZXRhZGF0YSBjcmVkZW50aWFsIHByb3ZpZGVyIGNhbm5vdCBiZSB1c2VkIHVubGVzc1wiICtcbiAgICAgIGAgdGhlICR7RU5WX0NNRFNfUkVMQVRJVkVfVVJJfSBvciAke0VOVl9DTURTX0ZVTExfVVJJfSBlbnZpcm9ubWVudGAgK1xuICAgICAgXCIgdmFyaWFibGUgaXMgc2V0XCIsXG4gICAgZmFsc2VcbiAgKTtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -37835,11 +37909,11 @@ const getCredentialsFromProfile = async (profile, options) => {
         path: IMDS_PATH + profile,
     })).toString());
     if (!ImdsCredentials_1.isImdsCredentials(credsResponse)) {
-        throw new property_provider_1.ProviderError("Invalid response received from instance metadata service.");
+        throw new property_provider_1.CredentialsProviderError("Invalid response received from instance metadata service.");
     }
     return ImdsCredentials_1.fromImdsCredentials(credsResponse);
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbUluc3RhbmNlTWV0YWRhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvZnJvbUluc3RhbmNlTWV0YWRhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsa0VBQTJEO0FBSTNELDhEQUEyRDtBQUMzRCxzRUFBMEY7QUFDMUYsNEVBQWlHO0FBQ2pHLGtEQUErQztBQUUvQyxNQUFNLE9BQU8sR0FBRyxpQkFBaUIsQ0FBQztBQUNsQyxNQUFNLFNBQVMsR0FBRyw2Q0FBNkMsQ0FBQztBQUNoRSxNQUFNLGVBQWUsR0FBRyxtQkFBbUIsQ0FBQztBQUU1Qzs7O0dBR0c7QUFDSSxNQUFNLG9CQUFvQixHQUFHLENBQUMsT0FBMkIsRUFBRSxFQUFzQixFQUFFO0lBQ3hGLDBEQUEwRDtJQUMxRCxJQUFJLGlCQUFpQixHQUFHLEtBQUssQ0FBQztJQUM5QixNQUFNLEVBQUUsT0FBTyxFQUFFLFVBQVUsRUFBRSxHQUFHLDJDQUFzQixDQUFDLElBQUksQ0FBQyxDQUFDO0lBRTdELE1BQU0sY0FBYyxHQUFHLEtBQUssRUFBRSxVQUFrQixFQUFFLE9BQXVCLEVBQUUsRUFBRTtRQUMzRSxNQUFNLE9BQU8sR0FBRyxDQUNkLE1BQU0sYUFBSyxDQUFTLEtBQUssSUFBSSxFQUFFO1lBQzdCLElBQUksT0FBZSxDQUFDO1lBQ3BCLElBQUk7Z0JBQ0YsT0FBTyxHQUFHLE1BQU0sVUFBVSxDQUFDLE9BQU8sQ0FBQyxDQUFDO2FBQ3JDO1lBQUMsT0FBTyxHQUFHLEVBQUU7Z0JBQ1osSUFBSSxHQUFHLENBQUMsVUFBVSxLQUFLLEdBQUcsRUFBRTtvQkFDMUIsaUJBQWlCLEdBQUcsS0FBSyxDQUFDO2lCQUMzQjtnQkFDRCxNQUFNLEdBQUcsQ0FBQzthQUNYO1lBQ0QsT0FBTyxPQUFPLENBQUM7UUFDakIsQ0FBQyxFQUFFLFVBQVUsQ0FBQyxDQUNmLENBQUMsSUFBSSxFQUFFLENBQUM7UUFFVCxPQUFPLGFBQUssQ0FBQyxLQUFLLElBQUksRUFB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NUMsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUHJvdmlkZXJFcnJvciB9IGZyb20gXCJAYXdzLXNkay9wcm9wZXJ0eS1wcm92aWRlclwiO1xuaW1wb3J0IHsgQ3JlZGVudGlhbFByb3ZpZGVyLCBDcmVkZW50aWFscyB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuaW1wb3J0IHsgUmVxdWVzdE9wdGlvbnMgfSBmcm9tIFwiaHR0cFwiO1xuXG5pbXBvcnQgeyBodHRwUmVxdWVzdCB9IGZyb20gXCIuL3JlbW90ZVByb3ZpZGVyL2h0dHBSZXF1ZXN0XCI7XG5pbXBvcnQgeyBmcm9tSW1kc0NyZWRlbnRpYWxzLCBpc0ltZHNDcmVkZW50aWFscyB9IGZyb20gXCIuL3JlbW90ZVByb3ZpZGVyL0ltZHNDcmVkZW50aWFsc1wiO1xuaW1wb3J0IHsgcHJvdmlkZXJDb25maWdGcm9tSW5pdCwgUmVtb3RlUHJvdmlkZXJJbml0IH0gZnJvbSBcIi4vcmVtb3RlUHJvdmlkZXIvUmVtb3RlUHJvdmlkZXJJbml0XCI7XG5pbXBvcnQgeyByZXRyeSB9IGZyb20gXCIuL3JlbW90ZVByb3ZpZGVyL3JldHJ5XCI7XG5cbmNvbnN0IElNRFNfSVAgPSBcIjE2OS4yNTQuMTY5LjI1NFwiO1xuY29uc3QgSU1EU19QQVRIID0gXCIvbGF0ZXN0L21ldGEtZGF0YS9pYW0vc2VjdXJpdHktY3JlZGVudGlhbHMvXCI7XG5jb25zdCBJTURTX1RPS0VOX1BBVEggPSBcIi9sYXRlc3QvYXBpL3Rva2VuXCI7XG5cbi8qKlxuICogQ3JlYXRlcyBhIGNyZWRlbnRpYWwgcHJvdmlkZXIgdGhhdCB3aWxsIHNvdXJjZSBjcmVkZW50aWFscyBmcm9tIHRoZSBFQzJcbiAqIEluc3RhbmNlIE1ldGFkYXRhIFNlcnZpY2VcbiAqL1xuZXhwb3J0IGNvbnN0IGZyb21JbnN0YW5jZU1ldGFkYXRhID0gKGluaXQ6IFJlbW90ZVByb3ZpZGVySW5pdCA9IHt9KTogQ3JlZGVudGlhbFByb3ZpZGVyID0+IHtcbiAgLy8gd2hlbiBzZXQgdG8gdHJ1ZSwgbWV0YWRhdGEgc2VydmljZSB3aWxsIG5vdCBmZXRjaCB0b2tlblxuICBsZXQgZGlzYWJsZUZldGNoVG9rZW4gPSBmYWxzZTtcbiAgY29uc3QgeyB0aW1lb3V0LCBtYXhSZXRyaWVzIH0gPSBwcm92aWRlckNvbmZpZ0Zyb21Jbml0KGluaXQpO1xuXG4gIGNvbnN0IGdldENyZWRlbnRpYWxzID0gYXN5bmMgKG1heFJldHJpZXM6IG51bWJlciwgb3B0aW9uczogUmVxdWVzdE9wdGlvbnMpID0+IHtcbiAgICBjb25zdCBwcm9maWxlID0gKFxuICAgICAgYXdhaXQgcmV0cnk8c3RyaW5nPihhc3luYyAoKSA9PiB7XG4gICAgICAgIGxldCBwcm9maWxlOiBzdHJpbmc7XG4gICAgICAgIHRyeSB7XG4gICAgICAgICAgcHJvZmlsZSA9IGF3YWl0IGdldFByb2ZpbGUob3B0aW9ucyk7XG4gICAgICAgIH0gY2F0Y2ggKGVycikge1xuICAgICAgICAgIGlmIChlcnIuc3RhdHVzQ29kZSA9PT0gNDAxKSB7XG4gICAgICAgICAgICBkaXNhYmxlRmV0Y2hUb2tlbiA9IGZhbHNlO1xuICAgICAgICAgIH1cbiAgICAgICAgICB0aHJvdyBlcnI7XG4gICAgICAgIH1cbiAgICAgICAgcmV0dXJuIHByb2ZpbGU7XG4gICAgICB9LCBtYXhSZXRyaWVzKVxuICAgICkudHJpbSgpO1xuXG4gICAgcmV0dXJuIHJldHJ5KGFzeW5jICgpID0+IHtcbiAgICAgIGxldCBjcmVkczogQ3JlZGVudGlhbHM7XG4gICAgICB0cnkge1xuICAgICAgICBjcmVkcyA9IGF3YWl0IGdldENyZWRlbnRpYWxzRnJvbVByb2ZpbGUocHJvZmlsZSwgb3B0aW9ucyk7XG4gICAgICB9IGNhdGNoIChlcnIpIHtcbiAgICAgICAgaWYgKGVyci5zdGF0dXNDb2RlID09PSA0MDEpIHtcbiAgICAgICAgICBkaXNhYmxlRmV0Y2hUb2tlbiA9IGZhbHNlO1xuICAgICAgICB9XG4gICAgICAgIHRocm93IGVycjtcbiAgICAgIH1cbiAgICAgIHJldHVybiBjcmVkcztcbiAgICB9LCBtYXhSZXRyaWVzKTtcbiAgfTtcblxuICByZXR1cm4gYXN5bmMgKCkgPT4ge1xuICAgIGlmIChkaXNhYmxlRmV0Y2hUb2tlbikge1xuICAgICAgcmV0dXJuIGdldENyZWRlbnRpYWxzKG1heFJldHJpZXMsIHsgdGltZW91dCB9KTtcbiAgICB9IGVsc2Uge1xuICAgICAgbGV0IHRva2VuOiBzdHJpbmc7XG4gICAgICB0cnkge1xuICAgICAgICB0b2tlbiA9IChhd2FpdCBnZXRNZXRhZGF0YVRva2VuKHsgdGltZW91dCB9KSkudG9TdHJpbmcoKTtcbiAgICAgIH0gY2F0Y2ggKGVycm9yKSB7XG4gICAgICAgIGlmIChlcnJvcj8uc3RhdHVzQ29kZSA9PT0gNDAwKSB7XG4gICAgICAgICAgdGhyb3cgT2JqZWN0LmFzc2lnbihlcnJvciwge1xuICAgICAgICAgICAgbWVzc2FnZTogXCJFQzIgTWV0YWRhdGEgdG9rZW4gcmVxdWVzdCByZXR1cm5lZCBlcnJvclwiLFxuICAgICAgICAgIH0pO1xuICAgICAgICB9IGVsc2UgaWYgKGVycm9yLm1lc3NhZ2UgPT09IFwiVGltZW91dEVycm9yXCIgfHwgWzQwMywgNDA0LCA0MDVdLmluY2x1ZGVzKGVycm9yLnN0YXR1c0NvZGUpKSB7XG4gICAgICAgICAgZGlzYWJsZUZldGNoVG9rZW4gPSB0cnVlO1xuICAgICAgICB9XG4gICAgICAgIHJldHVybiBnZXRDcmVkZW50aWFscyhtYXhSZXRyaWVzLCB7IHRpbWVvdXQgfSk7XG4gICAgICB9XG4gICAgICByZXR1cm4gZ2V0Q3JlZGVudGlhbHMobWF4UmV0cmllcywge1xuICAgICAgICB0aW1lb3V0LFxuICAgICAgICBoZWFkZXJzOiB7XG4gICAgICAgICAgXCJ4LWF3cy1lYzItbWV0YWRhdGEtdG9rZW5cIjogdG9rZW4sXG4gICAgICAgIH0sXG4gICAgICB9KTtcbiAgICB9XG4gIH07XG59O1xuXG5jb25zdCBnZXRNZXRhZGF0YVRva2VuID0gYXN5bmMgKG9wdGlvbnM6IFJlcXVlc3RPcHRpb25zKSA9PlxuICBodHRwUmVxdWVzdCh7XG4gICAgLi4ub3B0aW9ucyxcbiAgICBob3N0OiBJTURTX0lQLFxuICAgIHBhdGg6IElNRFNfVE9LRU5fUEFUSCxcbiAgICBtZXRob2Q6IFwiUFVUXCIsXG4gICAgaGVhZGVyczoge1xuICAgICAgXCJ4LWF3cy1lYzItbWV0YWRhdGEtdG9rZW4tdHRsLXNlY29uZHNcIjogXCIyMTYwMFwiLFxuICAgIH0sXG4gIH0pO1xuXG5jb25zdCBnZXRQcm9maWxlID0gYXN5bmMgKG9wdGlvbnM6IFJlcXVlc3RPcHRpb25zKSA9PlxuICAoYXdhaXQgaHR0cFJlcXVlc3QoeyAuLi5vcHRpb25zLCBob3N0OiBJTURTX0lQLCBwYXRoOiBJTURTX1BBVEggfSkpLnRvU3RyaW5nKCk7XG5cbmNvbnN0IGdldENyZWRlbnRpYWxzRnJvbVByb2ZpbGUgPSBhc3luYyAocHJvZmlsZTogc3RyaW5nLCBvcHRpb25zOiBSZXF1ZXN0T3B0aW9ucykgPT4ge1xuICBjb25zdCBjcmVkc1Jlc3BvbnNlID0gSlNPTi5wYXJzZShcbiAgICAoXG4gICAgICBhd2FpdCBodHRwUmVxdWVzdCh7XG4gICAgICAgIC4uLm9wdGlvbnMsXG4gICAgICAgIGhvc3Q6IElNRFNfSVAsXG4gICAgICAgIHBhdGg6IElNRFNfUEFUSCArIHByb2ZpbGUsXG4gICAgICB9KVxuICAgICkudG9TdHJpbmcoKVxuICApO1xuXG4gIGlmICghaXNJbWRzQ3JlZGVudGlhbHMoY3JlZHNSZXNwb25zZSkpIHtcbiAgICB0aHJvdyBuZXcgUHJvdmlkZXJFcnJvcihcIkludmFsaWQgcmVzcG9uc2UgcmVjZWl2ZWQgZnJvbSBpbnN0YW5jZSBtZXRhZGF0YSBzZXJ2aWNlLlwiKTtcbiAgfVxuXG4gIHJldHVybiBmcm9tSW1kc0NyZWRlbnRpYWxzKGNyZWRzUmVzcG9uc2UpO1xufTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbUluc3RhbmNlTWV0YWRhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvZnJvbUluc3RhbmNlTWV0YWRhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsa0VBQXNFO0FBSXRFLDhEQUEyRDtBQUMzRCxzRUFBMEY7QUFDMUYsNEVBQWlHO0FBQ2pHLGtEQUErQztBQUUvQyxNQUFNLE9BQU8sR0FBRyxpQkFBaUIsQ0FBQztBQUNsQyxNQUFNLFNBQVMsR0FBRyw2Q0FBNkMsQ0FBQztBQUNoRSxNQUFNLGVBQWUsR0FBRyxtQkFBbUIsQ0FBQztBQUU1Qzs7O0dBR0c7QUFDSSxNQUFNLG9CQUFvQixHQUFHLENBQUMsT0FBMkIsRUFBRSxFQUFzQixFQUFFO0lBQ3hGLDBEQUEwRDtJQUMxRCxJQUFJLGlCQUFpQixHQUFHLEtBQUssQ0FBQztJQUM5QixNQUFNLEVBQUUsT0FBTyxFQUFFLFVBQVUsRUFBRSxHQUFHLDJDQUFzQixDQUFDLElBQUksQ0FBQyxDQUFDO0lBRTdELE1BQU0sY0FBYyxHQUFHLEtBQUssRUFBRSxVQUFrQixFQUFFLE9BQXVCLEVBQUUsRUFBRTtRQUMzRSxNQUFNLE9BQU8sR0FBRyxDQUNkLE1BQU0sYUFBSyxDQUFTLEtBQUssSUFBSSxFQUFFO1lBQzdCLElBQUksT0FBZSxDQUFDO1lBQ3BCLElBQUk7Z0JBQ0YsT0FBTyxHQUFHLE1BQU0sVUFBVSxDQUFDLE9BQU8sQ0FBQyxDQUFDO2FBQ3JDO1lBQUMsT0FBTyxHQUFHLEVBQUU7Z0JBQ1osSUFBSSxHQUFHLENBQUMsVUFBVSxLQUFLLEdBQUcsRUFBRTtvQkFDMUIsaUJBQWlCLEdBQUcsS0FBSyxDQUFDO2lCQUMzQjtnQkFDRCxNQUFNLEdBQUcsQ0FBQzthQUNYO1lBQ0QsT0FBTyxPQUFPLENBQUM7UUFDakIsQ0FBQyxFQUFFLFVBQVUsQ0FBQyxDQUNmLENBQUMsSUFBSSxFQUFFLENBQUM7UUFFVCxPQUFPLGFBQUssQ0FBQyxLQUFLLElBQUksRUFB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QzVDLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENyZWRlbnRpYWxzUHJvdmlkZXJFcnJvciB9IGZyb20gXCJAYXdzLXNkay9wcm9wZXJ0eS1wcm92aWRlclwiO1xuaW1wb3J0IHsgQ3JlZGVudGlhbFByb3ZpZGVyLCBDcmVkZW50aWFscyB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuaW1wb3J0IHsgUmVxdWVzdE9wdGlvbnMgfSBmcm9tIFwiaHR0cFwiO1xuXG5pbXBvcnQgeyBodHRwUmVxdWVzdCB9IGZyb20gXCIuL3JlbW90ZVByb3ZpZGVyL2h0dHBSZXF1ZXN0XCI7XG5pbXBvcnQgeyBmcm9tSW1kc0NyZWRlbnRpYWxzLCBpc0ltZHNDcmVkZW50aWFscyB9IGZyb20gXCIuL3JlbW90ZVByb3ZpZGVyL0ltZHNDcmVkZW50aWFsc1wiO1xuaW1wb3J0IHsgcHJvdmlkZXJDb25maWdGcm9tSW5pdCwgUmVtb3RlUHJvdmlkZXJJbml0IH0gZnJvbSBcIi4vcmVtb3RlUHJvdmlkZXIvUmVtb3RlUHJvdmlkZXJJbml0XCI7XG5pbXBvcnQgeyByZXRyeSB9IGZyb20gXCIuL3JlbW90ZVByb3ZpZGVyL3JldHJ5XCI7XG5cbmNvbnN0IElNRFNfSVAgPSBcIjE2OS4yNTQuMTY5LjI1NFwiO1xuY29uc3QgSU1EU19QQVRIID0gXCIvbGF0ZXN0L21ldGEtZGF0YS9pYW0vc2VjdXJpdHktY3JlZGVudGlhbHMvXCI7XG5jb25zdCBJTURTX1RPS0VOX1BBVEggPSBcIi9sYXRlc3QvYXBpL3Rva2VuXCI7XG5cbi8qKlxuICogQ3JlYXRlcyBhIGNyZWRlbnRpYWwgcHJvdmlkZXIgdGhhdCB3aWxsIHNvdXJjZSBjcmVkZW50aWFscyBmcm9tIHRoZSBFQzJcbiAqIEluc3RhbmNlIE1ldGFkYXRhIFNlcnZpY2VcbiAqL1xuZXhwb3J0IGNvbnN0IGZyb21JbnN0YW5jZU1ldGFkYXRhID0gKGluaXQ6IFJlbW90ZVByb3ZpZGVySW5pdCA9IHt9KTogQ3JlZGVudGlhbFByb3ZpZGVyID0+IHtcbiAgLy8gd2hlbiBzZXQgdG8gdHJ1ZSwgbWV0YWRhdGEgc2VydmljZSB3aWxsIG5vdCBmZXRjaCB0b2tlblxuICBsZXQgZGlzYWJsZUZldGNoVG9rZW4gPSBmYWxzZTtcbiAgY29uc3QgeyB0aW1lb3V0LCBtYXhSZXRyaWVzIH0gPSBwcm92aWRlckNvbmZpZ0Zyb21Jbml0KGluaXQpO1xuXG4gIGNvbnN0IGdldENyZWRlbnRpYWxzID0gYXN5bmMgKG1heFJldHJpZXM6IG51bWJlciwgb3B0aW9uczogUmVxdWVzdE9wdGlvbnMpID0+IHtcbiAgICBjb25zdCBwcm9maWxlID0gKFxuICAgICAgYXdhaXQgcmV0cnk8c3RyaW5nPihhc3luYyAoKSA9PiB7XG4gICAgICAgIGxldCBwcm9maWxlOiBzdHJpbmc7XG4gICAgICAgIHRyeSB7XG4gICAgICAgICAgcHJvZmlsZSA9IGF3YWl0IGdldFByb2ZpbGUob3B0aW9ucyk7XG4gICAgICAgIH0gY2F0Y2ggKGVycikge1xuICAgICAgICAgIGlmIChlcnIuc3RhdHVzQ29kZSA9PT0gNDAxKSB7XG4gICAgICAgICAgICBkaXNhYmxlRmV0Y2hUb2tlbiA9IGZhbHNlO1xuICAgICAgICAgIH1cbiAgICAgICAgICB0aHJvdyBlcnI7XG4gICAgICAgIH1cbiAgICAgICAgcmV0dXJuIHByb2ZpbGU7XG4gICAgICB9LCBtYXhSZXRyaWVzKVxuICAgICkudHJpbSgpO1xuXG4gICAgcmV0dXJuIHJldHJ5KGFzeW5jICgpID0+IHtcbiAgICAgIGxldCBjcmVkczogQ3JlZGVudGlhbHM7XG4gICAgICB0cnkge1xuICAgICAgICBjcmVkcyA9IGF3YWl0IGdldENyZWRlbnRpYWxzRnJvbVByb2ZpbGUocHJvZmlsZSwgb3B0aW9ucyk7XG4gICAgICB9IGNhdGNoIChlcnIpIHtcbiAgICAgICAgaWYgKGVyci5zdGF0dXNDb2RlID09PSA0MDEpIHtcbiAgICAgICAgICBkaXNhYmxlRmV0Y2hUb2tlbiA9IGZhbHNlO1xuICAgICAgICB9XG4gICAgICAgIHRocm93IGVycjtcbiAgICAgIH1cbiAgICAgIHJldHVybiBjcmVkcztcbiAgICB9LCBtYXhSZXRyaWVzKTtcbiAgfTtcblxuICByZXR1cm4gYXN5bmMgKCkgPT4ge1xuICAgIGlmIChkaXNhYmxlRmV0Y2hUb2tlbikge1xuICAgICAgcmV0dXJuIGdldENyZWRlbnRpYWxzKG1heFJldHJpZXMsIHsgdGltZW91dCB9KTtcbiAgICB9IGVsc2Uge1xuICAgICAgbGV0IHRva2VuOiBzdHJpbmc7XG4gICAgICB0cnkge1xuICAgICAgICB0b2tlbiA9IChhd2FpdCBnZXRNZXRhZGF0YVRva2VuKHsgdGltZW91dCB9KSkudG9TdHJpbmcoKTtcbiAgICAgIH0gY2F0Y2ggKGVycm9yKSB7XG4gICAgICAgIGlmIChlcnJvcj8uc3RhdHVzQ29kZSA9PT0gNDAwKSB7XG4gICAgICAgICAgdGhyb3cgT2JqZWN0LmFzc2lnbihlcnJvciwge1xuICAgICAgICAgICAgbWVzc2FnZTogXCJFQzIgTWV0YWRhdGEgdG9rZW4gcmVxdWVzdCByZXR1cm5lZCBlcnJvclwiLFxuICAgICAgICAgIH0pO1xuICAgICAgICB9IGVsc2UgaWYgKGVycm9yLm1lc3NhZ2UgPT09IFwiVGltZW91dEVycm9yXCIgfHwgWzQwMywgNDA0LCA0MDVdLmluY2x1ZGVzKGVycm9yLnN0YXR1c0NvZGUpKSB7XG4gICAgICAgICAgZGlzYWJsZUZldGNoVG9rZW4gPSB0cnVlO1xuICAgICAgICB9XG4gICAgICAgIHJldHVybiBnZXRDcmVkZW50aWFscyhtYXhSZXRyaWVzLCB7IHRpbWVvdXQgfSk7XG4gICAgICB9XG4gICAgICByZXR1cm4gZ2V0Q3JlZGVudGlhbHMobWF4UmV0cmllcywge1xuICAgICAgICB0aW1lb3V0LFxuICAgICAgICBoZWFkZXJzOiB7XG4gICAgICAgICAgXCJ4LWF3cy1lYzItbWV0YWRhdGEtdG9rZW5cIjogdG9rZW4sXG4gICAgICAgIH0sXG4gICAgICB9KTtcbiAgICB9XG4gIH07XG59O1xuXG5jb25zdCBnZXRNZXRhZGF0YVRva2VuID0gYXN5bmMgKG9wdGlvbnM6IFJlcXVlc3RPcHRpb25zKSA9PlxuICBodHRwUmVxdWVzdCh7XG4gICAgLi4ub3B0aW9ucyxcbiAgICBob3N0OiBJTURTX0lQLFxuICAgIHBhdGg6IElNRFNfVE9LRU5fUEFUSCxcbiAgICBtZXRob2Q6IFwiUFVUXCIsXG4gICAgaGVhZGVyczoge1xuICAgICAgXCJ4LWF3cy1lYzItbWV0YWRhdGEtdG9rZW4tdHRsLXNlY29uZHNcIjogXCIyMTYwMFwiLFxuICAgIH0sXG4gIH0pO1xuXG5jb25zdCBnZXRQcm9maWxlID0gYXN5bmMgKG9wdGlvbnM6IFJlcXVlc3RPcHRpb25zKSA9PlxuICAoYXdhaXQgaHR0cFJlcXVlc3QoeyAuLi5vcHRpb25zLCBob3N0OiBJTURTX0lQLCBwYXRoOiBJTURTX1BBVEggfSkpLnRvU3RyaW5nKCk7XG5cbmNvbnN0IGdldENyZWRlbnRpYWxzRnJvbVByb2ZpbGUgPSBhc3luYyAocHJvZmlsZTogc3RyaW5nLCBvcHRpb25zOiBSZXF1ZXN0T3B0aW9ucykgPT4ge1xuICBjb25zdCBjcmVkc1Jlc3BvbnNlID0gSlNPTi5wYXJzZShcbiAgICAoXG4gICAgICBhd2FpdCBodHRwUmVxdWVzdCh7XG4gICAgICAgIC4uLm9wdGlvbnMsXG4gICAgICAgIGhvc3Q6IElNRFNfSVAsXG4gICAgICAgIHBhdGg6IElNRFNfUEFUSCArIHByb2ZpbGUsXG4gICAgICB9KVxuICAgICkudG9TdHJpbmcoKVxuICApO1xuXG4gIGlmICghaXNJbWRzQ3JlZGVudGlhbHMoY3JlZHNSZXNwb25zZSkpIHtcbiAgICB0aHJvdyBuZXcgQ3JlZGVudGlhbHNQcm92aWRlckVycm9yKFwiSW52YWxpZCByZXNwb25zZSByZWNlaXZlZCBmcm9tIGluc3RhbmNlIG1ldGFkYXRhIHNlcnZpY2UuXCIpO1xuICB9XG5cbiAgcmV0dXJuIGZyb21JbWRzQ3JlZGVudGlhbHMoY3JlZHNSZXNwb25zZSk7XG59O1xuIl19
 
 /***/ }),
 
@@ -37917,14 +37991,17 @@ function httpRequest(options) {
         const req = http_1.request({ method: "GET", ...options });
         req.on("error", (err) => {
             reject(Object.assign(new property_provider_1.ProviderError("Unable to connect to instance metadata service"), err));
+            req.destroy();
         });
         req.on("timeout", () => {
-            reject(new Error("TimeoutError"));
+            reject(new property_provider_1.ProviderError("TimeoutError from instance metadata service"));
+            req.destroy();
         });
         req.on("response", (res) => {
             const { statusCode = 400 } = res;
             if (statusCode < 200 || 300 <= statusCode) {
                 reject(Object.assign(new property_provider_1.ProviderError("Error response received from instance metadata service"), { statusCode }));
+                req.destroy();
             }
             const chunks = [];
             res.on("data", (chunk) => {
@@ -37932,13 +38009,14 @@ function httpRequest(options) {
             });
             res.on("end", () => {
                 resolve(buffer_1.Buffer.concat(chunks));
+                req.destroy();
             });
         });
         req.end();
     });
 }
 exports.httpRequest = httpRequest;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaHR0cFJlcXVlc3QuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvcmVtb3RlUHJvdmlkZXIvaHR0cFJlcXVlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsa0VBQTJEO0FBQzNELG1DQUFnQztBQUNoQywrQkFBZ0U7QUFFaEU7O0dBRUc7QUFDSCxTQUFnQixXQUFXLENBQUMsT0FBdUI7SUFDakQsT0FBTyxJQUFJLE9BQU8sQ0FBQyxDQUFDLE9BQU8sRUFBRSxNQUFNLEVBQUUsRUFBRTtRQUNyQyxNQUFNLEdBQUcsR0FBRyxjQUFPLENBQUMsRUFBRSxNQUFNLEVBQUUsS0FBSyxFQUFFLEdBQUcsT0FBTyxFQUFFLENBQUMsQ0FBQztRQUVuRCxHQUFHLENBQUMsRUFBRSxDQUFDLE9BQU8sRUFBRSxDQUFDLEdBQUcsRUFBRSxFQUFFO1lBQ3RCLE1BQU0sQ0FBQyxNQUFNLENBQUMsTUFBTSxDQUFDLElBQUksaUNBQWEsQ0FBQyxnREFBZ0QsQ0FBQyxFQUFFLEdBQUcsQ0FBQyxDQUFDLENBQUM7UUFDbEcsQ0FBQyxDQUFDLENBQUM7UUFFSCxHQUFHLENBQUMsRUFBRSxDQUFDLFNBQVMsRUFBRSxHQUFHLEVBQUU7WUFDckIsTUFBTSxDQUFDLElBQUksS0FBSyxDQUFDLGNBQWMsQ0FBQyxDQUFDLENBQUM7UUFDcEMsQ0FBQyxDQUFDLENBQUM7UUFFSCxHQUFHLENBQUMsRUFBRSxDQUFDLFVBQVUsRUFBRSxDQUFDLEdBQW9CLEVBQUUsRUFBRTtZQUMxQyxNQUFNLEVBQUUsVUFBVSxHQUFHLEdBQUcsRUFBRSxHQUFHLEdBQUcsQ0FBQztZQUNqQyxJQUFJLFVBQVUsR0FBRyxHQUFHLElBQUksR0FBRyxJQUFJLFVBQVUsRUFBRTtnQkFDekMsTUFBTSxDQUNKLE1BQU0sQ0FBQyxNQUFNLENBQUMsSUFBSSxpQ0FBYSxDQUFDLHdEQUF3RCxDQUFDLEVBQUUsRUFBRSxVQUFVLEVBQUUsQ0FBQyxDQUMzRyxDQUFDO2FBQ0g7WUFFRCxNQUFNLE1BQU0sR0FBa0IsRUFBRSxDQUFDO1lBQ2pDLEdBQUcsQ0FBQyxFQUFFLENBQUMsTUFBTSxFQUFFLENBQUMsS0FBSyxFQUFFLEVBQUU7Z0JBQ3ZCLE1BQU0sQ0FBQyxJQUFJLENBQUMsS0FBZSxDQUFDLENBQUM7WUFDL0IsQ0FBQyxDQUFDLENBQUM7WUFDSCxHQUFHLENBQUMsRUFBRSxDQUFDLEtBQUssRUFBRSxHQUFHLEVBQUU7Z0JBQ2pCLE9BQU8sQ0FBQyxlQUFNLENBQUMsTUFBTSxDQUFDLE1BQU0sQ0FBQyxDQUFDLENBQUM7WUFDakMsQ0FBQyxDQUFDLENBQUM7UUFDTCxDQUFDLENBQUMsQ0FBQztRQUVILEdBQUcsQ0FBQyxHQUFHLEVBQUUsQ0FBQztJQUNaLENBQUMsQ0FBQyxDQUFDO0FBQ0wsQ0FBQztBQS9CRCxrQ0ErQkMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQcm92aWRlckVycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBCdWZmZXIgfSBmcm9tIFwiYnVmZmVyXCI7XG5pbXBvcnQgeyBJbmNvbWluZ01lc3NhZ2UsIHJlcXVlc3QsIFJlcXVlc3RPcHRpb25zIH0gZnJvbSBcImh0dHBcIjtcblxuLyoqXG4gKiBAaW50ZXJuYWxcbiAqL1xuZXhwb3J0IGZ1bmN0aW9uIGh0dHBSZXF1ZXN0KG9wdGlvbnM6IFJlcXVlc3RPcHRpb25zKTogUHJvbWlzZTxCdWZmZXI+IHtcbiAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3QpID0+IHtcbiAgICBjb25zdCByZXEgPSByZXF1ZXN0KHsgbWV0aG9kOiBcIkdFVFwiLCAuLi5vcHRpb25zIH0pO1xuXG4gICAgcmVxLm9uKFwiZXJyb3JcIiwgKGVycikgPT4ge1xuICAgICAgcmVqZWN0KE9iamVjdC5hc3NpZ24obmV3IFByb3ZpZGVyRXJyb3IoXCJVbmFibGUgdG8gY29ubmVjdCB0byBpbnN0YW5jZSBtZXRhZGF0YSBzZXJ2aWNlXCIpLCBlcnIpKTtcbiAgICB9KTtcblxuICAgIHJlcS5vbihcInRpbWVvdXRcIiwgKCkgPT4ge1xuICAgICAgcmVqZWN0KG5ldyBFcnJvcihcIlRpbWVvdXRFcnJvclwiKSk7XG4gICAgfSk7XG5cbiAgICByZXEub24oXCJyZXNwb25zZVwiLCAocmVzOiBJbmNvbWluZ01lc3NhZ2UpID0+IHtcbiAgICAgIGNvbnN0IHsgc3RhdHVzQ29kZSA9IDQwMCB9ID0gcmVzO1xuICAgICAgaWYgKHN0YXR1c0NvZGUgPCAyMDAgfHwgMzAwIDw9IHN0YXR1c0NvZGUpIHtcbiAgICAgICAgcmVqZWN0KFxuICAgICAgICAgIE9iamVjdC5hc3NpZ24obmV3IFByb3ZpZGVyRXJyb3IoXCJFcnJvciByZXNwb25zZSByZWNlaXZlZCBmcm9tIGluc3RhbmNlIG1ldGFkYXRhIHNlcnZpY2VcIiksIHsgc3RhdHVzQ29kZSB9KVxuICAgICAgICApO1xuICAgICAgfVxuXG4gICAgICBjb25zdCBjaHVua3M6IEFycmF5PEJ1ZmZlcj4gPSBbXTtcbiAgICAgIHJlcy5vbihcImRhdGFcIiwgKGNodW5rKSA9PiB7XG4gICAgICAgIGNodW5rcy5wdXNoKGNodW5rIGFzIEJ1ZmZlcik7XG4gICAgICB9KTtcbiAgICAgIHJlcy5vbihcImVuZFwiLCAoKSA9PiB7XG4gICAgICAgIHJlc29sdmUoQnVmZmVyLmNvbmNhdChjaHVua3MpKTtcbiAgICAgIH0pO1xuICAgIH0pO1xuXG4gICAgcmVxLmVuZCgpO1xuICB9KTtcbn1cbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaHR0cFJlcXVlc3QuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvcmVtb3RlUHJvdmlkZXIvaHR0cFJlcXVlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsa0VBQTJEO0FBQzNELG1DQUFnQztBQUNoQywrQkFBZ0U7QUFFaEU7O0dBRUc7QUFDSCxTQUFnQixXQUFXLENBQUMsT0FBdUI7SUFDakQsT0FBTyxJQUFJLE9BQU8sQ0FBQyxDQUFDLE9BQU8sRUFBRSxNQUFNLEVBQUUsRUFBRTtRQUNyQyxNQUFNLEdBQUcsR0FBRyxjQUFPLENBQUMsRUFBRSxNQUFNLEVBQUUsS0FBSyxFQUFFLEdBQUcsT0FBTyxFQUFFLENBQUMsQ0FBQztRQUVuRCxHQUFHLENBQUMsRUFBRSxDQUFDLE9BQU8sRUFBRSxDQUFDLEdBQUcsRUFBRSxFQUFFO1lBQ3RCLE1BQU0sQ0FBQyxNQUFNLENBQUMsTUFBTSxDQUFDLElBQUksaUNBQWEsQ0FBQyxnREFBZ0QsQ0FBQyxFQUFFLEdBQUcsQ0FBQyxDQUFDLENBQUM7WUFDaEcsR0FBRyxDQUFDLE9BQU8sRUFBRSxDQUFDO1FBQ2hCLENBQUMsQ0FBQyxDQUFDO1FBRUgsR0FBRyxDQUFDLEVBQUUsQ0FBQyxTQUFTLEVBQUUsR0FBRyxFQUFFO1lBQ3JCLE1BQU0sQ0FBQyxJQUFJLGlDQUFhLENBQUMsNkNBQTZDLENBQUMsQ0FBQyxDQUFDO1lBQ3pFLEdBQUcsQ0FBQyxPQUFPLEVBQUUsQ0FBQztRQUNoQixDQUFDLENBQUMsQ0FBQztRQUVILEdBQUcsQ0FBQyxFQUFFLENBQUMsVUFBVSxFQUFFLENBQUMsR0FBb0IsRUFBRSxFQUFFO1lBQzFDLE1BQU0sRUFBRSxVQUFVLEdBQUcsR0FBRyxFQUFFLEdBQUcsR0FBRyxDQUFDO1lBQ2pDLElBQUksVUFBVSxHQUFHLEdBQUcsSUFBSSxHQUFHLElBQUksVUFBVSxFQUFFO2dCQUN6QyxNQUFNLENBQ0osTUFBTSxDQUFDLE1BQU0sQ0FBQyxJQUFJLGlDQUFhLENBQUMsd0RBQXdELENBQUMsRUFBRSxFQUFFLFVBQVUsRUFBRSxDQUFDLENBQzNHLENBQUM7Z0JBQ0YsR0FBRyxDQUFDLE9BQU8sRUFBRSxDQUFDO2FBQ2Y7WUFFRCxNQUFNLE1BQU0sR0FBa0IsRUFBRSxDQUFDO1lBQ2pDLEdBQUcsQ0FBQyxFQUFFLENBQUMsTUFBTSxFQUFFLENBQUMsS0FBSyxFQUFFLEVBQUU7Z0JBQ3ZCLE1BQU0sQ0FBQyxJQUFJLENBQUMsS0FBZSxDQUFDLENBQUM7WUFDL0IsQ0FBQyxDQUFDLENBQUM7WUFDSCxHQUFHLENBQUMsRUFBRSxDQUFDLEtBQUssRUFBRSxHQUFHLEVBQUU7Z0JBQ2pCLE9BQU8sQ0FBQyxlQUFNLENBQUMsTUFBTSxDQUFDLE1BQU0sQ0FBQyxDQUFDLENBQUM7Z0JBQy9CLEdBQUcsQ0FBQyxPQUFPLEVBQUUsQ0FBQztZQUNoQixDQUFDLENBQUMsQ0FBQztRQUNMLENBQUMsQ0FBQyxDQUFDO1FBRUgsR0FBRyxDQUFDLEdBQUcsRUFBRSxDQUFDO0lBQ1osQ0FBQyxDQUFDLENBQUM7QUFDTCxDQUFDO0FBbkNELGtDQW1DQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb3ZpZGVyRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvcHJvcGVydHktcHJvdmlkZXJcIjtcbmltcG9ydCB7IEJ1ZmZlciB9IGZyb20gXCJidWZmZXJcIjtcbmltcG9ydCB7IEluY29taW5nTWVzc2FnZSwgcmVxdWVzdCwgUmVxdWVzdE9wdGlvbnMgfSBmcm9tIFwiaHR0cFwiO1xuXG4vKipcbiAqIEBpbnRlcm5hbFxuICovXG5leHBvcnQgZnVuY3Rpb24gaHR0cFJlcXVlc3Qob3B0aW9uczogUmVxdWVzdE9wdGlvbnMpOiBQcm9taXNlPEJ1ZmZlcj4ge1xuICByZXR1cm4gbmV3IFByb21pc2UoKHJlc29sdmUsIHJlamVjdCkgPT4ge1xuICAgIGNvbnN0IHJlcSA9IHJlcXVlc3QoeyBtZXRob2Q6IFwiR0VUXCIsIC4uLm9wdGlvbnMgfSk7XG5cbiAgICByZXEub24oXCJlcnJvclwiLCAoZXJyKSA9PiB7XG4gICAgICByZWplY3QoT2JqZWN0LmFzc2lnbihuZXcgUHJvdmlkZXJFcnJvcihcIlVuYWJsZSB0byBjb25uZWN0IHRvIGluc3RhbmNlIG1ldGFkYXRhIHNlcnZpY2VcIiksIGVycikpO1xuICAgICAgcmVxLmRlc3Ryb3koKTtcbiAgICB9KTtcblxuICAgIHJlcS5vbihcInRpbWVvdXRcIiwgKCkgPT4ge1xuICAgICAgcmVqZWN0KG5ldyBQcm92aWRlckVycm9yKFwiVGltZW91dEVycm9yIGZyb20gaW5zdGFuY2UgbWV0YWRhdGEgc2VydmljZVwiKSk7XG4gICAgICByZXEuZGVzdHJveSgpO1xuICAgIH0pO1xuXG4gICAgcmVxLm9uKFwicmVzcG9uc2VcIiwgKHJlczogSW5jb21pbmdNZXNzYWdlKSA9PiB7XG4gICAgICBjb25zdCB7IHN0YXR1c0NvZGUgPSA0MDAgfSA9IHJlcztcbiAgICAgIGlmIChzdGF0dXNDb2RlIDwgMjAwIHx8IDMwMCA8PSBzdGF0dXNDb2RlKSB7XG4gICAgICAgIHJlamVjdChcbiAgICAgICAgICBPYmplY3QuYXNzaWduKG5ldyBQcm92aWRlckVycm9yKFwiRXJyb3IgcmVzcG9uc2UgcmVjZWl2ZWQgZnJvbSBpbnN0YW5jZSBtZXRhZGF0YSBzZXJ2aWNlXCIpLCB7IHN0YXR1c0NvZGUgfSlcbiAgICAgICAgKTtcbiAgICAgICAgcmVxLmRlc3Ryb3koKTtcbiAgICAgIH1cblxuICAgICAgY29uc3QgY2h1bmtzOiBBcnJheTxCdWZmZXI+ID0gW107XG4gICAgICByZXMub24oXCJkYXRhXCIsIChjaHVuaykgPT4ge1xuICAgICAgICBjaHVua3MucHVzaChjaHVuayBhcyBCdWZmZXIpO1xuICAgICAgfSk7XG4gICAgICByZXMub24oXCJlbmRcIiwgKCkgPT4ge1xuICAgICAgICByZXNvbHZlKEJ1ZmZlci5jb25jYXQoY2h1bmtzKSk7XG4gICAgICAgIHJlcS5kZXN0cm95KCk7XG4gICAgICB9KTtcbiAgICB9KTtcblxuICAgIHJlcS5lbmQoKTtcbiAgfSk7XG59XG4iXX0=
 
 /***/ }),
 
@@ -37970,14 +38048,13 @@ exports.retry = retry;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.getMasterProfileName = exports.parseKnownFiles = exports.fromIni = exports.ENV_PROFILE = void 0;
+exports.fromIni = void 0;
 const credential_provider_env_1 = __nccwpck_require__(5886);
 const credential_provider_imds_1 = __nccwpck_require__(1732);
+const credential_provider_sso_1 = __nccwpck_require__(676);
 const credential_provider_web_identity_1 = __nccwpck_require__(1961);
 const property_provider_1 = __nccwpck_require__(1014);
-const shared_ini_file_loader_1 = __nccwpck_require__(4847);
-const DEFAULT_PROFILE = "default";
-exports.ENV_PROFILE = "AWS_PROFILE";
+const util_credentials_1 = __nccwpck_require__(2565);
 const isStaticCredsProfile = (arg) => Boolean(arg) &&
     typeof arg === "object" &&
     typeof arg.aws_access_key_id === "string" &&
@@ -38001,30 +38078,10 @@ const isAssumeRoleWithProviderProfile = (arg) => isAssumeRoleProfile(arg) && typ
  * role assumption and multi-factor authentication.
  */
 const fromIni = (init = {}) => async () => {
-    const profiles = await exports.parseKnownFiles(init);
-    return resolveProfileData(exports.getMasterProfileName(init), profiles, init);
+    const profiles = await util_credentials_1.parseKnownFiles(init);
+    return resolveProfileData(util_credentials_1.getMasterProfileName(init), profiles, init);
 };
 exports.fromIni = fromIni;
-/**
- * Load profiles from credentials and config INI files and normalize them into a
- * single profile list.
- *
- * @internal
- */
-const parseKnownFiles = async (init) => {
-    const { loadedConfig = shared_ini_file_loader_1.loadSharedConfigFiles(init) } = init;
-    const parsedFiles = await loadedConfig;
-    return {
-        ...parsedFiles.configFile,
-        ...parsedFiles.credentialsFile,
-    };
-};
-exports.parseKnownFiles = parseKnownFiles;
-/**
- * @internal
- */
-const getMasterProfileName = (init) => init.profile || process.env[exports.ENV_PROFILE] || DEFAULT_PROFILE;
-exports.getMasterProfileName = getMasterProfileName;
 const resolveProfileData = async (profileName, profiles, options, visitedProfiles = {}) => {
     const data = profiles[profileName];
     // If this is not the first profile visited, static credentials should be
@@ -38038,11 +38095,11 @@ const resolveProfileData = async (profileName, profiles, options, visitedProfile
     if (isAssumeRoleWithSourceProfile(data) || isAssumeRoleWithProviderProfile(data)) {
         const { external_id: ExternalId, mfa_serial, role_arn: RoleArn, role_session_name: RoleSessionName = "aws-sdk-js-" + Date.now(), source_profile, credential_source, } = data;
         if (!options.roleAssumer) {
-            throw new property_provider_1.ProviderError(`Profile ${profileName} requires a role to be assumed, but no` + ` role assumption callback was provided.`, false);
+            throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} requires a role to be assumed, but no` + ` role assumption callback was provided.`, false);
         }
         if (source_profile && source_profile in visitedProfiles) {
-            throw new property_provider_1.ProviderError(`Detected a cycle attempting to resolve credentials for profile` +
-                ` ${exports.getMasterProfileName(options)}. Profiles visited: ` +
+            throw new property_provider_1.CredentialsProviderError(`Detected a cycle attempting to resolve credentials for profile` +
+                ` ${util_credentials_1.getMasterProfileName(options)}. Profiles visited: ` +
                 Object.keys(visitedProfiles).join(", "), false);
         }
         const sourceCreds = source_profile
@@ -38054,7 +38111,7 @@ const resolveProfileData = async (profileName, profiles, options, visitedProfile
         const params = { RoleArn, RoleSessionName, ExternalId };
         if (mfa_serial) {
             if (!options.mfaCodeProvider) {
-                throw new property_provider_1.ProviderError(`Profile ${profileName} requires multi-factor authentication,` + ` but no MFA code callback was provided.`, false);
+                throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} requires multi-factor authentication,` + ` but no MFA code callback was provided.`, false);
             }
             params.SerialNumber = mfa_serial;
             params.TokenCode = await options.mfaCodeProvider(mfa_serial);
@@ -38071,12 +38128,21 @@ const resolveProfileData = async (profileName, profiles, options, visitedProfile
     if (isWebIdentityProfile(data)) {
         return resolveWebIdentityCredentials(data, options);
     }
+    if (credential_provider_sso_1.isSsoProfile(data)) {
+        const { sso_start_url, sso_account_id, sso_region, sso_role_name } = credential_provider_sso_1.validateSsoProfile(data);
+        return credential_provider_sso_1.fromSSO({
+            ssoStartUrl: sso_start_url,
+            ssoAccountId: sso_account_id,
+            ssoRegion: sso_region,
+            ssoRoleName: sso_role_name,
+        })();
+    }
     // If the profile cannot be parsed or contains neither static credentials
     // nor role assumption metadata, throw an error. This should be considered a
     // terminal resolution error if a profile has been specified by the user
     // (whether via a parameter, an environment variable, or another profile's
     // `source_profile` key).
-    throw new property_provider_1.ProviderError(`Profile ${profileName} could not be found or parsed in shared` + ` credentials file.`);
+    throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} could not be found or parsed in shared` + ` credentials file.`);
 };
 /**
  * Resolve the `credential_source` entry from the profile, and return the
@@ -38095,7 +38161,7 @@ const resolveCredentialSource = (credentialSource, profileName) => {
         return sourceProvidersMap[credentialSource]();
     }
     else {
-        throw new property_provider_1.ProviderError(`Unsupported credential source in profile ${profileName}. Got ${credentialSource}, ` +
+        throw new property_provider_1.CredentialsProviderError(`Unsupported credential source in profile ${profileName}. Got ${credentialSource}, ` +
             `expected EcsContainer or Ec2InstanceMetadata or Environment.`);
     }
 };
@@ -38110,7 +38176,7 @@ const resolveWebIdentityCredentials = async (profile, options) => credential_pro
     roleSessionName: profile.role_session_name,
     roleAssumerWithWebIdentity: options.roleAssumerWithWebIdentity,
 })();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsOEVBQTJEO0FBQzNELGdGQUFnRztBQUNoRyxnR0FBMkc7QUFDM0csa0VBQTJEO0FBQzNELDRFQU15QztBQUd6QyxNQUFNLGVBQWUsR0FBRyxTQUFTLENBQUM7QUFDckIsUUFBQSxXQUFXLEdBQUcsYUFBYSxDQUFDO0FBc0Z6QyxNQUFNLG9CQUFvQixHQUFHLENBQUMsR0FBUSxFQUE2QixFQUFFLENBQ25FLE9BQU8sQ0FBQyxHQUFHLENBQUM7SUFDWixPQUFPLEdBQUcsS0FBSyxRQUFRO0lBQ3ZCLE9BQU8sR0FBRyxDQUFDLGlCQUFpQixLQUFLLFFBQVE7SUFDekMsT0FBTyxHQUFHLENBQUMscUJBQXFCLEtBQUssUUFBUTtJQUM3QyxDQUFDLFdBQVcsRUFBRSxRQUFRLENBQUMsQ0FBQyxPQUFPLENBQUMsT0FBTyxHQUFHLENBQUMsaUJBQWlCLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQztBQVFyRSxNQUFNLG9CQUFvQixHQUFHLENBQUMsR0FBUSxFQUE2QixFQUFFLENBQ25FLE9BQU8sQ0FBQyxHQUFHLENBQUM7SUFDWixPQUFPLEdBQUcsS0FBSyxRQUFRO0lBQ3ZCLE9BQU8sR0FBRyxDQUFDLHVCQUF1QixLQUFLLFFBQVE7SUFDL0MsT0FBTyxHQUFHLENBQUMsUUFBUSxLQUFLLFFBQVE7SUFDaEMsQ0FBQyxXQUFXLEVBQUUsUUFBUSxDQUFDLENBQUMsT0FBTyxDQUFDLE9BQU8sR0FBRyxDQUFDLGlCQUFpQixDQUFDLEdBQUcsQ0FBQyxDQUFDLENBQUM7QUFZckUsTUFBTSxtQkFBbUIsR0FBRyxDQUFDLEdBQVEsRUFBRSxFQUFFLENBQ3ZDLE9BQU8sQ0FBQyxHQUFHLENBQUM7SUFDWixPQUFPLEdBQUcsS0FBSyxRQUFRO0lBQ3ZCLE9BQU8sR0FBRyxDQUFDLFFBQVEsS0FBSyxRQUFRO0lBQ2hDLENBQUMs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LENBQUMsQ0FBQztBQUVMLE1BQU0sNkJBQTZCLEdBQUcsS0FBSyxFQUFFLE9BQTJCLEVBQUUsT0FBb0IsRUFBd0IsRUFBRSxDQUN0SCxnREFBYSxDQUFDO0lBQ1osb0JBQW9CLEVBQUUsT0FBTyxDQUFDLHVCQUF1QjtJQUNyRCxPQUFPLEVBQUUsT0FBTyxDQUFDLFFBQVE7SUFDekIsZUFBZSxFQUFFLE9BQU8sQ0FBQyxpQkFBaUI7SUFDMUMsMEJBQTBCLEVBQUUsT0FBTyxDQUFDLDBCQUEwQjtDQUMvRCxDQUFDLEVBQUUsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGZyb21FbnYgfSBmcm9tIFwiQGF3cy1zZGsvY3JlZGVudGlhbC1wcm92aWRlci1lbnZcIjtcbmltcG9ydCB7IGZyb21Db250YWluZXJNZXRhZGF0YSwgZnJvbUluc3RhbmNlTWV0YWRhdGEgfSBmcm9tIFwiQGF3cy1zZGsvY3JlZGVudGlhbC1wcm92aWRlci1pbWRzXCI7XG5pbXBvcnQgeyBBc3N1bWVSb2xlV2l0aFdlYklkZW50aXR5UGFyYW1zLCBmcm9tVG9rZW5GaWxlIH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItd2ViLWlkZW50aXR5XCI7XG5pbXBvcnQgeyBQcm92aWRlckVycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQge1xuICBsb2FkU2hhcmVkQ29uZmlnRmlsZXMsXG4gIFBhcnNlZEluaURhdGEsXG4gIFByb2ZpbGUsXG4gIFNoYXJlZENvbmZpZ0ZpbGVzLFxuICBTaGFyZWRDb25maWdJbml0LFxufSBmcm9tIFwiQGF3cy1zZGsvc2hhcmVkLWluaS1maWxlLWxvYWRlclwiO1xuaW1wb3J0IHsgQ3JlZGVudGlhbFByb3ZpZGVyLCBDcmVkZW50aWFscyB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5jb25zdCBERUZBVUxUX1BST0ZJTEUgPSBcImRlZmF1bHRcIjtcbmV4cG9ydCBjb25zdCBFTlZfUFJPRklMRSA9IFwiQVdTX1BST0ZJTEVcIjtcblxuLyoqXG4gKiBAc2VlIGh0dHA6Ly9kb2NzLmF3cy5hbWF6b24uY29tL0FXU0phdmFTY3JpcHRTREsvbGF0ZXN0L0FXUy9TVFMuaHRtbCNhc3N1bWVSb2xlLXByb3BlcnR5XG4gKiBUT0RPIHVwZGF0ZSB0aGUgYWJvdmUgdG8gbGluayB0byBWMyBkb2NzXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgQXNzdW1lUm9sZVBhcmFtcyB7XG4gIC8qKlxuICAgKiBUaGUgaWRlbnRpZmllciBvZiB0aGUgcm9sZSB0byBiZSBhc3N1bWVkLlxuICAgKi9cbiAgUm9sZUFybjogc3RyaW5nO1xuXG4gIC8qKlxuICAgKiBBIG5hbWUgZm9yIHRoZSBhc3N1bWVkIHJvbGUgc2Vzc2lvbi5cbiAgICovXG4gIFJvbGVTZXNzaW9uTmFtZTogc3RyaW5nO1xuXG4gIC8qKlxuICAgKiBBIHVuaXF1ZSBpZGVudGlmaWVyIHRoYXQgaXMgdXNlZCBieSB0aGlyZCBwYXJ0aWVzIHdoZW4gYXNzdW1pbmcgcm9sZXMgaW5cbiAgICogdGhlaXIgY3VzdG9tZXJzJyBhY2NvdW50cy5cbiAgICovXG4gIEV4dGVybmFsSWQ/OiBzdHJpbmc7XG5cbiAgLyoqXG4gICAqIFRoZSBpZGVudGlmaWNhdGlvbiBudW1iZXIgb2YgdGhlIE1GQSBkZXZpY2UgdGhhdCBpcyBhc3NvY2lhdGVkIHdpdGggdGhlXG4gICAqIHVzZXIgd2hvIGlzIG1ha2luZyB0aGUgYEFzc3VtZVJvbGVgIGNhbGwuXG4gICAqL1xuICBTZXJpYWxOdW1iZXI/OiBzdHJpbmc7XG5cbiAgLyoqXG4gICAqIFRoZSB2YWx1ZSBwcm92aWRlZCBieSB0aGUgTUZBIGRldmljZS5cbiAgICovXG4gIFRva2VuQ29kZT86IHN0cmluZztcbn1cblxuZXhwb3J0IGludGVyZmFjZSBTb3VyY2VQcm9maWxlSW5pdCBleHRlbmRzIFNoYXJlZENvbmZpZ0luaXQge1xuICAvKipcbiAgICogVGhlIGNvbmZpZ3VyYXRpb24gcHJvZmlsZSB0byB1c2UuXG4gICAqL1xuICBwcm9maWxlPzogc3RyaW5nO1xuXG4gIC8qKlxuICAgKiBBIHByb21pc2UgdGhhdCB3aWxsIGJlIHJlc29sdmVkIHdpdGggbG9hZGVkIGFuZCBwYXJzZWQgY3JlZGVudGlhbHMgZmlsZXMuXG4gICAqIFVzZWQgdG8gYXZvaWQgbG9hZGluZyBzaGFyZWQgY29uZmlnIGZpbGVzIG11bHRpcGxlIHRpbWVzLlxuICAgKlxuICAgKiBAaW50ZXJuYWxcbiAgICovXG4gIGxvYWRlZENvbmZpZz86IFByb21pc2U8U2hhcmVkQ29uZmlnRmlsZXM+O1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIEZyb21JbmlJbml0IGV4dGVuZHMgU291cmNlUHJvZmlsZUluaXQge1xuICAvKipcbiAgICogQSBmdW5jdGlvbiB0aGF0IHJldHVybnMgYSBwcm9taXNlIGZ1bGZpbGxlZCB3aXRoIGFuIE1GQSB0b2tlbiBjb2RlIGZvclxuICAgKiB0aGUgcHJvdmlkZWQgTUZBIFNlcmlhbCBjb2RlLiBJZiBhIHByb2ZpbGUgcmVxdWlyZXMgYW4gTUZBIGNvZGUgYW5kXG4gICAqIGBtZmFDb2RlUHJvdmlkZXJgIGlzIG5vdCBhIHZhbGlkIGZ1bmN0aW9uLCB0aGUgY3JlZGVudGlhbCBwcm92aWRlclxuICAgKiBwcm9taXNlIHdpbGwgYmUgcmVqZWN0ZWQuXG4gICAqXG4gICAqIEBwYXJhbSBtZmFTZXJpYWwgVGhlIHNlcmlhbCBjb2RlIG9mIHRoZSBNRkEgZGV2aWNlIHNwZWNpZmllZC5cbiAgICovXG4gIG1mYUNvZGVQcm92aWRlcj86IChtZmFTZXJpYWw6IHN0cmluZykgPT4gUHJvbWlzZTxzdHJpbmc+O1xuXG4gIC8qKlxuICAgKiBBIGZ1bmN0aW9uIHRoYXQgYXNzdW1lcyBhIHJvbGUgYW5kIHJldHVybnMgYSBwcm9taXNlIGZ1bGZpbGxlZCB3aXRoXG4gICAqIGNyZWRlbnRpYWxzIGZvciB0aGUgYXNzdW1lZCByb2xlLlxuICAgKlxuICAgKiBAcGFyYW0gc291cmNlQ3JlZHMgVGhlIGNyZWRlbnRpYWxzIHdpdGggd2hpY2ggdG8gYXNzdW1lIGEgcm9sZS5cbiAgICogQHBhcmFtIHBhcmFtc1xuICAgKi9cbiAgcm9sZUFzc3VtZXI/OiAoc291cmNlQ3JlZHM6IENyZWRlbnRpYWxzLCBwYXJhbXM6IEFzc3VtZVJvbGVQYXJhbXMpID0+IFByb21pc2U8Q3JlZGVudGlhbHM+O1xuXG4gIC8qKlxuICAgKiBBIGZ1bmN0aW9uIHRoYXQgYXNzdW1lcyBhIHJvbGUgd2l0aCB3ZWIgaWRlbnRpdHkgYW5kIHJldHVybnMgYSBwcm9taXNlIGZ1bGZpbGxlZCB3aXRoXG4gICAqIGNyZWRlbnRpYWxzIGZvciB0aGUgYXNzdW1lZCByb2xlLlxuICAgKlxuICAgKiBAcGFyYW0gc291cmNlQ3JlZHMgVGhlIGNyZWRlbnRpYWxzIHdpdGggd2hpY2ggdG8gYXNzdW1lIGEgcm9sZS5cbiAgICogQHBhcmFtIHBhcmFtc1xuICAgKi9cbiAgcm9sZUFzc3VtZXJXaXRoV2ViSWRlbnRpdHk/OiAocGFyYW1zOiBBc3N1bWVSb2xlV2l0aFdlYklkZW50aXR5UGFyYW1zKSA9PiBQcm9taXNlPENyZWRlbnRpYWxzPjtcbn1cblxuaW50ZXJmYWNlIFN0YXRpY0NyZWRzUHJvZmlsZSBleHRlbmRzIFByb2ZpbGUge1xuICBhd3NfYWNjZXNzX2tleV9pZDogc3RyaW5nO1xuICBhd3Nfc2VjcmV0X2FjY2Vzc19rZXk6IHN0cmluZztcbiAgYXdzX3Nlc3Npb25fdG9rZW4/OiBzdHJpbmc7XG59XG5cbmNvbnN0IGlzU3RhdGljQ3JlZHNQcm9maWxlID0gKGFyZzogYW55KTogYXJnIGlzIFN0YXRpY0NyZWRzUHJvZmlsZSA9PlxuICBCb29sZWFuKGFyZykgJiZcbiAgdHlwZW9mIGFyZyA9PT0gXCJvYmplY3RcIiAmJlxuICB0eXBlb2YgYXJnLmF3c19hY2Nlc3Nfa2V5X2lkID09PSBcInN0cmluZ1wiICYmXG4gIHR5cGVvZiBhcmcuYXdzX3NlY3JldF9hY2Nlc3Nfa2V5ID09PSBcInN0cmluZ1wiICYmXG4gIFtcInVuZGVmaW5lZFwiLCBcInN0cmluZ1wiXS5pbmRleE9mKHR5cGVvZiBhcmcuYXdzX3Nlc3Npb25fdG9rZW4pID4gLTE7XG5cbmludGVyZmFjZSBXZWJJZGVudGl0eVByb2ZpbGUgZXh0ZW5kcyBQcm9maWxlIHtcbiAgd2ViX2lkZW50aXR5X3Rva2VuX2ZpbGU6IHN0cmluZztcbiAgcm9sZV9hcm46IHN0cmluZztcbiAgcm9sZV9zZXNzaW9uX25hbWU/OiBzdHJpbmc7XG59XG5cbmNvbnN0IGlzV2ViSWRlbnRpdHlQcm9maWxlID0gKGFyZzogYW55KTogYXJnIGlzIFdlYklkZW50aXR5UHJvZmlsZSA9PlxuICBCb29sZWFuKGFyZykgJiZcbiAgdHlwZW9mIGFyZyA9PT0gXCJvYmplY3RcIiAmJlxuICB0eXBlb2YgYXJnLndlYl9pZGVudGl0eV90b2tlbl9maWxlID09PSBcInN0cmluZ1wiICYmXG4gIHR5cGVvZiBhcmcucm9sZV9hcm4gPT09IFwic3RyaW5nXCIgJiZcbiAgW1widW5kZWZpbmVkXCIsIFwic3RyaW5nXCJdLmluZGV4T2YodHlwZW9mIGFyZy5yb2xlX3Nlc3Npb25fbmFtZSkgPiAtMTtcblxuaW50ZXJmYWNlIEFzc3VtZVJvbGVXaXRoU291cmNlUHJvZmlsZSBleHRlbmRzIFByb2ZpbGUge1xuICByb2xlX2Fybjogc3RyaW5nO1xuICBzb3VyY2VfcHJvZmlsZTogc3RyaW5nO1xufVxuXG5pbnRlcmZhY2UgQXNzdW1lUm9sZVdpdGhQcm92aWRlclByb2ZpbGUgZXh0ZW5kcyBQcm9maWxlIHtcbiAgcm9sZV9hcm46IHN0cmluZztcbiAgY3JlZGVudGlhbF9zb3VyY2U6IHN0cmluZztcbn1cblxuY29uc3QgaXNBc3N1bWVSb2xlUHJvZmlsZSA9IChhcmc6IGFueSkgPT5cbiAgQm9vbGVhbihhcmcpICYmXG4gIHR5cGVvZiBhcmcgPT09IFwib2JqZWN0XCIgJiZcbiAgdHlwZW9mIGFyZy5yb2xlX2FybiA9PT0gXCJzdHJpbmdcIiAmJlxuICBbXCJ1bmRlZmluZWRcIiwgXCJzdHJpbmdcIl0uaW5kZXhPZih0eXBlb2YgYXJnLnJvbGVfc2Vzc2lvbl9uYW1lKSA+IC0xICYmXG4gIFtcInVuZGVmaW5lZFwiLCBcInN0cmluZ1wiXS5pbmRleE9mKHR5cGVvZiBhcmcuZXh0ZXJuYWxfaWQpID4gLTEgJiZcbiAgW1widW5kZWZpbmVkXCIsIFwic3RyaW5nXCJdLmluZGV4T2YodHlwZW9mIGFyZy5tZmFfc2VyaWFsKSA+IC0xO1xuXG5jb25zdCBpc0Fzc3VtZVJvbGVXaXRoU291cmNlUHJvZmlsZSA9IChhcmc6IGFueSk6IGFyZyBpcyBBc3N1bWVSb2xlV2l0aFNvdXJjZVByb2ZpbGUgPT5cbiAgaXNBc3N1bWVSb2xlUHJvZmlsZShhcmcpICYmIHR5cGVvZiBhcmcuc291cmNlX3Byb2ZpbGUgPT09IFwic3RyaW5nXCIgJiYgdHlwZW9mIGFyZy5jcmVkZW50aWFsX3NvdXJjZSA9PT0gXCJ1bmRlZmluZWRcIjtcblxuY29uc3QgaXNBc3N1bWVSb2xlV2l0aFByb3ZpZGVyUHJvZmlsZSA9IChhcmc6IGFueSk6IGFyZyBpcyBBc3N1bWVSb2xlV2l0aFByb3ZpZGVyUHJvZmlsZSA9PlxuICBpc0Fzc3VtZVJvbGVQcm9maWxlKGFyZykgJiYgdHlwZW9mIGFyZy5jcmVkZW50aWFsX3NvdXJjZSA9PT0gXCJzdHJpbmdcIiAmJiB0eXBlb2YgYXJnLnNvdXJjZV9wcm9maWxlID09PSBcInVuZGVmaW5lZFwiO1xuXG4vKipcbiAqIENyZWF0ZXMgYSBjcmVkZW50aWFsIHByb3ZpZGVyIHRoYXQgd2lsbCByZWFkIGZyb20gaW5pIGZpbGVzIGFuZCBzdXBwb3J0c1xuICogcm9sZSBhc3N1bXB0aW9uIGFuZCBtdWx0aS1mYWN0b3IgYXV0aGVudGljYXRpb24uXG4gKi9cbmV4cG9ydCBjb25zdCBmcm9tSW5pID1cbiAgKGluaXQ6IEZyb21JbmlJbml0ID0ge30pOiBDcmVkZW50aWFsUHJvdmlkZXIgPT5cbiAgYXN5bmMgKCkgPT4ge1xuICAgIGNvbnN0IHByb2ZpbGVzID0gYXdhaXQgcGFyc2VLbm93bkZpbGVzKGluaXQpO1xuICAgIHJldHVybiByZXNvbHZlUHJvZmlsZURhdGEoZ2V0TWFzdGVyUHJvZmlsZU5hbWUoaW5pdCksIHByb2ZpbGVzLCBpbml0KTtcbiAgfTtcblxuLyoqXG4gKiBMb2FkIHByb2ZpbGVzIGZyb20gY3JlZGVudGlhbHMgYW5kIGNvbmZpZyBJTkkgZmlsZXMgYW5kIG5vcm1hbGl6ZSB0aGVtIGludG8gYVxuICogc2luZ2xlIHByb2ZpbGUgbGlzdC5cbiAqXG4gKiBAaW50ZXJuYWxcbiAqL1xuZXhwb3J0IGNvbnN0IHBhcnNlS25vd25GaWxlcyA9IGFzeW5jIChpbml0OiBTb3VyY2VQcm9maWxlSW5pdCk6IFByb21pc2U8UGFyc2VkSW5pRGF0YT4gPT4ge1xuICBjb25zdCB7IGxvYWRlZENvbmZpZyA9IGxvYWRTaGFyZWRDb25maWdGaWxlcyhpbml0KSB9ID0gaW5pdDtcblxuICBjb25zdCBwYXJzZWRGaWxlcyA9IGF3YWl0IGxvYWRlZENvbmZpZztcbiAgcmV0dXJuIHtcbiAgICAuLi5wYXJzZWRGaWxlcy5jb25maWdGaWxlLFxuICAgIC4uLnBhcnNlZEZpbGVzLmNyZWRlbnRpYWxzRmlsZSxcbiAgfTtcbn07XG5cbi8qKlxuICogQGludGVybmFsXG4gKi9cbmV4cG9ydCBjb25zdCBnZXRNYXN0ZXJQcm9maWxlTmFtZSA9IChpbml0OiB7IHByb2ZpbGU/OiBzdHJpbmcgfSk6IHN0cmluZyA9PlxuICBpbml0LnByb2ZpbGUgfHwgcHJvY2Vzcy5lbnZbRU5WX1BST0ZJTEVdIHx8IERFRkFVTFRfUFJPRklMRTtcblxuY29uc3QgcmVzb2x2ZVByb2ZpbGVEYXRhID0gYXN5bmMgKFxuICBwcm9maWxlTmFtZTogc3RyaW5nLFxuICBwcm9maWxlczogUGFyc2VkSW5pRGF0YSxcbiAgb3B0aW9uczogRnJvbUluaUluaXQsXG4gIHZpc2l0ZWRQcm9maWxlczogeyBbcHJvZmlsZU5hbWU6IHN0cmluZ106IHRydWUgfSA9IHt9XG4pOiBQcm9taXNlPENyZWRlbnRpYWxzPiA9PiB7XG4gIGNvbnN0IGRhdGEgPSBwcm9maWxlc1twcm9maWxlTmFtZV07XG5cbiAgLy8gSWYgdGhpcyBpcyBub3QgdGhlIGZpcnN0IHByb2ZpbGUgdmlzaXRlZCwgc3RhdGljIGNyZWRlbnRpYWxzIHNob3VsZCBiZVxuICAvLyBwcmVmZXJyZWQgb3ZlciByb2xlIGFzc3VtcHRpb24gbWV0YWRhdGEuIFRoaXMgc3BlY2lhbCB0cmVhdG1lbnQgb2ZcbiAgLy8gc2Vjb25kIGFuZCBzdWJzZXF1ZW50IGhvcHMgaXMgdG8gZW5zdXJlIGNvbXBhdGliaWxpdHkgd2l0aCB0aGUgQVdTIENMSS5cbiAgaWYgKE9iamVjdC5rZXlzKHZpc2l0ZWRQcm9maWxlcykubGVuZ3RoID4gMCAmJiBpc1N0YXRpY0NyZWRzUHJvZmlsZShkYXRhKSkge1xuICAgIHJldHVybiByZXNvbHZlU3RhdGljQ3JlZGVudGlhbHMoZGF0YSk7XG4gIH1cblxuICAvLyBJZiB0aGlzIGlzIHRoZSBmaXJzdCBwcm9maWxlIHZpc2l0ZWQsIHJvbGUgYXNzdW1wdGlvbiBrZXlzIHNob3VsZCBiZVxuICAvLyBnaXZlbiBwcmVjZWRlbmNlIG92ZXIgc3RhdGljIGNyZWRlbnRpYWxzLlxuICBpZiAoaXNBc3N1bWVSb2xlV2l0aFNvdXJjZVByb2ZpbGUoZGF0YSkgfHwgaXNBc3N1bWVSb2xlV2l0aFByb3ZpZGVyUHJvZmlsZShkYXRhKSkge1xuICAgIGNvbnN0IHtcbiAgICAgIGV4dGVybmFsX2lkOiBFeHRlcm5hbElkLFxuICAgICAgbWZhX3NlcmlhbCxcbiAgICAgIHJvbGVfYXJuOiBSb2xlQXJuLFxuICAgICAgcm9sZV9zZXNzaW9uX25hbWU6IFJvbGVTZXNzaW9uTmFtZSA9IFwiYXdzLXNkay1qcy1cIiArIERhdGUubm93KCksXG4gICAgICBzb3VyY2VfcHJvZmlsZSxcbiAgICAgIGNyZWRlbnRpYWxfc291cmNlLFxuICAgIH0gPSBkYXRhO1xuXG4gICAgaWYgKCFvcHRpb25zLnJvbGVBc3N1bWVyKSB7XG4gICAgICB0aHJvdyBuZXcgUHJvdmlkZXJFcnJvcihcbiAgICAgICAgYFByb2ZpbGUgJHtwcm9maWxlTmFtZX0gcmVxdWlyZXMgYSByb2xlIHRvIGJlIGFzc3VtZWQsIGJ1dCBub2AgKyBgIHJvbGUgYXNzdW1wdGlvbiBjYWxsYmFjayB3YXMgcHJvdmlkZWQuYCxcbiAgICAgICAgZmFsc2VcbiAgICAgICk7XG4gICAgfVxuXG4gICAgaWYgKHNvdXJjZV9wcm9maWxlICYmIHNvdXJjZV9wcm9maWxlIGluIHZpc2l0ZWRQcm9maWxlcykge1xuICAgICAgdGhyb3cgbmV3IFByb3ZpZGVyRXJyb3IoXG4gICAgICAgIGBEZXRlY3RlZCBhIGN5Y2xlIGF0dGVtcHRpbmcgdG8gcmVzb2x2ZSBjcmVkZW50aWFscyBmb3IgcHJvZmlsZWAgK1xuICAgICAgICAgIGAgJHtnZXRNYXN0ZXJQcm9maWxlTmFtZShvcHRpb25zKX0uIFByb2ZpbGVzIHZpc2l0ZWQ6IGAgK1xuICAgICAgICAgIE9iamVjdC5rZXlzKHZpc2l0ZWRQcm9maWxlcykuam9pbihcIiwgXCIpLFxuICAgICAgICBmYWxzZVxuICAgICAgKTtcbiAgICB9XG5cbiAgICBjb25zdCBzb3VyY2VDcmVkcyA9IHNvdXJjZV9wcm9maWxlXG4gICAgICA/IHJlc29sdmVQcm9maWxlRGF0YShzb3VyY2VfcHJvZmlsZSwgcHJvZmlsZXMsIG9wdGlvbnMsIHtcbiAgICAgICAgICAuLi52aXNpdGVkUHJvZmlsZXMsXG4gICAgICAgICAgW3NvdXJjZV9wcm9maWxlXTogdHJ1ZSxcbiAgICAgICAgfSlcbiAgICAgIDogcmVzb2x2ZUNyZWRlbnRpYWxTb3VyY2UoY3JlZGVudGlhbF9zb3VyY2UhLCBwcm9maWxlTmFtZSkoKTtcblxuICAgIGNvbnN0IHBhcmFtczogQXNzdW1lUm9sZVBhcmFtcyA9IHsgUm9sZUFybiwgUm9sZVNlc3Npb25OYW1lLCBFeHRlcm5hbElkIH07XG4gICAgaWYgKG1mYV9zZXJpYWwpIHtcbiAgICAgIGlmICghb3B0aW9ucy5tZmFDb2RlUHJvdmlkZXIpIHtcbiAgICAgICAgdGhyb3cgbmV3IFByb3ZpZGVyRXJyb3IoXG4gICAgICAgICAgYFByb2ZpbGUgJHtwcm9maWxlTmFtZX0gcmVxdWlyZXMgbXVsdGktZmFjdG9yIGF1dGhlbnRpY2F0aW9uLGAgKyBgIGJ1dCBubyBNRkEgY29kZSBjYWxsYmFjayB3YXMgcHJvdmlkZWQuYCxcbiAgICAgICAgICBmYWxzZVxuICAgICAgICApO1xuICAgICAgfVxuICAgICAgcGFyYW1zLlNlcmlhbE51bWJlciA9IG1mYV9zZXJpYWw7XG4gICAgICBwYXJhbXMuVG9rZW5Db2RlID0gYXdhaXQgb3B0aW9ucy5tZmFDb2RlUHJvdmlkZXIobWZhX3NlcmlhbCk7XG4gICAgfVxuXG4gICAgcmV0dXJuIG9wdGlvbnMucm9sZUFzc3VtZXIoYXdhaXQgc291cmNlQ3JlZHMsIHBhcmFtcyk7XG4gIH1cblxuICAvLyBJZiBubyByb2xlIGFzc3VtcHRpb24gbWV0YWRhdGEgaXMgcHJlc2VudCwgYXR0ZW1wdCB0byBsb2FkIHN0YXRpY1xuICAvLyBjcmVkZW50aWFscyBmcm9tIHRoZSBzZWxlY3RlZCBwcm9maWxlLlxuICBpZiAoaXNTdGF0aWNDcmVkc1Byb2ZpbGUoZGF0YSkpIHtcbiAgICByZXR1cm4gcmVzb2x2ZVN0YXRpY0NyZWRlbnRpYWxzKGRhdGEpO1xuICB9XG5cbiAgLy8gSWYgbm8gc3RhdGljIGNyZWRlbnRpYWxzIGFyZSBwcmVzZW50LCBhdHRlbXB0IHRvIGFzc3VtZSByb2xlIHdpdGhcbiAgLy8gd2ViIGlkZW50aXR5IGlmIHdlYl9pZGVudGl0eV90b2tlbl9maWxlIGFuZCByb2xlX2FybiBpcyBhdmFpbGFibGVcbiAgaWYgKGlzV2ViSWRlbnRpdHlQcm9maWxlKGRhdGEpKSB7XG4gICAgcmV0dXJuIHJlc29sdmVXZWJJZGVudGl0eUNyZWRlbnRpYWxzKGRhdGEsIG9wdGlvbnMpO1xuICB9XG5cbiAgLy8gSWYgdGhlIHByb2ZpbGUgY2Fubm90IGJlIHBhcnNlZCBvciBjb250YWlucyBuZWl0aGVyIHN0YXRpYyBjcmVkZW50aWFsc1xuICAvLyBub3Igcm9sZSBhc3N1bXB0aW9uIG1ldGFkYXRhLCB0aHJvdyBhbiBlcnJvci4gVGhpcyBzaG91bGQgYmUgY29uc2lkZXJlZCBhXG4gIC8vIHRlcm1pbmFsIHJlc29sdXRpb24gZXJyb3IgaWYgYSBwcm9maWxlIGhhcyBiZWVuIHNwZWNpZmllZCBieSB0aGUgdXNlclxuICAvLyAod2hldGhlciB2aWEgYSBwYXJhbWV0ZXIsIGFuIGVudmlyb25tZW50IHZhcmlhYmxlLCBvciBhbm90aGVyIHByb2ZpbGUnc1xuICAvLyBgc291cmNlX3Byb2ZpbGVgIGtleSkuXG4gIHRocm93IG5ldyBQcm92aWRlckVycm9yKGBQcm9maWxlICR7cHJvZmlsZU5hbWV9IGNvdWxkIG5vdCBiZSBmb3VuZCBvciBwYXJzZWQgaW4gc2hhcmVkYCArIGAgY3JlZGVudGlhbHMgZmlsZS5gKTtcbn07XG5cbi8qKlxuICogUmVzb2x2ZSB0aGUgYGNyZWRlbnRpYWxfc291cmNlYCBlbnRyeSBmcm9tIHRoZSBwcm9maWxlLCBhbmQgcmV0dXJuIHRoZVxuICogY3JlZGVudGlhbCBwcm92aWRlcnMgcmVzcGVjdGl2ZWx5LiBObyBtZW1vaXphdGlvbiBpcyBuZWVkZWQgZm9yIHRoZVxuICogY3JlZGVudGlhbCBzb3VyY2UgcHJvdmlkZXJzIGJlY2F1c2UgbWVtb2l6YXRpb24gc2hvdWxkIGJlIGFkZGVkIG91dHNpZGUgdGhlXG4gKiBmcm9tSW5pKCkgcHJvdmlkZXIuIFRoZSBzb3VyY2UgY3JlZGVudGlhbCBuZWVkcyB0byBiZSByZWZyZXNoZWQgZXZlcnkgdGltZVxuICogZnJvbUluaSgpIGlzIGNhbGxlZC5cbiAqL1xuY29uc3QgcmVzb2x2ZUNyZWRlbnRpYWxTb3VyY2UgPSAoY3JlZGVudGlhbFNvdXJjZTogc3RyaW5nLCBwcm9maWxlTmFtZTogc3RyaW5nKTogQ3JlZGVudGlhbFByb3ZpZGVyID0+IHtcbiAgY29uc3Qgc291cmNlUHJvdmlkZXJzTWFwOiB7IFtuYW1lOiBzdHJpbmddOiAoKSA9PiBDcmVkZW50aWFsUHJvdmlkZXIgfSA9IHtcbiAgICBFY3NDb250YWluZXI6IGZyb21Db250YWluZXJNZXRhZGF0YSxcbiAgICBFYzJJbnN0YW5jZU1ldGFkYXRhOiBmcm9tSW5zdGFuY2VNZXRhZGF0YSxcbiAgICBFbnZpcm9ubWVudDogZnJvbUVudixcbiAgfTtcbiAgaWYgKGNyZWRlbnRpYWxTb3VyY2UgaW4gc291cmNlUHJvdmlkZXJzTWFwKSB7XG4gICAgcmV0dXJuIHNvdXJjZVByb3ZpZGVyc01hcFtjcmVkZW50aWFsU291cmNlXSgpO1xuICB9IGVsc2Uge1xuICAgIHRocm93IG5ldyBQcm92aWRlckVycm9yKFxuICAgICAgYFVuc3VwcG9ydGVkIGNyZWRlbnRpYWwgc291cmNlIGluIHByb2ZpbGUgJHtwcm9maWxlTmFtZX0uIEdvdCAke2NyZWRlbnRpYWxTb3VyY2V9LCBgICtcbiAgICAgICAgYGV4cGVjdGVkIEVjc0NvbnRhaW5lciBvciBFYzJJbnN0YW5jZU1ldGFkYXRhIG9yIEVudmlyb25tZW50LmBcbiAgICApO1xuICB9XG59O1xuXG5jb25zdCByZXNvbHZlU3RhdGljQ3JlZGVudGlhbHMgPSAocHJvZmlsZTogU3RhdGljQ3JlZHNQcm9maWxlKTogUHJvbWlzZTxDcmVkZW50aWFscz4gPT5cbiAgUHJvbWlzZS5yZXNvbHZlKHtcbiAgICBhY2Nlc3NLZXlJZDogcHJvZmlsZS5hd3NfYWNjZXNzX2tleV9pZCxcbiAgICBzZWNyZXRBY2Nlc3NLZXk6IHByb2ZpbGUuYXdzX3NlY3JldF9hY2Nlc3Nfa2V5LFxuICAgIHNlc3Npb25Ub2tlbjogcHJvZmlsZS5hd3Nfc2Vzc2lvbl90b2tlbixcbiAgfSk7XG5cbmNvbnN0IHJlc29sdmVXZWJJZGVudGl0eUNyZWRlbnRpYWxzID0gYXN5bmMgKHByb2ZpbGU6IFdlYklkZW50aXR5UHJvZmlsZSwgb3B0aW9uczogRnJvbUluaUluaXQpOiBQcm9taXNlPENyZWRlbnRpYWxzPiA9PlxuICBmcm9tVG9rZW5GaWxlKHtcbiAgICB3ZWJJZGVudGl0eVRva2VuRmlsZTogcHJvZmlsZS53ZWJfaWRlbnRpdHlfdG9rZW5fZmlsZSxcbiAgICByb2xlQXJuOiBwcm9maWxlLnJvbGVfYXJuLFxuICAgIHJvbGVTZXNzaW9uTmFtZTogcHJvZmlsZS5yb2xlX3Nlc3Npb25fbmFtZSxcbiAgICByb2xlQXNzdW1lcldpdGhXZWJJZGVudGl0eTogb3B0aW9ucy5yb2xlQXNzdW1lcldpdGhXZWJJZGVudGl0eSxcbiAgfSkoKTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsOEVBQTJEO0FBQzNELGdGQUFnRztBQUNoRyw4RUFBNkY7QUFDN0YsZ0dBQTJHO0FBQzNHLGtFQUFzRTtBQUd0RSxnRUFBcUc7QUF1RXJHLE1BQU0sb0JBQW9CLEdBQUcsQ0FBQyxHQUFRLEVBQTZCLEVBQUUsQ0FDbkUsT0FBTyxDQUFDLEdBQUcsQ0FBQztJQUNaLE9BQU8sR0FBRyxLQUFLLFFBQVE7SUFDdkIsT0FBTyxHQUFHLENBQUMsaUJBQWlCLEtBQUssUUFBUTtJQUN6QyxPQUFPLEdBQUcsQ0FBQyxxQkFBcUIsS0FBSyxRQUFRO0lBQzdDLENBQUMsV0FBVyxFQUFFLFFBQVEsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxPQUFPLEdBQUcsQ0FBQyxpQkFBaUIsQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDO0FBUXJFLE1BQU0sb0JBQW9CLEdBQUcsQ0FBQyxHQUFRLEVBQTZCLEVBQUUsQ0FDbkUsT0FBTyxDQUFDLEdBQUcsQ0FBQztJQUNaLE9BQU8sR0FBRyxLQUFLLFFBQVE7SUFDdkIsT0FBTyxHQUFHLENBQUMsdUJBQXVCLEtBQUssUUFBUTtJQUMvQyxPQUFPLEdBQUcsQ0FBQyxRQUFRLEtBQUssUUFBUTtJQUNoQyxDQUFDLFdBQVcsRUFBRSxRQUFRLENBQUMsQ0FBQyxPQUFPLENBQUMsT0FBTyxHQUFHLENBQUMsaUJBQWlCLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQztBQVlyRSxNQUFNLG1CQUFtQixHQUFHLENBQUMsR0FBUSxFQUFFLEVBQUUsQ0FDdkMsT0FBTyxDQUFDLEdBQUcsQ0FBQztJQUNaLE9BQU8sR0FBRyxLQUFLLFFBQVE7SUFDdkIsT0FBTyxHQUFHLENBQUMsUUFBUSxLQUFLLFFBQVE7SUFDaEMsQ0FBQyxXQUFXLEVBQUUsUUFBUSxDQUFDLENBQUMsT0FBTyxDQUFDLE9BQU8sR0FBRyxDQUFD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QkFBMEI7Q0FDL0QsQ0FBQyxFQUFFLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBmcm9tRW52IH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItZW52XCI7XG5pbXBvcnQgeyBmcm9tQ29udGFpbmVyTWV0YWRhdGEsIGZyb21JbnN0YW5jZU1ldGFkYXRhIH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItaW1kc1wiO1xuaW1wb3J0IHsgZnJvbVNTTywgaXNTc29Qcm9maWxlLCB2YWxpZGF0ZVNzb1Byb2ZpbGUgfSBmcm9tIFwiQGF3cy1zZGsvY3JlZGVudGlhbC1wcm92aWRlci1zc29cIjtcbmltcG9ydCB7IEFzc3VtZVJvbGVXaXRoV2ViSWRlbnRpdHlQYXJhbXMsIGZyb21Ub2tlbkZpbGUgfSBmcm9tIFwiQGF3cy1zZGsvY3JlZGVudGlhbC1wcm92aWRlci13ZWItaWRlbnRpdHlcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxzUHJvdmlkZXJFcnJvciB9IGZyb20gXCJAYXdzLXNkay9wcm9wZXJ0eS1wcm92aWRlclwiO1xuaW1wb3J0IHsgUGFyc2VkSW5pRGF0YSwgUHJvZmlsZSB9IGZyb20gXCJAYXdzLXNkay9zaGFyZWQtaW5pLWZpbGUtbG9hZGVyXCI7XG5pbXBvcnQgeyBDcmVkZW50aWFsUHJvdmlkZXIsIENyZWRlbnRpYWxzIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyBnZXRNYXN0ZXJQcm9maWxlTmFtZSwgcGFyc2VLbm93bkZpbGVzLCBTb3VyY2VQcm9maWxlSW5pdCB9IGZyb20gXCJAYXdzLXNkay91dGlsLWNyZWRlbnRpYWxzXCI7XG5cbi8qKlxuICogQHNlZSBodHRwOi8vZG9jcy5hd3MuYW1hem9uLmNvbS9BV1NKYXZhU2NyaXB0U0RLL2xhdGVzdC9BV1MvU1RTLmh0bWwjYXNzdW1lUm9sZS1wcm9wZXJ0eVxuICogVE9ETyB1cGRhdGUgdGhlIGFib3ZlIHRvIGxpbmsgdG8gVjMgZG9jc1xuICovXG5leHBvcnQgaW50ZXJmYWNlIEFzc3VtZVJvbGVQYXJhbXMge1xuICAvKipcbiAgICogVGhlIGlkZW50aWZpZXIgb2YgdGhlIHJvbGUgdG8gYmUgYXNzdW1lZC5cbiAgICovXG4gIFJvbGVBcm46IHN0cmluZztcblxuICAvKipcbiAgICogQSBuYW1lIGZvciB0aGUgYXNzdW1lZCByb2xlIHNlc3Npb24uXG4gICAqL1xuICBSb2xlU2Vzc2lvbk5hbWU6IHN0cmluZztcblxuICAvKipcbiAgICogQSB1bmlxdWUgaWRlbnRpZmllciB0aGF0IGlzIHVzZWQgYnkgdGhpcmQgcGFydGllcyB3aGVuIGFzc3VtaW5nIHJvbGVzIGluXG4gICAqIHRoZWlyIGN1c3RvbWVycycgYWNjb3VudHMuXG4gICAqL1xuICBFeHRlcm5hbElkPzogc3RyaW5nO1xuXG4gIC8qKlxuICAgKiBUaGUgaWRlbnRpZmljYXRpb24gbnVtYmVyIG9mIHRoZSBNRkEgZGV2aWNlIHRoYXQgaXMgYXNzb2NpYXRlZCB3aXRoIHRoZVxuICAgKiB1c2VyIHdobyBpcyBtYWtpbmcgdGhlIGBBc3N1bWVSb2xlYCBjYWxsLlxuICAgKi9cbiAgU2VyaWFsTnVtYmVyPzogc3RyaW5nO1xuXG4gIC8qKlxuICAgKiBUaGUgdmFsdWUgcHJvdmlkZWQgYnkgdGhlIE1GQSBkZXZpY2UuXG4gICAqL1xuICBUb2tlbkNvZGU/OiBzdHJpbmc7XG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgRnJvbUluaUluaXQgZXh0ZW5kcyBTb3VyY2VQcm9maWxlSW5pdCB7XG4gIC8qKlxuICAgKiBBIGZ1bmN0aW9uIHRoYXQgcmV0dXJucyBhIHByb21pc2UgZnVsZmlsbGVkIHdpdGggYW4gTUZBIHRva2VuIGNvZGUgZm9yXG4gICAqIHRoZSBwcm92aWRlZCBNRkEgU2VyaWFsIGNvZGUuIElmIGEgcHJvZmlsZSByZXF1aXJlcyBhbiBNRkEgY29kZSBhbmRcbiAgICogYG1mYUNvZGVQcm92aWRlcmAgaXMgbm90IGEgdmFsaWQgZnVuY3Rpb24sIHRoZSBjcmVkZW50aWFsIHByb3ZpZGVyXG4gICAqIHByb21pc2Ugd2lsbCBiZSByZWplY3RlZC5cbiAgICpcbiAgICogQHBhcmFtIG1mYVNlcmlhbCBUaGUgc2VyaWFsIGNvZGUgb2YgdGhlIE1GQSBkZXZpY2Ugc3BlY2lmaWVkLlxuICAgKi9cbiAgbWZhQ29kZVByb3ZpZGVyPzogKG1mYVNlcmlhbDogc3RyaW5nKSA9PiBQcm9taXNlPHN0cmluZz47XG5cbiAgLyoqXG4gICAqIEEgZnVuY3Rpb24gdGhhdCBhc3N1bWVzIGEgcm9sZSBhbmQgcmV0dXJucyBhIHByb21pc2UgZnVsZmlsbGVkIHdpdGhcbiAgICogY3JlZGVudGlhbHMgZm9yIHRoZSBhc3N1bWVkIHJvbGUuXG4gICAqXG4gICAqIEBwYXJhbSBzb3VyY2VDcmVkcyBUaGUgY3JlZGVudGlhbHMgd2l0aCB3aGljaCB0byBhc3N1bWUgYSByb2xlLlxuICAgKiBAcGFyYW0gcGFyYW1zXG4gICAqL1xuICByb2xlQXNzdW1lcj86IChzb3VyY2VDcmVkczogQ3JlZGVudGlhbHMsIHBhcmFtczogQXNzdW1lUm9sZVBhcmFtcykgPT4gUHJvbWlzZTxDcmVkZW50aWFscz47XG5cbiAgLyoqXG4gICAqIEEgZnVuY3Rpb24gdGhhdCBhc3N1bWVzIGEgcm9sZSB3aXRoIHdlYiBpZGVudGl0eSBhbmQgcmV0dXJucyBhIHByb21pc2UgZnVsZmlsbGVkIHdpdGhcbiAgICogY3JlZGVudGlhbHMgZm9yIHRoZSBhc3N1bWVkIHJvbGUuXG4gICAqXG4gICAqIEBwYXJhbSBzb3VyY2VDcmVkcyBUaGUgY3JlZGVudGlhbHMgd2l0aCB3aGljaCB0byBhc3N1bWUgYSByb2xlLlxuICAgKiBAcGFyYW0gcGFyYW1zXG4gICAqL1xuICByb2xlQXNzdW1lcldpdGhXZWJJZGVudGl0eT86IChwYXJhbXM6IEFzc3VtZVJvbGVXaXRoV2ViSWRlbnRpdHlQYXJhbXMpID0+IFByb21pc2U8Q3JlZGVudGlhbHM+O1xufVxuXG5pbnRlcmZhY2UgU3RhdGljQ3JlZHNQcm9maWxlIGV4dGVuZHMgUHJvZmlsZSB7XG4gIGF3c19hY2Nlc3Nfa2V5X2lkOiBzdHJpbmc7XG4gIGF3c19zZWNyZXRfYWNjZXNzX2tleTogc3RyaW5nO1xuICBhd3Nfc2Vzc2lvbl90b2tlbj86IHN0cmluZztcbn1cblxuY29uc3QgaXNTdGF0aWNDcmVkc1Byb2ZpbGUgPSAoYXJnOiBhbnkpOiBhcmcgaXMgU3RhdGljQ3JlZHNQcm9maWxlID0+XG4gIEJvb2xlYW4oYXJnKSAmJlxuICB0eXBlb2YgYXJnID09PSBcIm9iamVjdFwiICYmXG4gIHR5cGVvZiBhcmcuYXdzX2FjY2Vzc19rZXlfaWQgPT09IFwic3RyaW5nXCIgJiZcbiAgdHlwZW9mIGFyZy5hd3Nfc2VjcmV0X2FjY2Vzc19rZXkgPT09IFwic3RyaW5nXCIgJiZcbiAgW1widW5kZWZpbmVkXCIsIFwic3RyaW5nXCJdLmluZGV4T2YodHlwZW9mIGFyZy5hd3Nfc2Vzc2lvbl90b2tlbikgPiAtMTtcblxuaW50ZXJmYWNlIFdlYklkZW50aXR5UHJvZmlsZSBleHRlbmRzIFByb2ZpbGUge1xuICB3ZWJfaWRlbnRpdHlfdG9rZW5fZmlsZTogc3RyaW5nO1xuICByb2xlX2Fybjogc3RyaW5nO1xuICByb2xlX3Nlc3Npb25fbmFtZT86IHN0cmluZztcbn1cblxuY29uc3QgaXNXZWJJZGVudGl0eVByb2ZpbGUgPSAoYXJnOiBhbnkpOiBhcmcgaXMgV2ViSWRlbnRpdHlQcm9maWxlID0+XG4gIEJvb2xlYW4oYXJnKSAmJlxuICB0eXBlb2YgYXJnID09PSBcIm9iamVjdFwiICYmXG4gIHR5cGVvZiBhcmcud2ViX2lkZW50aXR5X3Rva2VuX2ZpbGUgPT09IFwic3RyaW5nXCIgJiZcbiAgdHlwZW9mIGFyZy5yb2xlX2FybiA9PT0gXCJzdHJpbmdcIiAmJlxuICBbXCJ1bmRlZmluZWRcIiwgXCJzdHJpbmdcIl0uaW5kZXhPZih0eXBlb2YgYXJnLnJvbGVfc2Vzc2lvbl9uYW1lKSA+IC0xO1xuXG5pbnRlcmZhY2UgQXNzdW1lUm9sZVdpdGhTb3VyY2VQcm9maWxlIGV4dGVuZHMgUHJvZmlsZSB7XG4gIHJvbGVfYXJuOiBzdHJpbmc7XG4gIHNvdXJjZV9wcm9maWxlOiBzdHJpbmc7XG59XG5cbmludGVyZmFjZSBBc3N1bWVSb2xlV2l0aFByb3ZpZGVyUHJvZmlsZSBleHRlbmRzIFByb2ZpbGUge1xuICByb2xlX2Fybjogc3RyaW5nO1xuICBjcmVkZW50aWFsX3NvdXJjZTogc3RyaW5nO1xufVxuXG5jb25zdCBpc0Fzc3VtZVJvbGVQcm9maWxlID0gKGFyZzogYW55KSA9PlxuICBCb29sZWFuKGFyZykgJiZcbiAgdHlwZW9mIGFyZyA9PT0gXCJvYmplY3RcIiAmJlxuICB0eXBlb2YgYXJnLnJvbGVfYXJuID09PSBcInN0cmluZ1wiICYmXG4gIFtcInVuZGVmaW5lZFwiLCBcInN0cmluZ1wiXS5pbmRleE9mKHR5cGVvZiBhcmcucm9sZV9zZXNzaW9uX25hbWUpID4gLTEgJiZcbiAgW1widW5kZWZpbmVkXCIsIFwic3RyaW5nXCJdLmluZGV4T2YodHlwZW9mIGFyZy5leHRlcm5hbF9pZCkgPiAtMSAmJlxuICBbXCJ1bmRlZmluZWRcIiwgXCJzdHJpbmdcIl0uaW5kZXhPZih0eXBlb2YgYXJnLm1mYV9zZXJpYWwpID4gLTE7XG5cbmNvbnN0IGlzQXNzdW1lUm9sZVdpdGhTb3VyY2VQcm9maWxlID0gKGFyZzogYW55KTogYXJnIGlzIEFzc3VtZVJvbGVXaXRoU291cmNlUHJvZmlsZSA9PlxuICBpc0Fzc3VtZVJvbGVQcm9maWxlKGFyZykgJiYgdHlwZW9mIGFyZy5zb3VyY2VfcHJvZmlsZSA9PT0gXCJzdHJpbmdcIiAmJiB0eXBlb2YgYXJnLmNyZWRlbnRpYWxfc291cmNlID09PSBcInVuZGVmaW5lZFwiO1xuXG5jb25zdCBpc0Fzc3VtZVJvbGVXaXRoUHJvdmlkZXJQcm9maWxlID0gKGFyZzogYW55KTogYXJnIGlzIEFzc3VtZVJvbGVXaXRoUHJvdmlkZXJQcm9maWxlID0+XG4gIGlzQXNzdW1lUm9sZVByb2ZpbGUoYXJnKSAmJiB0eXBlb2YgYXJnLmNyZWRlbnRpYWxfc291cmNlID09PSBcInN0cmluZ1wiICYmIHR5cGVvZiBhcmcuc291cmNlX3Byb2ZpbGUgPT09IFwidW5kZWZpbmVkXCI7XG5cbi8qKlxuICogQ3JlYXRlcyBhIGNyZWRlbnRpYWwgcHJvdmlkZXIgdGhhdCB3aWxsIHJlYWQgZnJvbSBpbmkgZmlsZXMgYW5kIHN1cHBvcnRzXG4gKiByb2xlIGFzc3VtcHRpb24gYW5kIG11bHRpLWZhY3RvciBhdXRoZW50aWNhdGlvbi5cbiAqL1xuZXhwb3J0IGNvbnN0IGZyb21JbmkgPVxuICAoaW5pdDogRnJvbUluaUluaXQgPSB7fSk6IENyZWRlbnRpYWxQcm92aWRlciA9PlxuICBhc3luYyAoKSA9PiB7XG4gICAgY29uc3QgcHJvZmlsZXMgPSBhd2FpdCBwYXJzZUtub3duRmlsZXMoaW5pdCk7XG4gICAgcmV0dXJuIHJlc29sdmVQcm9maWxlRGF0YShnZXRNYXN0ZXJQcm9maWxlTmFtZShpbml0KSwgcHJvZmlsZXMsIGluaXQpO1xuICB9O1xuXG5jb25zdCByZXNvbHZlUHJvZmlsZURhdGEgPSBhc3luYyAoXG4gIHByb2ZpbGVOYW1lOiBzdHJpbmcsXG4gIHByb2ZpbGVzOiBQYXJzZWRJbmlEYXRhLFxuICBvcHRpb25zOiBGcm9tSW5pSW5pdCxcbiAgdmlzaXRlZFByb2ZpbGVzOiB7IFtwcm9maWxlTmFtZTogc3RyaW5nXTogdHJ1ZSB9ID0ge31cbik6IFByb21pc2U8Q3JlZGVudGlhbHM+ID0+IHtcbiAgY29uc3QgZGF0YSA9IHByb2ZpbGVzW3Byb2ZpbGVOYW1lXTtcblxuICAvLyBJZiB0aGlzIGlzIG5vdCB0aGUgZmlyc3QgcHJvZmlsZSB2aXNpdGVkLCBzdGF0aWMgY3JlZGVudGlhbHMgc2hvdWxkIGJlXG4gIC8vIHByZWZlcnJlZCBvdmVyIHJvbGUgYXNzdW1wdGlvbiBtZXRhZGF0YS4gVGhpcyBzcGVjaWFsIHRyZWF0bWVudCBvZlxuICAvLyBzZWNvbmQgYW5kIHN1YnNlcXVlbnQgaG9wcyBpcyB0byBlbnN1cmUgY29tcGF0aWJpbGl0eSB3aXRoIHRoZSBBV1MgQ0xJLlxuICBpZiAoT2JqZWN0LmtleXModmlzaXRlZFByb2ZpbGVzKS5sZW5ndGggPiAwICYmIGlzU3RhdGljQ3JlZHNQcm9maWxlKGRhdGEpKSB7XG4gICAgcmV0dXJuIHJlc29sdmVTdGF0aWNDcmVkZW50aWFscyhkYXRhKTtcbiAgfVxuXG4gIC8vIElmIHRoaXMgaXMgdGhlIGZpcnN0IHByb2ZpbGUgdmlzaXRlZCwgcm9sZSBhc3N1bXB0aW9uIGtleXMgc2hvdWxkIGJlXG4gIC8vIGdpdmVuIHByZWNlZGVuY2Ugb3ZlciBzdGF0aWMgY3JlZGVudGlhbHMuXG4gIGlmIChpc0Fzc3VtZVJvbGVXaXRoU291cmNlUHJvZmlsZShkYXRhKSB8fCBpc0Fzc3VtZVJvbGVXaXRoUHJvdmlkZXJQcm9maWxlKGRhdGEpKSB7XG4gICAgY29uc3Qge1xuICAgICAgZXh0ZXJuYWxfaWQ6IEV4dGVybmFsSWQsXG4gICAgICBtZmFfc2VyaWFsLFxuICAgICAgcm9sZV9hcm46IFJvbGVBcm4sXG4gICAgICByb2xlX3Nlc3Npb25fbmFtZTogUm9sZVNlc3Npb25OYW1lID0gXCJhd3Mtc2RrLWpzLVwiICsgRGF0ZS5ub3coKSxcbiAgICAgIHNvdXJjZV9wcm9maWxlLFxuICAgICAgY3JlZGVudGlhbF9zb3VyY2UsXG4gICAgfSA9IGRhdGE7XG5cbiAgICBpZiAoIW9wdGlvbnMucm9sZUFzc3VtZXIpIHtcbiAgICAgIHRocm93IG5ldyBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3IoXG4gICAgICAgIGBQcm9maWxlICR7cHJvZmlsZU5hbWV9IHJlcXVpcmVzIGEgcm9sZSB0byBiZSBhc3N1bWVkLCBidXQgbm9gICsgYCByb2xlIGFzc3VtcHRpb24gY2FsbGJhY2sgd2FzIHByb3ZpZGVkLmAsXG4gICAgICAgIGZhbHNlXG4gICAgICApO1xuICAgIH1cblxuICAgIGlmIChzb3VyY2VfcHJvZmlsZSAmJiBzb3VyY2VfcHJvZmlsZSBpbiB2aXNpdGVkUHJvZmlsZXMpIHtcbiAgICAgIHRocm93IG5ldyBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3IoXG4gICAgICAgIGBEZXRlY3RlZCBhIGN5Y2xlIGF0dGVtcHRpbmcgdG8gcmVzb2x2ZSBjcmVkZW50aWFscyBmb3IgcHJvZmlsZWAgK1xuICAgICAgICAgIGAgJHtnZXRNYXN0ZXJQcm9maWxlTmFtZShvcHRpb25zKX0uIFByb2ZpbGVzIHZpc2l0ZWQ6IGAgK1xuICAgICAgICAgIE9iamVjdC5rZXlzKHZpc2l0ZWRQcm9maWxlcykuam9pbihcIiwgXCIpLFxuICAgICAgICBmYWxzZVxuICAgICAgKTtcbiAgICB9XG5cbiAgICBjb25zdCBzb3VyY2VDcmVkcyA9IHNvdXJjZV9wcm9maWxlXG4gICAgICA/IHJlc29sdmVQcm9maWxlRGF0YShzb3VyY2VfcHJvZmlsZSwgcHJvZmlsZXMsIG9wdGlvbnMsIHtcbiAgICAgICAgICAuLi52aXNpdGVkUHJvZmlsZXMsXG4gICAgICAgICAgW3NvdXJjZV9wcm9maWxlXTogdHJ1ZSxcbiAgICAgICAgfSlcbiAgICAgIDogcmVzb2x2ZUNyZWRlbnRpYWxTb3VyY2UoY3JlZGVudGlhbF9zb3VyY2UhLCBwcm9maWxlTmFtZSkoKTtcblxuICAgIGNvbnN0IHBhcmFtczogQXNzdW1lUm9sZVBhcmFtcyA9IHsgUm9sZUFybiwgUm9sZVNlc3Npb25OYW1lLCBFeHRlcm5hbElkIH07XG4gICAgaWYgKG1mYV9zZXJpYWwpIHtcbiAgICAgIGlmICghb3B0aW9ucy5tZmFDb2RlUHJvdmlkZXIpIHtcbiAgICAgICAgdGhyb3cgbmV3IENyZWRlbnRpYWxzUHJvdmlkZXJFcnJvcihcbiAgICAgICAgICBgUHJvZmlsZSAke3Byb2ZpbGVOYW1lfSByZXF1aXJlcyBtdWx0aS1mYWN0b3IgYXV0aGVudGljYXRpb24sYCArIGAgYnV0IG5vIE1GQSBjb2RlIGNhbGxiYWNrIHdhcyBwcm92aWRlZC5gLFxuICAgICAgICAgIGZhbHNlXG4gICAgICAgICk7XG4gICAgICB9XG4gICAgICBwYXJhbXMuU2VyaWFsTnVtYmVyID0gbWZhX3NlcmlhbDtcbiAgICAgIHBhcmFtcy5Ub2tlbkNvZGUgPSBhd2FpdCBvcHRpb25zLm1mYUNvZGVQcm92aWRlcihtZmFfc2VyaWFsKTtcbiAgICB9XG5cbiAgICByZXR1cm4gb3B0aW9ucy5yb2xlQXNzdW1lcihhd2FpdCBzb3VyY2VDcmVkcywgcGFyYW1zKTtcbiAgfVxuXG4gIC8vIElmIG5vIHJvbGUgYXNzdW1wdGlvbiBtZXRhZGF0YSBpcyBwcmVzZW50LCBhdHRlbXB0IHRvIGxvYWQgc3RhdGljXG4gIC8vIGNyZWRlbnRpYWxzIGZyb20gdGhlIHNlbGVjdGVkIHByb2ZpbGUuXG4gIGlmIChpc1N0YXRpY0NyZWRzUHJvZmlsZShkYXRhKSkge1xuICAgIHJldHVybiByZXNvbHZlU3RhdGljQ3JlZGVudGlhbHMoZGF0YSk7XG4gIH1cblxuICAvLyBJZiBubyBzdGF0aWMgY3JlZGVudGlhbHMgYXJlIHByZXNlbnQsIGF0dGVtcHQgdG8gYXNzdW1lIHJvbGUgd2l0aFxuICAvLyB3ZWIgaWRlbnRpdHkgaWYgd2ViX2lkZW50aXR5X3Rva2VuX2ZpbGUgYW5kIHJvbGVfYXJuIGlzIGF2YWlsYWJsZVxuICBpZiAoaXNXZWJJZGVudGl0eVByb2ZpbGUoZGF0YSkpIHtcbiAgICByZXR1cm4gcmVzb2x2ZVdlYklkZW50aXR5Q3JlZGVudGlhbHMoZGF0YSwgb3B0aW9ucyk7XG4gIH1cbiAgaWYgKGlzU3NvUHJvZmlsZShkYXRhKSkge1xuICAgIGNvbnN0IHsgc3NvX3N0YXJ0X3VybCwgc3NvX2FjY291bnRfaWQsIHNzb19yZWdpb24sIHNzb19yb2xlX25hbWUgfSA9IHZhbGlkYXRlU3NvUHJvZmlsZShkYXRhKTtcbiAgICByZXR1cm4gZnJvbVNTTyh7XG4gICAgICBzc29TdGFydFVybDogc3NvX3N0YXJ0X3VybCxcbiAgICAgIHNzb0FjY291bnRJZDogc3NvX2FjY291bnRfaWQsXG4gICAgICBzc29SZWdpb246IHNzb19yZWdpb24sXG4gICAgICBzc29Sb2xlTmFtZTogc3NvX3JvbGVfbmFtZSxcbiAgICB9KSgpO1xuICB9XG5cbiAgLy8gSWYgdGhlIHByb2ZpbGUgY2Fubm90IGJlIHBhcnNlZCBvciBjb250YWlucyBuZWl0aGVyIHN0YXRpYyBjcmVkZW50aWFsc1xuICAvLyBub3Igcm9sZSBhc3N1bXB0aW9uIG1ldGFkYXRhLCB0aHJvdyBhbiBlcnJvci4gVGhpcyBzaG91bGQgYmUgY29uc2lkZXJlZCBhXG4gIC8vIHRlcm1pbmFsIHJlc29sdXRpb24gZXJyb3IgaWYgYSBwcm9maWxlIGhhcyBiZWVuIHNwZWNpZmllZCBieSB0aGUgdXNlclxuICAvLyAod2hldGhlciB2aWEgYSBwYXJhbWV0ZXIsIGFuIGVudmlyb25tZW50IHZhcmlhYmxlLCBvciBhbm90aGVyIHByb2ZpbGUnc1xuICAvLyBgc291cmNlX3Byb2ZpbGVgIGtleSkuXG4gIHRocm93IG5ldyBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3IoXG4gICAgYFByb2ZpbGUgJHtwcm9maWxlTmFtZX0gY291bGQgbm90IGJlIGZvdW5kIG9yIHBhcnNlZCBpbiBzaGFyZWRgICsgYCBjcmVkZW50aWFscyBmaWxlLmBcbiAgKTtcbn07XG5cbi8qKlxuICogUmVzb2x2ZSB0aGUgYGNyZWRlbnRpYWxfc291cmNlYCBlbnRyeSBmcm9tIHRoZSBwcm9maWxlLCBhbmQgcmV0dXJuIHRoZVxuICogY3JlZGVudGlhbCBwcm92aWRlcnMgcmVzcGVjdGl2ZWx5LiBObyBtZW1vaXphdGlvbiBpcyBuZWVkZWQgZm9yIHRoZVxuICogY3JlZGVudGlhbCBzb3VyY2UgcHJvdmlkZXJzIGJlY2F1c2UgbWVtb2l6YXRpb24gc2hvdWxkIGJlIGFkZGVkIG91dHNpZGUgdGhlXG4gKiBmcm9tSW5pKCkgcHJvdmlkZXIuIFRoZSBzb3VyY2UgY3JlZGVudGlhbCBuZWVkcyB0byBiZSByZWZyZXNoZWQgZXZlcnkgdGltZVxuICogZnJvbUluaSgpIGlzIGNhbGxlZC5cbiAqL1xuY29uc3QgcmVzb2x2ZUNyZWRlbnRpYWxTb3VyY2UgPSAoY3JlZGVudGlhbFNvdXJjZTogc3RyaW5nLCBwcm9maWxlTmFtZTogc3RyaW5nKTogQ3JlZGVudGlhbFByb3ZpZGVyID0+IHtcbiAgY29uc3Qgc291cmNlUHJvdmlkZXJzTWFwOiB7IFtuYW1lOiBzdHJpbmddOiAoKSA9PiBDcmVkZW50aWFsUHJvdmlkZXIgfSA9IHtcbiAgICBFY3NDb250YWluZXI6IGZyb21Db250YWluZXJNZXRhZGF0YSxcbiAgICBFYzJJbnN0YW5jZU1ldGFkYXRhOiBmcm9tSW5zdGFuY2VNZXRhZGF0YSxcbiAgICBFbnZpcm9ubWVudDogZnJvbUVudixcbiAgfTtcbiAgaWYgKGNyZWRlbnRpYWxTb3VyY2UgaW4gc291cmNlUHJvdmlkZXJzTWFwKSB7XG4gICAgcmV0dXJuIHNvdXJjZVByb3ZpZGVyc01hcFtjcmVkZW50aWFsU291cmNlXSgpO1xuICB9IGVsc2Uge1xuICAgIHRocm93IG5ldyBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3IoXG4gICAgICBgVW5zdXBwb3J0ZWQgY3JlZGVudGlhbCBzb3VyY2UgaW4gcHJvZmlsZSAke3Byb2ZpbGVOYW1lfS4gR290ICR7Y3JlZGVudGlhbFNvdXJjZX0sIGAgK1xuICAgICAgICBgZXhwZWN0ZWQgRWNzQ29udGFpbmVyIG9yIEVjMkluc3RhbmNlTWV0YWRhdGEgb3IgRW52aXJvbm1lbnQuYFxuICAgICk7XG4gIH1cbn07XG5cbmNvbnN0IHJlc29sdmVTdGF0aWNDcmVkZW50aWFscyA9IChwcm9maWxlOiBTdGF0aWNDcmVkc1Byb2ZpbGUpOiBQcm9taXNlPENyZWRlbnRpYWxzPiA9PlxuICBQcm9taXNlLnJlc29sdmUoe1xuICAgIGFjY2Vzc0tleUlkOiBwcm9maWxlLmF3c19hY2Nlc3Nfa2V5X2lkLFxuICAgIHNlY3JldEFjY2Vzc0tleTogcHJvZmlsZS5hd3Nfc2VjcmV0X2FjY2Vzc19rZXksXG4gICAgc2Vzc2lvblRva2VuOiBwcm9maWxlLmF3c19zZXNzaW9uX3Rva2VuLFxuICB9KTtcblxuY29uc3QgcmVzb2x2ZVdlYklkZW50aXR5Q3JlZGVudGlhbHMgPSBhc3luYyAocHJvZmlsZTogV2ViSWRlbnRpdHlQcm9maWxlLCBvcHRpb25zOiBGcm9tSW5pSW5pdCk6IFByb21pc2U8Q3JlZGVudGlhbHM+ID0+XG4gIGZyb21Ub2tlbkZpbGUoe1xuICAgIHdlYklkZW50aXR5VG9rZW5GaWxlOiBwcm9maWxlLndlYl9pZGVudGl0eV90b2tlbl9maWxlLFxuICAgIHJvbGVBcm46IHByb2ZpbGUucm9sZV9hcm4sXG4gICAgcm9sZVNlc3Npb25OYW1lOiBwcm9maWxlLnJvbGVfc2Vzc2lvbl9uYW1lLFxuICAgIHJvbGVBc3N1bWVyV2l0aFdlYklkZW50aXR5OiBvcHRpb25zLnJvbGVBc3N1bWVyV2l0aFdlYklkZW50aXR5LFxuICB9KSgpO1xuIl19
 
 /***/ }),
 
@@ -38129,6 +38195,7 @@ const credential_provider_sso_1 = __nccwpck_require__(676);
 const credential_provider_web_identity_1 = __nccwpck_require__(1961);
 const property_provider_1 = __nccwpck_require__(1014);
 const shared_ini_file_loader_1 = __nccwpck_require__(4847);
+const util_credentials_1 = __nccwpck_require__(2565);
 exports.ENV_IMDS_DISABLED = "AWS_EC2_METADATA_DISABLED";
 /**
  * Creates a credential provider that will attempt to find credentials from the
@@ -38165,7 +38232,7 @@ exports.ENV_IMDS_DISABLED = "AWS_EC2_METADATA_DISABLED";
  *                              ECS Container Metadata Service
  */
 const defaultProvider = (init = {}) => {
-    const options = { profile: process.env[credential_provider_ini_1.ENV_PROFILE], ...init };
+    const options = { profile: process.env[util_credentials_1.ENV_PROFILE], ...init };
     if (!options.loadedConfig)
         options.loadedConfig = shared_ini_file_loader_1.loadSharedConfigFiles(init);
     const providers = [
@@ -38174,6 +38241,9 @@ const defaultProvider = (init = {}) => {
         credential_provider_process_1.fromProcess(options),
         credential_provider_web_identity_1.fromTokenFile(options),
         remoteProvider(options),
+        async () => {
+            throw new property_provider_1.CredentialsProviderError("Could not load credentials from any providers", false);
+        },
     ];
     if (!options.profile)
         providers.unshift(credential_provider_env_1.fromEnv());
@@ -38186,11 +38256,11 @@ const remoteProvider = (init) => {
         return credential_provider_imds_1.fromContainerMetadata(init);
     }
     if (process.env[exports.ENV_IMDS_DISABLED]) {
-        return () => Promise.reject(new property_provider_1.ProviderError("EC2 Instance Metadata Service access disabled"));
+        return () => Promise.reject(new property_provider_1.CredentialsProviderError("EC2 Instance Metadata Service access disabled"));
     }
     return credential_provider_imds_1.fromInstanceMetadata(init);
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsOEVBQTJEO0FBQzNELGdGQU0yQztBQUMzQyw4RUFBcUY7QUFDckYsc0ZBQW9GO0FBQ3BGLDhFQUF3RTtBQUN4RSxnR0FBNkY7QUFDN0Ysa0VBQTJFO0FBQzNFLDRFQUF3RTtBQUczRCxRQUFBLGlCQUFpQixHQUFHLDJCQUEyQixDQUFDO0FBRTdEOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7R0FpQ0c7QUFDSSxNQUFNLGVBQWUsR0FBRyxDQUM3QixPQUE2RixFQUFFLEVBQzNFLEVBQUU7SUFDdEIsTUFBTSxPQUFPLEdBQUcsRUFBRSxPQUFPLEVBQUUsT0FBTyxDQUFDLEdBQUcsQ0FBQyxxQ0FBVyxDQUFDLEVBQUUsR0FBRyxJQUFJLEVBQUUsQ0FBQztJQUMvRCxJQUFJLENBQUMsT0FBTyxDQUFDLFlBQVk7UUFBRSxPQUFPLENBQUMsWUFBWSxHQUFHLDhDQUFxQixDQUFDLElBQUksQ0FBQyxDQUFDO0lBQzlFLE1BQU0sU0FBUyxHQUFHO1FBQ2hCLGlDQUFPLENBQUMsT0FBTyxDQUFDO1FBQ2hCLGlDQUFPLENBQUMsT0FBTyxDQUFDO1FBQ2hCLHlDQUFXLENBQUMsT0FBTyxDQUFDO1FBQ3BCLGdEQUFhLENBQUMsT0FBTyxDQUFDO1FBQ3RCLGNBQWMsQ0FBQyxPQUFPLENBQUM7S0FDeEIsQ0FBQztJQUNGLElBQUksQ0FBQyxPQUFPLENBQUMsT0FBTztRQUFFLFNBQVMsQ0FBQyxPQUFPLENBQUMsaUNBQU8sRUFBRSxDQUFDLENBQUM7SUFDbkQsTUFBTSxhQUFhLEdBQUcseUJBQUssQ0FBQyxHQUFHLFNBQVMsQ0FBQyxDQUFDO0lBRTFDLE9BQU8sMkJBQU8sQ0FDWixhQUFhLEVBQ2IsQ0FBQyxXQUFXLEVBQUUsRUFBRSxDQUFDLFdBQVcsQ0FBQyxVQUFVLEtBQUssU0FBUyxJQUFJLFdBQVcsQ0FBQyxVQUFVLENBQUMsT0FBTyxFQUFFLEdBQUcsSUFBSSxDQUFDLEdBQUcsRUFBRSxHQUFHLE1BQU0sRUFDL0csQ0FBQyxXQUFXLEVBQUUsRUFBRSxDQUFDLFdBQVcsQ0FBQyxVQUFVLEtBQUssU0FBUyxDQUN0RCxDQUFDO0FBQ0osQ0FBQyxDQUFDO0FBcEJXLFFBQUEsZUFBZSxtQkFvQjFCO0FBRUYsTUFBTSxjQUFjLEdBQUcsQ0FBQyxJQUF3QixFQUFzQixFQUFFO0lBQ3RFLElBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyxnREFBcUIsQ0FBQyxJQUFJLE9BQU8sQ0FBQyxHQUFHLENBQUMsNENBQWlCLENBQUMsRUFBRTtRQUN4RSxPQUFPLGdEQUFxQixDQUFDLElBQUksQ0FBQyxDQUFDO0tBQ3BDO0lBRUQsSUFBSSxPQUFPLENBQUMsR0FBRyxDQUFDLHlCQUFpQixDQUFDLEVBQUU7UUFDbEMsT0FBTyxHQUFHLEVBQUUsQ0FBQyxPQUFPLENBQUMsTUFBTSxDQUFDLElBQUksaUNBQWEsQ0FBQywrQ0FBK0MsQ0FBQyxDQUFDLENBQUM7S0FDakc7SUFFRCxPQUFPLCtDQUFvQixDQUFDLElBQUksQ0FBQyxDQUFDO0FBQ3BDLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGZyb21FbnYgfSBmcm9tIFwiQGF3cy1zZGsvY3JlZGVudGlhbC1wcm92aWRlci1lbnZcIjtcbmltcG9ydCB7XG4gIEVOVl9DTURTX0ZVTExfVVJJLFxuICBFTlZfQ01EU19SRUxBVElWRV9VUkksXG4gIGZyb21Db250YWluZXJNZXRhZGF0YSxcbiAgZnJvbUluc3RhbmNlTWV0YWRhdGEsXG4gIFJlbW90ZVByb3ZpZGVySW5pdCxcbn0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItaW1kc1wiO1xuaW1wb3J0IHsgRU5WX1BST0ZJTEUsIGZyb21JbmksIEZyb21JbmlJbml0IH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItaW5pXCI7XG5pbXBvcnQgeyBmcm9tUHJvY2VzcywgRnJvbVByb2Nlc3NJbml0IH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItcHJvY2Vzc1wiO1xuaW1wb3J0IHsgZnJvbVNTTywgRnJvbVNTT0luaXQgfSBmcm9tIFwiQGF3cy1zZGsvY3JlZGVudGlhbC1wcm92aWRlci1zc29cIjtcbmltcG9ydCB7IGZyb21Ub2tlbkZpbGUsIEZyb21Ub2tlbkZpbGVJbml0IH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItd2ViLWlkZW50aXR5XCI7XG5pbXBvcnQgeyBjaGFpbiwgbWVtb2l6ZSwgUHJvdmlkZXJFcnJvciB9IGZyb20gXCJAYXdzLXNkay9wcm9wZXJ0eS1wcm92aWRlclwiO1xuaW1wb3J0IHsgbG9hZFNoYXJlZENvbmZpZ0ZpbGVzIH0gZnJvbSBcIkBhd3Mtc2RrL3NoYXJlZC1pbmktZmlsZS1sb2FkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgY29uc3QgRU5WX0lNRFNfRElTQUJMRUQgPSBcIkFXU19FQzJfTUVUQURBVEFfRElTQUJMRURcIjtcblxuLyoqXG4gKiBDcmVhdGVzIGEgY3JlZGVudGlhbCBwcm92aWRlciB0aGF0IHdpbGwgYXR0ZW1wdCB0byBmaW5kIGNyZWRlbnRpYWxzIGZyb20gdGhlXG4gKiBmb2xsb3dpbmcgc291cmNlcyAobGlzdGVkIGluIG9yZGVyIG9mIHByZWNlZGVuY2UpOlxuICogICAqIEVudmlyb25tZW50IHZhcmlhYmxlcyBleHBvc2VkIHZpYSBgcHJvY2Vzcy5lbnZgXG4gKiAgICogU1NPIGNyZWRlbnRpYWxzIGZyb20gdG9rZW4gY2FjaGVcbiAqICAgKiBXZWIgaWRlbnRpdHkgdG9rZW4gY3JlZGVudGlhbHNcbiAqICAgKiBTaGFyZWQgY3JlZGVudGlhbHMgYW5kIGNvbmZpZyBpbmkgZmlsZXNcbiAqICAgKiBUaGUgRUMyL0VDUyBJbnN0YW5jZSBNZXRhZGF0YSBTZXJ2aWNlXG4gKlxuICogVGhlIGRlZmF1bHQgY3JlZGVudGlhbCBwcm92aWRlciB3aWxsIGludm9rZSBvbmUgcHJvdmlkZXIgYXQgYSB0aW1lIGFuZCBvbmx5XG4gKiBjb250aW51ZSB0byB0aGUgbmV4dCBpZiBubyBjcmVkZW50aWFscyBoYXZlIGJlZW4gbG9jYXRlZC4gRm9yIGV4YW1wbGUsIGlmXG4gKiB0aGUgcHJvY2VzcyBmaW5kcyB2YWx1ZXMgZGVmaW5lZCB2aWEgdGhlIGBBV1NfQUNDRVNTX0tFWV9JRGAgYW5kXG4gKiBgQVdTX1NFQ1JFVF9BQ0NFU1NfS0VZYCBlbnZpcm9ubWVudCB2YXJpYWJsZXMsIHRoZSBmaWxlcyBhdFxuICogYH4vLmF3cy9jcmVkZW50aWFsc2AgYW5kIGB+Ly5hd3MvY29uZmlnYCB3aWxsIG5vdCBiZSByZWFkLCBub3Igd2lsbCBhbnlcbiAqIG1lc3NhZ2VzIGJlIHNlbnQgdG8gdGhlIEluc3RhbmNlIE1ldGFkYXRhIFNlcnZpY2UuXG4gKlxuICogQHBhcmFtIGluaXQgICAgICAgICAgICAgICAgICBDb25maWd1cmF0aW9uIHRoYXQgaXMgcGFzc2VkIHRvIGVhY2ggaW5kaXZpZHVhbFxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcm92aWRlclxuICpcbiAqIEBzZWUgZnJvbUVudiAgICAgICAgICAgICAgICAgVGhlIGZ1bmN0aW9uIHVzZWQgdG8gc291cmNlIGNyZWRlbnRpYWxzIGZyb21cbiAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZW52aXJvbm1lbnQgdmFyaWFibGVzXG4gKiBAc2VlIGZyb21TU08gICAgICAgICAgICAgICAgIFRoZSBmdW5jdGlvbiB1c2VkIHRvIHNvdXJjZSBjcmVkZW50aWFscyBmcm9tXG4gKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJlc29sdmVkIFNTTyB0b2tlbiBjYWNoZVxuICogQHNlZSBmcm9tVG9rZW5GaWxlICAgICAgICAgICBUaGUgZnVuY3Rpb24gdXNlZCB0byBzb3VyY2UgY3JlZGVudGlhbHMgZnJvbVxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0b2tlbiBmaWxlXG4gKiBAc2VlIGZyb21JbmkgICAgICAgICAgICAgICAgIFRoZSBmdW5jdGlvbiB1c2VkIHRvIHNvdXJjZSBjcmVkZW50aWFscyBmcm9tIElOSVxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBmaWxlc1xuICogQHNlZSBmcm9tUHJvY2VzcyAgICAgICAgICAgICBUaGUgZnVuY3Rpb24gdXNlZCB0byBzb3VyY2VzIGNyZWRlbnRpYWxzIGZyb21cbiAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY3JlZGVudGlhbF9wcm9jZXNzIGluIElOSSBmaWxlc1xuICogQHNlZSBmcm9tSW5zdGFuY2VNZXRhZGF0YSAgICBUaGUgZnVuY3Rpb24gdXNlZCB0byBzb3VyY2UgY3JlZGVudGlhbHMgZnJvbSB0aGVcbiAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgRUMyIEluc3RhbmNlIE1ldGFkYXRhIFNlcnZpY2VcbiAqIEBzZWUgZnJvbUNvbnRhaW5lck1ldGFkYXRhICAgVGhlIGZ1bmN0aW9uIHVzZWQgdG8gc291cmNlIGNyZWRlbnRpYWxzIGZyb20gdGhlXG4gKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEVDUyBDb250YWluZXIgTWV0YWRhdGEgU2VydmljZVxuICovXG5leHBvcnQgY29uc3QgZGVmYXVsdFByb3ZpZGVyID0gKFxuICBpbml0OiBGcm9tSW5pSW5pdCAmIFJlbW90ZVByb3ZpZGVySW5pdCAmIEZyb21Qcm9jZXNzSW5pdCAmIEZyb21TU09Jbml0ICYgRnJvbVRva2VuRmlsZUluaXQgPSB7fVxuKTogQ3JlZGVudGlhbFByb3ZpZGVyID0+IHtcbiAgY29uc3Qgb3B0aW9ucyA9IHsgcHJvZmlsZTogcHJvY2Vzcy5lbnZbRU5WX1BST0ZJTEVdLCAuLi5pbml0IH07XG4gIGlmICghb3B0aW9ucy5sb2FkZWRDb25maWcpIG9wdGlvbnMubG9hZGVkQ29uZmlnID0gbG9hZFNoYXJlZENvbmZpZ0ZpbGVzKGluaXQpO1xuICBjb25zdCBwcm92aWRlcnMgPSBbXG4gICAgZnJvbVNTTyhvcHRpb25zKSxcbiAgICBmcm9tSW5pKG9wdGlvbnMpLFxuICAgIGZyb21Qcm9jZXNzKG9wdGlvbnMpLFxuICAgIGZyb21Ub2tlbkZpbGUob3B0aW9ucyksXG4gICAgcmVtb3RlUHJvdmlkZXIob3B0aW9ucyksXG4gIF07XG4gIGlmICghb3B0aW9ucy5wcm9maWxlKSBwcm92aWRlcnMudW5zaGlmdChmcm9tRW52KCkpO1xuICBjb25zdCBwcm92aWRlckNoYWluID0gY2hhaW4oLi4ucHJvdmlkZXJzKTtcblxuICByZXR1cm4gbWVtb2l6ZShcbiAgICBwcm92aWRlckNoYWluLFxuICAgIChjcmVkZW50aWFscykgPT4gY3JlZGVudGlhbHMuZXhwaXJhdGlvbiAhPT0gdW5kZWZpbmVkICYmIGNyZWRlbnRpYWxzLmV4cGlyYXRpb24uZ2V0VGltZSgpIC0gRGF0ZS5ub3coKSA8IDMwMDAwMCxcbiAgICAoY3JlZGVudGlhbHMpID0+IGNyZWRlbnRpYWxzLmV4cGlyYXRpb24gIT09IHVuZGVmaW5lZFxuICApO1xufTtcblxuY29uc3QgcmVtb3RlUHJvdmlkZXIgPSAoaW5pdDogUmVtb3RlUHJvdmlkZXJJbml0KTogQ3JlZGVudGlhbFByb3ZpZGVyID0+IHtcbiAgaWYgKHByb2Nlc3MuZW52W0VOVl9DTURTX1JFTEFUSVZFX1VSSV0gfHwgcHJvY2Vzcy5lbnZbRU5WX0NNRFNfRlVMTF9VUkldKSB7XG4gICAgcmV0dXJuIGZyb21Db250YWluZXJNZXRhZGF0YShpbml0KTtcbiAgfVxuXG4gIGlmIChwcm9jZXNzLmVudltFTlZfSU1EU19ESVNBQkxFRF0pIHtcbiAgICByZXR1cm4gKCkgPT4gUHJvbWlzZS5yZWplY3QobmV3IFByb3ZpZGVyRXJyb3IoXCJFQzIgSW5zdGFuY2UgTWV0YWRhdGEgU2VydmljZSBhY2Nlc3MgZGlzYWJsZWRcIikpO1xuICB9XG5cbiAgcmV0dXJuIGZyb21JbnN0YW5jZU1ldGFkYXRhKGluaXQpO1xufTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsOEVBQTJEO0FBQzNELGdGQU0yQztBQUMzQyw4RUFBd0U7QUFDeEUsc0ZBQW9GO0FBQ3BGLDhFQUF3RTtBQUN4RSxnR0FBNkY7QUFDN0Ysa0VBQXNGO0FBQ3RGLDRFQUF3RTtBQUV4RSxnRUFBd0Q7QUFFM0MsUUFBQSxpQkFBaUIsR0FBRywyQkFBMkIsQ0FBQztBQUU3RDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0dBaUNHO0FBQ0ksTUFBTSxlQUFlLEdBQUcsQ0FDN0IsT0FBNkYsRUFBRSxFQUMzRSxFQUFFO0lBQ3RCLE1BQU0sT0FBTyxHQUFHLEVBQUUsT0FBTyxFQUFFLE9BQU8sQ0FBQyxHQUFHLENBQUMsOEJBQVcsQ0FBQyxFQUFFLEdBQUcsSUFBSSxFQUFFLENBQUM7SUFDL0QsSUFBSSxDQUFDLE9BQU8sQ0FBQyxZQUFZO1FBQUUsT0FBTyxDQUFDLFlBQVksR0FBRyw4Q0FBcUIsQ0FBQyxJQUFJLENBQUMsQ0FBQztJQUM5RSxNQUFNLFNBQVMsR0FBRztRQUNoQixpQ0FBTyxDQUFDLE9BQU8sQ0FBQztRQUNoQixpQ0FBTyxDQUFDLE9BQU8sQ0FBQztRQUNoQix5Q0FBVyxDQUFDLE9BQU8sQ0FBQztRQUNwQixnREFBYSxDQUFDLE9BQU8sQ0FBQztRQUN0QixjQUFjLENBQUMsT0FBTyxDQUFDO1FBQ3ZCLEtBQUssSUFBSSxFQUFFO1lBQ1QsTUFBTSxJQUFJLDRDQUF3QixDQUFDLCtDQUErQyxFQUFFLEtBQUssQ0FBQyxDQUFDO1FBQzdGLENBQUM7S0FDRixDQUFDO0lBQ0YsSUFBSSxDQUFDLE9BQU8sQ0FBQyxPQUFPO1FBQUUsU0FBUyxDQUFDLE9BQU8sQ0FBQyxpQ0FBTyxFQUFFLENBQUMsQ0FBQztJQUNuRCxNQUFNLGFBQWEsR0FBRyx5QkFBSyxDQUFDLEdBQUcsU0FBUyxDQUFDLENBQUM7SUFFMUMsT0FBTywyQkFBTyxDQUNaLGFBQWEsRUFDYixDQUFDLFdBQVcsRUFBRSxFQUFFLENBQUMsV0FBVyxDQUFDLFVBQVUsS0FBSyxTQUFTLElBQUksV0FBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUMsR0FBRyxFQUFFLEdBQUcsTUFBTSxFQUMvRyxDQUFDLFdBQVcsRUFBRSxFQUFFLENBQUMsV0FBVyxDQUFDLFVBQVUsS0FBSyxTQUFTLENBQ3RELENBQUM7QUFDSixDQUFDLENBQUM7QUF2QlcsUUFBQSxlQUFlLG1CQXVCMUI7QUFFRixNQUFNLGNBQWMsR0FBRyxDQUFDLElBQXdCLEVBQXNCLEVBQUU7SUFDdEUsSUFBSSxPQUFPLENBQUMsR0FBRyxDQUFDLGdEQUFxQixDQUFDLElBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyw0Q0FBaUIsQ0FBQyxFQUFFO1FBQ3hFLE9BQU8sZ0RBQXFCLENBQUMsSUFBSSxDQUFDLENBQUM7S0FDcEM7SUFFRCxJQUFJLE9BQU8sQ0FBQyxHQUFHLENBQUMseUJBQWlCLENBQUMsRUFBRTtRQUNsQyxPQUFPLEdBQUcsRUFBRSxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUMsSUFBSSw0Q0FBd0IsQ0FBQywrQ0FBK0MsQ0FBQyxDQUFDLENBQUM7S0FDNUc7SUFFRCxPQUFPLCtDQUFvQixDQUFDLElBQUksQ0FBQyxDQUFDO0FBQ3BDLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGZyb21FbnYgfSBmcm9tIFwiQGF3cy1zZGsvY3JlZGVudGlhbC1wcm92aWRlci1lbnZcIjtcbmltcG9ydCB7XG4gIEVOVl9DTURTX0ZVTExfVVJJLFxuICBFTlZfQ01EU19SRUxBVElWRV9VUkksXG4gIGZyb21Db250YWluZXJNZXRhZGF0YSxcbiAgZnJvbUluc3RhbmNlTWV0YWRhdGEsXG4gIFJlbW90ZVByb3ZpZGVySW5pdCxcbn0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItaW1kc1wiO1xuaW1wb3J0IHsgZnJvbUluaSwgRnJvbUluaUluaXQgfSBmcm9tIFwiQGF3cy1zZGsvY3JlZGVudGlhbC1wcm92aWRlci1pbmlcIjtcbmltcG9ydCB7IGZyb21Qcm9jZXNzLCBGcm9tUHJvY2Vzc0luaXQgfSBmcm9tIFwiQGF3cy1zZGsvY3JlZGVudGlhbC1wcm92aWRlci1wcm9jZXNzXCI7XG5pbXBvcnQgeyBmcm9tU1NPLCBGcm9tU1NPSW5pdCB9IGZyb20gXCJAYXdzLXNkay9jcmVkZW50aWFsLXByb3ZpZGVyLXNzb1wiO1xuaW1wb3J0IHsgZnJvbVRva2VuRmlsZSwgRnJvbVRva2VuRmlsZUluaXQgfSBmcm9tIFwiQGF3cy1zZGsvY3JlZGVudGlhbC1wcm92aWRlci13ZWItaWRlbnRpdHlcIjtcbmltcG9ydCB7IGNoYWluLCBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3IsIG1lbW9pemUgfSBmcm9tIFwiQGF3cy1zZGsvcHJvcGVydHktcHJvdmlkZXJcIjtcbmltcG9ydCB7IGxvYWRTaGFyZWRDb25maWdGaWxlcyB9IGZyb20gXCJAYXdzLXNkay9zaGFyZWQtaW5pLWZpbGUtbG9hZGVyXCI7XG5pbXBvcnQgeyBDcmVkZW50aWFsUHJvdmlkZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IEVOVl9QUk9GSUxFIH0gZnJvbSBcIkBhd3Mtc2RrL3V0aWwtY3JlZGVudGlhbHNcIjtcblxuZXhwb3J0IGNvbnN0IEVOVl9JTURTX0RJU0FCTEVEID0gXCJBV1NfRUMyX01FVEFEQVRBX0RJU0FCTEVEXCI7XG5cbi8qKlxuICogQ3JlYXRlcyBhIGNyZWRlbnRpYWwgcHJvdmlkZXIgdGhhdCB3aWxsIGF0dGVtcHQgdG8gZmluZCBjcmVkZW50aWFscyBmcm9tIHRoZVxuICogZm9sbG93aW5nIHNvdXJjZXMgKGxpc3RlZCBpbiBvcmRlciBvZiBwcmVjZWRlbmNlKTpcbiAqICAgKiBFbnZpcm9ubWVudCB2YXJpYWJsZXMgZXhwb3NlZCB2aWEgYHByb2Nlc3MuZW52YFxuICogICAqIFNTTyBjcmVkZW50aWFscyBmcm9tIHRva2VuIGNhY2hlXG4gKiAgICogV2ViIGlkZW50aXR5IHRva2VuIGNyZWRlbnRpYWxzXG4gKiAgICogU2hhcmVkIGNyZWRlbnRpYWxzIGFuZCBjb25maWcgaW5pIGZpbGVzXG4gKiAgICogVGhlIEVDMi9FQ1MgSW5zdGFuY2UgTWV0YWRhdGEgU2VydmljZVxuICpcbiAqIFRoZSBkZWZhdWx0IGNyZWRlbnRpYWwgcHJvdmlkZXIgd2lsbCBpbnZva2Ugb25lIHByb3ZpZGVyIGF0IGEgdGltZSBhbmQgb25seVxuICogY29udGludWUgdG8gdGhlIG5leHQgaWYgbm8gY3JlZGVudGlhbHMgaGF2ZSBiZWVuIGxvY2F0ZWQuIEZvciBleGFtcGxlLCBpZlxuICogdGhlIHByb2Nlc3MgZmluZHMgdmFsdWVzIGRlZmluZWQgdmlhIHRoZSBgQVdTX0FDQ0VTU19LRVlfSURgIGFuZFxuICogYEFXU19TRUNSRVRfQUNDRVNTX0tFWWAgZW52aXJvbm1lbnQgdmFyaWFibGVzLCB0aGUgZmlsZXMgYXRcbiAqIGB+Ly5hd3MvY3JlZGVudGlhbHNgIGFuZCBgfi8uYXdzL2NvbmZpZ2Agd2lsbCBub3QgYmUgcmVhZCwgbm9yIHdpbGwgYW55XG4gKiBtZXNzYWdlcyBiZSBzZW50IHRvIHRoZSBJbnN0YW5jZSBNZXRhZGF0YSBTZXJ2aWNlLlxuICpcbiAqIEBwYXJhbSBpbml0ICAgICAgICAgICAgICAgICAgQ29uZmlndXJhdGlvbiB0aGF0IGlzIHBhc3NlZCB0byBlYWNoIGluZGl2aWR1YWxcbiAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJvdmlkZXJcbiAqXG4gKiBAc2VlIGZyb21FbnYgICAgICAgICAgICAgICAgIFRoZSBmdW5jdGlvbiB1c2VkIHRvIHNvdXJjZSBjcmVkZW50aWFscyBmcm9tXG4gKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVudmlyb25tZW50IHZhcmlhYmxlc1xuICogQHNlZSBmcm9tU1NPICAgICAgICAgICAgICAgICBUaGUgZnVuY3Rpb24gdXNlZCB0byBzb3VyY2UgY3JlZGVudGlhbHMgZnJvbVxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICByZXNvbHZlZCBTU08gdG9rZW4gY2FjaGVcbiAqIEBzZWUgZnJvbVRva2VuRmlsZSAgICAgICAgICAgVGhlIGZ1bmN0aW9uIHVzZWQgdG8gc291cmNlIGNyZWRlbnRpYWxzIGZyb21cbiAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdG9rZW4gZmlsZVxuICogQHNlZSBmcm9tSW5pICAgICAgICAgICAgICAgICBUaGUgZnVuY3Rpb24gdXNlZCB0byBzb3VyY2UgY3JlZGVudGlhbHMgZnJvbSBJTklcbiAqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZmlsZXNcbiAqIEBzZWUgZnJvbVByb2Nlc3MgICAgICAgICAgICAgVGhlIGZ1bmN0aW9uIHVzZWQgdG8gc291cmNlcyBjcmVkZW50aWFscyBmcm9tXG4gKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNyZWRlbnRpYWxfcHJvY2VzcyBpbiBJTkkgZmlsZXNcbiAqIEBzZWUgZnJvbUluc3RhbmNlTWV0YWRhdGEgICAgVGhlIGZ1bmN0aW9uIHVzZWQgdG8gc291cmNlIGNyZWRlbnRpYWxzIGZyb20gdGhlXG4gKiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEVDMiBJbnN0YW5jZSBNZXRhZGF0YSBTZXJ2aWNlXG4gKiBAc2VlIGZyb21Db250YWluZXJNZXRhZGF0YSAgIFRoZSBmdW5jdGlvbiB1c2VkIHRvIHNvdXJjZSBjcmVkZW50aWFscyBmcm9tIHRoZVxuICogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBFQ1MgQ29udGFpbmVyIE1ldGFkYXRhIFNlcnZpY2VcbiAqL1xuZXhwb3J0IGNvbnN0IGRlZmF1bHRQcm92aWRlciA9IChcbiAgaW5pdDogRnJvbUluaUluaXQgJiBSZW1vdGVQcm92aWRlckluaXQgJiBGcm9tUHJvY2Vzc0luaXQgJiBGcm9tU1NPSW5pdCAmIEZyb21Ub2tlbkZpbGVJbml0ID0ge31cbik6IENyZWRlbnRpYWxQcm92aWRlciA9PiB7XG4gIGNvbnN0IG9wdGlvbnMgPSB7IHByb2ZpbGU6IHByb2Nlc3MuZW52W0VOVl9QUk9GSUxFXSwgLi4uaW5pdCB9O1xuICBpZiAoIW9wdGlvbnMubG9hZGVkQ29uZmlnKSBvcHRpb25zLmxvYWRlZENvbmZpZyA9IGxvYWRTaGFyZWRDb25maWdGaWxlcyhpbml0KTtcbiAgY29uc3QgcHJvdmlkZXJzID0gW1xuICAgIGZyb21TU08ob3B0aW9ucyksXG4gICAgZnJvbUluaShvcHRpb25zKSxcbiAgICBmcm9tUHJvY2VzcyhvcHRpb25zKSxcbiAgICBmcm9tVG9rZW5GaWxlKG9wdGlvbnMpLFxuICAgIHJlbW90ZVByb3ZpZGVyKG9wdGlvbnMpLFxuICAgIGFzeW5jICgpID0+IHtcbiAgICAgIHRocm93IG5ldyBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3IoXCJDb3VsZCBub3QgbG9hZCBjcmVkZW50aWFscyBmcm9tIGFueSBwcm92aWRlcnNcIiwgZmFsc2UpO1xuICAgIH0sXG4gIF07XG4gIGlmICghb3B0aW9ucy5wcm9maWxlKSBwcm92aWRlcnMudW5zaGlmdChmcm9tRW52KCkpO1xuICBjb25zdCBwcm92aWRlckNoYWluID0gY2hhaW4oLi4ucHJvdmlkZXJzKTtcblxuICByZXR1cm4gbWVtb2l6ZShcbiAgICBwcm92aWRlckNoYWluLFxuICAgIChjcmVkZW50aWFscykgPT4gY3JlZGVudGlhbHMuZXhwaXJhdGlvbiAhPT0gdW5kZWZpbmVkICYmIGNyZWRlbnRpYWxzLmV4cGlyYXRpb24uZ2V0VGltZSgpIC0gRGF0ZS5ub3coKSA8IDMwMDAwMCxcbiAgICAoY3JlZGVudGlhbHMpID0+IGNyZWRlbnRpYWxzLmV4cGlyYXRpb24gIT09IHVuZGVmaW5lZFxuICApO1xufTtcblxuY29uc3QgcmVtb3RlUHJvdmlkZXIgPSAoaW5pdDogUmVtb3RlUHJvdmlkZXJJbml0KTogQ3JlZGVudGlhbFByb3ZpZGVyID0+IHtcbiAgaWYgKHByb2Nlc3MuZW52W0VOVl9DTURTX1JFTEFUSVZFX1VSSV0gfHwgcHJvY2Vzcy5lbnZbRU5WX0NNRFNfRlVMTF9VUkldKSB7XG4gICAgcmV0dXJuIGZyb21Db250YWluZXJNZXRhZGF0YShpbml0KTtcbiAgfVxuXG4gIGlmIChwcm9jZXNzLmVudltFTlZfSU1EU19ESVNBQkxFRF0pIHtcbiAgICByZXR1cm4gKCkgPT4gUHJvbWlzZS5yZWplY3QobmV3IENyZWRlbnRpYWxzUHJvdmlkZXJFcnJvcihcIkVDMiBJbnN0YW5jZSBNZXRhZGF0YSBTZXJ2aWNlIGFjY2VzcyBkaXNhYmxlZFwiKSk7XG4gIH1cblxuICByZXR1cm4gZnJvbUluc3RhbmNlTWV0YWRhdGEoaW5pdCk7XG59O1xuIl19
 
 /***/ }),
 
@@ -38201,8 +38271,8 @@ const remoteProvider = (init) => {
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.fromProcess = exports.ENV_PROFILE = void 0;
-const credential_provider_ini_1 = __nccwpck_require__(2975);
 const property_provider_1 = __nccwpck_require__(1014);
+const util_credentials_1 = __nccwpck_require__(2565);
 const child_process_1 = __nccwpck_require__(3129);
 /**
  * @internal
@@ -38213,8 +38283,8 @@ exports.ENV_PROFILE = "AWS_PROFILE";
  * in ini files.
  */
 const fromProcess = (init = {}) => async () => {
-    const profiles = await credential_provider_ini_1.parseKnownFiles(init);
-    return resolveProcessCredentials(credential_provider_ini_1.getMasterProfileName(init), profiles);
+    const profiles = await util_credentials_1.parseKnownFiles(init);
+    return resolveProcessCredentials(util_credentials_1.getMasterProfileName(init), profiles);
 };
 exports.fromProcess = fromProcess;
 const resolveProcessCredentials = async (profileName, profiles) => {
@@ -38255,11 +38325,11 @@ const resolveProcessCredentials = async (profileName, profiles) => {
                 };
             })
                 .catch((error) => {
-                throw new property_provider_1.ProviderError(error.message);
+                throw new property_provider_1.CredentialsProviderError(error.message);
             });
         }
         else {
-            throw new property_provider_1.ProviderError(`Profile ${profileName} did not contain credential_process.`);
+            throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} did not contain credential_process.`);
         }
     }
     else {
@@ -38267,7 +38337,7 @@ const resolveProcessCredentials = async (profileName, profiles) => {
         // specified profile throw an error. This should be considered a terminal
         // resolution error if a profile has been specified by the user (whether via
         // a parameter, anenvironment variable, or another profile's `source_profile` key).
-        throw new property_provider_1.ProviderError(`Profile ${profileName} could not be found in shared credentials file.`);
+        throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} could not be found in shared credentials file.`);
     }
 };
 const execPromise = (command) => new Promise(function (resolve, reject) {
@@ -38279,7 +38349,7 @@ const execPromise = (command) => new Promise(function (resolve, reject) {
         resolve(stdout.trim());
     });
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsOEVBQTRHO0FBQzVHLGtFQUEyRDtBQUczRCxpREFBcUM7QUFFckM7O0dBRUc7QUFDVSxRQUFBLFdBQVcsR0FBRyxhQUFhLENBQUM7QUFJekM7OztHQUdHO0FBQ0ksTUFBTSxXQUFXLEdBQ3RCLENBQUMsT0FBd0IsRUFBRSxFQUFzQixFQUFFLENBQ25ELEtBQUssSUFBSSxFQUFFO0lBQ1QsTUFBTSxRQUFRLEdBQUcsTUFBTSx5Q0FBZSxDQUFDLElBQUksQ0FBQyxDQUFDO0lBQzdDLE9BQU8seUJBQXlCLENBQUMsOENBQW9CLENBQUMsSUFBSSxDQUFDLEVBQUUsUUFBUSxDQUFDLENBQUM7QUFDekUsQ0FBQyxDQUFDO0FBTFMsUUFBQSxXQUFXLGVBS3BCO0FBRUosTUFBTSx5QkFBeUIsR0FBRyxLQUFLLEVBQUUsV0FBbUIsRUFBRSxRQUF1QixFQUF3QixFQUFFO0lBQzdHLE1BQU0sT0FBTyxHQUFHLFFBQVEsQ0FBQyxXQUFXLENBQUMsQ0FBQztJQUV0QyxJQUFJLFFBQVEsQ0FBQyxXQUFXLENBQUMsRUFBRTtRQUN6QixNQUFNLGlCQUFpQixHQUFHLE9BQU8sQ0FBQyxvQkFBb0IsQ0FBQyxDQUFDO1FBQ3hELElBQUksaUJBQWlCLEtBQUssU0FBUyxFQUFFO1lBQ25DLE9BQU8sTUFBTSxXQUFXLENBQUMsaUJBQWlCLENBQUM7aUJBQ3hDLElBQUksQ0FBQyxDQUFDLGFBQWtCLEVBQUUsRUFBRTtnQkFDM0IsSUFBSSxJQUFJLENBQUM7Z0JBQ1QsSUFBSTtvQkFDRixJQUFJLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxhQUFhLENBQUMsQ0FBQztpQkFDbEM7Z0JBQUMsV0FBTTtvQkFDTixNQUFNLEtBQUssQ0FBQyxXQUFXLFdBQVcsNENBQTRDLENBQUMsQ0FBQztpQkFDakY7Z0JBRUQsTUFBTSxFQUNKLE9BQU8sRUFBRSxPQUFPLEVBQ2hCLFdBQVcsRUFBRSxXQUFXLEVBQ3hCLGVBQWUsRUFBRSxlQUFlLEVBQ2hDLFlBQVksRUFBRSxZQUFZLEVBQzFCLFVBQVUsRUFBRSxVQUFVLEdBQ3ZCLEdBQUcsSUFBSSxDQUFDO2dCQUVULElBQUksT0FBTyxLQUFLLENBQUMsRUFBRTtvQkFDakIsTUFBTSxLQUFLLENBQUMsV0FBVyxXQUFXLCtDQUErQyxDQUFDLENBQUM7aUJBQ3BGO2dCQUVELElBQUksV0FBVyxLQUFLLFNBQVMsSUFBSSxlQUFlLEtBQUssU0FBUyxFQUFFO29CQUM5RCxNQUFNLEtBQUssQ0FBQyxXQUFXLFdBQVcsbURBQW1ELENBQUMsQ0FBQztpQkFDeEY7Z0JBRUQsSUFBSSxjQUFjLENBQUM7Z0JBRW5CLElBQUksVUFBVSxFQUFFO29CQUNkLE1BQU0sV0FBVyxHQUFHLElBQUksSUFBSSxFQUFFLENBQUM7b0JBQy9CLE1BQU0sVUFBVSxHQUFHLElBQUksSUFBSSxDQUFDLFVBQVUsQ0FBQyxDQUFDO29CQUN4QyxJQUFJLFVBQVUsR0FBRyxXQUFXLEVBQUU7d0JBQzVCLE1BQU0sS0FBSyxDQUFDLFdBQVcsV0FBVyxtREFBbUQsQ0FBQyxDQUFDO3FCQUN4RjtvQkFDRCxjQUFjLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxJQUFJLElBQUksQ0FBQyxVQUFVLENBQUMsQ0FBQyxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUMsQ0FBQztpQkFDcEU7Z0JBRUQsT0FBTztvQkFDTCxXQUFXO29CQUNYLGVBQWU7b0JBQ2YsWUFBWTtvQkFDWixjQUFjO2lCQUNmLENBQUM7WUFDSixDQUFDLENBQUM7aUJBQ0QsS0FBSyxDQUFDLENBQUMsS0FBWSxFQUFFLEVBQUU7Z0JBQ3RCLE1BQU0sSUFBSSxpQ0FBYSxDQUFDLEtBQUssQ0FBQyxPQUFPLENBQUMsQ0FBQztZQUN6QyxDQUFDLENBQUMsQ0FBQztTQUNOO2FBQU07WUFDTCxNQUFNLElBQUksaUNBQWEsQ0FBQyxXQUFXLFdBQVcsc0NBQXNDLENBQUMsQ0FBQztTQUN2RjtLQUNGO1NBQU07UUFDTCxxRUFBcUU7UUFDckUseUVBQXlFO1FBQ3pFLDRFQUE0RTtRQUM1RSxtRkFBbUY7UUFDbkYsTUFBTSxJQUFJLGlDQUFhLENBQUMsV0FBVyxXQUFXLGlEQUFpRCxDQUFDLENBQUM7S0FDbEc7QUFDSCxDQUFDLENBQUM7QUFFRixNQUFNLFdBQVcsR0FBRyxDQUFDLE9BQWUsRUFBRSxFQUFFLENBQ3RDLElBQUksT0FBTyxDQUFDLFVBQVUsT0FBTyxFQUFFLE1BQU07SUFDbkMsb0JBQUksQ0FBQyxPQUFPLEVBQUUsQ0FBQyxLQUFLLEVBQUUsTUFBTSxFQUFFLEVBQUU7UUFDOUIsSUFBSSxLQUFLLEVBQUU7WUFDVCxNQUFNLENBQUMsS0FBSyxDQUFDLENBQUM7WUFDZCxPQUFPO1NBQ1I7UUFFRCxPQUFPLENBQUMsTUFBTSxDQUFDLElBQUksRUFBRSxDQUFDLENBQUM7SUFDekIsQ0FBQyxDQUFDLENBQUM7QUFDTCxDQUFDLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGdldE1hc3RlclByb2ZpbGVOYW1lLCBwYXJzZUtub3duRmlsZXMsIFNvdXJjZVByb2ZpbGVJbml0IH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItaW5pXCI7XG5pbXBvcnQgeyBQcm92aWRlckVycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBQYXJzZWRJbmlEYXRhIH0gZnJvbSBcIkBhd3Mtc2RrL3NoYXJlZC1pbmktZmlsZS1sb2FkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciwgQ3JlZGVudGlhbHMgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IGV4ZWMgfSBmcm9tIFwiY2hpbGRfcHJvY2Vzc1wiO1xuXG4vKipcbiAqIEBpbnRlcm5hbFxuICovXG5leHBvcnQgY29uc3QgRU5WX1BST0ZJTEUgPSBcIkFXU19QUk9GSUxFXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgRnJvbVByb2Nlc3NJbml0IGV4dGVuZHMgU291cmNlUHJvZmlsZUluaXQge31cblxuLyoqXG4gKiBDcmVhdGVzIGEgY3JlZGVudGlhbCBwcm92aWRlciB0aGF0IHdpbGwgcmVhZCBmcm9tIGEgY3JlZGVudGlhbF9wcm9jZXNzIHNwZWNpZmllZFxuICogaW4gaW5pIGZpbGVzLlxuICovXG5leHBvcnQgY29uc3QgZnJvbVByb2Nlc3MgPVxuICAoaW5pdDogRnJvbVByb2Nlc3NJbml0ID0ge30pOiBDcmVkZW50aWFsUHJvdmlkZXIgPT5cbiAgYXN5bmMgKCkgPT4ge1xuICAgIGNvbnN0IHByb2ZpbGVzID0gYXdhaXQgcGFyc2VLbm93bkZpbGVzKGluaXQpO1xuICAgIHJldHVybiByZXNvbHZlUHJvY2Vzc0NyZWRlbnRpYWxzKGdldE1hc3RlclByb2ZpbGVOYW1lKGluaXQpLCBwcm9maWxlcyk7XG4gIH07XG5cbmNvbnN0IHJlc29sdmVQcm9jZXNzQ3JlZGVudGlhbHMgPSBhc3luYyAocHJvZmlsZU5hbWU6IHN0cmluZywgcHJvZmlsZXM6IFBhcnNlZEluaURhdGEpOiBQcm9taXNlPENyZWRlbnRpYWxzPiA9PiB7XG4gIGNvbnN0IHByb2ZpbGUgPSBwcm9maWxlc1twcm9maWxlTmFtZV07XG5cbiAgaWYgKHByb2ZpbGVzW3Byb2ZpbGVOYW1lXSkge1xuICAgIGNvbnN0IGNyZWRlbnRpYWxQcm9jZXNzID0gcHJvZmlsZVtcImNyZWRlbnRpYWxfcHJvY2Vzc1wiXTtcbiAgICBpZiAoY3JlZGVudGlhbFByb2Nlc3MgIT09IHVuZGVmaW5lZCkge1xuICAgICAgcmV0dXJuIGF3YWl0IGV4ZWNQcm9taXNlKGNyZWRlbnRpYWxQcm9jZXNzKVxuICAgICAgICAudGhlbigocHJvY2Vzc1Jlc3VsdDogYW55KSA9PiB7XG4gICAgICAgICAgbGV0IGRhdGE7XG4gICAgICAgICAgdHJ5IHtcbiAgICAgICAgICAgIGRhdGEgPSBKU09OLnBhcnNlKHByb2Nlc3NSZXN1bHQpO1xuICAgICAgICAgIH0gY2F0Y2gge1xuICAgICAgICAgICAgdGhyb3cgRXJyb3IoYFByb2ZpbGUgJHtwcm9maWxlTmFtZX0gY3JlZGVudGlhbF9wcm9jZXNzIHJldHVybmVkIGludmFsaWQgSlNPTi5gKTtcbiAgICAgICAgICB9XG5cbiAgICAgICAgICBjb25zdCB7XG4gICAgICAgICAgICBWZXJzaW9uOiB2ZXJzaW9uLFxuICAgICAgICAgICAgQWNjZXNzS2V5SWQ6IGFjY2Vzc0tleUlkLFxuICAgICAgICAgICAgU2VjcmV0QWNjZXNzS2V5OiBzZWNyZXRBY2Nlc3NLZXksXG4gICAgICAgICAgICBTZXNzaW9uVG9rZW46IHNlc3Npb25Ub2tlbixcbiAgICAgICAgICAgIEV4cGlyYXRpb246IGV4cGlyYXRpb24sXG4gICAgICAgICAgfSA9IGRhdGE7XG5cbiAgICAgICAgICBpZiAodmVyc2lvbiAhPT0gMSkge1xuICAgICAgICAgICAgdGhyb3cgRXJyb3IoYFByb2ZpbGUgJHtwcm9maWxlTmFtZX0gY3JlZGVudGlhbF9wcm9jZXNzIGRpZCBub3QgcmV0dXJuIFZlcnNpb24gMS5gKTtcbiAgICAgICAgICB9XG5cbiAgICAgICAgICBpZiAoYWNjZXNzS2V5SWQgPT09IHVuZGVmaW5lZCB8fCBzZWNyZXRBY2Nlc3NLZXkgPT09IHVuZGVmaW5lZCkge1xuICAgICAgICAgICAgdGhyb3cgRXJyb3IoYFByb2ZpbGUgJHtwcm9maWxlTmFtZX0gY3JlZGVudGlhbF9wcm9jZXNzIHJldHVybmVkIGludmFsaWQgY3JlZGVudGlhbHMuYCk7XG4gICAgICAgICAgfVxuXG4gICAgICAgICAgbGV0IGV4cGlyYXRpb25Vbml4O1xuXG4gICAgICAgICAgaWYgKGV4cGlyYXRpb24pIHtcbiAgICAgICAgICAgIGNvbnN0IGN1cnJlbnRUaW1lID0gbmV3IERhdGUoKTtcbiAgICAgICAgICAgIGNvbnN0IGV4cGlyZVRpbWUgPSBuZXcgRGF0ZShleHBpcmF0aW9uKTtcbiAgICAgICAgICAgIGlmIChleHBpcmVUaW1lIDwgY3VycmVudFRpbWUpIHtcbiAgICAgICAgICAgICAgdGhyb3cgRXJyb3IoYFByb2ZpbGUgJHtwcm9maWxlTmFtZX0gY3JlZGVudGlhbF9wcm9jZXNzIHJldHVybmVkIGV4cGlyZWQgY3JlZGVudGlhbHMuYCk7XG4gICAgICAgICAgICB9XG4gICAgICAgICAgICBleHBpcmF0aW9uVW5peCA9IE1hdGguZmxvb3IobmV3IERhdGUoZXhwaXJhdGlvbikudmFsdWVPZigpIC8gMTAwMCk7XG4gICAgICAgICAgfVxuXG4gICAgICAgICAgcmV0dXJuIHtcbiAgICAgICAgICAgIGFjY2Vzc0tleUlkLFxuICAgICAgICAgICAgc2VjcmV0QWNjZXNzS2V5LFxuICAgICAgICAgICAgc2Vzc2lvblRva2VuLFxuICAgICAgICAgICAgZXhwaXJhdGlvblVuaXgsXG4gICAgICAgICAgfTtcbiAgICAgICAgfSlcbiAgICAgICAgLmNhdGNoKChlcnJvcjogRXJyb3IpID0+IHtcbiAgICAgICAgICB0aHJvdyBuZXcgUHJvdmlkZXJFcnJvcihlcnJvci5tZXNzYWdlKTtcbiAgICAgICAgfSk7XG4gICAgfSBlbHNlIHtcbiAgICAgIHRocm93IG5ldyBQcm92aWRlckVycm9yKGBQcm9maWxlICR7cHJvZmlsZU5hbWV9IGRpZCBub3QgY29udGFpbiBjcmVkZW50aWFsX3Byb2Nlc3MuYCk7XG4gICAgfVxuICB9IGVsc2Uge1xuICAgIC8vIElmIHRoZSBwcm9maWxlIGNhbm5vdCBiZSBwYXJzZWQgb3IgZG9lcyBub3QgY29udGFpbiB0aGUgZGVmYXVsdCBvclxuICAgIC8vIHNwZWNpZmllZCBwcm9maWxlIHRocm93IGFuIGVycm9yLiBUaGlzIHNob3VsZCBiZSBjb25zaWRlcmVkIGEgdGVybWluYWxcbiAgICAvLyByZXNvbHV0aW9uIGVycm9yIGlmIGEgcHJvZmlsZSBoYXMgYmVlbiBzcGVjaWZpZWQgYnkgdGhlIHVzZXIgKHdoZXRoZXIgdmlhXG4gICAgLy8gYSBwYXJhbWV0ZXIsIGFuZW52aXJvbm1lbnQgdmFyaWFibGUsIG9yIGFub3RoZXIgcHJvZmlsZSdzIGBzb3VyY2VfcHJvZmlsZWAga2V5KS5cbiAgICB0aHJvdyBuZXcgUHJvdmlkZXJFcnJvcihgUHJvZmlsZSAke3Byb2ZpbGVOYW1lfSBjb3VsZCBub3QgYmUgZm91bmQgaW4gc2hhcmVkIGNyZWRlbnRpYWxzIGZpbGUuYCk7XG4gIH1cbn07XG5cbmNvbnN0IGV4ZWNQcm9taXNlID0gKGNvbW1hbmQ6IHN0cmluZykgPT5cbiAgbmV3IFByb21pc2UoZnVuY3Rpb24gKHJlc29sdmUsIHJlamVjdCkge1xuICAgIGV4ZWMoY29tbWFuZCwgKGVycm9yLCBzdGRvdXQpID0+IHtcbiAgICAgIGlmIChlcnJvcikge1xuICAgICAgICByZWplY3QoZXJyb3IpO1xuICAgICAgICByZXR1cm47XG4gICAgICB9XG5cbiAgICAgIHJlc29sdmUoc3Rkb3V0LnRyaW0oKSk7XG4gICAgfSk7XG4gIH0pO1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsa0VBQXNFO0FBR3RFLGdFQUFxRztBQUNyRyxpREFBcUM7QUFFckM7O0dBRUc7QUFDVSxRQUFBLFdBQVcsR0FBRyxhQUFhLENBQUM7QUFJekM7OztHQUdHO0FBQ0ksTUFBTSxXQUFXLEdBQ3RCLENBQUMsT0FBd0IsRUFBRSxFQUFzQixFQUFFLENBQ25ELEtBQUssSUFBSSxFQUFFO0lBQ1QsTUFBTSxRQUFRLEdBQUcsTUFBTSxrQ0FBZSxDQUFDLElBQUksQ0FBQyxDQUFDO0lBQzdDLE9BQU8seUJBQXlCLENBQUMsdUNBQW9CLENBQUMsSUFBSSxDQUFDLEVBQUUsUUFBUSxDQUFDLENBQUM7QUFDekUsQ0FBQyxDQUFDO0FBTFMsUUFBQSxXQUFXLGVBS3BCO0FBRUosTUFBTSx5QkFBeUIsR0FBRyxLQUFLLEVBQUUsV0FBbUIsRUFBRSxRQUF1QixFQUF3QixFQUFFO0lBQzdHLE1BQU0sT0FBTyxHQUFHLFFBQVEsQ0FBQyxXQUFXLENBQUMsQ0FBQztJQUV0QyxJQUFJLFFBQVEsQ0FBQyxXQUFXLENBQUMsRUFBRTtRQUN6QixNQUFNLGlCQUFpQixHQUFHLE9BQU8sQ0FBQyxvQkFBb0IsQ0FBQyxDQUFDO1FBQ3hELElBQUksaUJBQWlCLEtBQUssU0FBUyxFQUFFO1lBQ25DLE9BQU8sTUFBTSxXQUFXLENBQUMsaUJBQWlCLENBQUM7aUJBQ3hDLElBQUksQ0FBQyxDQUFDLGFBQWtCLEVBQUUsRUFBRTtnQkFDM0IsSUFBSSxJQUFJLENBQUM7Z0JBQ1QsSUFBSTtvQkFDRixJQUFJLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxhQUFhLENBQUMsQ0FBQztpQkFDbEM7Z0JBQUMsV0FBTTtvQkFDTixNQUFNLEtBQUssQ0FBQyxXQUFXLFdBQVcsNENBQTRDLENBQUMsQ0FBQztpQkFDakY7Z0JBRUQsTUFBTSxFQUNKLE9BQU8sRUFBRSxPQUFPLEVBQ2hCLFdBQVcsRUFBRSxXQUFXLEVBQ3hCLGVBQWUsRUFBRSxlQUFlLEVBQ2hDLFlBQVksRUFBRSxZQUFZLEVBQzFCLFVBQVUsRUFBRSxVQUFVLEdBQ3ZCLEdBQUcsSUFBSSxDQUFDO2dCQUVULElBQUksT0FBTyxLQUFLLENBQUMsRUFBRTtvQkFDakIsTUFBTSxLQUFLLENBQUMsV0FBVyxXQUFXLCtDQUErQyxDQUFDLENBQUM7aUJBQ3BGO2dCQUVELElBQUksV0FBVyxLQUFLLFNBQVMsSUFBSSxlQUFlLEtBQUssU0FBUyxFQUFFO29CQUM5RCxNQUFNLEtBQUssQ0FBQyxXQUFXLFdBQVcsbURBQW1ELENBQUMsQ0FBQztpQkFDeEY7Z0JBRUQsSUFBSSxjQUFjLENBQUM7Z0JBRW5CLElBQUksVUFBVSxFQUFFO29CQUNkLE1BQU0sV0FBVyxHQUFHLElBQUksSUFBSSxFQUFFLENBQUM7b0JBQy9CLE1BQU0sVUFBVSxHQUFHLElBQUksSUFBSSxDQUFDLFVBQVUsQ0FBQyxDQUFDO29CQUN4QyxJQUFJLFVBQVUsR0FBRyxXQUFXLEVBQUU7d0JBQzVCLE1BQU0sS0FBSyxDQUFDLFdBQVcsV0FBVyxtREFBbUQsQ0FBQyxDQUFDO3FCQUN4RjtvQkFDRCxjQUFjLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxJQUFJLElBQUksQ0FBQyxVQUFVLENBQUMsQ0FBQyxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUMsQ0FBQztpQkFDcEU7Z0JBRUQsT0FBTztvQkFDTCxXQUFXO29CQUNYLGVBQWU7b0JBQ2YsWUFBWTtvQkFDWixjQUFjO2lCQUNmLENBQUM7WUFDSixDQUFDLENBQUM7aUJBQ0QsS0FBSyxDQUFDLENBQUMsS0FBWSxFQUFFLEVBQUU7Z0JBQ3RCLE1BQU0sSUFBSSw0Q0FBd0IsQ0FBQyxLQUFLLENBQUMsT0FBTyxDQUFDLENBQUM7WUFDcEQsQ0FBQyxDQUFDLENBQUM7U0FDTjthQUFNO1lBQ0wsTUFBTSxJQUFJLDRDQUF3QixDQUFDLFdBQVcsV0FBVyxzQ0FBc0MsQ0FBQyxDQUFDO1NBQ2xHO0tBQ0Y7U0FBTTtRQUNMLHFFQUFxRTtRQUNyRSx5RUFBeUU7UUFDekUsNEVBQTRFO1FBQzVFLG1GQUFtRjtRQUNuRixNQUFNLElBQUksNENBQXdCLENBQUMsV0FBVyxXQUFXLGlEQUFpRCxDQUFDLENBQUM7S0FDN0c7QUFDSCxDQUFDLENBQUM7QUFFRixNQUFNLFdBQVcsR0FBRyxDQUFDLE9BQWUsRUFBRSxFQUFFLENBQ3RDLElBQUksT0FBTyxDQUFDLFVBQVUsT0FBTyxFQUFFLE1BQU07SUFDbkMsb0JBQUksQ0FBQyxPQUFPLEVBQUUsQ0FBQyxLQUFLLEVBQUUsTUFBTSxFQUFFLEVBQUU7UUFDOUIsSUFBSSxLQUFLLEVBQUU7WUFDVCxNQUFNLENBQUMsS0FBSyxDQUFDLENBQUM7WUFDZCxPQUFPO1NBQ1I7UUFFRCxPQUFPLENBQUMsTUFBTSxDQUFDLElBQUksRUFBRSxDQUFDLENBQUM7SUFDekIsQ0FBQyxDQUFDLENBQUM7QUFDTCxDQUFDLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENyZWRlbnRpYWxzUHJvdmlkZXJFcnJvciB9IGZyb20gXCJAYXdzLXNkay9wcm9wZXJ0eS1wcm92aWRlclwiO1xuaW1wb3J0IHsgUGFyc2VkSW5pRGF0YSB9IGZyb20gXCJAYXdzLXNkay9zaGFyZWQtaW5pLWZpbGUtbG9hZGVyXCI7XG5pbXBvcnQgeyBDcmVkZW50aWFsUHJvdmlkZXIsIENyZWRlbnRpYWxzIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyBnZXRNYXN0ZXJQcm9maWxlTmFtZSwgcGFyc2VLbm93bkZpbGVzLCBTb3VyY2VQcm9maWxlSW5pdCB9IGZyb20gXCJAYXdzLXNkay91dGlsLWNyZWRlbnRpYWxzXCI7XG5pbXBvcnQgeyBleGVjIH0gZnJvbSBcImNoaWxkX3Byb2Nlc3NcIjtcblxuLyoqXG4gKiBAaW50ZXJuYWxcbiAqL1xuZXhwb3J0IGNvbnN0IEVOVl9QUk9GSUxFID0gXCJBV1NfUFJPRklMRVwiO1xuXG5leHBvcnQgaW50ZXJmYWNlIEZyb21Qcm9jZXNzSW5pdCBleHRlbmRzIFNvdXJjZVByb2ZpbGVJbml0IHt9XG5cbi8qKlxuICogQ3JlYXRlcyBhIGNyZWRlbnRpYWwgcHJvdmlkZXIgdGhhdCB3aWxsIHJlYWQgZnJvbSBhIGNyZWRlbnRpYWxfcHJvY2VzcyBzcGVjaWZpZWRcbiAqIGluIGluaSBmaWxlcy5cbiAqL1xuZXhwb3J0IGNvbnN0IGZyb21Qcm9jZXNzID1cbiAgKGluaXQ6IEZyb21Qcm9jZXNzSW5pdCA9IHt9KTogQ3JlZGVudGlhbFByb3ZpZGVyID0+XG4gIGFzeW5jICgpID0+IHtcbiAgICBjb25zdCBwcm9maWxlcyA9IGF3YWl0IHBhcnNlS25vd25GaWxlcyhpbml0KTtcbiAgICByZXR1cm4gcmVzb2x2ZVByb2Nlc3NDcmVkZW50aWFscyhnZXRNYXN0ZXJQcm9maWxlTmFtZShpbml0KSwgcHJvZmlsZXMpO1xuICB9O1xuXG5jb25zdCByZXNvbHZlUHJvY2Vzc0NyZWRlbnRpYWxzID0gYXN5bmMgKHByb2ZpbGVOYW1lOiBzdHJpbmcsIHByb2ZpbGVzOiBQYXJzZWRJbmlEYXRhKTogUHJvbWlzZTxDcmVkZW50aWFscz4gPT4ge1xuICBjb25zdCBwcm9maWxlID0gcHJvZmlsZXNbcHJvZmlsZU5hbWVdO1xuXG4gIGlmIChwcm9maWxlc1twcm9maWxlTmFtZV0pIHtcbiAgICBjb25zdCBjcmVkZW50aWFsUHJvY2VzcyA9IHByb2ZpbGVbXCJjcmVkZW50aWFsX3Byb2Nlc3NcIl07XG4gICAgaWYgKGNyZWRlbnRpYWxQcm9jZXNzICE9PSB1bmRlZmluZWQpIHtcbiAgICAgIHJldHVybiBhd2FpdCBleGVjUHJvbWlzZShjcmVkZW50aWFsUHJvY2VzcylcbiAgICAgICAgLnRoZW4oKHByb2Nlc3NSZXN1bHQ6IGFueSkgPT4ge1xuICAgICAgICAgIGxldCBkYXRhO1xuICAgICAgICAgIHRyeSB7XG4gICAgICAgICAgICBkYXRhID0gSlNPTi5wYXJzZShwcm9jZXNzUmVzdWx0KTtcbiAgICAgICAgICB9IGNhdGNoIHtcbiAgICAgICAgICAgIHRocm93IEVycm9yKGBQcm9maWxlICR7cHJvZmlsZU5hbWV9IGNyZWRlbnRpYWxfcHJvY2VzcyByZXR1cm5lZCBpbnZhbGlkIEpTT04uYCk7XG4gICAgICAgICAgfVxuXG4gICAgICAgICAgY29uc3Qge1xuICAgICAgICAgICAgVmVyc2lvbjogdmVyc2lvbixcbiAgICAgICAgICAgIEFjY2Vzc0tleUlkOiBhY2Nlc3NLZXlJZCxcbiAgICAgICAgICAgIFNlY3JldEFjY2Vzc0tleTogc2VjcmV0QWNjZXNzS2V5LFxuICAgICAgICAgICAgU2Vzc2lvblRva2VuOiBzZXNzaW9uVG9rZW4sXG4gICAgICAgICAgICBFeHBpcmF0aW9uOiBleHBpcmF0aW9uLFxuICAgICAgICAgIH0gPSBkYXRhO1xuXG4gICAgICAgICAgaWYgKHZlcnNpb24gIT09IDEpIHtcbiAgICAgICAgICAgIHRocm93IEVycm9yKGBQcm9maWxlICR7cHJvZmlsZU5hbWV9IGNyZWRlbnRpYWxfcHJvY2VzcyBkaWQgbm90IHJldHVybiBWZXJzaW9uIDEuYCk7XG4gICAgICAgICAgfVxuXG4gICAgICAgICAgaWYgKGFjY2Vzc0tleUlkID09PSB1bmRlZmluZWQgfHwgc2VjcmV0QWNjZXNzS2V5ID09PSB1bmRlZmluZWQpIHtcbiAgICAgICAgICAgIHRocm93IEVycm9yKGBQcm9maWxlICR7cHJvZmlsZU5hbWV9IGNyZWRlbnRpYWxfcHJvY2VzcyByZXR1cm5lZCBpbnZhbGlkIGNyZWRlbnRpYWxzLmApO1xuICAgICAgICAgIH1cblxuICAgICAgICAgIGxldCBleHBpcmF0aW9uVW5peDtcblxuICAgICAgICAgIGlmIChleHBpcmF0aW9uKSB7XG4gICAgICAgICAgICBjb25zdCBjdXJyZW50VGltZSA9IG5ldyBEYXRlKCk7XG4gICAgICAgICAgICBjb25zdCBleHBpcmVUaW1lID0gbmV3IERhdGUoZXhwaXJhdGlvbik7XG4gICAgICAgICAgICBpZiAoZXhwaXJlVGltZSA8IGN1cnJlbnRUaW1lKSB7XG4gICAgICAgICAgICAgIHRocm93IEVycm9yKGBQcm9maWxlICR7cHJvZmlsZU5hbWV9IGNyZWRlbnRpYWxfcHJvY2VzcyByZXR1cm5lZCBleHBpcmVkIGNyZWRlbnRpYWxzLmApO1xuICAgICAgICAgICAgfVxuICAgICAgICAgICAgZXhwaXJhdGlvblVuaXggPSBNYXRoLmZsb29yKG5ldyBEYXRlKGV4cGlyYXRpb24pLnZhbHVlT2YoKSAvIDEwMDApO1xuICAgICAgICAgIH1cblxuICAgICAgICAgIHJldHVybiB7XG4gICAgICAgICAgICBhY2Nlc3NLZXlJZCxcbiAgICAgICAgICAgIHNlY3JldEFjY2Vzc0tleSxcbiAgICAgICAgICAgIHNlc3Npb25Ub2tlbixcbiAgICAgICAgICAgIGV4cGlyYXRpb25Vbml4LFxuICAgICAgICAgIH07XG4gICAgICAgIH0pXG4gICAgICAgIC5jYXRjaCgoZXJyb3I6IEVycm9yKSA9PiB7XG4gICAgICAgICAgdGhyb3cgbmV3IENyZWRlbnRpYWxzUHJvdmlkZXJFcnJvcihlcnJvci5tZXNzYWdlKTtcbiAgICAgICAgfSk7XG4gICAgfSBlbHNlIHtcbiAgICAgIHRocm93IG5ldyBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3IoYFByb2ZpbGUgJHtwcm9maWxlTmFtZX0gZGlkIG5vdCBjb250YWluIGNyZWRlbnRpYWxfcHJvY2Vzcy5gKTtcbiAgICB9XG4gIH0gZWxzZSB7XG4gICAgLy8gSWYgdGhlIHByb2ZpbGUgY2Fubm90IGJlIHBhcnNlZCBvciBkb2VzIG5vdCBjb250YWluIHRoZSBkZWZhdWx0IG9yXG4gICAgLy8gc3BlY2lmaWVkIHByb2ZpbGUgdGhyb3cgYW4gZXJyb3IuIFRoaXMgc2hvdWxkIGJlIGNvbnNpZGVyZWQgYSB0ZXJtaW5hbFxuICAgIC8vIHJlc29sdXRpb24gZXJyb3IgaWYgYSBwcm9maWxlIGhhcyBiZWVuIHNwZWNpZmllZCBieSB0aGUgdXNlciAod2hldGhlciB2aWFcbiAgICAvLyBhIHBhcmFtZXRlciwgYW5lbnZpcm9ubWVudCB2YXJpYWJsZSwgb3IgYW5vdGhlciBwcm9maWxlJ3MgYHNvdXJjZV9wcm9maWxlYCBrZXkpLlxuICAgIHRocm93IG5ldyBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3IoYFByb2ZpbGUgJHtwcm9maWxlTmFtZX0gY291bGQgbm90IGJlIGZvdW5kIGluIHNoYXJlZCBjcmVkZW50aWFscyBmaWxlLmApO1xuICB9XG59O1xuXG5jb25zdCBleGVjUHJvbWlzZSA9IChjb21tYW5kOiBzdHJpbmcpID0+XG4gIG5ldyBQcm9taXNlKGZ1bmN0aW9uIChyZXNvbHZlLCByZWplY3QpIHtcbiAgICBleGVjKGNvbW1hbmQsIChlcnJvciwgc3Rkb3V0KSA9PiB7XG4gICAgICBpZiAoZXJyb3IpIHtcbiAgICAgICAgcmVqZWN0KGVycm9yKTtcbiAgICAgICAgcmV0dXJuO1xuICAgICAgfVxuXG4gICAgICByZXNvbHZlKHN0ZG91dC50cmltKCkpO1xuICAgIH0pO1xuICB9KTtcbiJdfQ==
 
 /***/ }),
 
@@ -38289,11 +38359,11 @@ const execPromise = (command) => new Promise(function (resolve, reject) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.fromSSO = exports.EXPIRE_WINDOW_MS = void 0;
+exports.isSsoProfile = exports.validateSsoProfile = exports.fromSSO = exports.EXPIRE_WINDOW_MS = void 0;
 const client_sso_1 = __nccwpck_require__(2611);
-const credential_provider_ini_1 = __nccwpck_require__(2975);
 const property_provider_1 = __nccwpck_require__(1014);
 const shared_ini_file_loader_1 = __nccwpck_require__(4847);
+const util_credentials_1 = __nccwpck_require__(2565);
 const crypto_1 = __nccwpck_require__(6417);
 const fs_1 = __nccwpck_require__(5747);
 const path_1 = __nccwpck_require__(5622);
@@ -38310,25 +38380,36 @@ const SHOULD_FAIL_CREDENTIAL_CHAIN = false;
  * in ini files.
  */
 const fromSSO = (init = {}) => async () => {
-    const profiles = await credential_provider_ini_1.parseKnownFiles(init);
-    return resolveSSOCredentials(credential_provider_ini_1.getMasterProfileName(init), profiles, init);
+    const { ssoStartUrl, ssoAccountId, ssoRegion, ssoRoleName, ssoClient } = init;
+    if (!ssoStartUrl && !ssoAccountId && !ssoRegion && !ssoRoleName) {
+        // Load the SSO config from shared AWS config file.
+        const profiles = await util_credentials_1.parseKnownFiles(init);
+        const profileName = util_credentials_1.getMasterProfileName(init);
+        const profile = profiles[profileName];
+        if (!exports.isSsoProfile(profile)) {
+            throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} is not configured with SSO credentials.`);
+        }
+        const { sso_start_url, sso_account_id, sso_region, sso_role_name } = exports.validateSsoProfile(profile);
+        return resolveSSOCredentials({
+            ssoStartUrl: sso_start_url,
+            ssoAccountId: sso_account_id,
+            ssoRegion: sso_region,
+            ssoRoleName: sso_role_name,
+            ssoClient: ssoClient,
+        });
+    }
+    else if (!ssoStartUrl || !ssoAccountId || !ssoRegion || !ssoRoleName) {
+        throw new property_provider_1.CredentialsProviderError('Incomplete configuration. The fromSSO() argument hash must include "ssoStartUrl",' +
+            ' "ssoAccountId", "ssoRegion", "ssoRoleName"');
+    }
+    else {
+        return resolveSSOCredentials({ ssoStartUrl, ssoAccountId, ssoRegion, ssoRoleName, ssoClient });
+    }
 };
 exports.fromSSO = fromSSO;
-const resolveSSOCredentials = async (profileName, profiles, options) => {
-    const profile = profiles[profileName];
-    if (!profile) {
-        throw new property_provider_1.ProviderError(`Profile ${profileName} could not be found in shared credentials file.`);
-    }
-    const { sso_start_url: startUrl, sso_account_id: accountId, sso_region: region, sso_role_name: roleName } = profile;
-    if (!startUrl && !accountId && !region && !roleName) {
-        throw new property_provider_1.ProviderError(`Profile ${profileName} is not configured with SSO credentials.`);
-    }
-    if (!startUrl || !accountId || !region || !roleName) {
-        throw new property_provider_1.ProviderError(`Profile ${profileName} does not have valid SSO credentials. Required parameters "sso_account_id", "sso_region", ` +
-            `"sso_role_name", "sso_start_url". Reference: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html`, SHOULD_FAIL_CREDENTIAL_CHAIN);
-    }
+const resolveSSOCredentials = async ({ ssoStartUrl, ssoAccountId, ssoRegion, ssoRoleName, ssoClient, }) => {
     const hasher = crypto_1.createHash("sha1");
-    const cacheName = hasher.update(startUrl).digest("hex");
+    const cacheName = hasher.update(ssoStartUrl).digest("hex");
     const tokenFile = path_1.join(shared_ini_file_loader_1.getHomeDir(), ".aws", "sso", "cache", `${cacheName}.json`);
     let token;
     try {
@@ -38338,29 +38419,50 @@ const resolveSSOCredentials = async (profileName, profiles, options) => {
         }
     }
     catch (e) {
-        throw new property_provider_1.ProviderError(`The SSO session associated with this profile has expired or is otherwise invalid. To refresh this SSO session ` +
+        throw new property_provider_1.CredentialsProviderError(`The SSO session associated with this profile has expired or is otherwise invalid. To refresh this SSO session ` +
             `run aws sso login with the corresponding profile.`, SHOULD_FAIL_CREDENTIAL_CHAIN);
     }
     const { accessToken } = token;
-    const sso = options.ssoClient || new client_sso_1.SSOClient({ region });
+    const sso = ssoClient || new client_sso_1.SSOClient({ region: ssoRegion });
     let ssoResp;
     try {
         ssoResp = await sso.send(new client_sso_1.GetRoleCredentialsCommand({
-            accountId,
-            roleName,
+            accountId: ssoAccountId,
+            roleName: ssoRoleName,
             accessToken,
         }));
     }
     catch (e) {
-        throw property_provider_1.ProviderError.from(e, SHOULD_FAIL_CREDENTIAL_CHAIN);
+        throw property_provider_1.CredentialsProviderError.from(e, SHOULD_FAIL_CREDENTIAL_CHAIN);
     }
     const { roleCredentials: { accessKeyId, secretAccessKey, sessionToken, expiration } = {} } = ssoResp;
     if (!accessKeyId || !secretAccessKey || !sessionToken || !expiration) {
-        throw new property_provider_1.ProviderError("SSO returns an invalid temporary credential.", SHOULD_FAIL_CREDENTIAL_CHAIN);
+        throw new property_provider_1.CredentialsProviderError("SSO returns an invalid temporary credential.", SHOULD_FAIL_CREDENTIAL_CHAIN);
     }
     return { accessKeyId, secretAccessKey, sessionToken, expiration: new Date(expiration) };
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsb0RBQTRHO0FBQzVHLDhFQUE0RztBQUM1RyxrRUFBMkQ7QUFDM0QsNEVBQTRFO0FBRTVFLG1DQUFvQztBQUNwQywyQkFBa0M7QUFDbEMsK0JBQTRCO0FBRTVCOzs7OztHQUtHO0FBQ1UsUUFBQSxnQkFBZ0IsR0FBRyxFQUFFLEdBQUcsRUFBRSxHQUFHLElBQUksQ0FBQztBQUUvQyxNQUFNLDRCQUE0QixHQUFHLEtBQUssQ0FBQztBQWtCM0M7OztHQUdHO0FBQ0ksTUFBTSxPQUFPLEdBQ2xCLENBQUMsT0FBb0IsRUFBRSxFQUFzQixFQUFFLENBQy9DLEtBQUssSUFBSSxFQUFFO0lBQ1QsTUFBTSxRQUFRLEdBQUcsTUFBTSx5Q0FBZSxDQUFDLElBQUksQ0FBQyxDQUFDO0lBQzdDLE9BQU8scUJBQXFCLENBQUMsOENBQW9CLENBQUMsSUFBSSxDQUFDLEVBQUUsUUFBUSxFQUFFLElBQUksQ0FBQyxDQUFDO0FBQzNFLENBQUMsQ0FBQztBQUxTLFFBQUEsT0FBTyxXQUtoQjtBQUVKLE1BQU0scUJBQXFCLEdBQUcsS0FBSyxFQUNqQyxXQUFtQixFQUNuQixRQUF1QixFQUN2QixPQUFvQixFQUNFLEVBQUU7SUFDeEIsTUFBTSxPQUFPLEdBQUcsUUFBUSxDQUFDLFdBQVcsQ0FBQyxDQUFDO0lBQ3RDLElBQUksQ0FBQyxPQUFPLEVBQUU7UUFDWixNQUFNLElBQUksaUNBQWEsQ0FBQyxXQUFXLFdBQVcsaURBQWlELENBQUMsQ0FBQztLQUNsRztJQUNELE1BQU0sRUFBRSxhQUFhLEVBQUUsUUFBUSxFQUFFLGNBQWMsRUFBRSxTQUFTLEVBQUUsVUFBVSxFQUFFLE1BQU0sRUFBRSxhQUFhLEVBQUUsUUFBUSxFQUFFLEdBQUcsT0FBTyxDQUFDO0lBQ3BILElBQUksQ0FBQyxRQUFRLElBQUksQ0FBQyxTQUFTLElBQUksQ0FBQyxNQUFNLElBQUksQ0FBQyxRQUFRLEVBQUU7UUFDbkQsTUFBTSxJQUFJLGlDQUFhLENBQUMsV0FBVyxXQUFXLDBDQUEwQyxDQUFDLENBQUM7S0FDM0Y7SUFDRCxJQUFJLENBQUMsUUFBUSxJQUFJLENBQUMsU0FBUyxJQUFJLENBQUMsTUFBTSxJQUFJLENBQUMsUUFBUSxFQUFFO1FBQ25ELE1BQU0sSUFBSSxpQ0FBYSxDQUNyQixXQUFXLFdBQVcsNEZBQTRGO1lBQ2hILHNIQUFzSCxFQUN4SCw0QkFBNEIsQ0FDN0IsQ0FBQztLQUNIO0lBQ0QsTUFBTSxNQUFNLEdBQUcsbUJBQVUsQ0FBQyxNQUFNLENBQUMsQ0FBQztJQUNsQyxNQUFNLFNBQVMsR0FBRyxNQUFNLENBQUMsTUFBTSxDQUFDLFFBQVEsQ0FBQyxDQUFDLE1BQU0sQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUN4RCxNQUFNLFNBQVMsR0FBRyxXQUFJLENBQUMsbUNBQVUsRUFBRSxFQUFFLE1BQU0sRUFBRSxLQUFLLEVBQUUsT0FBTyxFQUFFLEdBQUcsU0FBUyxPQUFPLENBQUMsQ0FBQztJQUNsRixJQUFJLEtBQWUsQ0FBQztJQUNwQixJQUFJO1FBQ0YsS0FBSyxHQUFHLElBQUksQ0FBQyxLQUFLLENBQUMsaUJBQVksQ0FBQyxTQUFTLEVBQUUsRUFBRSxRQUFRLEVBQUUsT0FBTyxFQUFFLENBQUMsQ0FBQyxDQUFDO1FBQ25FLElBQUksSUFBSSxJQUFJLENBQUMsS0FBSyxDQUFDLFNBQVMsQ0FBQyxDQUFDLE9BQU8sRUFBRSxHQUFHLElBQUksQ0FBQyxHQUFHLEVBQUUsSUFBSSx3QkFBZ0IsRUFBRTtZQUN4RSxNQUFNLElBQUksS0FBSyxDQUFDLHVCQUF1QixDQUFDLENBQUM7U0FDMUM7S0FDRjtJQUFDLE9BQU8sQ0FBQyxFQUFFO1FBQ1YsTUFBTSxJQUFJLGlDQUFhLENBQ3JCLGdIQUFnSDtZQUM5RyxtREFBbUQsRUFDckQsNEJBQTRCLENBQzdCLENBQUM7S0FDSDtJQUNELE1BQU0sRUFBRSxXQUFXLEVBQUUsR0FBRyxLQUFLLENBQUM7SUFDOUIsTUFBTSxHQUFHLEdBQUcsT0FBTyxDQUFDLFNBQVMsSUFBSSxJQUFJLHNCQUFTLENBQUMsRUFBRSxNQUFNLEVBQUUsQ0FBQyxDQUFDO0lBQzNELElBQUksT0FBd0MsQ0FBQztJQUM3QyxJQUFJO1FBQ0YsT0FBTyxHQUFHLE1BQU0sR0FBRyxDQUFDLElBQUksQ0FDdEIsSUFBSSxzQ0FBeUIsQ0FBQztZQUM1QixTQUFTO1lBQ1QsUUFBUTtZQUNSLFdBQVc7U0FDWixDQUFDLENBQ0gsQ0FBQztLQUNIO0lBQUMsT0FBTyxDQUFDLEVBQUU7UUFDVixNQUFNLGlDQUFhLENBQUMsSUFBSSxDQUFDLENBQUMsRUFBRSw0QkFBNEIsQ0FBQyxDQUFDO0tBQzNEO0lBQ0QsTUFBTSxFQUFFLGVBQWUsRUFBRSxFQUFFLFdBQVcsRUFBRSxlQUFlLEVBQUUsWUFBWSxFQUFFLFVBQVUsRUFBRSxHQUFHLEVBQUUsRUFBRSxHQUFHLE9BQU8sQ0FBQztJQUNyRyxJQUFJLENBQUMsV0FBVyxJQUFJLENBQUMsZUFBZSxJQUFJLENBQUMsWUFBWSxJQUFJLENBQUMsVUFBVSxFQUFFO1FBQ3BFLE1BQU0sSUFBSSxpQ0FBYSxDQUFDLDhDQUE4QyxFQUFFLDRCQUE0QixDQUFDLENBQUM7S0FDdkc7SUFDRCxPQUFPLEVBQUUsV0FBVyxFQUFFLGVBQWUsRUFBRSxZQUFZLEVBQUUsVUFBVSxFQUFFLElBQUksSUFBSSxDQUFDLFVBQVUsQ0FBQyxFQUFFLENBQUM7QUFDMUYsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgR2V0Um9sZUNyZWRlbnRpYWxzQ29tbWFuZCwgR2V0Um9sZUNyZWRlbnRpYWxzQ29tbWFuZE91dHB1dCwgU1NPQ2xpZW50IH0gZnJvbSBcIkBhd3Mtc2RrL2NsaWVudC1zc29cIjtcbmltcG9ydCB7IGdldE1hc3RlclByb2ZpbGVOYW1lLCBwYXJzZUtub3duRmlsZXMsIFNvdXJjZVByb2ZpbGVJbml0IH0gZnJvbSBcIkBhd3Mtc2RrL2NyZWRlbnRpYWwtcHJvdmlkZXItaW5pXCI7XG5pbXBvcnQgeyBQcm92aWRlckVycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBnZXRIb21lRGlyLCBQYXJzZWRJbmlEYXRhIH0gZnJvbSBcIkBhd3Mtc2RrL3NoYXJlZC1pbmktZmlsZS1sb2FkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciwgQ3JlZGVudGlhbHMgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IGNyZWF0ZUhhc2ggfSBmcm9tIFwiY3J5cHRvXCI7XG5pbXBvcnQgeyByZWFkRmlsZVN5bmMgfSBmcm9tIFwiZnNcIjtcbmltcG9ydCB7IGpvaW4gfSBmcm9tIFwicGF0aFwiO1xuXG4vKipcbiAqIFRoZSB0aW1lIHdpbmRvdyAoMTUgbWlucykgdGhhdCBTREsgd2lsbCB0cmVhdCB0aGUgU1NPIHRva2VuIGV4cGlyZXMgaW4gYmVmb3JlIHRoZSBkZWZpbmVkIGV4cGlyYXRpb24gZGF0ZSBpbiB0b2tlbi5cbiAqIFRoaXMgaXMgbmVlZGVkIGJlY2F1c2Ugc2VydmVyIHNpZGUgbWF5IGhhdmUgaW52YWxpZGF0ZWQgdGhlIHRva2VuIGJlZm9yZSB0aGUgZGVmaW5lZCBleHBpcmF0aW9uIGRhdGUuXG4gKlxuICogQGludGVybmFsXG4gKi9cbmV4cG9ydCBjb25zdCBFWFBJUkVfV0lORE9XX01TID0gMTUgKiA2MCAqIDEwMDA7XG5cbmNvbnN0IFNIT1VMRF9GQUlMX0NSRURFTlRJQUxfQ0hBSU4gPSBmYWxzZTtcblxuLyoqXG4gKiBDYWNoZWQgU1NPIHRva2VuIHJldHJpZXZlZCBmcm9tIFNTTyBsb2dpbiBmbG93LlxuICovXG5pbnRlcmZhY2UgU1NPVG9rZW4ge1xuICAvLyBBIGJhc2U2NCBlbmNvZGVkIHN0cmluZyByZXR1cm5lZCBieSB0aGUgc3NvLW9pZGMgc2VydmljZS5cbiAgYWNjZXNzVG9rZW46IHN0cmluZztcbiAgLy8gUkZDMzMzOSBmb3JtYXQgdGltZXN0YW1wXG4gIGV4cGlyZXNBdDogc3RyaW5nO1xuICByZWdpb24/OiBzdHJpbmc7XG4gIHN0YXJ0VXJsPzogc3RyaW5nO1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIEZyb21TU09Jbml0IGV4dGVuZHMgU291cmNlUHJvZmlsZUluaXQge1xuICBzc29DbGllbnQ/OiBTU09DbGllbnQ7XG59XG5cbi8qKlxuICogQ3JlYXRlcyBhIGNyZWRlbnRpYWwgcHJvdmlkZXIgdGhhdCB3aWxsIHJlYWQgZnJvbSBhIGNyZWRlbnRpYWxfcHJvY2VzcyBzcGVjaWZpZWRcbiAqIGluIGluaSBmaWxlcy5cbiAqL1xuZXhwb3J0IGNvbnN0IGZyb21TU08gPVxuICAoaW5pdDogRnJvbVNTT0luaXQgPSB7fSk6IENyZWRlbnRpYWxQcm92aWRlciA9PlxuICBhc3luYyAoKSA9PiB7XG4gICAgY29uc3QgcHJvZmlsZXMgPSBhd2FpdCBwYXJzZUtub3duRmlsZXMoaW5pdCk7XG4gICAgcmV0dXJuIHJlc29sdmVTU09DcmVkZW50aWFscyhnZXRNYXN0ZXJQcm9maWxlTmFtZShpbml0KSwgcHJvZmlsZXMsIGluaXQpO1xuICB9O1xuXG5jb25zdCByZXNvbHZlU1NPQ3JlZGVudGlhbHMgPSBhc3luYyAoXG4gIHByb2ZpbGVOYW1lOiBzdHJpbmcsXG4gIHByb2ZpbGVzOiBQYXJzZWRJbmlEYXRhLFxuICBvcHRpb25zOiBGcm9tU1NPSW5pdFxuKTogUHJvbWlzZTxDcmVkZW50aWFscz4gPT4ge1xuICBjb25zdCBwcm9maWxlID0gcHJvZmlsZXNbcHJvZmlsZU5hbWVdO1xuICBpZiAoIXByb2ZpbGUpIHtcbiAgICB0aHJvdyBuZXcgUHJvdmlkZXJFcnJvcihgUHJvZmlsZSAke3Byb2ZpbGVOYW1lfSBjb3VsZCBub3QgYmUgZm91bmQgaW4gc2hhcmVkIGNyZWRlbnRpYWxzIGZpbGUuYCk7XG4gIH1cbiAgY29uc3QgeyBzc29fc3RhcnRfdXJsOiBzdGFydFVybCwgc3NvX2FjY291bnRfaWQ6IGFjY291bnRJZCwgc3NvX3JlZ2lvbjogcmVnaW9uLCBzc29fcm9sZV9uYW1lOiByb2xlTmFtZSB9ID0gcHJvZmlsZTtcbiAgaWYgKCFzdGFydFVybCAmJiAhYWNjb3VudElkICYmICFyZWdpb24gJiYgIXJvbGVOYW1lKSB7XG4gICAgdGhyb3cgbmV3IFByb3ZpZGVyRXJyb3IoYFByb2ZpbGUgJHtwcm9maWxlTmFtZX0gaXMgbm90IGNvbmZpZ3VyZWQgd2l0aCBTU08gY3JlZGVudGlhbHMuYCk7XG4gIH1cbiAgaWYgKCFzdGFydFVybCB8fCAhYWNjb3VudElkIHx8ICFyZWdpb24gfHwgIXJvbGVOYW1lKSB7XG4gICAgdGhyb3cgbmV3IFByb3ZpZGVyRXJyb3IoXG4gICAgICBgUHJvZmlsZSAke3Byb2ZpbGVOYW1lfSBkb2VzIG5vdCBoYXZlIHZhbGlkIFNTTyBjcmVkZW50aWFscy4gUmVxdWlyZWQgcGFyYW1ldGVycyBcInNzb19hY2NvdW50X2lkXCIsIFwic3NvX3JlZ2lvblwiLCBgICtcbiAgICAgICAgYFwic3NvX3JvbGVfbmFtZVwiLCBcInNzb19zdGFydF91cmxcIi4gUmVmZXJlbmNlOiBodHRwczovL2RvY3MuYXdzLmFtYXpvbi5jb20vY2xpL2xhdGVzdC91c2VyZ3VpZGUvY2xpLWNvbmZpZ3VyZS1zc28uaHRtbGAsXG4gICAgICBTSE9VTERfRkFJTF9DUkVERU5USUFMX0NIQUlOXG4gICAgKTtcbiAgfVxuICBjb25zdCBoYXNoZXIgPSBjcmVhdGVIYXNoKFwic2hhMVwiKTtcbiAgY29uc3QgY2FjaGVOYW1lID0gaGFzaGVyLnVwZGF0ZShzdGFydFVybCkuZGlnZXN0KFwiaGV4XCIpO1xuICBjb25zdCB0b2tlbkZpbGUgPSBqb2luKGdldEhvbWVEaXIoKSwgXCIuYXdzXCIsIFwic3NvXCIsIFwiY2FjaGVcIiwgYCR7Y2FjaGVOYW1lfS5qc29uYCk7XG4gIGxldCB0b2tlbjogU1NPVG9rZW47XG4gIHRyeSB7XG4gICAgdG9rZW4gPSBKU09OLnBhcnNlKHJlYWRGaWxlU3luYyh0b2tlbkZpbGUsIHsgZW5jb2Rpbmc6IFwidXRmLThcIiB9KSk7XG4gICAgaWYgKG5ldyBEYXRlKHRva2VuLmV4cGlyZXNBdCkuZ2V0VGltZSgpIC0gRGF0ZS5ub3coKSA8PSBFWFBJUkVfV0lORE9XX01TKSB7XG4gICAgICB0aHJvdyBuZXcgRXJyb3IoXCJTU08gdG9rZW4gaXMgZXhwaXJlZC5cIik7XG4gICAgfVxuICB9IGNhdGNoIChlKSB7XG4gICAgdGhyb3cgbmV3IFByb3ZpZGVyRXJyb3IoXG4gICAgICBgVGhlIFNTTyBzZXNzaW9uIGFzc29jaWF0ZWQgd2l0aCB0aGlzIHByb2ZpbGUgaGFzIGV4cGlyZWQgb3IgaXMgb3RoZXJ3aXNlIGludmFsaWQuIFRvIHJlZnJlc2ggdGhpcyBTU08gc2Vzc2lvbiBgICtcbiAgICAgICAgYHJ1biBhd3Mgc3NvIGxvZ2luIHdpdGggdGhlIGNvcnJlc3BvbmRpbmcgcHJvZmlsZS5gLFxuICAgICAgU0hPVUxEX0ZBSUxfQ1JFREVOVElBTF9DSEFJTlxuICAgICk7XG4gIH1cbiAgY29uc3QgeyBhY2Nlc3NUb2tlbiB9ID0gdG9rZW47XG4gIGNvbnN0IHNzbyA9IG9wdGlvbnMuc3NvQ2xpZW50IHx8IG5ldyBTU09DbGllbnQoeyByZWdpb24gfSk7XG4gIGxldCBzc29SZXNwOiBHZXRSb2xlQ3JlZGVudGlhbHNDb21tYW5kT3V0cHV0O1xuICB0cnkge1xuICAgIHNzb1Jlc3AgPSBhd2FpdCBzc28uc2VuZChcbiAgICAgIG5ldyBHZXRSb2xlQ3JlZGVudGlhbHNDb21tYW5kKHtcbiAgICAgICAgYWNjb3VudElkLFxuICAgICAgICByb2xlTmFtZSxcbiAgICAgICAgYWNjZXNzVG9rZW4sXG4gICAgICB9KVxuICAgICk7XG4gIH0gY2F0Y2ggKGUpIHtcbiAgICB0aHJvdyBQcm92aWRlckVycm9yLmZyb20oZSwgU0hPVUxEX0ZBSUxfQ1JFREVOVElBTF9DSEFJTik7XG4gIH1cbiAgY29uc3QgeyByb2xlQ3JlZGVudGlhbHM6IHsgYWNjZXNzS2V5SWQsIHNlY3JldEFjY2Vzc0tleSwgc2Vzc2lvblRva2VuLCBleHBpcmF0aW9uIH0gPSB7fSB9ID0gc3NvUmVzcDtcbiAgaWYgKCFhY2Nlc3NLZXlJZCB8fCAhc2VjcmV0QWNjZXNzS2V5IHx8ICFzZXNzaW9uVG9rZW4gfHwgIWV4cGlyYXRpb24pIHtcbiAgICB0aHJvdyBuZXcgUHJvdmlkZXJFcnJvcihcIlNTTyByZXR1cm5zIGFuIGludmFsaWQgdGVtcG9yYXJ5IGNyZWRlbnRpYWwuXCIsIFNIT1VMRF9GQUlMX0NSRURFTlRJQUxfQ0hBSU4pO1xuICB9XG4gIHJldHVybiB7IGFjY2Vzc0tleUlkLCBzZWNyZXRBY2Nlc3NLZXksIHNlc3Npb25Ub2tlbiwgZXhwaXJhdGlvbjogbmV3IERhdGUoZXhwaXJhdGlvbikgfTtcbn07XG4iXX0=
+/**
+ * @internal
+ */
+const validateSsoProfile = (profile) => {
+    const { sso_start_url, sso_account_id, sso_region, sso_role_name } = profile;
+    if (!sso_start_url || !sso_account_id || !sso_region || !sso_role_name) {
+        throw new property_provider_1.CredentialsProviderError(`Profile is configured with invalid SSO credentials. Required parameters "sso_account_id", "sso_region", ` +
+            `"sso_role_name", "sso_start_url". Got ${Object.keys(profile).join(", ")}\nReference: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html`, SHOULD_FAIL_CREDENTIAL_CHAIN);
+    }
+    return profile;
+};
+exports.validateSsoProfile = validateSsoProfile;
+/**
+ * @internal
+ */
+const isSsoProfile = (arg) => arg &&
+    (typeof arg.sso_start_url === "string" ||
+        typeof arg.sso_account_id === "string" ||
+        typeof arg.sso_region === "string" ||
+        typeof arg.sso_role_name === "string");
+exports.isSsoProfile = isSsoProfile;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsb0RBQTRHO0FBQzVHLGtFQUFzRTtBQUN0RSw0RUFBc0U7QUFFdEUsZ0VBQXFHO0FBQ3JHLG1DQUFvQztBQUNwQywyQkFBa0M7QUFDbEMsK0JBQTRCO0FBRTVCOzs7OztHQUtHO0FBQ1UsUUFBQSxnQkFBZ0IsR0FBRyxFQUFFLEdBQUcsRUFBRSxHQUFHLElBQUksQ0FBQztBQUUvQyxNQUFNLDRCQUE0QixHQUFHLEtBQUssQ0FBQztBQXVDM0M7OztHQUdHO0FBQ0ksTUFBTSxPQUFPLEdBQ2xCLENBQUMsT0FBd0QsRUFBUyxFQUFzQixFQUFFLENBQzFGLEtBQUssSUFBSSxFQUFFO0lBQ1QsTUFBTSxFQUFFLFdBQVcsRUFBRSxZQUFZLEVBQUUsU0FBUyxFQUFFLFdBQVcsRUFBRSxTQUFTLEVBQUUsR0FBRyxJQUFJLENBQUM7SUFDOUUsSUFBSSxDQUFDLFdBQVcsSUFBSSxDQUFDLFlBQVksSUFBSSxDQUFDLFNBQVMsSUFBSSxDQUFDLFdBQVcsRUFBRTtRQUMvRCxtREFBbUQ7UUFDbkQsTUFBTSxRQUFRLEdBQUcsTUFBTSxrQ0FBZSxDQUFDLElBQUksQ0FBQyxDQUFDO1FBQzdDLE1BQU0sV0FBVyxHQUFHLHVDQUFvQixDQUFDLElBQUksQ0FBQyxDQUFDO1FBQy9DLE1BQU0sT0FBTyxHQUFHLFFBQVEsQ0FBQyxXQUFXLENBQUMsQ0FBQztRQUN0QyxJQUFJLENBQUMsb0JBQVksQ0FBQyxPQUFPLENBQUMsRUFBRTtZQUMxQixNQUFNLElBQUksNENBQXdCLENBQUMsV0FBVyxXQUFXLDBDQUEwQyxDQUFDLENBQUM7U0FDdEc7UUFDRCxNQUFNLEVBQUUsYUFBYSxFQUFFLGNBQWMsRUFBRSxVQUFVLEVBQUUsYUFBYSxFQUFFLEdBQUcsMEJBQWtCLENBQUMsT0FBTyxDQUFDLENBQUM7UUFDakcsT0FBTyxxQkFBcUIsQ0FB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LEVBQUUsQ0FBQztBQUMxRixDQUFDLENBQUM7QUFZRjs7R0FFRztBQUNJLE1BQU0sa0JBQWtCLEdBQUcsQ0FBQyxPQUE0QixFQUFjLEVBQUU7SUFDN0UsTUFBTSxFQUFFLGFBQWEsRUFBRSxjQUFjLEVBQUUsVUFBVSxFQUFFLGFBQWEsRUFBRSxHQUFHLE9BQU8sQ0FBQztJQUM3RSxJQUFJLENBQUMsYUFBYSxJQUFJLENBQUMsY0FBYyxJQUFJLENBQUMsVUFBVSxJQUFJLENBQUMsYUFBYSxFQUFFO1FBQ3RFLE1BQU0sSUFBSSw0Q0FBd0IsQ0FDaEMsMEdBQTBHO1lBQ3hHLHlDQUF5QyxNQUFNLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDLElBQUksQ0FDaEUsSUFBSSxDQUNMLHNGQUFzRixFQUN6Riw0QkFBNEIsQ0FDN0IsQ0FBQztLQUNIO0lBQ0QsT0FBTyxPQUFxQixDQUFDO0FBQy9CLENBQUMsQ0FBQztBQVpXLFFBQUEsa0JBQWtCLHNCQVk3QjtBQUVGOztHQUVHO0FBQ0ksTUFBTSxZQUFZLEdBQUcsQ0FBQyxHQUFZLEVBQThCLEVBQUUsQ0FDdkUsR0FBRztJQUNILENBQUMsT0FBTyxHQUFHLENBQUMsYUFBYSxLQUFLLFFBQVE7UUFDcEMsT0FBTyxHQUFHLENBQUMsY0FBYyxLQUFLLFFBQVE7UUFDdEMsT0FBTyxHQUFHLENBQUMsVUFBVSxLQUFLLFFBQVE7UUFDbEMsT0FBTyxHQUFHLENBQUMsYUFBYSxLQUFLLFFBQVEsQ0FBQyxDQUFDO0FBTDlCLFFBQUEsWUFBWSxnQkFLa0IiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBHZXRSb2xlQ3JlZGVudGlhbHNDb21tYW5kLCBHZXRSb2xlQ3JlZGVudGlhbHNDb21tYW5kT3V0cHV0LCBTU09DbGllbnQgfSBmcm9tIFwiQGF3cy1zZGsvY2xpZW50LXNzb1wiO1xuaW1wb3J0IHsgQ3JlZGVudGlhbHNQcm92aWRlckVycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBnZXRIb21lRGlyLCBQcm9maWxlIH0gZnJvbSBcIkBhd3Mtc2RrL3NoYXJlZC1pbmktZmlsZS1sb2FkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciwgQ3JlZGVudGlhbHMgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IGdldE1hc3RlclByb2ZpbGVOYW1lLCBwYXJzZUtub3duRmlsZXMsIFNvdXJjZVByb2ZpbGVJbml0IH0gZnJvbSBcIkBhd3Mtc2RrL3V0aWwtY3JlZGVudGlhbHNcIjtcbmltcG9ydCB7IGNyZWF0ZUhhc2ggfSBmcm9tIFwiY3J5cHRvXCI7XG5pbXBvcnQgeyByZWFkRmlsZVN5bmMgfSBmcm9tIFwiZnNcIjtcbmltcG9ydCB7IGpvaW4gfSBmcm9tIFwicGF0aFwiO1xuXG4vKipcbiAqIFRoZSB0aW1lIHdpbmRvdyAoMTUgbWlucykgdGhhdCBTREsgd2lsbCB0cmVhdCB0aGUgU1NPIHRva2VuIGV4cGlyZXMgaW4gYmVmb3JlIHRoZSBkZWZpbmVkIGV4cGlyYXRpb24gZGF0ZSBpbiB0b2tlbi5cbiAqIFRoaXMgaXMgbmVlZGVkIGJlY2F1c2Ugc2VydmVyIHNpZGUgbWF5IGhhdmUgaW52YWxpZGF0ZWQgdGhlIHRva2VuIGJlZm9yZSB0aGUgZGVmaW5lZCBleHBpcmF0aW9uIGRhdGUuXG4gKlxuICogQGludGVybmFsXG4gKi9cbmV4cG9ydCBjb25zdCBFWFBJUkVfV0lORE9XX01TID0gMTUgKiA2MCAqIDEwMDA7XG5cbmNvbnN0IFNIT1VMRF9GQUlMX0NSRURFTlRJQUxfQ0hBSU4gPSBmYWxzZTtcblxuLyoqXG4gKiBDYWNoZWQgU1NPIHRva2VuIHJldHJpZXZlZCBmcm9tIFNTTyBsb2dpbiBmbG93LlxuICovXG5pbnRlcmZhY2UgU1NPVG9rZW4ge1xuICAvLyBBIGJhc2U2NCBlbmNvZGVkIHN0cmluZyByZXR1cm5lZCBieSB0aGUgc3NvLW9pZGMgc2VydmljZS5cbiAgYWNjZXNzVG9rZW46IHN0cmluZztcbiAgLy8gUkZDMzMzOSBmb3JtYXQgdGltZXN0YW1wXG4gIGV4cGlyZXNBdDogc3RyaW5nO1xuICByZWdpb24/OiBzdHJpbmc7XG4gIHN0YXJ0VXJsPzogc3RyaW5nO1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIFNzb0NyZWRlbnRpYWxzUGFyYW1ldGVycyB7XG4gIC8qKlxuICAgKiBUaGUgVVJMIHRvIHRoZSBBV1MgU1NPIHNlcnZpY2UuXG4gICAqL1xuICBzc29TdGFydFVybDogc3RyaW5nO1xuXG4gIC8qKlxuICAgKiBUaGUgSUQgb2YgdGhlIEFXUyBhY2NvdW50IHRvIHVzZSBmb3IgdGVtcG9yYXJ5IGNyZWRlbnRpYWxzLlxuICAgKi9cbiAgc3NvQWNjb3VudElkOiBzdHJpbmc7XG5cbiAgLyoqXG4gICAqIFRoZSBBV1MgcmVnaW9uIHRvIHVzZSBmb3IgdGVtcG9yYXJ5IGNyZWRlbnRpYWxzLlxuICAgKi9cbiAgc3NvUmVnaW9uOiBzdHJpbmc7XG5cbiAgLyoqXG4gICAqIFRoZSBuYW1lIG9mIHRoZSBBV1Mgcm9sZSB0byBhc3N1bWUuXG4gICAqL1xuICBzc29Sb2xlTmFtZTogc3RyaW5nO1xufVxuZXhwb3J0IGludGVyZmFjZSBGcm9tU1NPSW5pdCBleHRlbmRzIFNvdXJjZVByb2ZpbGVJbml0IHtcbiAgc3NvQ2xpZW50PzogU1NPQ2xpZW50O1xufVxuXG4vKipcbiAqIENyZWF0ZXMgYSBjcmVkZW50aWFsIHByb3ZpZGVyIHRoYXQgd2lsbCByZWFkIGZyb20gYSBjcmVkZW50aWFsX3Byb2Nlc3Mgc3BlY2lmaWVkXG4gKiBpbiBpbmkgZmlsZXMuXG4gKi9cbmV4cG9ydCBjb25zdCBmcm9tU1NPID1cbiAgKGluaXQ6IEZyb21TU09Jbml0ICYgUGFydGlhbDxTc29DcmVkZW50aWFsc1BhcmFtZXRlcnM+ID0ge30gYXMgYW55KTogQ3JlZGVudGlhbFByb3ZpZGVyID0+XG4gIGFzeW5jICgpID0+IHtcbiAgICBjb25zdCB7IHNzb1N0YXJ0VXJsLCBzc29BY2NvdW50SWQsIHNzb1JlZ2lvbiwgc3NvUm9sZU5hbWUsIHNzb0NsaWVudCB9ID0gaW5pdDtcbiAgICBpZiAoIXNzb1N0YXJ0VXJsICYmICFzc29BY2NvdW50SWQgJiYgIXNzb1JlZ2lvbiAmJiAhc3NvUm9sZU5hbWUpIHtcbiAgICAgIC8vIExvYWQgdGhlIFNTTyBjb25maWcgZnJvbSBzaGFyZWQgQVdTIGNvbmZpZyBmaWxlLlxuICAgICAgY29uc3QgcHJvZmlsZXMgPSBhd2FpdCBwYXJzZUtub3duRmlsZXMoaW5pdCk7XG4gICAgICBjb25zdCBwcm9maWxlTmFtZSA9IGdldE1hc3RlclByb2ZpbGVOYW1lKGluaXQpO1xuICAgICAgY29uc3QgcHJvZmlsZSA9IHByb2ZpbGVzW3Byb2ZpbGVOYW1lXTtcbiAgICAgIGlmICghaXNTc29Qcm9maWxlKHByb2ZpbGUpKSB7XG4gICAgICAgIHRocm93IG5ldyBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3IoYFByb2ZpbGUgJHtwcm9maWxlTmFtZX0gaXMgbm90IGNvbmZpZ3VyZWQgd2l0aCBTU08gY3JlZGVudGlhbHMuYCk7XG4gICAgICB9XG4gICAgICBjb25zdCB7IHNzb19zdGFydF91cmwsIHNzb19hY2NvdW50X2lkLCBzc29fcmVnaW9uLCBzc29fcm9sZV9uYW1lIH0gPSB2YWxpZGF0ZVNzb1Byb2ZpbGUocHJvZmlsZSk7XG4gICAgICByZXR1cm4gcmVzb2x2ZVNTT0NyZWRlbnRpYWxzKHtcbiAgICAgICAgc3NvU3RhcnRVcmw6IHNzb19zdGFydF91cmwsXG4gICAgICAgIHNzb0FjY291bnRJZDogc3NvX2FjY291bnRfaWQsXG4gICAgICAgIHNzb1JlZ2lvbjogc3NvX3JlZ2lvbixcbiAgICAgICAgc3NvUm9sZU5hbWU6IHNzb19yb2xlX25hbWUsXG4gICAgICAgIHNzb0NsaWVudDogc3NvQ2xpZW50LFxuICAgICAgfSk7XG4gICAgfSBlbHNlIGlmICghc3NvU3RhcnRVcmwgfHwgIXNzb0FjY291bnRJZCB8fCAhc3NvUmVnaW9uIHx8ICFzc29Sb2xlTmFtZSkge1xuICAgICAgdGhyb3cgbmV3IENyZWRlbnRpYWxzUHJvdmlkZXJFcnJvcihcbiAgICAgICAgJ0luY29tcGxldGUgY29uZmlndXJhdGlvbi4gVGhlIGZyb21TU08oKSBhcmd1bWVudCBoYXNoIG11c3QgaW5jbHVkZSBcInNzb1N0YXJ0VXJsXCIsJyArXG4gICAgICAgICAgJyBcInNzb0FjY291bnRJZFwiLCBcInNzb1JlZ2lvblwiLCBcInNzb1JvbGVOYW1lXCInXG4gICAgICApO1xuICAgIH0gZWxzZSB7XG4gICAgICByZXR1cm4gcmVzb2x2ZVNTT0NyZWRlbnRpYWxzKHsgc3NvU3RhcnRVcmwsIHNzb0FjY291bnRJZCwgc3NvUmVnaW9uLCBzc29Sb2xlTmFtZSwgc3NvQ2xpZW50IH0pO1xuICAgIH1cbiAgfTtcblxuY29uc3QgcmVzb2x2ZVNTT0NyZWRlbnRpYWxzID0gYXN5bmMgKHtcbiAgc3NvU3RhcnRVcmwsXG4gIHNzb0FjY291bnRJZCxcbiAgc3NvUmVnaW9uLFxuICBzc29Sb2xlTmFtZSxcbiAgc3NvQ2xpZW50LFxufTogRnJvbVNTT0luaXQgJiBTc29DcmVkZW50aWFsc1BhcmFtZXRlcnMpOiBQcm9taXNlPENyZWRlbnRpYWxzPiA9PiB7XG4gIGNvbnN0IGhhc2hlciA9IGNyZWF0ZUhhc2goXCJzaGExXCIpO1xuICBjb25zdCBjYWNoZU5hbWUgPSBoYXNoZXIudXBkYXRlKHNzb1N0YXJ0VXJsKS5kaWdlc3QoXCJoZXhcIik7XG4gIGNvbnN0IHRva2VuRmlsZSA9IGpvaW4oZ2V0SG9tZURpcigpLCBcIi5hd3NcIiwgXCJzc29cIiwgXCJjYWNoZVwiLCBgJHtjYWNoZU5hbWV9Lmpzb25gKTtcbiAgbGV0IHRva2VuOiBTU09Ub2tlbjtcbiAgdHJ5IHtcbiAgICB0b2tlbiA9IEpTT04ucGFyc2UocmVhZEZpbGVTeW5jKHRva2VuRmlsZSwgeyBlbmNvZGluZzogXCJ1dGYtOFwiIH0pKTtcbiAgICBpZiAobmV3IERhdGUodG9rZW4uZXhwaXJlc0F0KS5nZXRUaW1lKCkgLSBEYXRlLm5vdygpIDw9IEVYUElSRV9XSU5ET1dfTVMpIHtcbiAgICAgIHRocm93IG5ldyBFcnJvcihcIlNTTyB0b2tlbiBpcyBleHBpcmVkLlwiKTtcbiAgICB9XG4gIH0gY2F0Y2ggKGUpIHtcbiAgICB0aHJvdyBuZXcgQ3JlZGVudGlhbHNQcm92aWRlckVycm9yKFxuICAgICAgYFRoZSBTU08gc2Vzc2lvbiBhc3NvY2lhdGVkIHdpdGggdGhpcyBwcm9maWxlIGhhcyBleHBpcmVkIG9yIGlzIG90aGVyd2lzZSBpbnZhbGlkLiBUbyByZWZyZXNoIHRoaXMgU1NPIHNlc3Npb24gYCArXG4gICAgICAgIGBydW4gYXdzIHNzbyBsb2dpbiB3aXRoIHRoZSBjb3JyZXNwb25kaW5nIHByb2ZpbGUuYCxcbiAgICAgIFNIT1VMRF9GQUlMX0NSRURFTlRJQUxfQ0hBSU5cbiAgICApO1xuICB9XG4gIGNvbnN0IHsgYWNjZXNzVG9rZW4gfSA9IHRva2VuO1xuICBjb25zdCBzc28gPSBzc29DbGllbnQgfHwgbmV3IFNTT0NsaWVudCh7IHJlZ2lvbjogc3NvUmVnaW9uIH0pO1xuICBsZXQgc3NvUmVzcDogR2V0Um9sZUNyZWRlbnRpYWxzQ29tbWFuZE91dHB1dDtcbiAgdHJ5IHtcbiAgICBzc29SZXNwID0gYXdhaXQgc3NvLnNlbmQoXG4gICAgICBuZXcgR2V0Um9sZUNyZWRlbnRpYWxzQ29tbWFuZCh7XG4gICAgICAgIGFjY291bnRJZDogc3NvQWNjb3VudElkLFxuICAgICAgICByb2xlTmFtZTogc3NvUm9sZU5hbWUsXG4gICAgICAgIGFjY2Vzc1Rva2VuLFxuICAgICAgfSlcbiAgICApO1xuICB9IGNhdGNoIChlKSB7XG4gICAgdGhyb3cgQ3JlZGVudGlhbHNQcm92aWRlckVycm9yLmZyb20oZSwgU0hPVUxEX0ZBSUxfQ1JFREVOVElBTF9DSEFJTik7XG4gIH1cbiAgY29uc3QgeyByb2xlQ3JlZGVudGlhbHM6IHsgYWNjZXNzS2V5SWQsIHNlY3JldEFjY2Vzc0tleSwgc2Vzc2lvblRva2VuLCBleHBpcmF0aW9uIH0gPSB7fSB9ID0gc3NvUmVzcDtcbiAgaWYgKCFhY2Nlc3NLZXlJZCB8fCAhc2VjcmV0QWNjZXNzS2V5IHx8ICFzZXNzaW9uVG9rZW4gfHwgIWV4cGlyYXRpb24pIHtcbiAgICB0aHJvdyBuZXcgQ3JlZGVudGlhbHNQcm92aWRlckVycm9yKFwiU1NPIHJldHVybnMgYW4gaW52YWxpZCB0ZW1wb3JhcnkgY3JlZGVudGlhbC5cIiwgU0hPVUxEX0ZBSUxfQ1JFREVOVElBTF9DSEFJTik7XG4gIH1cbiAgcmV0dXJuIHsgYWNjZXNzS2V5SWQsIHNlY3JldEFjY2Vzc0tleSwgc2Vzc2lvblRva2VuLCBleHBpcmF0aW9uOiBuZXcgRGF0ZShleHBpcmF0aW9uKSB9O1xufTtcblxuLyoqXG4gKiBAaW50ZXJuYWxcbiAqL1xuZXhwb3J0IGludGVyZmFjZSBTc29Qcm9maWxlIGV4dGVuZHMgUHJvZmlsZSB7XG4gIHNzb19zdGFydF91cmw6IHN0cmluZztcbiAgc3NvX2FjY291bnRfaWQ6IHN0cmluZztcbiAgc3NvX3JlZ2lvbjogc3RyaW5nO1xuICBzc29fcm9sZV9uYW1lOiBzdHJpbmc7XG59XG5cbi8qKlxuICogQGludGVybmFsXG4gKi9cbmV4cG9ydCBjb25zdCB2YWxpZGF0ZVNzb1Byb2ZpbGUgPSAocHJvZmlsZTogUGFydGlhbDxTc29Qcm9maWxlPik6IFNzb1Byb2ZpbGUgPT4ge1xuICBjb25zdCB7IHNzb19zdGFydF91cmwsIHNzb19hY2NvdW50X2lkLCBzc29fcmVnaW9uLCBzc29fcm9sZV9uYW1lIH0gPSBwcm9maWxlO1xuICBpZiAoIXNzb19zdGFydF91cmwgfHwgIXNzb19hY2NvdW50X2lkIHx8ICFzc29fcmVnaW9uIHx8ICFzc29fcm9sZV9uYW1lKSB7XG4gICAgdGhyb3cgbmV3IENyZWRlbnRpYWxzUHJvdmlkZXJFcnJvcihcbiAgICAgIGBQcm9maWxlIGlzIGNvbmZpZ3VyZWQgd2l0aCBpbnZhbGlkIFNTTyBjcmVkZW50aWFscy4gUmVxdWlyZWQgcGFyYW1ldGVycyBcInNzb19hY2NvdW50X2lkXCIsIFwic3NvX3JlZ2lvblwiLCBgICtcbiAgICAgICAgYFwic3NvX3JvbGVfbmFtZVwiLCBcInNzb19zdGFydF91cmxcIi4gR290ICR7T2JqZWN0LmtleXMocHJvZmlsZSkuam9pbihcbiAgICAgICAgICBcIiwgXCJcbiAgICAgICAgKX1cXG5SZWZlcmVuY2U6IGh0dHBzOi8vZG9jcy5hd3MuYW1hem9uLmNvbS9jbGkvbGF0ZXN0L3VzZXJndWlkZS9jbGktY29uZmlndXJlLXNzby5odG1sYCxcbiAgICAgIFNIT1VMRF9GQUlMX0NSRURFTlRJQUxfQ0hBSU5cbiAgICApO1xuICB9XG4gIHJldHVybiBwcm9maWxlIGFzIFNzb1Byb2ZpbGU7XG59O1xuXG4vKipcbiAqIEBpbnRlcm5hbFxuICovXG5leHBvcnQgY29uc3QgaXNTc29Qcm9maWxlID0gKGFyZzogUHJvZmlsZSk6IGFyZyBpcyBQYXJ0aWFsPFNzb1Byb2ZpbGU+ID0+XG4gIGFyZyAmJlxuICAodHlwZW9mIGFyZy5zc29fc3RhcnRfdXJsID09PSBcInN0cmluZ1wiIHx8XG4gICAgdHlwZW9mIGFyZy5zc29fYWNjb3VudF9pZCA9PT0gXCJzdHJpbmdcIiB8fFxuICAgIHR5cGVvZiBhcmcuc3NvX3JlZ2lvbiA9PT0gXCJzdHJpbmdcIiB8fFxuICAgIHR5cGVvZiBhcmcuc3NvX3JvbGVfbmFtZSA9PT0gXCJzdHJpbmdcIik7XG4iXX0=
 
 /***/ }),
 
@@ -38390,7 +38492,7 @@ const resolveTokenFile = (init) => {
     const roleArn = (_b = init === null || init === void 0 ? void 0 : init.roleArn) !== null && _b !== void 0 ? _b : process.env[ENV_ROLE_ARN];
     const roleSessionName = (_c = init === null || init === void 0 ? void 0 : init.roleSessionName) !== null && _c !== void 0 ? _c : process.env[ENV_ROLE_SESSION_NAME];
     if (!webIdentityTokenFile || !roleArn) {
-        throw new property_provider_1.ProviderError("Web identity configuration not specified");
+        throw new property_provider_1.CredentialsProviderError("Web identity configuration not specified");
     }
     return fromWebToken_1.fromWebToken({
         ...init,
@@ -38399,7 +38501,7 @@ const resolveTokenFile = (init) => {
         roleSessionName,
     })();
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbVRva2VuRmlsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9mcm9tVG9rZW5GaWxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLGtFQUEyRDtBQUUzRCwyQkFBa0M7QUFFbEMsaURBQWdFO0FBRWhFLE1BQU0sY0FBYyxHQUFHLDZCQUE2QixDQUFDO0FBQ3JELE1BQU0sWUFBWSxHQUFHLGNBQWMsQ0FBQztBQUNwQyxNQUFNLHFCQUFxQixHQUFHLHVCQUF1QixDQUFDO0FBU3REOztHQUVHO0FBQ0ksTUFBTSxhQUFhLEdBQ3hCLENBQUMsT0FBMEIsRUFBRSxFQUFzQixFQUFFLENBQ3JELEtBQUssSUFBSSxFQUFFO0lBQ1QsT0FBTyxnQkFBZ0IsQ0FBQyxJQUFJLENBQUMsQ0FBQztBQUNoQyxDQUFDLENBQUM7QUFKUyxRQUFBLGFBQWEsaUJBSXRCO0FBRUosTUFBTSxnQkFBZ0IsR0FBRyxDQUFDLElBQXdCLEVBQXdCLEVBQUU7O0lBQzFFLE1BQU0sb0JBQW9CLEdBQUcsTUFBQSxJQUFJLGFBQUosSUFBSSx1QkFBSixJQUFJLENBQUUsb0JBQW9CLG1DQUFJLE9BQU8sQ0FBQyxHQUFHLENBQUMsY0FBYyxDQUFDLENBQUM7SUFDdkYsTUFBTSxPQUFPLEdBQUcsTUFBQSxJQUFJLGFBQUosSUFBSSx1QkFBSixJQUFJLENBQUUsT0FBTyxtQ0FBSSxPQUFPLENBQUMsR0FBRyxDQUFDLFlBQVksQ0FBQyxDQUFDO0lBQzNELE1BQU0sZUFBZSxHQUFHLE1BQUEsSUFBSSxhQUFKLElBQUksdUJBQUosSUFBSSxDQUFFLGVBQWUsbUNBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyxxQkFBcUIsQ0FBQyxDQUFDO0lBRXBGLElBQUksQ0FBQyxvQkFBb0IsSUFBSSxDQUFDLE9BQU8sRUFBRTtRQUNyQyxNQUFNLElBQUksaUNBQWEsQ0FBQywwQ0FBMEMsQ0FBQyxDQUFDO0tBQ3JFO0lBRUQsT0FBTywyQkFBWSxDQUFDO1FBQ2xCLEdBQUcsSUFBSTtRQUNQLGdCQUFnQixFQUFFLGlCQUFZLENBQUMsb0JBQW9CLEVBQUUsRUFBRSxRQUFRLEVBQUUsT0FBTyxFQUFFLENBQUM7UUFDM0UsT0FBTztRQUNQLGVBQWU7S0FDaEIsQ0FBQyxFQUFFLENBQUM7QUFDUCxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQcm92aWRlckVycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBDcmVkZW50aWFsUHJvdmlkZXIsIENyZWRlbnRpYWxzIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyByZWFkRmlsZVN5bmMgfSBmcm9tIFwiZnNcIjtcblxuaW1wb3J0IHsgZnJvbVdlYlRva2VuLCBGcm9tV2ViVG9rZW5Jbml0IH0gZnJvbSBcIi4vZnJvbVdlYlRva2VuXCI7XG5cbmNvbnN0IEVOVl9UT0tFTl9GSUxFID0gXCJBV1NfV0VCX0lERU5USVRZX1RPS0VOX0ZJTEVcIjtcbmNvbnN0IEVOVl9ST0xFX0FSTiA9IFwiQVdTX1JPTEVfQVJOXCI7XG5jb25zdCBFTlZfUk9MRV9TRVNTSU9OX05BTUUgPSBcIkFXU19ST0xFX1NFU1NJT05fTkFNRVwiO1xuXG5leHBvcnQgaW50ZXJmYWNlIEZyb21Ub2tlbkZpbGVJbml0IGV4dGVuZHMgUGFydGlhbDxPbWl0PEZyb21XZWJUb2tlbkluaXQsIFwid2ViSWRlbnRpdHlUb2tlblwiPj4ge1xuICAvKipcbiAgICogRmlsZSBsb2NhdGlvbiBvZiB3aGVyZSB0aGUgYE9JRENgIHRva2VuIGlzIHN0b3JlZC5cbiAgICovXG4gIHdlYklkZW50aXR5VG9rZW5GaWxlPzogc3RyaW5nO1xufVxuXG4vKipcbiAqIFJlcHJlc2VudHMgT0lEQyBjcmVkZW50aWFscyBmcm9tIGEgZmlsZSBvbiBkaXNrLlxuICovXG5leHBvcnQgY29uc3QgZnJvbVRva2VuRmlsZSA9XG4gIChpbml0OiBGcm9tVG9rZW5GaWxlSW5pdCA9IHt9KTogQ3JlZGVudGlhbFByb3ZpZGVyID0+XG4gIGFzeW5jICgpID0+IHtcbiAgICByZXR1cm4gcmVzb2x2ZVRva2VuRmlsZShpbml0KTtcbiAgfTtcblxuY29uc3QgcmVzb2x2ZVRva2VuRmlsZSA9IChpbml0PzogRnJvbVRva2VuRmlsZUluaXQpOiBQcm9taXNlPENyZWRlbnRpYWxzPiA9PiB7XG4gIGNvbnN0IHdlYklkZW50aXR5VG9rZW5GaWxlID0gaW5pdD8ud2ViSWRlbnRpdHlUb2tlbkZpbGUgPz8gcHJvY2Vzcy5lbnZbRU5WX1RPS0VOX0ZJTEVdO1xuICBjb25zdCByb2xlQXJuID0gaW5pdD8ucm9sZUFybiA/PyBwcm9jZXNzLmVudltFTlZfUk9MRV9BUk5dO1xuICBjb25zdCByb2xlU2Vzc2lvbk5hbWUgPSBpbml0Py5yb2xlU2Vzc2lvbk5hbWUgPz8gcHJvY2Vzcy5lbnZbRU5WX1JPTEVfU0VTU0lPTl9OQU1FXTtcblxuICBpZiAoIXdlYklkZW50aXR5VG9rZW5GaWxlIHx8ICFyb2xlQXJuKSB7XG4gICAgdGhyb3cgbmV3IFByb3ZpZGVyRXJyb3IoXCJXZWIgaWRlbnRpdHkgY29uZmlndXJhdGlvbiBub3Qgc3BlY2lmaWVkXCIpO1xuICB9XG5cbiAgcmV0dXJuIGZyb21XZWJUb2tlbih7XG4gICAgLi4uaW5pdCxcbiAgICB3ZWJJZGVudGl0eVRva2VuOiByZWFkRmlsZVN5bmMod2ViSWRlbnRpdHlUb2tlbkZpbGUsIHsgZW5jb2Rpbmc6IFwiYXNjaWlcIiB9KSxcbiAgICByb2xlQXJuLFxuICAgIHJvbGVTZXNzaW9uTmFtZSxcbiAgfSkoKTtcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbVRva2VuRmlsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9mcm9tVG9rZW5GaWxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLGtFQUFzRTtBQUV0RSwyQkFBa0M7QUFFbEMsaURBQWdFO0FBRWhFLE1BQU0sY0FBYyxHQUFHLDZCQUE2QixDQUFDO0FBQ3JELE1BQU0sWUFBWSxHQUFHLGNBQWMsQ0FBQztBQUNwQyxNQUFNLHFCQUFxQixHQUFHLHVCQUF1QixDQUFDO0FBU3REOztHQUVHO0FBQ0ksTUFBTSxhQUFhLEdBQ3hCLENBQUMsT0FBMEIsRUFBRSxFQUFzQixFQUFFLENBQ3JELEtBQUssSUFBSSxFQUFFO0lBQ1QsT0FBTyxnQkFBZ0IsQ0FBQyxJQUFJLENBQUMsQ0FBQztBQUNoQyxDQUFDLENBQUM7QUFKUyxRQUFBLGFBQWEsaUJBSXRCO0FBRUosTUFBTSxnQkFBZ0IsR0FBRyxDQUFDLElBQXdCLEVBQXdCLEVBQUU7O0lBQzFFLE1BQU0sb0JBQW9CLEdBQUcsTUFBQSxJQUFJLGFBQUosSUFBSSx1QkFBSixJQUFJLENBQUUsb0JBQW9CLG1DQUFJLE9BQU8sQ0FBQyxHQUFHLENBQUMsY0FBYyxDQUFDLENBQUM7SUFDdkYsTUFBTSxPQUFPLEdBQUcsTUFBQSxJQUFJLGFBQUosSUFBSSx1QkFBSixJQUFJLENBQUUsT0FBTyxtQ0FBSSxPQUFPLENBQUMsR0FBRyxDQUFDLFlBQVksQ0FBQyxDQUFDO0lBQzNELE1BQU0sZUFBZSxHQUFHLE1BQUEsSUFBSSxhQUFKLElBQUksdUJBQUosSUFBSSxDQUFFLGVBQWUsbUNBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyxxQkFBcUIsQ0FBQyxDQUFDO0lBRXBGLElBQUksQ0FBQyxvQkFBb0IsSUFBSSxDQUFDLE9BQU8sRUFBRTtRQUNyQyxNQUFNLElBQUksNENBQXdCLENBQUMsMENBQTBDLENBQUMsQ0FBQztLQUNoRjtJQUVELE9BQU8sMkJBQVksQ0FBQztRQUNsQixHQUFHLElBQUk7UUFDUCxnQkFBZ0IsRUFBRSxpQkFBWSxDQUFDLG9CQUFvQixFQUFFLEVBQUUsUUFBUSxFQUFFLE9BQU8sRUFBRSxDQUFDO1FBQzNFLE9BQU87UUFDUCxlQUFlO0tBQ2hCLENBQUMsRUFBRSxDQUFDO0FBQ1AsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ3JlZGVudGlhbHNQcm92aWRlckVycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3BlcnR5LXByb3ZpZGVyXCI7XG5pbXBvcnQgeyBDcmVkZW50aWFsUHJvdmlkZXIsIENyZWRlbnRpYWxzIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyByZWFkRmlsZVN5bmMgfSBmcm9tIFwiZnNcIjtcblxuaW1wb3J0IHsgZnJvbVdlYlRva2VuLCBGcm9tV2ViVG9rZW5Jbml0IH0gZnJvbSBcIi4vZnJvbVdlYlRva2VuXCI7XG5cbmNvbnN0IEVOVl9UT0tFTl9GSUxFID0gXCJBV1NfV0VCX0lERU5USVRZX1RPS0VOX0ZJTEVcIjtcbmNvbnN0IEVOVl9ST0xFX0FSTiA9IFwiQVdTX1JPTEVfQVJOXCI7XG5jb25zdCBFTlZfUk9MRV9TRVNTSU9OX05BTUUgPSBcIkFXU19ST0xFX1NFU1NJT05fTkFNRVwiO1xuXG5leHBvcnQgaW50ZXJmYWNlIEZyb21Ub2tlbkZpbGVJbml0IGV4dGVuZHMgUGFydGlhbDxPbWl0PEZyb21XZWJUb2tlbkluaXQsIFwid2ViSWRlbnRpdHlUb2tlblwiPj4ge1xuICAvKipcbiAgICogRmlsZSBsb2NhdGlvbiBvZiB3aGVyZSB0aGUgYE9JRENgIHRva2VuIGlzIHN0b3JlZC5cbiAgICovXG4gIHdlYklkZW50aXR5VG9rZW5GaWxlPzogc3RyaW5nO1xufVxuXG4vKipcbiAqIFJlcHJlc2VudHMgT0lEQyBjcmVkZW50aWFscyBmcm9tIGEgZmlsZSBvbiBkaXNrLlxuICovXG5leHBvcnQgY29uc3QgZnJvbVRva2VuRmlsZSA9XG4gIChpbml0OiBGcm9tVG9rZW5GaWxlSW5pdCA9IHt9KTogQ3JlZGVudGlhbFByb3ZpZGVyID0+XG4gIGFzeW5jICgpID0+IHtcbiAgICByZXR1cm4gcmVzb2x2ZVRva2VuRmlsZShpbml0KTtcbiAgfTtcblxuY29uc3QgcmVzb2x2ZVRva2VuRmlsZSA9IChpbml0PzogRnJvbVRva2VuRmlsZUluaXQpOiBQcm9taXNlPENyZWRlbnRpYWxzPiA9PiB7XG4gIGNvbnN0IHdlYklkZW50aXR5VG9rZW5GaWxlID0gaW5pdD8ud2ViSWRlbnRpdHlUb2tlbkZpbGUgPz8gcHJvY2Vzcy5lbnZbRU5WX1RPS0VOX0ZJTEVdO1xuICBjb25zdCByb2xlQXJuID0gaW5pdD8ucm9sZUFybiA/PyBwcm9jZXNzLmVudltFTlZfUk9MRV9BUk5dO1xuICBjb25zdCByb2xlU2Vzc2lvbk5hbWUgPSBpbml0Py5yb2xlU2Vzc2lvbk5hbWUgPz8gcHJvY2Vzcy5lbnZbRU5WX1JPTEVfU0VTU0lPTl9OQU1FXTtcblxuICBpZiAoIXdlYklkZW50aXR5VG9rZW5GaWxlIHx8ICFyb2xlQXJuKSB7XG4gICAgdGhyb3cgbmV3IENyZWRlbnRpYWxzUHJvdmlkZXJFcnJvcihcIldlYiBpZGVudGl0eSBjb25maWd1cmF0aW9uIG5vdCBzcGVjaWZpZWRcIik7XG4gIH1cblxuICByZXR1cm4gZnJvbVdlYlRva2VuKHtcbiAgICAuLi5pbml0LFxuICAgIHdlYklkZW50aXR5VG9rZW46IHJlYWRGaWxlU3luYyh3ZWJJZGVudGl0eVRva2VuRmlsZSwgeyBlbmNvZGluZzogXCJhc2NpaVwiIH0pLFxuICAgIHJvbGVBcm4sXG4gICAgcm9sZVNlc3Npb25OYW1lLFxuICB9KSgpO1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -38414,7 +38516,7 @@ const property_provider_1 = __nccwpck_require__(1014);
 const fromWebToken = (init) => () => {
     const { roleArn, roleSessionName, webIdentityToken, providerId, policyArns, policy, durationSeconds, roleAssumerWithWebIdentity, } = init;
     if (!roleAssumerWithWebIdentity) {
-        throw new property_provider_1.ProviderError(`Role Arn '${roleArn}' needs to be assumed with web identity,` +
+        throw new property_provider_1.CredentialsProviderError(`Role Arn '${roleArn}' needs to be assumed with web identity,` +
             ` but no role assumption callback was provided.`, false);
     }
     return roleAssumerWithWebIdentity({
@@ -38428,7 +38530,7 @@ const fromWebToken = (init) => () => {
     });
 };
 exports.fromWebToken = fromWebToken;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbVdlYlRva2VuLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2Zyb21XZWJUb2tlbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxrRUFBMkQ7QUFpSXBELE1BQU0sWUFBWSxHQUN2QixDQUFDLElBQXNCLEVBQXNCLEVBQUUsQ0FDL0MsR0FBRyxFQUFFO0lBQ0gsTUFBTSxFQUNKLE9BQU8sRUFDUCxlQUFlLEVBQ2YsZ0JBQWdCLEVBQ2hCLFVBQVUsRUFDVixVQUFVLEVBQ1YsTUFBTSxFQUNOLGVBQWUsRUFDZiwwQkFBMEIsR0FDM0IsR0FBRyxJQUFJLENBQUM7SUFFVCxJQUFJLENBQUMsMEJBQTBCLEVBQUU7UUFDL0IsTUFBTSxJQUFJLGlDQUFhLENBQ3JCLGFBQWEsT0FBTywwQ0FBMEM7WUFDNUQsZ0RBQWdELEVBQ2xELEtBQUssQ0FDTixDQUFDO0tBQ0g7SUFFRCxPQUFPLDBCQUEwQixDQUFDO1FBQ2hDLE9BQU8sRUFBRSxPQUFPO1FBQ2hCLGVBQWUsRUFBRSxlQUFlLGFBQWYsZUFBZSxjQUFmLGVBQWUsR0FBSSxzQkFBc0IsSUFBSSxDQUFDLEdBQUcsRUFBRSxFQUFFO1FBQ3RFLGdCQUFnQixFQUFFLGdCQUFnQjtRQUNsQyxVQUFVLEVBQUUsVUFBVTtRQUN0QixVQUFVLEVBQUUsVUFBVTtRQUN0QixNQUFNLEVBQUUsTUFBTTtRQUNkLGVBQWUsRUFBRSxlQUFlO0tBQ2pDLENBQUMsQ0FBQztBQUNMLENBQUMsQ0FBQztBQS9CUyxRQUFBLFlBQVksZ0JBK0JyQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb3ZpZGVyRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvcHJvcGVydHktcHJvdmlkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciwgQ3JlZGVudGlhbHMgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGludGVyZmFjZSBBc3N1bWVSb2xlV2l0aFdlYklkZW50aXR5UGFyYW1zIHtcbiAgLyoqXG4gICAqIDxwPlRoZSBBbWF6b24gUmVzb3VyY2UgTmFtZSAoQVJOKSBvZiB0aGUgcm9sZSB0aGF0IHRoZSBjYWxsZXIgaXMgYXNzdW1pbmcuPC9wPlxuICAgKi9cbiAgUm9sZUFybjogc3RyaW5nO1xuICAvKipcbiAgICogPHA+QW4gaWRlbnRpZmllciBmb3IgdGhlIGFzc3VtZWQgcm9sZSBzZXNzaW9uLiBUeXBpY2FsbHksIHlvdSBwYXNzIHRoZSBuYW1lIG9yIGlkZW50aWZpZXJcbiAgICogICAgICAgICAgdGhhdCBpcyBhc3NvY2lhdGVkIHdpdGggdGhlIHVzZXIgd2hvIGlzIHVzaW5nIHlvdXIgYXBwbGljYXRpb24uIFRoYXQgd2F5LCB0aGUgdGVtcG9yYXJ5XG4gICAqICAgICAgICAgIHNlY3VyaXR5IGNyZWRlbnRpYWxzIHRoYXQgeW91ciBhcHBsaWNhdGlvbiB3aWxsIHVzZSBhcmUgYXNzb2NpYXRlZCB3aXRoIHRoYXQgdXNlci4gVGhpc1xuICAgKiAgICAgICAgICBzZXNzaW9uIG5hbWUgaXMgaW5jbHVkZWQgYXMgcGFydCBvZiB0aGUgQVJOIGFuZCBhc3N1bWVkIHJvbGUgSUQgaW4gdGhlXG4gICAqICAgICAgICAgICAgIDxjb2RlPkFzc3VtZWRSb2xlVXNlcjwvY29kZT4gcmVzcG9uc2UgZWxlbWVudC48L3A+XG4gICAqICAgICAgICAgIDxwPlRoZSByZWdleCB1c2VkIHRvIHZhbGlkYXRlIHRoaXMgcGFyYW1ldGVyIGlzIGEgc3RyaW5nIG9mIGNoYXJhY3RlcnNcbiAgICogICAgIGNvbnNpc3Rpbmcgb2YgdXBwZXItIGFuZCBsb3dlci1jYXNlIGFscGhhbnVtZXJpYyBjaGFyYWN0ZXJzIHdpdGggbm8gc3BhY2VzLiBZb3UgY2FuXG4gICAqICAgICBhbHNvIGluY2x1ZGUgdW5kZXJzY29yZXMgb3IgYW55IG9mIHRoZSBmb2xsb3dpbmcgY2hhcmFjdGVyczogPSwuQC08L3A+XG4gICAqL1xuICBSb2xlU2Vzc2lvbk5hbWU6IHN0cmluZztcbiAgLyoqXG4gICAqIDxwPlRoZSBPQXV0aCAyLjAgYWNjZXNzIHRva2VuIG9yIE9wZW5JRCBDb25uZWN0IElEIHRva2VuIHRoYXQgaXMgcHJvdmlkZWQgYnkgdGhlIGlkZW50aXR5XG4gICAqICAgICAgICAgIHByb3ZpZGVyLiBZb3VyIGFwcGxpY2F0aW9uIG11c3QgZ2V0IHRoaXMgdG9rZW4gYnkgYXV0aGVudGljYXRpbmcgdGhlIHVzZXIgd2hvIGlzIHVzaW5nIHlvdXJcbiAgICogICAgICAgICAgYXBwbGljYXRpb24gd2l0aCBhIHdlYiBpZGVudGl0eSBwcm92aWRlciBiZWZvcmUgdGhlIGFwcGxpY2F0aW9uIG1ha2VzIGFuXG4gICAqICAgICAgICAgICAgIDxjb2RlPkFzc3VtZVJvbGVXaXRoV2ViSWRlbnRpdHk8L2NvZGU+IGNhbGwuIDwvcD5cbiAgICovXG4gIFdlYklkZW50aXR5VG9rZW46IHN0cmluZztcblxuICAvKipcbiAgICogPHA+VGhlIGZ1bGx5IHF1YWxpZmllZCBob3N0IGNvbXBvbmVudCBvZiB0aGUgZG9tYWluIG5hbWUgb2YgdGhlIGlkZW50aXR5IHByb3ZpZGVyLjwvcD5cbiAgICogICAgICAgICAgPHA+U3BlY2lmeSB0aGlzIHZhbHVlIG9ubHkgZm9yIE9BdXRoIDIuMCBhY2Nlc3MgdG9rZW5zLiBDdXJyZW50bHlcbiAgICogICAgICAgICAgICAgPGNvZGU+d3d3LmFtYXpvbi5jb208L2NvZGU+IGFuZCA8Y29kZT5ncmFwaC5mYWNlYm9vay5jb208L2NvZGU+IGFyZSB0aGUgb25seSBzdXBwb3J0ZWRcbiAgICogICAgICAgICAgaWRlbnRpdHkgcHJvdmlkZXJzIGZvciBPQXV0aCAyLjAgYWNjZXNzIHRva2Vucy4gRG8gbm90IGluY2x1ZGUgVVJMIHNjaGVtZXMgYW5kIHBvcnRcbiAgICogICAgICAgICAgbnVtYmVycy48L3A+XG4gICAqICAgICAgICAgIDxwPkRvIG5vdCBzcGVjaWZ5IHRoaXMgdmFsdWUgZm9yIE9wZW5JRCBDb25uZWN0IElEIHRva2Vucy48L3A+XG4gICAqL1xuICBQcm92aWRlcklkPzogc3RyaW5nO1xuXG4gIC8qKlxuICAgKiA8cD5UaGUgQW1hem9uIFJlc291cmNlIE5hbWVzIChBUk5zKSBvZiB0aGUgSUFNIG1hbmFnZWQgcG9saWNpZXMgdGhhdCB5b3Ugd2FudCB0byB1c2UgYXNcbiAgICogICAgICAgICAgbWFuYWdlZCBzZXNzaW9uIHBvbGljaWVzLiBUaGUgcG9saWNpZXMgbXVzdCBleGlzdCBpbiB0aGUgc2FtZSBhY2NvdW50IGFzIHRoZSByb2xlLjwvcD5cbiAgICogICAgICAgICAgPHA+VGhpcyBwYXJhbWV0ZXIgaXMgb3B0aW9uYWwuIFlvdSBjYW4gcHJvdmlkZSB1cCB0byAxMCBtYW5hZ2VkIHBvbGljeSBBUk5zLiBIb3dldmVyLCB0aGVcbiAgICogICAgICAgICAgcGxhaW4gdGV4dCB0aGF0IHlvdSB1c2UgZm9yIGJvdGggaW5saW5lIGFuZCBtYW5hZ2VkIHNlc3Npb24gcG9saWNpZXMgY2FuJ3QgZXhjZWVkIDIsMDQ4XG4gICAqICAgICAgICAgIGNoYXJhY3RlcnMuIEZvciBtb3JlIGluZm9ybWF0aW9uIGFib3V0IEFSTnMsIHNlZSA8YSBocmVmPVwiaHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL2dlbmVyYWwvbGF0ZXN0L2dyL2F3cy1hcm5zLWFuZC1uYW1lc3BhY2VzLmh0bWxcIj5BbWF6b24gUmVzb3VyY2UgTmFtZXMgKEFSTnMpIGFuZCBBV1NcbiAgICogICAgICAgICAgICAgU2VydmljZSBOYW1lc3BhY2VzPC9hPiBpbiB0aGUgQVdTIEdlbmVyYWwgUmVmZXJlbmNlLjwvcD5cbiAgICogICAgICAgICAgPG5vdGU+XG4gICAqICAgICAgICAgICAgIDxwPkFuIEFXUyBjb252ZXJzaW9uIGNvbXByZXNzZXMgdGhlIHBhc3NlZCBzZXNzaW9uIHBvbGljaWVzIGFuZCBzZXNzaW9uIHRhZ3MgaW50byBhXG4gICAqICAgICAgICAgICAgIHBhY2tlZCBiaW5hcnkgZm9ybWF0IHRoYXQgaGFzIGEgc2VwYXJhdGUgbGltaXQuIFlvdXIgcmVxdWVzdCBjYW4gZmFpbCBmb3IgdGhpcyBsaW1pdFxuICAgKiAgICAgICAgICAgICBldmVuIGlmIHlvdXIgcGxhaW4gdGV4dCBtZWV0cyB0aGUgb3RoZXIgcmVxdWlyZW1lbnRzLiBUaGUgPGNvZGU+UGFja2VkUG9saWN5U2l6ZTwvY29kZT5cbiAgICogICAgICAgICAgICAgcmVzcG9uc2UgZWxlbWVudCBpbmRpY2F0ZXMgYnkgcGVyY2VudGFnZSBob3cgY2xvc2UgdGhlIHBvbGljaWVzIGFuZCB0YWdzIGZvciB5b3VyXG4gICAqICAgICAgICAgICAgIHJlcXVlc3QgYXJlIHRvIHRoZSB1cHBlciBzaXplIGxpbWl0LlxuICAgKiAgICAgICAgICAgICA8L3A+XG4gICAqICAgICAgICAgIDwvbm90ZT5cbiAgICpcbiAgICogICAgICAgICAgPHA+UGFzc2luZyBwb2xpY2llcyB0byB0aGlzIG9wZXJhdGlvbiByZXR1cm5zIG5ld1xuICAgKiAgICAgICAgICB0ZW1wb3JhcnkgY3JlZGVudGlhbHMuIFRoZSByZXN1bHRpbmcgc2Vzc2lvbidzIHBlcm1pc3Npb25zIGFyZSB0aGUgaW50ZXJzZWN0aW9uIG9mIHRoZVxuICAgKiAgICAgICAgICByb2xlJ3MgaWRlbnRpdHktYmFzZWQgcG9saWN5IGFuZCB0aGUgc2Vzc2lvbiBwb2xpY2llcy4gWW91IGNhbiB1c2UgdGhlIHJvbGUncyB0ZW1wb3JhcnlcbiAgICogICAgICAgICAgY3JlZGVudGlhbHMgaW4gc3Vic2VxdWVudCBBV1MgQVBJIGNhbGxzIHRvIGFjY2VzcyByZXNvdXJjZXMgaW4gdGhlIGFjY291bnQgdGhhdCBvd25zXG4gICAqICAgICAgICAgIHRoZSByb2xlLiBZb3UgY2Fubm90IHVzZSBzZXNzaW9uIHBvbGljaWVzIHRvIGdyYW50IG1vcmUgcGVybWlzc2lvbnMgdGhhbiB0aG9zZSBhbGxvd2VkXG4gICAqICAgICAgICAgIGJ5IHRoZSBpZGVudGl0eS1iYXNlZCBwb2xpY3kgb2YgdGhlIHJvbGUgdGhhdCBpcyBiZWluZyBhc3N1bWVkLiBGb3IgbW9yZSBpbmZvcm1hdGlvbiwgc2VlXG4gICAqICAgICAgICAgICAgIDxhIGhyZWY9XCJodHRwczovL2RvY3MuYXdzLmFtYXpvbi5jb20vSUFNL2xhdGVzdC9Vc2VyR3VpZGUvYWNjZXNzX3BvbGljaWVzLmh0bWwjcG9saWNpZXNfc2Vzc2lvblwiPlNlc3Npb25cbiAgICogICAgICAgICAgICAgUG9saWNpZXM8L2E+IGluIHRoZSA8aT5JQU0gVXNlciBHdWlkZTwvaT4uPC9wPlxuICAgKi9cbiAgUG9saWN5QXJucz86IHsgYXJuPzogc3RyaW5nIH1bXTtcblxuICAvKipcbiAgICogPHA+QW4gSUFNIHBvbGljeSBpbiBKU09OIGZvcm1hdCB0aGF0IHlvdSB3YW50IHRvIHVzZSBhcyBhbiBpbmxpbmUgc2Vzc2lvbiBwb2xpY3kuPC9wPlxuICAgKiAgICAgICAgICA8cD5UaGlzIHBhcmFtZXRlciBpcyBvcHRpb25hbC4gUGFzc2luZyBwb2xpY2llcyB0byB0aGlzIG9wZXJhdGlvbiByZXR1cm5zIG5ld1xuICAgKiAgICAgICAgICB0ZW1wb3JhcnkgY3JlZGVudGlhbHMuIFRoZSByZXN1bHRpbmcgc2Vzc2lvbidzIHBlcm1pc3Npb25zIGFyZSB0aGUgaW50ZXJzZWN0aW9uIG9mIHRoZVxuICAgKiAgICAgICAgICByb2xlJ3MgaWRlbnRpdHktYmFzZWQgcG9saWN5IGFuZCB0aGUgc2Vzc2lvbiBwb2xpY2llcy4gWW91IGNhbiB1c2UgdGhlIHJvbGUncyB0ZW1wb3JhcnlcbiAgICogICAgICAgICAgY3JlZGVudGlhbHMgaW4gc3Vic2VxdWVudCBBV1MgQVBJIGNhbGxzIHRvIGFjY2VzcyByZXNvdXJjZXMgaW4gdGhlIGFjY291bnQgdGhhdCBvd25zXG4gICAqICAgICAgICAgIHRoZSByb2xlLiBZb3UgY2Fubm90IHVzZSBzZXNzaW9uIHBvbGljaWVzIHRvIGdyYW50IG1vcmUgcGVybWlzc2lvbnMgdGhhbiB0aG9zZSBhbGxvd2VkXG4gICAqICAgICAgICAgIGJ5IHRoZSBpZGVudGl0eS1iYXNlZCBwb2xpY3kgb2YgdGhlIHJvbGUgdGhhdCBpcyBiZWluZyBhc3N1bWVkLiBGb3IgbW9yZSBpbmZvcm1hdGlvbiwgc2VlXG4gICAqICAgICAgICAgICAgIDxhIGhyZWY9XCJodHRwczovL2RvY3MuYXdzLmFtYXpvbi5jb20vSUFNL2xhdGVzdC9Vc2VyR3VpZGUvYWNjZXNzX3BvbGljaWVzLmh0bWwjcG9saWNpZXNfc2Vzc2lvblwiPlNlc3Npb25cbiAgICogICAgICAgICAgICAgUG9saWNpZXM8L2E+IGluIHRoZSA8aT5JQU0gVXNlciBHdWlkZTwvaT4uPC9wPlxuICAgKiAgICAgICAgICA8cD5UaGUgcGxhaW4gdGV4dCB0aGF0IHlvdSB1c2UgZm9yIGJvdGggaW5saW5lIGFuZCBtYW5hZ2VkIHNlc3Npb24gcG9saWNpZXMgY2FuJ3QgZXhjZWVkXG4gICAqICAgICAgICAgIDIsMDQ4IGNoYXJhY3RlcnMuIFRoZSBKU09OIHBvbGljeSBjaGFyYWN0ZXJzIGNhbiBiZSBhbnkgQVNDSUkgY2hhcmFjdGVyIGZyb20gdGhlIHNwYWNlXG4gICAqICAgICAgICAgIGNoYXJhY3RlciB0byB0aGUgZW5kIG9mIHRoZSB2YWxpZCBjaGFyYWN0ZXIgbGlzdCAoXFx1MDAyMCB0aHJvdWdoIFxcdTAwRkYpLiBJdCBjYW4gYWxzb1xuICAgKiAgICAgICAgICBpbmNsdWRlIHRoZSB0YWIgKFxcdTAwMDkpLCBsaW5lZmVlZCAoXFx1MDAwQSksIGFuZCBjYXJyaWFnZSByZXR1cm4gKFxcdTAwMEQpXG4gICAqICAgICAgICAgIGNoYXJhY3RlcnMuPC9wPlxuICAgKiAgICAgICAgICA8bm90ZT5cbiAgICogICAgICAgICAgICAgPHA+QW4gQVdTIGNvbnZlcnNpb24gY29tcHJlc3NlcyB0aGUgcGFzc2VkIHNlc3Npb24gcG9saWNpZXMgYW5kIHNlc3Npb24gdGFncyBpbnRvIGFcbiAgICogICAgICAgICAgICAgcGFja2VkIGJpbmFyeSBmb3JtYXQgdGhhdCBoYXMgYSBzZXBhcmF0ZSBsaW1pdC4gWW91ciByZXF1ZXN0IGNhbiBmYWlsIGZvciB0aGlzIGxpbWl0XG4gICAqICAgICAgICAgICAgIGV2ZW4gaWYgeW91ciBwbGFpbiB0ZXh0IG1lZXRzIHRoZSBvdGhlciByZXF1aXJlbWVudHMuIFRoZSA8Y29kZT5QYWNrZWRQb2xpY3lTaXplPC9jb2RlPlxuICAgKiAgICAgICAgICAgICByZXNwb25zZSBlbGVtZW50IGluZGljYXRlcyBieSBwZXJjZW50YWdlIGhvdyBjbG9zZSB0aGUgcG9saWNpZXMgYW5kIHRhZ3MgZm9yIHlvdXJcbiAgICogICAgICAgICAgICAgcmVxdWVzdCBhcmUgdG8gdGhlIHVwcGVyIHNpemUgbGltaXQuXG4gICAqICAgICAgICAgICAgIDwvcD5cbiAgICogICAgICAgICAgPC9ub3RlPlxuICAgKi9cbiAgUG9saWN5Pzogc3RyaW5nO1xuXG4gIC8qKlxuICAgKiA8cD5UaGUgZHVyYXRpb24sIGluIHNlY29uZHMsIG9mIHRoZSByb2xlIHNlc3Npb24uIFRoZSB2YWx1ZSBjYW4gcmFuZ2UgZnJvbSA5MDAgc2Vjb25kcyAoMTVcbiAgICogICAgICAgICAgbWludXRlcykgdXAgdG8gdGhlIG1heGltdW0gc2Vzc2lvbiBkdXJhdGlvbiBzZXR0aW5nIGZvciB0aGUgcm9sZS4gVGhpcyBzZXR0aW5nIGNhbiBoYXZlIGFcbiAgICogICAgICAgICAgdmFsdWUgZnJvbSAxIGhvdXIgdG8gMTIgaG91cnMuIElmIHlvdSBzcGVjaWZ5IGEgdmFsdWUgaGlnaGVyIHRoYW4gdGhpcyBzZXR0aW5nLCB0aGVcbiAgICogICAgICAgICAgb3BlcmF0aW9uIGZhaWxzLiBGb3IgZXhhbXBsZSwgaWYgeW91IHNwZWNpZnkgYSBzZXNzaW9uIGR1cmF0aW9uIG9mIDEyIGhvdXJzLCBidXQgeW91clxuICAgKiAgICAgICAgICBhZG1pbmlzdHJhdG9yIHNldCB0aGUgbWF4aW11bSBzZXNzaW9uIGR1cmF0aW9uIHRvIDYgaG91cnMsIHlvdXIgb3BlcmF0aW9uIGZhaWxzLiBUbyBsZWFyblxuICAgKiAgICAgICAgICBob3cgdG8gdmlldyB0aGUgbWF4aW11bSB2YWx1ZSBmb3IgeW91ciByb2xlLCBzZWUgPGEgaHJlZj1cImh0dHBzOi8vZG9jcy5hd3MuYW1hem9uLmNvbS9JQU0vbGF0ZXN0L1VzZXJHdWlkZS9pZF9yb2xlc191c2UuaHRtbCNpZF9yb2xlc191c2Vfdmlldy1yb2xlLW1heC1zZXNzaW9uXCI+VmlldyB0aGVcbiAgICogICAgICAgICAgICAgTWF4aW11bSBTZXNzaW9uIER1cmF0aW9uIFNldHRpbmcgZm9yIGEgUm9sZTwvYT4gaW4gdGhlXG4gICAqICAgICAgICAgICAgIDxpPklBTSBVc2VyIEd1aWRlPC9pPi48L3A+XG4gICAqICAgICAgICAgIDxwPkJ5IGRlZmF1bHQsIHRoZSB2YWx1ZSBpcyBzZXQgdG8gPGNvZGU+MzYwMDwvY29kZT4gc2Vjb25kcy4gPC9wPlxuICAgKiAgICAgICAgICA8bm90ZT5cbiAgICogICAgICAgICAgICAgPHA+VGhlIDxjb2RlPkR1cmF0aW9uU2Vjb25kczwvY29kZT4gcGFyYW1ldGVyIGlzIHNlcGFyYXRlIGZyb20gdGhlIGR1cmF0aW9uIG9mIGEgY29uc29sZVxuICAgKiAgICAgICAgICAgICBzZXNzaW9uIHRoYXQgeW91IG1pZ2h0IHJlcXVlc3QgdXNpbmcgdGhlIHJldHVybmVkIGNyZWRlbnRpYWxzLiBUaGUgcmVxdWVzdCB0byB0aGVcbiAgICogICAgICAgICAgICAgZmVkZXJhdGlvbiBlbmRwb2ludCBmb3IgYSBjb25zb2xlIHNpZ24taW4gdG9rZW4gdGFrZXMgYSA8Y29kZT5TZXNzaW9uRHVyYXRpb248L2NvZGU+XG4gICAqICAgICAgICAgICAgIHBhcmFtZXRlciB0aGF0IHNwZWNpZmllcyB0aGUgbWF4aW11bSBsZW5ndGggb2YgdGhlIGNvbnNvbGUgc2Vzc2lvbi4gRm9yIG1vcmVcbiAgICogICAgICAgICAgICAgaW5mb3JtYXRpb24sIHNlZSA8YSBocmVmPVwiaHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL0lBTS9sYXRlc3QvVXNlckd1aWRlL2lkX3JvbGVzX3Byb3ZpZGVyc19lbmFibGUtY29uc29sZS1jdXN0b20tdXJsLmh0bWxcIj5DcmVhdGluZyBhIFVSTFxuICAgKiAgICAgICAgICAgICAgICB0aGF0IEVuYWJsZXMgRmVkZXJhdGVkIFVzZXJzIHRvIEFjY2VzcyB0aGUgQVdTIE1hbmFnZW1lbnQgQ29uc29sZTwvYT4gaW4gdGhlXG4gICAqICAgICAgICAgICAgICAgIDxpPklBTSBVc2VyIEd1aWRlPC9pPi48L3A+XG4gICAqICAgICAgICAgIDwvbm90ZT5cbiAgICovXG4gIER1cmF0aW9uU2Vjb25kcz86IG51bWJlcjtcbn1cblxudHlwZSBMb3dlckNhc2VLZXk8VD4gPSB7IFtLIGluIGtleW9mIFQgYXMgYCR7VW5jYXBpdGFsaXplPHN0cmluZyAmIEs+fWBdOiBUW0tdIH07XG5leHBvcnQgaW50ZXJmYWNlIEZyb21XZWJUb2tlbkluaXQgZXh0ZW5kcyBPbWl0PExvd2VyQ2FzZUtleTxBc3N1bWVSb2xlV2l0aFdlYklkZW50aXR5UGFyYW1zPiwgXCJyb2xlU2Vzc2lvbk5hbWVcIj4ge1xuICAvKipcbiAgICogVGhlIElBTSBzZXNzaW9uIG5hbWUgdXNlZCB0byBkaXN0aW5ndWlzaCBzZXNzaW9ucy5cbiAgICovXG4gIHJvbGVTZXNzaW9uTmFtZT86IHN0cmluZztcblxuICAvKipcbiAgICogQSBmdW5jdGlvbiB0aGF0IGFzc3VtZXMgYSByb2xlIHdpdGggd2ViIGlkZW50aXR5IGFuZCByZXR1cm5zIGEgcHJvbWlzZSBmdWxmaWxsZWQgd2l0aFxuICAgKiBjcmVkZW50aWFscyBmb3IgdGhlIGFzc3VtZWQgcm9sZS5cbiAgICpcbiAgICogQHBhcmFtIHBhcmFtcyBpbnB1dCBwYXJhbWV0ZXIgb2Ygc3RzOkFzc3VtZVJvbGVXaXRoV2ViSWRlbnRpdHkgQVBJLlxuICAgKi9cbiAgcm9sZUFzc3VtZXJXaXRoV2ViSWRlbnRpdHk/OiAocGFyYW1zOiBBc3N1bWVSb2xlV2l0aFdlYklkZW50aXR5UGFyYW1zKSA9PiBQcm9taXNlPENyZWRlbnRpYWxzPjtcbn1cblxuZXhwb3J0IGNvbnN0IGZyb21XZWJUb2tlbiA9XG4gIChpbml0OiBGcm9tV2ViVG9rZW5Jbml0KTogQ3JlZGVudGlhbFByb3ZpZGVyID0+XG4gICgpID0+IHtcbiAgICBjb25zdCB7XG4gICAgICByb2xlQXJuLFxuICAgICAgcm9sZVNlc3Npb25OYW1lLFxuICAgICAgd2ViSWRlbnRpdHlUb2tlbixcbiAgICAgIHByb3ZpZGVySWQsXG4gICAgICBwb2xpY3lBcm5zLFxuICAgICAgcG9saWN5LFxuICAgICAgZHVyYXRpb25TZWNvbmRzLFxuICAgICAgcm9sZUFzc3VtZXJXaXRoV2ViSWRlbnRpdHksXG4gICAgfSA9IGluaXQ7XG5cbiAgICBpZiAoIXJvbGVBc3N1bWVyV2l0aFdlYklkZW50aXR5KSB7XG4gICAgICB0aHJvdyBuZXcgUHJvdmlkZXJFcnJvcihcbiAgICAgICAgYFJvbGUgQXJuICcke3JvbGVBcm59JyBuZWVkcyB0byBiZSBhc3N1bWVkIHdpdGggd2ViIGlkZW50aXR5LGAgK1xuICAgICAgICAgIGAgYnV0IG5vIHJvbGUgYXNzdW1wdGlvbiBjYWxsYmFjayB3YXMgcHJvdmlkZWQuYCxcbiAgICAgICAgZmFsc2VcbiAgICAgICk7XG4gICAgfVxuXG4gICAgcmV0dXJuIHJvbGVBc3N1bWVyV2l0aFdlYklkZW50aXR5KHtcbiAgICAgIFJvbGVBcm46IHJvbGVBcm4sXG4gICAgICBSb2xlU2Vzc2lvbk5hbWU6IHJvbGVTZXNzaW9uTmFtZSA/PyBgYXdzLXNkay1qcy1zZXNzaW9uLSR7RGF0ZS5ub3coKX1gLFxuICAgICAgV2ViSWRlbnRpdHlUb2tlbjogd2ViSWRlbnRpdHlUb2tlbixcbiAgICAgIFByb3ZpZGVySWQ6IHByb3ZpZGVySWQsXG4gICAgICBQb2xpY3lBcm5zOiBwb2xpY3lBcm5zLFxuICAgICAgUG9saWN5OiBwb2xpY3ksXG4gICAgICBEdXJhdGlvblNlY29uZHM6IGR1cmF0aW9uU2Vjb25kcyxcbiAgICB9KTtcbiAgfTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbVdlYlRva2VuLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2Zyb21XZWJUb2tlbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxrRUFBc0U7QUFpSS9ELE1BQU0sWUFBWSxHQUN2QixDQUFDLElBQXNCLEVBQXNCLEVBQUUsQ0FDL0MsR0FBRyxFQUFFO0lBQ0gsTUFBTSxFQUNKLE9BQU8sRUFDUCxlQUFlLEVBQ2YsZ0JBQWdCLEVBQ2hCLFVBQVUsRUFDVixVQUFVLEVBQ1YsTUFBTSxFQUNOLGVBQWUsRUFDZiwwQkFBMEIsR0FDM0IsR0FBRyxJQUFJLENBQUM7SUFFVCxJQUFJLENBQUMsMEJBQTBCLEVBQUU7UUFDL0IsTUFBTSxJQUFJLDRDQUF3QixDQUNoQyxhQUFhLE9BQU8sMENBQTBDO1lBQzVELGdEQUFnRCxFQUNsRCxLQUFLLENBQ04sQ0FBQztLQUNIO0lBRUQsT0FBTywwQkFBMEIsQ0FBQztRQUNoQyxPQUFPLEVBQUUsT0FBTztRQUNoQixlQUFlLEVBQUUsZUFBZSxhQUFmLGVBQWUsY0FBZixlQUFlLEdBQUksc0JBQXNCLElBQUksQ0FBQyxHQUFHLEVBQUUsRUFBRTtRQUN0RSxnQkFBZ0IsRUFBRSxnQkFBZ0I7UUFDbEMsVUFBVSxFQUFFLFVBQVU7UUFDdEIsVUFBVSxFQUFFLFVBQVU7UUFDdEIsTUFBTSxFQUFFLE1BQU07UUFDZCxlQUFlLEVBQUUsZUFBZTtLQUNqQyxDQUFDLENBQUM7QUFDTCxDQUFDLENBQUM7QUEvQlMsUUFBQSxZQUFZLGdCQStCckIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvcHJvcGVydHktcHJvdmlkZXJcIjtcbmltcG9ydCB7IENyZWRlbnRpYWxQcm92aWRlciwgQ3JlZGVudGlhbHMgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGludGVyZmFjZSBBc3N1bWVSb2xlV2l0aFdlYklkZW50aXR5UGFyYW1zIHtcbiAgLyoqXG4gICAqIDxwPlRoZSBBbWF6b24gUmVzb3VyY2UgTmFtZSAoQVJOKSBvZiB0aGUgcm9sZSB0aGF0IHRoZSBjYWxsZXIgaXMgYXNzdW1pbmcuPC9wPlxuICAgKi9cbiAgUm9sZUFybjogc3RyaW5nO1xuICAvKipcbiAgICogPHA+QW4gaWRlbnRpZmllciBmb3IgdGhlIGFzc3VtZWQgcm9sZSBzZXNzaW9uLiBUeXBpY2FsbHksIHlvdSBwYXNzIHRoZSBuYW1lIG9yIGlkZW50aWZpZXJcbiAgICogICAgICAgICAgdGhhdCBpcyBhc3NvY2lhdGVkIHdpdGggdGhlIHVzZXIgd2hvIGlzIHVzaW5nIHlvdXIgYXBwbGljYXRpb24uIFRoYXQgd2F5LCB0aGUgdGVtcG9yYXJ5XG4gICAqICAgICAgICAgIHNlY3VyaXR5IGNyZWRlbnRpYWxzIHRoYXQgeW91ciBhcHBsaWNhdGlvbiB3aWxsIHVzZSBhcmUgYXNzb2NpYXRlZCB3aXRoIHRoYXQgdXNlci4gVGhpc1xuICAgKiAgICAgICAgICBzZXNzaW9uIG5hbWUgaXMgaW5jbHVkZWQgYXMgcGFydCBvZiB0aGUgQVJOIGFuZCBhc3N1bWVkIHJvbGUgSUQgaW4gdGhlXG4gICAqICAgICAgICAgICAgIDxjb2RlPkFzc3VtZWRSb2xlVXNlcjwvY29kZT4gcmVzcG9uc2UgZWxlbWVudC48L3A+XG4gICAqICAgICAgICAgIDxwPlRoZSByZWdleCB1c2VkIHRvIHZhbGlkYXRlIHRoaXMgcGFyYW1ldGVyIGlzIGEgc3RyaW5nIG9mIGNoYXJhY3RlcnNcbiAgICogICAgIGNvbnNpc3Rpbmcgb2YgdXBwZXItIGFuZCBsb3dlci1jYXNlIGFscGhhbnVtZXJpYyBjaGFyYWN0ZXJzIHdpdGggbm8gc3BhY2VzLiBZb3UgY2FuXG4gICAqICAgICBhbHNvIGluY2x1ZGUgdW5kZXJzY29yZXMgb3IgYW55IG9mIHRoZSBmb2xsb3dpbmcgY2hhcmFjdGVyczogPSwuQC08L3A+XG4gICAqL1xuICBSb2xlU2Vzc2lvbk5hbWU6IHN0cmluZztcbiAgLyoqXG4gICAqIDxwPlRoZSBPQXV0aCAyLjAgYWNjZXNzIHRva2VuIG9yIE9wZW5JRCBDb25uZWN0IElEIHRva2VuIHRoYXQgaXMgcHJvdmlkZWQgYnkgdGhlIGlkZW50aXR5XG4gICAqICAgICAgICAgIHByb3ZpZGVyLiBZb3VyIGFwcGxpY2F0aW9uIG11c3QgZ2V0IHRoaXMgdG9rZW4gYnkgYXV0aGVudGljYXRpbmcgdGhlIHVzZXIgd2hvIGlzIHVzaW5nIHlvdXJcbiAgICogICAgICAgICAgYXBwbGljYXRpb24gd2l0aCBhIHdlYiBpZGVudGl0eSBwcm92aWRlciBiZWZvcmUgdGhlIGFwcGxpY2F0aW9uIG1ha2VzIGFuXG4gICAqICAgICAgICAgICAgIDxjb2RlPkFzc3VtZVJvbGVXaXRoV2ViSWRlbnRpdHk8L2NvZGU+IGNhbGwuIDwvcD5cbiAgICovXG4gIFdlYklkZW50aXR5VG9rZW46IHN0cmluZztcblxuICAvKipcbiAgICogPHA+VGhlIGZ1bGx5IHF1YWxpZmllZCBob3N0IGNvbXBvbmVudCBvZiB0aGUgZG9tYWluIG5hbWUgb2YgdGhlIGlkZW50aXR5IHByb3ZpZGVyLjwvcD5cbiAgICogICAgICAgICAgPHA+U3BlY2lmeSB0aGlzIHZhbHVlIG9ubHkgZm9yIE9BdXRoIDIuMCBhY2Nlc3MgdG9rZW5zLiBDdXJyZW50bHlcbiAgICogICAgICAgICAgICAgPGNvZGU+d3d3LmFtYXpvbi5jb208L2NvZGU+IGFuZCA8Y29kZT5ncmFwaC5mYWNlYm9vay5jb208L2NvZGU+IGFyZSB0aGUgb25seSBzdXBwb3J0ZWRcbiAgICogICAgICAgICAgaWRlbnRpdHkgcHJvdmlkZXJzIGZvciBPQXV0aCAyLjAgYWNjZXNzIHRva2Vucy4gRG8gbm90IGluY2x1ZGUgVVJMIHNjaGVtZXMgYW5kIHBvcnRcbiAgICogICAgICAgICAgbnVtYmVycy48L3A+XG4gICAqICAgICAgICAgIDxwPkRvIG5vdCBzcGVjaWZ5IHRoaXMgdmFsdWUgZm9yIE9wZW5JRCBDb25uZWN0IElEIHRva2Vucy48L3A+XG4gICAqL1xuICBQcm92aWRlcklkPzogc3RyaW5nO1xuXG4gIC8qKlxuICAgKiA8cD5UaGUgQW1hem9uIFJlc291cmNlIE5hbWVzIChBUk5zKSBvZiB0aGUgSUFNIG1hbmFnZWQgcG9saWNpZXMgdGhhdCB5b3Ugd2FudCB0byB1c2UgYXNcbiAgICogICAgICAgICAgbWFuYWdlZCBzZXNzaW9uIHBvbGljaWVzLiBUaGUgcG9saWNpZXMgbXVzdCBleGlzdCBpbiB0aGUgc2FtZSBhY2NvdW50IGFzIHRoZSByb2xlLjwvcD5cbiAgICogICAgICAgICAgPHA+VGhpcyBwYXJhbWV0ZXIgaXMgb3B0aW9uYWwuIFlvdSBjYW4gcHJvdmlkZSB1cCB0byAxMCBtYW5hZ2VkIHBvbGljeSBBUk5zLiBIb3dldmVyLCB0aGVcbiAgICogICAgICAgICAgcGxhaW4gdGV4dCB0aGF0IHlvdSB1c2UgZm9yIGJvdGggaW5saW5lIGFuZCBtYW5hZ2VkIHNlc3Npb24gcG9saWNpZXMgY2FuJ3QgZXhjZWVkIDIsMDQ4XG4gICAqICAgICAgICAgIGNoYXJhY3RlcnMuIEZvciBtb3JlIGluZm9ybWF0aW9uIGFib3V0IEFSTnMsIHNlZSA8YSBocmVmPVwiaHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL2dlbmVyYWwvbGF0ZXN0L2dyL2F3cy1hcm5zLWFuZC1uYW1lc3BhY2VzLmh0bWxcIj5BbWF6b24gUmVzb3VyY2UgTmFtZXMgKEFSTnMpIGFuZCBBV1NcbiAgICogICAgICAgICAgICAgU2VydmljZSBOYW1lc3BhY2VzPC9hPiBpbiB0aGUgQVdTIEdlbmVyYWwgUmVmZXJlbmNlLjwvcD5cbiAgICogICAgICAgICAgPG5vdGU+XG4gICAqICAgICAgICAgICAgIDxwPkFuIEFXUyBjb252ZXJzaW9uIGNvbXByZXNzZXMgdGhlIHBhc3NlZCBzZXNzaW9uIHBvbGljaWVzIGFuZCBzZXNzaW9uIHRhZ3MgaW50byBhXG4gICAqICAgICAgICAgICAgIHBhY2tlZCBiaW5hcnkgZm9ybWF0IHRoYXQgaGFzIGEgc2VwYXJhdGUgbGltaXQuIFlvdXIgcmVxdWVzdCBjYW4gZmFpbCBmb3IgdGhpcyBsaW1pdFxuICAgKiAgICAgICAgICAgICBldmVuIGlmIHlvdXIgcGxhaW4gdGV4dCBtZWV0cyB0aGUgb3RoZXIgcmVxdWlyZW1lbnRzLiBUaGUgPGNvZGU+UGFja2VkUG9saWN5U2l6ZTwvY29kZT5cbiAgICogICAgICAgICAgICAgcmVzcG9uc2UgZWxlbWVudCBpbmRpY2F0ZXMgYnkgcGVyY2VudGFnZSBob3cgY2xvc2UgdGhlIHBvbGljaWVzIGFuZCB0YWdzIGZvciB5b3VyXG4gICAqICAgICAgICAgICAgIHJlcXVlc3QgYXJlIHRvIHRoZSB1cHBlciBzaXplIGxpbWl0LlxuICAgKiAgICAgICAgICAgICA8L3A+XG4gICAqICAgICAgICAgIDwvbm90ZT5cbiAgICpcbiAgICogICAgICAgICAgPHA+UGFzc2luZyBwb2xpY2llcyB0byB0aGlzIG9wZXJhdGlvbiByZXR1cm5zIG5ld1xuICAgKiAgICAgICAgICB0ZW1wb3JhcnkgY3JlZGVudGlhbHMuIFRoZSByZXN1bHRpbmcgc2Vzc2lvbidzIHBlcm1pc3Npb25zIGFyZSB0aGUgaW50ZXJzZWN0aW9uIG9mIHRoZVxuICAgKiAgICAgICAgICByb2xlJ3MgaWRlbnRpdHktYmFzZWQgcG9saWN5IGFuZCB0aGUgc2Vzc2lvbiBwb2xpY2llcy4gWW91IGNhbiB1c2UgdGhlIHJvbGUncyB0ZW1wb3JhcnlcbiAgICogICAgICAgICAgY3JlZGVudGlhbHMgaW4gc3Vic2VxdWVudCBBV1MgQVBJIGNhbGxzIHRvIGFjY2VzcyByZXNvdXJjZXMgaW4gdGhlIGFjY291bnQgdGhhdCBvd25zXG4gICAqICAgICAgICAgIHRoZSByb2xlLiBZb3UgY2Fubm90IHVzZSBzZXNzaW9uIHBvbGljaWVzIHRvIGdyYW50IG1vcmUgcGVybWlzc2lvbnMgdGhhbiB0aG9zZSBhbGxvd2VkXG4gICAqICAgICAgICAgIGJ5IHRoZSBpZGVudGl0eS1iYXNlZCBwb2xpY3kgb2YgdGhlIHJvbGUgdGhhdCBpcyBiZWluZyBhc3N1bWVkLiBGb3IgbW9yZSBpbmZvcm1hdGlvbiwgc2VlXG4gICAqICAgICAgICAgICAgIDxhIGhyZWY9XCJodHRwczovL2RvY3MuYXdzLmFtYXpvbi5jb20vSUFNL2xhdGVzdC9Vc2VyR3VpZGUvYWNjZXNzX3BvbGljaWVzLmh0bWwjcG9saWNpZXNfc2Vzc2lvblwiPlNlc3Npb25cbiAgICogICAgICAgICAgICAgUG9saWNpZXM8L2E+IGluIHRoZSA8aT5JQU0gVXNlciBHdWlkZTwvaT4uPC9wPlxuICAgKi9cbiAgUG9saWN5QXJucz86IHsgYXJuPzogc3RyaW5nIH1bXTtcblxuICAvKipcbiAgICogPHA+QW4gSUFNIHBvbGljeSBpbiBKU09OIGZvcm1hdCB0aGF0IHlvdSB3YW50IHRvIHVzZSBhcyBhbiBpbmxpbmUgc2Vzc2lvbiBwb2xpY3kuPC9wPlxuICAgKiAgICAgICAgICA8cD5UaGlzIHBhcmFtZXRlciBpcyBvcHRpb25hbC4gUGFzc2luZyBwb2xpY2llcyB0byB0aGlzIG9wZXJhdGlvbiByZXR1cm5zIG5ld1xuICAgKiAgICAgICAgICB0ZW1wb3JhcnkgY3JlZGVudGlhbHMuIFRoZSByZXN1bHRpbmcgc2Vzc2lvbidzIHBlcm1pc3Npb25zIGFyZSB0aGUgaW50ZXJzZWN0aW9uIG9mIHRoZVxuICAgKiAgICAgICAgICByb2xlJ3MgaWRlbnRpdHktYmFzZWQgcG9saWN5IGFuZCB0aGUgc2Vzc2lvbiBwb2xpY2llcy4gWW91IGNhbiB1c2UgdGhlIHJvbGUncyB0ZW1wb3JhcnlcbiAgICogICAgICAgICAgY3JlZGVudGlhbHMgaW4gc3Vic2VxdWVudCBBV1MgQVBJIGNhbGxzIHRvIGFjY2VzcyByZXNvdXJjZXMgaW4gdGhlIGFjY291bnQgdGhhdCBvd25zXG4gICAqICAgICAgICAgIHRoZSByb2xlLiBZb3UgY2Fubm90IHVzZSBzZXNzaW9uIHBvbGljaWVzIHRvIGdyYW50IG1vcmUgcGVybWlzc2lvbnMgdGhhbiB0aG9zZSBhbGxvd2VkXG4gICAqICAgICAgICAgIGJ5IHRoZSBpZGVudGl0eS1iYXNlZCBwb2xpY3kgb2YgdGhlIHJvbGUgdGhhdCBpcyBiZWluZyBhc3N1bWVkLiBGb3IgbW9yZSBpbmZvcm1hdGlvbiwgc2VlXG4gICAqICAgICAgICAgICAgIDxhIGhyZWY9XCJodHRwczovL2RvY3MuYXdzLmFtYXpvbi5jb20vSUFNL2xhdGVzdC9Vc2VyR3VpZGUvYWNjZXNzX3BvbGljaWVzLmh0bWwjcG9saWNpZXNfc2Vzc2lvblwiPlNlc3Npb25cbiAgICogICAgICAgICAgICAgUG9saWNpZXM8L2E+IGluIHRoZSA8aT5JQU0gVXNlciBHdWlkZTwvaT4uPC9wPlxuICAgKiAgICAgICAgICA8cD5UaGUgcGxhaW4gdGV4dCB0aGF0IHlvdSB1c2UgZm9yIGJvdGggaW5saW5lIGFuZCBtYW5hZ2VkIHNlc3Npb24gcG9saWNpZXMgY2FuJ3QgZXhjZWVkXG4gICAqICAgICAgICAgIDIsMDQ4IGNoYXJhY3RlcnMuIFRoZSBKU09OIHBvbGljeSBjaGFyYWN0ZXJzIGNhbiBiZSBhbnkgQVNDSUkgY2hhcmFjdGVyIGZyb20gdGhlIHNwYWNlXG4gICAqICAgICAgICAgIGNoYXJhY3RlciB0byB0aGUgZW5kIG9mIHRoZSB2YWxpZCBjaGFyYWN0ZXIgbGlzdCAoXFx1MDAyMCB0aHJvdWdoIFxcdTAwRkYpLiBJdCBjYW4gYWxzb1xuICAgKiAgICAgICAgICBpbmNsdWRlIHRoZSB0YWIgKFxcdTAwMDkpLCBsaW5lZmVlZCAoXFx1MDAwQSksIGFuZCBjYXJyaWFnZSByZXR1cm4gKFxcdTAwMEQpXG4gICAqICAgICAgICAgIGNoYXJhY3RlcnMuPC9wPlxuICAgKiAgICAgICAgICA8bm90ZT5cbiAgICogICAgICAgICAgICAgPHA+QW4gQVdTIGNvbnZlcnNpb24gY29tcHJlc3NlcyB0aGUgcGFzc2VkIHNlc3Npb24gcG9saWNpZXMgYW5kIHNlc3Npb24gdGFncyBpbnRvIGFcbiAgICogICAgICAgICAgICAgcGFja2VkIGJpbmFyeSBmb3JtYXQgdGhhdCBoYXMgYSBzZXBhcmF0ZSBsaW1pdC4gWW91ciByZXF1ZXN0IGNhbiBmYWlsIGZvciB0aGlzIGxpbWl0XG4gICAqICAgICAgICAgICAgIGV2ZW4gaWYgeW91ciBwbGFpbiB0ZXh0IG1lZXRzIHRoZSBvdGhlciByZXF1aXJlbWVudHMuIFRoZSA8Y29kZT5QYWNrZWRQb2xpY3lTaXplPC9jb2RlPlxuICAgKiAgICAgICAgICAgICByZXNwb25zZSBlbGVtZW50IGluZGljYXRlcyBieSBwZXJjZW50YWdlIGhvdyBjbG9zZSB0aGUgcG9saWNpZXMgYW5kIHRhZ3MgZm9yIHlvdXJcbiAgICogICAgICAgICAgICAgcmVxdWVzdCBhcmUgdG8gdGhlIHVwcGVyIHNpemUgbGltaXQuXG4gICAqICAgICAgICAgICAgIDwvcD5cbiAgICogICAgICAgICAgPC9ub3RlPlxuICAgKi9cbiAgUG9saWN5Pzogc3RyaW5nO1xuXG4gIC8qKlxuICAgKiA8cD5UaGUgZHVyYXRpb24sIGluIHNlY29uZHMsIG9mIHRoZSByb2xlIHNlc3Npb24uIFRoZSB2YWx1ZSBjYW4gcmFuZ2UgZnJvbSA5MDAgc2Vjb25kcyAoMTVcbiAgICogICAgICAgICAgbWludXRlcykgdXAgdG8gdGhlIG1heGltdW0gc2Vzc2lvbiBkdXJhdGlvbiBzZXR0aW5nIGZvciB0aGUgcm9sZS4gVGhpcyBzZXR0aW5nIGNhbiBoYXZlIGFcbiAgICogICAgICAgICAgdmFsdWUgZnJvbSAxIGhvdXIgdG8gMTIgaG91cnMuIElmIHlvdSBzcGVjaWZ5IGEgdmFsdWUgaGlnaGVyIHRoYW4gdGhpcyBzZXR0aW5nLCB0aGVcbiAgICogICAgICAgICAgb3BlcmF0aW9uIGZhaWxzLiBGb3IgZXhhbXBsZSwgaWYgeW91IHNwZWNpZnkgYSBzZXNzaW9uIGR1cmF0aW9uIG9mIDEyIGhvdXJzLCBidXQgeW91clxuICAgKiAgICAgICAgICBhZG1pbmlzdHJhdG9yIHNldCB0aGUgbWF4aW11bSBzZXNzaW9uIGR1cmF0aW9uIHRvIDYgaG91cnMsIHlvdXIgb3BlcmF0aW9uIGZhaWxzLiBUbyBsZWFyblxuICAgKiAgICAgICAgICBob3cgdG8gdmlldyB0aGUgbWF4aW11bSB2YWx1ZSBmb3IgeW91ciByb2xlLCBzZWUgPGEgaHJlZj1cImh0dHBzOi8vZG9jcy5hd3MuYW1hem9uLmNvbS9JQU0vbGF0ZXN0L1VzZXJHdWlkZS9pZF9yb2xlc191c2UuaHRtbCNpZF9yb2xlc191c2Vfdmlldy1yb2xlLW1heC1zZXNzaW9uXCI+VmlldyB0aGVcbiAgICogICAgICAgICAgICAgTWF4aW11bSBTZXNzaW9uIER1cmF0aW9uIFNldHRpbmcgZm9yIGEgUm9sZTwvYT4gaW4gdGhlXG4gICAqICAgICAgICAgICAgIDxpPklBTSBVc2VyIEd1aWRlPC9pPi48L3A+XG4gICAqICAgICAgICAgIDxwPkJ5IGRlZmF1bHQsIHRoZSB2YWx1ZSBpcyBzZXQgdG8gPGNvZGU+MzYwMDwvY29kZT4gc2Vjb25kcy4gPC9wPlxuICAgKiAgICAgICAgICA8bm90ZT5cbiAgICogICAgICAgICAgICAgPHA+VGhlIDxjb2RlPkR1cmF0aW9uU2Vjb25kczwvY29kZT4gcGFyYW1ldGVyIGlzIHNlcGFyYXRlIGZyb20gdGhlIGR1cmF0aW9uIG9mIGEgY29uc29sZVxuICAgKiAgICAgICAgICAgICBzZXNzaW9uIHRoYXQgeW91IG1pZ2h0IHJlcXVlc3QgdXNpbmcgdGhlIHJldHVybmVkIGNyZWRlbnRpYWxzLiBUaGUgcmVxdWVzdCB0byB0aGVcbiAgICogICAgICAgICAgICAgZmVkZXJhdGlvbiBlbmRwb2ludCBmb3IgYSBjb25zb2xlIHNpZ24taW4gdG9rZW4gdGFrZXMgYSA8Y29kZT5TZXNzaW9uRHVyYXRpb248L2NvZGU+XG4gICAqICAgICAgICAgICAgIHBhcmFtZXRlciB0aGF0IHNwZWNpZmllcyB0aGUgbWF4aW11bSBsZW5ndGggb2YgdGhlIGNvbnNvbGUgc2Vzc2lvbi4gRm9yIG1vcmVcbiAgICogICAgICAgICAgICAgaW5mb3JtYXRpb24sIHNlZSA8YSBocmVmPVwiaHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL0lBTS9sYXRlc3QvVXNlckd1aWRlL2lkX3JvbGVzX3Byb3ZpZGVyc19lbmFibGUtY29uc29sZS1jdXN0b20tdXJsLmh0bWxcIj5DcmVhdGluZyBhIFVSTFxuICAgKiAgICAgICAgICAgICAgICB0aGF0IEVuYWJsZXMgRmVkZXJhdGVkIFVzZXJzIHRvIEFjY2VzcyB0aGUgQVdTIE1hbmFnZW1lbnQgQ29uc29sZTwvYT4gaW4gdGhlXG4gICAqICAgICAgICAgICAgICAgIDxpPklBTSBVc2VyIEd1aWRlPC9pPi48L3A+XG4gICAqICAgICAgICAgIDwvbm90ZT5cbiAgICovXG4gIER1cmF0aW9uU2Vjb25kcz86IG51bWJlcjtcbn1cblxudHlwZSBMb3dlckNhc2VLZXk8VD4gPSB7IFtLIGluIGtleW9mIFQgYXMgYCR7VW5jYXBpdGFsaXplPHN0cmluZyAmIEs+fWBdOiBUW0tdIH07XG5leHBvcnQgaW50ZXJmYWNlIEZyb21XZWJUb2tlbkluaXQgZXh0ZW5kcyBPbWl0PExvd2VyQ2FzZUtleTxBc3N1bWVSb2xlV2l0aFdlYklkZW50aXR5UGFyYW1zPiwgXCJyb2xlU2Vzc2lvbk5hbWVcIj4ge1xuICAvKipcbiAgICogVGhlIElBTSBzZXNzaW9uIG5hbWUgdXNlZCB0byBkaXN0aW5ndWlzaCBzZXNzaW9ucy5cbiAgICovXG4gIHJvbGVTZXNzaW9uTmFtZT86IHN0cmluZztcblxuICAvKipcbiAgICogQSBmdW5jdGlvbiB0aGF0IGFzc3VtZXMgYSByb2xlIHdpdGggd2ViIGlkZW50aXR5IGFuZCByZXR1cm5zIGEgcHJvbWlzZSBmdWxmaWxsZWQgd2l0aFxuICAgKiBjcmVkZW50aWFscyBmb3IgdGhlIGFzc3VtZWQgcm9sZS5cbiAgICpcbiAgICogQHBhcmFtIHBhcmFtcyBpbnB1dCBwYXJhbWV0ZXIgb2Ygc3RzOkFzc3VtZVJvbGVXaXRoV2ViSWRlbnRpdHkgQVBJLlxuICAgKi9cbiAgcm9sZUFzc3VtZXJXaXRoV2ViSWRlbnRpdHk/OiAocGFyYW1zOiBBc3N1bWVSb2xlV2l0aFdlYklkZW50aXR5UGFyYW1zKSA9PiBQcm9taXNlPENyZWRlbnRpYWxzPjtcbn1cblxuZXhwb3J0IGNvbnN0IGZyb21XZWJUb2tlbiA9XG4gIChpbml0OiBGcm9tV2ViVG9rZW5Jbml0KTogQ3JlZGVudGlhbFByb3ZpZGVyID0+XG4gICgpID0+IHtcbiAgICBjb25zdCB7XG4gICAgICByb2xlQXJuLFxuICAgICAgcm9sZVNlc3Npb25OYW1lLFxuICAgICAgd2ViSWRlbnRpdHlUb2tlbixcbiAgICAgIHByb3ZpZGVySWQsXG4gICAgICBwb2xpY3lBcm5zLFxuICAgICAgcG9saWN5LFxuICAgICAgZHVyYXRpb25TZWNvbmRzLFxuICAgICAgcm9sZUFzc3VtZXJXaXRoV2ViSWRlbnRpdHksXG4gICAgfSA9IGluaXQ7XG5cbiAgICBpZiAoIXJvbGVBc3N1bWVyV2l0aFdlYklkZW50aXR5KSB7XG4gICAgICB0aHJvdyBuZXcgQ3JlZGVudGlhbHNQcm92aWRlckVycm9yKFxuICAgICAgICBgUm9sZSBBcm4gJyR7cm9sZUFybn0nIG5lZWRzIHRvIGJlIGFzc3VtZWQgd2l0aCB3ZWIgaWRlbnRpdHksYCArXG4gICAgICAgICAgYCBidXQgbm8gcm9sZSBhc3N1bXB0aW9uIGNhbGxiYWNrIHdhcyBwcm92aWRlZC5gLFxuICAgICAgICBmYWxzZVxuICAgICAgKTtcbiAgICB9XG5cbiAgICByZXR1cm4gcm9sZUFzc3VtZXJXaXRoV2ViSWRlbnRpdHkoe1xuICAgICAgUm9sZUFybjogcm9sZUFybixcbiAgICAgIFJvbGVTZXNzaW9uTmFtZTogcm9sZVNlc3Npb25OYW1lID8/IGBhd3Mtc2RrLWpzLXNlc3Npb24tJHtEYXRlLm5vdygpfWAsXG4gICAgICBXZWJJZGVudGl0eVRva2VuOiB3ZWJJZGVudGl0eVRva2VuLFxuICAgICAgUHJvdmlkZXJJZDogcHJvdmlkZXJJZCxcbiAgICAgIFBvbGljeUFybnM6IHBvbGljeUFybnMsXG4gICAgICBQb2xpY3k6IHBvbGljeSxcbiAgICAgIER1cmF0aW9uU2Vjb25kczogZHVyYXRpb25TZWNvbmRzLFxuICAgIH0pO1xuICB9O1xuIl19
 
 /***/ }),
 
@@ -39360,36 +39462,34 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getApplyMd5BodyChecksumPlugin = exports.applyMd5BodyChecksumMiddlewareOptions = exports.applyMd5BodyChecksumMiddleware = void 0;
 const is_array_buffer_1 = __nccwpck_require__(694);
 const protocol_http_1 = __nccwpck_require__(7498);
-function applyMd5BodyChecksumMiddleware(options) {
-    return (next) => async (args) => {
-        let { request } = args;
-        if (protocol_http_1.HttpRequest.isInstance(request)) {
-            const { body, headers } = request;
-            if (!hasHeader("Content-MD5", headers)) {
-                let digest;
-                if (body === undefined || typeof body === "string" || ArrayBuffer.isView(body) || is_array_buffer_1.isArrayBuffer(body)) {
-                    const hash = new options.md5();
-                    hash.update(body || "");
-                    digest = hash.digest();
-                }
-                else {
-                    digest = options.streamHasher(options.md5, body);
-                }
-                request = {
-                    ...request,
-                    headers: {
-                        ...headers,
-                        "Content-MD5": options.base64Encoder(await digest),
-                    },
-                };
+const applyMd5BodyChecksumMiddleware = (options) => (next) => async (args) => {
+    let { request } = args;
+    if (protocol_http_1.HttpRequest.isInstance(request)) {
+        const { body, headers } = request;
+        if (!hasHeader("content-md5", headers)) {
+            let digest;
+            if (body === undefined || typeof body === "string" || ArrayBuffer.isView(body) || is_array_buffer_1.isArrayBuffer(body)) {
+                const hash = new options.md5();
+                hash.update(body || "");
+                digest = hash.digest();
             }
+            else {
+                digest = options.streamHasher(options.md5, body);
+            }
+            request = {
+                ...request,
+                headers: {
+                    ...headers,
+                    "content-md5": options.base64Encoder(await digest),
+                },
+            };
         }
-        return next({
-            ...args,
-            request,
-        });
-    };
-}
+    }
+    return next({
+        ...args,
+        request,
+    });
+};
 exports.applyMd5BodyChecksumMiddleware = applyMd5BodyChecksumMiddleware;
 exports.applyMd5BodyChecksumMiddlewareOptions = {
     name: "applyMd5BodyChecksumMiddleware",
@@ -39399,11 +39499,11 @@ exports.applyMd5BodyChecksumMiddlewareOptions = {
 };
 const getApplyMd5BodyChecksumPlugin = (config) => ({
     applyToStack: (clientStack) => {
-        clientStack.add(applyMd5BodyChecksumMiddleware(config), exports.applyMd5BodyChecksumMiddlewareOptions);
+        clientStack.add(exports.applyMd5BodyChecksumMiddleware(config), exports.applyMd5BodyChecksumMiddlewareOptions);
     },
 });
 exports.getApplyMd5BodyChecksumPlugin = getApplyMd5BodyChecksumPlugin;
-function hasHeader(soughtHeader, headers) {
+const hasHeader = (soughtHeader, headers) => {
     soughtHeader = soughtHeader.toLowerCase();
     for (const headerName of Object.keys(headers)) {
         if (soughtHeader === headerName.toLowerCase()) {
@@ -39411,8 +39511,8 @@ function hasHeader(soughtHeader, headers) {
         }
     }
     return false;
-}
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwbHlNZDVCb2R5Q2hlY2tzdW1NaWRkbGV3YXJlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2FwcGx5TWQ1Qm9keUNoZWNrc3VtTWlkZGxld2FyZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSw4REFBeUQ7QUFDekQsMERBQXFEO0FBY3JELFNBQWdCLDhCQUE4QixDQUFDLE9BQXNDO0lBQ25GLE9BQU8sQ0FBZ0MsSUFBK0IsRUFBNkIsRUFBRSxDQUNuRyxLQUFLLEVBQUUsSUFBZ0MsRUFBdUMsRUFBRTtRQUM5RSxJQUFJLEVBQUUsT0FBTyxFQUFFLEdBQUcsSUFBSSxDQUFDO1FBQ3ZCLElBQUksMkJBQVcsQ0FBQyxVQUFVLENBQUMsT0FBTyxDQUFDLEVBQUU7WUFDbkMsTUFBTSxFQUFFLElBQUksRUFBRSxPQUFPLEVBQUUsR0FBRyxPQUFPLENBQUM7WUFDbEMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxhQUFhLEVBQUUsT0FBTyxDQUFDLEVBQUU7Z0JBQ3RDLElBQUksTUFBMkIsQ0FBQztnQkFDaEMsSUFBSSxJQUFJLEtBQUssU0FBUyxJQUFJLE9BQU8sSUFBSSxLQUFLLFFBQVEsSUFBSSxXQUFXLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxJQUFJLCtCQUFhLENBQUMsSUFBSSxDQUFDLEVBQUU7b0JBQ3JHLE1BQU0sSUFBSSxHQUFHLElBQUksT0FBTyxDQUFDLEdBQUcsRUFBRSxDQUFDO29CQUMvQixJQUFJLENBQUMsTUFBTSxDQUFDLElBQUksSUFBSSxFQUFFLENBQUMsQ0FBQztvQkFDeEIsTUFBTSxHQUFHLElBQUksQ0FBQyxNQUFNLEVBQUUsQ0FBQztpQkFDeEI7cUJBQU07b0JBQ0wsTUFBTSxHQUFHLE9BQU8sQ0FBQyxZQUFZLENBQUMsT0FBTyxDQUFDLEdBQUcsRUFBRSxJQUFJLENBQUMsQ0FBQztpQkFDbEQ7Z0JBRUQsT0FBTyxHQUFHO29CQUNSLEdBQUcsT0FBTztvQkFDVixPQUFPLEVBQUU7d0JBQ1AsR0FBRyxPQUFPO3dCQUNWLGFBQWEsRUFBRSxPQUFPLENBQUMsYUFBYSxDQUFDLE1BQU0sTUFBTSxDQUFDO3FCQUNuRDtpQkFDRixDQUFDO2FBQ0g7U0FDRjtRQUNELE9BQU8sSUFBSSxDQUFDO1lBQ1YsR0FBRyxJQUFJO1lBQ1AsT0FBTztTQUNSLENBQUMsQ0FBQztJQUNMLENBQUMsQ0FBQztBQUNOLENBQUM7QUE5QkQsd0VBOEJDO0FBRVksUUFBQSxxQ0FBcUMsR0FBd0I7SUFDeEUsSUFBSSxFQUFFLGdDQUFnQztJQUN0QyxJQUFJLEVBQUUsT0FBTztJQUNiLElBQUksRUFBRSxDQUFDLGlCQUFpQixFQUFFLGVBQWUsQ0FBQztJQUMxQyxRQUFRLEVBQUUsSUFBSTtDQUNmLENBQUM7QUFFSyxNQUFNLDZCQUE2QixHQUFHLENBQUMsTUFBcUMsRUFBdUIsRUFBRSxDQUFDLENBQUM7SUFDNUcsWUFBWSxFQUFFLENBQUMsV0FBVyxFQUFFLEVBQUU7UUFDNUIsV0FBVyxDQUFDLEdBQUcsQ0FBQyw4QkFBOEIsQ0FBQyxNQUFNLENBQUMsRUFBRSw2Q0FBcUMsQ0FBQyxDQUFDO0lBQ2pHLENBQUM7Q0FDRixDQUFDLENBQUM7QUFKVSxRQUFBLDZCQUE2QixpQ0FJdkM7QUFFSCxTQUFTLFNBQVMsQ0FBQyxZQUFvQixFQUFFLE9BQWtCO0lBQ3pELFlBQVksR0FBRyxZQUFZLENBQUMsV0FBVyxFQUFFLENBQUM7SUFDMUMsS0FBSyxNQUFNLFVBQVUsSUFBSSxNQUFNLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxFQUFFO1FBQzdDLElBQUksWUFBWSxLQUFLLFVBQVUsQ0FBQyxXQUFXLEVBQUUsRUFBRTtZQUM3QyxPQUFPLElBQUksQ0FBQztTQUNiO0tBQ0Y7SUFFRCxPQUFPLEtBQUssQ0FBQztBQUNmLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBpc0FycmF5QnVmZmVyIH0gZnJvbSBcIkBhd3Mtc2RrL2lzLWFycmF5LWJ1ZmZlclwiO1xuaW1wb3J0IHsgSHR0cFJlcXVlc3QgfSBmcm9tIFwiQGF3cy1zZGsvcHJvdG9jb2wtaHR0cFwiO1xuaW1wb3J0IHtcbiAgQnVpbGRIYW5kbGVyLFxuICBCdWlsZEhhbmRsZXJBcmd1bWVudHMsXG4gIEJ1aWxkSGFuZGxlck9wdGlvbnMsXG4gIEJ1aWxkSGFuZGxlck91dHB1dCxcbiAgQnVpbGRNaWRkbGV3YXJlLFxuICBIZWFkZXJCYWcsXG4gIE1ldGFkYXRhQmVhcmVyLFxuICBQbHVnZ2FibGUsXG59IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5pbXBvcnQgeyBNZDVCb2R5Q2hlY2tzdW1SZXNvbHZlZENvbmZpZyB9IGZyb20gXCIuL21kNUNvbmZpZ3VyYXRpb25cIjtcblxuZXhwb3J0IGZ1bmN0aW9uIGFwcGx5TWQ1Qm9keUNoZWNrc3VtTWlkZGxld2FyZShvcHRpb25zOiBNZDVCb2R5Q2hlY2tzdW1SZXNvbHZlZENvbmZpZyk6IEJ1aWxkTWlkZGxld2FyZTxhbnksIGFueT4ge1xuICByZXR1cm4gPE91dHB1dCBleHRlbmRzIE1ldGFkYXRhQmVhcmVyPihuZXh0OiBCdWlsZEhhbmRsZXI8YW55LCBPdXRwdXQ+KTogQnVpbGRIYW5kbGVyPGFueSwgT3V0cHV0PiA9PlxuICAgIGFzeW5jIChhcmdzOiBCdWlsZEhhbmRsZXJBcmd1bWVudHM8YW55Pik6IFByb21pc2U8QnVpbGRIYW5kbGVyT3V0cHV0PE91dHB1dD4+ID0+IHtcbiAgICAgIGxldCB7IHJlcXVlc3QgfSA9IGFyZ3M7XG4gICAgICBpZiAoSHR0cFJlcXVlc3QuaXNJbnN0YW5jZShyZXF1ZXN0KSkge1xuICAgICAgICBjb25zdCB7IGJvZHksIGhlYWRlcnMgfSA9IHJlcXVlc3Q7XG4gICAgICAgIGlmICghaGFzSGVhZGVyKFwiQ29udGVudC1NRDVcIiwgaGVhZGVycykpIHtcbiAgICAgICAgICBsZXQgZGlnZXN0OiBQcm9taXNlPFVpbnQ4QXJyYXk+O1xuICAgICAgICAgIGlmIChib2R5ID09PSB1bmRlZmluZWQgfHwgdHlwZW9mIGJvZHkgPT09IFwic3RyaW5nXCIgfHwgQXJyYXlCdWZmZXIuaXNWaWV3KGJvZHkpIHx8IGlzQXJyYXlCdWZmZXIoYm9keSkpIHtcbiAgICAgICAgICAgIGNvbnN0IGhhc2ggPSBuZXcgb3B0aW9ucy5tZDUoKTtcbiAgICAgICAgICAgIGhhc2gudXBkYXRlKGJvZHkgfHwgXCJcIik7XG4gICAgICAgICAgICBkaWdlc3QgPSBoYXNoLmRpZ2VzdCgpO1xuICAgICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgICBkaWdlc3QgPSBvcHRpb25zLnN0cmVhbUhhc2hlcihvcHRpb25zLm1kNSwgYm9keSk7XG4gICAgICAgICAgfVxuXG4gICAgICAgICAgcmVxdWVzdCA9IHtcbiAgICAgICAgICAgIC4uLnJlcXVlc3QsXG4gICAgICAgICAgICBoZWFkZXJzOiB7XG4gICAgICAgICAgICAgIC4uLmhlYWRlcnMsXG4gICAgICAgICAgICAgIFwiQ29udGVudC1NRDVcIjogb3B0aW9ucy5iYXNlNjRFbmNvZGVyKGF3YWl0IGRpZ2VzdCksXG4gICAgICAgICAgICB9LFxuICAgICAgICAgIH07XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICAgIHJldHVybiBuZXh0KHtcbiAgICAgICAgLi4uYXJncyxcbiAgICAgICAgcmVxdWVzdCxcbiAgICAgIH0pO1xuICAgIH07XG59XG5cbmV4cG9ydCBjb25zdCBhcHBseU1kNUJvZHlDaGVja3N1bU1pZGRsZXdhcmVPcHRpb25zOiBCdWlsZEhhbmRsZXJPcHRpb25zID0ge1xuICBuYW1lOiBcImFwcGx5TWQ1Qm9keUNoZWNrc3VtTWlkZGxld2FyZVwiLFxuICBzdGVwOiBcImJ1aWxkXCIsXG4gIHRhZ3M6IFtcIlNFVF9DT05URU5UX01ENVwiLCBcIkJPRFlfQ0hFQ0tTVU1cIl0sXG4gIG92ZXJyaWRlOiB0cnVlLFxufTtcblxuZXhwb3J0IGNvbnN0IGdldEFwcGx5TWQ1Qm9keUNoZWNrc3VtUGx1Z2luID0gKGNvbmZpZzogTWQ1Qm9keUNoZWNrc3VtUmVzb2x2ZWRDb25maWcpOiBQbHVnZ2FibGU8YW55LCBhbnk+ID0+ICh7XG4gIGFwcGx5VG9TdGFjazogKGNsaWVudFN0YWNrKSA9PiB7XG4gICAgY2xpZW50U3RhY2suYWRkKGFwcGx5TWQ1Qm9keUNoZWNrc3VtTWlkZGxld2FyZShjb25maWcpLCBhcHBseU1kNUJvZHlDaGVja3N1bU1pZGRsZXdhcmVPcHRpb25zKTtcbiAgfSxcbn0pO1xuXG5mdW5jdGlvbiBoYXNIZWFkZXIoc291Z2h0SGVhZGVyOiBzdHJpbmcsIGhlYWRlcnM6IEhlYWRlckJhZyk6IGJvb2xlYW4ge1xuICBzb3VnaHRIZWFkZXIgPSBzb3VnaHRIZWFkZXIudG9Mb3dlckNhc2UoKTtcbiAgZm9yIChjb25zdCBoZWFkZXJOYW1lIG9mIE9iamVjdC5rZXlzKGhlYWRlcnMpKSB7XG4gICAgaWYgKHNvdWdodEhlYWRlciA9PT0gaGVhZGVyTmFtZS50b0xvd2VyQ2FzZSgpKSB7XG4gICAgICByZXR1cm4gdHJ1ZTtcbiAgICB9XG4gIH1cblxuICByZXR1cm4gZmFsc2U7XG59XG4iXX0=
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwbHlNZDVCb2R5Q2hlY2tzdW1NaWRkbGV3YXJlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2FwcGx5TWQ1Qm9keUNoZWNrc3VtTWlkZGxld2FyZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSw4REFBeUQ7QUFDekQsMERBQXFEO0FBYzlDLE1BQU0sOEJBQThCLEdBQ3pDLENBQUMsT0FBc0MsRUFBNkIsRUFBRSxDQUN0RSxDQUFnQyxJQUErQixFQUE2QixFQUFFLENBQzlGLEtBQUssRUFBRSxJQUFnQyxFQUF1QyxFQUFFO0lBQzlFLElBQUksRUFBRSxPQUFPLEVBQUUsR0FBRyxJQUFJLENBQUM7SUFDdkIsSUFBSSwyQkFBVyxDQUFDLFVBQVUsQ0FBQyxPQUFPLENBQUMsRUFBRTtRQUNuQyxNQUFNLEVBQUUsSUFBSSxFQUFFLE9BQU8sRUFBRSxHQUFHLE9BQU8sQ0FBQztRQUNsQyxJQUFJLENBQUMsU0FBUyxDQUFDLGFBQWEsRUFBRSxPQUFPLENBQUMsRUFBRTtZQUN0QyxJQUFJLE1BQTJCLENBQUM7WUFDaEMsSUFBSSxJQUFJLEtBQUssU0FBUyxJQUFJLE9BQU8sSUFBSSxLQUFLLFFBQVEsSUFBSSxXQUFXLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxJQUFJLCtCQUFhLENBQUMsSUFBSSxDQUFDLEVBQUU7Z0JBQ3JHLE1BQU0sSUFBSSxHQUFHLElBQUksT0FBTyxDQUFDLEdBQUcsRUFBRSxDQUFDO2dCQUMvQixJQUFJLENBQUMsTUFBTSxDQUFDLElBQUksSUFBSSxFQUFFLENBQUMsQ0FBQztnQkFDeEIsTUFBTSxHQUFHLElBQUksQ0FBQyxNQUFNLEVBQUUsQ0FBQzthQUN4QjtpQkFBTTtnQkFDTCxNQUFNLEdBQUcsT0FBTyxDQUFDLFlBQVksQ0FBQyxPQUFPLENBQUMsR0FBRyxFQUFFLElBQUksQ0FBQyxDQUFDO2FBQ2xEO1lBRUQsT0FBTyxHQUFHO2dCQUNSLEdBQUcsT0FBTztnQkFDVixPQUFPLEVBQUU7b0JBQ1AsR0FBRyxPQUFPO29CQUNWLGFBQWEsRUFBRSxPQUFPLENBQUMsYUFBYSxDQUFDLE1BQU0sTUFBTSxDQUFDO2lCQUNuRDthQUNGLENBQUM7U0FDSDtLQUNGO0lBQ0QsT0FBTyxJQUFJLENBQUM7UUFDVixHQUFHLElBQUk7UUFDUCxPQUFPO0tBQ1IsQ0FBQyxDQUFDO0FBQ0wsQ0FBQyxDQUFDO0FBOUJTLFFBQUEsOEJBQThCLGtDQThCdkM7QUFFUyxRQUFBLHFDQUFxQyxHQUF3QjtJQUN4RSxJQUFJLEVBQUUsZ0NBQWdDO0lBQ3RDLElBQUksRUFBRSxPQUFPO0lBQ2IsSUFBSSxFQUFFLENBQUMsaUJBQWlCLEVBQUUsZUFBZSxDQUFDO0lBQzFDLFFBQVEsRUFBRSxJQUFJO0NBQ2YsQ0FBQztBQUVLLE1BQU0sNkJBQTZCLEdBQUcsQ0FBQyxNQUFxQyxFQUF1QixFQUFFLENBQUMsQ0FBQztJQUM1RyxZQUFZLEVBQUUsQ0FBQyxXQUFXLEVBQUUsRUFBRTtRQUM1QixXQUFXLENBQUMsR0FBRyxDQUFDLHNDQUE4QixDQUFDLE1BQU0sQ0FBQyxFQUFFLDZDQUFxQyxDQUFDLENBQUM7SUFDakcsQ0FBQztDQUNGLENBQUMsQ0FBQztBQUpVLFFBQUEsNkJBQTZCLGlDQUl2QztBQUVILE1BQU0sU0FBUyxHQUFHLENBQUMsWUFBb0IsRUFBRSxPQUFrQixFQUFXLEVBQUU7SUFDdEUsWUFBWSxHQUFHLFlBQVksQ0FBQyxXQUFXLEVBQUUsQ0FBQztJQUMxQyxLQUFLLE1BQU0sVUFBVSxJQUFJLE1BQU0sQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLEVBQUU7UUFDN0MsSUFBSSxZQUFZLEtBQUssVUFBVSxDQUFDLFdBQVcsRUFBRSxFQUFFO1lBQzdDLE9BQU8sSUFBSSxDQUFDO1NBQ2I7S0FDRjtJQUVELE9BQU8sS0FBSyxDQUFDO0FBQ2YsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgaXNBcnJheUJ1ZmZlciB9IGZyb20gXCJAYXdzLXNkay9pcy1hcnJheS1idWZmZXJcIjtcbmltcG9ydCB7IEh0dHBSZXF1ZXN0IH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7XG4gIEJ1aWxkSGFuZGxlcixcbiAgQnVpbGRIYW5kbGVyQXJndW1lbnRzLFxuICBCdWlsZEhhbmRsZXJPcHRpb25zLFxuICBCdWlsZEhhbmRsZXJPdXRwdXQsXG4gIEJ1aWxkTWlkZGxld2FyZSxcbiAgSGVhZGVyQmFnLFxuICBNZXRhZGF0YUJlYXJlcixcbiAgUGx1Z2dhYmxlLFxufSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgTWQ1Qm9keUNoZWNrc3VtUmVzb2x2ZWRDb25maWcgfSBmcm9tIFwiLi9tZDVDb25maWd1cmF0aW9uXCI7XG5cbmV4cG9ydCBjb25zdCBhcHBseU1kNUJvZHlDaGVja3N1bU1pZGRsZXdhcmUgPVxuICAob3B0aW9uczogTWQ1Qm9keUNoZWNrc3VtUmVzb2x2ZWRDb25maWcpOiBCdWlsZE1pZGRsZXdhcmU8YW55LCBhbnk+ID0+XG4gIDxPdXRwdXQgZXh0ZW5kcyBNZXRhZGF0YUJlYXJlcj4obmV4dDogQnVpbGRIYW5kbGVyPGFueSwgT3V0cHV0Pik6IEJ1aWxkSGFuZGxlcjxhbnksIE91dHB1dD4gPT5cbiAgYXN5bmMgKGFyZ3M6IEJ1aWxkSGFuZGxlckFyZ3VtZW50czxhbnk+KTogUHJvbWlzZTxCdWlsZEhhbmRsZXJPdXRwdXQ8T3V0cHV0Pj4gPT4ge1xuICAgIGxldCB7IHJlcXVlc3QgfSA9IGFyZ3M7XG4gICAgaWYgKEh0dHBSZXF1ZXN0LmlzSW5zdGFuY2UocmVxdWVzdCkpIHtcbiAgICAgIGNvbnN0IHsgYm9keSwgaGVhZGVycyB9ID0gcmVxdWVzdDtcbiAgICAgIGlmICghaGFzSGVhZGVyKFwiY29udGVudC1tZDVcIiwgaGVhZGVycykpIHtcbiAgICAgICAgbGV0IGRpZ2VzdDogUHJvbWlzZTxVaW50OEFycmF5PjtcbiAgICAgICAgaWYgKGJvZHkgPT09IHVuZGVmaW5lZCB8fCB0eXBlb2YgYm9keSA9PT0gXCJzdHJpbmdcIiB8fCBBcnJheUJ1ZmZlci5pc1ZpZXcoYm9keSkgfHwgaXNBcnJheUJ1ZmZlcihib2R5KSkge1xuICAgICAgICAgIGNvbnN0IGhhc2ggPSBuZXcgb3B0aW9ucy5tZDUoKTtcbiAgICAgICAgICBoYXNoLnVwZGF0ZShib2R5IHx8IFwiXCIpO1xuICAgICAgICAgIGRpZ2VzdCA9IGhhc2guZGlnZXN0KCk7XG4gICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgZGlnZXN0ID0gb3B0aW9ucy5zdHJlYW1IYXNoZXIob3B0aW9ucy5tZDUsIGJvZHkpO1xuICAgICAgICB9XG5cbiAgICAgICAgcmVxdWVzdCA9IHtcbiAgICAgICAgICAuLi5yZXF1ZXN0LFxuICAgICAgICAgIGhlYWRlcnM6IHtcbiAgICAgICAgICAgIC4uLmhlYWRlcnMsXG4gICAgICAgICAgICBcImNvbnRlbnQtbWQ1XCI6IG9wdGlvbnMuYmFzZTY0RW5jb2Rlcihhd2FpdCBkaWdlc3QpLFxuICAgICAgICAgIH0sXG4gICAgICAgIH07XG4gICAgICB9XG4gICAgfVxuICAgIHJldHVybiBuZXh0KHtcbiAgICAgIC4uLmFyZ3MsXG4gICAgICByZXF1ZXN0LFxuICAgIH0pO1xuICB9O1xuXG5leHBvcnQgY29uc3QgYXBwbHlNZDVCb2R5Q2hlY2tzdW1NaWRkbGV3YXJlT3B0aW9uczogQnVpbGRIYW5kbGVyT3B0aW9ucyA9IHtcbiAgbmFtZTogXCJhcHBseU1kNUJvZHlDaGVja3N1bU1pZGRsZXdhcmVcIixcbiAgc3RlcDogXCJidWlsZFwiLFxuICB0YWdzOiBbXCJTRVRfQ09OVEVOVF9NRDVcIiwgXCJCT0RZX0NIRUNLU1VNXCJdLFxuICBvdmVycmlkZTogdHJ1ZSxcbn07XG5cbmV4cG9ydCBjb25zdCBnZXRBcHBseU1kNUJvZHlDaGVja3N1bVBsdWdpbiA9IChjb25maWc6IE1kNUJvZHlDaGVja3N1bVJlc29sdmVkQ29uZmlnKTogUGx1Z2dhYmxlPGFueSwgYW55PiA9PiAoe1xuICBhcHBseVRvU3RhY2s6IChjbGllbnRTdGFjaykgPT4ge1xuICAgIGNsaWVudFN0YWNrLmFkZChhcHBseU1kNUJvZHlDaGVja3N1bU1pZGRsZXdhcmUoY29uZmlnKSwgYXBwbHlNZDVCb2R5Q2hlY2tzdW1NaWRkbGV3YXJlT3B0aW9ucyk7XG4gIH0sXG59KTtcblxuY29uc3QgaGFzSGVhZGVyID0gKHNvdWdodEhlYWRlcjogc3RyaW5nLCBoZWFkZXJzOiBIZWFkZXJCYWcpOiBib29sZWFuID0+IHtcbiAgc291Z2h0SGVhZGVyID0gc291Z2h0SGVhZGVyLnRvTG93ZXJDYXNlKCk7XG4gIGZvciAoY29uc3QgaGVhZGVyTmFtZSBvZiBPYmplY3Qua2V5cyhoZWFkZXJzKSkge1xuICAgIGlmIChzb3VnaHRIZWFkZXIgPT09IGhlYWRlck5hbWUudG9Mb3dlckNhc2UoKSkge1xuICAgICAgcmV0dXJuIHRydWU7XG4gICAgfVxuICB9XG5cbiAgcmV0dXJuIGZhbHNlO1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -39436,13 +39536,9 @@ tslib_1.__exportStar(__nccwpck_require__(9360), exports);
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.resolveMd5BodyChecksumConfig = void 0;
-function resolveMd5BodyChecksumConfig(input) {
-    return {
-        ...input,
-    };
-}
+const resolveMd5BodyChecksumConfig = (input) => input;
 exports.resolveMd5BodyChecksumConfig = resolveMd5BodyChecksumConfig;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWQ1Q29uZmlndXJhdGlvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9tZDVDb25maWd1cmF0aW9uLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQXlCQSxTQUFnQiw0QkFBNEIsQ0FDMUMsS0FBMEQ7SUFFMUQsT0FBTztRQUNMLEdBQUcsS0FBSztLQUNULENBQUM7QUFDSixDQUFDO0FBTkQsb0VBTUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBFbmNvZGVyLCBIYXNoLCBTdHJlYW1IYXNoZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGludGVyZmFjZSBNZDVCb2R5Q2hlY2tzdW1JbnB1dENvbmZpZyB7fVxuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7XG4gIG1kNTogeyBuZXcgKCk6IEhhc2ggfTtcbiAgYmFzZTY0RW5jb2RlcjogRW5jb2RlcjtcbiAgc3RyZWFtSGFzaGVyOiBTdHJlYW1IYXNoZXI8YW55Pjtcbn1cbmV4cG9ydCBpbnRlcmZhY2UgTWQ1Qm9keUNoZWNrc3VtUmVzb2x2ZWRDb25maWcge1xuICAvKipcbiAgICogQSBjb25zdHJ1Y3RvciBmb3IgYSBjbGFzcyBpbXBsZW1lbnRpbmcgdGhlIEBhd3Mtc2RrL3R5cGVzLkhhc2ggaW50ZXJmYWNlIHRoYXQgY29tcHV0ZXMgTUQ1IGhhc2hlcy5cbiAgICogQGludGVybmFsXG4gICAqL1xuICBtZDU6IHsgbmV3ICgpOiBIYXNoIH07XG4gIC8qKlxuICAgKiBUaGUgZnVuY3Rpb24gdGhhdCB3aWxsIGJlIHVzZWQgdG8gY29udmVydCBiaW5hcnkgZGF0YSB0byBhIGJhc2U2NC1lbmNvZGVkIHN0cmluZy5cbiAgICogQGludGVybmFsXG4gICAqL1xuICBiYXNlNjRFbmNvZGVyOiBFbmNvZGVyO1xuICAvKipcbiAgICogQSBmdW5jdGlvbiB0aGF0LCBnaXZlbiBhIGhhc2ggY29uc3RydWN0b3IgYW5kIGEgc3RyZWFtLCBjYWxjdWxhdGVzIHRoZSBoYXNoIG9mIHRoZSBzdHJlYW1lZCB2YWx1ZS5cbiAgICogQGludGVybmFsXG4gICAqL1xuICBzdHJlYW1IYXNoZXI6IFN0cmVhbUhhc2hlcjxhbnk+O1xufVxuZXhwb3J0IGZ1bmN0aW9uIHJlc29sdmVNZDVCb2R5Q2hlY2tzdW1Db25maWc8VD4oXG4gIGlucHV0OiBUICYgUHJldmlvdXNseVJlc29sdmVkICYgTWQ1Qm9keUNoZWNrc3VtSW5wdXRDb25maWdcbik6IFQgJiBNZDVCb2R5Q2hlY2tzdW1SZXNvbHZlZENvbmZpZyB7XG4gIHJldHVybiB7XG4gICAgLi4uaW5wdXQsXG4gIH07XG59XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWQ1Q29uZmlndXJhdGlvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9tZDVDb25maWd1cmF0aW9uLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQTJCTyxNQUFNLDRCQUE0QixHQUFHLENBQzFDLEtBQTBELEVBQ3ZCLEVBQUUsQ0FBQyxLQUFLLENBQUM7QUFGakMsUUFBQSw0QkFBNEIsZ0NBRUsiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBFbmNvZGVyLCBIYXNoQ29uc3RydWN0b3IsIFN0cmVhbUhhc2hlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgaW50ZXJmYWNlIE1kNUJvZHlDaGVja3N1bUlucHV0Q29uZmlnIHt9XG5pbnRlcmZhY2UgUHJldmlvdXNseVJlc29sdmVkIHtcbiAgbWQ1OiBIYXNoQ29uc3RydWN0b3I7XG4gIGJhc2U2NEVuY29kZXI6IEVuY29kZXI7XG4gIHN0cmVhbUhhc2hlcjogU3RyZWFtSGFzaGVyPGFueT47XG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgTWQ1Qm9keUNoZWNrc3VtUmVzb2x2ZWRDb25maWcge1xuICAvKipcbiAgICogQSBjb25zdHJ1Y3RvciBmb3IgYSBjbGFzcyBpbXBsZW1lbnRpbmcgdGhlIEBhd3Mtc2RrL3R5cGVzLkhhc2ggaW50ZXJmYWNlIHRoYXQgY29tcHV0ZXMgTUQ1IGhhc2hlcy5cbiAgICogQGludGVybmFsXG4gICAqL1xuICBtZDU6IEhhc2hDb25zdHJ1Y3RvcjtcbiAgLyoqXG4gICAqIFRoZSBmdW5jdGlvbiB0aGF0IHdpbGwgYmUgdXNlZCB0byBjb252ZXJ0IGJpbmFyeSBkYXRhIHRvIGEgYmFzZTY0LWVuY29kZWQgc3RyaW5nLlxuICAgKiBAaW50ZXJuYWxcbiAgICovXG4gIGJhc2U2NEVuY29kZXI6IEVuY29kZXI7XG4gIC8qKlxuICAgKiBBIGZ1bmN0aW9uIHRoYXQsIGdpdmVuIGEgaGFzaCBjb25zdHJ1Y3RvciBhbmQgYSBzdHJlYW0sIGNhbGN1bGF0ZXMgdGhlIGhhc2ggb2YgdGhlIHN0cmVhbWVkIHZhbHVlLlxuICAgKiBAaW50ZXJuYWxcbiAgICovXG4gIHN0cmVhbUhhc2hlcjogU3RyZWFtSGFzaGVyPGFueT47XG59XG5cbmV4cG9ydCBjb25zdCByZXNvbHZlTWQ1Qm9keUNoZWNrc3VtQ29uZmlnID0gPFQ+KFxuICBpbnB1dDogVCAmIFByZXZpb3VzbHlSZXNvbHZlZCAmIE1kNUJvZHlDaGVja3N1bUlucHV0Q29uZmlnXG4pOiBUICYgTWQ1Qm9keUNoZWNrc3VtUmVzb2x2ZWRDb25maWcgPT4gaW5wdXQ7XG4iXX0=
 
 /***/ }),
 
@@ -40398,7 +40494,7 @@ const asSdkError = (error) => {
         return new Error(error);
     return new Error(`AWS SDK error wrapper for ${error}`);
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3RhbmRhcmRSZXRyeVN0cmF0ZWd5LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL1N0YW5kYXJkUmV0cnlTdHJhdGVneS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBcUQ7QUFDckQsd0ZBQTBFO0FBRzFFLCtCQUEwQjtBQUUxQixxQ0FBNkQ7QUFDN0QsMkNBTXFCO0FBQ3JCLDJEQUEyRDtBQUMzRCxpREFBcUQ7QUFDckQsaURBQXFEO0FBWXJELE1BQWEscUJBQXFCO0lBTWhDLFlBQTZCLG1CQUFxQyxFQUFFLE9BQXNDOztRQUE3RSx3QkFBbUIsR0FBbkIsbUJBQW1CLENBQWtCO1FBRjNELFNBQUksR0FBVyxvQkFBVyxDQUFDLFFBQVEsQ0FBQztRQUd6QyxJQUFJLENBQUMsWUFBWSxHQUFHLE1BQUEsT0FBTyxhQUFQLE9BQU8sdUJBQVAsT0FBTyxDQUFFLFlBQVksbUNBQUksa0NBQW1CLENBQUM7UUFDakUsSUFBSSxDQUFDLFlBQVksR0FBRyxNQUFBLE9BQU8sYUFBUCxPQUFPLHVCQUFQLE9BQU8sQ0FBRSxZQUFZLG1DQUFJLGtDQUFtQixDQUFDO1FBQ2pFLElBQUksQ0FBQyxVQUFVLEdBQUcsTUFBQSxPQUFPLGFBQVAsT0FBTyx1QkFBUCxPQUFPLENBQUUsVUFBVSxtQ0FBSSx3Q0FBb0IsQ0FBQyxnQ0FBb0IsQ0FBQyxDQUFDO0lBQ3RGLENBQUM7SUFFTyxXQUFXLENBQUMsS0FBZSxFQUFFLFFBQWdCLEVBQUUsV0FBbUI7UUFDeEUsT0FBTyxRQUFRLEdBQUcsV0FBVyxJQUFJLElBQUksQ0FBQyxZQUFZLENBQUMsS0FBSyxDQUFDLElBQUksSUFBSSxDQUFDLFVBQVUsQ0FBQyxjQUFjLENBQUMsS0FBSyxDQUFDLENBQUM7SUFDckcsQ0FBQztJQUVPLEtBQUssQ0FBQyxjQUFjO1FBQzFCLElBQUksV0FBbUIsQ0FBQztRQUN4QixJQUFJO1lBQ0YsV0FBVyxHQUFHLE1BQU0sSUFBSSxDQUFDLG1CQUFtQixFQUFF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QUVELE1BQU0sVUFBVSxHQUFHLENBQUMsS0FBYyxFQUFZLEVBQUU7SUFDOUMsSUFBSSxLQUFLLFlBQVksS0FBSztRQUFFLE9BQU8sS0FBSyxDQUFDO0lBQ3pDLElBQUksS0FBSyxZQUFZLE1BQU07UUFBRSxPQUFPLE1BQU0sQ0FBQyxNQUFNLENBQUMsSUFBSSxLQUFLLEVBQUUsRUFBRSxLQUFLLENBQUMsQ0FBQztJQUN0RSxJQUFJLE9BQU8sS0FBSyxLQUFLLFFBQVE7UUFBRSxPQUFPLElBQUksS0FBSyxDQUFDLEtBQUssQ0FBQyxDQUFDO0lBQ3ZELE9BQU8sSUFBSSxLQUFLLENBQUMsNkJBQTZCLEtBQUssRUFBRSxDQUFDLENBQUM7QUFDekQsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSHR0cFJlcXVlc3QgfSBmcm9tIFwiQGF3cy1zZGsvcHJvdG9jb2wtaHR0cFwiO1xuaW1wb3J0IHsgaXNUaHJvdHRsaW5nRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvc2VydmljZS1lcnJvci1jbGFzc2lmaWNhdGlvblwiO1xuaW1wb3J0IHsgU2RrRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvc21pdGh5LWNsaWVudFwiO1xuaW1wb3J0IHsgRmluYWxpemVIYW5kbGVyLCBGaW5hbGl6ZUhhbmRsZXJBcmd1bWVudHMsIE1ldGFkYXRhQmVhcmVyLCBQcm92aWRlciwgUmV0cnlTdHJhdGVneSB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuaW1wb3J0IHsgdjQgfSBmcm9tIFwidXVpZFwiO1xuXG5pbXBvcnQgeyBERUZBVUxUX01BWF9BVFRFTVBUUywgUkVUUllfTU9ERVMgfSBmcm9tIFwiLi9jb25maWdcIjtcbmltcG9ydCB7XG4gIERFRkFVTFRfUkVUUllfREVMQVlfQkFTRSxcbiAgSU5JVElBTF9SRVRSWV9UT0tFTlMsXG4gIElOVk9DQVRJT05fSURfSEVBREVSLFxuICBSRVFVRVNUX0hFQURFUixcbiAgVEhST1RUTElOR19SRVRSWV9ERUxBWV9CQVNFLFxufSBmcm9tIFwiLi9jb25zdGFudHNcIjtcbmltcG9ydCB7IGdldERlZmF1bHRSZXRyeVF1b3RhIH0gZnJvbSBcIi4vZGVmYXVsdFJldHJ5UXVvdGFcIjtcbmltcG9ydCB7IGRlZmF1bHREZWxheURlY2lkZXIgfSBmcm9tIFwiLi9kZWxheURlY2lkZXJcIjtcbmltcG9ydCB7IGRlZmF1bHRSZXRyeURlY2lkZXIgfSBmcm9tIFwiLi9yZXRyeURlY2lkZXJcIjtcbmltcG9ydCB7IERlbGF5RGVjaWRlciwgUmV0cnlEZWNpZGVyLCBSZXRyeVF1b3RhIH0gZnJvbSBcIi4vdHlwZXNcIjtcblxuLyoqXG4gKiBTdHJhdGVneSBvcHRpb25zIHRvIGJlIHBhc3NlZCB0byBTdGFuZGFyZFJldHJ5U3RyYXRlZ3lcbiAqL1xuZXhwb3J0IGludGVyZmFjZSBTdGFuZGFyZFJldHJ5U3RyYXRlZ3lPcHRpb25zIHtcbiAgcmV0cnlEZWNpZGVyPzogUmV0cnlEZWNpZGVyO1xuICBkZWxheURlY2lkZXI/OiBEZWxheURlY2lkZXI7XG4gIHJldHJ5UXVvdGE/OiBSZXRyeVF1b3RhO1xufVxuXG5leHBvcnQgY2xhc3MgU3RhbmRhcmRSZXRyeVN0cmF0ZWd5IGltcGxlbWVudHMgUmV0cnlTdHJhdGVneSB7XG4gIHByaXZhdGUgcmV0cnlEZWNpZGVyOiBSZXRyeURlY2lkZXI7XG4gIHByaXZhdGUgZGVsYXlEZWNpZGVyOiBEZWxheURlY2lkZXI7XG4gIHByaXZhdGUgcmV0cnlRdW90YTogUmV0cnlRdW90YTtcbiAgcHVibGljIG1vZGU6IHN0cmluZyA9IFJFVFJZX01PREVTLlNUQU5EQVJEO1xuXG4gIGNvbnN0cnVjdG9yKHByaXZhdGUgcmVhZG9ubHkgbWF4QXR0ZW1wdHNQcm92aWRlcjogUHJvdmlkZXI8bnVtYmVyPiwgb3B0aW9ucz86IFN0YW5kYXJkUmV0cnlTdHJhdGVneU9wdGlvbnMpIHtcbiAgICB0aGlzLnJldHJ5RGVjaWRlciA9IG9wdGlvbnM/LnJldHJ5RGVjaWRlciA/PyBkZWZhdWx0UmV0cnlEZWNpZGVyO1xuICAgIHRoaXMuZGVsYXlEZWNpZGVyID0gb3B0aW9ucz8uZGVsYXlEZWNpZGVyID8/IGRlZmF1bHREZWxheURlY2lkZXI7XG4gICAgdGhpcy5yZXRyeVF1b3RhID0gb3B0aW9ucz8ucmV0cnlRdW90YSA/PyBnZXREZWZhdWx0UmV0cnlRdW90YShJTklUSUFMX1JFVFJZX1RPS0VOUyk7XG4gIH1cblxuICBwcml2YXRlIHNob3VsZFJldHJ5KGVycm9yOiBTZGtFcnJvciwgYXR0ZW1wdHM6IG51bWJlciwgbWF4QXR0ZW1wdHM6IG51bWJlcikge1xuICAgIHJldHVybiBhdHRlbXB0cyA8IG1heEF0dGVtcHRzICYmIHRoaXMucmV0cnlEZWNpZGVyKGVycm9yKSAmJiB0aGlzLnJldHJ5UXVvdGEuaGFzUmV0cnlUb2tlbnMoZXJyb3IpO1xuICB9XG5cbiAgcHJpdmF0ZSBhc3luYyBnZXRNYXhBdHRlbXB0cygpIHtcbiAgICBsZXQgbWF4QXR0ZW1wdHM6IG51bWJlcjtcbiAgICB0cnkge1xuICAgICAgbWF4QXR0ZW1wdHMgPSBhd2FpdCB0aGlzLm1heEF0dGVtcHRzUHJvdmlkZXIoKTtcbiAgICB9IGNhdGNoIChlcnJvcikge1xuICAgICAgbWF4QXR0ZW1wdHMgPSBERUZBVUxUX01BWF9BVFRFTVBUUztcbiAgICB9XG4gICAgcmV0dXJuIG1heEF0dGVtcHRzO1xuICB9XG5cbiAgYXN5bmMgcmV0cnk8SW5wdXQgZXh0ZW5kcyBvYmplY3QsIE91cHV0IGV4dGVuZHMgTWV0YWRhdGFCZWFyZXI+KFxuICAgIG5leHQ6IEZpbmFsaXplSGFuZGxlcjxJbnB1dCwgT3VwdXQ+LFxuICAgIGFyZ3M6IEZpbmFsaXplSGFuZGxlckFyZ3VtZW50czxJbnB1dD4sXG4gICAgb3B0aW9ucz86IHtcbiAgICAgIGJlZm9yZVJlcXVlc3Q6IEZ1bmN0aW9uO1xuICAgICAgYWZ0ZXJSZXF1ZXN0OiBGdW5jdGlvbjtcbiAgICB9XG4gICkge1xuICAgIGxldCByZXRyeVRva2VuQW1vdW50O1xuICAgIGxldCBhdHRlbXB0cyA9IDA7XG4gICAgbGV0IHRvdGFsRGVsYXkgPSAwO1xuXG4gICAgY29uc3QgbWF4QXR0ZW1wdHMgPSBhd2FpdCB0aGlzLmdldE1heEF0dGVtcHRzKCk7XG5cbiAgICBjb25zdCB7IHJlcXVlc3QgfSA9IGFyZ3M7XG4gICAgaWYgKEh0dHBSZXF1ZXN0LmlzSW5zdGFuY2UocmVxdWVzdCkpIHtcbiAgICAgIHJlcXVlc3QuaGVhZGVyc1tJTlZPQ0FUSU9OX0lEX0hFQURFUl0gPSB2NCgpO1xuICAgIH1cblxuICAgIHdoaWxlICh0cnVlKSB7XG4gICAgICB0cnkge1xuICAgICAgICBpZiAoSHR0cFJlcXVlc3QuaXNJbnN0YW5jZShyZXF1ZXN0KSkge1xuICAgICAgICAgIHJlcXVlc3QuaGVhZGVyc1tSRVFVRVNUX0hFQURFUl0gPSBgYXR0ZW1wdD0ke2F0dGVtcHRzICsgMX07IG1heD0ke21heEF0dGVtcHRzfWA7XG4gICAgICAgIH1cblxuICAgICAgICBpZiAob3B0aW9ucz8uYmVmb3JlUmVxdWVzdCkge1xuICAgICAgICAgIGF3YWl0IG9wdGlvbnMuYmVmb3JlUmVxdWVzdCgpO1xuICAgICAgICB9XG4gICAgICAgIGNvbnN0IHsgcmVzcG9uc2UsIG91dHB1dCB9ID0gYXdhaXQgbmV4dChhcmdzKTtcbiAgICAgICAgaWYgKG9wdGlvbnM/LmFmdGVyUmVxdWVzdCkge1xuICAgICAgICAgIG9wdGlvbnMuYWZ0ZXJSZXF1ZXN0KHJlc3BvbnNlKTtcbiAgICAgICAgfVxuXG4gICAgICAgIHRoaXMucmV0cnlRdW90YS5yZWxlYXNlUmV0cnlUb2tlbnMocmV0cnlUb2tlbkFtb3VudCk7XG4gICAgICAgIG91dHB1dC4kbWV0YWRhdGEuYXR0ZW1wdHMgPSBhdHRlbXB0cyArIDE7XG4gICAgICAgIG91dHB1dC4kbWV0YWRhdGEudG90YWxSZXRyeURlbGF5ID0gdG90YWxEZWxheTtcblxuICAgICAgICByZXR1cm4geyByZXNwb25zZSwgb3V0cHV0IH07XG4gICAgICB9IGNhdGNoIChlKSB7XG4gICAgICAgIGNvbnN0IGVyciA9IGFzU2RrRXJyb3IoZSk7XG4gICAgICAgIGF0dGVtcHRzKys7XG4gICAgICAgIGlmICh0aGlzLnNob3VsZFJldHJ5KGVyciBhcyBTZGtFcnJvciwgYXR0ZW1wdHMsIG1heEF0dGVtcHRzKSkge1xuICAgICAgICAgIHJldHJ5VG9rZW5BbW91bnQgPSB0aGlzLnJldHJ5UXVvdGEucmV0cmlldmVSZXRyeVRva2VucyhlcnIpO1xuICAgICAgICAgIGNvbnN0IGRlbGF5ID0gdGhpcy5kZWxheURlY2lkZXIoXG4gICAgICAgICAgICBpc1Rocm90dGxpbmdFcnJvcihlcnIpID8gVEhST1RUTElOR19SRVRSWV9ERUxBWV9CQVNFIDogREVGQVVMVF9SRVRSWV9ERUxBWV9CQVNFLFxuICAgICAgICAgICAgYXR0ZW1wdHNcbiAgICAgICAgICApO1xuICAgICAgICAgIHRvdGFsRGVsYXkgKz0gZGVsYXk7XG5cbiAgICAgICAgICBhd2FpdCBuZXcgUHJvbWlzZSgocmVzb2x2ZSkgPT4gc2V0VGltZW91dChyZXNvbHZlLCBkZWxheSkpO1xuICAgICAgICAgIGNvbnRpbnVlO1xuICAgICAgICB9XG5cbiAgICAgICAgaWYgKCFlcnIuJG1ldGFkYXRhKSB7XG4gICAgICAgICAgZXJyLiRtZXRhZGF0YSA9IHt9O1xuICAgICAgICB9XG5cbiAgICAgICAgZXJyLiRtZXRhZGF0YS5hdHRlbXB0cyA9IGF0dGVtcHRzO1xuICAgICAgICBlcnIuJG1ldGFkYXRhLnRvdGFsUmV0cnlEZWxheSA9IHRvdGFsRGVsYXk7XG4gICAgICAgIHRocm93IGVycjtcbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cblxuY29uc3QgYXNTZGtFcnJvciA9IChlcnJvcjogdW5rbm93bik6IFNka0Vycm9yID0+IHtcbiAgaWYgKGVycm9yIGluc3RhbmNlb2YgRXJyb3IpIHJldHVybiBlcnJvcjtcbiAgaWYgKGVycm9yIGluc3RhbmNlb2YgT2JqZWN0KSByZXR1cm4gT2JqZWN0LmFzc2lnbihuZXcgRXJyb3IoKSwgZXJyb3IpO1xuICBpZiAodHlwZW9mIGVycm9yID09PSBcInN0cmluZ1wiKSByZXR1cm4gbmV3IEVycm9yKGVycm9yKTtcbiAgcmV0dXJuIG5ldyBFcnJvcihgQVdTIFNESyBlcnJvciB3cmFwcGVyIGZvciAke2Vycm9yfWApO1xufTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3RhbmRhcmRSZXRyeVN0cmF0ZWd5LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL1N0YW5kYXJkUmV0cnlTdHJhdGVneS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBcUQ7QUFDckQsd0ZBQTBFO0FBRzFFLCtCQUEwQjtBQUUxQixxQ0FBNkQ7QUFDN0QsMkNBTXFCO0FBQ3JCLDJEQUEyRDtBQUMzRCxpREFBcUQ7QUFDckQsaURBQXFEO0FBWXJELE1BQWEscUJBQXFCO0lBTWhDLFlBQTZCLG1CQUFxQyxFQUFFLE9BQXNDOztRQUE3RSx3QkFBbUIsR0FBbkIsbUJBQW1CLENBQWtCO1FBRjNELFNBQUksR0FBVyxvQkFBVyxDQUFDLFFBQVEsQ0FBQztRQUd6QyxJQUFJLENBQUMsWUFBWSxHQUFHLE1BQUEsT0FBTyxhQUFQLE9BQU8sdUJBQVAsT0FBTyxDQUFFLFlBQVksbUNBQUksa0NBQW1CLENBQUM7UUFDakUsSUFBSSxDQUFDLFlBQVksR0FBRyxNQUFBLE9BQU8sYUFBUCxPQUFPLHVCQUFQLE9BQU8sQ0FBRSxZQUFZLG1DQUFJLGtDQUFtQixDQUFDO1FBQ2pFLElBQUksQ0FBQyxVQUFVLEdBQUcsTUFBQSxPQUFPLGFBQVAsT0FBTyx1QkFBUCxPQUFPLENBQUUsVUFBVSxtQ0FBSSx3Q0FBb0IsQ0FBQyxnQ0FBb0IsQ0FBQyxDQUFDO0lBQ3RGLENBQUM7SUFFTyxXQUFXLENBQUMsS0FBZSxFQUFFLFFBQWdCLEVBQUUsV0FBbUI7UUFDeEUsT0FBTyxRQUFRLEdBQUcsV0FBVyxJQUFJLElBQUksQ0FBQyxZQUFZLENBQUMsS0FBSyxDQUFDLElBQUksSUFBSSxDQUFDLFVBQVUsQ0FBQyxjQUFjLENBQUMsS0FBSyxDQUFDLENBQUM7SUFDckcsQ0FBQztJQUVPLEtBQUssQ0FBQyxjQUFjO1FBQzFCLElBQUksV0FBbUIsQ0FBQztRQUN4QixJQUFJO1lBQ0YsV0FBVyxHQUFHLE1BQU0sSUFBSSxDQUFDLG1CQUFtQixFQUFF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QUVELE1BQU0sVUFBVSxHQUFHLENBQUMsS0FBYyxFQUFZLEVBQUU7SUFDOUMsSUFBSSxLQUFLLFlBQVksS0FBSztRQUFFLE9BQU8sS0FBSyxDQUFDO0lBQ3pDLElBQUksS0FBSyxZQUFZLE1BQU07UUFBRSxPQUFPLE1BQU0sQ0FBQyxNQUFNLENBQUMsSUFBSSxLQUFLLEVBQUUsRUFBRSxLQUFLLENBQUMsQ0FBQztJQUN0RSxJQUFJLE9BQU8sS0FBSyxLQUFLLFFBQVE7UUFBRSxPQUFPLElBQUksS0FBSyxDQUFDLEtBQUssQ0FBQyxDQUFDO0lBQ3ZELE9BQU8sSUFBSSxLQUFLLENBQUMsNkJBQTZCLEtBQUssRUFBRSxDQUFDLENBQUM7QUFDekQsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSHR0cFJlcXVlc3QgfSBmcm9tIFwiQGF3cy1zZGsvcHJvdG9jb2wtaHR0cFwiO1xuaW1wb3J0IHsgaXNUaHJvdHRsaW5nRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvc2VydmljZS1lcnJvci1jbGFzc2lmaWNhdGlvblwiO1xuaW1wb3J0IHsgU2RrRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IEZpbmFsaXplSGFuZGxlciwgRmluYWxpemVIYW5kbGVyQXJndW1lbnRzLCBNZXRhZGF0YUJlYXJlciwgUHJvdmlkZXIsIFJldHJ5U3RyYXRlZ3kgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IHY0IH0gZnJvbSBcInV1aWRcIjtcblxuaW1wb3J0IHsgREVGQVVMVF9NQVhfQVRURU1QVFMsIFJFVFJZX01PREVTIH0gZnJvbSBcIi4vY29uZmlnXCI7XG5pbXBvcnQge1xuICBERUZBVUxUX1JFVFJZX0RFTEFZX0JBU0UsXG4gIElOSVRJQUxfUkVUUllfVE9LRU5TLFxuICBJTlZPQ0FUSU9OX0lEX0hFQURFUixcbiAgUkVRVUVTVF9IRUFERVIsXG4gIFRIUk9UVExJTkdfUkVUUllfREVMQVlfQkFTRSxcbn0gZnJvbSBcIi4vY29uc3RhbnRzXCI7XG5pbXBvcnQgeyBnZXREZWZhdWx0UmV0cnlRdW90YSB9IGZyb20gXCIuL2RlZmF1bHRSZXRyeVF1b3RhXCI7XG5pbXBvcnQgeyBkZWZhdWx0RGVsYXlEZWNpZGVyIH0gZnJvbSBcIi4vZGVsYXlEZWNpZGVyXCI7XG5pbXBvcnQgeyBkZWZhdWx0UmV0cnlEZWNpZGVyIH0gZnJvbSBcIi4vcmV0cnlEZWNpZGVyXCI7XG5pbXBvcnQgeyBEZWxheURlY2lkZXIsIFJldHJ5RGVjaWRlciwgUmV0cnlRdW90YSB9IGZyb20gXCIuL3R5cGVzXCI7XG5cbi8qKlxuICogU3RyYXRlZ3kgb3B0aW9ucyB0byBiZSBwYXNzZWQgdG8gU3RhbmRhcmRSZXRyeVN0cmF0ZWd5XG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgU3RhbmRhcmRSZXRyeVN0cmF0ZWd5T3B0aW9ucyB7XG4gIHJldHJ5RGVjaWRlcj86IFJldHJ5RGVjaWRlcjtcbiAgZGVsYXlEZWNpZGVyPzogRGVsYXlEZWNpZGVyO1xuICByZXRyeVF1b3RhPzogUmV0cnlRdW90YTtcbn1cblxuZXhwb3J0IGNsYXNzIFN0YW5kYXJkUmV0cnlTdHJhdGVneSBpbXBsZW1lbnRzIFJldHJ5U3RyYXRlZ3kge1xuICBwcml2YXRlIHJldHJ5RGVjaWRlcjogUmV0cnlEZWNpZGVyO1xuICBwcml2YXRlIGRlbGF5RGVjaWRlcjogRGVsYXlEZWNpZGVyO1xuICBwcml2YXRlIHJldHJ5UXVvdGE6IFJldHJ5UXVvdGE7XG4gIHB1YmxpYyBtb2RlOiBzdHJpbmcgPSBSRVRSWV9NT0RFUy5TVEFOREFSRDtcblxuICBjb25zdHJ1Y3Rvcihwcml2YXRlIHJlYWRvbmx5IG1heEF0dGVtcHRzUHJvdmlkZXI6IFByb3ZpZGVyPG51bWJlcj4sIG9wdGlvbnM/OiBTdGFuZGFyZFJldHJ5U3RyYXRlZ3lPcHRpb25zKSB7XG4gICAgdGhpcy5yZXRyeURlY2lkZXIgPSBvcHRpb25zPy5yZXRyeURlY2lkZXIgPz8gZGVmYXVsdFJldHJ5RGVjaWRlcjtcbiAgICB0aGlzLmRlbGF5RGVjaWRlciA9IG9wdGlvbnM/LmRlbGF5RGVjaWRlciA/PyBkZWZhdWx0RGVsYXlEZWNpZGVyO1xuICAgIHRoaXMucmV0cnlRdW90YSA9IG9wdGlvbnM/LnJldHJ5UXVvdGEgPz8gZ2V0RGVmYXVsdFJldHJ5UXVvdGEoSU5JVElBTF9SRVRSWV9UT0tFTlMpO1xuICB9XG5cbiAgcHJpdmF0ZSBzaG91bGRSZXRyeShlcnJvcjogU2RrRXJyb3IsIGF0dGVtcHRzOiBudW1iZXIsIG1heEF0dGVtcHRzOiBudW1iZXIpIHtcbiAgICByZXR1cm4gYXR0ZW1wdHMgPCBtYXhBdHRlbXB0cyAmJiB0aGlzLnJldHJ5RGVjaWRlcihlcnJvcikgJiYgdGhpcy5yZXRyeVF1b3RhLmhhc1JldHJ5VG9rZW5zKGVycm9yKTtcbiAgfVxuXG4gIHByaXZhdGUgYXN5bmMgZ2V0TWF4QXR0ZW1wdHMoKSB7XG4gICAgbGV0IG1heEF0dGVtcHRzOiBudW1iZXI7XG4gICAgdHJ5IHtcbiAgICAgIG1heEF0dGVtcHRzID0gYXdhaXQgdGhpcy5tYXhBdHRlbXB0c1Byb3ZpZGVyKCk7XG4gICAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICAgIG1heEF0dGVtcHRzID0gREVGQVVMVF9NQVhfQVRURU1QVFM7XG4gICAgfVxuICAgIHJldHVybiBtYXhBdHRlbXB0cztcbiAgfVxuXG4gIGFzeW5jIHJldHJ5PElucHV0IGV4dGVuZHMgb2JqZWN0LCBPdXB1dCBleHRlbmRzIE1ldGFkYXRhQmVhcmVyPihcbiAgICBuZXh0OiBGaW5hbGl6ZUhhbmRsZXI8SW5wdXQsIE91cHV0PixcbiAgICBhcmdzOiBGaW5hbGl6ZUhhbmRsZXJBcmd1bWVudHM8SW5wdXQ+LFxuICAgIG9wdGlvbnM/OiB7XG4gICAgICBiZWZvcmVSZXF1ZXN0OiBGdW5jdGlvbjtcbiAgICAgIGFmdGVyUmVxdWVzdDogRnVuY3Rpb247XG4gICAgfVxuICApIHtcbiAgICBsZXQgcmV0cnlUb2tlbkFtb3VudDtcbiAgICBsZXQgYXR0ZW1wdHMgPSAwO1xuICAgIGxldCB0b3RhbERlbGF5ID0gMDtcblxuICAgIGNvbnN0IG1heEF0dGVtcHRzID0gYXdhaXQgdGhpcy5nZXRNYXhBdHRlbXB0cygpO1xuXG4gICAgY29uc3QgeyByZXF1ZXN0IH0gPSBhcmdzO1xuICAgIGlmIChIdHRwUmVxdWVzdC5pc0luc3RhbmNlKHJlcXVlc3QpKSB7XG4gICAgICByZXF1ZXN0LmhlYWRlcnNbSU5WT0NBVElPTl9JRF9IRUFERVJdID0gdjQoKTtcbiAgICB9XG5cbiAgICB3aGlsZSAodHJ1ZSkge1xuICAgICAgdHJ5IHtcbiAgICAgICAgaWYgKEh0dHBSZXF1ZXN0LmlzSW5zdGFuY2UocmVxdWVzdCkpIHtcbiAgICAgICAgICByZXF1ZXN0LmhlYWRlcnNbUkVRVUVTVF9IRUFERVJdID0gYGF0dGVtcHQ9JHthdHRlbXB0cyArIDF9OyBtYXg9JHttYXhBdHRlbXB0c31gO1xuICAgICAgICB9XG5cbiAgICAgICAgaWYgKG9wdGlvbnM/LmJlZm9yZVJlcXVlc3QpIHtcbiAgICAgICAgICBhd2FpdCBvcHRpb25zLmJlZm9yZVJlcXVlc3QoKTtcbiAgICAgICAgfVxuICAgICAgICBjb25zdCB7IHJlc3BvbnNlLCBvdXRwdXQgfSA9IGF3YWl0IG5leHQoYXJncyk7XG4gICAgICAgIGlmIChvcHRpb25zPy5hZnRlclJlcXVlc3QpIHtcbiAgICAgICAgICBvcHRpb25zLmFmdGVyUmVxdWVzdChyZXNwb25zZSk7XG4gICAgICAgIH1cblxuICAgICAgICB0aGlzLnJldHJ5UXVvdGEucmVsZWFzZVJldHJ5VG9rZW5zKHJldHJ5VG9rZW5BbW91bnQpO1xuICAgICAgICBvdXRwdXQuJG1ldGFkYXRhLmF0dGVtcHRzID0gYXR0ZW1wdHMgKyAxO1xuICAgICAgICBvdXRwdXQuJG1ldGFkYXRhLnRvdGFsUmV0cnlEZWxheSA9IHRvdGFsRGVsYXk7XG5cbiAgICAgICAgcmV0dXJuIHsgcmVzcG9uc2UsIG91dHB1dCB9O1xuICAgICAgfSBjYXRjaCAoZSkge1xuICAgICAgICBjb25zdCBlcnIgPSBhc1Nka0Vycm9yKGUpO1xuICAgICAgICBhdHRlbXB0cysrO1xuICAgICAgICBpZiAodGhpcy5zaG91bGRSZXRyeShlcnIgYXMgU2RrRXJyb3IsIGF0dGVtcHRzLCBtYXhBdHRlbXB0cykpIHtcbiAgICAgICAgICByZXRyeVRva2VuQW1vdW50ID0gdGhpcy5yZXRyeVF1b3RhLnJldHJpZXZlUmV0cnlUb2tlbnMoZXJyKTtcbiAgICAgICAgICBjb25zdCBkZWxheSA9IHRoaXMuZGVsYXlEZWNpZGVyKFxuICAgICAgICAgICAgaXNUaHJvdHRsaW5nRXJyb3IoZXJyKSA/IFRIUk9UVExJTkdfUkVUUllfREVMQVlfQkFTRSA6IERFRkFVTFRfUkVUUllfREVMQVlfQkFTRSxcbiAgICAgICAgICAgIGF0dGVtcHRzXG4gICAgICAgICAgKTtcbiAgICAgICAgICB0b3RhbERlbGF5ICs9IGRlbGF5O1xuXG4gICAgICAgICAgYXdhaXQgbmV3IFByb21pc2UoKHJlc29sdmUpID0+IHNldFRpbWVvdXQocmVzb2x2ZSwgZGVsYXkpKTtcbiAgICAgICAgICBjb250aW51ZTtcbiAgICAgICAgfVxuXG4gICAgICAgIGlmICghZXJyLiRtZXRhZGF0YSkge1xuICAgICAgICAgIGVyci4kbWV0YWRhdGEgPSB7fTtcbiAgICAgICAgfVxuXG4gICAgICAgIGVyci4kbWV0YWRhdGEuYXR0ZW1wdHMgPSBhdHRlbXB0cztcbiAgICAgICAgZXJyLiRtZXRhZGF0YS50b3RhbFJldHJ5RGVsYXkgPSB0b3RhbERlbGF5O1xuICAgICAgICB0aHJvdyBlcnI7XG4gICAgICB9XG4gICAgfVxuICB9XG59XG5cbmNvbnN0IGFzU2RrRXJyb3IgPSAoZXJyb3I6IHVua25vd24pOiBTZGtFcnJvciA9PiB7XG4gIGlmIChlcnJvciBpbnN0YW5jZW9mIEVycm9yKSByZXR1cm4gZXJyb3I7XG4gIGlmIChlcnJvciBpbnN0YW5jZW9mIE9iamVjdCkgcmV0dXJuIE9iamVjdC5hc3NpZ24obmV3IEVycm9yKCksIGVycm9yKTtcbiAgaWYgKHR5cGVvZiBlcnJvciA9PT0gXCJzdHJpbmdcIikgcmV0dXJuIG5ldyBFcnJvcihlcnJvcik7XG4gIHJldHVybiBuZXcgRXJyb3IoYEFXUyBTREsgZXJyb3Igd3JhcHBlciBmb3IgJHtlcnJvcn1gKTtcbn07XG4iXX0=
 
 /***/ }),
 
@@ -40587,7 +40683,7 @@ const getDefaultRetryQuota = (initialRetryTokens, options) => {
     });
 };
 exports.getDefaultRetryQuota = getDefaultRetryQuota;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVmYXVsdFJldHJ5UXVvdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvZGVmYXVsdFJldHJ5UXVvdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUEsMkNBQWlGO0FBc0IxRSxNQUFNLG9CQUFvQixHQUFHLENBQUMsa0JBQTBCLEVBQUUsT0FBa0MsRUFBYyxFQUFFOztJQUNqSCxNQUFNLFlBQVksR0FBRyxrQkFBa0IsQ0FBQztJQUN4QyxNQUFNLGdCQUFnQixHQUFHLE1BQUEsT0FBTyxhQUFQLE9BQU8sdUJBQVAsT0FBTyxDQUFFLGdCQUFnQixtQ0FBSSw4QkFBa0IsQ0FBQztJQUN6RSxNQUFNLFNBQVMsR0FBRyxNQUFBLE9BQU8sYUFBUCxPQUFPLHVCQUFQLE9BQU8sQ0FBRSxTQUFTLG1DQUFJLHNCQUFVLENBQUM7SUFDbkQsTUFBTSxnQkFBZ0IsR0FBRyxNQUFBLE9BQU8sYUFBUCxPQUFPLHVCQUFQLE9BQU8sQ0FBRSxnQkFBZ0IsbUNBQUksOEJBQWtCLENBQUM7SUFFekUsSUFBSSxpQkFBaUIsR0FBRyxrQkFBa0IsQ0FBQztJQUUzQyxNQUFNLGlCQUFpQixHQUFHLENBQUMsS0FBZSxFQUFFLEVBQUUsQ0FBQyxDQUFDLEtBQUssQ0FBQyxJQUFJLEtBQUssY0FBYyxDQUFDLENBQUMsQ0FBQyxnQkFBZ0IsQ0FBQyxDQUFDLENBQUMsU0FBUyxDQUFDLENBQUM7SUFFOUcsTUFBTSxjQUFjLEdBQUcsQ0FBQyxLQUFlLEVBQUUsRUFBRSxDQUFDLGlCQUFpQixDQUFDLEtBQUssQ0FBQyxJQUFJLGlCQUFpQixDQUFDO0lBRTFGLE1BQU0sbUJBQW1CLEdBQUcsQ0FBQyxLQUFlLEVBQUUsRUFBRTtRQUM5QyxJQUFJLENBQUMsY0FBYyxDQUFDLEtBQUssQ0FBQyxFQUFFO1lBQzFCLDREQUE0RDtZQUM1RCxNQUFNLElBQUksS0FBSyxDQUFDLDBCQUEwQixDQUFDLENBQUM7U0FDN0M7UUFDRCxNQUFNLGNBQWMsR0FBRyxpQkFBaUIsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUNoRCxpQkFBaUIsSUFBSSxjQUFjLENBQUM7UUFDcEMsT0FBTyxjQUFjLENBQUM7SUFDeEIsQ0FBQyxDQUFDO0lBRUYsTUFBTSxrQkFBa0IsR0FBRyxDQUFDLHFCQUE4QixFQUFFLEVBQUU7UUFDNUQsaUJBQWlCLElBQUkscUJBQXFCLGFBQXJCLHFCQUFxQixjQUFyQixxQkFBcUIsR0FBSSxnQkFBZ0IsQ0FBQztRQUMvRCxpQkFBaUIsR0FBRyxJQUFJLENBQUMsR0FBRyxDQUFDLGlCQUFpQixFQUFFLFlBQVksQ0FBQyxDQUFDO0lBQ2hFLENBQUMsQ0FBQztJQUVGLE9BQU8sTUFBTSxDQUFDLE1BQU0sQ0FBQztRQUNuQixjQUFjO1FBQ2QsbUJBQW1CO1FBQ25CLGtCQUFrQjtLQUNuQixDQUFDLENBQUM7QUFDTCxDQUFDLENBQUM7QUFoQ1csUUFBQSxvQkFBb0Isd0JBZ0MvQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFNka0Vycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3NtaXRoeS1jbGllbnRcIjtcblxuaW1wb3J0IHsgTk9fUkVUUllfSU5DUkVNRU5ULCBSRVRSWV9DT1NULCBUSU1FT1VUX1JFVFJZX0NPU1QgfSBmcm9tIFwiLi9jb25zdGFudHNcIjtcbmltcG9ydCB7IFJldHJ5UXVvdGEgfSBmcm9tIFwiLi90eXBlc1wiO1xuXG5leHBvcnQgaW50ZXJmYWNlIERlZmF1bHRSZXRyeVF1b3RhT3B0aW9ucyB7XG4gIC8qKlxuICAgKiBUaGUgdG90YWwgYW1vdW50IG9mIHJldHJ5IHRva2VuIHRvIGJlIGluY3JlbWVudGVkIGZyb20gcmV0cnkgdG9rZW4gYmFsYW5jZVxuICAgKiBpZiBhbiBTREsgb3BlcmF0aW9uIGludm9jYXRpb24gc3VjY2VlZHMgd2l0aG91dCByZXF1aXJpbmcgYSByZXRyeSByZXF1ZXN0LlxuICAgKi9cbiAgbm9SZXRyeUluY3JlbWVudD86IG51bWJlcjtcblxuICAvKipcbiAgICogVGhlIHRvdGFsIGFtb3VudCBvZiByZXRyeSB0b2tlbnMgdG8gYmUgZGVjcmVtZW50ZWQgZnJvbSByZXRyeSB0b2tlbiBiYWxhbmNlLlxuICAgKi9cbiAgcmV0cnlDb3N0PzogbnVtYmVyO1xuXG4gIC8qKlxuICAgKiBUaGUgdG90YWwgYW1vdW50IG9mIHJldHJ5IHRva2VucyB0byBiZSBkZWNyZW1lbnRlZCBmcm9tIHJldHJ5IHRva2VuIGJhbGFuY2VcbiAgICogd2hlbiBhIHRocm90dGxpbmcgZXJyb3IgaXMgZW5jb3VudGVyZWQuXG4gICAqL1xuICB0aW1lb3V0UmV0cnlDb3N0PzogbnVtYmVyO1xufVxuXG5leHBvcnQgY29uc3QgZ2V0RGVmYXVsdFJldHJ5UXVvdGEgPSAoaW5pdGlhbFJldHJ5VG9rZW5zOiBudW1iZXIsIG9wdGlvbnM/OiBEZWZhdWx0UmV0cnlRdW90YU9wdGlvbnMpOiBSZXRyeVF1b3RhID0+IHtcbiAgY29uc3QgTUFYX0NBUEFDSVRZID0gaW5pdGlhbFJldHJ5VG9rZW5zO1xuICBjb25zdCBub1JldHJ5SW5jcmVtZW50ID0gb3B0aW9ucz8ubm9SZXRyeUluY3JlbWVudCA/PyBOT19SRVRSWV9JTkNSRU1FTlQ7XG4gIGNvbnN0IHJldHJ5Q29zdCA9IG9wdGlvbnM/LnJldHJ5Q29zdCA/PyBSRVRSWV9DT1NUO1xuICBjb25zdCB0aW1lb3V0UmV0cnlDb3N0ID0gb3B0aW9ucz8udGltZW91dFJldHJ5Q29zdCA/PyBUSU1FT1VUX1JFVFJZX0NPU1Q7XG5cbiAgbGV0IGF2YWlsYWJsZUNhcGFjaXR5ID0gaW5pdGlhbFJldHJ5VG9rZW5zO1xuXG4gIGNvbnN0IGdldENhcGFjaXR5QW1vdW50ID0gKGVycm9yOiBTZGtFcnJvcikgPT4gKGVycm9yLm5hbWUgPT09IFwiVGltZW91dEVycm9yXCIgPyB0aW1lb3V0UmV0cnlDb3N0IDogcmV0cnlDb3N0KTtcblxuICBjb25zdCBoYXNSZXRyeVRva2VucyA9IChlcnJvcjogU2RrRXJyb3IpID0+IGdldENhcGFjaXR5QW1vdW50KGVycm9yKSA8PSBhdmFpbGFibGVDYXBhY2l0eTtcblxuICBjb25zdCByZXRyaWV2ZVJldHJ5VG9rZW5zID0gKGVycm9yOiBTZGtFcnJvcikgPT4ge1xuICAgIGlmICghaGFzUmV0cnlUb2tlbnMoZXJyb3IpKSB7XG4gICAgICAvLyByZXRyeVN0cmF0ZWd5IHNob3VsZCBzdG9wIHJldHJ5aW5nLCBhbmQgcmV0dXJuIGxhc3QgZXJyb3JcbiAgICAgIHRocm93IG5ldyBFcnJvcihcIk5vIHJldHJ5IHRva2VuIGF2YWlsYWJsZVwiKTtcbiAgICB9XG4gICAgY29uc3QgY2FwYWNpdHlBbW91bnQgPSBnZXRDYXBhY2l0eUFtb3VudChlcnJvcik7XG4gICAgYXZhaWxhYmxlQ2FwYWNpdHkgLT0gY2FwYWNpdHlBbW91bnQ7XG4gICAgcmV0dXJuIGNhcGFjaXR5QW1vdW50O1xuICB9O1xuXG4gIGNvbnN0IHJlbGVhc2VSZXRyeVRva2VucyA9IChjYXBhY2l0eVJlbGVhc2VBbW91bnQ/OiBudW1iZXIpID0+IHtcbiAgICBhdmFpbGFibGVDYXBhY2l0eSArPSBjYXBhY2l0eVJlbGVhc2VBbW91bnQgPz8gbm9SZXRyeUluY3JlbWVudDtcbiAgICBhdmFpbGFibGVDYXBhY2l0eSA9IE1hdGgubWluKGF2YWlsYWJsZUNhcGFjaXR5LCBNQVhfQ0FQQUNJVFkpO1xuICB9O1xuXG4gIHJldHVybiBPYmplY3QuZnJlZXplKHtcbiAgICBoYXNSZXRyeVRva2VucyxcbiAgICByZXRyaWV2ZVJldHJ5VG9rZW5zLFxuICAgIHJlbGVhc2VSZXRyeVRva2VucyxcbiAgfSk7XG59O1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVmYXVsdFJldHJ5UXVvdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvZGVmYXVsdFJldHJ5UXVvdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUEsMkNBQWlGO0FBc0IxRSxNQUFNLG9CQUFvQixHQUFHLENBQUMsa0JBQTBCLEVBQUUsT0FBa0MsRUFBYyxFQUFFOztJQUNqSCxNQUFNLFlBQVksR0FBRyxrQkFBa0IsQ0FBQztJQUN4QyxNQUFNLGdCQUFnQixHQUFHLE1BQUEsT0FBTyxhQUFQLE9BQU8sdUJBQVAsT0FBTyxDQUFFLGdCQUFnQixtQ0FBSSw4QkFBa0IsQ0FBQztJQUN6RSxNQUFNLFNBQVMsR0FBRyxNQUFBLE9BQU8sYUFBUCxPQUFPLHVCQUFQLE9BQU8sQ0FBRSxTQUFTLG1DQUFJLHNCQUFVLENBQUM7SUFDbkQsTUFBTSxnQkFBZ0IsR0FBRyxNQUFBLE9BQU8sYUFBUCxPQUFPLHVCQUFQLE9BQU8sQ0FBRSxnQkFBZ0IsbUNBQUksOEJBQWtCLENBQUM7SUFFekUsSUFBSSxpQkFBaUIsR0FBRyxrQkFBa0IsQ0FBQztJQUUzQyxNQUFNLGlCQUFpQixHQUFHLENBQUMsS0FBZSxFQUFFLEVBQUUsQ0FBQyxDQUFDLEtBQUssQ0FBQyxJQUFJLEtBQUssY0FBYyxDQUFDLENBQUMsQ0FBQyxnQkFBZ0IsQ0FBQyxDQUFDLENBQUMsU0FBUyxDQUFDLENBQUM7SUFFOUcsTUFBTSxjQUFjLEdBQUcsQ0FBQyxLQUFlLEVBQUUsRUFBRSxDQUFDLGlCQUFpQixDQUFDLEtBQUssQ0FBQyxJQUFJLGlCQUFpQixDQUFDO0lBRTFGLE1BQU0sbUJBQW1CLEdBQUcsQ0FBQyxLQUFlLEVBQUUsRUFBRTtRQUM5QyxJQUFJLENBQUMsY0FBYyxDQUFDLEtBQUssQ0FBQyxFQUFFO1lBQzFCLDREQUE0RDtZQUM1RCxNQUFNLElBQUksS0FBSyxDQUFDLDBCQUEwQixDQUFDLENBQUM7U0FDN0M7UUFDRCxNQUFNLGNBQWMsR0FBRyxpQkFBaUIsQ0FBQyxLQUFLLENBQUMsQ0FBQztRQUNoRCxpQkFBaUIsSUFBSSxjQUFjLENBQUM7UUFDcEMsT0FBTyxjQUFjLENBQUM7SUFDeEIsQ0FBQyxDQUFDO0lBRUYsTUFBTSxrQkFBa0IsR0FBRyxDQUFDLHFCQUE4QixFQUFFLEVBQUU7UUFDNUQsaUJBQWlCLElBQUkscUJBQXFCLGFBQXJCLHFCQUFxQixjQUFyQixxQkFBcUIsR0FBSSxnQkFBZ0IsQ0FBQztRQUMvRCxpQkFBaUIsR0FBRyxJQUFJLENBQUMsR0FBRyxDQUFDLGlCQUFpQixFQUFFLFlBQVksQ0FBQyxDQUFDO0lBQ2hFLENBQUMsQ0FBQztJQUVGLE9BQU8sTUFBTSxDQUFDLE1BQU0sQ0FBQztRQUNuQixjQUFjO1FBQ2QsbUJBQW1CO1FBQ25CLGtCQUFrQjtLQUNuQixDQUFDLENBQUM7QUFDTCxDQUFDLENBQUM7QUFoQ1csUUFBQSxvQkFBb0Isd0JBZ0MvQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFNka0Vycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmltcG9ydCB7IE5PX1JFVFJZX0lOQ1JFTUVOVCwgUkVUUllfQ09TVCwgVElNRU9VVF9SRVRSWV9DT1NUIH0gZnJvbSBcIi4vY29uc3RhbnRzXCI7XG5pbXBvcnQgeyBSZXRyeVF1b3RhIH0gZnJvbSBcIi4vdHlwZXNcIjtcblxuZXhwb3J0IGludGVyZmFjZSBEZWZhdWx0UmV0cnlRdW90YU9wdGlvbnMge1xuICAvKipcbiAgICogVGhlIHRvdGFsIGFtb3VudCBvZiByZXRyeSB0b2tlbiB0byBiZSBpbmNyZW1lbnRlZCBmcm9tIHJldHJ5IHRva2VuIGJhbGFuY2VcbiAgICogaWYgYW4gU0RLIG9wZXJhdGlvbiBpbnZvY2F0aW9uIHN1Y2NlZWRzIHdpdGhvdXQgcmVxdWlyaW5nIGEgcmV0cnkgcmVxdWVzdC5cbiAgICovXG4gIG5vUmV0cnlJbmNyZW1lbnQ/OiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIFRoZSB0b3RhbCBhbW91bnQgb2YgcmV0cnkgdG9rZW5zIHRvIGJlIGRlY3JlbWVudGVkIGZyb20gcmV0cnkgdG9rZW4gYmFsYW5jZS5cbiAgICovXG4gIHJldHJ5Q29zdD86IG51bWJlcjtcblxuICAvKipcbiAgICogVGhlIHRvdGFsIGFtb3VudCBvZiByZXRyeSB0b2tlbnMgdG8gYmUgZGVjcmVtZW50ZWQgZnJvbSByZXRyeSB0b2tlbiBiYWxhbmNlXG4gICAqIHdoZW4gYSB0aHJvdHRsaW5nIGVycm9yIGlzIGVuY291bnRlcmVkLlxuICAgKi9cbiAgdGltZW91dFJldHJ5Q29zdD86IG51bWJlcjtcbn1cblxuZXhwb3J0IGNvbnN0IGdldERlZmF1bHRSZXRyeVF1b3RhID0gKGluaXRpYWxSZXRyeVRva2VuczogbnVtYmVyLCBvcHRpb25zPzogRGVmYXVsdFJldHJ5UXVvdGFPcHRpb25zKTogUmV0cnlRdW90YSA9PiB7XG4gIGNvbnN0IE1BWF9DQVBBQ0lUWSA9IGluaXRpYWxSZXRyeVRva2VucztcbiAgY29uc3Qgbm9SZXRyeUluY3JlbWVudCA9IG9wdGlvbnM/Lm5vUmV0cnlJbmNyZW1lbnQgPz8gTk9fUkVUUllfSU5DUkVNRU5UO1xuICBjb25zdCByZXRyeUNvc3QgPSBvcHRpb25zPy5yZXRyeUNvc3QgPz8gUkVUUllfQ09TVDtcbiAgY29uc3QgdGltZW91dFJldHJ5Q29zdCA9IG9wdGlvbnM/LnRpbWVvdXRSZXRyeUNvc3QgPz8gVElNRU9VVF9SRVRSWV9DT1NUO1xuXG4gIGxldCBhdmFpbGFibGVDYXBhY2l0eSA9IGluaXRpYWxSZXRyeVRva2VucztcblxuICBjb25zdCBnZXRDYXBhY2l0eUFtb3VudCA9IChlcnJvcjogU2RrRXJyb3IpID0+IChlcnJvci5uYW1lID09PSBcIlRpbWVvdXRFcnJvclwiID8gdGltZW91dFJldHJ5Q29zdCA6IHJldHJ5Q29zdCk7XG5cbiAgY29uc3QgaGFzUmV0cnlUb2tlbnMgPSAoZXJyb3I6IFNka0Vycm9yKSA9PiBnZXRDYXBhY2l0eUFtb3VudChlcnJvcikgPD0gYXZhaWxhYmxlQ2FwYWNpdHk7XG5cbiAgY29uc3QgcmV0cmlldmVSZXRyeVRva2VucyA9IChlcnJvcjogU2RrRXJyb3IpID0+IHtcbiAgICBpZiAoIWhhc1JldHJ5VG9rZW5zKGVycm9yKSkge1xuICAgICAgLy8gcmV0cnlTdHJhdGVneSBzaG91bGQgc3RvcCByZXRyeWluZywgYW5kIHJldHVybiBsYXN0IGVycm9yXG4gICAgICB0aHJvdyBuZXcgRXJyb3IoXCJObyByZXRyeSB0b2tlbiBhdmFpbGFibGVcIik7XG4gICAgfVxuICAgIGNvbnN0IGNhcGFjaXR5QW1vdW50ID0gZ2V0Q2FwYWNpdHlBbW91bnQoZXJyb3IpO1xuICAgIGF2YWlsYWJsZUNhcGFjaXR5IC09IGNhcGFjaXR5QW1vdW50O1xuICAgIHJldHVybiBjYXBhY2l0eUFtb3VudDtcbiAgfTtcblxuICBjb25zdCByZWxlYXNlUmV0cnlUb2tlbnMgPSAoY2FwYWNpdHlSZWxlYXNlQW1vdW50PzogbnVtYmVyKSA9PiB7XG4gICAgYXZhaWxhYmxlQ2FwYWNpdHkgKz0gY2FwYWNpdHlSZWxlYXNlQW1vdW50ID8/IG5vUmV0cnlJbmNyZW1lbnQ7XG4gICAgYXZhaWxhYmxlQ2FwYWNpdHkgPSBNYXRoLm1pbihhdmFpbGFibGVDYXBhY2l0eSwgTUFYX0NBUEFDSVRZKTtcbiAgfTtcblxuICByZXR1cm4gT2JqZWN0LmZyZWV6ZSh7XG4gICAgaGFzUmV0cnlUb2tlbnMsXG4gICAgcmV0cmlldmVSZXRyeVRva2VucyxcbiAgICByZWxlYXNlUmV0cnlUb2tlbnMsXG4gIH0pO1xufTtcbiJdfQ==
 
 /***/ }),
 
@@ -40679,7 +40775,7 @@ const defaultRetryDecider = (error) => {
     return service_error_classification_1.isRetryableByTrait(error) || service_error_classification_1.isClockSkewError(error) || service_error_classification_1.isThrottlingError(error) || service_error_classification_1.isTransientError(error);
 };
 exports.defaultRetryDecider = defaultRetryDecider;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmV0cnlEZWNpZGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3JldHJ5RGVjaWRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSx3RkFLK0M7QUFHeEMsTUFBTSxtQkFBbUIsR0FBRyxDQUFDLEtBQWUsRUFBRSxFQUFFO0lBQ3JELElBQUksQ0FBQyxLQUFLLEVBQUU7UUFDVixPQUFPLEtBQUssQ0FBQztLQUNkO0lBRUQsT0FBTyxpREFBa0IsQ0FBQyxLQUFLLENBQUMsSUFBSSwrQ0FBZ0IsQ0FBQyxLQUFLLENBQUMsSUFBSSxnREFBaUIsQ0FBQyxLQUFLLENBQUMsSUFBSSwrQ0FBZ0IsQ0FBQyxLQUFLLENBQUMsQ0FBQztBQUNySCxDQUFDLENBQUM7QUFOVyxRQUFBLG1CQUFtQix1QkFNOUIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1xuICBpc0Nsb2NrU2tld0Vycm9yLFxuICBpc1JldHJ5YWJsZUJ5VHJhaXQsXG4gIGlzVGhyb3R0bGluZ0Vycm9yLFxuICBpc1RyYW5zaWVudEVycm9yLFxufSBmcm9tIFwiQGF3cy1zZGsvc2VydmljZS1lcnJvci1jbGFzc2lmaWNhdGlvblwiO1xuaW1wb3J0IHsgU2RrRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvc21pdGh5LWNsaWVudFwiO1xuXG5leHBvcnQgY29uc3QgZGVmYXVsdFJldHJ5RGVjaWRlciA9IChlcnJvcjogU2RrRXJyb3IpID0+IHtcbiAgaWYgKCFlcnJvcikge1xuICAgIHJldHVybiBmYWxzZTtcbiAgfVxuXG4gIHJldHVybiBpc1JldHJ5YWJsZUJ5VHJhaXQoZXJyb3IpIHx8IGlzQ2xvY2tTa2V3RXJyb3IoZXJyb3IpIHx8IGlzVGhyb3R0bGluZ0Vycm9yKGVycm9yKSB8fCBpc1RyYW5zaWVudEVycm9yKGVycm9yKTtcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmV0cnlEZWNpZGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3JldHJ5RGVjaWRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSx3RkFLK0M7QUFHeEMsTUFBTSxtQkFBbUIsR0FBRyxDQUFDLEtBQWUsRUFBRSxFQUFFO0lBQ3JELElBQUksQ0FBQyxLQUFLLEVBQUU7UUFDVixPQUFPLEtBQUssQ0FBQztLQUNkO0lBRUQsT0FBTyxpREFBa0IsQ0FBQyxLQUFLLENBQUMsSUFBSSwrQ0FBZ0IsQ0FBQyxLQUFLLENBQUMsSUFBSSxnREFBaUIsQ0FBQyxLQUFLLENBQUMsSUFBSSwrQ0FBZ0IsQ0FBQyxLQUFLLENBQUMsQ0FBQztBQUNySCxDQUFDLENBQUM7QUFOVyxRQUFBLG1CQUFtQix1QkFNOUIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1xuICBpc0Nsb2NrU2tld0Vycm9yLFxuICBpc1JldHJ5YWJsZUJ5VHJhaXQsXG4gIGlzVGhyb3R0bGluZ0Vycm9yLFxuICBpc1RyYW5zaWVudEVycm9yLFxufSBmcm9tIFwiQGF3cy1zZGsvc2VydmljZS1lcnJvci1jbGFzc2lmaWNhdGlvblwiO1xuaW1wb3J0IHsgU2RrRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IGNvbnN0IGRlZmF1bHRSZXRyeURlY2lkZXIgPSAoZXJyb3I6IFNka0Vycm9yKSA9PiB7XG4gIGlmICghZXJyb3IpIHtcbiAgICByZXR1cm4gZmFsc2U7XG4gIH1cblxuICByZXR1cm4gaXNSZXRyeWFibGVCeVRyYWl0KGVycm9yKSB8fCBpc0Nsb2NrU2tld0Vycm9yKGVycm9yKSB8fCBpc1Rocm90dGxpbmdFcnJvcihlcnJvcikgfHwgaXNUcmFuc2llbnRFcnJvcihlcnJvcik7XG59O1xuIl19
 
 /***/ }),
 
@@ -40720,7 +40816,7 @@ exports.getRetryPlugin = getRetryPlugin;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidHlwZXMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvdHlwZXMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFNka0Vycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3NtaXRoeS1jbGllbnRcIjtcblxuLyoqXG4gKiBEZXRlcm1pbmVzIHdoZXRoZXIgYW4gZXJyb3IgaXMgcmV0cnlhYmxlIGJhc2VkIG9uIHRoZSBudW1iZXIgb2YgcmV0cmllc1xuICogYWxyZWFkeSBhdHRlbXB0ZWQsIHRoZSBIVFRQIHN0YXR1cyBjb2RlLCBhbmQgdGhlIGVycm9yIHJlY2VpdmVkIChpZiBhbnkpLlxuICpcbiAqIEBwYXJhbSBlcnJvciAgICAgICAgIFRoZSBlcnJvciBlbmNvdW50ZXJlZC5cbiAqL1xuZXhwb3J0IGludGVyZmFjZSBSZXRyeURlY2lkZXIge1xuICAoZXJyb3I6IFNka0Vycm9yKTogYm9vbGVhbjtcbn1cblxuLyoqXG4gKiBEZXRlcm1pbmVzIHRoZSBudW1iZXIgb2YgbWlsbGlzZWNvbmRzIHRvIHdhaXQgYmVmb3JlIHJldHJ5aW5nIGFuIGFjdGlvbi5cbiAqXG4gKiBAcGFyYW0gZGVsYXlCYXNlIFRoZSBiYXNlIGRlbGF5IChpbiBtaWxsaXNlY29uZHMpLlxuICogQHBhcmFtIGF0dGVtcHRzICBUaGUgbnVtYmVyIG9mIHRpbWVzIHRoZSBhY3Rpb24gaGFzIGFscmVhZHkgYmVlbiB0cmllZC5cbiAqL1xuZXhwb3J0IGludGVyZmFjZSBEZWxheURlY2lkZXIge1xuICAoZGVsYXlCYXNlOiBudW1iZXIsIGF0dGVtcHRzOiBudW1iZXIpOiBudW1iZXI7XG59XG5cbi8qKlxuICogSW50ZXJmYWNlIHRoYXQgc3BlY2lmaWVzIHRoZSByZXRyeSBxdW90YSBiZWhhdmlvci5cbiAqL1xuZXhwb3J0IGludGVyZmFjZSBSZXRyeVF1b3RhIHtcbiAgLyoqXG4gICAqIHJldHVybnMgdHJ1ZSBpZiByZXRyeSB0b2tlbnMgYXJlIGF2YWlsYWJsZSBmcm9tIHRoZSByZXRyeSBxdW90YSBidWNrZXQuXG4gICAqL1xuICBoYXNSZXRyeVRva2VuczogKGVycm9yOiBTZGtFcnJvcikgPT4gYm9vbGVhbjtcblxuICAvKipcbiAgICogcmV0dXJucyB0b2tlbiBhbW91bnQgZnJvbSB0aGUgcmV0cnkgcXVvdGEgYnVja2V0LlxuICAgKiB0aHJvd3MgZXJyb3IgaXMgcmV0cnkgdG9rZW5zIGFyZSBub3QgYXZhaWxhYmxlLlxuICAgKi9cbiAgcmV0cmlldmVSZXRyeVRva2VuczogKGVycm9yOiBTZGtFcnJvcikgPT4gbnVtYmVyO1xuXG4gIC8qKlxuICAgKiByZWxlYXNlcyB0b2tlbnMgYmFjayB0byB0aGUgcmV0cnkgcXVvdGEuXG4gICAqL1xuICByZWxlYXNlUmV0cnlUb2tlbnM6IChyZWxlYXNlQ2FwYWNpdHlBbW91bnQ/OiBudW1iZXIpID0+IHZvaWQ7XG59XG5cbmV4cG9ydCBpbnRlcmZhY2UgUmF0ZUxpbWl0ZXIge1xuICAvKipcbiAgICogSWYgdGhlcmUgaXMgc3VmZmljaWVudCBjYXBhY2l0eSAodG9rZW5zKSBhdmFpbGFibGUsIGl0IGltbWVkaWF0ZWx5IHJldHVybnMuXG4gICAqIElmIHRoZXJlIGlzIG5vdCBzdWZmaWNpZW50IGNhcGFjaXR5LCBpdCB3aWxsIGVpdGhlciBzbGVlcCBhIGNlcnRhaW4gYW1vdW50XG4gICAqIG9mIHRpbWUgdW50aWwgdGhlIHJhdGUgbGltaXRlciBjYW4gcmV0cmlldmUgYSB0b2tlbiBmcm9tIGl0cyB0b2tlbiBidWNrZXRcbiAgICogb3IgcmFpc2UgYW4gZXhjZXB0aW9uIGluZGljYXRpbmcgdGhlcmUgaXMgaW5zdWZmaWNpZW50IGNhcGFjaXR5LlxuICAgKi9cbiAgZ2V0U2VuZFRva2VuOiAoKSA9PiBQcm9taXNlPHZvaWQ+O1xuXG4gIC8qKlxuICAgKiBVcGRhdGVzIHRoZSBjbGllbnQgc2VuZGluZyByYXRlIGJhc2VkIG9uIHJlc3BvbnNlLlxuICAgKiBJZiB0aGUgcmVzcG9uc2Ugd2FzIHN1Y2Nlc3NmdWwsIHRoZSBjYXBhY2l0eSBhbmQgZmlsbCByYXRlIGFyZSBpbmNyZWFzZWQuXG4gICAqIElmIHRoZSByZXNwb25zZSB3YXMgYSB0aHJvdHRsaW5nIHJlc3BvbnNlLCB0aGUgY2FwYWNpdHkgYW5kIGZpbGwgcmF0ZSBhcmVcbiAgICogZGVjcmVhc2VkLiBUcmFuc2llbnQgZXJyb3JzIGRvIG5vdCBhZmZlY3QgdGhlIHJhdGUgbGltaXRlci5cbiAgICovXG4gIHVwZGF0ZUNsaWVudFNlbmRpbmdSYXRlOiAocmVzcG9uc2U6IGFueSkgPT4gdm9pZDtcbn1cbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidHlwZXMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvdHlwZXMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFNka0Vycm9yIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbi8qKlxuICogRGV0ZXJtaW5lcyB3aGV0aGVyIGFuIGVycm9yIGlzIHJldHJ5YWJsZSBiYXNlZCBvbiB0aGUgbnVtYmVyIG9mIHJldHJpZXNcbiAqIGFscmVhZHkgYXR0ZW1wdGVkLCB0aGUgSFRUUCBzdGF0dXMgY29kZSwgYW5kIHRoZSBlcnJvciByZWNlaXZlZCAoaWYgYW55KS5cbiAqXG4gKiBAcGFyYW0gZXJyb3IgICAgICAgICBUaGUgZXJyb3IgZW5jb3VudGVyZWQuXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgUmV0cnlEZWNpZGVyIHtcbiAgKGVycm9yOiBTZGtFcnJvcik6IGJvb2xlYW47XG59XG5cbi8qKlxuICogRGV0ZXJtaW5lcyB0aGUgbnVtYmVyIG9mIG1pbGxpc2Vjb25kcyB0byB3YWl0IGJlZm9yZSByZXRyeWluZyBhbiBhY3Rpb24uXG4gKlxuICogQHBhcmFtIGRlbGF5QmFzZSBUaGUgYmFzZSBkZWxheSAoaW4gbWlsbGlzZWNvbmRzKS5cbiAqIEBwYXJhbSBhdHRlbXB0cyAgVGhlIG51bWJlciBvZiB0aW1lcyB0aGUgYWN0aW9uIGhhcyBhbHJlYWR5IGJlZW4gdHJpZWQuXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgRGVsYXlEZWNpZGVyIHtcbiAgKGRlbGF5QmFzZTogbnVtYmVyLCBhdHRlbXB0czogbnVtYmVyKTogbnVtYmVyO1xufVxuXG4vKipcbiAqIEludGVyZmFjZSB0aGF0IHNwZWNpZmllcyB0aGUgcmV0cnkgcXVvdGEgYmVoYXZpb3IuXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgUmV0cnlRdW90YSB7XG4gIC8qKlxuICAgKiByZXR1cm5zIHRydWUgaWYgcmV0cnkgdG9rZW5zIGFyZSBhdmFpbGFibGUgZnJvbSB0aGUgcmV0cnkgcXVvdGEgYnVja2V0LlxuICAgKi9cbiAgaGFzUmV0cnlUb2tlbnM6IChlcnJvcjogU2RrRXJyb3IpID0+IGJvb2xlYW47XG5cbiAgLyoqXG4gICAqIHJldHVybnMgdG9rZW4gYW1vdW50IGZyb20gdGhlIHJldHJ5IHF1b3RhIGJ1Y2tldC5cbiAgICogdGhyb3dzIGVycm9yIGlzIHJldHJ5IHRva2VucyBhcmUgbm90IGF2YWlsYWJsZS5cbiAgICovXG4gIHJldHJpZXZlUmV0cnlUb2tlbnM6IChlcnJvcjogU2RrRXJyb3IpID0+IG51bWJlcjtcblxuICAvKipcbiAgICogcmVsZWFzZXMgdG9rZW5zIGJhY2sgdG8gdGhlIHJldHJ5IHF1b3RhLlxuICAgKi9cbiAgcmVsZWFzZVJldHJ5VG9rZW5zOiAocmVsZWFzZUNhcGFjaXR5QW1vdW50PzogbnVtYmVyKSA9PiB2b2lkO1xufVxuXG5leHBvcnQgaW50ZXJmYWNlIFJhdGVMaW1pdGVyIHtcbiAgLyoqXG4gICAqIElmIHRoZXJlIGlzIHN1ZmZpY2llbnQgY2FwYWNpdHkgKHRva2VucykgYXZhaWxhYmxlLCBpdCBpbW1lZGlhdGVseSByZXR1cm5zLlxuICAgKiBJZiB0aGVyZSBpcyBub3Qgc3VmZmljaWVudCBjYXBhY2l0eSwgaXQgd2lsbCBlaXRoZXIgc2xlZXAgYSBjZXJ0YWluIGFtb3VudFxuICAgKiBvZiB0aW1lIHVudGlsIHRoZSByYXRlIGxpbWl0ZXIgY2FuIHJldHJpZXZlIGEgdG9rZW4gZnJvbSBpdHMgdG9rZW4gYnVja2V0XG4gICAqIG9yIHJhaXNlIGFuIGV4Y2VwdGlvbiBpbmRpY2F0aW5nIHRoZXJlIGlzIGluc3VmZmljaWVudCBjYXBhY2l0eS5cbiAgICovXG4gIGdldFNlbmRUb2tlbjogKCkgPT4gUHJvbWlzZTx2b2lkPjtcblxuICAvKipcbiAgICogVXBkYXRlcyB0aGUgY2xpZW50IHNlbmRpbmcgcmF0ZSBiYXNlZCBvbiByZXNwb25zZS5cbiAgICogSWYgdGhlIHJlc3BvbnNlIHdhcyBzdWNjZXNzZnVsLCB0aGUgY2FwYWNpdHkgYW5kIGZpbGwgcmF0ZSBhcmUgaW5jcmVhc2VkLlxuICAgKiBJZiB0aGUgcmVzcG9uc2Ugd2FzIGEgdGhyb3R0bGluZyByZXNwb25zZSwgdGhlIGNhcGFjaXR5IGFuZCBmaWxsIHJhdGUgYXJlXG4gICAqIGRlY3JlYXNlZC4gVHJhbnNpZW50IGVycm9ycyBkbyBub3QgYWZmZWN0IHRoZSByYXRlIGxpbWl0ZXIuXG4gICAqL1xuICB1cGRhdGVDbGllbnRTZW5kaW5nUmF0ZTogKHJlc3BvbnNlOiBhbnkpID0+IHZvaWQ7XG59XG4iXX0=
 
 /***/ }),
 
@@ -40915,14 +41011,12 @@ const middleware_signing_1 = __nccwpck_require__(2487);
  * for role assumers for STS client internally. See `clients/client-sts/defaultStsRoleAssumers.ts`
  * and `clients/client-sts/STSClient.ts`.
  */
-const resolveStsAuthConfig = (input, stsClientCtor) => {
-    return middleware_signing_1.resolveAwsAuthConfig({
-        ...input,
-        stsClientCtor,
-    });
-};
+const resolveStsAuthConfig = (input, { stsClientCtor }) => middleware_signing_1.resolveAwsAuthConfig({
+    ...input,
+    stsClientCtor,
+});
 exports.resolveStsAuthConfig = resolveStsAuthConfig;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsb0VBQThHO0FBb0I5Rzs7OztHQUlHO0FBQ0ksTUFBTSxvQkFBb0IsR0FBRyxDQUNsQyxLQUFrRCxFQUNsRCxhQUErRCxFQUNwQyxFQUFFO0lBQzdCLE9BQU8seUNBQW9CLENBQUM7UUFDMUIsR0FBRyxLQUFLO1FBQ1IsYUFBYTtLQUNkLENBQUMsQ0FBQztBQUNMLENBQUMsQ0FBQztBQVJXLFFBQUEsb0JBQW9CLHdCQVEvQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEF3c0F1dGhJbnB1dENvbmZpZywgQXdzQXV0aFJlc29sdmVkQ29uZmlnLCByZXNvbHZlQXdzQXV0aENvbmZpZyB9IGZyb20gXCJAYXdzLXNkay9taWRkbGV3YXJlLXNpZ25pbmdcIjtcbmltcG9ydCB7IENsaWVudCwgQ3JlZGVudGlhbHMsIEhhc2hDb25zdHJ1Y3RvciwgUGx1Z2dhYmxlLCBQcm92aWRlciwgUmVnaW9uSW5mb1Byb3ZpZGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgU3RzQXV0aElucHV0Q29uZmlnIGV4dGVuZHMgQXdzQXV0aElucHV0Q29uZmlnIHt9XG5pbnRlcmZhY2UgUHJldmlvdXNseVJlc29sdmVkIHtcbiAgY3JlZGVudGlhbERlZmF1bHRQcm92aWRlcjogKGlucHV0OiBhbnkpID0+IFByb3ZpZGVyPENyZWRlbnRpYWxzPjtcbiAgcmVnaW9uOiBzdHJpbmcgfCBQcm92aWRlcjxzdHJpbmc+O1xuICByZWdpb25JbmZvUHJvdmlkZXI6IFJlZ2lvbkluZm9Qcm92aWRlcjtcbiAgc2lnbmluZ05hbWU/OiBzdHJpbmc7XG4gIHNlcnZpY2VJZDogc3RyaW5nO1xuICBzaGEyNTY6IEhhc2hDb25zdHJ1Y3Rvcjtcbn1cbmV4cG9ydCBpbnRlcmZhY2UgU3RzQXV0aFJlc29sdmVkQ29uZmlnIGV4dGVuZHMgQXdzQXV0aFJlc29sdmVkQ29uZmlnIHtcbiAgLyoqXG4gICAqIFJlZmVyZW5jZSB0byBTVFNDbGllbnQgY2xhc3MgY29uc3RydWN0b3IuXG4gICAqIEBpbnRlcm5hbFxuICAgKi9cbiAgc3RzQ2xpZW50Q3RvcjogbmV3IChjbGllbnRDb25maWc6IGFueSkgPT4gQ2xpZW50PGFueSwgYW55LCBhbnk+O1xufVxuXG4vKipcbiAqIFNldCBTVFMgY2xpZW50IGNvbnN0cnVjdG9yIHRvIGBzdHNDbGllbnRDdG9yYCBjb25maWcgcGFyYW1ldGVyLiBJdCBpcyB1c2VkXG4gKiBmb3Igcm9sZSBhc3N1bWVycyBmb3IgU1RTIGNsaWVudCBpbnRlcm5hbGx5LiBTZWUgYGNsaWVudHMvY2xpZW50LXN0cy9kZWZhdWx0U3RzUm9sZUFzc3VtZXJzLnRzYFxuICogYW5kIGBjbGllbnRzL2NsaWVudC1zdHMvU1RTQ2xpZW50LnRzYC5cbiAqL1xuZXhwb3J0IGNvbnN0IHJlc29sdmVTdHNBdXRoQ29uZmlnID0gPFQ+KFxuICBpbnB1dDogVCAmIFByZXZpb3VzbHlSZXNvbHZlZCAmIFN0c0F1dGhJbnB1dENvbmZpZyxcbiAgc3RzQ2xpZW50Q3RvcjogbmV3IChjbGllbnRDb25maWc6IGFueSkgPT4gQ2xpZW50PGFueSwgYW55LCBhbnk+XG4pOiBUICYgU3RzQXV0aFJlc29sdmVkQ29uZmlnID0+IHtcbiAgcmV0dXJuIHJlc29sdmVBd3NBdXRoQ29uZmlnKHtcbiAgICAuLi5pbnB1dCxcbiAgICBzdHNDbGllbnRDdG9yLFxuICB9KTtcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsb0VBQThHO0FBMkI5Rzs7OztHQUlHO0FBQ0ksTUFBTSxvQkFBb0IsR0FBRyxDQUNsQyxLQUFrRCxFQUNsRCxFQUFFLGFBQWEsRUFBd0IsRUFDWixFQUFFLENBQzdCLHlDQUFvQixDQUFDO0lBQ25CLEdBQUcsS0FBSztJQUNSLGFBQWE7Q0FDZCxDQUFDLENBQUM7QUFQUSxRQUFBLG9CQUFvQix3QkFPNUIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBBd3NBdXRoSW5wdXRDb25maWcsIEF3c0F1dGhSZXNvbHZlZENvbmZpZywgcmVzb2x2ZUF3c0F1dGhDb25maWcgfSBmcm9tIFwiQGF3cy1zZGsvbWlkZGxld2FyZS1zaWduaW5nXCI7XG5pbXBvcnQgeyBDbGllbnQsIENyZWRlbnRpYWxzLCBIYXNoQ29uc3RydWN0b3IsIFBsdWdnYWJsZSwgUHJvdmlkZXIsIFJlZ2lvbkluZm9Qcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5leHBvcnQgaW50ZXJmYWNlIFN0c0F1dGhJbnB1dENvbmZpZyBleHRlbmRzIEF3c0F1dGhJbnB1dENvbmZpZyB7fVxuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7XG4gIGNyZWRlbnRpYWxEZWZhdWx0UHJvdmlkZXI6IChpbnB1dDogYW55KSA9PiBQcm92aWRlcjxDcmVkZW50aWFscz47XG4gIHJlZ2lvbjogc3RyaW5nIHwgUHJvdmlkZXI8c3RyaW5nPjtcbiAgcmVnaW9uSW5mb1Byb3ZpZGVyOiBSZWdpb25JbmZvUHJvdmlkZXI7XG4gIHNpZ25pbmdOYW1lPzogc3RyaW5nO1xuICBzZXJ2aWNlSWQ6IHN0cmluZztcbiAgc2hhMjU2OiBIYXNoQ29uc3RydWN0b3I7XG59XG5leHBvcnQgaW50ZXJmYWNlIFN0c0F1dGhSZXNvbHZlZENvbmZpZyBleHRlbmRzIEF3c0F1dGhSZXNvbHZlZENvbmZpZyB7XG4gIC8qKlxuICAgKiBSZWZlcmVuY2UgdG8gU1RTQ2xpZW50IGNsYXNzIGNvbnN0cnVjdG9yLlxuICAgKiBAaW50ZXJuYWxcbiAgICovXG4gIHN0c0NsaWVudEN0b3I6IG5ldyAoY2xpZW50Q29uZmlnOiBhbnkpID0+IENsaWVudDxhbnksIGFueSwgYW55Pjtcbn1cblxuZXhwb3J0IGludGVyZmFjZSBTdHNBdXRoQ29uZmlnT3B0aW9ucyB7XG4gIC8qKlxuICAgKiBSZWZlcmVuY2UgdG8gU1RTQ2xpZW50IGNsYXNzIGNvbnN0cnVjdG9yLlxuICAgKi9cbiAgc3RzQ2xpZW50Q3RvcjogbmV3IChjbGllbnRDb25maWc6IGFueSkgPT4gQ2xpZW50PGFueSwgYW55LCBhbnk+O1xufVxuXG4vKipcbiAqIFNldCBTVFMgY2xpZW50IGNvbnN0cnVjdG9yIHRvIGBzdHNDbGllbnRDdG9yYCBjb25maWcgcGFyYW1ldGVyLiBJdCBpcyB1c2VkXG4gKiBmb3Igcm9sZSBhc3N1bWVycyBmb3IgU1RTIGNsaWVudCBpbnRlcm5hbGx5LiBTZWUgYGNsaWVudHMvY2xpZW50LXN0cy9kZWZhdWx0U3RzUm9sZUFzc3VtZXJzLnRzYFxuICogYW5kIGBjbGllbnRzL2NsaWVudC1zdHMvU1RTQ2xpZW50LnRzYC5cbiAqL1xuZXhwb3J0IGNvbnN0IHJlc29sdmVTdHNBdXRoQ29uZmlnID0gPFQ+KFxuICBpbnB1dDogVCAmIFByZXZpb3VzbHlSZXNvbHZlZCAmIFN0c0F1dGhJbnB1dENvbmZpZyxcbiAgeyBzdHNDbGllbnRDdG9yIH06IFN0c0F1dGhDb25maWdPcHRpb25zXG4pOiBUICYgU3RzQXV0aFJlc29sdmVkQ29uZmlnID0+XG4gIHJlc29sdmVBd3NBdXRoQ29uZmlnKHtcbiAgICAuLi5pbnB1dCxcbiAgICBzdHNDbGllbnRDdG9yLFxuICB9KTtcbiJdfQ==
 
 /***/ }),
 
@@ -41234,7 +41328,7 @@ const getSsecPlugin = (config) => ({
     },
 });
 exports.getSsecPlugin = getSsecPlugin;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBbUJBLFNBQWdCLGNBQWMsQ0FBQyxPQUEyQjtJQUN4RCxPQUFPLENBQWdDLElBQW9DLEVBQWtDLEVBQUUsQ0FDN0csS0FBSyxFQUFFLElBQXFDLEVBQTRDLEVBQUU7UUFDeEYsSUFBSSxLQUFLLEdBQUcsRUFBRSxHQUFHLElBQUksQ0FBQyxLQUFLLEVBQUUsQ0FBQztRQUM5QixNQUFNLFVBQVUsR0FBRztZQUNqQjtnQkFDRSxNQUFNLEVBQUUsZ0JBQWdCO2dCQUN4QixJQUFJLEVBQUUsbUJBQW1CO2FBQzFCO1lBQ0Q7Z0JBQ0UsTUFBTSxFQUFFLDBCQUEwQjtnQkFDbEMsSUFBSSxFQUFFLDZCQUE2QjthQUNwQztTQUNGLENBQUM7UUFFRixLQUFLLE1BQU0sSUFBSSxJQUFJLFVBQVUsRUFBRTtZQUM3QixNQUFNLEtBQUssR0FBNEIsS0FBYSxDQUFDLElBQUksQ0FBQyxNQUFNLENBQUMsQ0FBQztZQUNsRSxJQUFJLEtBQUssRUFBRTtnQkFDVCxNQUFNLFNBQVMsR0FBRyxXQUFXLENBQUMsTUFBTSxDQUFDLEtBQUssQ0FBQztvQkFDekMsQ0FBQyxDQUFDLElBQUksVUFBVSxDQUFDLEtBQUssQ0FBQyxNQUFNLEVBQUUsS0FBSyxDQUFDLFVBQVUsRUFBRSxLQUFLLENBQUMsVUFBVSxDQUFDO29CQUNsRSxDQUFDLENBQUMsT0FBTyxLQUFLLEtBQUssUUFBUTt3QkFDM0IsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxXQUFXLENBQUMsS0FBSyxDQUFDO3dCQUM1QixDQUFDLENBQUMsSUFBSSxVQUFVLENBQUMsS0FBSyxDQUFDLENBQUM7Z0JBQzFCLE1BQU0sT0FBTyxHQUFHLE9BQU8sQ0FBQyxhQUFhLENBQUMsU0FBUyxDQUFDLENBQUM7Z0JBQ2pELE1BQU0sSUFBSSxHQUFHLElBQUksT0FBTyxDQUFDLEdBQUcsRUFBRSxDQUFDO2dCQUMvQixJQUFJLENBQUMsTUFBTSxDQUFDLFNBQVMsQ0FBQyxDQUFDO2dCQUN2QixLQUFLLEdBQUc7b0JBQ04sR0FBSSxLQUFhO29CQUNqQixDQUFDLElBQUksQ0FBQyxNQUFNLENBQUMsRUFBRSxPQUFPO29CQUN0QixDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxPQUFPLENBQUMsYUFBYSxDQUFDLE1BQU0sSUFBSSxDQUFDLE1BQU0sRUFBRSxDQUFDO2lCQUN4RCxDQUFDO2FBQ0g7U0FDRjtRQUVELE9BQU8sSUFBSSxDQUFDO1lBQ1YsR0FBRyxJQUFJO1lBQ1AsS0FBSztTQUNOLENBQUMsQ0FBQztJQUNMLENBQUMsQ0FBQztBQUNOLENBQUM7QUF2Q0Qsd0NBdUNDO0FBRVksUUFBQSxxQkFBcUIsR0FBNkI7SUFDN0QsSUFBSSxFQUFFLGdCQUFnQjtJQUN0QixJQUFJLEVBQUUsWUFBWTtJQUNsQixJQUFJLEVBQUUsQ0FBQyxLQUFLLENBQUM7SUFDYixRQUFRLEVBQUUsSUFBSTtDQUNmLENBQUM7QUFFSyxNQUFNLGFBQWEsR0FBRyxDQUFDLE1BQTBCLEVBQXVCLEVBQUUsQ0FBQyxDQUFDO0lBQ2pGLFlBQVksRUFBRSxDQUFDLFdBQVcsRUFBRSxFQUFFO1FBQzVCLFdBQVcsQ0FBQyxHQUFHLENBQUMsY0FBYyxDQUFDLE1BQU0sQ0FBQyxFQUFFLDZCQUFxQixDQUFDLENBQUM7SUFDakUsQ0FBQztDQUNGLENBQUMsQ0FBQztBQUpVLFFBQUEsYUFBYSxpQkFJdkIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1xuICBEZWNvZGVyLFxuICBFbmNvZGVyLFxuICBIYXNoLFxuICBJbml0aWFsaXplSGFuZGxlcixcbiAgSW5pdGlhbGl6ZUhhbmRsZXJBcmd1bWVudHMsXG4gIEluaXRpYWxpemVIYW5kbGVyT3B0aW9ucyxcbiAgSW5pdGlhbGl6ZUhhbmRsZXJPdXRwdXQsXG4gIEluaXRpYWxpemVNaWRkbGV3YXJlLFxuICBNZXRhZGF0YUJlYXJlcixcbiAgUGx1Z2dhYmxlLFxuICBTb3VyY2VEYXRhLFxufSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmludGVyZmFjZSBQcmV2aW91c2x5UmVzb2x2ZWQge1xuICBiYXNlNjRFbmNvZGVyOiBFbmNvZGVyO1xuICBtZDU6IHsgbmV3ICgpOiBIYXNoIH07XG4gIHV0ZjhEZWNvZGVyOiBEZWNvZGVyO1xufVxuXG5leHBvcnQgZnVuY3Rpb24gc3NlY01pZGRsZXdhcmUob3B0aW9uczogUHJldmlvdXNseVJlc29sdmVkKTogSW5pdGlhbGl6ZU1pZGRsZXdhcmU8YW55LCBhbnk+IHtcbiAgcmV0dXJuIDxPdXRwdXQgZXh0ZW5kcyBNZXRhZGF0YUJlYXJlcj4obmV4dDogSW5pdGlhbGl6ZUhhbmRsZXI8YW55LCBPdXRwdXQ+KTogSW5pdGlhbGl6ZUhhbmRsZXI8YW55LCBPdXRwdXQ+ID0+XG4gICAgYXN5bmMgKGFyZ3M6IEluaXRpYWxpemVIYW5kbGVyQXJndW1lbnRzPGFueT4pOiBQcm9taXNlPEluaXRpYWxpemVIYW5kbGVyT3V0cHV0PE91dHB1dD4+ID0+IHtcbiAgICAgIGxldCBpbnB1dCA9IHsgLi4uYXJncy5pbnB1dCB9O1xuICAgICAgY29uc3QgcHJvcGVydGllcyA9IFtcbiAgICAgICAge1xuICAgICAgICAgIHRhcmdldDogXCJTU0VDdXN0b21lcktleVwiLFxuICAgICAgICAgIGhhc2g6IFwiU1NFQ3VzdG9tZXJLZXlNRDVcIixcbiAgICAgICAgfSxcbiAgICAgICAge1xuICAgICAgICAgIHRhcmdldDogXCJDb3B5U291cmNlU1NFQ3VzdG9tZXJLZXlcIixcbiAgICAgICAgICBoYXNoOiBcIkNvcHlTb3VyY2VTU0VDdXN0b21lcktleU1ENVwiLFxuICAgICAgICB9LFxuICAgICAgXTtcblxuICAgICAgZm9yIChjb25zdCBwcm9wIG9mIHByb3BlcnRpZXMpIHtcbiAgICAgICAgY29uc3QgdmFsdWU6IFNvdXJjZURhdGEgfCB1bmRlZmluZWQgPSAoaW5wdXQgYXMgYW55KVtwcm9wLnRhcmdldF07XG4gICAgICAgIGlmICh2YWx1ZSkge1xuICAgICAgICAgIGNvbnN0IHZhbHVlVmlldyA9IEFycmF5QnVmZmVyLmlzVmlldyh2YWx1ZSlcbiAgICAgICAgICAgID8gbmV3IFVpbnQ4QXJyYXkodmFsdWUuYnVmZmVyLCB2YWx1ZS5ieXRlT2Zmc2V0LCB2YWx1ZS5ieXRlTGVuZ3RoKVxuICAgICAgICAgICAgOiB0eXBlb2YgdmFsdWUgPT09IFwic3RyaW5nXCJcbiAgICAgICAgICAgID8gb3B0aW9ucy51dGY4RGVjb2Rlcih2YWx1ZSlcbiAgICAgICAgICAgIDogbmV3IFVpbnQ4QXJyYXkodmFsdWUpO1xuICAgICAgICAgIGNvbnN0IGVuY29kZWQgPSBvcHRpb25zLmJhc2U2NEVuY29kZXIodmFsdWVWaWV3KTtcbiAgICAgICAgICBjb25zdCBoYXNoID0gbmV3IG9wdGlvbnMubWQ1KCk7XG4gICAgICAgICAgaGFzaC51cGRhdGUodmFsdWVWaWV3KTtcbiAgICAgICAgICBpbnB1dCA9IHtcbiAgICAgICAgICAgIC4uLihpbnB1dCBhcyBhbnkpLFxuICAgICAgICAgICAgW3Byb3AudGFyZ2V0XTogZW5jb2RlZCxcbiAgICAgICAgICAgIFtwcm9wLmhhc2hdOiBvcHRpb25zLmJhc2U2NEVuY29kZXIoYXdhaXQgaGFzaC5kaWdlc3QoKSksXG4gICAgICAgICAgfTtcbiAgICAgICAgfVxuICAgICAgfVxuXG4gICAgICByZXR1cm4gbmV4dCh7XG4gICAgICAgIC4uLmFyZ3MsXG4gICAgICAgIGlucHV0LFxuICAgICAgfSk7XG4gICAgfTtcbn1cblxuZXhwb3J0IGNvbnN0IHNzZWNNaWRkbGV3YXJlT3B0aW9uczogSW5pdGlhbGl6ZUhhbmRsZXJPcHRpb25zID0ge1xuICBuYW1lOiBcInNzZWNNaWRkbGV3YXJlXCIsXG4gIHN0ZXA6IFwiaW5pdGlhbGl6ZVwiLFxuICB0YWdzOiBbXCJTU0VcIl0sXG4gIG92ZXJyaWRlOiB0cnVlLFxufTtcblxuZXhwb3J0IGNvbnN0IGdldFNzZWNQbHVnaW4gPSAoY29uZmlnOiBQcmV2aW91c2x5UmVzb2x2ZWQpOiBQbHVnZ2FibGU8YW55LCBhbnk+ID0+ICh7XG4gIGFwcGx5VG9TdGFjazogKGNsaWVudFN0YWNrKSA9PiB7XG4gICAgY2xpZW50U3RhY2suYWRkKHNzZWNNaWRkbGV3YXJlKGNvbmZpZyksIHNzZWNNaWRkbGV3YXJlT3B0aW9ucyk7XG4gIH0sXG59KTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBbUJBLFNBQWdCLGNBQWMsQ0FBQyxPQUEyQjtJQUN4RCxPQUFPLENBQWdDLElBQW9DLEVBQWtDLEVBQUUsQ0FDN0csS0FBSyxFQUFFLElBQXFDLEVBQTRDLEVBQUU7UUFDeEYsSUFBSSxLQUFLLEdBQUcsRUFBRSxHQUFHLElBQUksQ0FBQyxLQUFLLEVBQUUsQ0FBQztRQUM5QixNQUFNLFVBQVUsR0FBRztZQUNqQjtnQkFDRSxNQUFNLEVBQUUsZ0JBQWdCO2dCQUN4QixJQUFJLEVBQUUsbUJBQW1CO2FBQzFCO1lBQ0Q7Z0JBQ0UsTUFBTSxFQUFFLDBCQUEwQjtnQkFDbEMsSUFBSSxFQUFFLDZCQUE2QjthQUNwQztTQUNGLENBQUM7UUFFRixLQUFLLE1BQU0sSUFBSSxJQUFJLFVBQVUsRUFBRTtZQUM3QixNQUFNLEtBQUssR0FBNEIsS0FBYSxDQUFDLElBQUksQ0FBQyxNQUFNLENBQUMsQ0FBQztZQUNsRSxJQUFJLEtBQUssRUFBRTtnQkFDVCxNQUFNLFNBQVMsR0FBRyxXQUFXLENBQUMsTUFBTSxDQUFDLEtBQUssQ0FBQztvQkFDekMsQ0FBQyxDQUFDLElBQUksVUFBVSxDQUFDLEtBQUssQ0FBQyxNQUFNLEVBQUUsS0FBSyxDQUFDLFVBQVUsRUFBRSxLQUFLLENBQUMsVUFBVSxDQUFDO29CQUNsRSxDQUFDLENBQUMsT0FBTyxLQUFLLEtBQUssUUFBUTt3QkFDM0IsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxXQUFXLENBQUMsS0FBSyxDQUFDO3dCQUM1QixDQUFDLENBQUMsSUFBSSxVQUFVLENBQUMsS0FBSyxDQUFDLENBQUM7Z0JBQzFCLE1BQU0sT0FBTyxHQUFHLE9BQU8sQ0FBQyxhQUFhLENBQUMsU0FBUyxDQUFDLENBQUM7Z0JBQ2pELE1BQU0sSUFBSSxHQUFHLElBQUksT0FBTyxDQUFDLEdBQUcsRUFBRSxDQUFDO2dCQUMvQixJQUFJLENBQUMsTUFBTSxDQUFDLFNBQVMsQ0FBQyxDQUFDO2dCQUN2QixLQUFLLEdBQUc7b0JBQ04sR0FBSSxLQUFhO29CQUNqQixDQUFDLElBQUksQ0FBQyxNQUFNLENBQUMsRUFBRSxPQUFPO29CQUN0QixDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsRUFBRSxPQUFPLENBQUMsYUFBYSxDQUFDLE1BQU0sSUFBSSxDQUFDLE1BQU0sRUFBRSxDQUFDO2lCQUN4RCxDQUFDO2FBQ0g7U0FDRjtRQUVELE9BQU8sSUFBSSxDQUFDO1lBQ1YsR0FBRyxJQUFJO1lBQ1AsS0FBSztTQUNOLENBQUMsQ0FBQztJQUNMLENBQUMsQ0FBQztBQUNOLENBQUM7QUF2Q0Qsd0NBdUNDO0FBRVksUUFBQSxxQkFBcUIsR0FBNkI7SUFDN0QsSUFBSSxFQUFFLGdCQUFnQjtJQUN0QixJQUFJLEVBQUUsWUFBWTtJQUNsQixJQUFJLEVBQUUsQ0FBQyxLQUFLLENBQUM7SUFDYixRQUFRLEVBQUUsSUFBSTtDQUNmLENBQUM7QUFFSyxNQUFNLGFBQWEsR0FBRyxDQUFDLE1BQTBCLEVBQXVCLEVBQUUsQ0FBQyxDQUFDO0lBQ2pGLFlBQVksRUFBRSxDQUFDLFdBQVcsRUFBRSxFQUFFO1FBQzVCLFdBQVcsQ0FBQyxHQUFHLENBQUMsY0FBYyxDQUFDLE1BQU0sQ0FBQyxFQUFFLDZCQUFxQixDQUFDLENBQUM7SUFDakUsQ0FBQztDQUNGLENBQUMsQ0FBQztBQUpVLFFBQUEsYUFBYSxpQkFJdkIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1xuICBEZWNvZGVyLFxuICBFbmNvZGVyLFxuICBIYXNoQ29uc3RydWN0b3IsXG4gIEluaXRpYWxpemVIYW5kbGVyLFxuICBJbml0aWFsaXplSGFuZGxlckFyZ3VtZW50cyxcbiAgSW5pdGlhbGl6ZUhhbmRsZXJPcHRpb25zLFxuICBJbml0aWFsaXplSGFuZGxlck91dHB1dCxcbiAgSW5pdGlhbGl6ZU1pZGRsZXdhcmUsXG4gIE1ldGFkYXRhQmVhcmVyLFxuICBQbHVnZ2FibGUsXG4gIFNvdXJjZURhdGEsXG59IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuaW50ZXJmYWNlIFByZXZpb3VzbHlSZXNvbHZlZCB7XG4gIGJhc2U2NEVuY29kZXI6IEVuY29kZXI7XG4gIG1kNTogSGFzaENvbnN0cnVjdG9yO1xuICB1dGY4RGVjb2RlcjogRGVjb2Rlcjtcbn1cblxuZXhwb3J0IGZ1bmN0aW9uIHNzZWNNaWRkbGV3YXJlKG9wdGlvbnM6IFByZXZpb3VzbHlSZXNvbHZlZCk6IEluaXRpYWxpemVNaWRkbGV3YXJlPGFueSwgYW55PiB7XG4gIHJldHVybiA8T3V0cHV0IGV4dGVuZHMgTWV0YWRhdGFCZWFyZXI+KG5leHQ6IEluaXRpYWxpemVIYW5kbGVyPGFueSwgT3V0cHV0Pik6IEluaXRpYWxpemVIYW5kbGVyPGFueSwgT3V0cHV0PiA9PlxuICAgIGFzeW5jIChhcmdzOiBJbml0aWFsaXplSGFuZGxlckFyZ3VtZW50czxhbnk+KTogUHJvbWlzZTxJbml0aWFsaXplSGFuZGxlck91dHB1dDxPdXRwdXQ+PiA9PiB7XG4gICAgICBsZXQgaW5wdXQgPSB7IC4uLmFyZ3MuaW5wdXQgfTtcbiAgICAgIGNvbnN0IHByb3BlcnRpZXMgPSBbXG4gICAgICAgIHtcbiAgICAgICAgICB0YXJnZXQ6IFwiU1NFQ3VzdG9tZXJLZXlcIixcbiAgICAgICAgICBoYXNoOiBcIlNTRUN1c3RvbWVyS2V5TUQ1XCIsXG4gICAgICAgIH0sXG4gICAgICAgIHtcbiAgICAgICAgICB0YXJnZXQ6IFwiQ29weVNvdXJjZVNTRUN1c3RvbWVyS2V5XCIsXG4gICAgICAgICAgaGFzaDogXCJDb3B5U291cmNlU1NFQ3VzdG9tZXJLZXlNRDVcIixcbiAgICAgICAgfSxcbiAgICAgIF07XG5cbiAgICAgIGZvciAoY29uc3QgcHJvcCBvZiBwcm9wZXJ0aWVzKSB7XG4gICAgICAgIGNvbnN0IHZhbHVlOiBTb3VyY2VEYXRhIHwgdW5kZWZpbmVkID0gKGlucHV0IGFzIGFueSlbcHJvcC50YXJnZXRdO1xuICAgICAgICBpZiAodmFsdWUpIHtcbiAgICAgICAgICBjb25zdCB2YWx1ZVZpZXcgPSBBcnJheUJ1ZmZlci5pc1ZpZXcodmFsdWUpXG4gICAgICAgICAgICA/IG5ldyBVaW50OEFycmF5KHZhbHVlLmJ1ZmZlciwgdmFsdWUuYnl0ZU9mZnNldCwgdmFsdWUuYnl0ZUxlbmd0aClcbiAgICAgICAgICAgIDogdHlwZW9mIHZhbHVlID09PSBcInN0cmluZ1wiXG4gICAgICAgICAgICA/IG9wdGlvbnMudXRmOERlY29kZXIodmFsdWUpXG4gICAgICAgICAgICA6IG5ldyBVaW50OEFycmF5KHZhbHVlKTtcbiAgICAgICAgICBjb25zdCBlbmNvZGVkID0gb3B0aW9ucy5iYXNlNjRFbmNvZGVyKHZhbHVlVmlldyk7XG4gICAgICAgICAgY29uc3QgaGFzaCA9IG5ldyBvcHRpb25zLm1kNSgpO1xuICAgICAgICAgIGhhc2gudXBkYXRlKHZhbHVlVmlldyk7XG4gICAgICAgICAgaW5wdXQgPSB7XG4gICAgICAgICAgICAuLi4oaW5wdXQgYXMgYW55KSxcbiAgICAgICAgICAgIFtwcm9wLnRhcmdldF06IGVuY29kZWQsXG4gICAgICAgICAgICBbcHJvcC5oYXNoXTogb3B0aW9ucy5iYXNlNjRFbmNvZGVyKGF3YWl0IGhhc2guZGlnZXN0KCkpLFxuICAgICAgICAgIH07XG4gICAgICAgIH1cbiAgICAgIH1cblxuICAgICAgcmV0dXJuIG5leHQoe1xuICAgICAgICAuLi5hcmdzLFxuICAgICAgICBpbnB1dCxcbiAgICAgIH0pO1xuICAgIH07XG59XG5cbmV4cG9ydCBjb25zdCBzc2VjTWlkZGxld2FyZU9wdGlvbnM6IEluaXRpYWxpemVIYW5kbGVyT3B0aW9ucyA9IHtcbiAgbmFtZTogXCJzc2VjTWlkZGxld2FyZVwiLFxuICBzdGVwOiBcImluaXRpYWxpemVcIixcbiAgdGFnczogW1wiU1NFXCJdLFxuICBvdmVycmlkZTogdHJ1ZSxcbn07XG5cbmV4cG9ydCBjb25zdCBnZXRTc2VjUGx1Z2luID0gKGNvbmZpZzogUHJldmlvdXNseVJlc29sdmVkKTogUGx1Z2dhYmxlPGFueSwgYW55PiA9PiAoe1xuICBhcHBseVRvU3RhY2s6IChjbGllbnRTdGFjaykgPT4ge1xuICAgIGNsaWVudFN0YWNrLmFkZChzc2VjTWlkZGxld2FyZShjb25maWcpLCBzc2VjTWlkZGxld2FyZU9wdGlvbnMpO1xuICB9LFxufSk7XG4iXX0=
 
 /***/ }),
 
@@ -41651,11 +41745,11 @@ const fromEnv = (envVarSelector) => async () => {
         return config;
     }
     catch (e) {
-        throw new property_provider_1.ProviderError(e.message || `Cannot load config from environment variables with getter: ${envVarSelector}`);
+        throw new property_provider_1.CredentialsProviderError(e.message || `Cannot load config from environment variables with getter: ${envVarSelector}`);
     }
 };
 exports.fromEnv = fromEnv;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbUVudi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9mcm9tRW52LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLGtFQUEyRDtBQUszRDs7O0dBR0c7QUFDSSxNQUFNLE9BQU8sR0FDbEIsQ0FBYSxjQUFnQyxFQUFlLEVBQUUsQ0FDOUQsS0FBSyxJQUFJLEVBQUU7SUFDVCxJQUFJO1FBQ0YsTUFBTSxNQUFNLEdBQUcsY0FBYyxDQUFDLE9BQU8sQ0FBQyxHQUFHLENBQUMsQ0FBQztRQUMzQyxJQUFJLE1BQU0sS0FBSyxTQUFTLEVBQUU7WUFDeEIsTUFBTSxJQUFJLEtBQUssRUFBRSxDQUFDO1NBQ25CO1FBQ0QsT0FBTyxNQUFXLENBQUM7S0FDcEI7SUFBQyxPQUFPLENBQUMsRUFBRTtRQUNWLE1BQU0sSUFBSSxpQ0FBYSxDQUNyQixDQUFDLENBQUMsT0FBTyxJQUFJLDhEQUE4RCxjQUFjLEVBQUUsQ0FDNUYsQ0FBQztLQUNIO0FBQ0gsQ0FBQyxDQUFDO0FBZFMsUUFBQSxPQUFPLFdBY2hCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUHJvdmlkZXJFcnJvciB9IGZyb20gXCJAYXdzLXNkay9wcm9wZXJ0eS1wcm92aWRlclwiO1xuaW1wb3J0IHsgUHJvdmlkZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IHR5cGUgR2V0dGVyRnJvbUVudjxUPiA9IChlbnY6IE5vZGVKUy5Qcm9jZXNzRW52KSA9PiBUIHwgdW5kZWZpbmVkO1xuXG4vKipcbiAqIEdldCBjb25maWcgdmFsdWUgZ2l2ZW4gdGhlIGVudmlyb25tZW50IHZhcmlhYmxlIG5hbWUgb3IgZ2V0dGVyIGZyb21cbiAqIGVudmlyb25tZW50IHZhcmlhYmxlLlxuICovXG5leHBvcnQgY29uc3QgZnJvbUVudiA9XG4gIDxUID0gc3RyaW5nPihlbnZWYXJTZWxlY3RvcjogR2V0dGVyRnJvbUVudjxUPik6IFByb3ZpZGVyPFQ+ID0+XG4gIGFzeW5jICgpID0+IHtcbiAgICB0cnkge1xuICAgICAgY29uc3QgY29uZmlnID0gZW52VmFyU2VsZWN0b3IocHJvY2Vzcy5lbnYpO1xuICAgICAgaWYgKGNvbmZpZyA9PT0gdW5kZWZpbmVkKSB7XG4gICAgICAgIHRocm93IG5ldyBFcnJvcigpO1xuICAgICAgfVxuICAgICAgcmV0dXJuIGNvbmZpZyBhcyBUO1xuICAgIH0gY2F0Y2ggKGUpIHtcbiAgICAgIHRocm93IG5ldyBQcm92aWRlckVycm9yKFxuICAgICAgICBlLm1lc3NhZ2UgfHwgYENhbm5vdCBsb2FkIGNvbmZpZyBmcm9tIGVudmlyb25tZW50IHZhcmlhYmxlcyB3aXRoIGdldHRlcjogJHtlbnZWYXJTZWxlY3Rvcn1gXG4gICAgICApO1xuICAgIH1cbiAgfTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbUVudi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9mcm9tRW52LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLGtFQUFzRTtBQUt0RTs7O0dBR0c7QUFDSSxNQUFNLE9BQU8sR0FDbEIsQ0FBYSxjQUFnQyxFQUFlLEVBQUUsQ0FDOUQsS0FBSyxJQUFJLEVBQUU7SUFDVCxJQUFJO1FBQ0YsTUFBTSxNQUFNLEdBQUcsY0FBYyxDQUFDLE9BQU8sQ0FBQyxHQUFHLENBQUMsQ0FBQztRQUMzQyxJQUFJLE1BQU0sS0FBSyxTQUFTLEVBQUU7WUFDeEIsTUFBTSxJQUFJLEtBQUssRUFBRSxDQUFDO1NBQ25CO1FBQ0QsT0FBTyxNQUFXLENBQUM7S0FDcEI7SUFBQyxPQUFPLENBQUMsRUFBRTtRQUNWLE1BQU0sSUFBSSw0Q0FBd0IsQ0FDaEMsQ0FBQyxDQUFDLE9BQU8sSUFBSSw4REFBOEQsY0FBYyxFQUFFLENBQzVGLENBQUM7S0FDSDtBQUNILENBQUMsQ0FBQztBQWRTLFFBQUEsT0FBTyxXQWNoQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENyZWRlbnRpYWxzUHJvdmlkZXJFcnJvciB9IGZyb20gXCJAYXdzLXNkay9wcm9wZXJ0eS1wcm92aWRlclwiO1xuaW1wb3J0IHsgUHJvdmlkZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuZXhwb3J0IHR5cGUgR2V0dGVyRnJvbUVudjxUPiA9IChlbnY6IE5vZGVKUy5Qcm9jZXNzRW52KSA9PiBUIHwgdW5kZWZpbmVkO1xuXG4vKipcbiAqIEdldCBjb25maWcgdmFsdWUgZ2l2ZW4gdGhlIGVudmlyb25tZW50IHZhcmlhYmxlIG5hbWUgb3IgZ2V0dGVyIGZyb21cbiAqIGVudmlyb25tZW50IHZhcmlhYmxlLlxuICovXG5leHBvcnQgY29uc3QgZnJvbUVudiA9XG4gIDxUID0gc3RyaW5nPihlbnZWYXJTZWxlY3RvcjogR2V0dGVyRnJvbUVudjxUPik6IFByb3ZpZGVyPFQ+ID0+XG4gIGFzeW5jICgpID0+IHtcbiAgICB0cnkge1xuICAgICAgY29uc3QgY29uZmlnID0gZW52VmFyU2VsZWN0b3IocHJvY2Vzcy5lbnYpO1xuICAgICAgaWYgKGNvbmZpZyA9PT0gdW5kZWZpbmVkKSB7XG4gICAgICAgIHRocm93IG5ldyBFcnJvcigpO1xuICAgICAgfVxuICAgICAgcmV0dXJuIGNvbmZpZyBhcyBUO1xuICAgIH0gY2F0Y2ggKGUpIHtcbiAgICAgIHRocm93IG5ldyBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3IoXG4gICAgICAgIGUubWVzc2FnZSB8fCBgQ2Fubm90IGxvYWQgY29uZmlnIGZyb20gZW52aXJvbm1lbnQgdmFyaWFibGVzIHdpdGggZ2V0dGVyOiAke2VudlZhclNlbGVjdG9yfWBcbiAgICAgICk7XG4gICAgfVxuICB9O1xuIl19
 
 /***/ }),
 
@@ -41689,12 +41783,12 @@ const fromSharedConfigFiles = (configSelector, { preferredFile = "config", ...in
         return configValue;
     }
     catch (e) {
-        throw new property_provider_1.ProviderError(e.message ||
+        throw new property_provider_1.CredentialsProviderError(e.message ||
             `Cannot load config for profile ${profile} in SDK configuration files with getter: ${configSelector}`);
     }
 };
 exports.fromSharedConfigFiles = fromSharedConfigFiles;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbVNoYXJlZENvbmZpZ0ZpbGVzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2Zyb21TaGFyZWRDb25maWdGaWxlcy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxrRUFBMkQ7QUFDM0QsNEVBS3lDO0FBR3pDLE1BQU0sZUFBZSxHQUFHLFNBQVMsQ0FBQztBQUNyQixRQUFBLFdBQVcsR0FBRyxhQUFhLENBQUM7QUEwQnpDOztHQUVHO0FBQ0ksTUFBTSxxQkFBcUIsR0FDaEMsQ0FDRSxjQUFtQyxFQUNuQyxFQUFFLGFBQWEsR0FBRyxRQUFRLEVBQUUsR0FBRyxJQUFJLEtBQXVCLEVBQUUsRUFDL0MsRUFBRSxDQUNqQixLQUFLLElBQUksRUFBRTtJQUNULE1BQU0sRUFBRSxZQUFZLEdBQUcsOENBQXFCLENBQUMsSUFBSSxDQUFDLEVBQUUsT0FBTyxHQUFHLE9BQU8sQ0FBQyxHQUFHLENBQUMsbUJBQVcsQ0FBQyxJQUFJLGVBQWUsRUFBRSxHQUFHLElBQUksQ0FBQztJQUVuSCxNQUFNLEVBQUUsVUFBVSxFQUFFLGVBQWUsRUFBRSxHQUFHLE1BQU0sWUFBWSxDQUFDO0lBRTNELE1BQU0sc0JBQXNCLEdBQUcsZUFBZSxDQUFDLE9BQU8sQ0FBQyxJQUFJLEVBQUUsQ0FBQztJQUM5RCxNQUFNLGlCQUFpQixHQUFHLFVBQVUsQ0FBQyxPQUFPLENBQUMsSUFBSSxFQUFFLENBQUM7SUFDcEQsTUFBTSxhQUFhLEdBQ2pCLGFBQWEsS0FBSyxRQUFRO1FBQ3hCLENBQUMsQ0FBQyxFQUFFLEdBQUcsc0JBQXNCLEVBQUUsR0FBRyxpQkFBaUIsRUFBRTtRQUNyRCxDQUFDLENBQUMsRUFBRSxHQUFHLGlCQUFpQixFQUFFLEdBQUcsc0JBQXNCLEVBQUUsQ0FBQztJQUUxRCxJQUFJO1FBQ0YsTUFBTSxXQUFXLEdBQUcsY0FBYyxDQUFDLGFBQWEsQ0FBQyxDQUFDO1FBQ2xELElBQUksV0FBVyxLQUFLLFNBQVMsRUFBRTtZQUM3QixNQUFNLElBQUksS0FBSyxFQUFFLENBQUM7U0FDbkI7UUFDRCxPQUFPLFdBQVcsQ0FBQztLQUNwQjtJQUFDLE9BQU8sQ0FBQyxFQUFFO1FBQ1YsTUFBTSxJQUFJLGlDQUFhLENBQ3JCLENBQUMsQ0FBQyxPQUFPO1lBQ1Asa0NBQWtDLE9BQU8sNENBQTRDLGNBQWMsRUFBRSxDQUN4RyxDQUFDO0tBQ0g7QUFDSCxDQUFDLENBQUM7QUE3QlMsUUFBQSxxQkFBcUIseUJBNkI5QiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb3ZpZGVyRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvcHJvcGVydHktcHJvdmlkZXJcIjtcbmltcG9ydCB7XG4gIGxvYWRTaGFyZWRDb25maWdGaWxlcyxcbiAgUHJvZmlsZSxcbiAgU2hhcmVkQ29uZmlnRmlsZXMsXG4gIFNoYXJlZENvbmZpZ0luaXQgYXMgQmFzZVNoYXJlZENvbmZpZ0luaXQsXG59IGZyb20gXCJAYXdzLXNkay9zaGFyZWQtaW5pLWZpbGUtbG9hZGVyXCI7XG5pbXBvcnQgeyBQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5jb25zdCBERUZBVUxUX1BST0ZJTEUgPSBcImRlZmF1bHRcIjtcbmV4cG9ydCBjb25zdCBFTlZfUFJPRklMRSA9IFwiQVdTX1BST0ZJTEVcIjtcblxuZXhwb3J0IGludGVyZmFjZSBTaGFyZWRDb25maWdJbml0IGV4dGVuZHMgQmFzZVNoYXJlZENvbmZpZ0luaXQge1xuICAvKipcbiAgICogVGhlIGNvbmZpZ3VyYXRpb24gcHJvZmlsZSB0byB1c2UuXG4gICAqL1xuICBwcm9maWxlPzogc3RyaW5nO1xuXG4gIC8qKlxuICAgKiBUaGUgcHJlZmVycmVkIHNoYXJlZCBpbmkgZmlsZSB0byBsb2FkIHRoZSBjb25maWcuIFwiY29uZmlnXCIgb3B0aW9uIHJlZmVycyB0b1xuICAgKiB0aGUgc2hhcmVkIGNvbmZpZyBmaWxlKGRlZmF1bHRzIHRvIGB+Ly5hd3MvY29uZmlnYCkuIFwiY3JlZGVudGlhbHNcIiBvcHRpb25cbiAgICogcmVmZXJzIHRvIHRoZSBzaGFyZWQgY3JlZGVudGlhbHMgZmlsZShkZWZhdWx0cyB0byBgfi8uYXdzL2NyZWRlbnRpYWxzYClcbiAgICovXG4gIHByZWZlcnJlZEZpbGU/OiBcImNvbmZpZ1wiIHwgXCJjcmVkZW50aWFsc1wiO1xuXG4gIC8qKlxuICAgKiBBIHByb21pc2UgdGhhdCB3aWxsIGJlIHJlc29sdmVkIHdpdGggbG9hZGVkIGFuZCBwYXJzZWQgY3JlZGVudGlhbHMgZmlsZXMuXG4gICAqIFVzZWQgdG8gYXZvaWQgbG9hZGluZyBzaGFyZWQgY29uZmlnIGZpbGVzIG11bHRpcGxlIHRpbWVzLlxuICAgKlxuICAgKiBAaW50ZXJuYWxcbiAgICovXG4gIGxvYWRlZENvbmZpZz86IFByb21pc2U8U2hhcmVkQ29uZmlnRmlsZXM+O1xufVxuXG5leHBvcnQgdHlwZSBHZXR0ZXJGcm9tQ29uZmlnPFQ+ID0gKHByb2ZpbGU6IFByb2ZpbGUpID0+IFQgfCB1bmRlZmluZWQ7XG5cbi8qKlxuICogR2V0IGNvbmZpZyB2YWx1ZSBmcm9tIHRoZSBzaGFyZWQgY29uZmlnIGZpbGVzIHdpdGggaW5mZXJyZWQgcHJvZmlsZSBuYW1lLlxuICovXG5leHBvcnQgY29uc3QgZnJvbVNoYXJlZENvbmZpZ0ZpbGVzID1cbiAgPFQgPSBzdHJpbmc+KFxuICAgIGNvbmZpZ1NlbGVjdG9yOiBHZXR0ZXJGcm9tQ29uZmlnPFQ+LFxuICAgIHsgcHJlZmVycmVkRmlsZSA9IFwiY29uZmlnXCIsIC4uLmluaXQgfTogU2hhcmVkQ29uZmlnSW5pdCA9IHt9XG4gICk6IFByb3ZpZGVyPFQ+ID0+XG4gIGFzeW5jICgpID0+IHtcbiAgICBjb25zdCB7IGxvYWRlZENvbmZpZyA9IGxvYWRTaGFyZWRDb25maWdGaWxlcyhpbml0KSwgcHJvZmlsZSA9IHByb2Nlc3MuZW52W0VOVl9QUk9GSUxFXSB8fCBERUZBVUxUX1BST0ZJTEUgfSA9IGluaXQ7XG5cbiAgICBjb25zdCB7IGNvbmZpZ0ZpbGUsIGNyZWRlbnRpYWxzRmlsZSB9ID0gYXdhaXQgbG9hZGVkQ29uZmlnO1xuXG4gICAgY29uc3QgcHJvZmlsZUZyb21DcmVkZW50aWFscyA9IGNyZWRlbnRpYWxzRmlsZVtwcm9maWxlXSB8fCB7fTtcbiAgICBjb25zdCBwcm9maWxlRnJvbUNvbmZpZyA9IGNvbmZpZ0ZpbGVbcHJvZmlsZV0gfHwge307XG4gICAgY29uc3QgbWVyZ2VkUHJvZmlsZSA9XG4gICAgICBwcmVmZXJyZWRGaWxlID09PSBcImNvbmZpZ1wiXG4gICAgICAgID8geyAuLi5wcm9maWxlRnJvbUNyZWRlbnRpYWxzLCAuLi5wcm9maWxlRnJvbUNvbmZpZyB9XG4gICAgICAgIDogeyAuLi5wcm9maWxlRnJvbUNvbmZpZywgLi4ucHJvZmlsZUZyb21DcmVkZW50aWFscyB9O1xuXG4gICAgdHJ5IHtcbiAgICAgIGNvbnN0IGNvbmZpZ1ZhbHVlID0gY29uZmlnU2VsZWN0b3IobWVyZ2VkUHJvZmlsZSk7XG4gICAgICBpZiAoY29uZmlnVmFsdWUgPT09IHVuZGVmaW5lZCkge1xuICAgICAgICB0aHJvdyBuZXcgRXJyb3IoKTtcbiAgICAgIH1cbiAgICAgIHJldHVybiBjb25maWdWYWx1ZTtcbiAgICB9IGNhdGNoIChlKSB7XG4gICAgICB0aHJvdyBuZXcgUHJvdmlkZXJFcnJvcihcbiAgICAgICAgZS5tZXNzYWdlIHx8XG4gICAgICAgICAgYENhbm5vdCBsb2FkIGNvbmZpZyBmb3IgcHJvZmlsZSAke3Byb2ZpbGV9IGluIFNESyBjb25maWd1cmF0aW9uIGZpbGVzIHdpdGggZ2V0dGVyOiAke2NvbmZpZ1NlbGVjdG9yfWBcbiAgICAgICk7XG4gICAgfVxuICB9O1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZnJvbVNoYXJlZENvbmZpZ0ZpbGVzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2Zyb21TaGFyZWRDb25maWdGaWxlcy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxrRUFBc0U7QUFDdEUsNEVBS3lDO0FBR3pDLE1BQU0sZUFBZSxHQUFHLFNBQVMsQ0FBQztBQUNyQixRQUFBLFdBQVcsR0FBRyxhQUFhLENBQUM7QUEwQnpDOztHQUVHO0FBQ0ksTUFBTSxxQkFBcUIsR0FDaEMsQ0FDRSxjQUFtQyxFQUNuQyxFQUFFLGFBQWEsR0FBRyxRQUFRLEVBQUUsR0FBRyxJQUFJLEtBQXVCLEVBQUUsRUFDL0MsRUFBRSxDQUNqQixLQUFLLElBQUksRUFBRTtJQUNULE1BQU0sRUFBRSxZQUFZLEdBQUcsOENBQXFCLENBQUMsSUFBSSxDQUFDLEVBQUUsT0FBTyxHQUFHLE9BQU8sQ0FBQyxHQUFHLENBQUMsbUJBQVcsQ0FBQyxJQUFJLGVBQWUsRUFBRSxHQUFHLElBQUksQ0FBQztJQUVuSCxNQUFNLEVBQUUsVUFBVSxFQUFFLGVBQWUsRUFBRSxHQUFHLE1BQU0sWUFBWSxDQUFDO0lBRTNELE1BQU0sc0JBQXNCLEdBQUcsZUFBZSxDQUFDLE9BQU8sQ0FBQyxJQUFJLEVBQUUsQ0FBQztJQUM5RCxNQUFNLGlCQUFpQixHQUFHLFVBQVUsQ0FBQyxPQUFPLENBQUMsSUFBSSxFQUFFLENBQUM7SUFDcEQsTUFBTSxhQUFhLEdBQ2pCLGFBQWEsS0FBSyxRQUFRO1FBQ3hCLENBQUMsQ0FBQyxFQUFFLEdBQUcsc0JBQXNCLEVBQUUsR0FBRyxpQkFBaUIsRUFBRTtRQUNyRCxDQUFDLENBQUMsRUFBRSxHQUFHLGlCQUFpQixFQUFFLEdBQUcsc0JBQXNCLEVBQUUsQ0FBQztJQUUxRCxJQUFJO1FBQ0YsTUFBTSxXQUFXLEdBQUcsY0FBYyxDQUFDLGFBQWEsQ0FBQyxDQUFDO1FBQ2xELElBQUksV0FBVyxLQUFLLFNBQVMsRUFBRTtZQUM3QixNQUFNLElBQUksS0FBSyxFQUFFLENBQUM7U0FDbkI7UUFDRCxPQUFPLFdBQVcsQ0FBQztLQUNwQjtJQUFDLE9BQU8sQ0FBQyxFQUFFO1FBQ1YsTUFBTSxJQUFJLDRDQUF3QixDQUNoQyxDQUFDLENBQUMsT0FBTztZQUNQLGtDQUFrQyxPQUFPLDRDQUE0QyxjQUFjLEVBQUUsQ0FDeEcsQ0FBQztLQUNIO0FBQ0gsQ0FBQyxDQUFDO0FBN0JTLFFBQUEscUJBQXFCLHlCQTZCOUIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvcHJvcGVydHktcHJvdmlkZXJcIjtcbmltcG9ydCB7XG4gIGxvYWRTaGFyZWRDb25maWdGaWxlcyxcbiAgUHJvZmlsZSxcbiAgU2hhcmVkQ29uZmlnRmlsZXMsXG4gIFNoYXJlZENvbmZpZ0luaXQgYXMgQmFzZVNoYXJlZENvbmZpZ0luaXQsXG59IGZyb20gXCJAYXdzLXNkay9zaGFyZWQtaW5pLWZpbGUtbG9hZGVyXCI7XG5pbXBvcnQgeyBQcm92aWRlciB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuXG5jb25zdCBERUZBVUxUX1BST0ZJTEUgPSBcImRlZmF1bHRcIjtcbmV4cG9ydCBjb25zdCBFTlZfUFJPRklMRSA9IFwiQVdTX1BST0ZJTEVcIjtcblxuZXhwb3J0IGludGVyZmFjZSBTaGFyZWRDb25maWdJbml0IGV4dGVuZHMgQmFzZVNoYXJlZENvbmZpZ0luaXQge1xuICAvKipcbiAgICogVGhlIGNvbmZpZ3VyYXRpb24gcHJvZmlsZSB0byB1c2UuXG4gICAqL1xuICBwcm9maWxlPzogc3RyaW5nO1xuXG4gIC8qKlxuICAgKiBUaGUgcHJlZmVycmVkIHNoYXJlZCBpbmkgZmlsZSB0byBsb2FkIHRoZSBjb25maWcuIFwiY29uZmlnXCIgb3B0aW9uIHJlZmVycyB0b1xuICAgKiB0aGUgc2hhcmVkIGNvbmZpZyBmaWxlKGRlZmF1bHRzIHRvIGB+Ly5hd3MvY29uZmlnYCkuIFwiY3JlZGVudGlhbHNcIiBvcHRpb25cbiAgICogcmVmZXJzIHRvIHRoZSBzaGFyZWQgY3JlZGVudGlhbHMgZmlsZShkZWZhdWx0cyB0byBgfi8uYXdzL2NyZWRlbnRpYWxzYClcbiAgICovXG4gIHByZWZlcnJlZEZpbGU/OiBcImNvbmZpZ1wiIHwgXCJjcmVkZW50aWFsc1wiO1xuXG4gIC8qKlxuICAgKiBBIHByb21pc2UgdGhhdCB3aWxsIGJlIHJlc29sdmVkIHdpdGggbG9hZGVkIGFuZCBwYXJzZWQgY3JlZGVudGlhbHMgZmlsZXMuXG4gICAqIFVzZWQgdG8gYXZvaWQgbG9hZGluZyBzaGFyZWQgY29uZmlnIGZpbGVzIG11bHRpcGxlIHRpbWVzLlxuICAgKlxuICAgKiBAaW50ZXJuYWxcbiAgICovXG4gIGxvYWRlZENvbmZpZz86IFByb21pc2U8U2hhcmVkQ29uZmlnRmlsZXM+O1xufVxuXG5leHBvcnQgdHlwZSBHZXR0ZXJGcm9tQ29uZmlnPFQ+ID0gKHByb2ZpbGU6IFByb2ZpbGUpID0+IFQgfCB1bmRlZmluZWQ7XG5cbi8qKlxuICogR2V0IGNvbmZpZyB2YWx1ZSBmcm9tIHRoZSBzaGFyZWQgY29uZmlnIGZpbGVzIHdpdGggaW5mZXJyZWQgcHJvZmlsZSBuYW1lLlxuICovXG5leHBvcnQgY29uc3QgZnJvbVNoYXJlZENvbmZpZ0ZpbGVzID1cbiAgPFQgPSBzdHJpbmc+KFxuICAgIGNvbmZpZ1NlbGVjdG9yOiBHZXR0ZXJGcm9tQ29uZmlnPFQ+LFxuICAgIHsgcHJlZmVycmVkRmlsZSA9IFwiY29uZmlnXCIsIC4uLmluaXQgfTogU2hhcmVkQ29uZmlnSW5pdCA9IHt9XG4gICk6IFByb3ZpZGVyPFQ+ID0+XG4gIGFzeW5jICgpID0+IHtcbiAgICBjb25zdCB7IGxvYWRlZENvbmZpZyA9IGxvYWRTaGFyZWRDb25maWdGaWxlcyhpbml0KSwgcHJvZmlsZSA9IHByb2Nlc3MuZW52W0VOVl9QUk9GSUxFXSB8fCBERUZBVUxUX1BST0ZJTEUgfSA9IGluaXQ7XG5cbiAgICBjb25zdCB7IGNvbmZpZ0ZpbGUsIGNyZWRlbnRpYWxzRmlsZSB9ID0gYXdhaXQgbG9hZGVkQ29uZmlnO1xuXG4gICAgY29uc3QgcHJvZmlsZUZyb21DcmVkZW50aWFscyA9IGNyZWRlbnRpYWxzRmlsZVtwcm9maWxlXSB8fCB7fTtcbiAgICBjb25zdCBwcm9maWxlRnJvbUNvbmZpZyA9IGNvbmZpZ0ZpbGVbcHJvZmlsZV0gfHwge307XG4gICAgY29uc3QgbWVyZ2VkUHJvZmlsZSA9XG4gICAgICBwcmVmZXJyZWRGaWxlID09PSBcImNvbmZpZ1wiXG4gICAgICAgID8geyAuLi5wcm9maWxlRnJvbUNyZWRlbnRpYWxzLCAuLi5wcm9maWxlRnJvbUNvbmZpZyB9XG4gICAgICAgIDogeyAuLi5wcm9maWxlRnJvbUNvbmZpZywgLi4ucHJvZmlsZUZyb21DcmVkZW50aWFscyB9O1xuXG4gICAgdHJ5IHtcbiAgICAgIGNvbnN0IGNvbmZpZ1ZhbHVlID0gY29uZmlnU2VsZWN0b3IobWVyZ2VkUHJvZmlsZSk7XG4gICAgICBpZiAoY29uZmlnVmFsdWUgPT09IHVuZGVmaW5lZCkge1xuICAgICAgICB0aHJvdyBuZXcgRXJyb3IoKTtcbiAgICAgIH1cbiAgICAgIHJldHVybiBjb25maWdWYWx1ZTtcbiAgICB9IGNhdGNoIChlKSB7XG4gICAgICB0aHJvdyBuZXcgQ3JlZGVudGlhbHNQcm92aWRlckVycm9yKFxuICAgICAgICBlLm1lc3NhZ2UgfHxcbiAgICAgICAgICBgQ2Fubm90IGxvYWQgY29uZmlnIGZvciBwcm9maWxlICR7cHJvZmlsZX0gaW4gU0RLIGNvbmZpZ3VyYXRpb24gZmlsZXMgd2l0aCBnZXR0ZXI6ICR7Y29uZmlnU2VsZWN0b3J9YFxuICAgICAgKTtcbiAgICB9XG4gIH07XG4iXX0=
 
 /***/ }),
 
@@ -41878,39 +41972,45 @@ const http2_1 = __nccwpck_require__(7565);
 const get_transformed_headers_1 = __nccwpck_require__(2269);
 const write_request_body_1 = __nccwpck_require__(3306);
 class NodeHttp2Handler {
-    constructor({ requestTimeout, sessionTimeout } = {}) {
+    constructor({ requestTimeout, sessionTimeout, disableConcurrentStreams } = {}) {
         this.metadata = { handlerProtocol: "h2" };
         this.requestTimeout = requestTimeout;
         this.sessionTimeout = sessionTimeout;
-        this.connectionPool = new Map();
+        this.disableConcurrentStreams = disableConcurrentStreams;
+        this.sessionCache = new Map();
     }
     destroy() {
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        for (const [_, http2Session] of this.connectionPool) {
-            http2Session.destroy();
+        for (const sessions of this.sessionCache.values()) {
+            sessions.forEach((session) => this.destroySession(session));
         }
-        this.connectionPool.clear();
+        this.sessionCache.clear();
     }
     handle(request, { abortSignal } = {}) {
         return new Promise((resolve, rejectOriginal) => {
             // It's redundant to track fulfilled because promises use the first resolution/rejection
             // but avoids generating unnecessary stack traces in the "close" event handler.
             let fulfilled = false;
-            const reject = (err) => {
-                fulfilled = true;
-                rejectOriginal(err);
-            };
             // if the request was already aborted, prevent doing extra work
             if (abortSignal === null || abortSignal === void 0 ? void 0 : abortSignal.aborted) {
+                fulfilled = true;
                 const abortError = new Error("Request aborted");
                 abortError.name = "AbortError";
-                reject(abortError);
+                rejectOriginal(abortError);
                 return;
             }
             const { hostname, method, port, protocol, path, query } = request;
+            const authority = `${protocol}//${hostname}${port ? `:${port}` : ""}`;
+            const session = this.getSession(authority, this.disableConcurrentStreams || false);
+            const reject = (err) => {
+                if (this.disableConcurrentStreams) {
+                    this.destroySession(session);
+                }
+                fulfilled = true;
+                rejectOriginal(err);
+            };
             const queryString = querystring_builder_1.buildQueryString(query || {});
             // create the http2 request
-            const req = this.getSession(`${protocol}//${hostname}${port ? `:${port}` : ""}`).request({
+            const req = session.request({
                 ...request.headers,
                 [http2_1.constants.HTTP2_HEADER_PATH]: queryString ? `${path}?${queryString}` : path,
                 [http2_1.constants.HTTP2_HEADER_METHOD]: method,
@@ -41923,6 +42023,12 @@ class NodeHttp2Handler {
                 });
                 fulfilled = true;
                 resolve({ response: httpResponse });
+                if (this.disableConcurrentStreams) {
+                    // Gracefully closes the Http2Session, allowing any existing streams to complete
+                    // on their own and preventing new Http2Stream instances from being created.
+                    session.close();
+                    this.deleteSessionFromCache(authority, session);
+                }
             });
             const requestTimeout = this.requestTimeout;
             if (requestTimeout) {
@@ -41942,14 +42048,20 @@ class NodeHttp2Handler {
                 };
             }
             // Set up handlers for errors
-            req.on("frameError", reject);
+            req.on("frameError", (type, code, id) => {
+                reject(new Error(`Frame type id ${type} in stream id ${id} has failed with code ${code}.`));
+            });
             req.on("error", reject);
-            req.on("goaway", reject);
-            req.on("aborted", reject);
+            req.on("aborted", () => {
+                reject(new Error(`HTTP/2 stream is abnormally aborted in mid-communication with result code ${req.rstCode}.`));
+            });
             // The HTTP/2 error code used when closing the stream can be retrieved using the
             // http2stream.rstCode property. If the code is any value other than NGHTTP2_NO_ERROR (0),
             // an 'error' event will have also been emitted.
             req.on("close", () => {
+                if (this.disableConcurrentStreams) {
+                    session.destroy();
+                }
                 if (!fulfilled) {
                     reject(new Error("Unexpected error: http2 request did not get a response"));
                 }
@@ -41957,52 +42069,60 @@ class NodeHttp2Handler {
             write_request_body_1.writeRequestBody(req, request);
         });
     }
-    getSession(authority) {
-        const connectionPool = this.connectionPool;
-        const existingSession = connectionPool.get(authority);
-        if (existingSession)
-            return existingSession;
+    /**
+     * Returns a session for the given URL.
+     *
+     * @param authority The URL to create a session for.
+     * @param disableConcurrentStreams If true, a new session will be created for each request.
+     * @returns A session for the given URL.
+     */
+    getSession(authority, disableConcurrentStreams) {
+        const sessionCache = this.sessionCache;
+        const existingSessions = sessionCache.get(authority) || [];
+        // If concurrent streams are not disabled, we can use the existing session.
+        if (existingSessions.length > 0 && !disableConcurrentStreams)
+            return existingSessions[0];
         const newSession = http2_1.connect(authority);
-        connectionPool.set(authority, newSession);
         const destroySessionCb = () => {
-            this.destroySession(authority, newSession);
+            this.destroySession(newSession);
+            this.deleteSessionFromCache(authority, newSession);
         };
         newSession.on("goaway", destroySessionCb);
         newSession.on("error", destroySessionCb);
         newSession.on("frameError", destroySessionCb);
         const sessionTimeout = this.sessionTimeout;
         if (sessionTimeout) {
-            newSession.setTimeout(sessionTimeout, () => {
-                if (connectionPool.get(authority) === newSession) {
-                    newSession.close();
-                    connectionPool.delete(authority);
-                }
-            });
+            newSession.setTimeout(sessionTimeout, destroySessionCb);
         }
+        existingSessions.push(newSession);
+        sessionCache.set(authority, existingSessions);
         return newSession;
     }
     /**
-     * Destroy a session immediately and remove it from the http2 pool.
-     *
-     * This check ensures that the session is only closed once
-     * and that an event on one session does not close a different session.
+     * Destroys a session.
+     * @param session The session to destroy.
      */
-    destroySession(authority, session) {
-        if (this.connectionPool.get(authority) !== session) {
-            // Already closed?
-            return;
-        }
-        this.connectionPool.delete(authority);
-        session.removeAllListeners("goaway");
-        session.removeAllListeners("error");
-        session.removeAllListeners("frameError");
+    destroySession(session) {
         if (!session.destroyed) {
             session.destroy();
         }
     }
+    /**
+     * Delete a session from the connection pool.
+     * @param authority The authority of the session to delete.
+     * @param session The session to delete.
+     */
+    deleteSessionFromCache(authority, session) {
+        const existingSessions = this.sessionCache.get(authority) || [];
+        if (!existingSessions.includes(session)) {
+            // If the session is not in the cache, it has already been deleted.
+            return;
+        }
+        this.sessionCache.set(authority, existingSessions.filter((s) => s !== session));
+    }
 }
 exports.NodeHttp2Handler = NodeHttp2Handler;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibm9kZS1odHRwMi1oYW5kbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL25vZGUtaHR0cDItaGFuZGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBZ0Y7QUFDaEYsc0VBQWdFO0FBRWhFLGlDQUErRDtBQUUvRCx1RUFBa0U7QUFDbEUsNkRBQXdEO0FBb0J4RCxNQUFhLGdCQUFnQjtJQU0zQixZQUFZLEVBQUUsY0FBYyxFQUFFLGNBQWMsS0FBOEIsRUFBRTtRQUY1RCxhQUFRLEdBQUcsRUFBRSxlQUFlLEVBQUUsSUFBSSxFQUFFLENBQUM7UUFHbkQsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLGNBQWMsR0FBRyxJQUFJLEdBQUcsRUFBOEIsQ0FBQztJQUM5RCxDQUFDO0lBRUQsT0FBTztRQUNMLDZEQUE2RDtRQUM3RCxLQUFLLE1BQU0sQ0FBQyxDQUFDLEVBQUUsWUFBWSxDQUFDLElBQUksSUFBSSxDQUFDLGNBQWMsRUFBRTtZQUNuRCxZQUFZLENBQUMsT0FBTyxFQUFFLENBQUM7U0FDeEI7UUFDRCxJQUFJLENBQUMsY0FBYyxDQUFDLEtBQUssRUFBRSxDQUFDO0lBQzlCLENBQUM7SUFFRCxNQUFNLENBQUMsT0FBb0IsRUFBRSxFQUFFLFdBQVcsS0FBeUIsRUFBRTtRQUNuRSxPQUFPLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLGNBQWMsRUFBRSxFQUFFO1lBQzdDLHdGQUF3RjtZQUN4RiwrRUFBK0U7WUFDL0UsSUFBSSxTQUFTLEdBQUcsS0FBSyxDQUFDO1lBQ3RCLE1BQU0sTUFBTSxHQUFHLENBQUMsR0FBVSxFQUFFLEVBQUU7Z0JBQzVCLFNBQVMsR0FBRyxJQUFJLENBQUM7Z0JBQ2pCLGNBQWMsQ0FBQyxHQUFHLENBQUMsQ0FBQztZQUN0QixDQUFDLENBQUM7WUFDRiwrREFBK0Q7WUFDL0QsSUFBSSxXQUFXLGFBQVgsV0FBVyx1QkFBWCxXQUFXLENBQUUsT0FBTyxFQUFFO2dCQUN4QixNQUFNLFVBQVUsR0FBRyxJQUFJLEtBQUssQ0FBQyxpQkFBaUIsQ0FBQyxDQUFDO2dCQUNoRCxVQUFVLENBQUMsSUFBSSxHQUFHLFlBQVksQ0FBQztnQkFDL0IsTUFBTSxDQUFDLFVBQVUsQ0FBQyxDQUFDO2dCQUNuQixPQUFPO2FBQ1I7WUFFRCxNQUFNLEVBQUUsUUFBUSxFQUFFLE1BQU0sRUFBRSxJQUFJLEVBQUUsUUFBUSxFQUFFLElBQUksRUFBRSxLQUFLLEVBQUUsR0FBRyxPQUFPLENBQUM7WUFDbEUsTUFBTSxXQUFXLEdBQUcsc0NBQWdCLENBQUMsS0FBSyxJQUFJLEVBQUUsQ0FBQyxDQUFDO1lBRWxELDJCQUEyQjtZQUMzQixNQUFNLEdBQUcsR0FBRyxJQUFJLENBQUMsVUFBVSxDQUFDLEdBQUcsUUFBUSxLQUFLLFFBQVEsR0FBRyxJQUFJLENBQUMsQ0FBQyxDQUFDLElBQUksSUFBSSxFQUFFLENBQUMsQ0FBQyxDQUFDLEVBQUUsRUFBRSxDQUFDLENBQUMsT0FBTyxDQUFDO2dCQUN2RixHQUFHLE9BQU8sQ0FBQyxPQUFPO2dCQUNsQixDQUFDLGlCQUFTLENBQUMsaUJBQWlCLENBQUMsRUFBRSxXQUFXLENBQUMsQ0FBQyxDQUFDLEdBQUcsSUFBSSxJQUFJLFdBQVcsRUFBRSxDQUFDLENBQUMsQ0FBQyxJQUFJO2dCQUM1RSxDQUFDLGlCQUFTLENBQUMsbUJBQW1CLENBQUMsRUFBRSxNQUFNO2FBQ3hDLENBQUMsQ0FBQztZQUVILEdBQUcsQ0FBQyxFQUFFLENBQUMsVUFBVSxFQUFFLENBQUMsT0FBTyxFQUFFLEVBQUU7Z0JBQzdCLE1BQU0sWUFBWSxHQUFHLElBQUksNEJBQVksQ0FBQztvQkFDcEMsVUFBVSxFQUFFLE9BQU8sQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLENBQUM7b0JBQ3BDLE9BQU8sRUFBRSwrQ0FBcUIsQ0FBQyxPQUFPLENBQUM7b0JBQ3ZDLElBQUksRUFBRSxHQUFHO2lCQUNWLENBQUMsQ0FBQztnQkFDSCxTQUFTLEdBQUcsSUFBSSxDQUFDO2dCQUNqQixPQUFPLENBQUMsRUFBRSxRQUFRLEVBQUUsWUFBWSxFQUFFLENBQUMsQ0FBQztZQUN0QyxDQUFDLENBQUMsQ0FBQztZQUVILE1BQU0sY0FBYyxHQUFHLElBQUksQ0FBQyxjQUFjLENBQUM7WUFDM0MsSUFBSSxjQUFjLEVBQUU7Z0JBQ2xCLEdBQUcsQ0FBQyxVQUFVLENBQUMsY0FBYyxFQUFFLEdBQUcsRUFBRTtvQkFDbEMsR0FBRyxDQUFDLEtBQUssRUFBRSxDQUFDO29CQUNaLE1BQU0sWUFBWSxHQUFHLElBQUksS0FBSyxDQUFDLCtDQUErQyxjQUFjLEtBQUssQ0FBQyxDQUFDO29CQUNuRyxZQUFZLENBQUMsSUFBSSxHQUFHLGNBQWMsQ0FBQztvQkFDbkMsTUFBTSxDQUFDLFlBQVksQ0FBQyxDQUFDO2dCQUN2QixDQUFDLENBQUMsQ0FBQzthQUNKO1lBRUQsSUFBSSxXQUFXLEVBQUU7Z0JBQ2YsV0FBVyxDQUFDLE9BQU8sR0FBRyxHQUFHLEVBQUU7b0JBQ3pCLEdBQUcsQ0FBQyxLQUFLLEVBQUUsQ0FBQztvQkFDWixNQUFNLFVBQVUsR0FBRyxJQUFJLEtBQUssQ0FBQyxpQkFBaUIsQ0FBQyxDQUFDO29CQUNoRCxVQUFVLENBQUMsSUFBSSxHQUFHLFlBQVksQ0FBQztvQkFDL0IsTUFBTSxDQUFDLFVBQVUsQ0FBQyxDQUFDO2dCQUNyQixDQUFDLENBQUM7YUFDSDtZQUVELDZCQUE2QjtZQUM3QixHQUFHLENBQUMsRUFBRSxDQUFDLFlBQVksRUFBRSxNQUFNLENBQUMsQ0FBQztZQUM3QixHQUFHLENBQUMsRUFBRSxDQUFDLE9BQU8sRUFBRSxNQUFNLENBQUMsQ0FBQztZQUN4QixHQUFHLENBQUMsRUFBRSxDQUFDLFFBQVEsRUFBRSxNQUFNLENBQUMsQ0FBQztZQUN6QixHQUFHLENBQUMsRUFBRSxDQUFDLFNBQVMsRUFBRSxNQUFNLENBQUMsQ0FBQztZQUUxQixnRkFBZ0Y7WUFDaEYsMEZBQTBGO1lBQzFGLGdEQUFnRDtZQUNoRCxHQUFHLENBQUMsRUFBRSxDQUFDLE9BQU8sRUFBRSxHQUFHLEVBQUU7Z0JBQ25CLElBQUksQ0FBQyxTQUFTLEVBQUU7b0JBQ2QsTUFBTSxDQUFDLElBQUksS0FBSyxDQUFDLHdEQUF3RCxDQUFDLENBQUMsQ0FBQztpQkFDN0U7WUFDSCxDQUFDLENBQUMsQ0FBQztZQUNILHFDQUFnQixDQUFDLEdBQUcsRUFBRSxPQUFPLENBQUMsQ0FBQztRQUNqQyxDQUFDLENBQUMsQ0FBQztJQUNMLENBQUM7SUFFTyxVQUFVLENBQUMsU0FBaUI7UUFDbEMsTUFBTSxjQUFjLEdBQUcsSUFBSSxDQUFDLGNBQWMsQ0FBQztRQUMzQyxNQUFNLGVBQWUsR0FBRyxjQUFjLENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxDQUFDO1FBQ3RELElBQUksZUFBZTtZQUFFLE9BQU8sZUFBZSxDQUFDO1FBRTVDLE1BQU0sVUFBVSxHQUFHLGVBQU8sQ0FBQyxTQUFTLENBQUMsQ0FBQztRQUN0QyxjQUFjLENBQUMsR0FBRyxDQUFDLFNBQVMsRUFBRSxVQUFVLENBQUMsQ0FBQztRQUMxQyxNQUFNLGdCQUFnQixHQUFHLEdBQUcsRUFBRTtZQUM1QixJQUFJLENBQUMsY0FBYyxDQUFDLFNBQVMsRUFBRSxVQUFVLENBQUMsQ0FBQztRQUM3QyxDQUFDLENBQUM7UUFDRixVQUFVLENBQUMsRUFBRSxDQUFDLFFBQVEsRUFBRSxnQkFBZ0IsQ0FBQyxDQUFDO1FBQzFDLFVBQVUsQ0FBQyxFQUFFLENBQUMsT0FBTyxFQUFFLGdCQUFnQixDQUFDLENBQUM7UUFDekMsVUFBVSxDQUFDLEVBQUUsQ0FBQyxZQUFZLEVBQUUsZ0JBQWdCLENBQUMsQ0FBQztRQUU5QyxNQUFNLGNBQWMsR0FBRyxJQUFJLENBQUMsY0FBYyxDQUFDO1FBQzNDLElBQUksY0FBYyxFQUFFO1lBQ2xCLFVBQVUsQ0FBQyxVQUFVLENBQUMsY0FBYyxFQUFFLEdBQUcsRUFBRTtnQkFDekMsSUFBSSxjQUFjLENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxLQUFLLFVBQVUsRUFBRTtvQkFDaEQsVUFBVSxDQUFDLEtBQUssRUFBRSxDQUFDO29CQUNuQixjQUFjLENBQUMsTUFBTSxDQUFDLFNBQVMsQ0FBQyxDQUFDO2lCQUNsQztZQUNILENBQUMsQ0FBQyxDQUFDO1NBQ0o7UUFDRCxPQUFPLFVBQVUsQ0FBQztJQUNwQixDQUFDO0lBRUQ7Ozs7O09BS0c7SUFDSyxjQUFjLENBQUMsU0FBaUIsRUFBRSxPQUEyQjtRQUNuRSxJQUFJLElBQUksQ0FBQyxjQUFjLENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxLQUFLLE9BQU8sRUFBRTtZQUNsRCxrQkFBa0I7WUFDbEIsT0FBTztTQUNSO1FBQ0QsSUFBSSxDQUFDLGNBQWMsQ0FBQyxNQUFNLENBQUMsU0FBUyxDQUFDLENBQUM7UUFDdEMsT0FBTyxDQUFDLGtCQUFrQixDQUFDLFFBQVEsQ0FBQyxDQUFDO1FBQ3JDLE9BQU8sQ0FBQyxrQkFBa0IsQ0FBQyxPQUFPLENBQUMsQ0FBQztRQUNwQyxPQUFPLENBQUMsa0JBQWtCLENBQUMsWUFBWSxDQUFDLENBQUM7UUFDekMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxTQUFTLEVBQUU7WUFDdEIsT0FBTyxDQUFDLE9BQU8sRUFBRSxDQUFDO1NBQ25CO0lBQ0gsQ0FBQztDQUNGO0FBM0lELDRDQTJJQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEh0dHBIYW5kbGVyLCBIdHRwUmVxdWVzdCwgSHR0cFJlc3BvbnNlIH0gZnJvbSBcIkBhd3Mtc2RrL3Byb3RvY29sLWh0dHBcIjtcbmltcG9ydCB7IGJ1aWxkUXVlcnlTdHJpbmcgfSBmcm9tIFwiQGF3cy1zZGsvcXVlcnlzdHJpbmctYnVpbGRlclwiO1xuaW1wb3J0IHsgSHR0cEhhbmRsZXJPcHRpb25zIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5pbXBvcnQgeyBDbGllbnRIdHRwMlNlc3Npb24sIGNvbm5lY3QsIGNvbnN0YW50cyB9IGZyb20gXCJodHRwMlwiO1xuXG5pbXBvcnQgeyBnZXRUcmFuc2Zvcm1lZEhlYWRlcnMgfSBmcm9tIFwiLi9nZXQtdHJhbnNmb3JtZWQtaGVhZGVyc1wiO1xuaW1wb3J0IHsgd3JpdGVSZXF1ZXN0Qm9keSB9IGZyb20gXCIuL3dyaXRlLXJlcXVlc3QtYm9keVwiO1xuXG4vKipcbiAqIFJlcHJlc2VudHMgdGhlIGh0dHAyIG9wdGlvbnMgdGhhdCBjYW4gYmUgcGFzc2VkIHRvIGEgbm9kZSBodHRwMiBjbGllbnQuXG4gKi9cbmV4cG9ydCBpbnRlcmZhY2UgTm9kZUh0dHAySGFuZGxlck9wdGlvbnMge1xuICAvKipcbiAgICogVGhlIG1heGltdW0gdGltZSBpbiBtaWxsaXNlY29uZHMgdGhhdCBhIHN0cmVhbSBtYXkgcmVtYWluIGlkbGUgYmVmb3JlIGl0XG4gICAqIGlzIGNsb3NlZC5cbiAgICovXG4gIHJlcXVlc3RUaW1lb3V0PzogbnVtYmVyO1xuXG4gIC8qKlxuICAgKiBUaGUgbWF4aW11bSB0aW1lIGluIG1pbGxpc2Vjb25kcyB0aGF0IGEgc2Vzc2lvbiBvciBzb2NrZXQgbWF5IHJlbWFpbiBpZGxlXG4gICAqIGJlZm9yZSBpdCBpcyBjbG9zZWQuXG4gICAqIGh0dHBzOi8vbm9kZWpzLm9yZy9kb2NzL2xhdGVzdC12MTIueC9hcGkvaHR0cDIuaHRtbCNodHRwMl9odHRwMnNlc3Npb25fYW5kX3NvY2tldHNcbiAgICovXG4gIHNlc3Npb25UaW1lb3V0PzogbnVtYmVyO1xufVxuXG5leHBvcnQgY2xhc3MgTm9kZUh0dHAySGFuZGxlciBpbXBsZW1lbnRzIEh0dHBIYW5kbGVyIHtcbiAgcHJpdmF0ZSByZWFkb25seSByZXF1ZXN0VGltZW91dD86IG51bWJlcjtcbiAgcHJpdmF0ZSByZWFkb25seSBzZXNzaW9uVGltZW91dD86IG51bWJlcjtcbiAgcHJpdmF0ZSByZWFkb25seSBjb25uZWN0aW9uUG9vbDogTWFwPHN0cmluZywgQ2xpZW50SHR0cDJTZXNzaW9uPjtcbiAgcHVibGljIHJlYWRvbmx5IG1ldGFkYXRhID0geyBoYW5kbGVyUHJvdG9jb2w6IFwiaDJcIiB9O1xuXG4gIGNvbnN0cnVjdG9yKHsgcmVxdWVzdFRpbWVvdXQsIHNlc3Npb25UaW1lb3V0IH06IE5vZGVIdHRwMkhhbmRsZXJPcHRpb25zID0ge30pIHtcbiAgICB0aGlzLnJlcXVlc3RUaW1lb3V0ID0gcmVxdWVzdFRpbWVvdXQ7XG4gICAgdGhpcy5zZXNzaW9uVGltZW91dCA9IHNlc3Npb25UaW1lb3V0O1xuICAgIHRoaXMuY29ubmVjdGlvblBvb2wgPSBuZXcgTWFwPHN0cmluZywgQ2xpZW50SHR0cDJTZXNzaW9uPigpO1xuICB9XG5cbiAgZGVzdHJveSgpOiB2b2lkIHtcbiAgICAvLyBlc2xpbnQtZGlzYWJsZS1uZXh0LWxpbmUgQHR5cGVzY3JpcHQtZXNsaW50L25vLXVudXNlZC12YXJzXG4gICAgZm9yIChjb25zdCBbXywgaHR0cDJTZXNzaW9uXSBvZiB0aGlzLmNvbm5lY3Rpb25Qb29sKSB7XG4gICAgICBodHRwMlNlc3Npb24uZGVzdHJveSgpO1xuICAgIH1cbiAgICB0aGlzLmNvbm5lY3Rpb25Qb29sLmNsZWFyKCk7XG4gIH1cblxuICBoYW5kbGUocmVxdWVzdDogSHR0cFJlcXVlc3QsIHsgYWJvcnRTaWduYWwgfTogSHR0cEhhbmRsZXJPcHRpb25zID0ge30pOiBQcm9taXNlPHsgcmVzcG9uc2U6IEh0dHBSZXNwb25zZSB9PiB7XG4gICAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3RPcmlnaW5hbCkgPT4ge1xuICAgICAgLy8gSXQncyByZWR1bmRhbnQgdG8gdHJhY2sgZnVsZmlsbGVkIGJlY2F1c2UgcHJvbWlzZXMgdXNlIHRoZSBmaXJzdCByZXNvbHV0aW9uL3JlamVjdGlvblxuICAgICAgLy8gYnV0IGF2b2lkcyBnZW5lcmF0aW5nIHVubmVjZXNzYXJ5IHN0YWNrIHRyYWNlcyBpbiB0aGUgXCJjbG9zZVwiIGV2ZW50IGhhbmRsZXIuXG4gICAgICBsZXQgZnVsZmlsbGVkID0gZmFsc2U7XG4gICAgICBjb25zdCByZWplY3QgPSAoZXJyOiBFcnJvcikgPT4ge1xuICAgICAgICBmdWxmaWxsZWQgPSB0cnVlO1xuICAgICAgICByZWplY3RPcmlnaW5hbChlcnIpO1xuICAgICAgfTtcbiAgICAgIC8vIGlmIHRoZSByZXF1ZXN0IHdhcyBhbHJlYWR5IGFib3J0ZWQsIHByZXZlbnQgZG9pbmcgZXh0cmEgd29ya1xuICAgICAgaWYgKGFib3J0U2lnbmFsPy5hYm9ydGVkKSB7XG4gICAgICAgIGNvbnN0IGFib3J0RXJyb3IgPSBuZXcgRXJyb3IoXCJSZXF1ZXN0IGFib3J0ZWRcIik7XG4gICAgICAgIGFib3J0RXJyb3IubmFtZSA9IFwiQWJvcnRFcnJvclwiO1xuICAgICAgICByZWplY3QoYWJvcnRFcnJvcik7XG4gICAgICAgIHJldHVybjtcbiAgICAgIH1cblxuICAgICAgY29uc3QgeyBob3N0bmFtZSwgbWV0aG9kLCBwb3J0LCBwcm90b2NvbCwgcGF0aCwgcXVlcnkgfSA9IHJlcXVlc3Q7XG4gICAgICBjb25zdCBxdWVyeVN0cmluZyA9IGJ1aWxkUXVlcnlTdHJpbmcocXVlcnkgfHwge30pO1xuXG4gICAgICAvLyBjcmVhdGUgdGhlIGh0dHAyIHJlcXVlc3RcbiAgICAgIGNvbnN0IHJlcSA9IHRoaXMuZ2V0U2Vzc2lvbihgJHtwcm90b2NvbH0vLyR7aG9zdG5hbWV9JHtwb3J0ID8gYDoke3BvcnR9YCA6IFwiXCJ9YCkucmVxdWVzdCh7XG4gICAgICAgIC4uLnJlcXVlc3QuaGVhZGVycyxcbiAgICAgICAgW2NvbnN0YW50cy5IVFRQMl9IRUFERVJfUEFUSF06IHF1ZXJ5U3RyaW5nID8gYCR7cGF0aH0/JHtxdWVyeVN0cmluZ31gIDogcGF0aCxcbiAgICAgICAgW2NvbnN0YW50cy5IVFRQMl9IRUFERVJfTUVUSE9EXTogbWV0aG9kLFxuICAgICAgfSk7XG5cbiAgICAgIHJlcS5vbihcInJlc3BvbnNlXCIsIChoZWFkZXJzKSA9PiB7XG4gICAgICAgIGNvbnN0IGh0dHBSZXNwb25zZSA9IG5ldyBIdHRwUmVzcG9uc2Uoe1xuICAgICAgICAgIHN0YXR1c0NvZGU6IGhlYWRlcnNbXCI6c3RhdHVzXCJdIHx8IC0xLFxuICAgICAgICAgIGhlYWRlcnM6IGdldFRyYW5zZm9ybWVkSGVhZGVycyhoZWFkZXJzKSxcbiAgICAgICAgICBib2R5OiByZXEsXG4gICAgICAgIH0pO1xuICAgICAgICBmdWxmaWxsZWQgPSB0cnVlO1xuICAgICAgICByZXNvbHZlKHsgcmVzcG9uc2U6IGh0dHBSZXNwb25zZSB9KTtcbiAgICAgIH0pO1xuXG4gICAgICBjb25zdCByZXF1ZXN0VGltZW91dCA9IHRoaXMucmVxdWVzdFRpbWVvdXQ7XG4gICAgICBpZiAocmVxdWVzdFRpbWVvdXQpIHtcbiAgICAgICAgcmVxLnNldFRpbWVvdXQocmVxdWVzdFRpbWVvdXQsICgpID0+IHtcbiAgICAgICAgICByZXEuY2xvc2UoKTtcbiAgICAgICAgICBjb25zdCB0aW1lb3V0RXJyb3IgPSBuZXcgRXJyb3IoYFN0cmVhbSB0aW1lZCBvdXQgYmVjYXVzZSBvZiBubyBhY3Rpdml0eSBmb3IgJHtyZXF1ZXN0VGltZW91dH0gbXNgKTtcbiAgICAgICAgICB0aW1lb3V0RXJyb3IubmFtZSA9IFwiVGltZW91dEVycm9yXCI7XG4gICAgICAgICAgcmVqZWN0KHRpbWVvdXRFcnJvcik7XG4gICAgICAgIH0pO1xuICAgICAgfVxuXG4gICAgICBpZiAoYWJvcnRTaWduYWwpIHtcbiAgICAgICAgYWJvcnRTaWduYWwub25hYm9ydCA9ICgpID0+IHtcbiAgICAgICAgICByZXEuY2xvc2UoKTtcbiAgICAgICAgICBjb25zdCBhYm9ydEVycm9yID0gbmV3IEVycm9yKFwiUmVxdWVzdCBhYm9ydGVkXCIpO1xuICAgICAgICAgIGFib3J0RXJyb3IubmFtZSA9IFwiQWJvcnRFcnJvclwiO1xuICAgICAgICAgIHJlamVjdChhYm9ydEVycm9yKTtcbiAgICAgICAgfTtcbiAgICAgIH1cblxuICAgICAgLy8gU2V0IHVwIGhhbmRsZXJzIGZvciBlcnJvcnNcbiAgICAgIHJlcS5vbihcImZyYW1lRXJyb3JcIiwgcmVqZWN0KTtcbiAgICAgIHJlcS5vbihcImVycm9yXCIsIHJlamVjdCk7XG4gICAgICByZXEub24oXCJnb2F3YXlcIiwgcmVqZWN0KTtcbiAgICAgIHJlcS5vbihcImFib3J0ZWRcIiwgcmVqZWN0KTtcblxuICAgICAgLy8gVGhlIEhUVFAvMiBlcnJvciBjb2RlIHVzZWQgd2hlbiBjbG9zaW5nIHRoZSBzdHJlYW0gY2FuIGJlIHJldHJpZXZlZCB1c2luZyB0aGVcbiAgICAgIC8vIGh0dHAyc3RyZWFtLnJzdENvZGUgcHJvcGVydHkuIElmIHRoZSBjb2RlIGlzIGFueSB2YWx1ZSBvdGhlciB0aGFuIE5HSFRUUDJfTk9fRVJST1IgKDApLFxuICAgICAgLy8gYW4gJ2Vycm9yJyBldmVudCB3aWxsIGhhdmUgYWxzbyBiZWVuIGVtaXR0ZWQuXG4gICAgICByZXEub24oXCJjbG9zZVwiLCAoKSA9PiB7XG4gICAgICAgIGlmICghZnVsZmlsbGVkKSB7XG4gICAgICAgICAgcmVqZWN0KG5ldyBFcnJvcihcIlVuZXhwZWN0ZWQgZXJyb3I6IGh0dHAyIHJlcXVlc3QgZGlkIG5vdCBnZXQgYSByZXNwb25zZVwiKSk7XG4gICAgICAgIH1cbiAgICAgIH0pO1xuICAgICAgd3JpdGVSZXF1ZXN0Qm9keShyZXEsIHJlcXVlc3QpO1xuICAgIH0pO1xuICB9XG5cbiAgcHJpdmF0ZSBnZXRTZXNzaW9uKGF1dGhvcml0eTogc3RyaW5nKTogQ2xpZW50SHR0cDJTZXNzaW9uIHtcbiAgICBjb25zdCBjb25uZWN0aW9uUG9vbCA9IHRoaXMuY29ubmVjdGlvblBvb2w7XG4gICAgY29uc3QgZXhpc3RpbmdTZXNzaW9uID0gY29ubmVjdGlvblBvb2wuZ2V0KGF1dGhvcml0eSk7XG4gICAgaWYgKGV4aXN0aW5nU2Vzc2lvbikgcmV0dXJuIGV4aXN0aW5nU2Vzc2lvbjtcblxuICAgIGNvbnN0IG5ld1Nlc3Npb24gPSBjb25uZWN0KGF1dGhvcml0eSk7XG4gICAgY29ubmVjdGlvblBvb2wuc2V0KGF1dGhvcml0eSwgbmV3U2Vzc2lvbik7XG4gICAgY29uc3QgZGVzdHJveVNlc3Npb25DYiA9ICgpID0+IHtcbiAgICAgIHRoaXMuZGVzdHJveVNlc3Npb24oYXV0aG9yaXR5LCBuZXdTZXNzaW9uKTtcbiAgICB9O1xuICAgIG5ld1Nlc3Npb24ub24oXCJnb2F3YXlcIiwgZGVzdHJveVNlc3Npb25DYik7XG4gICAgbmV3U2Vzc2lvbi5vbihcImVycm9yXCIsIGRlc3Ryb3lTZXNzaW9uQ2IpO1xuICAgIG5ld1Nlc3Npb24ub24oXCJmcmFtZUVycm9yXCIsIGRlc3Ryb3lTZXNzaW9uQ2IpO1xuXG4gICAgY29uc3Qgc2Vzc2lvblRpbWVvdXQgPSB0aGlzLnNlc3Npb25UaW1lb3V0O1xuICAgIGlmIChzZXNzaW9uVGltZW91dCkge1xuICAgICAgbmV3U2Vzc2lvbi5zZXRUaW1lb3V0KHNlc3Npb25UaW1lb3V0LCAoKSA9PiB7XG4gICAgICAgIGlmIChjb25uZWN0aW9uUG9vbC5nZXQoYXV0aG9yaXR5KSA9PT0gbmV3U2Vzc2lvbikge1xuICAgICAgICAgIG5ld1Nlc3Npb24uY2xvc2UoKTtcbiAgICAgICAgICBjb25uZWN0aW9uUG9vbC5kZWxldGUoYXV0aG9yaXR5KTtcbiAgICAgICAgfVxuICAgICAgfSk7XG4gICAgfVxuICAgIHJldHVybiBuZXdTZXNzaW9uO1xuICB9XG5cbiAgLyoqXG4gICAqIERlc3Ryb3kgYSBzZXNzaW9uIGltbWVkaWF0ZWx5IGFuZCByZW1vdmUgaXQgZnJvbSB0aGUgaHR0cDIgcG9vbC5cbiAgICpcbiAgICogVGhpcyBjaGVjayBlbnN1cmVzIHRoYXQgdGhlIHNlc3Npb24gaXMgb25seSBjbG9zZWQgb25jZVxuICAgKiBhbmQgdGhhdCBhbiBldmVudCBvbiBvbmUgc2Vzc2lvbiBkb2VzIG5vdCBjbG9zZSBhIGRpZmZlcmVudCBzZXNzaW9uLlxuICAgKi9cbiAgcHJpdmF0ZSBkZXN0cm95U2Vzc2lvbihhdXRob3JpdHk6IHN0cmluZywgc2Vzc2lvbjogQ2xpZW50SHR0cDJTZXNzaW9uKTogdm9pZCB7XG4gICAgaWYgKHRoaXMuY29ubmVjdGlvblBvb2wuZ2V0KGF1dGhvcml0eSkgIT09IHNlc3Npb24pIHtcbiAgICAgIC8vIEFscmVhZHkgY2xvc2VkP1xuICAgICAgcmV0dXJuO1xuICAgIH1cbiAgICB0aGlzLmNvbm5lY3Rpb25Qb29sLmRlbGV0ZShhdXRob3JpdHkpO1xuICAgIHNlc3Npb24ucmVtb3ZlQWxsTGlzdGVuZXJzKFwiZ29hd2F5XCIpO1xuICAgIHNlc3Npb24ucmVtb3ZlQWxsTGlzdGVuZXJzKFwiZXJyb3JcIik7XG4gICAgc2Vzc2lvbi5yZW1vdmVBbGxMaXN0ZW5lcnMoXCJmcmFtZUVycm9yXCIpO1xuICAgIGlmICghc2Vzc2lvbi5kZXN0cm95ZWQpIHtcbiAgICAgIHNlc3Npb24uZGVzdHJveSgpO1xuICAgIH1cbiAgfVxufVxuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibm9kZS1odHRwMi1oYW5kbGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL25vZGUtaHR0cDItaGFuZGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSwwREFBZ0Y7QUFDaEYsc0VBQWdFO0FBRWhFLGlDQUErRDtBQUUvRCx1RUFBa0U7QUFDbEUsNkRBQXdEO0FBNEJ4RCxNQUFhLGdCQUFnQjtJQVEzQixZQUFZLEVBQUUsY0FBYyxFQUFFLGNBQWMsRUFBRSx3QkFBd0IsS0FBOEIsRUFBRTtRQUh0RixhQUFRLEdBQUcsRUFBRSxlQUFlLEVBQUUsSUFBSSxFQUFFLENBQUM7UUFJbkQsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLGNBQWMsR0FBRyxjQUFjLENBQUM7UUFDckMsSUFBSSxDQUFDLHdCQUF3QixHQUFHLHdCQUF3QixDQUFDO1FBQ3pELElBQUksQ0FBQyxZQUFZLEdBQUcsSUFBSSxHQUFHLEVBQWdDLENBQUM7SUFDOUQsQ0FBQztJQUVELE9BQU87UUFDTCxLQUFLLE1BQU0sUUFBUSxJQUFJLElBQUksQ0FBQyxZQUFZLENBQUMsTUFBTSxFQUFFLEVBQUU7WUFDakQsUUFBUSxDQUFDLE9BQU8sQ0FBQyxDQUFDLE9BQU8sRUFBRSxFQUFFLENBQUMsSUFBSSxDQUFDLGNBQWMsQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDO1NBQzdEO1FBQ0QsSUFBSSxDQUFDLFlBQVksQ0FBQyxLQUFLLEVBQUUsQ0FBQztJQUM1QixDQUFDO0lBRUQsTUFBTSxDQUFDLE9BQW9CLEVBQUUsRUFBRSxXQUFXLEtBQXlCLEVBQUU7UUFDbkUsT0FBTyxJQUFJLE9BQU8sQ0FBQyxDQUFDLE9BQU8sRUFBRSxjQUFjLEVBQUUsRUFBRTtZQUM3Qyx3RkFBd0Y7WUFDeEYsK0VBQStFO1lBQy9FLElBQUksU0FBUyxHQUFHLEtBQUssQ0FBQztZQUV0QiwrREFBK0Q7WUFDL0QsSUFBSSxXQUFXLGFBQVgsV0FB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T0FBMkI7UUFDaEQsSUFBSSxDQUFDLE9BQU8sQ0FBQyxTQUFTLEVBQUU7WUFDdEIsT0FBTyxDQUFDLE9BQU8sRUFBRSxDQUFDO1NBQ25CO0lBQ0gsQ0FBQztJQUVEOzs7O09BSUc7SUFDSyxzQkFBc0IsQ0FBQyxTQUFpQixFQUFFLE9BQTJCO1FBQzNFLE1BQU0sZ0JBQWdCLEdBQUcsSUFBSSxDQUFDLFlBQVksQ0FBQyxHQUFHLENBQUMsU0FBUyxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ2hFLElBQUksQ0FBQyxnQkFBZ0IsQ0FBQyxRQUFRLENBQUMsT0FBTyxDQUFDLEVBQUU7WUFDdkMsbUVBQW1FO1lBQ25FLE9BQU87U0FDUjtRQUNELElBQUksQ0FBQyxZQUFZLENBQUMsR0FBRyxDQUNuQixTQUFTLEVBQ1QsZ0JBQWdCLENBQUMsTUFBTSxDQUFDLENBQUMsQ0FBQyxFQUFFLEVBQUUsQ0FBQyxDQUFDLEtBQUssT0FBTyxDQUFDLENBQzlDLENBQUM7SUFDSixDQUFDO0NBQ0Y7QUFqTEQsNENBaUxDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSHR0cEhhbmRsZXIsIEh0dHBSZXF1ZXN0LCBIdHRwUmVzcG9uc2UgfSBmcm9tIFwiQGF3cy1zZGsvcHJvdG9jb2wtaHR0cFwiO1xuaW1wb3J0IHsgYnVpbGRRdWVyeVN0cmluZyB9IGZyb20gXCJAYXdzLXNkay9xdWVyeXN0cmluZy1idWlsZGVyXCI7XG5pbXBvcnQgeyBIdHRwSGFuZGxlck9wdGlvbnMgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcbmltcG9ydCB7IENsaWVudEh0dHAyU2Vzc2lvbiwgY29ubmVjdCwgY29uc3RhbnRzIH0gZnJvbSBcImh0dHAyXCI7XG5cbmltcG9ydCB7IGdldFRyYW5zZm9ybWVkSGVhZGVycyB9IGZyb20gXCIuL2dldC10cmFuc2Zvcm1lZC1oZWFkZXJzXCI7XG5pbXBvcnQgeyB3cml0ZVJlcXVlc3RCb2R5IH0gZnJvbSBcIi4vd3JpdGUtcmVxdWVzdC1ib2R5XCI7XG5cbi8qKlxuICogUmVwcmVzZW50cyB0aGUgaHR0cDIgb3B0aW9ucyB0aGF0IGNhbiBiZSBwYXNzZWQgdG8gYSBub2RlIGh0dHAyIGNsaWVudC5cbiAqL1xuZXhwb3J0IGludGVyZmFjZSBOb2RlSHR0cDJIYW5kbGVyT3B0aW9ucyB7XG4gIC8qKlxuICAgKiBUaGUgbWF4aW11bSB0aW1lIGluIG1pbGxpc2Vjb25kcyB0aGF0IGEgc3RyZWFtIG1heSByZW1haW4gaWRsZSBiZWZvcmUgaXRcbiAgICogaXMgY2xvc2VkLlxuICAgKi9cbiAgcmVxdWVzdFRpbWVvdXQ/OiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIFRoZSBtYXhpbXVtIHRpbWUgaW4gbWlsbGlzZWNvbmRzIHRoYXQgYSBzZXNzaW9uIG9yIHNvY2tldCBtYXkgcmVtYWluIGlkbGVcbiAgICogYmVmb3JlIGl0IGlzIGNsb3NlZC5cbiAgICogaHR0cHM6Ly9ub2RlanMub3JnL2RvY3MvbGF0ZXN0LXYxMi54L2FwaS9odHRwMi5odG1sI2h0dHAyX2h0dHAyc2Vzc2lvbl9hbmRfc29ja2V0c1xuICAgKi9cbiAgc2Vzc2lvblRpbWVvdXQ/OiBudW1iZXI7XG5cbiAgLyoqXG4gICAqIERpc2FibGVzIHByb2Nlc3NpbmcgY29uY3VycmVudCBzdHJlYW1zIG9uIGEgQ2xpZW50SHR0cDJTZXNzaW9uIGluc3RhbmNlLiBXaGVuIHNldFxuICAgKiB0byB0cnVlLCB0aGUgaGFuZGxlciB3aWxsIGNyZWF0ZSBhIG5ldyBzZXNzaW9uIGluc3RhbmNlIGZvciBlYWNoIHJlcXVlc3QgdG8gYSBVUkwuXG4gICAqICoqRGVmYXVsdDoqKiBmYWxzZS5cbiAgICogaHR0cHM6Ly9ub2RlanMub3JnL2FwaS9odHRwMi5odG1sI2h0dHAyX2NsYXNzX2NsaWVudGh0dHAyc2Vzc2lvblxuICAgKi9cbiAgZGlzYWJsZUNvbmN1cnJlbnRTdHJlYW1zPzogYm9vbGVhbjtcbn1cblxuZXhwb3J0IGNsYXNzIE5vZGVIdHRwMkhhbmRsZXIgaW1wbGVtZW50cyBIdHRwSGFuZGxlciB7XG4gIHByaXZhdGUgcmVhZG9ubHkgcmVxdWVzdFRpbWVvdXQ/OiBudW1iZXI7XG4gIHByaXZhdGUgcmVhZG9ubHkgc2Vzc2lvblRpbWVvdXQ/OiBudW1iZXI7XG4gIHByaXZhdGUgcmVhZG9ubHkgZGlzYWJsZUNvbmN1cnJlbnRTdHJlYW1zPzogYm9vbGVhbjtcblxuICBwdWJsaWMgcmVhZG9ubHkgbWV0YWRhdGEgPSB7IGhhbmRsZXJQcm90b2NvbDogXCJoMlwiIH07XG4gIHByaXZhdGUgc2Vzc2lvbkNhY2hlOiBNYXA8c3RyaW5nLCBDbGllbnRIdHRwMlNlc3Npb25bXT47XG5cbiAgY29uc3RydWN0b3IoeyByZXF1ZXN0VGltZW91dCwgc2Vzc2lvblRpbWVvdXQsIGRpc2FibGVDb25jdXJyZW50U3RyZWFtcyB9OiBOb2RlSHR0cDJIYW5kbGVyT3B0aW9ucyA9IHt9KSB7XG4gICAgdGhpcy5yZXF1ZXN0VGltZW91dCA9IHJlcXVlc3RUaW1lb3V0O1xuICAgIHRoaXMuc2Vzc2lvblRpbWVvdXQgPSBzZXNzaW9uVGltZW91dDtcbiAgICB0aGlzLmRpc2FibGVDb25jdXJyZW50U3RyZWFtcyA9IGRpc2FibGVDb25jdXJyZW50U3RyZWFtcztcbiAgICB0aGlzLnNlc3Npb25DYWNoZSA9IG5ldyBNYXA8c3RyaW5nLCBDbGllbnRIdHRwMlNlc3Npb25bXT4oKTtcbiAgfVxuXG4gIGRlc3Ryb3koKTogdm9pZCB7XG4gICAgZm9yIChjb25zdCBzZXNzaW9ucyBvZiB0aGlzLnNlc3Npb25DYWNoZS52YWx1ZXMoKSkge1xuICAgICAgc2Vzc2lvbnMuZm9yRWFjaCgoc2Vzc2lvbikgPT4gdGhpcy5kZXN0cm95U2Vzc2lvbihzZXNzaW9uKSk7XG4gICAgfVxuICAgIHRoaXMuc2Vzc2lvbkNhY2hlLmNsZWFyKCk7XG4gIH1cblxuICBoYW5kbGUocmVxdWVzdDogSHR0cFJlcXVlc3QsIHsgYWJvcnRTaWduYWwgfTogSHR0cEhhbmRsZXJPcHRpb25zID0ge30pOiBQcm9taXNlPHsgcmVzcG9uc2U6IEh0dHBSZXNwb25zZSB9PiB7XG4gICAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3RPcmlnaW5hbCkgPT4ge1xuICAgICAgLy8gSXQncyByZWR1bmRhbnQgdG8gdHJhY2sgZnVsZmlsbGVkIGJlY2F1c2UgcHJvbWlzZXMgdXNlIHRoZSBmaXJzdCByZXNvbHV0aW9uL3JlamVjdGlvblxuICAgICAgLy8gYnV0IGF2b2lkcyBnZW5lcmF0aW5nIHVubmVjZXNzYXJ5IHN0YWNrIHRyYWNlcyBpbiB0aGUgXCJjbG9zZVwiIGV2ZW50IGhhbmRsZXIuXG4gICAgICBsZXQgZnVsZmlsbGVkID0gZmFsc2U7XG5cbiAgICAgIC8vIGlmIHRoZSByZXF1ZXN0IHdhcyBhbHJlYWR5IGFib3J0ZWQsIHByZXZlbnQgZG9pbmcgZXh0cmEgd29ya1xuICAgICAgaWYgKGFib3J0U2lnbmFsPy5hYm9ydGVkKSB7XG4gICAgICAgIGZ1bGZpbGxlZCA9IHRydWU7XG4gICAgICAgIGNvbnN0IGFib3J0RXJyb3IgPSBuZXcgRXJyb3IoXCJSZXF1ZXN0IGFib3J0ZWRcIik7XG4gICAgICAgIGFib3J0RXJyb3IubmFtZSA9IFwiQWJvcnRFcnJvclwiO1xuICAgICAgICByZWplY3RPcmlnaW5hbChhYm9ydEVycm9yKTtcbiAgICAgICAgcmV0dXJuO1xuICAgICAgfVxuXG4gICAgICBjb25zdCB7IGhvc3RuYW1lLCBtZXRob2QsIHBvcnQsIHByb3RvY29sLCBwYXRoLCBxdWVyeSB9ID0gcmVxdWVzdDtcbiAgICAgIGNvbnN0IGF1dGhvcml0eSA9IGAke3Byb3RvY29sfS8vJHtob3N0bmFtZX0ke3BvcnQgPyBgOiR7cG9ydH1gIDogXCJcIn1gO1xuICAgICAgY29uc3Qgc2Vzc2lvbiA9IHRoaXMuZ2V0U2Vzc2lvbihhdXRob3JpdHksIHRoaXMuZGlzYWJsZUNvbmN1cnJlbnRTdHJlYW1zIHx8IGZhbHNlKTtcblxuICAgICAgY29uc3QgcmVqZWN0ID0gKGVycjogRXJyb3IpID0+IHtcbiAgICAgICAgaWYgKHRoaXMuZGlzYWJsZUNvbmN1cnJlbnRTdHJlYW1zKSB7XG4gICAgICAgICAgdGhpcy5kZXN0cm95U2Vzc2lvbihzZXNzaW9uKTtcbiAgICAgICAgfVxuICAgICAgICBmdWxmaWxsZWQgPSB0cnVlO1xuICAgICAgICByZWplY3RPcmlnaW5hbChlcnIpO1xuICAgICAgfTtcblxuICAgICAgY29uc3QgcXVlcnlTdHJpbmcgPSBidWlsZFF1ZXJ5U3RyaW5nKHF1ZXJ5IHx8IHt9KTtcbiAgICAgIC8vIGNyZWF0ZSB0aGUgaHR0cDIgcmVxdWVzdFxuICAgICAgY29uc3QgcmVxID0gc2Vzc2lvbi5yZXF1ZXN0KHtcbiAgICAgICAgLi4ucmVxdWVzdC5oZWFkZXJzLFxuICAgICAgICBbY29uc3RhbnRzLkhUVFAyX0hFQURFUl9QQVRIXTogcXVlcnlTdHJpbmcgPyBgJHtwYXRofT8ke3F1ZXJ5U3RyaW5nfWAgOiBwYXRoLFxuICAgICAgICBbY29uc3RhbnRzLkhUVFAyX0hFQURFUl9NRVRIT0RdOiBtZXRob2QsXG4gICAgICB9KTtcblxuICAgICAgcmVxLm9uKFwicmVzcG9uc2VcIiwgKGhlYWRlcnMpID0+IHtcbiAgICAgICAgY29uc3QgaHR0cFJlc3BvbnNlID0gbmV3IEh0dHBSZXNwb25zZSh7XG4gICAgICAgICAgc3RhdHVzQ29kZTogaGVhZGVyc1tcIjpzdGF0dXNcIl0gfHwgLTEsXG4gICAgICAgICAgaGVhZGVyczogZ2V0VHJhbnNmb3JtZWRIZWFkZXJzKGhlYWRlcnMpLFxuICAgICAgICAgIGJvZHk6IHJlcSxcbiAgICAgICAgfSk7XG4gICAgICAgIGZ1bGZpbGxlZCA9IHRydWU7XG4gICAgICAgIHJlc29sdmUoeyByZXNwb25zZTogaHR0cFJlc3BvbnNlIH0pO1xuICAgICAgICBpZiAodGhpcy5kaXNhYmxlQ29uY3VycmVudFN0cmVhbXMpIHtcbiAgICAgICAgICAvLyBHcmFjZWZ1bGx5IGNsb3NlcyB0aGUgSHR0cDJTZXNzaW9uLCBhbGxvd2luZyBhbnkgZXhpc3Rpbmcgc3RyZWFtcyB0byBjb21wbGV0ZVxuICAgICAgICAgIC8vIG9uIHRoZWlyIG93biBhbmQgcHJldmVudGluZyBuZXcgSHR0cDJTdHJlYW0gaW5zdGFuY2VzIGZyb20gYmVpbmcgY3JlYXRlZC5cbiAgICAgICAgICBzZXNzaW9uLmNsb3NlKCk7XG4gICAgICAgICAgdGhpcy5kZWxldGVTZXNzaW9uRnJvbUNhY2hlKGF1dGhvcml0eSwgc2Vzc2lvbik7XG4gICAgICAgIH1cbiAgICAgIH0pO1xuXG4gICAgICBjb25zdCByZXF1ZXN0VGltZW91dCA9IHRoaXMucmVxdWVzdFRpbWVvdXQ7XG4gICAgICBpZiAocmVxdWVzdFRpbWVvdXQpIHtcbiAgICAgICAgcmVxLnNldFRpbWVvdXQocmVxdWVzdFRpbWVvdXQsICgpID0+IHtcbiAgICAgICAgICByZXEuY2xvc2UoKTtcbiAgICAgICAgICBjb25zdCB0aW1lb3V0RXJyb3IgPSBuZXcgRXJyb3IoYFN0cmVhbSB0aW1lZCBvdXQgYmVjYXVzZSBvZiBubyBhY3Rpdml0eSBmb3IgJHtyZXF1ZXN0VGltZW91dH0gbXNgKTtcbiAgICAgICAgICB0aW1lb3V0RXJyb3IubmFtZSA9IFwiVGltZW91dEVycm9yXCI7XG4gICAgICAgICAgcmVqZWN0KHRpbWVvdXRFcnJvcik7XG4gICAgICAgIH0pO1xuICAgICAgfVxuXG4gICAgICBpZiAoYWJvcnRTaWduYWwpIHtcbiAgICAgICAgYWJvcnRTaWduYWwub25hYm9ydCA9ICgpID0+IHtcbiAgICAgICAgICByZXEuY2xvc2UoKTtcbiAgICAgICAgICBjb25zdCBhYm9ydEVycm9yID0gbmV3IEVycm9yKFwiUmVxdWVzdCBhYm9ydGVkXCIpO1xuICAgICAgICAgIGFib3J0RXJyb3IubmFtZSA9IFwiQWJvcnRFcnJvclwiO1xuICAgICAgICAgIHJlamVjdChhYm9ydEVycm9yKTtcbiAgICAgICAgfTtcbiAgICAgIH1cblxuICAgICAgLy8gU2V0IHVwIGhhbmRsZXJzIGZvciBlcnJvcnNcbiAgICAgIHJlcS5vbihcImZyYW1lRXJyb3JcIiwgKHR5cGU6IG51bWJlciwgY29kZTogbnVtYmVyLCBpZDogbnVtYmVyKSA9PiB7XG4gICAgICAgIHJlamVjdChuZXcgRXJyb3IoYEZyYW1lIHR5cGUgaWQgJHt0eXBlfSBpbiBzdHJlYW0gaWQgJHtpZH0gaGFzIGZhaWxlZCB3aXRoIGNvZGUgJHtjb2RlfS5gKSk7XG4gICAgICB9KTtcbiAgICAgIHJlcS5vbihcImVycm9yXCIsIHJlamVjdCk7XG4gICAgICByZXEub24oXCJhYm9ydGVkXCIsICgpID0+IHtcbiAgICAgICAgcmVqZWN0KG5ldyBFcnJvcihgSFRUUC8yIHN0cmVhbSBpcyBhYm5vcm1hbGx5IGFib3J0ZWQgaW4gbWlkLWNvbW11bmljYXRpb24gd2l0aCByZXN1bHQgY29kZSAke3JlcS5yc3RDb2RlfS5gKSk7XG4gICAgICB9KTtcblxuICAgICAgLy8gVGhlIEhUVFAvMiBlcnJvciBjb2RlIHVzZWQgd2hlbiBjbG9zaW5nIHRoZSBzdHJlYW0gY2FuIGJlIHJldHJpZXZlZCB1c2luZyB0aGVcbiAgICAgIC8vIGh0dHAyc3RyZWFtLnJzdENvZGUgcHJvcGVydHkuIElmIHRoZSBjb2RlIGlzIGFueSB2YWx1ZSBvdGhlciB0aGFuIE5HSFRUUDJfTk9fRVJST1IgKDApLFxuICAgICAgLy8gYW4gJ2Vycm9yJyBldmVudCB3aWxsIGhhdmUgYWxzbyBiZWVuIGVtaXR0ZWQuXG4gICAgICByZXEub24oXCJjbG9zZVwiLCAoKSA9PiB7XG4gICAgICAgIGlmICh0aGlzLmRpc2FibGVDb25jdXJyZW50U3RyZWFtcykge1xuICAgICAgICAgIHNlc3Npb24uZGVzdHJveSgpO1xuICAgICAgICB9XG4gICAgICAgIGlmICghZnVsZmlsbGVkKSB7XG4gICAgICAgICAgcmVqZWN0KG5ldyBFcnJvcihcIlVuZXhwZWN0ZWQgZXJyb3I6IGh0dHAyIHJlcXVlc3QgZGlkIG5vdCBnZXQgYSByZXNwb25zZVwiKSk7XG4gICAgICAgIH1cbiAgICAgIH0pO1xuXG4gICAgICB3cml0ZVJlcXVlc3RCb2R5KHJlcSwgcmVxdWVzdCk7XG4gICAgfSk7XG4gIH1cblxuICAvKipcbiAgICogUmV0dXJucyBhIHNlc3Npb24gZm9yIHRoZSBnaXZlbiBVUkwuXG4gICAqXG4gICAqIEBwYXJhbSBhdXRob3JpdHkgVGhlIFVSTCB0byBjcmVhdGUgYSBzZXNzaW9uIGZvci5cbiAgICogQHBhcmFtIGRpc2FibGVDb25jdXJyZW50U3RyZWFtcyBJZiB0cnVlLCBhIG5ldyBzZXNzaW9uIHdpbGwgYmUgY3JlYXRlZCBmb3IgZWFjaCByZXF1ZXN0LlxuICAgKiBAcmV0dXJucyBBIHNlc3Npb24gZm9yIHRoZSBnaXZlbiBVUkwuXG4gICAqL1xuICBwcml2YXRlIGdldFNlc3Npb24oYXV0aG9yaXR5OiBzdHJpbmcsIGRpc2FibGVDb25jdXJyZW50U3RyZWFtczogYm9vbGVhbik6IENsaWVudEh0dHAyU2Vzc2lvbiB7XG4gICAgY29uc3Qgc2Vzc2lvbkNhY2hlID0gdGhpcy5zZXNzaW9uQ2FjaGU7XG4gICAgY29uc3QgZXhpc3RpbmdTZXNzaW9ucyA9IHNlc3Npb25DYWNoZS5nZXQoYXV0aG9yaXR5KSB8fCBbXTtcblxuICAgIC8vIElmIGNvbmN1cnJlbnQgc3RyZWFtcyBhcmUgbm90IGRpc2FibGVkLCB3ZSBjYW4gdXNlIHRoZSBleGlzdGluZyBzZXNzaW9uLlxuICAgIGlmIChleGlzdGluZ1Nlc3Npb25zLmxlbmd0aCA+IDAgJiYgIWRpc2FibGVDb25jdXJyZW50U3RyZWFtcykgcmV0dXJuIGV4aXN0aW5nU2Vzc2lvbnNbMF07XG5cbiAgICBjb25zdCBuZXdTZXNzaW9uID0gY29ubmVjdChhdXRob3JpdHkpO1xuICAgIGNvbnN0IGRlc3Ryb3lTZXNzaW9uQ2IgPSAoKSA9PiB7XG4gICAgICB0aGlzLmRlc3Ryb3lTZXNzaW9uKG5ld1Nlc3Npb24pO1xuICAgICAgdGhpcy5kZWxldGVTZXNzaW9uRnJvbUNhY2hlKGF1dGhvcml0eSwgbmV3U2Vzc2lvbik7XG4gICAgfTtcbiAgICBuZXdTZXNzaW9uLm9uKFwiZ29hd2F5XCIsIGRlc3Ryb3lTZXNzaW9uQ2IpO1xuICAgIG5ld1Nlc3Npb24ub24oXCJlcnJvclwiLCBkZXN0cm95U2Vzc2lvbkNiKTtcbiAgICBuZXdTZXNzaW9uLm9uKFwiZnJhbWVFcnJvclwiLCBkZXN0cm95U2Vzc2lvbkNiKTtcblxuICAgIGNvbnN0IHNlc3Npb25UaW1lb3V0ID0gdGhpcy5zZXNzaW9uVGltZW91dDtcbiAgICBpZiAoc2Vzc2lvblRpbWVvdXQpIHtcbiAgICAgIG5ld1Nlc3Npb24uc2V0VGltZW91dChzZXNzaW9uVGltZW91dCwgZGVzdHJveVNlc3Npb25DYik7XG4gICAgfVxuXG4gICAgZXhpc3RpbmdTZXNzaW9ucy5wdXNoKG5ld1Nlc3Npb24pO1xuICAgIHNlc3Npb25DYWNoZS5zZXQoYXV0aG9yaXR5LCBleGlzdGluZ1Nlc3Npb25zKTtcblxuICAgIHJldHVybiBuZXdTZXNzaW9uO1xuICB9XG5cbiAgLyoqXG4gICAqIERlc3Ryb3lzIGEgc2Vzc2lvbi5cbiAgICogQHBhcmFtIHNlc3Npb24gVGhlIHNlc3Npb24gdG8gZGVzdHJveS5cbiAgICovXG4gIHByaXZhdGUgZGVzdHJveVNlc3Npb24oc2Vzc2lvbjogQ2xpZW50SHR0cDJTZXNzaW9uKTogdm9pZCB7XG4gICAgaWYgKCFzZXNzaW9uLmRlc3Ryb3llZCkge1xuICAgICAgc2Vzc2lvbi5kZXN0cm95KCk7XG4gICAgfVxuICB9XG5cbiAgLyoqXG4gICAqIERlbGV0ZSBhIHNlc3Npb24gZnJvbSB0aGUgY29ubmVjdGlvbiBwb29sLlxuICAgKiBAcGFyYW0gYXV0aG9yaXR5IFRoZSBhdXRob3JpdHkgb2YgdGhlIHNlc3Npb24gdG8gZGVsZXRlLlxuICAgKiBAcGFyYW0gc2Vzc2lvbiBUaGUgc2Vzc2lvbiB0byBkZWxldGUuXG4gICAqL1xuICBwcml2YXRlIGRlbGV0ZVNlc3Npb25Gcm9tQ2FjaGUoYXV0aG9yaXR5OiBzdHJpbmcsIHNlc3Npb246IENsaWVudEh0dHAyU2Vzc2lvbik6IHZvaWQge1xuICAgIGNvbnN0IGV4aXN0aW5nU2Vzc2lvbnMgPSB0aGlzLnNlc3Npb25DYWNoZS5nZXQoYXV0aG9yaXR5KSB8fCBbXTtcbiAgICBpZiAoIWV4aXN0aW5nU2Vzc2lvbnMuaW5jbHVkZXMoc2Vzc2lvbikpIHtcbiAgICAgIC8vIElmIHRoZSBzZXNzaW9uIGlzIG5vdCBpbiB0aGUgY2FjaGUsIGl0IGhhcyBhbHJlYWR5IGJlZW4gZGVsZXRlZC5cbiAgICAgIHJldHVybjtcbiAgICB9XG4gICAgdGhpcy5zZXNzaW9uQ2FjaGUuc2V0KFxuICAgICAgYXV0aG9yaXR5LFxuICAgICAgZXhpc3RpbmdTZXNzaW9ucy5maWx0ZXIoKHMpID0+IHMgIT09IHNlc3Npb24pXG4gICAgKTtcbiAgfVxufVxuIl19
 
 /***/ }),
 
@@ -42150,7 +42270,7 @@ function writeBody(httpRequest, body) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ProviderError = void 0;
+exports.CredentialsProviderError = exports.ProviderError = void 0;
 /**
  * An error representing a failure of an individual credential provider.
  *
@@ -42159,6 +42279,8 @@ exports.ProviderError = void 0;
  * to the next provider if the value of the `tryNextLink` property on the error
  * is truthy. This allows individual providers to halt the chain and also
  * ensures the chain will stop if an entirely unexpected error is encountered.
+ *
+ * @deprecated
  */
 class ProviderError extends Error {
     constructor(message, tryNextLink = true) {
@@ -42176,7 +42298,33 @@ class ProviderError extends Error {
     }
 }
 exports.ProviderError = ProviderError;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUHJvdmlkZXJFcnJvci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9Qcm92aWRlckVycm9yLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBOzs7Ozs7OztHQVFHO0FBQ0gsTUFBYSxhQUFjLFNBQVEsS0FBSztJQUN0QyxZQUFZLE9BQWUsRUFBa0IsY0FBdUIsSUFBSTtRQUN0RSxLQUFLLENBQUMsT0FBTyxDQUFDLENBQUM7UUFENEIsZ0JBQVcsR0FBWCxXQUFXLENBQWdCO0lBRXhFLENBQUM7SUFDRCxNQUFNLENBQUMsSUFBSSxDQUFDLEtBQVksRUFBRSxXQUFXLEdBQUcsSUFBSTtRQUMxQyxNQUFNLENBQUMsY0FBYyxDQUFDLEtBQUssRUFBRSxhQUFhLEVBQUU7WUFDMUMsS0FBSyxFQUFFLFdBQVc7WUFDbEIsWUFBWSxFQUFFLEtBQUs7WUFDbkIsVUFBVSxFQUFFLEtBQUs7WUFDakIsUUFBUSxFQUFFLEtBQUs7U0FDaEIsQ0FBQyxDQUFDO1FBQ0gsT0FBTyxLQUFzQixDQUFDO0lBQ2hDLENBQUM7Q0FDRjtBQWJELHNDQWFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBBbiBlcnJvciByZXByZXNlbnRpbmcgYSBmYWlsdXJlIG9mIGFuIGluZGl2aWR1YWwgY3JlZGVudGlhbCBwcm92aWRlci5cbiAqXG4gKiBUaGlzIGVycm9yIGNsYXNzIGhhcyBzcGVjaWFsIG1lYW5pbmcgdG8gdGhlIHtAbGluayBjaGFpbn0gbWV0aG9kLiBJZiBhXG4gKiBwcm92aWRlciBpbiB0aGUgY2hhaW4gaXMgcmVqZWN0ZWQgd2l0aCBhbiBlcnJvciwgdGhlIGNoYWluIHdpbGwgb25seSBwcm9jZWVkXG4gKiB0byB0aGUgbmV4dCBwcm92aWRlciBpZiB0aGUgdmFsdWUgb2YgdGhlIGB0cnlOZXh0TGlua2AgcHJvcGVydHkgb24gdGhlIGVycm9yXG4gKiBpcyB0cnV0aHkuIFRoaXMgYWxsb3dzIGluZGl2aWR1YWwgcHJvdmlkZXJzIHRvIGhhbHQgdGhlIGNoYWluIGFuZCBhbHNvXG4gKiBlbnN1cmVzIHRoZSBjaGFpbiB3aWxsIHN0b3AgaWYgYW4gZW50aXJlbHkgdW5leHBlY3RlZCBlcnJvciBpcyBlbmNvdW50ZXJlZC5cbiAqL1xuZXhwb3J0IGNsYXNzIFByb3ZpZGVyRXJyb3IgZXh0ZW5kcyBFcnJvciB7XG4gIGNvbnN0cnVjdG9yKG1lc3NhZ2U6IHN0cmluZywgcHVibGljIHJlYWRvbmx5IHRyeU5leHRMaW5rOiBib29sZWFuID0gdHJ1ZSkge1xuICAgIHN1cGVyKG1lc3NhZ2UpO1xuICB9XG4gIHN0YXRpYyBmcm9tKGVycm9yOiBFcnJvciwgdHJ5TmV4dExpbmsgPSB0cnVlKTogUHJvdmlkZXJFcnJvciB7XG4gICAgT2JqZWN0LmRlZmluZVByb3BlcnR5KGVycm9yLCBcInRyeU5leHRMaW5rXCIsIHtcbiAgICAgIHZhbHVlOiB0cnlOZXh0TGluayxcbiAgICAgIGNvbmZpZ3VyYWJsZTogZmFsc2UsXG4gICAgICBlbnVtZXJhYmxlOiBmYWxzZSxcbiAgICAgIHdyaXRhYmxlOiBmYWxzZSxcbiAgICB9KTtcbiAgICByZXR1cm4gZXJyb3IgYXMgUHJvdmlkZXJFcnJvcjtcbiAgfVxufVxuIl19
+/**
+ * An error representing a failure of an individual credential provider.
+ *
+ * This error class has special meaning to the {@link chain} method. If a
+ * provider in the chain is rejected with an error, the chain will only proceed
+ * to the next provider if the value of the `tryNextLink` property on the error
+ * is truthy. This allows individual providers to halt the chain and also
+ * ensures the chain will stop if an entirely unexpected error is encountered.
+ */
+class CredentialsProviderError extends Error {
+    constructor(message, tryNextLink = true) {
+        super(message);
+        this.tryNextLink = tryNextLink;
+        this.name = "CredentialsProviderError";
+    }
+    static from(error, tryNextLink = true) {
+        Object.defineProperty(error, "tryNextLink", {
+            value: tryNextLink,
+            configurable: false,
+            enumerable: false,
+            writable: false,
+        });
+        return error;
+    }
+}
+exports.CredentialsProviderError = CredentialsProviderError;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUHJvdmlkZXJFcnJvci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9Qcm92aWRlckVycm9yLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBOzs7Ozs7Ozs7O0dBVUc7QUFDSCxNQUFhLGFBQWMsU0FBUSxLQUFLO0lBQ3RDLFlBQVksT0FBZSxFQUFrQixjQUF1QixJQUFJO1FBQ3RFLEtBQUssQ0FBQyxPQUFPLENBQUMsQ0FBQztRQUQ0QixnQkFBVyxHQUFYLFdBQVcsQ0FBZ0I7SUFFeEUsQ0FBQztJQUNELE1BQU0sQ0FBQyxJQUFJLENBQUMsS0FBWSxFQUFFLFdBQVcsR0FBRyxJQUFJO1FBQzFDLE1BQU0sQ0FBQyxjQUFjLENBQUMsS0FBSyxFQUFFLGFBQWEsRUFBRTtZQUMxQyxLQUFLLEVBQUUsV0FBVztZQUNsQixZQUFZLEVBQUUsS0FBSztZQUNuQixVQUFVLEVBQUUsS0FBSztZQUNqQixRQUFRLEVBQUUsS0FBSztTQUNoQixDQUFDLENBQUM7UUFDSCxPQUFPLEtBQXNCLENBQUM7SUFDaEMsQ0FBQztDQUNGO0FBYkQsc0NBYUM7QUFFRDs7Ozs7Ozs7R0FRRztBQUNILE1BQWEsd0JBQXlCLFNBQVEsS0FBSztJQUVqRCxZQUFZLE9BQWUsRUFBa0IsY0FBdUIsSUFBSTtRQUN0RSxLQUFLLENBQUMsT0FBTyxDQUFDLENBQUM7UUFENEIsZ0JBQVcsR0FBWCxXQUFXLENBQWdCO1FBRC9ELFNBQUksR0FBRywwQkFBMEIsQ0FBQztJQUczQyxDQUFDO0lBQ0QsTUFBTSxDQUFDLElBQUksQ0FBQyxLQUFZLEVBQUUsV0FBVyxHQUFHLElBQUk7UUFDMUMsTUFBTSxDQUFDLGNBQWMsQ0FBQyxLQUFLLEVBQUUsYUFBYSxFQUFFO1lBQzFDLEtBQUssRUFBRSxXQUFXO1lBQ2xCLFlBQVksRUFBRSxLQUFLO1lBQ25CLFVBQVUsRUFBRSxLQUFLO1lBQ2pCLFFBQVEsRUFBRSxLQUFLO1NBQ2hCLENBQUMsQ0FBQztRQUNILE9BQU8sS0FBaUMsQ0FBQztJQUMzQyxDQUFDO0NBQ0Y7QUFkRCw0REFjQyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogQW4gZXJyb3IgcmVwcmVzZW50aW5nIGEgZmFpbHVyZSBvZiBhbiBpbmRpdmlkdWFsIGNyZWRlbnRpYWwgcHJvdmlkZXIuXG4gKlxuICogVGhpcyBlcnJvciBjbGFzcyBoYXMgc3BlY2lhbCBtZWFuaW5nIHRvIHRoZSB7QGxpbmsgY2hhaW59IG1ldGhvZC4gSWYgYVxuICogcHJvdmlkZXIgaW4gdGhlIGNoYWluIGlzIHJlamVjdGVkIHdpdGggYW4gZXJyb3IsIHRoZSBjaGFpbiB3aWxsIG9ubHkgcHJvY2VlZFxuICogdG8gdGhlIG5leHQgcHJvdmlkZXIgaWYgdGhlIHZhbHVlIG9mIHRoZSBgdHJ5TmV4dExpbmtgIHByb3BlcnR5IG9uIHRoZSBlcnJvclxuICogaXMgdHJ1dGh5LiBUaGlzIGFsbG93cyBpbmRpdmlkdWFsIHByb3ZpZGVycyB0byBoYWx0IHRoZSBjaGFpbiBhbmQgYWxzb1xuICogZW5zdXJlcyB0aGUgY2hhaW4gd2lsbCBzdG9wIGlmIGFuIGVudGlyZWx5IHVuZXhwZWN0ZWQgZXJyb3IgaXMgZW5jb3VudGVyZWQuXG4gKlxuICogQGRlcHJlY2F0ZWRcbiAqL1xuZXhwb3J0IGNsYXNzIFByb3ZpZGVyRXJyb3IgZXh0ZW5kcyBFcnJvciB7XG4gIGNvbnN0cnVjdG9yKG1lc3NhZ2U6IHN0cmluZywgcHVibGljIHJlYWRvbmx5IHRyeU5leHRMaW5rOiBib29sZWFuID0gdHJ1ZSkge1xuICAgIHN1cGVyKG1lc3NhZ2UpO1xuICB9XG4gIHN0YXRpYyBmcm9tKGVycm9yOiBFcnJvciwgdHJ5TmV4dExpbmsgPSB0cnVlKTogUHJvdmlkZXJFcnJvciB7XG4gICAgT2JqZWN0LmRlZmluZVByb3BlcnR5KGVycm9yLCBcInRyeU5leHRMaW5rXCIsIHtcbiAgICAgIHZhbHVlOiB0cnlOZXh0TGluayxcbiAgICAgIGNvbmZpZ3VyYWJsZTogZmFsc2UsXG4gICAgICBlbnVtZXJhYmxlOiBmYWxzZSxcbiAgICAgIHdyaXRhYmxlOiBmYWxzZSxcbiAgICB9KTtcbiAgICByZXR1cm4gZXJyb3IgYXMgUHJvdmlkZXJFcnJvcjtcbiAgfVxufVxuXG4vKipcbiAqIEFuIGVycm9yIHJlcHJlc2VudGluZyBhIGZhaWx1cmUgb2YgYW4gaW5kaXZpZHVhbCBjcmVkZW50aWFsIHByb3ZpZGVyLlxuICpcbiAqIFRoaXMgZXJyb3IgY2xhc3MgaGFzIHNwZWNpYWwgbWVhbmluZyB0byB0aGUge0BsaW5rIGNoYWlufSBtZXRob2QuIElmIGFcbiAqIHByb3ZpZGVyIGluIHRoZSBjaGFpbiBpcyByZWplY3RlZCB3aXRoIGFuIGVycm9yLCB0aGUgY2hhaW4gd2lsbCBvbmx5IHByb2NlZWRcbiAqIHRvIHRoZSBuZXh0IHByb3ZpZGVyIGlmIHRoZSB2YWx1ZSBvZiB0aGUgYHRyeU5leHRMaW5rYCBwcm9wZXJ0eSBvbiB0aGUgZXJyb3JcbiAqIGlzIHRydXRoeS4gVGhpcyBhbGxvd3MgaW5kaXZpZHVhbCBwcm92aWRlcnMgdG8gaGFsdCB0aGUgY2hhaW4gYW5kIGFsc29cbiAqIGVuc3VyZXMgdGhlIGNoYWluIHdpbGwgc3RvcCBpZiBhbiBlbnRpcmVseSB1bmV4cGVjdGVkIGVycm9yIGlzIGVuY291bnRlcmVkLlxuICovXG5leHBvcnQgY2xhc3MgQ3JlZGVudGlhbHNQcm92aWRlckVycm9yIGV4dGVuZHMgRXJyb3Ige1xuICByZWFkb25seSBuYW1lID0gXCJDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3JcIjtcbiAgY29uc3RydWN0b3IobWVzc2FnZTogc3RyaW5nLCBwdWJsaWMgcmVhZG9ubHkgdHJ5TmV4dExpbms6IGJvb2xlYW4gPSB0cnVlKSB7XG4gICAgc3VwZXIobWVzc2FnZSk7XG4gIH1cbiAgc3RhdGljIGZyb20oZXJyb3I6IEVycm9yLCB0cnlOZXh0TGluayA9IHRydWUpOiBDcmVkZW50aWFsc1Byb3ZpZGVyRXJyb3Ige1xuICAgIE9iamVjdC5kZWZpbmVQcm9wZXJ0eShlcnJvciwgXCJ0cnlOZXh0TGlua1wiLCB7XG4gICAgICB2YWx1ZTogdHJ5TmV4dExpbmssXG4gICAgICBjb25maWd1cmFibGU6IGZhbHNlLFxuICAgICAgZW51bWVyYWJsZTogZmFsc2UsXG4gICAgICB3cml0YWJsZTogZmFsc2UsXG4gICAgfSk7XG4gICAgcmV0dXJuIGVycm9yIGFzIENyZWRlbnRpYWxzUHJvdmlkZXJFcnJvcjtcbiAgfVxufVxuIl19
 
 /***/ }),
 
@@ -42562,7 +42710,7 @@ const isTransientError = (error) => {
         constants_1.TRANSIENT_ERROR_STATUS_CODES.includes(((_a = error.$metadata) === null || _a === void 0 ? void 0 : _a.httpStatusCode) || 0);
 };
 exports.isTransientError = isTransientError;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUEsMkNBS3FCO0FBRWQsTUFBTSxrQkFBa0IsR0FBRyxDQUFDLEtBQWUsRUFBRSxFQUFFLENBQUMsS0FBSyxDQUFDLFVBQVUsS0FBSyxTQUFTLENBQUM7QUFBekUsUUFBQSxrQkFBa0Isc0JBQXVEO0FBRS9FLE1BQU0sZ0JBQWdCLEdBQUcsQ0FBQyxLQUFlLEVBQUUsRUFBRSxDQUFDLGtDQUFzQixDQUFDLFFBQVEsQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUFDLENBQUM7QUFBcEYsUUFBQSxnQkFBZ0Isb0JBQW9FO0FBRTFGLE1BQU0saUJBQWlCLEdBQUcsQ0FBQyxLQUFlLEVBQUUsRUFBRTs7SUFDbkQsT0FBQSxDQUFBLE1BQUEsS0FBSyxDQUFDLFNBQVMsMENBQUUsY0FBYyxNQUFLLEdBQUc7UUFDdkMsa0NBQXNCLENBQUMsUUFBUSxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUM7UUFDM0MsQ0FBQSxNQUFBLEtBQUssQ0FBQyxVQUFVLDBDQUFFLFVBQVUsS0FBSSxJQUFJLENBQUE7Q0FBQSxDQUFDO0FBSDFCLFFBQUEsaUJBQWlCLHFCQUdTO0FBRWhDLE1BQU0sZ0JBQWdCLEdBQUcsQ0FBQyxLQUFlLEVBQUUsRUFBRTs7SUFDbEQsT0FBQSxpQ0FBcUIsQ0FBQyxRQUFRLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQztRQUMxQyx3Q0FBNEIsQ0FBQyxRQUFRLENBQUMsQ0FBQSxNQUFBLEtBQUssQ0FBQyxTQUFTLDBDQUFFLGNBQWMsS0FBSSxDQUFDLENBQUMsQ0FBQTtDQUFBLENBQUM7QUFGakUsUUFBQSxnQkFBZ0Isb0JBRWlEIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgU2RrRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvc21pdGh5LWNsaWVudFwiO1xuXG5pbXBvcnQge1xuICBDTE9DS19TS0VXX0VSUk9SX0NPREVTLFxuICBUSFJPVFRMSU5HX0VSUk9SX0NPREVTLFxuICBUUkFOU0lFTlRfRVJST1JfQ09ERVMsXG4gIFRSQU5TSUVOVF9FUlJPUl9TVEFUVVNfQ09ERVMsXG59IGZyb20gXCIuL2NvbnN0YW50c1wiO1xuXG5leHBvcnQgY29uc3QgaXNSZXRyeWFibGVCeVRyYWl0ID0gKGVycm9yOiBTZGtFcnJvcikgPT4gZXJyb3IuJHJldHJ5YWJsZSAhPT0gdW5kZWZpbmVkO1xuXG5leHBvcnQgY29uc3QgaXNDbG9ja1NrZXdFcnJvciA9IChlcnJvcjogU2RrRXJyb3IpID0+IENMT0NLX1NLRVdfRVJST1JfQ09ERVMuaW5jbHVkZXMoZXJyb3IubmFtZSk7XG5cbmV4cG9ydCBjb25zdCBpc1Rocm90dGxpbmdFcnJvciA9IChlcnJvcjogU2RrRXJyb3IpID0+XG4gIGVycm9yLiRtZXRhZGF0YT8uaHR0cFN0YXR1c0NvZGUgPT09IDQyOSB8fFxuICBUSFJPVFRMSU5HX0VSUk9SX0NPREVTLmluY2x1ZGVzKGVycm9yLm5hbWUpIHx8XG4gIGVycm9yLiRyZXRyeWFibGU/LnRocm90dGxpbmcgPT0gdHJ1ZTtcblxuZXhwb3J0IGNvbnN0IGlzVHJhbnNpZW50RXJyb3IgPSAoZXJyb3I6IFNka0Vycm9yKSA9PlxuICBUUkFOU0lFTlRfRVJST1JfQ09ERVMuaW5jbHVkZXMoZXJyb3IubmFtZSkgfHxcbiAgVFJBTlNJRU5UX0VSUk9SX1NUQVRVU19DT0RFUy5pbmNsdWRlcyhlcnJvci4kbWV0YWRhdGE/Lmh0dHBTdGF0dXNDb2RlIHx8IDApO1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRUEsMkNBS3FCO0FBRWQsTUFBTSxrQkFBa0IsR0FBRyxDQUFDLEtBQWUsRUFBRSxFQUFFLENBQUMsS0FBSyxDQUFDLFVBQVUsS0FBSyxTQUFTLENBQUM7QUFBekUsUUFBQSxrQkFBa0Isc0JBQXVEO0FBRS9FLE1BQU0sZ0JBQWdCLEdBQUcsQ0FBQyxLQUFlLEVBQUUsRUFBRSxDQUFDLGtDQUFzQixDQUFDLFFBQVEsQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUFDLENBQUM7QUFBcEYsUUFBQSxnQkFBZ0Isb0JBQW9FO0FBRTFGLE1BQU0saUJBQWlCLEdBQUcsQ0FBQyxLQUFlLEVBQUUsRUFBRTs7SUFDbkQsT0FBQSxDQUFBLE1BQUEsS0FBSyxDQUFDLFNBQVMsMENBQUUsY0FBYyxNQUFLLEdBQUc7UUFDdkMsa0NBQXNCLENBQUMsUUFBUSxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUM7UUFDM0MsQ0FBQSxNQUFBLEtBQUssQ0FBQyxVQUFVLDBDQUFFLFVBQVUsS0FBSSxJQUFJLENBQUE7Q0FBQSxDQUFDO0FBSDFCLFFBQUEsaUJBQWlCLHFCQUdTO0FBRWhDLE1BQU0sZ0JBQWdCLEdBQUcsQ0FBQyxLQUFlLEVBQUUsRUFBRTs7SUFDbEQsT0FBQSxpQ0FBcUIsQ0FBQyxRQUFRLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQztRQUMxQyx3Q0FBNEIsQ0FBQyxRQUFRLENBQUMsQ0FBQSxNQUFBLEtBQUssQ0FBQyxTQUFTLDBDQUFFLGNBQWMsS0FBSSxDQUFDLENBQUMsQ0FBQTtDQUFBLENBQUM7QUFGakUsUUFBQSxnQkFBZ0Isb0JBRWlEIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgU2RrRXJyb3IgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHtcbiAgQ0xPQ0tfU0tFV19FUlJPUl9DT0RFUyxcbiAgVEhST1RUTElOR19FUlJPUl9DT0RFUyxcbiAgVFJBTlNJRU5UX0VSUk9SX0NPREVTLFxuICBUUkFOU0lFTlRfRVJST1JfU1RBVFVTX0NPREVTLFxufSBmcm9tIFwiLi9jb25zdGFudHNcIjtcblxuZXhwb3J0IGNvbnN0IGlzUmV0cnlhYmxlQnlUcmFpdCA9IChlcnJvcjogU2RrRXJyb3IpID0+IGVycm9yLiRyZXRyeWFibGUgIT09IHVuZGVmaW5lZDtcblxuZXhwb3J0IGNvbnN0IGlzQ2xvY2tTa2V3RXJyb3IgPSAoZXJyb3I6IFNka0Vycm9yKSA9PiBDTE9DS19TS0VXX0VSUk9SX0NPREVTLmluY2x1ZGVzKGVycm9yLm5hbWUpO1xuXG5leHBvcnQgY29uc3QgaXNUaHJvdHRsaW5nRXJyb3IgPSAoZXJyb3I6IFNka0Vycm9yKSA9PlxuICBlcnJvci4kbWV0YWRhdGE/Lmh0dHBTdGF0dXNDb2RlID09PSA0MjkgfHxcbiAgVEhST1RUTElOR19FUlJPUl9DT0RFUy5pbmNsdWRlcyhlcnJvci5uYW1lKSB8fFxuICBlcnJvci4kcmV0cnlhYmxlPy50aHJvdHRsaW5nID09IHRydWU7XG5cbmV4cG9ydCBjb25zdCBpc1RyYW5zaWVudEVycm9yID0gKGVycm9yOiBTZGtFcnJvcikgPT5cbiAgVFJBTlNJRU5UX0VSUk9SX0NPREVTLmluY2x1ZGVzKGVycm9yLm5hbWUpIHx8XG4gIFRSQU5TSUVOVF9FUlJPUl9TVEFUVVNfQ09ERVMuaW5jbHVkZXMoZXJyb3IuJG1ldGFkYXRhPy5odHRwU3RhdHVzQ29kZSB8fCAwKTtcbiJdfQ==
 
 /***/ }),
 
@@ -43262,7 +43410,7 @@ class Client {
     }
 }
 exports.Client = Client;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2xpZW50LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2NsaWVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxnRUFBMkQ7QUFlM0QsTUFBYSxNQUFNO0lBU2pCLFlBQVksTUFBbUM7UUFGeEMsb0JBQWUsR0FBRyxpQ0FBYyxFQUE2QixDQUFDO1FBR25FLElBQUksQ0FBQyxNQUFNLEdBQUcsTUFBTSxDQUFDO0lBQ3ZCLENBQUM7SUFjRCxJQUFJLENBQ0YsT0FBK0csRUFDL0csV0FBc0UsRUFDdEUsRUFBMEM7UUFFMUMsTUFBTSxPQUFPLEdBQUcsT0FBTyxXQUFXLEtBQUssVUFBVSxDQUFDLENBQUMsQ0FBQyxXQUFXLENBQUMsQ0FBQyxDQUFDLFNBQVMsQ0FBQztRQUM1RSxNQUFNLFFBQVEsR0FBRyxPQUFPLFdBQVcsS0FBSyxVQUFVLENBQUMsQ0FBQyxDQUFFLFdBQXFELENBQUMsQ0FBQyxDQUFDLEVBQUUsQ0FBQztRQUNqSCxNQUFNLE9BQU8sR0FBRyxPQUFPLENBQUMsaUJBQWlCLENBQUMsSUFBSSxDQUFDLGVBQXNCLEVBQUUsSUFBSSxDQUFDLE1BQU0sRUFBRSxPQUFPLENBQUMsQ0FBQztRQUM3RixJQUFJLFFBQVEsRUFBRTtZQUNaLE9BQU8sQ0FBQyxPQUFPLENBQUM7aUJBQ2IsSUFBSSxDQUNILENBQUMsTUFBTSxFQUFFLEVBQUUsQ0FBQyxRQUFRLENBQUMsSUFBSSxFQUFFLE1BQU0sQ0FBQyxNQUFNLENBQUMsRUFDekMsQ0FBQyxHQUFRLEVBQUUsRUFBRSxDQUFDLFFBQVEsQ0FBQyxHQUFHLENBQUMsQ0FDNUI7aUJBQ0EsS0FBSztZQUNKLCtEQUErRDtZQUMvRCw4QkFBOEI7WUFDOUIsR0FBRyxFQUFFLEdBQUUsQ0FBQyxDQUNULENBQUM7U0FDTDthQUFNO1lBQ0wsT0FBTyxPQUFPLENBQUMsT0FBTyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQUMsTUFBTSxFQUFFLEVBQUUsQ0FBQyxNQUFNLENBQUMsTUFBTSxDQUFDLENBQUM7U0FDekQ7SUFDSCxDQUFDO0lBRUQsT0FBTztRQUNMLElBQUksSUFBSSxDQUFDLE1BQU0sQ0FBQyxjQUFjLENBQUMsT0FBTztZQUFFLElBQUksQ0FBQyxNQUFNLENBQUMsY0FBYyxDQUFDLE9BQU8sRUFBRSxDQUFDO0lBQy9FLENBQUM7Q0FDRjtBQXBERCx3QkFvREMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBjb25zdHJ1Y3RTdGFjayB9IGZyb20gXCJAYXdzLXNkay9taWRkbGV3YXJlLXN0YWNrXCI7XG5pbXBvcnQgeyBDbGllbnQgYXMgSUNsaWVudCwgQ29tbWFuZCwgTWV0YWRhdGFCZWFyZXIsIFJlcXVlc3RIYW5kbGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgU21pdGh5Q29uZmlndXJhdGlvbjxIYW5kbGVyT3B0aW9ucz4ge1xuICByZXF1ZXN0SGFuZGxlcjogUmVxdWVzdEhhbmRsZXI8YW55LCBhbnksIEhhbmRsZXJPcHRpb25zPjtcbiAgLyoqXG4gICAqIFRoZSBBUEkgdmVyc2lvbiBzZXQgaW50ZXJuYWxseSBieSB0aGUgU0RLLCBhbmQgaXNcbiAgICogbm90IHBsYW5uZWQgdG8gYmUgdXNlZCBieSBjdXN0b21lciBjb2RlLlxuICAgKiBAaW50ZXJuYWxcbiAgICovXG4gIHJlYWRvbmx5IGFwaVZlcnNpb246IHN0cmluZztcbn1cblxuZXhwb3J0IHR5cGUgU21pdGh5UmVzb2x2ZWRDb25maWd1cmF0aW9uPEhhbmRsZXJPcHRpb25zPiA9IFNtaXRoeUNvbmZpZ3VyYXRpb248SGFuZGxlck9wdGlvbnM+O1xuXG5leHBvcnQgY2xhc3MgQ2xpZW50PFxuICBIYW5kbGVyT3B0aW9ucyxcbiAgQ2xpZW50SW5wdXQgZXh0ZW5kcyBvYmplY3QsXG4gIENsaWVudE91dHB1dCBleHRlbmRzIE1ldGFkYXRhQmVhcmVyLFxuICBSZXNvbHZlZENsaWVudENvbmZpZ3VyYXRpb24gZXh0ZW5kcyBTbWl0aHlSZXNvbHZlZENvbmZpZ3VyYXRpb248SGFuZGxlck9wdGlvbnM+XG4+IGltcGxlbWVudHMgSUNsaWVudDxDbGllbnRJbnB1dCwgQ2xpZW50T3V0cHV0LCBSZXNvbHZlZENsaWVudENvbmZpZ3VyYXRpb24+XG57XG4gIHB1YmxpYyBtaWRkbGV3YXJlU3RhY2sgPSBjb25zdHJ1Y3RTdGFjazxDbGllbnRJbnB1dCwgQ2xpZW50T3V0cHV0PigpO1xuICByZWFkb25seSBjb25maWc6IFJlc29sdmVkQ2xpZW50Q29uZmlndXJhdGlvbjtcbiAgY29uc3RydWN0b3IoY29uZmlnOiBSZXNvbHZlZENsaWVudENvbmZpZ3VyYXRpb24pIHtcbiAgICB0aGlzLmNvbmZpZyA9IGNvbmZpZztcbiAgfVxuICBzZW5kPElucHV0VHlwZSBleHRlbmRzIENsaWVudElucHV0LCBPdXRwdXRUeXBlIGV4dGVuZHMgQ2xpZW50T3V0cHV0PihcbiAgICBjb21tYW5kOiBDb21tYW5kPENsaWVudElucHV0LCBJbnB1dFR5cGUsIENsaWVudE91dHB1dCwgT3V0cHV0VHlwZSwgU21pdGh5UmVzb2x2ZWRDb25maWd1cmF0aW9uPEhhbmRsZXJPcHRpb25zPj4sXG4gICAgb3B0aW9ucz86IEhhbmRsZXJPcHRpb25zXG4gICk6IFByb21pc2U8T3V0cHV0VHlwZT47XG4gIHNlbmQ8SW5wdXRUeXBlIGV4dGVuZHMgQ2xpZW50SW5wdXQsIE91dHB1dFR5cGUgZXh0ZW5kcyBDbGllbnRPdXRwdXQ+KFxuICAgIGNvbW1hbmQ6IENvbW1hbmQ8Q2xpZW50SW5wdXQsIElucHV0VHlwZSwgQ2xpZW50T3V0cHV0LCBPdXRwdXRUeXBlLCBTbWl0aHlSZXNvbHZlZENvbmZpZ3VyYXRpb248SGFuZGxlck9wdGlvbnM+PixcbiAgICBjYjogKGVycjogYW55LCBkYXRhPzogT3V0cHV0VHlwZSkgPT4gdm9pZFxuICApOiB2b2lkO1xuICBzZW5kPElucHV0VHlwZSBleHRlbmRzIENsaWVudElucHV0LCBPdXRwdXRUeXBlIGV4dGVuZHMgQ2xpZW50T3V0cHV0PihcbiAgICBjb21tYW5kOiBDb21tYW5kPENsaWVudElucHV0LCBJbnB1dFR5cGUsIENsaWVudE91dHB1dCwgT3V0cHV0VHlwZSwgU21pdGh5UmVzb2x2ZWRDb25maWd1cmF0aW9uPEhhbmRsZXJPcHRpb25zPj4sXG4gICAgb3B0aW9uczogSGFuZGxlck9wdGlvbnMsXG4gICAgY2I6IChlcnI6IGFueSwgZGF0YT86IE91dHB1dFR5cGUpID0+IHZvaWRcbiAgKTogdm9pZDtcbiAgc2VuZDxJbnB1dFR5cGUgZXh0ZW5kcyBDbGllbnRJbnB1dCwgT3V0cHV0VHlwZSBleHRlbmRzIENsaWVudE91dHB1dD4oXG4gICAgY29tbWFuZDogQ29tbWFuZDxDbGllbnRJbnB1dCwgSW5wdXRUeXBlLCBDbGllbnRPdXRwdXQsIE91dHB1dFR5cGUsIFNtaXRoeVJlc29sdmVkQ29uZmlndXJhdGlvbjxIYW5kbGVyT3B0aW9ucz4+LFxuICAgIG9wdGlvbnNPckNiPzogSGFuZGxlck9wdGlvbnMgfCAoKGVycjogYW55LCBkYXRhPzogT3V0cHV0VHlwZSkgPT4gdm9pZCksXG4gICAgY2I/OiAoZXJyOiBhbnksIGRhdGE/OiBPdXRwdXRUeXBlKSA9PiB2b2lkXG4gICk6IFByb21pc2U8T3V0cHV0VHlwZT4gfCB2b2lkIHtcbiAgICBjb25zdCBvcHRpb25zID0gdHlwZW9mIG9wdGlvbnNPckNiICE9PSBcImZ1bmN0aW9uXCIgPyBvcHRpb25zT3JDYiA6IHVuZGVmaW5lZDtcbiAgICBjb25zdCBjYWxsYmFjayA9IHR5cGVvZiBvcHRpb25zT3JDYiA9PT0gXCJmdW5jdGlvblwiID8gKG9wdGlvbnNPckNiIGFzIChlcnI6IGFueSwgZGF0YT86IE91dHB1dFR5cGUpID0+IHZvaWQpIDogY2I7XG4gICAgY29uc3QgaGFuZGxlciA9IGNvbW1hbmQucmVzb2x2ZU1pZGRsZXdhcmUodGhpcy5taWRkbGV3YXJlU3RhY2sgYXMgYW55LCB0aGlzLmNvbmZpZywgb3B0aW9ucyk7XG4gICAgaWYgKGNhbGxiYWNrKSB7XG4gICAgICBoYW5kbGVyKGNvbW1hbmQpXG4gICAgICAgIC50aGVuKFxuICAgICAgICAgIChyZXN1bHQpID0+IGNhbGxiYWNrKG51bGwsIHJlc3VsdC5vdXRwdXQpLFxuICAgICAgICAgIChlcnI6IGFueSkgPT4gY2FsbGJhY2soZXJyKVxuICAgICAgICApXG4gICAgICAgIC5jYXRjaChcbiAgICAgICAgICAvLyBwcmV2ZW50IGFueSBlcnJvcnMgdGhyb3duIGluIHRoZSBjYWxsYmFjayBmcm9tIHRyaWdnZXJpbmcgYW5cbiAgICAgICAgICAvLyB1bmhhbmRsZWQgcHJvbWlzZSByZWplY3Rpb25cbiAgICAgICAgICAoKSA9PiB7fVxuICAgICAgICApO1xuICAgIH0gZWxzZSB7XG4gICAgICByZXR1cm4gaGFuZGxlcihjb21tYW5kKS50aGVuKChyZXN1bHQpID0+IHJlc3VsdC5vdXRwdXQpO1xuICAgIH1cbiAgfVxuXG4gIGRlc3Ryb3koKSB7XG4gICAgaWYgKHRoaXMuY29uZmlnLnJlcXVlc3RIYW5kbGVyLmRlc3Ryb3kpIHRoaXMuY29uZmlnLnJlcXVlc3RIYW5kbGVyLmRlc3Ryb3koKTtcbiAgfVxufVxuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2xpZW50LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2NsaWVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxnRUFBMkQ7QUFlM0QsTUFBYSxNQUFNO0lBU2pCLFlBQVksTUFBbUM7UUFGeEMsb0JBQWUsR0FBK0MsaUNBQWMsRUFBNkIsQ0FBQztRQUcvRyxJQUFJLENBQUMsTUFBTSxHQUFHLE1BQU0sQ0FBQztJQUN2QixDQUFDO0lBY0QsSUFBSSxDQUNGLE9BQStHLEVBQy9HLFdBQXNFLEVBQ3RFLEVBQTBDO1FBRTFDLE1BQU0sT0FBTyxHQUFHLE9BQU8sV0FBVyxLQUFLLFVBQVUsQ0FBQyxDQUFDLENBQUMsV0FBVyxDQUFDLENBQUMsQ0FBQyxTQUFTLENBQUM7UUFDNUUsTUFBTSxRQUFRLEdBQUcsT0FBTyxXQUFXLEtBQUssVUFBVSxDQUFDLENBQUMsQ0FBRSxXQUFxRCxDQUFDLENBQUMsQ0FBQyxFQUFFLENBQUM7UUFDakgsTUFBTSxPQUFPLEdBQUcsT0FBTyxDQUFDLGlCQUFpQixDQUFDLElBQUksQ0FBQyxlQUFzQixFQUFFLElBQUksQ0FBQyxNQUFNLEVBQUUsT0FBTyxDQUFDLENBQUM7UUFDN0YsSUFBSSxRQUFRLEVBQUU7WUFDWixPQUFPLENBQUMsT0FBTyxDQUFDO2lCQUNiLElBQUksQ0FDSCxDQUFDLE1BQU0sRUFBRSxFQUFFLENBQUMsUUFBUSxDQUFDLElBQUksRUFBRSxNQUFNLENBQUMsTUFBTSxDQUFDLEVBQ3pDLENBQUMsR0FBUSxFQUFFLEVBQUUsQ0FBQyxRQUFRLENBQUMsR0FBRyxDQUFDLENBQzVCO2lCQUNBLEtBQUs7WUFDSiwrREFBK0Q7WUFDL0QsOEJBQThCO1lBQzlCLEdBQUcsRUFBRSxHQUFFLENBQUMsQ0FDVCxDQUFDO1NBQ0w7YUFBTTtZQUNMLE9BQU8sT0FBTyxDQUFDLE9BQU8sQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLE1BQU0sRUFBRSxFQUFFLENBQUMsTUFBTSxDQUFDLE1BQU0sQ0FBQyxDQUFDO1NBQ3pEO0lBQ0gsQ0FBQztJQUVELE9BQU87UUFDTCxJQUFJLElBQUksQ0FBQyxNQUFNLENBQUMsY0FBYyxDQUFDLE9BQU87WUFBRSxJQUFJLENBQUMsTUFBTSxDQUFDLGNBQWMsQ0FBQyxPQUFPLEVBQUUsQ0FBQztJQUMvRSxDQUFDO0NBQ0Y7QUFwREQsd0JBb0RDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgY29uc3RydWN0U3RhY2sgfSBmcm9tIFwiQGF3cy1zZGsvbWlkZGxld2FyZS1zdGFja1wiO1xuaW1wb3J0IHsgQ2xpZW50IGFzIElDbGllbnQsIENvbW1hbmQsIE1ldGFkYXRhQmVhcmVyLCBNaWRkbGV3YXJlU3RhY2ssIFJlcXVlc3RIYW5kbGVyIH0gZnJvbSBcIkBhd3Mtc2RrL3R5cGVzXCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgU21pdGh5Q29uZmlndXJhdGlvbjxIYW5kbGVyT3B0aW9ucz4ge1xuICByZXF1ZXN0SGFuZGxlcjogUmVxdWVzdEhhbmRsZXI8YW55LCBhbnksIEhhbmRsZXJPcHRpb25zPjtcbiAgLyoqXG4gICAqIFRoZSBBUEkgdmVyc2lvbiBzZXQgaW50ZXJuYWxseSBieSB0aGUgU0RLLCBhbmQgaXNcbiAgICogbm90IHBsYW5uZWQgdG8gYmUgdXNlZCBieSBjdXN0b21lciBjb2RlLlxuICAgKiBAaW50ZXJuYWxcbiAgICovXG4gIHJlYWRvbmx5IGFwaVZlcnNpb246IHN0cmluZztcbn1cblxuZXhwb3J0IHR5cGUgU21pdGh5UmVzb2x2ZWRDb25maWd1cmF0aW9uPEhhbmRsZXJPcHRpb25zPiA9IFNtaXRoeUNvbmZpZ3VyYXRpb248SGFuZGxlck9wdGlvbnM+O1xuXG5leHBvcnQgY2xhc3MgQ2xpZW50PFxuICBIYW5kbGVyT3B0aW9ucyxcbiAgQ2xpZW50SW5wdXQgZXh0ZW5kcyBvYmplY3QsXG4gIENsaWVudE91dHB1dCBleHRlbmRzIE1ldGFkYXRhQmVhcmVyLFxuICBSZXNvbHZlZENsaWVudENvbmZpZ3VyYXRpb24gZXh0ZW5kcyBTbWl0aHlSZXNvbHZlZENvbmZpZ3VyYXRpb248SGFuZGxlck9wdGlvbnM+XG4+IGltcGxlbWVudHMgSUNsaWVudDxDbGllbnRJbnB1dCwgQ2xpZW50T3V0cHV0LCBSZXNvbHZlZENsaWVudENvbmZpZ3VyYXRpb24+XG57XG4gIHB1YmxpYyBtaWRkbGV3YXJlU3RhY2s6IE1pZGRsZXdhcmVTdGFjazxDbGllbnRJbnB1dCwgQ2xpZW50T3V0cHV0PiA9IGNvbnN0cnVjdFN0YWNrPENsaWVudElucHV0LCBDbGllbnRPdXRwdXQ+KCk7XG4gIHJlYWRvbmx5IGNvbmZpZzogUmVzb2x2ZWRDbGllbnRDb25maWd1cmF0aW9uO1xuICBjb25zdHJ1Y3Rvcihjb25maWc6IFJlc29sdmVkQ2xpZW50Q29uZmlndXJhdGlvbikge1xuICAgIHRoaXMuY29uZmlnID0gY29uZmlnO1xuICB9XG4gIHNlbmQ8SW5wdXRUeXBlIGV4dGVuZHMgQ2xpZW50SW5wdXQsIE91dHB1dFR5cGUgZXh0ZW5kcyBDbGllbnRPdXRwdXQ+KFxuICAgIGNvbW1hbmQ6IENvbW1hbmQ8Q2xpZW50SW5wdXQsIElucHV0VHlwZSwgQ2xpZW50T3V0cHV0LCBPdXRwdXRUeXBlLCBTbWl0aHlSZXNvbHZlZENvbmZpZ3VyYXRpb248SGFuZGxlck9wdGlvbnM+PixcbiAgICBvcHRpb25zPzogSGFuZGxlck9wdGlvbnNcbiAgKTogUHJvbWlzZTxPdXRwdXRUeXBlPjtcbiAgc2VuZDxJbnB1dFR5cGUgZXh0ZW5kcyBDbGllbnRJbnB1dCwgT3V0cHV0VHlwZSBleHRlbmRzIENsaWVudE91dHB1dD4oXG4gICAgY29tbWFuZDogQ29tbWFuZDxDbGllbnRJbnB1dCwgSW5wdXRUeXBlLCBDbGllbnRPdXRwdXQsIE91dHB1dFR5cGUsIFNtaXRoeVJlc29sdmVkQ29uZmlndXJhdGlvbjxIYW5kbGVyT3B0aW9ucz4+LFxuICAgIGNiOiAoZXJyOiBhbnksIGRhdGE/OiBPdXRwdXRUeXBlKSA9PiB2b2lkXG4gICk6IHZvaWQ7XG4gIHNlbmQ8SW5wdXRUeXBlIGV4dGVuZHMgQ2xpZW50SW5wdXQsIE91dHB1dFR5cGUgZXh0ZW5kcyBDbGllbnRPdXRwdXQ+KFxuICAgIGNvbW1hbmQ6IENvbW1hbmQ8Q2xpZW50SW5wdXQsIElucHV0VHlwZSwgQ2xpZW50T3V0cHV0LCBPdXRwdXRUeXBlLCBTbWl0aHlSZXNvbHZlZENvbmZpZ3VyYXRpb248SGFuZGxlck9wdGlvbnM+PixcbiAgICBvcHRpb25zOiBIYW5kbGVyT3B0aW9ucyxcbiAgICBjYjogKGVycjogYW55LCBkYXRhPzogT3V0cHV0VHlwZSkgPT4gdm9pZFxuICApOiB2b2lkO1xuICBzZW5kPElucHV0VHlwZSBleHRlbmRzIENsaWVudElucHV0LCBPdXRwdXRUeXBlIGV4dGVuZHMgQ2xpZW50T3V0cHV0PihcbiAgICBjb21tYW5kOiBDb21tYW5kPENsaWVudElucHV0LCBJbnB1dFR5cGUsIENsaWVudE91dHB1dCwgT3V0cHV0VHlwZSwgU21pdGh5UmVzb2x2ZWRDb25maWd1cmF0aW9uPEhhbmRsZXJPcHRpb25zPj4sXG4gICAgb3B0aW9uc09yQ2I/OiBIYW5kbGVyT3B0aW9ucyB8ICgoZXJyOiBhbnksIGRhdGE/OiBPdXRwdXRUeXBlKSA9PiB2b2lkKSxcbiAgICBjYj86IChlcnI6IGFueSwgZGF0YT86IE91dHB1dFR5cGUpID0+IHZvaWRcbiAgKTogUHJvbWlzZTxPdXRwdXRUeXBlPiB8IHZvaWQge1xuICAgIGNvbnN0IG9wdGlvbnMgPSB0eXBlb2Ygb3B0aW9uc09yQ2IgIT09IFwiZnVuY3Rpb25cIiA/IG9wdGlvbnNPckNiIDogdW5kZWZpbmVkO1xuICAgIGNvbnN0IGNhbGxiYWNrID0gdHlwZW9mIG9wdGlvbnNPckNiID09PSBcImZ1bmN0aW9uXCIgPyAob3B0aW9uc09yQ2IgYXMgKGVycjogYW55LCBkYXRhPzogT3V0cHV0VHlwZSkgPT4gdm9pZCkgOiBjYjtcbiAgICBjb25zdCBoYW5kbGVyID0gY29tbWFuZC5yZXNvbHZlTWlkZGxld2FyZSh0aGlzLm1pZGRsZXdhcmVTdGFjayBhcyBhbnksIHRoaXMuY29uZmlnLCBvcHRpb25zKTtcbiAgICBpZiAoY2FsbGJhY2spIHtcbiAgICAgIGhhbmRsZXIoY29tbWFuZClcbiAgICAgICAgLnRoZW4oXG4gICAgICAgICAgKHJlc3VsdCkgPT4gY2FsbGJhY2sobnVsbCwgcmVzdWx0Lm91dHB1dCksXG4gICAgICAgICAgKGVycjogYW55KSA9PiBjYWxsYmFjayhlcnIpXG4gICAgICAgIClcbiAgICAgICAgLmNhdGNoKFxuICAgICAgICAgIC8vIHByZXZlbnQgYW55IGVycm9ycyB0aHJvd24gaW4gdGhlIGNhbGxiYWNrIGZyb20gdHJpZ2dlcmluZyBhblxuICAgICAgICAgIC8vIHVuaGFuZGxlZCBwcm9taXNlIHJlamVjdGlvblxuICAgICAgICAgICgpID0+IHt9XG4gICAgICAgICk7XG4gICAgfSBlbHNlIHtcbiAgICAgIHJldHVybiBoYW5kbGVyKGNvbW1hbmQpLnRoZW4oKHJlc3VsdCkgPT4gcmVzdWx0Lm91dHB1dCk7XG4gICAgfVxuICB9XG5cbiAgZGVzdHJveSgpIHtcbiAgICBpZiAodGhpcy5jb25maWcucmVxdWVzdEhhbmRsZXIuZGVzdHJveSkgdGhpcy5jb25maWcucmVxdWVzdEhhbmRsZXIuZGVzdHJveSgpO1xuICB9XG59XG4iXX0=
 
 /***/ }),
 
@@ -43339,23 +43487,32 @@ exports.dateToUtcString = dateToUtcString;
 
 /***/ }),
 
-/***/ 8269:
+/***/ 3061:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZG9jdW1lbnQtdHlwZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9kb2N1bWVudC10eXBlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiIiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIFNtaXRoeSBkb2N1bWVudCB0eXBlIHZhbHVlcy5cbiAqL1xuLy8gZXNsaW50LWRpc2FibGUtbmV4dC1saW5lIEB0eXBlc2NyaXB0LWVzbGludC9uby1uYW1lc3BhY2VcbmV4cG9ydCBuYW1lc3BhY2UgRG9jdW1lbnRUeXBlIHtcbiAgZXhwb3J0IHR5cGUgVmFsdWUgPSBTY2FsYXIgfCBTdHJ1Y3R1cmUgfCBMaXN0O1xuICBleHBvcnQgdHlwZSBTY2FsYXIgPSBzdHJpbmcgfCBudW1iZXIgfCBib29sZWFuIHwgbnVsbDtcbiAgZXhwb3J0IHR5cGUgU3RydWN0dXJlID0geyBbbWVtYmVyOiBzdHJpbmddOiBWYWx1ZSB9O1xuICBleHBvcnQgaW50ZXJmYWNlIExpc3QgZXh0ZW5kcyBBcnJheTxWYWx1ZT4ge31cbn1cbiJdfQ==
-
-/***/ }),
-
-/***/ 6582:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZXhjZXB0aW9uLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2V4Y2VwdGlvbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUmV0cnlhYmxlVHJhaXQgfSBmcm9tIFwiLi9yZXRyeWFibGUtdHJhaXRcIjtcblxuLyoqXG4gKiBUeXBlIHRoYXQgaXMgaW1wbGVtZW50ZWQgYnkgYWxsIFNtaXRoeSBzaGFwZXMgbWFya2VkIHdpdGggdGhlXG4gKiBlcnJvciB0cmFpdC5cbiAqL1xuZXhwb3J0IGludGVyZmFjZSBTbWl0aHlFeGNlcHRpb24ge1xuICAvKipcbiAgICogVGhlIHNoYXBlIElEIG5hbWUgb2YgdGhlIGV4Y2VwdGlvbi5cbiAgICovXG4gIHJlYWRvbmx5IG5hbWU6IHN0cmluZztcblxuICAvKipcbiAgICogV2hldGhlciB0aGUgY2xpZW50IG9yIHNlcnZlciBhcmUgYXQgZmF1bHQuXG4gICAqL1xuICByZWFkb25seSAkZmF1bHQ6IFwiY2xpZW50XCIgfCBcInNlcnZlclwiO1xuXG4gIC8qKlxuICAgKiBUaGUgc2VydmljZSB0aGF0IGVuY291bnRlcmVkIHRoZSBleGNlcHRpb24uXG4gICAqL1xuICByZWFkb25seSAkc2VydmljZT86IHN0cmluZztcblxuICAvKipcbiAgICogSW5kaWNhdGVzIHRoYXQgYW4gZXJyb3IgTUFZIGJlIHJldHJpZWQgYnkgdGhlIGNsaWVudC5cbiAgICovXG4gIHJlYWRvbmx5ICRyZXRyeWFibGU/OiBSZXRyeWFibGVUcmFpdDtcbn1cbiJdfQ==
+exports.emitWarningIfUnsupportedVersion = void 0;
+// Stores whether the warning was already emitted.
+let warningEmitted = false;
+/**
+ * Emits warning if the provided Node.js version string is pending deprecation.
+ *
+ * @param {string} version - The Node.js version string.
+ */
+const emitWarningIfUnsupportedVersion = (version) => {
+    if (version && !warningEmitted && parseInt(version.substring(1, version.indexOf("."))) < 12) {
+        warningEmitted = true;
+        process.emitWarning(`The AWS SDK for JavaScript (v3) will\n` +
+            `no longer support Node.js ${version} as of January 1, 2022.\n` +
+            `To continue receiving updates to AWS services, bug fixes, and security\n` +
+            `updates please upgrade to Node.js 12.x or later.\n\n` +
+            `More information can be found at: https://a.co/1l6FLnu`, `NodeDeprecationWarning`);
+    }
+};
+exports.emitWarningIfUnsupportedVersion = emitWarningIfUnsupportedVersion;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZW1pdFdhcm5pbmdJZlVuc3VwcG9ydGVkVmVyc2lvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9lbWl0V2FybmluZ0lmVW5zdXBwb3J0ZWRWZXJzaW9uLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLGtEQUFrRDtBQUNsRCxJQUFJLGNBQWMsR0FBRyxLQUFLLENBQUM7QUFFM0I7Ozs7R0FJRztBQUNJLE1BQU0sK0JBQStCLEdBQUcsQ0FBQyxPQUFlLEVBQUUsRUFBRTtJQUNqRSxJQUFJLE9BQU8sSUFBSSxDQUFDLGNBQWMsSUFBSSxRQUFRLENBQUMsT0FBTyxDQUFDLFNBQVMsQ0FBQyxDQUFDLEVBQUUsT0FBTyxDQUFDLE9BQU8sQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLEdBQUcsRUFBRSxFQUFFO1FBQzNGLGNBQWMsR0FBRyxJQUFJLENBQUM7UUFDdEIsT0FBTyxDQUFDLFdBQVcsQ0FDakIsd0NBQXdDO1lBQ3RDLDZCQUE2QixPQUFPLDJCQUEyQjtZQUMvRCwwRUFBMEU7WUFDMUUsc0RBQXNEO1lBQ3RELHdEQUF3RCxFQUMxRCx3QkFBd0IsQ0FDekIsQ0FBQztLQUNIO0FBQ0gsQ0FBQyxDQUFDO0FBWlcsUUFBQSwrQkFBK0IsbUNBWTFDIiwic291cmNlc0NvbnRlbnQiOlsiLy8gU3RvcmVzIHdoZXRoZXIgdGhlIHdhcm5pbmcgd2FzIGFscmVhZHkgZW1pdHRlZC5cbmxldCB3YXJuaW5nRW1pdHRlZCA9IGZhbHNlO1xuXG4vKipcbiAqIEVtaXRzIHdhcm5pbmcgaWYgdGhlIHByb3ZpZGVkIE5vZGUuanMgdmVyc2lvbiBzdHJpbmcgaXMgcGVuZGluZyBkZXByZWNhdGlvbi5cbiAqXG4gKiBAcGFyYW0ge3N0cmluZ30gdmVyc2lvbiAtIFRoZSBOb2RlLmpzIHZlcnNpb24gc3RyaW5nLlxuICovXG5leHBvcnQgY29uc3QgZW1pdFdhcm5pbmdJZlVuc3VwcG9ydGVkVmVyc2lvbiA9ICh2ZXJzaW9uOiBzdHJpbmcpID0+IHtcbiAgaWYgKHZlcnNpb24gJiYgIXdhcm5pbmdFbWl0dGVkICYmIHBhcnNlSW50KHZlcnNpb24uc3Vic3RyaW5nKDEsIHZlcnNpb24uaW5kZXhPZihcIi5cIikpKSA8IDEyKSB7XG4gICAgd2FybmluZ0VtaXR0ZWQgPSB0cnVlO1xuICAgIHByb2Nlc3MuZW1pdFdhcm5pbmcoXG4gICAgICBgVGhlIEFXUyBTREsgZm9yIEphdmFTY3JpcHQgKHYzKSB3aWxsXFxuYCArXG4gICAgICAgIGBubyBsb25nZXIgc3VwcG9ydCBOb2RlLmpzICR7dmVyc2lvbn0gYXMgb2YgSmFudWFyeSAxLCAyMDIyLlxcbmAgK1xuICAgICAgICBgVG8gY29udGludWUgcmVjZWl2aW5nIHVwZGF0ZXMgdG8gQVdTIHNlcnZpY2VzLCBidWcgZml4ZXMsIGFuZCBzZWN1cml0eVxcbmAgK1xuICAgICAgICBgdXBkYXRlcyBwbGVhc2UgdXBncmFkZSB0byBOb2RlLmpzIDEyLnggb3IgbGF0ZXIuXFxuXFxuYCArXG4gICAgICAgIGBNb3JlIGluZm9ybWF0aW9uIGNhbiBiZSBmb3VuZCBhdDogaHR0cHM6Ly9hLmNvLzFsNkZMbnVgLFxuICAgICAgYE5vZGVEZXByZWNhdGlvbldhcm5pbmdgXG4gICAgKTtcbiAgfVxufTtcbiJdfQ==
 
 /***/ }),
 
@@ -43372,11 +43529,11 @@ exports.extendedEncodeURIComponent = void 0;
  */
 function extendedEncodeURIComponent(str) {
     return encodeURIComponent(str).replace(/[!'()*]/g, function (c) {
-        return "%" + c.charCodeAt(0).toString(16);
+        return "%" + c.charCodeAt(0).toString(16).toUpperCase();
     });
 }
 exports.extendedEncodeURIComponent = extendedEncodeURIComponent;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZXh0ZW5kZWQtZW5jb2RlLXVyaS1jb21wb25lbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvZXh0ZW5kZWQtZW5jb2RlLXVyaS1jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUE7OztHQUdHO0FBQ0gsU0FBZ0IsMEJBQTBCLENBQUMsR0FBVztJQUNwRCxPQUFPLGtCQUFrQixDQUFDLEdBQUcsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxVQUFVLEVBQUUsVUFBVSxDQUFDO1FBQzVELE9BQU8sR0FBRyxHQUFHLENBQUMsQ0FBQyxVQUFVLENBQUMsQ0FBQyxDQUFDLENBQUMsUUFBUSxDQUFDLEVBQUUsQ0FBQyxDQUFDO0lBQzVDLENBQUMsQ0FBQyxDQUFDO0FBQ0wsQ0FBQztBQUpELGdFQUlDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBGdW5jdGlvbiB0aGF0IHdyYXBzIGVuY29kZVVSSUNvbXBvbmVudCB0byBlbmNvZGUgYWRkaXRpb25hbCBjaGFyYWN0ZXJzXG4gKiB0byBmdWxseSBhZGhlcmUgdG8gUkZDIDM5ODYuXG4gKi9cbmV4cG9ydCBmdW5jdGlvbiBleHRlbmRlZEVuY29kZVVSSUNvbXBvbmVudChzdHI6IHN0cmluZyk6IHN0cmluZyB7XG4gIHJldHVybiBlbmNvZGVVUklDb21wb25lbnQoc3RyKS5yZXBsYWNlKC9bIScoKSpdL2csIGZ1bmN0aW9uIChjKSB7XG4gICAgcmV0dXJuIFwiJVwiICsgYy5jaGFyQ29kZUF0KDApLnRvU3RyaW5nKDE2KTtcbiAgfSk7XG59XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZXh0ZW5kZWQtZW5jb2RlLXVyaS1jb21wb25lbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvZXh0ZW5kZWQtZW5jb2RlLXVyaS1jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUE7OztHQUdHO0FBQ0gsU0FBZ0IsMEJBQTBCLENBQUMsR0FBVztJQUNwRCxPQUFPLGtCQUFrQixDQUFDLEdBQUcsQ0FBQyxDQUFDLE9BQU8sQ0FBQyxVQUFVLEVBQUUsVUFBVSxDQUFDO1FBQzVELE9BQU8sR0FBRyxHQUFHLENBQUMsQ0FBQyxVQUFVLENBQUMsQ0FBQyxDQUFDLENBQUMsUUFBUSxDQUFDLEVBQUUsQ0FBQyxDQUFDLFdBQVcsRUFBRSxDQUFDO0lBQzFELENBQUMsQ0FBQyxDQUFDO0FBQ0wsQ0FBQztBQUpELGdFQUlDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBGdW5jdGlvbiB0aGF0IHdyYXBzIGVuY29kZVVSSUNvbXBvbmVudCB0byBlbmNvZGUgYWRkaXRpb25hbCBjaGFyYWN0ZXJzXG4gKiB0byBmdWxseSBhZGhlcmUgdG8gUkZDIDM5ODYuXG4gKi9cbmV4cG9ydCBmdW5jdGlvbiBleHRlbmRlZEVuY29kZVVSSUNvbXBvbmVudChzdHI6IHN0cmluZyk6IHN0cmluZyB7XG4gIHJldHVybiBlbmNvZGVVUklDb21wb25lbnQoc3RyKS5yZXBsYWNlKC9bIScoKSpdL2csIGZ1bmN0aW9uIChjKSB7XG4gICAgcmV0dXJuIFwiJVwiICsgYy5jaGFyQ29kZUF0KDApLnRvU3RyaW5nKDE2KS50b1VwcGVyQ2FzZSgpO1xuICB9KTtcbn1cbiJdfQ==
 
 /***/ }),
 
@@ -43434,18 +43591,17 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
 tslib_1.__exportStar(__nccwpck_require__(6717), exports);
 tslib_1.__exportStar(__nccwpck_require__(6041), exports);
-tslib_1.__exportStar(__nccwpck_require__(8269), exports);
-tslib_1.__exportStar(__nccwpck_require__(6582), exports);
+tslib_1.__exportStar(__nccwpck_require__(3061), exports);
 tslib_1.__exportStar(__nccwpck_require__(7121), exports);
 tslib_1.__exportStar(__nccwpck_require__(4650), exports);
 tslib_1.__exportStar(__nccwpck_require__(6526), exports);
 tslib_1.__exportStar(__nccwpck_require__(1207), exports);
+tslib_1.__exportStar(__nccwpck_require__(3186), exports);
+tslib_1.__exportStar(__nccwpck_require__(422), exports);
 tslib_1.__exportStar(__nccwpck_require__(1370), exports);
 tslib_1.__exportStar(__nccwpck_require__(6399), exports);
 tslib_1.__exportStar(__nccwpck_require__(6171), exports);
-tslib_1.__exportStar(__nccwpck_require__(2908), exports);
-tslib_1.__exportStar(__nccwpck_require__(1200), exports);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsbURBQXlCO0FBQ3pCLG9EQUEwQjtBQUMxQiwwREFBZ0M7QUFDaEMsc0RBQTRCO0FBQzVCLDBFQUFnRDtBQUNoRCxxRUFBMkM7QUFDM0MscUVBQTJDO0FBQzNDLHNEQUE0QjtBQUM1Qix1REFBNkI7QUFDN0Isd0RBQThCO0FBQzlCLHNEQUE0QjtBQUM1Qiw0REFBa0M7QUFDbEMsc0RBQTRCIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0ICogZnJvbSBcIi4vY2xpZW50XCI7XG5leHBvcnQgKiBmcm9tIFwiLi9jb21tYW5kXCI7XG5leHBvcnQgKiBmcm9tIFwiLi9kb2N1bWVudC10eXBlXCI7XG5leHBvcnQgKiBmcm9tIFwiLi9leGNlcHRpb25cIjtcbmV4cG9ydCAqIGZyb20gXCIuL2V4dGVuZGVkLWVuY29kZS11cmktY29tcG9uZW50XCI7XG5leHBvcnQgKiBmcm9tIFwiLi9nZXQtYXJyYXktaWYtc2luZ2xlLWl0ZW1cIjtcbmV4cG9ydCAqIGZyb20gXCIuL2dldC12YWx1ZS1mcm9tLXRleHQtbm9kZVwiO1xuZXhwb3J0ICogZnJvbSBcIi4vbGF6eS1qc29uXCI7XG5leHBvcnQgKiBmcm9tIFwiLi9kYXRlLXV0aWxzXCI7XG5leHBvcnQgKiBmcm9tIFwiLi9zcGxpdC1ldmVyeVwiO1xuZXhwb3J0ICogZnJvbSBcIi4vY29uc3RhbnRzXCI7XG5leHBvcnQgKiBmcm9tIFwiLi9yZXRyeWFibGUtdHJhaXRcIjtcbmV4cG9ydCAqIGZyb20gXCIuL3Nkay1lcnJvclwiO1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsbURBQXlCO0FBQ3pCLG9EQUEwQjtBQUMxQiw0RUFBa0Q7QUFDbEQsMEVBQWdEO0FBQ2hELHFFQUEyQztBQUMzQyxxRUFBMkM7QUFDM0Msc0RBQTRCO0FBQzVCLHdEQUE4QjtBQUM5QixzREFBNEI7QUFDNUIsdURBQTZCO0FBQzdCLHdEQUE4QjtBQUM5QixzREFBNEIiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tIFwiLi9jbGllbnRcIjtcbmV4cG9ydCAqIGZyb20gXCIuL2NvbW1hbmRcIjtcbmV4cG9ydCAqIGZyb20gXCIuL2VtaXRXYXJuaW5nSWZVbnN1cHBvcnRlZFZlcnNpb25cIjtcbmV4cG9ydCAqIGZyb20gXCIuL2V4dGVuZGVkLWVuY29kZS11cmktY29tcG9uZW50XCI7XG5leHBvcnQgKiBmcm9tIFwiLi9nZXQtYXJyYXktaWYtc2luZ2xlLWl0ZW1cIjtcbmV4cG9ydCAqIGZyb20gXCIuL2dldC12YWx1ZS1mcm9tLXRleHQtbm9kZVwiO1xuZXhwb3J0ICogZnJvbSBcIi4vbGF6eS1qc29uXCI7XG5leHBvcnQgKiBmcm9tIFwiLi9wYXJzZS11dGlsc1wiO1xuZXhwb3J0ICogZnJvbSBcIi4vc2VyLXV0aWxzXCI7XG5leHBvcnQgKiBmcm9tIFwiLi9kYXRlLXV0aWxzXCI7XG5leHBvcnQgKiBmcm9tIFwiLi9zcGxpdC1ldmVyeVwiO1xuZXhwb3J0ICogZnJvbSBcIi4vY29uc3RhbnRzXCI7XG5leHBvcnQgdHlwZSB7IERvY3VtZW50VHlwZSwgU2RrRXJyb3IsIFNtaXRoeUV4Y2VwdGlvbiB9IGZyb20gXCJAYXdzLXNkay90eXBlc1wiO1xuIl19
 
 /***/ }),
 
@@ -43507,23 +43663,138 @@ exports.LazyJsonString = LazyJsonString;
 
 /***/ }),
 
-/***/ 2908:
+/***/ 3186:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmV0cnlhYmxlLXRyYWl0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3JldHJ5YWJsZS10cmFpdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBBIHN0cnVjdHVyZSBzaGFwZSB3aXRoIHRoZSBlcnJvciB0cmFpdC5cbiAqIGh0dHBzOi8vYXdzbGFicy5naXRodWIuaW8vc21pdGh5L3NwZWMvY29yZS5odG1sI3JldHJ5YWJsZS10cmFpdFxuICovXG5leHBvcnQgaW50ZXJmYWNlIFJldHJ5YWJsZVRyYWl0IHtcbiAgLyoqXG4gICAqIEluZGljYXRlcyB0aGF0IHRoZSBlcnJvciBpcyBhIHJldHJ5YWJsZSB0aHJvdHRsaW5nIGVycm9yLlxuICAgKi9cbiAgcmVhZG9ubHkgdGhyb3R0bGluZz86IGJvb2xlYW47XG59XG4iXX0=
+exports.handleFloat = exports.expectString = exports.expectNumber = exports.expectBoolean = exports.parseBoolean = void 0;
+/**
+ * Give an input string, strictly parses a boolean value.
+ *
+ * @param value The boolean string to parse.
+ * @returns true for "true", false for "false", otherwise an error is thrown.
+ */
+const parseBoolean = (value) => {
+    switch (value) {
+        case "true":
+            return true;
+        case "false":
+            return false;
+        default:
+            throw new Error(`Unable to parse boolean value "${value}"`);
+    }
+};
+exports.parseBoolean = parseBoolean;
+/*
+ * Asserts a value is a boolean and returns it.
+ *
+ * @param value A value that is expected to be a boolean.
+ * @returns The value if it's a boolean, undefined if it's null/undefined,
+ *   otherwise an error is thrown.
+ */
+const expectBoolean = (value) => {
+    if (value === null || value === undefined) {
+        return undefined;
+    }
+    if (typeof value === "boolean") {
+        return value;
+    }
+    throw new TypeError(`Expected boolean, got ${typeof value}`);
+};
+exports.expectBoolean = expectBoolean;
+/**
+ * Asserts a value is a number and returns it.
+ *
+ * @param value A value that is expected to be a number.
+ * @returns The value if it's a number, undefined if it's null/undefined,
+ *   otherwise an error is thrown.
+ */
+const expectNumber = (value) => {
+    if (value === null || value === undefined) {
+        return undefined;
+    }
+    if (typeof value === "number") {
+        return value;
+    }
+    throw new TypeError(`Expected number, got ${typeof value}`);
+};
+exports.expectNumber = expectNumber;
+/**
+ * Asserts a value is a string and returns it.
+ *
+ * @param value A value that is expected to be a string.
+ * @returns The value if it's a string, undefined if it's null/undefined,
+ *   otherwise an error is thrown.
+ */
+const expectString = (value) => {
+    if (value === null || value === undefined) {
+        return undefined;
+    }
+    if (typeof value === "string") {
+        return value;
+    }
+    throw new TypeError(`Expected string, got ${typeof value}`);
+};
+exports.expectString = expectString;
+/**
+ * Asserts a value is a number and returns it, and also converts string
+ * representations of non-numeric floats into Numbers.
+ *
+ * @param value A number or string representation of a non-numeric float.
+ * @returns The value as a number, undefined if it's null/undefined,
+ *     otherwise an error is thrown.
+ */
+const handleFloat = (value) => {
+    if (typeof value == "string") {
+        switch (value) {
+            case "NaN":
+                return NaN;
+            case "Infinity":
+                return Infinity;
+            case "-Infinity":
+                return -Infinity;
+            default:
+                throw new Error(`Unable to parse float value: ${value}`);
+        }
+    }
+    return exports.expectNumber(value);
+};
+exports.handleFloat = handleFloat;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFyc2UtdXRpbHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvcGFyc2UtdXRpbHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUE7Ozs7O0dBS0c7QUFDSSxNQUFNLFlBQVksR0FBRyxDQUFDLEtBQWEsRUFBVyxFQUFFO0lBQ3JELFFBQVEsS0FBSyxFQUFFO1FBQ2IsS0FBSyxNQUFNO1lBQ1QsT0FBTyxJQUFJLENBQUM7UUFDZCxLQUFLLE9BQU87WUFDVixPQUFPLEtBQUssQ0FBQztRQUNmO1lBQ0UsTUFBTSxJQUFJLEtBQUssQ0FBQyxrQ0FBa0MsS0FBSyxHQUFHLENBQUMsQ0FBQztLQUMvRDtBQUNILENBQUMsQ0FBQztBQVRXLFFBQUEsWUFBWSxnQkFTdkI7QUFFRjs7Ozs7O0dBTUc7QUFDSSxNQUFNLGFBQWEsR0FBRyxDQUFDLEtBQVUsRUFBdUIsRUFBRTtJQUMvRCxJQUFJLEtBQUssS0FBSyxJQUFJLElBQUksS0FBSyxLQUFLLFNBQVMsRUFBRTtRQUN6QyxPQUFPLFNBQVMsQ0FBQztLQUNsQjtJQUNELElBQUksT0FBTyxLQUFLLEtBQUssU0FBUyxFQUFFO1FBQzlCLE9BQU8sS0FBSyxDQUFDO0tBQ2Q7SUFDRCxNQUFNLElBQUksU0FBUyxDQUFDLHlCQUF5QixPQUFPLEtBQUssRUFBRSxDQUFDLENBQUM7QUFDL0QsQ0FBQyxDQUFDO0FBUlcsUUFBQSxhQUFhLGlCQVF4QjtBQUVGOzs7Ozs7R0FNRztBQUNJLE1BQU0sWUFBWSxHQUFHLENBQUMsS0FBVSxFQUFzQixFQUFFO0lBQzdELElBQUksS0FBSyxLQUFLLElBQUksSUFBSSxLQUFLLEtBQUssU0FBUyxFQUFFO1FBQ3pDLE9BQU8sU0FBUyxDQUFDO0tBQ2xCO0lBQ0QsSUFBSSxPQUFPLEtBQUssS0FBSyxRQUFRLEVBQUU7UUFDN0IsT0FBTyxLQUFLLENBQUM7S0FDZDtJQUNELE1BQU0sSUFBSSxTQUFTLENBQUMsd0JBQXdCLE9BQU8sS0FBSyxFQUFFLENBQUMsQ0FBQztBQUM5RCxDQUFDLENBQUM7QUFSVyxRQUFBLFlBQVksZ0JBUXZCO0FBRUY7Ozs7OztHQU1HO0FBQ0ksTUFBTSxZQUFZLEdBQUcsQ0FBQyxLQUFVLEVBQXNCLEVBQUU7SUFDN0QsSUFBSSxLQUFLLEtBQUssSUFBSSxJQUFJLEtBQUssS0FBSyxTQUFTLEVBQUU7UUFDekMsT0FBTyxTQUFTLENBQUM7S0FDbEI7SUFDRCxJQUFJLE9BQU8sS0FBSyxLQUFLLFFBQVEsRUFBRTtRQUM3QixPQUFPLEtBQUssQ0FBQztLQUNkO0lBQ0QsTUFBTSxJQUFJLFNBQVMsQ0FBQyx3QkFBd0IsT0FBTyxLQUFLLEVBQUUsQ0FBQyxDQUFDO0FBQzlELENBQUMsQ0FBQztBQVJXLFFBQUEsWUFBWSxnQkFRdkI7QUFFRjs7Ozs7OztHQU9HO0FBQ0ksTUFBTSxXQUFXLEdBQUcsQ0FBQyxLQUFzQixFQUFzQixFQUFFO0lBQ3hFLElBQUksT0FBTyxLQUFLLElBQUksUUFBUSxFQUFFO1FBQzVCLFFBQVEsS0FBSyxFQUFFO1lBQ2IsS0FBSyxLQUFLO2dCQUNSLE9BQU8sR0FBRyxDQUFDO1lBQ2IsS0FBSyxVQUFVO2dCQUNiLE9BQU8sUUFBUSxDQUFDO1lBQ2xCLEtBQUssV0FBVztnQkFDZCxPQUFPLENBQUMsUUFBUSxDQUFDO1lBQ25CO2dCQUNFLE1BQU0sSUFBSSxLQUFLLENBQUMsZ0NBQWdDLEtBQUssRUFBRSxDQUFDLENBQUM7U0FDNUQ7S0FDRjtJQUNELE9BQU8sb0JBQVksQ0FBQyxLQUFLLENBQUMsQ0FBQztBQUM3QixDQUFDLENBQUM7QUFkVyxRQUFBLFdBQVcsZUFjdEIiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEdpdmUgYW4gaW5wdXQgc3RyaW5nLCBzdHJpY3RseSBwYXJzZXMgYSBib29sZWFuIHZhbHVlLlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBUaGUgYm9vbGVhbiBzdHJpbmcgdG8gcGFyc2UuXG4gKiBAcmV0dXJucyB0cnVlIGZvciBcInRydWVcIiwgZmFsc2UgZm9yIFwiZmFsc2VcIiwgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IHBhcnNlQm9vbGVhbiA9ICh2YWx1ZTogc3RyaW5nKTogYm9vbGVhbiA9PiB7XG4gIHN3aXRjaCAodmFsdWUpIHtcbiAgICBjYXNlIFwidHJ1ZVwiOlxuICAgICAgcmV0dXJuIHRydWU7XG4gICAgY2FzZSBcImZhbHNlXCI6XG4gICAgICByZXR1cm4gZmFsc2U7XG4gICAgZGVmYXVsdDpcbiAgICAgIHRocm93IG5ldyBFcnJvcihgVW5hYmxlIHRvIHBhcnNlIGJvb2xlYW4gdmFsdWUgXCIke3ZhbHVlfVwiYCk7XG4gIH1cbn07XG5cbi8qXG4gKiBBc3NlcnRzIGEgdmFsdWUgaXMgYSBib29sZWFuIGFuZCByZXR1cm5zIGl0LlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIHZhbHVlIHRoYXQgaXMgZXhwZWN0ZWQgdG8gYmUgYSBib29sZWFuLlxuICogQHJldHVybnMgVGhlIHZhbHVlIGlmIGl0J3MgYSBib29sZWFuLCB1bmRlZmluZWQgaWYgaXQncyBudWxsL3VuZGVmaW5lZCxcbiAqICAgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IGV4cGVjdEJvb2xlYW4gPSAodmFsdWU6IGFueSk6IGJvb2xlYW4gfCB1bmRlZmluZWQgPT4ge1xuICBpZiAodmFsdWUgPT09IG51bGwgfHwgdmFsdWUgPT09IHVuZGVmaW5lZCkge1xuICAgIHJldHVybiB1bmRlZmluZWQ7XG4gIH1cbiAgaWYgKHR5cGVvZiB2YWx1ZSA9PT0gXCJib29sZWFuXCIpIHtcbiAgICByZXR1cm4gdmFsdWU7XG4gIH1cbiAgdGhyb3cgbmV3IFR5cGVFcnJvcihgRXhwZWN0ZWQgYm9vbGVhbiwgZ290ICR7dHlwZW9mIHZhbHVlfWApO1xufTtcblxuLyoqXG4gKiBBc3NlcnRzIGEgdmFsdWUgaXMgYSBudW1iZXIgYW5kIHJldHVybnMgaXQuXG4gKlxuICogQHBhcmFtIHZhbHVlIEEgdmFsdWUgdGhhdCBpcyBleHBlY3RlZCB0byBiZSBhIG51bWJlci5cbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBpZiBpdCdzIGEgbnVtYmVyLCB1bmRlZmluZWQgaWYgaXQncyBudWxsL3VuZGVmaW5lZCxcbiAqICAgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IGV4cGVjdE51bWJlciA9ICh2YWx1ZTogYW55KTogbnVtYmVyIHwgdW5kZWZpbmVkID0+IHtcbiAgaWYgKHZhbHVlID09PSBudWxsIHx8IHZhbHVlID09PSB1bmRlZmluZWQpIHtcbiAgICByZXR1cm4gdW5kZWZpbmVkO1xuICB9XG4gIGlmICh0eXBlb2YgdmFsdWUgPT09IFwibnVtYmVyXCIpIHtcbiAgICByZXR1cm4gdmFsdWU7XG4gIH1cbiAgdGhyb3cgbmV3IFR5cGVFcnJvcihgRXhwZWN0ZWQgbnVtYmVyLCBnb3QgJHt0eXBlb2YgdmFsdWV9YCk7XG59O1xuXG4vKipcbiAqIEFzc2VydHMgYSB2YWx1ZSBpcyBhIHN0cmluZyBhbmQgcmV0dXJucyBpdC5cbiAqXG4gKiBAcGFyYW0gdmFsdWUgQSB2YWx1ZSB0aGF0IGlzIGV4cGVjdGVkIHRvIGJlIGEgc3RyaW5nLlxuICogQHJldHVybnMgVGhlIHZhbHVlIGlmIGl0J3MgYSBzdHJpbmcsIHVuZGVmaW5lZCBpZiBpdCdzIG51bGwvdW5kZWZpbmVkLFxuICogICBvdGhlcndpc2UgYW4gZXJyb3IgaXMgdGhyb3duLlxuICovXG5leHBvcnQgY29uc3QgZXhwZWN0U3RyaW5nID0gKHZhbHVlOiBhbnkpOiBzdHJpbmcgfCB1bmRlZmluZWQgPT4ge1xuICBpZiAodmFsdWUgPT09IG51bGwgfHwgdmFsdWUgPT09IHVuZGVmaW5lZCkge1xuICAgIHJldHVybiB1bmRlZmluZWQ7XG4gIH1cbiAgaWYgKHR5cGVvZiB2YWx1ZSA9PT0gXCJzdHJpbmdcIikge1xuICAgIHJldHVybiB2YWx1ZTtcbiAgfVxuICB0aHJvdyBuZXcgVHlwZUVycm9yKGBFeHBlY3RlZCBzdHJpbmcsIGdvdCAke3R5cGVvZiB2YWx1ZX1gKTtcbn07XG5cbi8qKlxuICogQXNzZXJ0cyBhIHZhbHVlIGlzIGEgbnVtYmVyIGFuZCByZXR1cm5zIGl0LCBhbmQgYWxzbyBjb252ZXJ0cyBzdHJpbmdcbiAqIHJlcHJlc2VudGF0aW9ucyBvZiBub24tbnVtZXJpYyBmbG9hdHMgaW50byBOdW1iZXJzLlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBBIG51bWJlciBvciBzdHJpbmcgcmVwcmVzZW50YXRpb24gb2YgYSBub24tbnVtZXJpYyBmbG9hdC5cbiAqIEByZXR1cm5zIFRoZSB2YWx1ZSBhcyBhIG51bWJlciwgdW5kZWZpbmVkIGlmIGl0J3MgbnVsbC91bmRlZmluZWQsXG4gKiAgICAgb3RoZXJ3aXNlIGFuIGVycm9yIGlzIHRocm93bi5cbiAqL1xuZXhwb3J0IGNvbnN0IGhhbmRsZUZsb2F0ID0gKHZhbHVlOiBzdHJpbmcgfCBudW1iZXIpOiBudW1iZXIgfCB1bmRlZmluZWQgPT4ge1xuICBpZiAodHlwZW9mIHZhbHVlID09IFwic3RyaW5nXCIpIHtcbiAgICBzd2l0Y2ggKHZhbHVlKSB7XG4gICAgICBjYXNlIFwiTmFOXCI6XG4gICAgICAgIHJldHVybiBOYU47XG4gICAgICBjYXNlIFwiSW5maW5pdHlcIjpcbiAgICAgICAgcmV0dXJuIEluZmluaXR5O1xuICAgICAgY2FzZSBcIi1JbmZpbml0eVwiOlxuICAgICAgICByZXR1cm4gLUluZmluaXR5O1xuICAgICAgZGVmYXVsdDpcbiAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBVbmFibGUgdG8gcGFyc2UgZmxvYXQgdmFsdWU6ICR7dmFsdWV9YCk7XG4gICAgfVxuICB9XG4gIHJldHVybiBleHBlY3ROdW1iZXIodmFsdWUpO1xufTtcbiJdfQ==
 
 /***/ }),
 
-/***/ 1200:
+/***/ 422:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2RrLWVycm9yLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3Nkay1lcnJvci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTWV0YWRhdGFCZWFyZXIgfSBmcm9tIFwiQGF3cy1zZGsvdHlwZXNcIjtcblxuaW1wb3J0IHsgU21pdGh5RXhjZXB0aW9uIH0gZnJvbSBcIi4vZXhjZXB0aW9uXCI7XG5cbmV4cG9ydCB0eXBlIFNka0Vycm9yID0gRXJyb3IgJiBQYXJ0aWFsPFNtaXRoeUV4Y2VwdGlvbj4gJiBQYXJ0aWFsPE1ldGFkYXRhQmVhcmVyPjtcbiJdfQ==
+exports.serializeFloat = void 0;
+/**
+ * Serializes a number, turning non-numeric values into strings.
+ *
+ * @param value The number to serialize.
+ * @returns A number, or a string if the given number was non-numeric.
+ */
+const serializeFloat = (value) => {
+    // NaN is not equal to everything, including itself.
+    if (value !== value) {
+        return "NaN";
+    }
+    switch (value) {
+        case Infinity:
+            return "Infinity";
+        case -Infinity:
+            return "-Infinity";
+        default:
+            return value;
+    }
+};
+exports.serializeFloat = serializeFloat;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2VyLXV0aWxzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3Nlci11dGlscy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQTs7Ozs7R0FLRztBQUNJLE1BQU0sY0FBYyxHQUFHLENBQUMsS0FBYSxFQUFtQixFQUFFO0lBQy9ELG9EQUFvRDtJQUNwRCxJQUFJLEtBQUssS0FBSyxLQUFLLEVBQUU7UUFDbkIsT0FBTyxLQUFLLENBQUM7S0FDZDtJQUNELFFBQVEsS0FBSyxFQUFFO1FBQ2IsS0FBSyxRQUFRO1lBQ1gsT0FBTyxVQUFVLENBQUM7UUFDcEIsS0FBSyxDQUFDLFFBQVE7WUFDWixPQUFPLFdBQVcsQ0FBQztRQUNyQjtZQUNFLE9BQU8sS0FBSyxDQUFDO0tBQ2hCO0FBQ0gsQ0FBQyxDQUFDO0FBYlcsUUFBQSxjQUFjLGtCQWF6QiIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogU2VyaWFsaXplcyBhIG51bWJlciwgdHVybmluZyBub24tbnVtZXJpYyB2YWx1ZXMgaW50byBzdHJpbmdzLlxuICpcbiAqIEBwYXJhbSB2YWx1ZSBUaGUgbnVtYmVyIHRvIHNlcmlhbGl6ZS5cbiAqIEByZXR1cm5zIEEgbnVtYmVyLCBvciBhIHN0cmluZyBpZiB0aGUgZ2l2ZW4gbnVtYmVyIHdhcyBub24tbnVtZXJpYy5cbiAqL1xuZXhwb3J0IGNvbnN0IHNlcmlhbGl6ZUZsb2F0ID0gKHZhbHVlOiBudW1iZXIpOiBzdHJpbmcgfCBudW1iZXIgPT4ge1xuICAvLyBOYU4gaXMgbm90IGVxdWFsIHRvIGV2ZXJ5dGhpbmcsIGluY2x1ZGluZyBpdHNlbGYuXG4gIGlmICh2YWx1ZSAhPT0gdmFsdWUpIHtcbiAgICByZXR1cm4gXCJOYU5cIjtcbiAgfVxuICBzd2l0Y2ggKHZhbHVlKSB7XG4gICAgY2FzZSBJbmZpbml0eTpcbiAgICAgIHJldHVybiBcIkluZmluaXR5XCI7XG4gICAgY2FzZSAtSW5maW5pdHk6XG4gICAgICByZXR1cm4gXCItSW5maW5pdHlcIjtcbiAgICBkZWZhdWx0OlxuICAgICAgcmV0dXJuIHZhbHVlO1xuICB9XG59O1xuIl19
 
 /***/ }),
 
@@ -43743,6 +44014,40 @@ const fromString = (input, encoding) => {
 };
 exports.fromString = fromString;
 //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsOERBQXlEO0FBQ3pELG1DQUFnQztBQUV6QixNQUFNLGVBQWUsR0FBRyxDQUFDLEtBQWtCLEVBQUUsTUFBTSxHQUFHLENBQUMsRUFBRSxTQUFpQixLQUFLLENBQUMsVUFBVSxHQUFHLE1BQU0sRUFBVSxFQUFFO0lBQ3BILElBQUksQ0FBQywrQkFBYSxDQUFDLEtBQUssQ0FBQyxFQUFFO1FBQ3pCLE1BQU0sSUFBSSxTQUFTLENBQUMsMkRBQTJELE9BQU8sS0FBSyxLQUFLLEtBQUssR0FBRyxDQUFDLENBQUM7S0FDM0c7SUFFRCxPQUFPLGVBQU0sQ0FBQyxJQUFJLENBQUMsS0FBSyxFQUFFLE1BQU0sRUFBRSxNQUFNLENBQUMsQ0FBQztBQUM1QyxDQUFDLENBQUM7QUFOVyxRQUFBLGVBQWUsbUJBTTFCO0FBSUssTUFBTSxVQUFVLEdBQUcsQ0FBQyxLQUFhLEVBQUUsUUFBeUIsRUFBVSxFQUFFO0lBQzdFLElBQUksT0FBTyxLQUFLLEtBQUssUUFBUSxFQUFFO1FBQzdCLE1BQU0sSUFBSSxTQUFTLENBQUMsOERBQThELE9BQU8sS0FBSyxLQUFLLEtBQUssR0FBRyxDQUFDLENBQUM7S0FDOUc7SUFFRCxPQUFPLFFBQVEsQ0FBQyxDQUFDLENBQUMsZUFBTSxDQUFDLElBQUksQ0FBQyxLQUFLLEVBQUUsUUFBUSxDQUFDLENBQUMsQ0FBQyxDQUFDLGVBQU0sQ0FBQyxJQUFJLENBQUMsS0FBSyxDQUFDLENBQUM7QUFDdEUsQ0FBQyxDQUFDO0FBTlcsUUFBQSxVQUFVLGNBTXJCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgaXNBcnJheUJ1ZmZlciB9IGZyb20gXCJAYXdzLXNkay9pcy1hcnJheS1idWZmZXJcIjtcbmltcG9ydCB7IEJ1ZmZlciB9IGZyb20gXCJidWZmZXJcIjtcblxuZXhwb3J0IGNvbnN0IGZyb21BcnJheUJ1ZmZlciA9IChpbnB1dDogQXJyYXlCdWZmZXIsIG9mZnNldCA9IDAsIGxlbmd0aDogbnVtYmVyID0gaW5wdXQuYnl0ZUxlbmd0aCAtIG9mZnNldCk6IEJ1ZmZlciA9PiB7XG4gIGlmICghaXNBcnJheUJ1ZmZlcihpbnB1dCkpIHtcbiAgICB0aHJvdyBuZXcgVHlwZUVycm9yKGBUaGUgXCJpbnB1dFwiIGFyZ3VtZW50IG11c3QgYmUgQXJyYXlCdWZmZXIuIFJlY2VpdmVkIHR5cGUgJHt0eXBlb2YgaW5wdXR9ICgke2lucHV0fSlgKTtcbiAgfVxuXG4gIHJldHVybiBCdWZmZXIuZnJvbShpbnB1dCwgb2Zmc2V0LCBsZW5ndGgpO1xufTtcblxuZXhwb3J0IHR5cGUgU3RyaW5nRW5jb2RpbmcgPSBcImFzY2lpXCIgfCBcInV0ZjhcIiB8IFwidXRmMTZsZVwiIHwgXCJ1Y3MyXCIgfCBcImJhc2U2NFwiIHwgXCJsYXRpbjFcIiB8IFwiYmluYXJ5XCIgfCBcImhleFwiO1xuXG5leHBvcnQgY29uc3QgZnJvbVN0cmluZyA9IChpbnB1dDogc3RyaW5nLCBlbmNvZGluZz86IFN0cmluZ0VuY29kaW5nKTogQnVmZmVyID0+IHtcbiAgaWYgKHR5cGVvZiBpbnB1dCAhPT0gXCJzdHJpbmdcIikge1xuICAgIHRocm93IG5ldyBUeXBlRXJyb3IoYFRoZSBcImlucHV0XCIgYXJndW1lbnQgbXVzdCBiZSBvZiB0eXBlIHN0cmluZy4gUmVjZWl2ZWQgdHlwZSAke3R5cGVvZiBpbnB1dH0gKCR7aW5wdXR9KWApO1xuICB9XG5cbiAgcmV0dXJuIGVuY29kaW5nID8gQnVmZmVyLmZyb20oaW5wdXQsIGVuY29kaW5nKSA6IEJ1ZmZlci5mcm9tKGlucHV0KTtcbn07XG4iXX0=
+
+/***/ }),
+
+/***/ 2565:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getMasterProfileName = exports.parseKnownFiles = exports.DEFAULT_PROFILE = exports.ENV_PROFILE = void 0;
+const shared_ini_file_loader_1 = __nccwpck_require__(4847);
+exports.ENV_PROFILE = "AWS_PROFILE";
+exports.DEFAULT_PROFILE = "default";
+/**
+ * Load profiles from credentials and config INI files and normalize them into a
+ * single profile list.
+ *
+ * @internal
+ */
+const parseKnownFiles = async (init) => {
+    const { loadedConfig = shared_ini_file_loader_1.loadSharedConfigFiles(init) } = init;
+    const parsedFiles = await loadedConfig;
+    return {
+        ...parsedFiles.configFile,
+        ...parsedFiles.credentialsFile,
+    };
+};
+exports.parseKnownFiles = parseKnownFiles;
+/**
+ * @internal
+ */
+const getMasterProfileName = (init) => init.profile || process.env[exports.ENV_PROFILE] || exports.DEFAULT_PROFILE;
+exports.getMasterProfileName = getMasterProfileName;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsNEVBS3lDO0FBRTVCLFFBQUEsV0FBVyxHQUFHLGFBQWEsQ0FBQztBQUM1QixRQUFBLGVBQWUsR0FBRyxTQUFTLENBQUM7QUFpQnpDOzs7OztHQUtHO0FBQ0ksTUFBTSxlQUFlLEdBQUcsS0FBSyxFQUFFLElBQXVCLEVBQTBCLEVBQUU7SUFDdkYsTUFBTSxFQUFFLFlBQVksR0FBRyw4Q0FBcUIsQ0FBQyxJQUFJLENBQUMsRUFBRSxHQUFHLElBQUksQ0FBQztJQUU1RCxNQUFNLFdBQVcsR0FBRyxNQUFNLFlBQVksQ0FBQztJQUN2QyxPQUFPO1FBQ0wsR0FBRyxXQUFXLENBQUMsVUFBVTtRQUN6QixHQUFHLFdBQVcsQ0FBQyxlQUFlO0tBQy9CLENBQUM7QUFDSixDQUFDLENBQUM7QUFSVyxRQUFBLGVBQWUsbUJBUTFCO0FBRUY7O0dBRUc7QUFDSSxNQUFNLG9CQUFvQixHQUFHLENBQUMsSUFBMEIsRUFBVSxFQUFFLENBQ3pFLElBQUksQ0FBQyxPQUFPLElBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyxtQkFBVyxDQUFDLElBQUksdUJBQWUsQ0FBQztBQURqRCxRQUFBLG9CQUFvQix3QkFDNkIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1xuICBsb2FkU2hhcmVkQ29uZmlnRmlsZXMsXG4gIFBhcnNlZEluaURhdGEsXG4gIFNoYXJlZENvbmZpZ0ZpbGVzLFxuICBTaGFyZWRDb25maWdJbml0LFxufSBmcm9tIFwiQGF3cy1zZGsvc2hhcmVkLWluaS1maWxlLWxvYWRlclwiO1xuXG5leHBvcnQgY29uc3QgRU5WX1BST0ZJTEUgPSBcIkFXU19QUk9GSUxFXCI7XG5leHBvcnQgY29uc3QgREVGQVVMVF9QUk9GSUxFID0gXCJkZWZhdWx0XCI7XG5cbmV4cG9ydCBpbnRlcmZhY2UgU291cmNlUHJvZmlsZUluaXQgZXh0ZW5kcyBTaGFyZWRDb25maWdJbml0IHtcbiAgLyoqXG4gICAqIFRoZSBjb25maWd1cmF0aW9uIHByb2ZpbGUgdG8gdXNlLlxuICAgKi9cbiAgcHJvZmlsZT86IHN0cmluZztcblxuICAvKipcbiAgICogQSBwcm9taXNlIHRoYXQgd2lsbCBiZSByZXNvbHZlZCB3aXRoIGxvYWRlZCBhbmQgcGFyc2VkIGNyZWRlbnRpYWxzIGZpbGVzLlxuICAgKiBVc2VkIHRvIGF2b2lkIGxvYWRpbmcgc2hhcmVkIGNvbmZpZyBmaWxlcyBtdWx0aXBsZSB0aW1lcy5cbiAgICpcbiAgICogQGludGVybmFsXG4gICAqL1xuICBsb2FkZWRDb25maWc/OiBQcm9taXNlPFNoYXJlZENvbmZpZ0ZpbGVzPjtcbn1cblxuLyoqXG4gKiBMb2FkIHByb2ZpbGVzIGZyb20gY3JlZGVudGlhbHMgYW5kIGNvbmZpZyBJTkkgZmlsZXMgYW5kIG5vcm1hbGl6ZSB0aGVtIGludG8gYVxuICogc2luZ2xlIHByb2ZpbGUgbGlzdC5cbiAqXG4gKiBAaW50ZXJuYWxcbiAqL1xuZXhwb3J0IGNvbnN0IHBhcnNlS25vd25GaWxlcyA9IGFzeW5jIChpbml0OiBTb3VyY2VQcm9maWxlSW5pdCk6IFByb21pc2U8UGFyc2VkSW5pRGF0YT4gPT4ge1xuICBjb25zdCB7IGxvYWRlZENvbmZpZyA9IGxvYWRTaGFyZWRDb25maWdGaWxlcyhpbml0KSB9ID0gaW5pdDtcblxuICBjb25zdCBwYXJzZWRGaWxlcyA9IGF3YWl0IGxvYWRlZENvbmZpZztcbiAgcmV0dXJuIHtcbiAgICAuLi5wYXJzZWRGaWxlcy5jb25maWdGaWxlLFxuICAgIC4uLnBhcnNlZEZpbGVzLmNyZWRlbnRpYWxzRmlsZSxcbiAgfTtcbn07XG5cbi8qKlxuICogQGludGVybmFsXG4gKi9cbmV4cG9ydCBjb25zdCBnZXRNYXN0ZXJQcm9maWxlTmFtZSA9IChpbml0OiB7IHByb2ZpbGU/OiBzdHJpbmcgfSk6IHN0cmluZyA9PlxuICBpbml0LnByb2ZpbGUgfHwgcHJvY2Vzcy5lbnZbRU5WX1BST0ZJTEVdIHx8IERFRkFVTFRfUFJPRklMRTtcbiJdfQ==
 
 /***/ }),
 
@@ -44391,8 +44696,9 @@ function _objectWithoutProperties(source, excluded) {
   return target;
 }
 
-const VERSION = "3.4.0";
+const VERSION = "3.5.1";
 
+const _excluded = ["authStrategy"];
 class Octokit {
   constructor(options = {}) {
     const hook = new beforeAfterHook.Collection();
@@ -44454,7 +44760,7 @@ class Octokit {
       const {
         authStrategy
       } = options,
-            otherOptions = _objectWithoutProperties(options, ["authStrategy"]);
+            otherOptions = _objectWithoutProperties(options, _excluded);
 
       const auth = authStrategy(Object.assign({
         request: this.request,
@@ -44896,7 +45202,7 @@ function withDefaults(oldDefaults, newDefaults) {
   });
 }
 
-const VERSION = "6.0.11";
+const VERSION = "6.0.12";
 
 const userAgent = `octokit-endpoint.js/${VERSION} ${universalUserAgent.getUserAgent()}`; // DEFAULTS has all properties set that EndpointOptions has, except url.
 // So we use RequestParameters and add method as additional required property.
@@ -44933,7 +45239,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 var request = __nccwpck_require__(6234);
 var universalUserAgent = __nccwpck_require__(5030);
 
-const VERSION = "4.6.2";
+const VERSION = "4.6.4";
 
 class GraphqlError extends Error {
   constructor(request, response) {
@@ -45054,7 +45360,60 @@ exports.withCustomRequest = withCustomRequest;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 
-const VERSION = "2.13.3";
+const VERSION = "2.15.1";
+
+function ownKeys(object, enumerableOnly) {
+  var keys = Object.keys(object);
+
+  if (Object.getOwnPropertySymbols) {
+    var symbols = Object.getOwnPropertySymbols(object);
+
+    if (enumerableOnly) {
+      symbols = symbols.filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+      });
+    }
+
+    keys.push.apply(keys, symbols);
+  }
+
+  return keys;
+}
+
+function _objectSpread2(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    if (i % 2) {
+      ownKeys(Object(source), true).forEach(function (key) {
+        _defineProperty(target, key, source[key]);
+      });
+    } else if (Object.getOwnPropertyDescriptors) {
+      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+      ownKeys(Object(source)).forEach(function (key) {
+        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+      });
+    }
+  }
+
+  return target;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
 
 /**
  * Some “list” response that can be paginated have a different response structure
@@ -45073,6 +45432,13 @@ const VERSION = "2.13.3";
  * otherwise match: https://developer.github.com/v3/repos/statuses/#get-the-combined-status-for-a-specific-ref
  */
 function normalizePaginatedListResponse(response) {
+  // endpoints can respond with 204 if repository is empty
+  if (!response.data) {
+    return _objectSpread2(_objectSpread2({}, response), {}, {
+      data: []
+    });
+  }
+
   const responseNeedsNormalization = "total_count" in response.data && !("url" in response.data);
   if (!responseNeedsNormalization) return response; // keep the additional properties intact as there is currently no other way
   // to retrieve the same information.
@@ -45111,19 +45477,32 @@ function iterator(octokit, route, parameters) {
         if (!url) return {
           done: true
         };
-        const response = await requestMethod({
-          method,
-          url,
-          headers
-        });
-        const normalizedResponse = normalizePaginatedListResponse(response); // `response.headers.link` format:
-        // '<https://api.github.com/users/aseemk/followers?page=2>; rel="next", <https://api.github.com/users/aseemk/followers?page=2>; rel="last"'
-        // sets `url` to undefined if "next" URL is not present or `link` header is not set
 
-        url = ((normalizedResponse.headers.link || "").match(/<([^>]+)>;\s*rel="next"/) || [])[1];
-        return {
-          value: normalizedResponse
-        };
+        try {
+          const response = await requestMethod({
+            method,
+            url,
+            headers
+          });
+          const normalizedResponse = normalizePaginatedListResponse(response); // `response.headers.link` format:
+          // '<https://api.github.com/users/aseemk/followers?page=2>; rel="next", <https://api.github.com/users/aseemk/followers?page=2>; rel="last"'
+          // sets `url` to undefined if "next" URL is not present or `link` header is not set
+
+          url = ((normalizedResponse.headers.link || "").match(/<([^>]+)>;\s*rel="next"/) || [])[1];
+          return {
+            value: normalizedResponse
+          };
+        } catch (error) {
+          if (error.status !== 409) throw error;
+          url = "";
+          return {
+            value: {
+              status: 200,
+              headers: {},
+              data: []
+            }
+          };
+        }
       }
 
     })
@@ -45165,7 +45544,7 @@ const composePaginateRest = Object.assign(paginate, {
   iterator
 });
 
-const paginatingEndpoints = ["GET /app/installations", "GET /applications/grants", "GET /authorizations", "GET /enterprises/{enterprise}/actions/permissions/organizations", "GET /enterprises/{enterprise}/actions/runner-groups", "GET /enterprises/{enterprise}/actions/runner-groups/{runner_group_id}/organizations", "GET /enterprises/{enterprise}/actions/runner-groups/{runner_group_id}/runners", "GET /enterprises/{enterprise}/actions/runners", "GET /enterprises/{enterprise}/actions/runners/downloads", "GET /events", "GET /gists", "GET /gists/public", "GET /gists/starred", "GET /gists/{gist_id}/comments", "GET /gists/{gist_id}/commits", "GET /gists/{gist_id}/forks", "GET /installation/repositories", "GET /issues", "GET /marketplace_listing/plans", "GET /marketplace_listing/plans/{plan_id}/accounts", "GET /marketplace_listing/stubbed/plans", "GET /marketplace_listing/stubbed/plans/{plan_id}/accounts", "GET /networks/{owner}/{repo}/events", "GET /notifications", "GET /organizations", "GET /orgs/{org}/actions/permissions/repositories", "GET /orgs/{org}/actions/runner-groups", "GET /orgs/{org}/actions/runner-groups/{runner_group_id}/repositories", "GET /orgs/{org}/actions/runner-groups/{runner_group_id}/runners", "GET /orgs/{org}/actions/runners", "GET /orgs/{org}/actions/runners/downloads", "GET /orgs/{org}/actions/secrets", "GET /orgs/{org}/actions/secrets/{secret_name}/repositories", "GET /orgs/{org}/blocks", "GET /orgs/{org}/credential-authorizations", "GET /orgs/{org}/events", "GET /orgs/{org}/failed_invitations", "GET /orgs/{org}/hooks", "GET /orgs/{org}/installations", "GET /orgs/{org}/invitations", "GET /orgs/{org}/invitations/{invitation_id}/teams", "GET /orgs/{org}/issues", "GET /orgs/{org}/members", "GET /orgs/{org}/migrations", "GET /orgs/{org}/migrations/{migration_id}/repositories", "GET /orgs/{org}/outside_collaborators", "GET /orgs/{org}/projects", "GET /orgs/{org}/public_members", "GET /orgs/{org}/repos", "GET /orgs/{org}/team-sync/groups", "GET /orgs/{org}/teams", "GET /orgs/{org}/teams/{team_slug}/discussions", "GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments", "GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}/reactions", "GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/reactions", "GET /orgs/{org}/teams/{team_slug}/invitations", "GET /orgs/{org}/teams/{team_slug}/members", "GET /orgs/{org}/teams/{team_slug}/projects", "GET /orgs/{org}/teams/{team_slug}/repos", "GET /orgs/{org}/teams/{team_slug}/team-sync/group-mappings", "GET /orgs/{org}/teams/{team_slug}/teams", "GET /projects/columns/{column_id}/cards", "GET /projects/{project_id}/collaborators", "GET /projects/{project_id}/columns", "GET /repos/{owner}/{repo}/actions/artifacts", "GET /repos/{owner}/{repo}/actions/runners", "GET /repos/{owner}/{repo}/actions/runners/downloads", "GET /repos/{owner}/{repo}/actions/runs", "GET /repos/{owner}/{repo}/actions/runs/{run_id}/artifacts", "GET /repos/{owner}/{repo}/actions/runs/{run_id}/jobs", "GET /repos/{owner}/{repo}/actions/secrets", "GET /repos/{owner}/{repo}/actions/workflows", "GET /repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs", "GET /repos/{owner}/{repo}/assignees", "GET /repos/{owner}/{repo}/branches", "GET /repos/{owner}/{repo}/check-runs/{check_run_id}/annotations", "GET /repos/{owner}/{repo}/check-suites/{check_suite_id}/check-runs", "GET /repos/{owner}/{repo}/code-scanning/alerts", "GET /repos/{owner}/{repo}/code-scanning/alerts/{alert_number}/instances", "GET /repos/{owner}/{repo}/code-scanning/analyses", "GET /repos/{owner}/{repo}/collaborators", "GET /repos/{owner}/{repo}/comments", "GET /repos/{owner}/{repo}/comments/{comment_id}/reactions", "GET /repos/{owner}/{repo}/commits", "GET /repos/{owner}/{repo}/commits/{commit_sha}/branches-where-head", "GET /repos/{owner}/{repo}/commits/{commit_sha}/comments", "GET /repos/{owner}/{repo}/commits/{commit_sha}/pulls", "GET /repos/{owner}/{repo}/commits/{ref}/check-runs", "GET /repos/{owner}/{repo}/commits/{ref}/check-suites", "GET /repos/{owner}/{repo}/commits/{ref}/statuses", "GET /repos/{owner}/{repo}/contributors", "GET /repos/{owner}/{repo}/deployments", "GET /repos/{owner}/{repo}/deployments/{deployment_id}/statuses", "GET /repos/{owner}/{repo}/events", "GET /repos/{owner}/{repo}/forks", "GET /repos/{owner}/{repo}/git/matching-refs/{ref}", "GET /repos/{owner}/{repo}/hooks", "GET /repos/{owner}/{repo}/invitations", "GET /repos/{owner}/{repo}/issues", "GET /repos/{owner}/{repo}/issues/comments", "GET /repos/{owner}/{repo}/issues/comments/{comment_id}/reactions", "GET /repos/{owner}/{repo}/issues/events", "GET /repos/{owner}/{repo}/issues/{issue_number}/comments", "GET /repos/{owner}/{repo}/issues/{issue_number}/events", "GET /repos/{owner}/{repo}/issues/{issue_number}/labels", "GET /repos/{owner}/{repo}/issues/{issue_number}/reactions", "GET /repos/{owner}/{repo}/issues/{issue_number}/timeline", "GET /repos/{owner}/{repo}/keys", "GET /repos/{owner}/{repo}/labels", "GET /repos/{owner}/{repo}/milestones", "GET /repos/{owner}/{repo}/milestones/{milestone_number}/labels", "GET /repos/{owner}/{repo}/notifications", "GET /repos/{owner}/{repo}/pages/builds", "GET /repos/{owner}/{repo}/projects", "GET /repos/{owner}/{repo}/pulls", "GET /repos/{owner}/{repo}/pulls/comments", "GET /repos/{owner}/{repo}/pulls/comments/{comment_id}/reactions", "GET /repos/{owner}/{repo}/pulls/{pull_number}/comments", "GET /repos/{owner}/{repo}/pulls/{pull_number}/commits", "GET /repos/{owner}/{repo}/pulls/{pull_number}/files", "GET /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers", "GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews", "GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/comments", "GET /repos/{owner}/{repo}/releases", "GET /repos/{owner}/{repo}/releases/{release_id}/assets", "GET /repos/{owner}/{repo}/secret-scanning/alerts", "GET /repos/{owner}/{repo}/stargazers", "GET /repos/{owner}/{repo}/subscribers", "GET /repos/{owner}/{repo}/tags", "GET /repos/{owner}/{repo}/teams", "GET /repositories", "GET /repositories/{repository_id}/environments/{environment_name}/secrets", "GET /scim/v2/enterprises/{enterprise}/Groups", "GET /scim/v2/enterprises/{enterprise}/Users", "GET /scim/v2/organizations/{org}/Users", "GET /search/code", "GET /search/commits", "GET /search/issues", "GET /search/labels", "GET /search/repositories", "GET /search/topics", "GET /search/users", "GET /teams/{team_id}/discussions", "GET /teams/{team_id}/discussions/{discussion_number}/comments", "GET /teams/{team_id}/discussions/{discussion_number}/comments/{comment_number}/reactions", "GET /teams/{team_id}/discussions/{discussion_number}/reactions", "GET /teams/{team_id}/invitations", "GET /teams/{team_id}/members", "GET /teams/{team_id}/projects", "GET /teams/{team_id}/repos", "GET /teams/{team_id}/team-sync/group-mappings", "GET /teams/{team_id}/teams", "GET /user/blocks", "GET /user/emails", "GET /user/followers", "GET /user/following", "GET /user/gpg_keys", "GET /user/installations", "GET /user/installations/{installation_id}/repositories", "GET /user/issues", "GET /user/keys", "GET /user/marketplace_purchases", "GET /user/marketplace_purchases/stubbed", "GET /user/memberships/orgs", "GET /user/migrations", "GET /user/migrations/{migration_id}/repositories", "GET /user/orgs", "GET /user/public_emails", "GET /user/repos", "GET /user/repository_invitations", "GET /user/starred", "GET /user/subscriptions", "GET /user/teams", "GET /users", "GET /users/{username}/events", "GET /users/{username}/events/orgs/{org}", "GET /users/{username}/events/public", "GET /users/{username}/followers", "GET /users/{username}/following", "GET /users/{username}/gists", "GET /users/{username}/gpg_keys", "GET /users/{username}/keys", "GET /users/{username}/orgs", "GET /users/{username}/projects", "GET /users/{username}/received_events", "GET /users/{username}/received_events/public", "GET /users/{username}/repos", "GET /users/{username}/starred", "GET /users/{username}/subscriptions"];
+const paginatingEndpoints = ["GET /app/hook/deliveries", "GET /app/installations", "GET /applications/grants", "GET /authorizations", "GET /enterprises/{enterprise}/actions/permissions/organizations", "GET /enterprises/{enterprise}/actions/runner-groups", "GET /enterprises/{enterprise}/actions/runner-groups/{runner_group_id}/organizations", "GET /enterprises/{enterprise}/actions/runner-groups/{runner_group_id}/runners", "GET /enterprises/{enterprise}/actions/runners", "GET /enterprises/{enterprise}/actions/runners/downloads", "GET /events", "GET /gists", "GET /gists/public", "GET /gists/starred", "GET /gists/{gist_id}/comments", "GET /gists/{gist_id}/commits", "GET /gists/{gist_id}/forks", "GET /installation/repositories", "GET /issues", "GET /marketplace_listing/plans", "GET /marketplace_listing/plans/{plan_id}/accounts", "GET /marketplace_listing/stubbed/plans", "GET /marketplace_listing/stubbed/plans/{plan_id}/accounts", "GET /networks/{owner}/{repo}/events", "GET /notifications", "GET /organizations", "GET /orgs/{org}/actions/permissions/repositories", "GET /orgs/{org}/actions/runner-groups", "GET /orgs/{org}/actions/runner-groups/{runner_group_id}/repositories", "GET /orgs/{org}/actions/runner-groups/{runner_group_id}/runners", "GET /orgs/{org}/actions/runners", "GET /orgs/{org}/actions/runners/downloads", "GET /orgs/{org}/actions/secrets", "GET /orgs/{org}/actions/secrets/{secret_name}/repositories", "GET /orgs/{org}/blocks", "GET /orgs/{org}/credential-authorizations", "GET /orgs/{org}/events", "GET /orgs/{org}/failed_invitations", "GET /orgs/{org}/hooks", "GET /orgs/{org}/hooks/{hook_id}/deliveries", "GET /orgs/{org}/installations", "GET /orgs/{org}/invitations", "GET /orgs/{org}/invitations/{invitation_id}/teams", "GET /orgs/{org}/issues", "GET /orgs/{org}/members", "GET /orgs/{org}/migrations", "GET /orgs/{org}/migrations/{migration_id}/repositories", "GET /orgs/{org}/outside_collaborators", "GET /orgs/{org}/projects", "GET /orgs/{org}/public_members", "GET /orgs/{org}/repos", "GET /orgs/{org}/team-sync/groups", "GET /orgs/{org}/teams", "GET /orgs/{org}/teams/{team_slug}/discussions", "GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments", "GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}/reactions", "GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/reactions", "GET /orgs/{org}/teams/{team_slug}/invitations", "GET /orgs/{org}/teams/{team_slug}/members", "GET /orgs/{org}/teams/{team_slug}/projects", "GET /orgs/{org}/teams/{team_slug}/repos", "GET /orgs/{org}/teams/{team_slug}/team-sync/group-mappings", "GET /orgs/{org}/teams/{team_slug}/teams", "GET /projects/columns/{column_id}/cards", "GET /projects/{project_id}/collaborators", "GET /projects/{project_id}/columns", "GET /repos/{owner}/{repo}/actions/artifacts", "GET /repos/{owner}/{repo}/actions/runners", "GET /repos/{owner}/{repo}/actions/runners/downloads", "GET /repos/{owner}/{repo}/actions/runs", "GET /repos/{owner}/{repo}/actions/runs/{run_id}/artifacts", "GET /repos/{owner}/{repo}/actions/runs/{run_id}/jobs", "GET /repos/{owner}/{repo}/actions/secrets", "GET /repos/{owner}/{repo}/actions/workflows", "GET /repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs", "GET /repos/{owner}/{repo}/assignees", "GET /repos/{owner}/{repo}/autolinks", "GET /repos/{owner}/{repo}/branches", "GET /repos/{owner}/{repo}/check-runs/{check_run_id}/annotations", "GET /repos/{owner}/{repo}/check-suites/{check_suite_id}/check-runs", "GET /repos/{owner}/{repo}/code-scanning/alerts", "GET /repos/{owner}/{repo}/code-scanning/alerts/{alert_number}/instances", "GET /repos/{owner}/{repo}/code-scanning/analyses", "GET /repos/{owner}/{repo}/collaborators", "GET /repos/{owner}/{repo}/comments", "GET /repos/{owner}/{repo}/comments/{comment_id}/reactions", "GET /repos/{owner}/{repo}/commits", "GET /repos/{owner}/{repo}/commits/{commit_sha}/branches-where-head", "GET /repos/{owner}/{repo}/commits/{commit_sha}/comments", "GET /repos/{owner}/{repo}/commits/{commit_sha}/pulls", "GET /repos/{owner}/{repo}/commits/{ref}/check-runs", "GET /repos/{owner}/{repo}/commits/{ref}/check-suites", "GET /repos/{owner}/{repo}/commits/{ref}/statuses", "GET /repos/{owner}/{repo}/contributors", "GET /repos/{owner}/{repo}/deployments", "GET /repos/{owner}/{repo}/deployments/{deployment_id}/statuses", "GET /repos/{owner}/{repo}/events", "GET /repos/{owner}/{repo}/forks", "GET /repos/{owner}/{repo}/git/matching-refs/{ref}", "GET /repos/{owner}/{repo}/hooks", "GET /repos/{owner}/{repo}/hooks/{hook_id}/deliveries", "GET /repos/{owner}/{repo}/invitations", "GET /repos/{owner}/{repo}/issues", "GET /repos/{owner}/{repo}/issues/comments", "GET /repos/{owner}/{repo}/issues/comments/{comment_id}/reactions", "GET /repos/{owner}/{repo}/issues/events", "GET /repos/{owner}/{repo}/issues/{issue_number}/comments", "GET /repos/{owner}/{repo}/issues/{issue_number}/events", "GET /repos/{owner}/{repo}/issues/{issue_number}/labels", "GET /repos/{owner}/{repo}/issues/{issue_number}/reactions", "GET /repos/{owner}/{repo}/issues/{issue_number}/timeline", "GET /repos/{owner}/{repo}/keys", "GET /repos/{owner}/{repo}/labels", "GET /repos/{owner}/{repo}/milestones", "GET /repos/{owner}/{repo}/milestones/{milestone_number}/labels", "GET /repos/{owner}/{repo}/notifications", "GET /repos/{owner}/{repo}/pages/builds", "GET /repos/{owner}/{repo}/projects", "GET /repos/{owner}/{repo}/pulls", "GET /repos/{owner}/{repo}/pulls/comments", "GET /repos/{owner}/{repo}/pulls/comments/{comment_id}/reactions", "GET /repos/{owner}/{repo}/pulls/{pull_number}/comments", "GET /repos/{owner}/{repo}/pulls/{pull_number}/commits", "GET /repos/{owner}/{repo}/pulls/{pull_number}/files", "GET /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers", "GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews", "GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/comments", "GET /repos/{owner}/{repo}/releases", "GET /repos/{owner}/{repo}/releases/{release_id}/assets", "GET /repos/{owner}/{repo}/secret-scanning/alerts", "GET /repos/{owner}/{repo}/stargazers", "GET /repos/{owner}/{repo}/subscribers", "GET /repos/{owner}/{repo}/tags", "GET /repos/{owner}/{repo}/teams", "GET /repositories", "GET /repositories/{repository_id}/environments/{environment_name}/secrets", "GET /scim/v2/enterprises/{enterprise}/Groups", "GET /scim/v2/enterprises/{enterprise}/Users", "GET /scim/v2/organizations/{org}/Users", "GET /search/code", "GET /search/commits", "GET /search/issues", "GET /search/labels", "GET /search/repositories", "GET /search/topics", "GET /search/users", "GET /teams/{team_id}/discussions", "GET /teams/{team_id}/discussions/{discussion_number}/comments", "GET /teams/{team_id}/discussions/{discussion_number}/comments/{comment_number}/reactions", "GET /teams/{team_id}/discussions/{discussion_number}/reactions", "GET /teams/{team_id}/invitations", "GET /teams/{team_id}/members", "GET /teams/{team_id}/projects", "GET /teams/{team_id}/repos", "GET /teams/{team_id}/team-sync/group-mappings", "GET /teams/{team_id}/teams", "GET /user/blocks", "GET /user/emails", "GET /user/followers", "GET /user/following", "GET /user/gpg_keys", "GET /user/installations", "GET /user/installations/{installation_id}/repositories", "GET /user/issues", "GET /user/keys", "GET /user/marketplace_purchases", "GET /user/marketplace_purchases/stubbed", "GET /user/memberships/orgs", "GET /user/migrations", "GET /user/migrations/{migration_id}/repositories", "GET /user/orgs", "GET /user/public_emails", "GET /user/repos", "GET /user/repository_invitations", "GET /user/starred", "GET /user/subscriptions", "GET /user/teams", "GET /users", "GET /users/{username}/events", "GET /users/{username}/events/orgs/{org}", "GET /users/{username}/events/public", "GET /users/{username}/followers", "GET /users/{username}/following", "GET /users/{username}/gists", "GET /users/{username}/gpg_keys", "GET /users/{username}/keys", "GET /users/{username}/orgs", "GET /users/{username}/projects", "GET /users/{username}/received_events", "GET /users/{username}/received_events/public", "GET /users/{username}/repos", "GET /users/{username}/starred", "GET /users/{username}/subscriptions"];
 
 function isPaginatingEndpoint(arg) {
   if (typeof arg === "string") {
@@ -45395,6 +45774,7 @@ const Endpoints = {
     getSubscriptionPlanForAccountStubbed: ["GET /marketplace_listing/stubbed/accounts/{account_id}"],
     getUserInstallation: ["GET /users/{username}/installation"],
     getWebhookConfigForApp: ["GET /app/hook/config"],
+    getWebhookDelivery: ["GET /app/hook/deliveries/{delivery_id}"],
     listAccountsForPlan: ["GET /marketplace_listing/plans/{plan_id}/accounts"],
     listAccountsForPlanStubbed: ["GET /marketplace_listing/stubbed/plans/{plan_id}/accounts"],
     listInstallationReposForAuthenticatedUser: ["GET /user/installations/{installation_id}/repositories"],
@@ -45405,6 +45785,8 @@ const Endpoints = {
     listReposAccessibleToInstallation: ["GET /installation/repositories"],
     listSubscriptionsForAuthenticatedUser: ["GET /user/marketplace_purchases"],
     listSubscriptionsForAuthenticatedUserStubbed: ["GET /user/marketplace_purchases/stubbed"],
+    listWebhookDeliveries: ["GET /app/hook/deliveries"],
+    redeliverWebhookDelivery: ["POST /app/hook/deliveries/{delivery_id}/attempts"],
     removeRepoFromInstallation: ["DELETE /user/installations/{installation_id}/repositories/{repository_id}"],
     resetToken: ["PATCH /applications/{client_id}/token"],
     revokeInstallationAccessToken: ["DELETE /installation/token"],
@@ -45453,16 +45835,8 @@ const Endpoints = {
     uploadSarif: ["POST /repos/{owner}/{repo}/code-scanning/sarifs"]
   },
   codesOfConduct: {
-    getAllCodesOfConduct: ["GET /codes_of_conduct", {
-      mediaType: {
-        previews: ["scarlet-witch"]
-      }
-    }],
-    getConductCode: ["GET /codes_of_conduct/{key}", {
-      mediaType: {
-        previews: ["scarlet-witch"]
-      }
-    }],
+    getAllCodesOfConduct: ["GET /codes_of_conduct"],
+    getConductCode: ["GET /codes_of_conduct/{key}"],
     getForRepo: ["GET /repos/{owner}/{repo}/community/code_of_conduct", {
       mediaType: {
         previews: ["scarlet-witch"]
@@ -45694,6 +46068,7 @@ const Endpoints = {
     getMembershipForUser: ["GET /orgs/{org}/memberships/{username}"],
     getWebhook: ["GET /orgs/{org}/hooks/{hook_id}"],
     getWebhookConfigForOrg: ["GET /orgs/{org}/hooks/{hook_id}/config"],
+    getWebhookDelivery: ["GET /orgs/{org}/hooks/{hook_id}/deliveries/{delivery_id}"],
     list: ["GET /organizations"],
     listAppInstallations: ["GET /orgs/{org}/installations"],
     listBlockedUsers: ["GET /orgs/{org}/blocks"],
@@ -45706,8 +46081,10 @@ const Endpoints = {
     listOutsideCollaborators: ["GET /orgs/{org}/outside_collaborators"],
     listPendingInvitations: ["GET /orgs/{org}/invitations"],
     listPublicMembers: ["GET /orgs/{org}/public_members"],
+    listWebhookDeliveries: ["GET /orgs/{org}/hooks/{hook_id}/deliveries"],
     listWebhooks: ["GET /orgs/{org}/hooks"],
     pingWebhook: ["POST /orgs/{org}/hooks/{hook_id}/pings"],
+    redeliverWebhookDelivery: ["POST /orgs/{org}/hooks/{hook_id}/deliveries/{delivery_id}/attempts"],
     removeMember: ["DELETE /orgs/{org}/members/{username}"],
     removeMembershipForUser: ["DELETE /orgs/{org}/memberships/{username}"],
     removeOutsideCollaborator: ["DELETE /orgs/{org}/outside_collaborators/{username}"],
@@ -46035,6 +46412,7 @@ const Endpoints = {
     }],
     compareCommits: ["GET /repos/{owner}/{repo}/compare/{base}...{head}"],
     compareCommitsWithBasehead: ["GET /repos/{owner}/{repo}/compare/{basehead}"],
+    createAutolink: ["POST /repos/{owner}/{repo}/autolinks"],
     createCommitComment: ["POST /repos/{owner}/{repo}/commits/{commit_sha}/comments"],
     createCommitSignatureProtection: ["POST /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures", {
       mediaType: {
@@ -46068,6 +46446,7 @@ const Endpoints = {
     deleteAccessRestrictions: ["DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions"],
     deleteAdminBranchProtection: ["DELETE /repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins"],
     deleteAnEnvironment: ["DELETE /repos/{owner}/{repo}/environments/{environment_name}"],
+    deleteAutolink: ["DELETE /repos/{owner}/{repo}/autolinks/{autolink_id}"],
     deleteBranchProtection: ["DELETE /repos/{owner}/{repo}/branches/{branch}/protection"],
     deleteCommitComment: ["DELETE /repos/{owner}/{repo}/comments/{comment_id}"],
     deleteCommitSignatureProtection: ["DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures", {
@@ -46124,6 +46503,7 @@ const Endpoints = {
       }
     }],
     getAppsWithAccessToProtectedBranch: ["GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps"],
+    getAutolink: ["GET /repos/{owner}/{repo}/autolinks/{autolink_id}"],
     getBranch: ["GET /repos/{owner}/{repo}/branches/{branch}"],
     getBranchProtection: ["GET /repos/{owner}/{repo}/branches/{branch}/protection"],
     getClones: ["GET /repos/{owner}/{repo}/traffic/clones"],
@@ -46166,6 +46546,8 @@ const Endpoints = {
     getViews: ["GET /repos/{owner}/{repo}/traffic/views"],
     getWebhook: ["GET /repos/{owner}/{repo}/hooks/{hook_id}"],
     getWebhookConfigForRepo: ["GET /repos/{owner}/{repo}/hooks/{hook_id}/config"],
+    getWebhookDelivery: ["GET /repos/{owner}/{repo}/hooks/{hook_id}/deliveries/{delivery_id}"],
+    listAutolinks: ["GET /repos/{owner}/{repo}/autolinks"],
     listBranches: ["GET /repos/{owner}/{repo}/branches"],
     listBranchesForHeadCommit: ["GET /repos/{owner}/{repo}/commits/{commit_sha}/branches-where-head", {
       mediaType: {
@@ -46199,9 +46581,11 @@ const Endpoints = {
     listReleases: ["GET /repos/{owner}/{repo}/releases"],
     listTags: ["GET /repos/{owner}/{repo}/tags"],
     listTeams: ["GET /repos/{owner}/{repo}/teams"],
+    listWebhookDeliveries: ["GET /repos/{owner}/{repo}/hooks/{hook_id}/deliveries"],
     listWebhooks: ["GET /repos/{owner}/{repo}/hooks"],
     merge: ["POST /repos/{owner}/{repo}/merges"],
     pingWebhook: ["POST /repos/{owner}/{repo}/hooks/{hook_id}/pings"],
+    redeliverWebhookDelivery: ["POST /repos/{owner}/{repo}/hooks/{hook_id}/deliveries/{delivery_id}/attempts"],
     removeAppAccessRestrictions: ["DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps", {}, {
       mapToData: "apps"
     }],
@@ -46358,7 +46742,7 @@ const Endpoints = {
   }
 };
 
-const VERSION = "5.3.1";
+const VERSION = "5.8.0";
 
 function endpointsToMethods(octokit, endpointsMap) {
   const newMethods = {};
@@ -46476,7 +46860,8 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 var deprecation = __nccwpck_require__(8932);
 var once = _interopDefault(__nccwpck_require__(1223));
 
-const logOnce = once(deprecation => console.warn(deprecation));
+const logOnceCode = once(deprecation => console.warn(deprecation));
+const logOnceHeaders = once(deprecation => console.warn(deprecation));
 /**
  * Error with extra properties to help with debugging
  */
@@ -46493,14 +46878,17 @@ class RequestError extends Error {
 
     this.name = "HttpError";
     this.status = statusCode;
-    Object.defineProperty(this, "code", {
-      get() {
-        logOnce(new deprecation.Deprecation("[@octokit/request-error] `error.code` is deprecated, use `error.status`."));
-        return statusCode;
-      }
+    let headers;
 
-    });
-    this.headers = options.headers || {}; // redact request credentials without mutating original request options
+    if ("headers" in options && typeof options.headers !== "undefined") {
+      headers = options.headers;
+    }
+
+    if ("response" in options) {
+      this.response = options.response;
+      headers = options.response.headers;
+    } // redact request credentials without mutating original request options
+
 
     const requestCopy = Object.assign({}, options.request);
 
@@ -46515,7 +46903,22 @@ class RequestError extends Error {
     .replace(/\bclient_secret=\w+/g, "client_secret=[REDACTED]") // OAuth tokens can be passed as URL query parameters, although it is not recommended
     // see https://developer.github.com/v3/#oauth2-token-sent-in-a-header
     .replace(/\baccess_token=\w+/g, "access_token=[REDACTED]");
-    this.request = requestCopy;
+    this.request = requestCopy; // deprecations
+
+    Object.defineProperty(this, "code", {
+      get() {
+        logOnceCode(new deprecation.Deprecation("[@octokit/request-error] `error.code` is deprecated, use `error.status`."));
+        return statusCode;
+      }
+
+    });
+    Object.defineProperty(this, "headers", {
+      get() {
+        logOnceHeaders(new deprecation.Deprecation("[@octokit/request-error] `error.headers` is deprecated, use `error.response.headers`."));
+        return headers || {};
+      }
+
+    });
   }
 
 }
@@ -46542,7 +46945,7 @@ var isPlainObject = __nccwpck_require__(3287);
 var nodeFetch = _interopDefault(__nccwpck_require__(467));
 var requestError = __nccwpck_require__(537);
 
-const VERSION = "5.5.0";
+const VERSION = "5.6.0";
 
 function getBufferResponse(response) {
   return response.arrayBuffer();
@@ -46566,7 +46969,7 @@ function fetchWrapper(requestOptions) {
     redirect: requestOptions.redirect
   }, // `requestOptions.request.agent` type is incompatible
   // see https://github.com/octokit/types.ts/pull/264
-  requestOptions.request)).then(response => {
+  requestOptions.request)).then(async response => {
     url = response.url;
     status = response.status;
 
@@ -46591,49 +46994,43 @@ function fetchWrapper(requestOptions) {
       }
 
       throw new requestError.RequestError(response.statusText, status, {
-        headers,
+        response: {
+          url,
+          status,
+          headers,
+          data: undefined
+        },
         request: requestOptions
       });
     }
 
     if (status === 304) {
       throw new requestError.RequestError("Not modified", status, {
-        headers,
+        response: {
+          url,
+          status,
+          headers,
+          data: await getResponseData(response)
+        },
         request: requestOptions
       });
     }
 
     if (status >= 400) {
-      return response.text().then(message => {
-        const error = new requestError.RequestError(message, status, {
+      const data = await getResponseData(response);
+      const error = new requestError.RequestError(toErrorMessage(data), status, {
+        response: {
+          url,
+          status,
           headers,
-          request: requestOptions
-        });
-
-        try {
-          let responseBody = JSON.parse(error.message);
-          Object.assign(error, responseBody);
-          let errors = responseBody.errors; // Assumption `errors` would always be in Array format
-
-          error.message = error.message + ": " + errors.map(JSON.stringify).join(", ");
-        } catch (e) {// ignore, see octokit/rest.js#684
-        }
-
-        throw error;
+          data
+        },
+        request: requestOptions
       });
+      throw error;
     }
 
-    const contentType = response.headers.get("content-type");
-
-    if (/application\/json/.test(contentType)) {
-      return response.json();
-    }
-
-    if (!contentType || /^text\/|charset=utf-8$/.test(contentType)) {
-      return response.text();
-    }
-
-    return getBufferResponse(response);
+    return getResponseData(response);
   }).then(data => {
     return {
       status,
@@ -46642,15 +47039,40 @@ function fetchWrapper(requestOptions) {
       data
     };
   }).catch(error => {
-    if (error instanceof requestError.RequestError) {
-      throw error;
-    }
-
+    if (error instanceof requestError.RequestError) throw error;
     throw new requestError.RequestError(error.message, 500, {
-      headers,
       request: requestOptions
     });
   });
+}
+
+async function getResponseData(response) {
+  const contentType = response.headers.get("content-type");
+
+  if (/application\/json/.test(contentType)) {
+    return response.json();
+  }
+
+  if (!contentType || /^text\/|charset=utf-8$/.test(contentType)) {
+    return response.text();
+  }
+
+  return getBufferResponse(response);
+}
+
+function toErrorMessage(data) {
+  if (typeof data === "string") return data; // istanbul ignore else - just in case
+
+  if ("message" in data) {
+    if (Array.isArray(data.errors)) {
+      return `${data.message}: ${data.errors.map(JSON.stringify).join(", ")}`;
+    }
+
+    return data.message;
+  } // istanbul ignore next - just in case
+
+
+  return `Unknown error: ${JSON.stringify(data)}`;
 }
 
 function withDefaults(oldEndpoint, newDefaults) {
@@ -51916,10 +52338,14 @@ var __createBinding;
         return r;
     };
 
-    __spreadArray = function (to, from) {
-        for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
-            to[j] = from[i];
-        return to;
+    __spreadArray = function (to, from, pack) {
+        if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+            if (ar || !(i in from)) {
+                if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+                ar[i] = from[i];
+            }
+        }
+        return to.concat(ar || from);
     };
 
     __await = function (v) {
@@ -53053,7 +53479,7 @@ module.exports = JSON.parse('{"amp":"&","apos":"\'","gt":">","lt":"<","quot":"\\
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("assert");;
+module.exports = require("assert");
 
 /***/ }),
 
@@ -53061,7 +53487,7 @@ module.exports = require("assert");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("buffer");;
+module.exports = require("buffer");
 
 /***/ }),
 
@@ -53069,7 +53495,7 @@ module.exports = require("buffer");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("child_process");;
+module.exports = require("child_process");
 
 /***/ }),
 
@@ -53077,7 +53503,7 @@ module.exports = require("child_process");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("crypto");;
+module.exports = require("crypto");
 
 /***/ }),
 
@@ -53085,7 +53511,7 @@ module.exports = require("crypto");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("events");;
+module.exports = require("events");
 
 /***/ }),
 
@@ -53093,7 +53519,7 @@ module.exports = require("events");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("fs");;
+module.exports = require("fs");
 
 /***/ }),
 
@@ -53101,7 +53527,7 @@ module.exports = require("fs");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("http");;
+module.exports = require("http");
 
 /***/ }),
 
@@ -53109,7 +53535,7 @@ module.exports = require("http");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("http2");;
+module.exports = require("http2");
 
 /***/ }),
 
@@ -53117,7 +53543,7 @@ module.exports = require("http2");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("https");;
+module.exports = require("https");
 
 /***/ }),
 
@@ -53125,7 +53551,7 @@ module.exports = require("https");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("net");;
+module.exports = require("net");
 
 /***/ }),
 
@@ -53133,7 +53559,7 @@ module.exports = require("net");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("os");;
+module.exports = require("os");
 
 /***/ }),
 
@@ -53141,7 +53567,7 @@ module.exports = require("os");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("path");;
+module.exports = require("path");
 
 /***/ }),
 
@@ -53149,7 +53575,7 @@ module.exports = require("path");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("process");;
+module.exports = require("process");
 
 /***/ }),
 
@@ -53157,7 +53583,7 @@ module.exports = require("process");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("stream");;
+module.exports = require("stream");
 
 /***/ }),
 
@@ -53165,7 +53591,7 @@ module.exports = require("stream");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("tls");;
+module.exports = require("tls");
 
 /***/ }),
 
@@ -53173,7 +53599,7 @@ module.exports = require("tls");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("url");;
+module.exports = require("url");
 
 /***/ }),
 
@@ -53181,7 +53607,7 @@ module.exports = require("url");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("util");;
+module.exports = require("util");
 
 /***/ }),
 
@@ -53189,7 +53615,7 @@ module.exports = require("util");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("zlib");;
+module.exports = require("zlib");
 
 /***/ })
 
@@ -53228,7 +53654,9 @@ module.exports = require("zlib");;
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat */
 /******/ 	
-/******/ 	if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = __dirname + "/";/************************************************************************/
+/******/ 	if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = __dirname + "/";
+/******/ 	
+/************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports

@@ -12,6 +12,10 @@ Source path(s). Default `"."`.
 
 Copy directories recursively. Default `"true"`.
 
+### `cleanup`
+
+Remove all files on the destination prefix before uploading. Default `"false"`.
+
 ### `s3-acl`
 
 S3 objects ACL. Default `"private"`.
